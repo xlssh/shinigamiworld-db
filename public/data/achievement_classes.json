@@ -1,0 +1,72 @@
+{
+  "table": "achievement_classes",
+  "rowCount": 6,
+  "rows": [
+    {
+      "id": 6002001,
+      "name": "Road to Power",
+      "achievement_groups_id": [
+        6001001,
+        6001002,
+        6001003,
+        6001004,
+        6001005,
+        6001006
+      ]
+    },
+    {
+      "id": 6002002,
+      "name": "Legend of Mars",
+      "achievement_groups_id": [
+        6001101,
+        6001102,
+        6001103
+      ]
+    },
+    {
+      "id": 6002003,
+      "name": "Nobility",
+      "achievement_groups_id": [
+        6001201,
+        6001202,
+        6001203,
+        6001204,
+        6001205,
+        6001206,
+        6001207,
+        6001208,
+        6001209,
+        6001210,
+        6001211,
+        6001212
+      ]
+    },
+    {
+      "id": 6002004,
+      "name": "Peak of Perfection",
+      "achievement_groups_id": [
+        6001301,
+        6001302,
+        6001303,
+        6001304,
+        6001305
+      ]
+    },
+    {
+      "id": 6002005,
+      "name": "Legendary",
+      "achievement_groups_id": [
+        6001401,
+        6001402
+      ]
+    },
+    {
+      "id": 6002006,
+      "name": "Special Achievements",
+      "achievement_groups_id": [
+        6001501,
+        6001502
+      ]
+    }
+  ]
+}

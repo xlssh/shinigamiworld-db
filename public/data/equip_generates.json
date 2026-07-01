@@ -1,0 +1,2870 @@
+{
+  "table": "equip_generates",
+  "rowCount": 180,
+  "rows": [
+    {
+      "id": 14200031,
+      "open_level": 30,
+      "cost": 1000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 3
+        },
+        {
+          "material": 14300002,
+          "quantity": 1
+        }
+      ],
+      "datum": "14300001_3|14300002_1"
+    },
+    {
+      "id": 14200032,
+      "open_level": 30,
+      "cost": 1000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 3
+        },
+        {
+          "material": 14300002,
+          "quantity": 1
+        }
+      ],
+      "datum": "14300001_3|14300002_1"
+    },
+    {
+      "id": 14200033,
+      "open_level": 30,
+      "cost": 1000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 3
+        },
+        {
+          "material": 14300002,
+          "quantity": 1
+        }
+      ],
+      "datum": "14300001_3|14300002_1"
+    },
+    {
+      "id": 14200034,
+      "open_level": 30,
+      "cost": 1000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 3
+        },
+        {
+          "material": 14300003,
+          "quantity": 1
+        }
+      ],
+      "datum": "14300001_3|14300003_1"
+    },
+    {
+      "id": 14200035,
+      "open_level": 30,
+      "cost": 1000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 3
+        },
+        {
+          "material": 14300004,
+          "quantity": 1
+        }
+      ],
+      "datum": "14300001_3|14300004_1"
+    },
+    {
+      "id": 14200036,
+      "open_level": 30,
+      "cost": 1000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 3
+        },
+        {
+          "material": 14300005,
+          "quantity": 1
+        }
+      ],
+      "datum": "14300001_3|14300005_1"
+    },
+    {
+      "id": 14200037,
+      "open_level": 30,
+      "cost": 1000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 3
+        },
+        {
+          "material": 14300006,
+          "quantity": 1
+        }
+      ],
+      "datum": "14300001_3|14300006_1"
+    },
+    {
+      "id": 14200038,
+      "open_level": 30,
+      "cost": 1000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 3
+        },
+        {
+          "material": 14300007,
+          "quantity": 1
+        }
+      ],
+      "datum": "14300001_3|14300007_1"
+    },
+    {
+      "id": 14200041,
+      "open_level": 30,
+      "cost": 2000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 6
+        },
+        {
+          "material": 14300011,
+          "quantity": 2
+        }
+      ],
+      "datum": "14300001_6|14300011_2"
+    },
+    {
+      "id": 14200042,
+      "open_level": 30,
+      "cost": 2000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 6
+        },
+        {
+          "material": 14300012,
+          "quantity": 2
+        }
+      ],
+      "datum": "14300001_6|14300012_2"
+    },
+    {
+      "id": 14200043,
+      "open_level": 30,
+      "cost": 2000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 6
+        },
+        {
+          "material": 14300013,
+          "quantity": 2
+        }
+      ],
+      "datum": "14300001_6|14300013_2"
+    },
+    {
+      "id": 14200044,
+      "open_level": 30,
+      "cost": 2000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 6
+        },
+        {
+          "material": 14300014,
+          "quantity": 2
+        }
+      ],
+      "datum": "14300001_6|14300014_2"
+    },
+    {
+      "id": 14200045,
+      "open_level": 30,
+      "cost": 2000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 6
+        },
+        {
+          "material": 14300015,
+          "quantity": 2
+        }
+      ],
+      "datum": "14300001_6|14300015_2"
+    },
+    {
+      "id": 14200046,
+      "open_level": 30,
+      "cost": 2000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 6
+        },
+        {
+          "material": 14300016,
+          "quantity": 2
+        }
+      ],
+      "datum": "14300001_6|14300016_2"
+    },
+    {
+      "id": 14200047,
+      "open_level": 30,
+      "cost": 2000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 6
+        },
+        {
+          "material": 14300017,
+          "quantity": 2
+        }
+      ],
+      "datum": "14300001_6|14300017_2"
+    },
+    {
+      "id": 14200048,
+      "open_level": 30,
+      "cost": 2000,
+      "materials": [
+        {
+          "material": 14300001,
+          "quantity": 6
+        },
+        {
+          "material": 14300018,
+          "quantity": 2
+        }
+      ],
+      "datum": "14300001_6|14300018_2"
+    },
+    {
+      "id": 14200051,
+      "open_level": 49,
+      "cost": 1500,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 10
+        },
+        {
+          "material": 14300022,
+          "quantity": 3
+        }
+      ],
+      "datum": "14300021_10|14300022_3"
+    },
+    {
+      "id": 14200052,
+      "open_level": 49,
+      "cost": 1500,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 10
+        },
+        {
+          "material": 14300023,
+          "quantity": 3
+        }
+      ],
+      "datum": "14300021_10|14300023_3"
+    },
+    {
+      "id": 14200053,
+      "open_level": 49,
+      "cost": 1500,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 10
+        },
+        {
+          "material": 14300024,
+          "quantity": 3
+        }
+      ],
+      "datum": "14300021_10|14300024_3"
+    },
+    {
+      "id": 14200054,
+      "open_level": 49,
+      "cost": 1500,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 10
+        },
+        {
+          "material": 14300025,
+          "quantity": 3
+        }
+      ],
+      "datum": "14300021_10|14300025_3"
+    },
+    {
+      "id": 14200055,
+      "open_level": 49,
+      "cost": 1500,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 10
+        },
+        {
+          "material": 14300026,
+          "quantity": 3
+        }
+      ],
+      "datum": "14300021_10|14300026_3"
+    },
+    {
+      "id": 14200056,
+      "open_level": 49,
+      "cost": 1500,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 10
+        },
+        {
+          "material": 14300027,
+          "quantity": 3
+        }
+      ],
+      "datum": "14300021_10|14300027_3"
+    },
+    {
+      "id": 14200057,
+      "open_level": 49,
+      "cost": 1500,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 10
+        },
+        {
+          "material": 14300028,
+          "quantity": 3
+        }
+      ],
+      "datum": "14300021_10|14300028_3"
+    },
+    {
+      "id": 14200058,
+      "open_level": 49,
+      "cost": 1500,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 10
+        },
+        {
+          "material": 14300029,
+          "quantity": 3
+        }
+      ],
+      "datum": "14300021_10|14300029_3"
+    },
+    {
+      "id": 14200061,
+      "open_level": 49,
+      "cost": 3000,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 20
+        },
+        {
+          "material": 14300031,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300021_20|14300031_5"
+    },
+    {
+      "id": 14200062,
+      "open_level": 49,
+      "cost": 3000,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 20
+        },
+        {
+          "material": 14300032,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300021_20|14300032_5"
+    },
+    {
+      "id": 14200063,
+      "open_level": 49,
+      "cost": 3000,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 20
+        },
+        {
+          "material": 14300033,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300021_20|14300033_5"
+    },
+    {
+      "id": 14200064,
+      "open_level": 49,
+      "cost": 3000,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 20
+        },
+        {
+          "material": 14300034,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300021_20|14300034_5"
+    },
+    {
+      "id": 14200065,
+      "open_level": 49,
+      "cost": 3000,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 20
+        },
+        {
+          "material": 14300035,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300021_20|14300035_5"
+    },
+    {
+      "id": 14200066,
+      "open_level": 49,
+      "cost": 3000,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 20
+        },
+        {
+          "material": 14300036,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300021_20|14300036_5"
+    },
+    {
+      "id": 14200067,
+      "open_level": 49,
+      "cost": 3000,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 20
+        },
+        {
+          "material": 14300037,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300021_20|14300037_5"
+    },
+    {
+      "id": 14200068,
+      "open_level": 49,
+      "cost": 3000,
+      "materials": [
+        {
+          "material": 14300021,
+          "quantity": 20
+        },
+        {
+          "material": 14300038,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300021_20|14300038_5"
+    },
+    {
+      "id": 14200081,
+      "open_level": 69,
+      "cost": 2500,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 20
+        },
+        {
+          "material": 14300042,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300041_20|14300042_5"
+    },
+    {
+      "id": 14200082,
+      "open_level": 69,
+      "cost": 2500,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 20
+        },
+        {
+          "material": 14300043,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300041_20|14300043_5"
+    },
+    {
+      "id": 14200083,
+      "open_level": 69,
+      "cost": 2500,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 20
+        },
+        {
+          "material": 14300044,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300041_20|14300044_5"
+    },
+    {
+      "id": 14200084,
+      "open_level": 69,
+      "cost": 2500,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 20
+        },
+        {
+          "material": 14300045,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300041_20|14300045_5"
+    },
+    {
+      "id": 14200085,
+      "open_level": 69,
+      "cost": 2500,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 20
+        },
+        {
+          "material": 14300046,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300041_20|14300046_5"
+    },
+    {
+      "id": 14200086,
+      "open_level": 69,
+      "cost": 2500,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 20
+        },
+        {
+          "material": 14300047,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300041_20|14300047_5"
+    },
+    {
+      "id": 14200087,
+      "open_level": 69,
+      "cost": 2500,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 20
+        },
+        {
+          "material": 14300048,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300041_20|14300048_5"
+    },
+    {
+      "id": 14200088,
+      "open_level": 69,
+      "cost": 2500,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 20
+        },
+        {
+          "material": 14300049,
+          "quantity": 5
+        }
+      ],
+      "datum": "14300041_20|14300049_5"
+    },
+    {
+      "id": 14200091,
+      "open_level": 69,
+      "cost": 4000,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 40
+        },
+        {
+          "material": 14300051,
+          "quantity": 10
+        }
+      ],
+      "datum": "14300041_40|14300051_10"
+    },
+    {
+      "id": 14200092,
+      "open_level": 69,
+      "cost": 4000,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 40
+        },
+        {
+          "material": 14300052,
+          "quantity": 10
+        }
+      ],
+      "datum": "14300041_40|14300052_10"
+    },
+    {
+      "id": 14200093,
+      "open_level": 69,
+      "cost": 4000,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 40
+        },
+        {
+          "material": 14300053,
+          "quantity": 10
+        }
+      ],
+      "datum": "14300041_40|14300053_10"
+    },
+    {
+      "id": 14200094,
+      "open_level": 69,
+      "cost": 4000,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 40
+        },
+        {
+          "material": 14300054,
+          "quantity": 10
+        }
+      ],
+      "datum": "14300041_40|14300054_10"
+    },
+    {
+      "id": 14200095,
+      "open_level": 69,
+      "cost": 4000,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 40
+        },
+        {
+          "material": 14300055,
+          "quantity": 10
+        }
+      ],
+      "datum": "14300041_40|14300055_10"
+    },
+    {
+      "id": 14200096,
+      "open_level": 69,
+      "cost": 4000,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 40
+        },
+        {
+          "material": 14300056,
+          "quantity": 10
+        }
+      ],
+      "datum": "14300041_40|14300056_10"
+    },
+    {
+      "id": 14200097,
+      "open_level": 69,
+      "cost": 4000,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 40
+        },
+        {
+          "material": 14300057,
+          "quantity": 10
+        }
+      ],
+      "datum": "14300041_40|14300057_10"
+    },
+    {
+      "id": 14200098,
+      "open_level": 69,
+      "cost": 4000,
+      "materials": [
+        {
+          "material": 14300041,
+          "quantity": 40
+        },
+        {
+          "material": 14300058,
+          "quantity": 10
+        }
+      ],
+      "datum": "14300041_40|14300058_10"
+    },
+    {
+      "id": 14200111,
+      "open_level": 79,
+      "cost": 3500,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 30
+        },
+        {
+          "material": 14300062,
+          "quantity": 8
+        }
+      ],
+      "datum": "14300061_30|14300062_8"
+    },
+    {
+      "id": 14200112,
+      "open_level": 79,
+      "cost": 3500,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 30
+        },
+        {
+          "material": 14300063,
+          "quantity": 8
+        }
+      ],
+      "datum": "14300061_30|14300063_8"
+    },
+    {
+      "id": 14200113,
+      "open_level": 79,
+      "cost": 3500,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 30
+        },
+        {
+          "material": 14300064,
+          "quantity": 8
+        }
+      ],
+      "datum": "14300061_30|14300064_8"
+    },
+    {
+      "id": 14200114,
+      "open_level": 79,
+      "cost": 3500,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 30
+        },
+        {
+          "material": 14300065,
+          "quantity": 8
+        }
+      ],
+      "datum": "14300061_30|14300065_8"
+    },
+    {
+      "id": 14200115,
+      "open_level": 79,
+      "cost": 3500,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 30
+        },
+        {
+          "material": 14300066,
+          "quantity": 8
+        }
+      ],
+      "datum": "14300061_30|14300066_8"
+    },
+    {
+      "id": 14200116,
+      "open_level": 79,
+      "cost": 3500,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 30
+        },
+        {
+          "material": 14300067,
+          "quantity": 8
+        }
+      ],
+      "datum": "14300061_30|14300067_8"
+    },
+    {
+      "id": 14200117,
+      "open_level": 79,
+      "cost": 3500,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 30
+        },
+        {
+          "material": 14300068,
+          "quantity": 8
+        }
+      ],
+      "datum": "14300061_30|14300068_8"
+    },
+    {
+      "id": 14200118,
+      "open_level": 79,
+      "cost": 3500,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 30
+        },
+        {
+          "material": 14300069,
+          "quantity": 8
+        }
+      ],
+      "datum": "14300061_30|14300069_8"
+    },
+    {
+      "id": 14200121,
+      "open_level": 79,
+      "cost": 5000,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 60
+        },
+        {
+          "material": 14300071,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300061_60|14300071_15"
+    },
+    {
+      "id": 14200122,
+      "open_level": 79,
+      "cost": 5000,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 60
+        },
+        {
+          "material": 14300072,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300061_60|14300072_15"
+    },
+    {
+      "id": 14200123,
+      "open_level": 79,
+      "cost": 5000,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 60
+        },
+        {
+          "material": 14300073,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300061_60|14300073_15"
+    },
+    {
+      "id": 14200124,
+      "open_level": 79,
+      "cost": 5000,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 60
+        },
+        {
+          "material": 14300074,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300061_60|14300074_15"
+    },
+    {
+      "id": 14200125,
+      "open_level": 79,
+      "cost": 5000,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 60
+        },
+        {
+          "material": 14300075,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300061_60|14300075_15"
+    },
+    {
+      "id": 14200126,
+      "open_level": 79,
+      "cost": 5000,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 60
+        },
+        {
+          "material": 14300076,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300061_60|14300076_15"
+    },
+    {
+      "id": 14200127,
+      "open_level": 79,
+      "cost": 5000,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 60
+        },
+        {
+          "material": 14300077,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300061_60|14300077_15"
+    },
+    {
+      "id": 14200128,
+      "open_level": 79,
+      "cost": 5000,
+      "materials": [
+        {
+          "material": 14300061,
+          "quantity": 60
+        },
+        {
+          "material": 14300078,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300061_60|14300078_15"
+    },
+    {
+      "id": 14200141,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300080,
+          "quantity": 12
+        }
+      ],
+      "datum": "14300079_100|14300080_12"
+    },
+    {
+      "id": 14200142,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300081,
+          "quantity": 12
+        }
+      ],
+      "datum": "14300079_100|14300081_12"
+    },
+    {
+      "id": 14200143,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300082,
+          "quantity": 12
+        }
+      ],
+      "datum": "14300079_100|14300082_12"
+    },
+    {
+      "id": 14200144,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300083,
+          "quantity": 12
+        }
+      ],
+      "datum": "14300079_100|14300083_12"
+    },
+    {
+      "id": 14200145,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300084,
+          "quantity": 12
+        }
+      ],
+      "datum": "14300079_100|14300084_12"
+    },
+    {
+      "id": 14200146,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300085,
+          "quantity": 12
+        }
+      ],
+      "datum": "14300079_100|14300085_12"
+    },
+    {
+      "id": 14200147,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300086,
+          "quantity": 12
+        }
+      ],
+      "datum": "14300079_100|14300086_12"
+    },
+    {
+      "id": 14200148,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300087,
+          "quantity": 12
+        }
+      ],
+      "datum": "14300079_100|14300087_12"
+    },
+    {
+      "id": 14200151,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300088,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300079_100|14300088_20"
+    },
+    {
+      "id": 14200152,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300089,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300079_100|14300089_20"
+    },
+    {
+      "id": 14200153,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300090,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300079_100|14300090_20"
+    },
+    {
+      "id": 14200154,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300091,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300079_100|14300091_20"
+    },
+    {
+      "id": 14200155,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300092,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300079_100|14300092_20"
+    },
+    {
+      "id": 14200156,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300093,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300079_100|14300093_20"
+    },
+    {
+      "id": 14200157,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300094,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300079_100|14300094_20"
+    },
+    {
+      "id": 14200158,
+      "open_level": 89,
+      "cost": 8000,
+      "materials": [
+        {
+          "material": 14300079,
+          "quantity": 100
+        },
+        {
+          "material": 14300095,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300079_100|14300095_20"
+    },
+    {
+      "id": 14200171,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300097,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300096_125|14300097_15"
+    },
+    {
+      "id": 14200172,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300098,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300096_125|14300098_15"
+    },
+    {
+      "id": 14200173,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300099,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300096_125|14300099_15"
+    },
+    {
+      "id": 14200174,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300100,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300096_125|14300100_15"
+    },
+    {
+      "id": 14200175,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300101,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300096_125|14300101_15"
+    },
+    {
+      "id": 14200176,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300102,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300096_125|14300102_15"
+    },
+    {
+      "id": 14200177,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300103,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300096_125|14300103_15"
+    },
+    {
+      "id": 14200178,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300104,
+          "quantity": 15
+        }
+      ],
+      "datum": "14300096_125|14300104_15"
+    },
+    {
+      "id": 14200181,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300105,
+          "quantity": 25
+        }
+      ],
+      "datum": "14300096_125|14300105_25"
+    },
+    {
+      "id": 14200182,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300106,
+          "quantity": 25
+        }
+      ],
+      "datum": "14300096_125|14300106_25"
+    },
+    {
+      "id": 14200183,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300107,
+          "quantity": 25
+        }
+      ],
+      "datum": "14300096_125|14300107_25"
+    },
+    {
+      "id": 14200184,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300108,
+          "quantity": 25
+        }
+      ],
+      "datum": "14300096_125|14300108_25"
+    },
+    {
+      "id": 14200185,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300109,
+          "quantity": 25
+        }
+      ],
+      "datum": "14300096_125|14300109_25"
+    },
+    {
+      "id": 14200186,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300110,
+          "quantity": 25
+        }
+      ],
+      "datum": "14300096_125|14300110_25"
+    },
+    {
+      "id": 14200187,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300111,
+          "quantity": 25
+        }
+      ],
+      "datum": "14300096_125|14300111_25"
+    },
+    {
+      "id": 14200188,
+      "open_level": 99,
+      "cost": 10000,
+      "materials": [
+        {
+          "material": 14300096,
+          "quantity": 125
+        },
+        {
+          "material": 14300112,
+          "quantity": 25
+        }
+      ],
+      "datum": "14300096_125|14300112_25"
+    },
+    {
+      "id": 14200201,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300114,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300113_150|14300114_20"
+    },
+    {
+      "id": 14200202,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300115,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300113_150|14300115_20"
+    },
+    {
+      "id": 14200203,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300116,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300113_150|14300116_20"
+    },
+    {
+      "id": 14200204,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300117,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300113_150|14300117_20"
+    },
+    {
+      "id": 14200205,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300118,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300113_150|14300118_20"
+    },
+    {
+      "id": 14200206,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300119,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300113_150|14300119_20"
+    },
+    {
+      "id": 14200207,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300120,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300113_150|14300120_20"
+    },
+    {
+      "id": 14200208,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300121,
+          "quantity": 20
+        }
+      ],
+      "datum": "14300113_150|14300121_20"
+    },
+    {
+      "id": 14200211,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300122,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300113_150|14300122_30"
+    },
+    {
+      "id": 14200212,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300123,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300113_150|14300123_30"
+    },
+    {
+      "id": 14200213,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300124,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300113_150|14300124_30"
+    },
+    {
+      "id": 14200214,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300125,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300113_150|14300125_30"
+    },
+    {
+      "id": 14200215,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300126,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300113_150|14300126_30"
+    },
+    {
+      "id": 14200216,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300127,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300113_150|14300127_30"
+    },
+    {
+      "id": 14200217,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300128,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300113_150|14300128_30"
+    },
+    {
+      "id": 14200218,
+      "open_level": 109,
+      "cost": 12000,
+      "materials": [
+        {
+          "material": 14300113,
+          "quantity": 150
+        },
+        {
+          "material": 14300129,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300113_150|14300129_30"
+    },
+    {
+      "id": 14200231,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300131,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300130_175|14300131_30"
+    },
+    {
+      "id": 14200232,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300132,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300130_175|14300132_30"
+    },
+    {
+      "id": 14200233,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300133,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300130_175|14300133_30"
+    },
+    {
+      "id": 14200234,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300134,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300130_175|14300134_30"
+    },
+    {
+      "id": 14200235,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300135,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300130_175|14300135_30"
+    },
+    {
+      "id": 14200236,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300136,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300130_175|14300136_30"
+    },
+    {
+      "id": 14200237,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300137,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300130_175|14300137_30"
+    },
+    {
+      "id": 14200238,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300138,
+          "quantity": 30
+        }
+      ],
+      "datum": "14300130_175|14300138_30"
+    },
+    {
+      "id": 14200241,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300139,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300130_175|14300139_40"
+    },
+    {
+      "id": 14200242,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300140,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300130_175|14300140_40"
+    },
+    {
+      "id": 14200243,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300141,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300130_175|14300141_40"
+    },
+    {
+      "id": 14200244,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300142,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300130_175|14300142_40"
+    },
+    {
+      "id": 14200245,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300143,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300130_175|14300143_40"
+    },
+    {
+      "id": 14200246,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300144,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300130_175|14300144_40"
+    },
+    {
+      "id": 14200247,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300145,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300130_175|14300145_40"
+    },
+    {
+      "id": 14200248,
+      "open_level": 119,
+      "cost": 17000,
+      "materials": [
+        {
+          "material": 14300130,
+          "quantity": 175
+        },
+        {
+          "material": 14300146,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300130_175|14300146_40"
+    },
+    {
+      "id": 14200261,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300148,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300147_175|14300148_40"
+    },
+    {
+      "id": 14200262,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300149,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300147_175|14300149_40"
+    },
+    {
+      "id": 14200263,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300150,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300147_175|14300150_40"
+    },
+    {
+      "id": 14200264,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300151,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300147_175|14300151_40"
+    },
+    {
+      "id": 14200265,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300152,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300147_175|14300152_40"
+    },
+    {
+      "id": 14200266,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300153,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300147_175|14300153_40"
+    },
+    {
+      "id": 14200267,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300154,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300147_175|14300154_40"
+    },
+    {
+      "id": 14200268,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300155,
+          "quantity": 40
+        }
+      ],
+      "datum": "14300147_175|14300155_40"
+    },
+    {
+      "id": 14200271,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300156,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300147_175|14300156_50"
+    },
+    {
+      "id": 14200272,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300157,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300147_175|14300157_50"
+    },
+    {
+      "id": 14200273,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300158,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300147_175|14300158_50"
+    },
+    {
+      "id": 14200274,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300159,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300147_175|14300159_50"
+    },
+    {
+      "id": 14200275,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300160,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300147_175|14300160_50"
+    },
+    {
+      "id": 14200276,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300161,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300147_175|14300161_50"
+    },
+    {
+      "id": 14200277,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300162,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300147_175|14300162_50"
+    },
+    {
+      "id": 14200278,
+      "open_level": 129,
+      "cost": 22000,
+      "materials": [
+        {
+          "material": 14300147,
+          "quantity": 175
+        },
+        {
+          "material": 14300163,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300147_175|14300163_50"
+    },
+    {
+      "id": 14200291,
+      "open_level": 139,
+      "cost": 30000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 225
+        },
+        {
+          "material": 14300165,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300164_225|14300165_50"
+    },
+    {
+      "id": 14200292,
+      "open_level": 139,
+      "cost": 30000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 225
+        },
+        {
+          "material": 14300166,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300164_225|14300166_50"
+    },
+    {
+      "id": 14200293,
+      "open_level": 139,
+      "cost": 30000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 225
+        },
+        {
+          "material": 14300167,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300164_225|14300167_50"
+    },
+    {
+      "id": 14200294,
+      "open_level": 139,
+      "cost": 30000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 225
+        },
+        {
+          "material": 14300168,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300164_225|14300168_50"
+    },
+    {
+      "id": 14200295,
+      "open_level": 139,
+      "cost": 30000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 225
+        },
+        {
+          "material": 14300169,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300164_225|14300169_50"
+    },
+    {
+      "id": 14200296,
+      "open_level": 139,
+      "cost": 30000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 225
+        },
+        {
+          "material": 14300170,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300164_225|14300170_50"
+    },
+    {
+      "id": 14200297,
+      "open_level": 139,
+      "cost": 30000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 225
+        },
+        {
+          "material": 14300171,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300164_225|14300171_50"
+    },
+    {
+      "id": 14200298,
+      "open_level": 139,
+      "cost": 30000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 225
+        },
+        {
+          "material": 14300172,
+          "quantity": 50
+        }
+      ],
+      "datum": "14300164_225|14300172_50"
+    },
+    {
+      "id": 14200301,
+      "open_level": 139,
+      "cost": 40000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 275
+        },
+        {
+          "material": 14300173,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300164_275|14300173_80"
+    },
+    {
+      "id": 14200302,
+      "open_level": 139,
+      "cost": 40000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 275
+        },
+        {
+          "material": 14300174,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300164_275|14300174_80"
+    },
+    {
+      "id": 14200303,
+      "open_level": 139,
+      "cost": 40000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 275
+        },
+        {
+          "material": 14300175,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300164_275|14300175_80"
+    },
+    {
+      "id": 14200304,
+      "open_level": 139,
+      "cost": 40000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 275
+        },
+        {
+          "material": 14300176,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300164_275|14300176_80"
+    },
+    {
+      "id": 14200305,
+      "open_level": 139,
+      "cost": 40000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 275
+        },
+        {
+          "material": 14300177,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300164_275|14300177_80"
+    },
+    {
+      "id": 14200306,
+      "open_level": 139,
+      "cost": 40000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 275
+        },
+        {
+          "material": 14300178,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300164_275|14300178_80"
+    },
+    {
+      "id": 14200307,
+      "open_level": 139,
+      "cost": 40000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 275
+        },
+        {
+          "material": 14300179,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300164_275|14300179_80"
+    },
+    {
+      "id": 14200308,
+      "open_level": 139,
+      "cost": 40000,
+      "materials": [
+        {
+          "material": 14300164,
+          "quantity": 275
+        },
+        {
+          "material": 14300180,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300164_275|14300180_80"
+    },
+    {
+      "id": 14200321,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 325
+        },
+        {
+          "material": 14300182,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300181_325|14300182_80"
+    },
+    {
+      "id": 14200322,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 325
+        },
+        {
+          "material": 14300183,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300181_325|14300183_80"
+    },
+    {
+      "id": 14200323,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 325
+        },
+        {
+          "material": 14300184,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300181_325|14300184_80"
+    },
+    {
+      "id": 14200324,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 325
+        },
+        {
+          "material": 14300185,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300181_325|14300185_80"
+    },
+    {
+      "id": 14200325,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 325
+        },
+        {
+          "material": 14300186,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300181_325|14300186_80"
+    },
+    {
+      "id": 14200326,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 325
+        },
+        {
+          "material": 14300187,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300181_325|14300187_80"
+    },
+    {
+      "id": 14200327,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 325
+        },
+        {
+          "material": 14300188,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300181_325|14300188_80"
+    },
+    {
+      "id": 14200328,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 325
+        },
+        {
+          "material": 14300189,
+          "quantity": 80
+        }
+      ],
+      "datum": "14300181_325|14300189_80"
+    },
+    {
+      "id": 14200331,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 375
+        },
+        {
+          "material": 14300190,
+          "quantity": 120
+        }
+      ],
+      "datum": "14300181_375|14300190_120"
+    },
+    {
+      "id": 14200332,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 375
+        },
+        {
+          "material": 14300191,
+          "quantity": 120
+        }
+      ],
+      "datum": "14300181_375|14300191_120"
+    },
+    {
+      "id": 14200333,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 375
+        },
+        {
+          "material": 14300192,
+          "quantity": 120
+        }
+      ],
+      "datum": "14300181_375|14300192_120"
+    },
+    {
+      "id": 14200334,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 375
+        },
+        {
+          "material": 14300193,
+          "quantity": 120
+        }
+      ],
+      "datum": "14300181_375|14300193_120"
+    },
+    {
+      "id": 14200335,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 375
+        },
+        {
+          "material": 14300194,
+          "quantity": 120
+        }
+      ],
+      "datum": "14300181_375|14300194_120"
+    },
+    {
+      "id": 14200336,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 375
+        },
+        {
+          "material": 14300195,
+          "quantity": 120
+        }
+      ],
+      "datum": "14300181_375|14300195_120"
+    },
+    {
+      "id": 14200337,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 375
+        },
+        {
+          "material": 14300196,
+          "quantity": 120
+        }
+      ],
+      "datum": "14300181_375|14300196_120"
+    },
+    {
+      "id": 14200338,
+      "open_level": 149,
+      "cost": 50000,
+      "materials": [
+        {
+          "material": 14300181,
+          "quantity": 375
+        },
+        {
+          "material": 14300197,
+          "quantity": 120
+        }
+      ],
+      "datum": "14300181_375|14300197_120"
+    },
+    {
+      "id": 14840057,
+      "open_level": 1,
+      "cost": 0,
+      "materials": [
+        {
+          "material": 14100782,
+          "quantity": 5500
+        }
+      ],
+      "datum": "14100782_5500"
+    },
+    {
+      "id": 14840058,
+      "open_level": 1,
+      "cost": 0,
+      "materials": [
+        {
+          "material": 14100782,
+          "quantity": 5500
+        }
+      ],
+      "datum": "14100782_5500"
+    },
+    {
+      "id": 14840059,
+      "open_level": 1,
+      "cost": 0,
+      "materials": [
+        {
+          "material": 14100782,
+          "quantity": 5500
+        }
+      ],
+      "datum": "14100782_5500"
+    },
+    {
+      "id": 14840060,
+      "open_level": 1,
+      "cost": 0,
+      "materials": [
+        {
+          "material": 14100782,
+          "quantity": 5500
+        }
+      ],
+      "datum": "14100782_5500"
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "table": "home_girl_friends",
+  "rowCount": 10,
+  "rows": [
+    {
+      "id": 1,
+      "image_id": 4001001,
+      "level": 1,
+      "name": "Tsukihime",
+      "level_up_article": [
+        {
+          "type": 1,
+          "code": 14100130,
+          "amount": 500
+        }
+      ],
+      "description": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">    Small apple liked Tsukihime, with a feeling of shy. Always been light and timid and following her master. Then she always give you a smile.</font></p>",
+      "home_level_limit": 1,
+      "tofu_num": 3,
+      "tofu_cd": 20,
+      "tofu_award": [
+        {
+          "type": 3,
+          "code": 0,
+          "amount": 6
+        }
+      ],
+      "sprite_num": 3,
+      "normal_sprite_cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 1000
+        }
+      ],
+      "gold_sprite_cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 5
+        }
+      ],
+      "sprite_cd": 1
+    },
+    {
+      "id": 2,
+      "image_id": 4001008,
+      "level": 2,
+      "name": "Risa",
+      "level_up_article": [
+        {
+          "type": 1,
+          "code": 14100130,
+          "amount": 1000
+        }
+      ],
+      "description": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">    Risa is mature and competent and always wearing a pair of glasses and she enjoys reading books. She always solve all my problems!</font></p>",
+      "home_level_limit": 1,
+      "tofu_num": 4,
+      "tofu_cd": 20,
+      "tofu_award": [
+        {
+          "type": 3,
+          "code": 0,
+          "amount": 6
+        }
+      ],
+      "sprite_num": 5,
+      "normal_sprite_cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 1000
+        }
+      ],
+      "gold_sprite_cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 5
+        }
+      ],
+      "sprite_cd": 1
+    },
+    {
+      "id": 3,
+      "image_id": 4001009,
+      "level": 3,
+      "name": "Habu",
+      "level_up_article": [
+        {
+          "type": 1,
+          "code": 14100130,
+          "amount": 2000
+        }
+      ],
+      "description": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">    Mature and beautiful, like the rain of pear. Her melancholy temperament let people cannot resist the feeling of taking her in his arms and comfort her broken heart.</font></p>",
+      "home_level_limit": 2,
+      "tofu_num": 5,
+      "tofu_cd": 20,
+      "tofu_award": [
+        {
+          "type": 3,
+          "code": 0,
+          "amount": 6
+        }
+      ],
+      "sprite_num": 7,
+      "normal_sprite_cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 1000
+        }
+      ],
+      "gold_sprite_cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 5
+        }
+      ],
+      "sprite_cd": 1
+    },
+    {
+      "id": 4,
+      "image_id": 4001003,
+      "level": 4,
+      "name": "Akisa",
+      "level_up_article": [
+        {
+          "type": 1,
+          "code": 14100130,
+          "amount": 5000
+        }
+      ],
+      "description": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">    Calm with a porcelain doll like face. Always let me feel a little shivers when she looks at me coldly behind my back. But when I praise her, her cheeks always turn red.</font></p>",
+      "home_level_limit": 2,
+      "tofu_num": 6,
+      "tofu_cd": 20,
+      "tofu_award": [
+        {
+          "type": 3,
+          "code": 0,
+          "amount": 6
+        }
+      ],
+      "sprite_num": 9,
+      "normal_sprite_cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 1000
+        }
+      ],
+      "gold_sprite_cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 5
+        }
+      ],
+      "sprite_cd": 1
+    },
+    {
+      "id": 5,
+      "image_id": 4001007,
+      "level": 5,
+      "name": "Miri",
+      "level_up_article": [
+        {
+          "type": 1,
+          "code": 14100130,
+          "amount": 11000
+        }
+      ],
+      "description": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">    Very serious about things and set down a series of rules for me to obey. She stays by my side like a big sister. Every afternoon she forces me to practice fencing with her which is my most difficult moment.</font></p>",
+      "home_level_limit": 3,
+      "tofu_num": 7,
+      "tofu_cd": 17,
+      "tofu_award": [
+        {
+          "type": 3,
+          "code": 0,
+          "amount": 6
+        }
+      ],
+      "sprite_num": 11,
+      "normal_sprite_cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 1000
+        }
+      ],
+      "gold_sprite_cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 5
+        }
+      ],
+      "sprite_cd": 1
+    },
+    {
+      "id": 6,
+      "image_id": 4001005,
+      "level": 6,
+      "name": "Aoi\n",
+      "level_up_article": [
+        {
+          "type": 1,
+          "code": 14100130,
+          "amount": 22000
+        }
+      ],
+      "description": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">    Naive and lovely,  always bring me laughter. Every time I see her, my heart is purified by her her eyes.</font></p>",
+      "home_level_limit": 3,
+      "tofu_num": 8,
+      "tofu_cd": 15,
+      "tofu_award": [
+        {
+          "type": 3,
+          "code": 0,
+          "amount": 6
+        }
+      ],
+      "sprite_num": 13,
+      "normal_sprite_cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 1000
+        }
+      ],
+      "gold_sprite_cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 5
+        }
+      ],
+      "sprite_cd": 1
+    },
+    {
+      "id": 7,
+      "image_id": 4001010,
+      "level": 7,
+      "name": "Miki",
+      "level_up_article": [
+        {
+          "type": 1,
+          "code": 14100130,
+          "amount": 44000
+        }
+      ],
+      "description": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">    Like a flower fairy, she always dress in white and everyone is attracted by that.  Watch out for the other suitors!</font></p>",
+      "home_level_limit": 4,
+      "tofu_num": 9,
+      "tofu_cd": 13,
+      "tofu_award": [
+        {
+          "type": 3,
+          "code": 0,
+          "amount": 6
+        }
+      ],
+      "sprite_num": 16,
+      "normal_sprite_cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 1000
+        }
+      ],
+      "gold_sprite_cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 5
+        }
+      ],
+      "sprite_cd": 1
+    },
+    {
+      "id": 8,
+      "image_id": 4001006,
+      "level": 8,
+      "name": "Anstuki",
+      "level_up_article": [
+        {
+          "type": 1,
+          "code": 14100130,
+          "amount": 70000
+        }
+      ],
+      "description": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">    A lovely tomboy, she likes sports and hates to be bounded. Every time I want to sneak up on her, she always get angry and kick me away with a fly feet!</font></p>",
+      "home_level_limit": 4,
+      "tofu_num": 10,
+      "tofu_cd": 12,
+      "tofu_award": [
+        {
+          "type": 3,
+          "code": 0,
+          "amount": 6
+        }
+      ],
+      "sprite_num": 19,
+      "normal_sprite_cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 1000
+        }
+      ],
+      "gold_sprite_cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 5
+        }
+      ],
+      "sprite_cd": 1
+    },
+    {
+      "id": 9,
+      "image_id": 4001004,
+      "level": 9,
+      "name": "Riro",
+      "level_up_article": [
+        {
+          "type": 1,
+          "code": 14100130,
+          "amount": 100000
+        }
+      ],
+      "description": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">    Likes to grumble and shout around. She also has a habit of kicking her master. She enjoys doughnuts and lovely things. When i give her dessert, she always show the lazy happy expression.</font></p>",
+      "home_level_limit": 5,
+      "tofu_num": 11,
+      "tofu_cd": 11,
+      "tofu_award": [
+        {
+          "type": 3,
+          "code": 0,
+          "amount": 6
+        }
+      ],
+      "sprite_num": 22,
+      "normal_sprite_cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 1000
+        }
+      ],
+      "gold_sprite_cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 5
+        }
+      ],
+      "sprite_cd": 1
+    },
+    {
+      "id": 10,
+      "image_id": 4001002,
+      "level": 10,
+      "name": "Kisa",
+      "level_up_article": [],
+      "description": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">    An adorable lolita with rabbit ears on her head. Like a little devil, she enjoys joking around and teasing others.</font></p>",
+      "home_level_limit": 5,
+      "tofu_num": 12,
+      "tofu_cd": 10,
+      "tofu_award": [
+        {
+          "type": 3,
+          "code": 0,
+          "amount": 6
+        }
+      ],
+      "sprite_num": 25,
+      "normal_sprite_cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 1000
+        }
+      ],
+      "gold_sprite_cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 5
+        }
+      ],
+      "sprite_cd": 1
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "table": "home_girl_awards",
+  "rowCount": 24,
+  "rows": [
+    {
+      "id": 1,
+      "title_level": 0,
+      "interactive_type": 1,
+      "cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "get_score": 2,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title_level": 1,
+      "interactive_type": 1,
+      "cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "get_score": 2,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title_level": 2,
+      "interactive_type": 1,
+      "cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "get_score": 2,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title_level": 3,
+      "interactive_type": 1,
+      "cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "get_score": 2,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title_level": 4,
+      "interactive_type": 1,
+      "cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "get_score": 2,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title_level": 5,
+      "interactive_type": 1,
+      "cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "get_score": 2,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title_level": 6,
+      "interactive_type": 1,
+      "cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "get_score": 2,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title_level": 7,
+      "interactive_type": 1,
+      "cost": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "get_score": 2,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title_level": 0,
+      "interactive_type": 2,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 9
+        }
+      ],
+      "get_score": 9,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title_level": 1,
+      "interactive_type": 2,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 9
+        }
+      ],
+      "get_score": 9,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title_level": 2,
+      "interactive_type": 2,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 9
+        }
+      ],
+      "get_score": 9,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 23
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title_level": 3,
+      "interactive_type": 2,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 9
+        }
+      ],
+      "get_score": 9,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 23
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title_level": 4,
+      "interactive_type": 2,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 9
+        }
+      ],
+      "get_score": 9,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 24
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title_level": 5,
+      "interactive_type": 2,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 9
+        }
+      ],
+      "get_score": 9,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 24
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title_level": 6,
+      "interactive_type": 2,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 9
+        }
+      ],
+      "get_score": 9,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title_level": 7,
+      "interactive_type": 2,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 9
+        }
+      ],
+      "get_score": 9,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 26
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title_level": 0,
+      "interactive_type": 3,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 99
+        }
+      ],
+      "get_score": 99,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 245
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title_level": 1,
+      "interactive_type": 3,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 99
+        }
+      ],
+      "get_score": 99,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 246
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title_level": 2,
+      "interactive_type": 3,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 99
+        }
+      ],
+      "get_score": 99,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 248
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title_level": 3,
+      "interactive_type": 3,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 99
+        }
+      ],
+      "get_score": 99,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 250
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title_level": 4,
+      "interactive_type": 3,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 99
+        }
+      ],
+      "get_score": 99,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 254
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title_level": 5,
+      "interactive_type": 3,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 99
+        }
+      ],
+      "get_score": 99,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 259
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title_level": 6,
+      "interactive_type": 3,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 99
+        }
+      ],
+      "get_score": 99,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 268
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title_level": 7,
+      "interactive_type": 3,
+      "cost": [
+        {
+          "type": 0,
+          "code": 1,
+          "amount": 99
+        }
+      ],
+      "get_score": 99,
+      "award": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 280
+        }
+      ]
+    }
+  ]
+}

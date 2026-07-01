@@ -1,0 +1,762 @@
+{
+  "table": "treasure_levelups",
+  "rowCount": 108,
+  "rows": [
+    {
+      "id": 14840009,
+      "level": 0,
+      "need_gold": 400,
+      "up_item": 14840013,
+      "up_level": 0
+    },
+    {
+      "id": 14840109,
+      "level": 1,
+      "need_gold": 400,
+      "up_item": 14840013,
+      "up_level": 0
+    },
+    {
+      "id": 14840209,
+      "level": 2,
+      "need_gold": 400,
+      "up_item": 14840013,
+      "up_level": 1
+    },
+    {
+      "id": 14840309,
+      "level": 3,
+      "need_gold": 400,
+      "up_item": 14840013,
+      "up_level": 2
+    },
+    {
+      "id": 14840409,
+      "level": 4,
+      "need_gold": 400,
+      "up_item": 14840013,
+      "up_level": 3
+    },
+    {
+      "id": 14840509,
+      "level": 5,
+      "need_gold": 400,
+      "up_item": 14840013,
+      "up_level": 4
+    },
+    {
+      "id": 14840609,
+      "level": 6,
+      "need_gold": 400,
+      "up_item": 14840013,
+      "up_level": 5
+    },
+    {
+      "id": 14840709,
+      "level": 7,
+      "need_gold": 400,
+      "up_item": 14840013,
+      "up_level": 6
+    },
+    {
+      "id": 14840809,
+      "level": 8,
+      "need_gold": 400,
+      "up_item": 14840013,
+      "up_level": 7
+    },
+    {
+      "id": 14840010,
+      "level": 0,
+      "need_gold": 400,
+      "up_item": 14840014,
+      "up_level": 0
+    },
+    {
+      "id": 14840110,
+      "level": 1,
+      "need_gold": 400,
+      "up_item": 14840014,
+      "up_level": 0
+    },
+    {
+      "id": 14840210,
+      "level": 2,
+      "need_gold": 400,
+      "up_item": 14840014,
+      "up_level": 1
+    },
+    {
+      "id": 14840310,
+      "level": 3,
+      "need_gold": 400,
+      "up_item": 14840014,
+      "up_level": 2
+    },
+    {
+      "id": 14840410,
+      "level": 4,
+      "need_gold": 400,
+      "up_item": 14840014,
+      "up_level": 3
+    },
+    {
+      "id": 14840510,
+      "level": 5,
+      "need_gold": 400,
+      "up_item": 14840014,
+      "up_level": 4
+    },
+    {
+      "id": 14840610,
+      "level": 6,
+      "need_gold": 400,
+      "up_item": 14840014,
+      "up_level": 5
+    },
+    {
+      "id": 14840710,
+      "level": 7,
+      "need_gold": 400,
+      "up_item": 14840014,
+      "up_level": 6
+    },
+    {
+      "id": 14840810,
+      "level": 8,
+      "need_gold": 400,
+      "up_item": 14840014,
+      "up_level": 7
+    },
+    {
+      "id": 14840011,
+      "level": 0,
+      "need_gold": 400,
+      "up_item": 14840015,
+      "up_level": 0
+    },
+    {
+      "id": 14840111,
+      "level": 1,
+      "need_gold": 400,
+      "up_item": 14840015,
+      "up_level": 0
+    },
+    {
+      "id": 14840211,
+      "level": 2,
+      "need_gold": 400,
+      "up_item": 14840015,
+      "up_level": 1
+    },
+    {
+      "id": 14840311,
+      "level": 3,
+      "need_gold": 400,
+      "up_item": 14840015,
+      "up_level": 2
+    },
+    {
+      "id": 14840411,
+      "level": 4,
+      "need_gold": 400,
+      "up_item": 14840015,
+      "up_level": 3
+    },
+    {
+      "id": 14840511,
+      "level": 5,
+      "need_gold": 400,
+      "up_item": 14840015,
+      "up_level": 4
+    },
+    {
+      "id": 14840611,
+      "level": 6,
+      "need_gold": 400,
+      "up_item": 14840015,
+      "up_level": 5
+    },
+    {
+      "id": 14840711,
+      "level": 7,
+      "need_gold": 400,
+      "up_item": 14840015,
+      "up_level": 6
+    },
+    {
+      "id": 14840811,
+      "level": 8,
+      "need_gold": 400,
+      "up_item": 14840015,
+      "up_level": 7
+    },
+    {
+      "id": 14840012,
+      "level": 0,
+      "need_gold": 400,
+      "up_item": 14840016,
+      "up_level": 0
+    },
+    {
+      "id": 14840112,
+      "level": 1,
+      "need_gold": 400,
+      "up_item": 14840016,
+      "up_level": 0
+    },
+    {
+      "id": 14840212,
+      "level": 2,
+      "need_gold": 400,
+      "up_item": 14840016,
+      "up_level": 1
+    },
+    {
+      "id": 14840312,
+      "level": 3,
+      "need_gold": 400,
+      "up_item": 14840016,
+      "up_level": 2
+    },
+    {
+      "id": 14840412,
+      "level": 4,
+      "need_gold": 400,
+      "up_item": 14840016,
+      "up_level": 3
+    },
+    {
+      "id": 14840512,
+      "level": 5,
+      "need_gold": 400,
+      "up_item": 14840016,
+      "up_level": 4
+    },
+    {
+      "id": 14840612,
+      "level": 6,
+      "need_gold": 400,
+      "up_item": 14840016,
+      "up_level": 5
+    },
+    {
+      "id": 14840712,
+      "level": 7,
+      "need_gold": 400,
+      "up_item": 14840016,
+      "up_level": 6
+    },
+    {
+      "id": 14840812,
+      "level": 8,
+      "need_gold": 400,
+      "up_item": 14840016,
+      "up_level": 7
+    },
+    {
+      "id": 14840013,
+      "level": 0,
+      "need_gold": 600,
+      "up_item": 14840017,
+      "up_level": 0
+    },
+    {
+      "id": 14840113,
+      "level": 1,
+      "need_gold": 600,
+      "up_item": 14840017,
+      "up_level": 0
+    },
+    {
+      "id": 14840213,
+      "level": 2,
+      "need_gold": 600,
+      "up_item": 14840017,
+      "up_level": 1
+    },
+    {
+      "id": 14840313,
+      "level": 3,
+      "need_gold": 600,
+      "up_item": 14840017,
+      "up_level": 2
+    },
+    {
+      "id": 14840413,
+      "level": 4,
+      "need_gold": 600,
+      "up_item": 14840017,
+      "up_level": 3
+    },
+    {
+      "id": 14840513,
+      "level": 5,
+      "need_gold": 600,
+      "up_item": 14840017,
+      "up_level": 4
+    },
+    {
+      "id": 14840613,
+      "level": 6,
+      "need_gold": 600,
+      "up_item": 14840017,
+      "up_level": 5
+    },
+    {
+      "id": 14840713,
+      "level": 7,
+      "need_gold": 600,
+      "up_item": 14840017,
+      "up_level": 6
+    },
+    {
+      "id": 14840813,
+      "level": 8,
+      "need_gold": 600,
+      "up_item": 14840017,
+      "up_level": 7
+    },
+    {
+      "id": 14840913,
+      "level": 9,
+      "need_gold": 600,
+      "up_item": 14840017,
+      "up_level": 8
+    },
+    {
+      "id": 14840014,
+      "level": 0,
+      "need_gold": 600,
+      "up_item": 14840018,
+      "up_level": 0
+    },
+    {
+      "id": 14840114,
+      "level": 1,
+      "need_gold": 600,
+      "up_item": 14840018,
+      "up_level": 0
+    },
+    {
+      "id": 14840214,
+      "level": 2,
+      "need_gold": 600,
+      "up_item": 14840018,
+      "up_level": 1
+    },
+    {
+      "id": 14840314,
+      "level": 3,
+      "need_gold": 600,
+      "up_item": 14840018,
+      "up_level": 2
+    },
+    {
+      "id": 14840414,
+      "level": 4,
+      "need_gold": 600,
+      "up_item": 14840018,
+      "up_level": 3
+    },
+    {
+      "id": 14840514,
+      "level": 5,
+      "need_gold": 600,
+      "up_item": 14840018,
+      "up_level": 4
+    },
+    {
+      "id": 14840614,
+      "level": 6,
+      "need_gold": 600,
+      "up_item": 14840018,
+      "up_level": 5
+    },
+    {
+      "id": 14840714,
+      "level": 7,
+      "need_gold": 600,
+      "up_item": 14840018,
+      "up_level": 6
+    },
+    {
+      "id": 14840814,
+      "level": 8,
+      "need_gold": 600,
+      "up_item": 14840018,
+      "up_level": 7
+    },
+    {
+      "id": 14840914,
+      "level": 9,
+      "need_gold": 600,
+      "up_item": 14840018,
+      "up_level": 8
+    },
+    {
+      "id": 14840015,
+      "level": 0,
+      "need_gold": 600,
+      "up_item": 14840019,
+      "up_level": 0
+    },
+    {
+      "id": 14840115,
+      "level": 1,
+      "need_gold": 600,
+      "up_item": 14840019,
+      "up_level": 0
+    },
+    {
+      "id": 14840215,
+      "level": 2,
+      "need_gold": 600,
+      "up_item": 14840019,
+      "up_level": 1
+    },
+    {
+      "id": 14840315,
+      "level": 3,
+      "need_gold": 600,
+      "up_item": 14840019,
+      "up_level": 2
+    },
+    {
+      "id": 14840415,
+      "level": 4,
+      "need_gold": 600,
+      "up_item": 14840019,
+      "up_level": 3
+    },
+    {
+      "id": 14840515,
+      "level": 5,
+      "need_gold": 600,
+      "up_item": 14840019,
+      "up_level": 4
+    },
+    {
+      "id": 14840615,
+      "level": 6,
+      "need_gold": 600,
+      "up_item": 14840019,
+      "up_level": 5
+    },
+    {
+      "id": 14840715,
+      "level": 7,
+      "need_gold": 600,
+      "up_item": 14840019,
+      "up_level": 6
+    },
+    {
+      "id": 14840815,
+      "level": 8,
+      "need_gold": 600,
+      "up_item": 14840019,
+      "up_level": 7
+    },
+    {
+      "id": 14840915,
+      "level": 9,
+      "need_gold": 600,
+      "up_item": 14840019,
+      "up_level": 8
+    },
+    {
+      "id": 14840016,
+      "level": 0,
+      "need_gold": 600,
+      "up_item": 14840020,
+      "up_level": 0
+    },
+    {
+      "id": 14840116,
+      "level": 1,
+      "need_gold": 600,
+      "up_item": 14840020,
+      "up_level": 0
+    },
+    {
+      "id": 14840216,
+      "level": 2,
+      "need_gold": 600,
+      "up_item": 14840020,
+      "up_level": 1
+    },
+    {
+      "id": 14840316,
+      "level": 3,
+      "need_gold": 600,
+      "up_item": 14840020,
+      "up_level": 2
+    },
+    {
+      "id": 14840416,
+      "level": 4,
+      "need_gold": 600,
+      "up_item": 14840020,
+      "up_level": 3
+    },
+    {
+      "id": 14840516,
+      "level": 5,
+      "need_gold": 600,
+      "up_item": 14840020,
+      "up_level": 4
+    },
+    {
+      "id": 14840616,
+      "level": 6,
+      "need_gold": 600,
+      "up_item": 14840020,
+      "up_level": 5
+    },
+    {
+      "id": 14840716,
+      "level": 7,
+      "need_gold": 600,
+      "up_item": 14840020,
+      "up_level": 6
+    },
+    {
+      "id": 14840816,
+      "level": 8,
+      "need_gold": 600,
+      "up_item": 14840020,
+      "up_level": 7
+    },
+    {
+      "id": 14840916,
+      "level": 9,
+      "need_gold": 600,
+      "up_item": 14840020,
+      "up_level": 8
+    },
+    {
+      "id": 14841017,
+      "level": 10,
+      "need_gold": 300,
+      "up_item": 14840021,
+      "up_level": 8
+    },
+    {
+      "id": 14841018,
+      "level": 10,
+      "need_gold": 300,
+      "up_item": 14840022,
+      "up_level": 8
+    },
+    {
+      "id": 14841019,
+      "level": 10,
+      "need_gold": 300,
+      "up_item": 14840023,
+      "up_level": 8
+    },
+    {
+      "id": 14841020,
+      "level": 10,
+      "need_gold": 300,
+      "up_item": 14840024,
+      "up_level": 8
+    },
+    {
+      "id": 14841021,
+      "level": 10,
+      "need_gold": 600,
+      "up_item": 14840025,
+      "up_level": 8
+    },
+    {
+      "id": 14841022,
+      "level": 10,
+      "need_gold": 600,
+      "up_item": 14840026,
+      "up_level": 8
+    },
+    {
+      "id": 14841023,
+      "level": 10,
+      "need_gold": 600,
+      "up_item": 14840027,
+      "up_level": 8
+    },
+    {
+      "id": 14841024,
+      "level": 10,
+      "need_gold": 600,
+      "up_item": 14840028,
+      "up_level": 8
+    },
+    {
+      "id": 14841025,
+      "level": 10,
+      "need_gold": 1000,
+      "up_item": 14840029,
+      "up_level": 8
+    },
+    {
+      "id": 14841026,
+      "level": 10,
+      "need_gold": 1000,
+      "up_item": 14840030,
+      "up_level": 8
+    },
+    {
+      "id": 14841027,
+      "level": 10,
+      "need_gold": 1000,
+      "up_item": 14840031,
+      "up_level": 8
+    },
+    {
+      "id": 14841028,
+      "level": 10,
+      "need_gold": 1000,
+      "up_item": 14840032,
+      "up_level": 8
+    },
+    {
+      "id": 14841029,
+      "level": 10,
+      "need_gold": 1400,
+      "up_item": 14840033,
+      "up_level": 8
+    },
+    {
+      "id": 14841030,
+      "level": 10,
+      "need_gold": 1400,
+      "up_item": 14840034,
+      "up_level": 8
+    },
+    {
+      "id": 14841031,
+      "level": 10,
+      "need_gold": 1400,
+      "up_item": 14840035,
+      "up_level": 8
+    },
+    {
+      "id": 14841032,
+      "level": 10,
+      "need_gold": 1400,
+      "up_item": 14840036,
+      "up_level": 8
+    },
+    {
+      "id": 14841033,
+      "level": 10,
+      "need_gold": 2000,
+      "up_item": 14840037,
+      "up_level": 8
+    },
+    {
+      "id": 14841034,
+      "level": 10,
+      "need_gold": 2000,
+      "up_item": 14840038,
+      "up_level": 8
+    },
+    {
+      "id": 14841035,
+      "level": 10,
+      "need_gold": 2000,
+      "up_item": 14840039,
+      "up_level": 8
+    },
+    {
+      "id": 14841036,
+      "level": 10,
+      "need_gold": 2000,
+      "up_item": 14840040,
+      "up_level": 8
+    },
+    {
+      "id": 14841037,
+      "level": 10,
+      "need_gold": 3000,
+      "up_item": 14840041,
+      "up_level": 8
+    },
+    {
+      "id": 14841038,
+      "level": 10,
+      "need_gold": 3000,
+      "up_item": 14840042,
+      "up_level": 8
+    },
+    {
+      "id": 14841039,
+      "level": 10,
+      "need_gold": 3000,
+      "up_item": 14840043,
+      "up_level": 8
+    },
+    {
+      "id": 14841040,
+      "level": 10,
+      "need_gold": 3000,
+      "up_item": 14840044,
+      "up_level": 8
+    },
+    {
+      "id": 14841041,
+      "level": 10,
+      "need_gold": 4000,
+      "up_item": 14840045,
+      "up_level": 8
+    },
+    {
+      "id": 14841042,
+      "level": 10,
+      "need_gold": 4000,
+      "up_item": 14840046,
+      "up_level": 8
+    },
+    {
+      "id": 14841043,
+      "level": 10,
+      "need_gold": 4000,
+      "up_item": 14840047,
+      "up_level": 8
+    },
+    {
+      "id": 14841044,
+      "level": 10,
+      "need_gold": 4000,
+      "up_item": 14840048,
+      "up_level": 8
+    },
+    {
+      "id": 14841045,
+      "level": 10,
+      "need_gold": 3500,
+      "up_item": 14840049,
+      "up_level": 8
+    },
+    {
+      "id": 14841046,
+      "level": 10,
+      "need_gold": 3500,
+      "up_item": 14840050,
+      "up_level": 8
+    },
+    {
+      "id": 14841047,
+      "level": 10,
+      "need_gold": 3500,
+      "up_item": 14840051,
+      "up_level": 8
+    },
+    {
+      "id": 14841048,
+      "level": 10,
+      "need_gold": 3500,
+      "up_item": 14840052,
+      "up_level": 8
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "table": "vice_pet_makes",
+  "rowCount": 21,
+  "rows": [
+    {
+      "id": 1201,
+      "consume": [
+        14100411,
+        60
+      ],
+      "need_silver": 500000,
+      "pathway": "Can be obtained from events."
+    },
+    {
+      "id": 1202,
+      "consume": [
+        14100412,
+        60
+      ],
+      "need_silver": 500000,
+      "pathway": "Can be obtained from events."
+    },
+    {
+      "id": 1203,
+      "consume": [
+        14100413,
+        60
+      ],
+      "need_silver": 500000,
+      "pathway": "Daily task points reward"
+    },
+    {
+      "id": 1204,
+      "consume": [
+        14100414,
+        60
+      ],
+      "need_silver": 500000,
+      "pathway": "Can be obtained from events."
+    },
+    {
+      "id": 1205,
+      "consume": [
+        14100415,
+        60
+      ],
+      "need_silver": 500000,
+      "pathway": "Can be obtained in Events"
+    },
+    {
+      "id": 1207,
+      "consume": [
+        14100429,
+        60
+      ],
+      "need_silver": 200000,
+      "pathway": "Can only be obtained in events"
+    },
+    {
+      "id": 1208,
+      "consume": [
+        14100430,
+        20
+      ],
+      "need_silver": 10000,
+      "pathway": "Lv. 30 and 50 instance loots"
+    },
+    {
+      "id": 1209,
+      "consume": [
+        14100431,
+        20
+      ],
+      "need_silver": 200000,
+      "pathway": "Lv. 70 and 80 instance loots"
+    },
+    {
+      "id": 1210,
+      "consume": [
+        14100432,
+        60
+      ],
+      "need_silver": 500000,
+      "pathway": "Can be obtained in events."
+    },
+    {
+      "id": 1211,
+      "consume": [
+        14100433,
+        60
+      ],
+      "need_silver": 500000,
+      "pathway": "Can be obtained in events."
+    },
+    {
+      "id": 1212,
+      "consume": [
+        14100434,
+        20
+      ],
+      "need_silver": 200000,
+      "pathway": "Daily task points reward"
+    },
+    {
+      "id": 1213,
+      "consume": [
+        14120009,
+        60
+      ],
+      "need_silver": 500000,
+      "pathway": "Can be obtained from events."
+    },
+    {
+      "id": 1214,
+      "consume": [
+        14100436,
+        60
+      ],
+      "need_silver": 500000,
+      "pathway": "Can be obtained in New Year Event"
+    },
+    {
+      "id": 1215,
+      "consume": [
+        14100437,
+        40
+      ],
+      "need_silver": 200000,
+      "pathway": "Lv. 90 and 100 instance loots"
+    },
+    {
+      "id": 1216,
+      "consume": [
+        14100438,
+        40
+      ],
+      "need_silver": 200000,
+      "pathway": "Daily task points reward"
+    },
+    {
+      "id": 1217,
+      "consume": [
+        14100439,
+        40
+      ],
+      "need_silver": 200000,
+      "pathway": "Lv. 110 and above instances loots"
+    },
+    {
+      "id": 1218,
+      "consume": [
+        14120002,
+        60
+      ],
+      "need_silver": 200000,
+      "pathway": "Can be obtained in events."
+    },
+    {
+      "id": 1219,
+      "consume": [
+        14120004,
+        60
+      ],
+      "need_silver": 200000,
+      "pathway": "Can be obtained in events."
+    },
+    {
+      "id": 1220,
+      "consume": [
+        14120006,
+        60
+      ],
+      "need_silver": 200000,
+      "pathway": "Activate Monthly Card"
+    },
+    {
+      "id": 1221,
+      "consume": [
+        14120007,
+        60
+      ],
+      "need_silver": 200000,
+      "pathway": "Can be obtained in events."
+    },
+    {
+      "id": 1222,
+      "consume": [
+        14120010,
+        60
+      ],
+      "need_silver": 500000,
+      "pathway": "Can be obtained from events."
+    }
+  ]
+}

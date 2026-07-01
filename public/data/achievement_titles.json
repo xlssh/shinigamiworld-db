@@ -1,0 +1,1962 @@
+{
+  "table": "achievement_titles",
+  "rowCount": 78,
+  "rows": [
+    {
+      "id": 6003001,
+      "name": "Quincy's Enemy",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 2,
+      "add_other_array": [
+        {
+          "type": 23,
+          "value": 0.005
+        },
+        {
+          "type": 25,
+          "value": 0.005
+        }
+      ]
+    },
+    {
+      "id": 6003002,
+      "name": "Gotei 12th Devision Lieutenant",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 30,
+          "value": 0.005
+        },
+        {
+          "type": 24,
+          "value": 0.005
+        }
+      ]
+    },
+    {
+      "id": 6003003,
+      "name": "Shikai's Soul",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 30,
+          "value": 0.005
+        },
+        {
+          "type": 24,
+          "value": 0.005
+        },
+        {
+          "type": 22,
+          "value": 0.005
+        }
+      ]
+    },
+    {
+      "id": 6003004,
+      "name": "Gotei 10th Division Captain",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 4,
+      "add_other_array": [
+        {
+          "type": 22,
+          "value": 0.005
+        },
+        {
+          "type": 11,
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": 6003005,
+      "name": "Preliminary Learner",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 2,
+      "add_other_array": [
+        {
+          "type": 17,
+          "value": 30
+        },
+        {
+          "type": 21,
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": 6003006,
+      "name": "Upgrade Shinigami",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 200
+        },
+        {
+          "type": 20,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": 6003007,
+      "name": "Instance Annihilator",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 50
+        },
+        {
+          "type": 20,
+          "value": 50
+        },
+        {
+          "type": 17,
+          "value": 50
+        },
+        {
+          "type": 21,
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 6003008,
+      "name": "Crazy Explorer",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 160
+        },
+        {
+          "type": 20,
+          "value": 160
+        },
+        {
+          "type": 17,
+          "value": 160
+        },
+        {
+          "type": 21,
+          "value": 160
+        }
+      ]
+    },
+    {
+      "id": 6003009,
+      "name": "Ryoka Killer",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 22,
+          "value": 0.005
+        },
+        {
+          "type": 25,
+          "value": 0.005
+        },
+        {
+          "type": 30,
+          "value": 0.005
+        },
+        {
+          "type": 24,
+          "value": 0.005
+        }
+      ]
+    },
+    {
+      "id": 6003010,
+      "name": "Guild Hero",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 2,
+      "add_other_array": [
+        {
+          "type": 31,
+          "value": 0.01
+        },
+        {
+          "type": 101,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": 6003011,
+      "name": "Evil Spirit's Nightmare",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 25,
+          "value": 0.02
+        },
+        {
+          "type": 24,
+          "value": 0.02
+        },
+        {
+          "type": 16,
+          "value": 100
+        },
+        {
+          "type": 20,
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 6003012,
+      "name": "Nightmare Crusader",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 25,
+          "value": 0.03
+        },
+        {
+          "type": 24,
+          "value": 0.03
+        },
+        {
+          "type": 16,
+          "value": 300
+        },
+        {
+          "type": 20,
+          "value": 300
+        }
+      ]
+    },
+    {
+      "id": 6003013,
+      "name": "Super Powerful Guild",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 2,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 50
+        },
+        {
+          "type": 20,
+          "value": 50
+        },
+        {
+          "type": 101,
+          "value": 200
+        },
+        {
+          "type": 25,
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": 6003014,
+      "name": "Battle's Soul",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 25,
+          "value": 0.01
+        },
+        {
+          "type": 24,
+          "value": 0.01
+        },
+        {
+          "type": 16,
+          "value": 100
+        },
+        {
+          "type": 20,
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 6003015,
+      "name": "Soul Hunter",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 2,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 100
+        },
+        {
+          "type": 20,
+          "value": 100
+        },
+        {
+          "type": 101,
+          "value": 300
+        },
+        {
+          "type": 25,
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "id": 6003016,
+      "name": "God-like Plunderer",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 50
+        },
+        {
+          "type": 20,
+          "value": 50
+        },
+        {
+          "type": 17,
+          "value": 50
+        },
+        {
+          "type": 21,
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 6003017,
+      "name": "Happy Competitor",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 4,
+      "add_other_array": [
+        {
+          "type": 24,
+          "value": 0.02
+        },
+        {
+          "type": 11,
+          "value": 50
+        },
+        {
+          "type": 22,
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "id": 6003018,
+      "name": "Competitive Soul",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 100
+        },
+        {
+          "type": 20,
+          "value": 100
+        },
+        {
+          "type": 11,
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 6003019,
+      "name": "Legend of the Wealthy",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.01
+        },
+        {
+          "type": 16,
+          "value": 200
+        },
+        {
+          "type": 20,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": 6003020,
+      "name": "Excellent Girlfriend",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 25,
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": 6003021,
+      "name": "Lucky Gambler",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 4,
+      "add_other_array": [
+        {
+          "type": 30,
+          "value": 0.005
+        },
+        {
+          "type": 11,
+          "value": 20
+        },
+        {
+          "type": 24,
+          "value": 0.005
+        },
+        {
+          "type": 22,
+          "value": 0.005
+        }
+      ]
+    },
+    {
+      "id": 6003022,
+      "name": "Summoning Messenger",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 4,
+      "add_other_array": [
+        {
+          "type": 11,
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 6003023,
+      "name": "Spiritual Jigokuch\u014d",
+      "level_title": 1,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 4,
+      "add_other_array": [
+        {
+          "type": 11,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": 6003024,
+      "name": "Crazy Shinigami",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.02
+        },
+        {
+          "type": 16,
+          "value": 200
+        },
+        {
+          "type": 20,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": 6003025,
+      "name": "Legendary Shinigami",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.03
+        },
+        {
+          "type": 16,
+          "value": 400
+        },
+        {
+          "type": 20,
+          "value": 400
+        }
+      ]
+    },
+    {
+      "id": 6003026,
+      "name": "Legendary Billionaire",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 2,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 150
+        },
+        {
+          "type": 20,
+          "value": 150
+        },
+        {
+          "type": 101,
+          "value": 300
+        },
+        {
+          "type": 25,
+          "value": 0.03
+        }
+      ]
+    },
+    {
+      "id": 6003027,
+      "name": "I'm Showing-off My Money",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 11,
+          "value": 50
+        },
+        {
+          "type": 22,
+          "value": 0.01
+        },
+        {
+          "type": 24,
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": 6003028,
+      "name": "The Four Noble Family",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 2,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.02
+        },
+        {
+          "type": 101,
+          "value": 400
+        }
+      ]
+    },
+    {
+      "id": 6003029,
+      "name": "Royal Family with Gold Treasury",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.03
+        },
+        {
+          "type": 16,
+          "value": 200
+        },
+        {
+          "type": 20,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": 6003030,
+      "name": "Soul King Royalty",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.03
+        },
+        {
+          "type": 16,
+          "value": 100
+        },
+        {
+          "type": 20,
+          "value": 100
+        },
+        {
+          "type": 11,
+          "value": 150
+        }
+      ]
+    },
+    {
+      "id": 6003031,
+      "name": "Abnormal Reiatsu",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 2,
+      "add_other_array": [
+        {
+          "type": 25,
+          "value": 0.04
+        },
+        {
+          "type": 22,
+          "value": 0.04
+        },
+        {
+          "type": 23,
+          "value": 0.04
+        },
+        {
+          "type": 31,
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": 6003032,
+      "name": "Stand on the Sky",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.04
+        },
+        {
+          "type": 16,
+          "value": 200
+        },
+        {
+          "type": 20,
+          "value": 200
+        },
+        {
+          "type": 11,
+          "value": 300
+        }
+      ]
+    },
+    {
+      "id": 6003033,
+      "name": "Legendary Warrior",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 100
+        },
+        {
+          "type": 20,
+          "value": 100
+        },
+        {
+          "type": 11,
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 6003034,
+      "name": "King without a Crown",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.01
+        },
+        {
+          "type": 16,
+          "value": 200
+        },
+        {
+          "type": 20,
+          "value": 200
+        },
+        {
+          "type": 11,
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 6003035,
+      "name": "Triple Crown Champion",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 24,
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": 6003036,
+      "name": "Evil Spirit Sneak Attacker",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 25,
+          "value": 0.03
+        },
+        {
+          "type": 24,
+          "value": 0.03
+        },
+        {
+          "type": 16,
+          "value": 200
+        },
+        {
+          "type": 20,
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": 6003037,
+      "name": "Eagle Eye Raider",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 22,
+          "value": 0.2
+        },
+        {
+          "type": 30,
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": 6003038,
+      "name": "Super Destroyer",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 24,
+          "value": 0.02
+        },
+        {
+          "type": 16,
+          "value": 100
+        },
+        {
+          "type": 20,
+          "value": 100
+        },
+        {
+          "type": 22,
+          "value": 0.03
+        }
+      ]
+    },
+    {
+      "id": 6003039,
+      "name": "Forever Number 1",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 24,
+          "value": 0.03
+        },
+        {
+          "type": 16,
+          "value": 200
+        },
+        {
+          "type": 20,
+          "value": 200
+        },
+        {
+          "type": 22,
+          "value": 0.03
+        }
+      ]
+    },
+    {
+      "id": 6003040,
+      "name": "Bloody Romance",
+      "level_title": 2,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 101,
+          "value": 3000
+        }
+      ]
+    },
+    {
+      "id": 6003041,
+      "name": "Shining Light",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 101,
+          "value": 5000
+        }
+      ]
+    },
+    {
+      "id": 6003042,
+      "name": "Extreme Battle Power",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 25,
+          "value": 0.05
+        },
+        {
+          "type": 24,
+          "value": 0.05
+        },
+        {
+          "type": 16,
+          "value": 300
+        },
+        {
+          "type": 20,
+          "value": 300
+        }
+      ]
+    },
+    {
+      "id": 6003043,
+      "name": "Evil Spirit King",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 24,
+          "value": 0.05
+        },
+        {
+          "type": 16,
+          "value": 300
+        },
+        {
+          "type": 20,
+          "value": 300
+        },
+        {
+          "type": 22,
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": 6003044,
+      "name": "Special Effects King",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 4,
+      "add_other_array": [
+        {
+          "type": 11,
+          "value": 350
+        },
+        {
+          "type": 28,
+          "value": 0.03
+        }
+      ]
+    },
+    {
+      "id": 6003045,
+      "name": "God of the Dawn",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.04
+        },
+        {
+          "type": 16,
+          "value": 700
+        },
+        {
+          "type": 20,
+          "value": 700
+        }
+      ]
+    },
+    {
+      "id": 6003046,
+      "name": "Spirit Stone King",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.05
+        },
+        {
+          "type": 11,
+          "value": 2000
+        }
+      ]
+    },
+    {
+      "id": 6003047,
+      "name": "Ghost King Mugetsu",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 1000
+        },
+        {
+          "type": 20,
+          "value": 1000
+        },
+        {
+          "type": 17,
+          "value": 1000
+        },
+        {
+          "type": 21,
+          "value": 1000
+        }
+      ]
+    },
+    {
+      "id": 6003048,
+      "name": "King of Hueco Mundo",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 3,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.04
+        },
+        {
+          "type": 16,
+          "value": 800
+        },
+        {
+          "type": 20,
+          "value": 800
+        }
+      ]
+    },
+    {
+      "id": 6003049,
+      "name": "\u014cetsu Nimaiya",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 1500
+        },
+        {
+          "type": 20,
+          "value": 1500
+        }
+      ]
+    },
+    {
+      "id": 6003050,
+      "name": "Shining Soul",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 28,
+          "value": 0.05
+        },
+        {
+          "type": 11,
+          "value": 1200
+        },
+        {
+          "type": 16,
+          "value": 1000
+        },
+        {
+          "type": 20,
+          "value": 1000
+        }
+      ]
+    },
+    {
+      "id": 6003051,
+      "name": "Ultimate Twin Team",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 2,
+      "add_other_array": [
+        {
+          "type": 25,
+          "value": 0.04
+        },
+        {
+          "type": 23,
+          "value": 0.04
+        },
+        {
+          "type": 31,
+          "value": 0.04
+        },
+        {
+          "type": 101,
+          "value": 1000
+        }
+      ]
+    },
+    {
+      "id": 6003052,
+      "name": "Epic * Immortal King",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 0,
+      "val_time_limit": 0,
+      "formation_type": 4,
+      "add_other_array": [
+        {
+          "type": 11,
+          "value": 400
+        },
+        {
+          "type": 24,
+          "value": 0.05
+        },
+        {
+          "type": 30,
+          "value": 0.05
+        },
+        {
+          "type": 22,
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": 6003053,
+      "name": "Leaping Fish",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 2000
+        },
+        {
+          "type": 20,
+          "value": 2000
+        },
+        {
+          "type": 11,
+          "value": 2000
+        },
+        {
+          "type": 28,
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": 6003054,
+      "name": "Fish Every Year",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 1200
+        },
+        {
+          "type": 20,
+          "value": 1200
+        },
+        {
+          "type": 11,
+          "value": 1200
+        },
+        {
+          "type": 28,
+          "value": 0.03
+        }
+      ]
+    },
+    {
+      "id": 6003055,
+      "name": "Fish in Water",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 600
+        },
+        {
+          "type": 20,
+          "value": 600
+        },
+        {
+          "type": 11,
+          "value": 600
+        },
+        {
+          "type": 28,
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "id": 6003056,
+      "name": "Ultimate Ice",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 2200
+        },
+        {
+          "type": 20,
+          "value": 2200
+        },
+        {
+          "type": 11,
+          "value": 2200
+        },
+        {
+          "type": 28,
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": 6003057,
+      "name": "Absolute Zero",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 1400
+        },
+        {
+          "type": 20,
+          "value": 1400
+        },
+        {
+          "type": 11,
+          "value": 1400
+        },
+        {
+          "type": 28,
+          "value": 0.03
+        }
+      ]
+    },
+    {
+      "id": 6003058,
+      "name": "King of Ice Realm",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 700
+        },
+        {
+          "type": 20,
+          "value": 700
+        },
+        {
+          "type": 11,
+          "value": 700
+        },
+        {
+          "type": 28,
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "id": 6003059,
+      "name": "Division Elite",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 350
+        },
+        {
+          "type": 20,
+          "value": 350
+        },
+        {
+          "type": 17,
+          "value": 350
+        },
+        {
+          "type": 21,
+          "value": 350
+        }
+      ]
+    },
+    {
+      "id": 6003060,
+      "name": "Gotei Shiled",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 500
+        },
+        {
+          "type": 20,
+          "value": 500
+        },
+        {
+          "type": 17,
+          "value": 500
+        },
+        {
+          "type": 21,
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": 6003061,
+      "name": "Division Captain",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 700
+        },
+        {
+          "type": 20,
+          "value": 700
+        },
+        {
+          "type": 17,
+          "value": 700
+        },
+        {
+          "type": 21,
+          "value": 700
+        }
+      ]
+    },
+    {
+      "id": 6003062,
+      "name": "Peak Shinigami",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 1000
+        },
+        {
+          "type": 20,
+          "value": 1000
+        },
+        {
+          "type": 17,
+          "value": 1000
+        },
+        {
+          "type": 21,
+          "value": 1000
+        }
+      ]
+    },
+    {
+      "id": 6003063,
+      "name": "Kenpachi",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 2200
+        },
+        {
+          "type": 20,
+          "value": 2200
+        },
+        {
+          "type": 11,
+          "value": 2200
+        },
+        {
+          "type": 28,
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": 6003064,
+      "name": "Best Combination",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 2500
+        },
+        {
+          "type": 20,
+          "value": 2500
+        },
+        {
+          "type": 11,
+          "value": 2300
+        },
+        {
+          "type": 28,
+          "value": 0.07
+        }
+      ]
+    },
+    {
+      "id": 6003065,
+      "name": "Halloween Ghost",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 700
+        },
+        {
+          "type": 20,
+          "value": 700
+        },
+        {
+          "type": 11,
+          "value": 700
+        },
+        {
+          "type": 28,
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "id": 6003066,
+      "name": "Pumpkin Ghost",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 1400
+        },
+        {
+          "type": 20,
+          "value": 1400
+        },
+        {
+          "type": 11,
+          "value": 1400
+        },
+        {
+          "type": 28,
+          "value": 0.03
+        }
+      ]
+    },
+    {
+      "id": 6003067,
+      "name": "Halloween Soul",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 2200
+        },
+        {
+          "type": 20,
+          "value": 2200
+        },
+        {
+          "type": 11,
+          "value": 2200
+        },
+        {
+          "type": 28,
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": 6003068,
+      "name": "Lighting Emissary",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 700
+        },
+        {
+          "type": 20,
+          "value": 700
+        },
+        {
+          "type": 11,
+          "value": 700
+        },
+        {
+          "type": 28,
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "id": 6003069,
+      "name": "Light\u00a0of\u00a0Fireflies",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 1400
+        },
+        {
+          "type": 20,
+          "value": 1400
+        },
+        {
+          "type": 11,
+          "value": 1400
+        },
+        {
+          "type": 28,
+          "value": 0.03
+        }
+      ]
+    },
+    {
+      "id": 6003070,
+      "name": "Lantern\u00a0God",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 2200
+        },
+        {
+          "type": 20,
+          "value": 2200
+        },
+        {
+          "type": 11,
+          "value": 2200
+        },
+        {
+          "type": 28,
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": 6003071,
+      "name": "Yoruichi",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 2800
+        },
+        {
+          "type": 20,
+          "value": 2800
+        },
+        {
+          "type": 11,
+          "value": 2800
+        },
+        {
+          "type": 28,
+          "value": 0.07
+        }
+      ]
+    },
+    {
+      "id": 6003073,
+      "name": "Shinigami",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 11,
+          "value": 4000
+        },
+        {
+          "type": 101,
+          "value": 6000
+        }
+      ]
+    },
+    {
+      "id": 6003074,
+      "name": "Shinigami Agent",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 11,
+          "value": 1000
+        },
+        {
+          "type": 101,
+          "value": 2500
+        }
+      ]
+    },
+    {
+      "id": 6003075,
+      "name": "Angel's Bell",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 17,
+          "value": 2500
+        },
+        {
+          "type": 21,
+          "value": 2500
+        },
+        {
+          "type": 28,
+          "value": 0.07
+        },
+        {
+          "type": 29,
+          "value": 0.07
+        }
+      ]
+    },
+    {
+      "id": 6003076,
+      "name": "God Settlement",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 11,
+          "value": 4000
+        },
+        {
+          "type": 28,
+          "value": 0.08
+        }
+      ]
+    },
+    {
+      "id": 6003077,
+      "name": "Golden Pig  Arrival",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 600
+        },
+        {
+          "type": 20,
+          "value": 600
+        },
+        {
+          "type": 11,
+          "value": 600
+        },
+        {
+          "type": 28,
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "id": 6003078,
+      "name": "Family Reunion",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 2000
+        },
+        {
+          "type": 20,
+          "value": 2000
+        },
+        {
+          "type": 11,
+          "value": 2000
+        },
+        {
+          "type": 28,
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": 6003079,
+      "name": "bleach Carnival",
+      "level_title": 3,
+      "not_or_prop": 1,
+      "title_type_group": 1,
+      "time_limit_not": 1,
+      "val_time_limit": 2592000,
+      "formation_type": 1,
+      "add_other_array": [
+        {
+          "type": 16,
+          "value": 4000
+        },
+        {
+          "type": 20,
+          "value": 4000
+        },
+        {
+          "type": 11,
+          "value": 4000
+        },
+        {
+          "type": 28,
+          "value": 0.05
+        }
+      ]
+    }
+  ]
+}

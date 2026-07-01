@@ -1,0 +1,4633 @@
+{
+  "table": "wake_up_equips",
+  "rowCount": 160,
+  "rows": [
+    {
+      "id": 14150001,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 16,
+          "value": 200
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400001,
+          "pointID": 16000001
+        },
+        {
+          "cityID": 15400002,
+          "pointID": 16000101
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000201
+        }
+      ]
+    },
+    {
+      "id": 14150002,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 17,
+          "value": 160
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400001,
+          "pointID": 16000002
+        },
+        {
+          "cityID": 15400002,
+          "pointID": 16000102
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000202
+        }
+      ]
+    },
+    {
+      "id": 14150003,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 20,
+          "value": 200
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400001,
+          "pointID": 16000003
+        },
+        {
+          "cityID": 15400002,
+          "pointID": 16000103
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000203
+        }
+      ]
+    },
+    {
+      "id": 14150004,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 21,
+          "value": 160
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400001,
+          "pointID": 16000004
+        },
+        {
+          "cityID": 15400002,
+          "pointID": 16000104
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000204
+        }
+      ]
+    },
+    {
+      "id": 14150005,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 101,
+          "value": 1250
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400001,
+          "pointID": 16000005
+        },
+        {
+          "cityID": 15400002,
+          "pointID": 16000105
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000205
+        }
+      ]
+    },
+    {
+      "id": 14150006,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 27,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400001,
+          "pointID": 16000006
+        },
+        {
+          "cityID": 15400002,
+          "pointID": 16000106
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000206
+        }
+      ]
+    },
+    {
+      "id": 14150007,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 23,
+          "value": 0.003
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400001,
+          "pointID": 16000007
+        },
+        {
+          "cityID": 15400002,
+          "pointID": 16000107
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000207
+        }
+      ]
+    },
+    {
+      "id": 14150008,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 31,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400001,
+          "pointID": 16000008
+        },
+        {
+          "cityID": 15400002,
+          "pointID": 16000108
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000208
+        }
+      ]
+    },
+    {
+      "id": 14150009,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 25,
+          "value": 0.003
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400001,
+          "pointID": 16000009
+        },
+        {
+          "cityID": 15400002,
+          "pointID": 16000109
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000209
+        }
+      ]
+    },
+    {
+      "id": 14150010,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 34,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400002,
+          "pointID": 16000101
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000201
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000301
+        }
+      ]
+    },
+    {
+      "id": 14150011,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 22,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400002,
+          "pointID": 16000102
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000202
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000302
+        }
+      ]
+    },
+    {
+      "id": 14150012,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 24,
+          "value": 0.003
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400002,
+          "pointID": 16000103
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000203
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000303
+        }
+      ]
+    },
+    {
+      "id": 14150013,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 11,
+          "value": 50
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400002,
+          "pointID": 16000104
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000204
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000304
+        }
+      ]
+    },
+    {
+      "id": 14150014,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 26,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400002,
+          "pointID": 16000105
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000205
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000305
+        }
+      ]
+    },
+    {
+      "id": 14150015,
+      "need_level": 30,
+      "property_items": [
+        {
+          "type": 30,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 60000,
+      "source_items": [
+        {
+          "cityID": 15400002,
+          "pointID": 16000106
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000206
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000306
+        }
+      ]
+    },
+    {
+      "id": 14150101,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 16,
+          "value": 360
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400002,
+          "pointID": 16000107
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000207
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000307
+        }
+      ]
+    },
+    {
+      "id": 14150102,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 17,
+          "value": 280
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400002,
+          "pointID": 16000108
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000208
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000308
+        }
+      ]
+    },
+    {
+      "id": 14150103,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 20,
+          "value": 360
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400002,
+          "pointID": 16000109
+        },
+        {
+          "cityID": 15400003,
+          "pointID": 16000209
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000309
+        }
+      ]
+    },
+    {
+      "id": 14150104,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 21,
+          "value": 280
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400003,
+          "pointID": 16000201
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000301
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000401
+        }
+      ]
+    },
+    {
+      "id": 14150105,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 11,
+          "value": 100
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400003,
+          "pointID": 16000202
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000302
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000402
+        }
+      ]
+    },
+    {
+      "id": 14150106,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 101,
+          "value": 2000
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400003,
+          "pointID": 16000203
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000303
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000403
+        }
+      ]
+    },
+    {
+      "id": 14150107,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 28,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400003,
+          "pointID": 16000204
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000304
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000404
+        }
+      ]
+    },
+    {
+      "id": 14150108,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 29,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400003,
+          "pointID": 16000205
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000305
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000405
+        }
+      ]
+    },
+    {
+      "id": 14150109,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 23,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400003,
+          "pointID": 16000206
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000306
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000406
+        }
+      ]
+    },
+    {
+      "id": 14150110,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 22,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400003,
+          "pointID": 16000207
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000307
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000407
+        }
+      ]
+    },
+    {
+      "id": 14150111,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 24,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400003,
+          "pointID": 16000208
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000308
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000408
+        }
+      ]
+    },
+    {
+      "id": 14150112,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 31,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400003,
+          "pointID": 16000209
+        },
+        {
+          "cityID": 15400004,
+          "pointID": 16000309
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000409
+        }
+      ]
+    },
+    {
+      "id": 14150113,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 25,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400004,
+          "pointID": 16000301
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000401
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000501
+        }
+      ]
+    },
+    {
+      "id": 14150114,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 30,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400004,
+          "pointID": 16000302
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000402
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000502
+        }
+      ]
+    },
+    {
+      "id": 14150115,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 34,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400004,
+          "pointID": 16000303
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000403
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000503
+        }
+      ]
+    },
+    {
+      "id": 14150116,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 26,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400004,
+          "pointID": 16000304
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000404
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000504
+        }
+      ]
+    },
+    {
+      "id": 14150117,
+      "need_level": 35,
+      "property_items": [
+        {
+          "type": 27,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [],
+      "cost_price": 70000,
+      "source_items": [
+        {
+          "cityID": 15400004,
+          "pointID": 16000305
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000405
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000505
+        }
+      ]
+    },
+    {
+      "id": 14150201,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 25,
+          "value": 0.0015
+        },
+        {
+          "type": 17,
+          "value": 600
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151001,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150202,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 101,
+          "value": 4000
+        },
+        {
+          "type": 31,
+          "value": 0.0015
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151002,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150203,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 23,
+          "value": 0.0025
+        },
+        {
+          "type": 31,
+          "value": 0.0025
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151003,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150204,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 21,
+          "value": 110
+        },
+        {
+          "type": 17,
+          "value": 110
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151004,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150205,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 29,
+          "value": 0.0015
+        },
+        {
+          "type": 101,
+          "value": 4000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151005,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150206,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 27,
+          "value": 0.0025
+        },
+        {
+          "type": 22,
+          "value": 0.0025
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151006,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150207,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 34,
+          "value": 0.001
+        },
+        {
+          "type": 101,
+          "value": 4000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151007,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150208,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 23,
+          "value": 0.0025
+        },
+        {
+          "type": 25,
+          "value": 0.0025
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151008,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150209,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 24,
+          "value": 0.0025
+        },
+        {
+          "type": 101,
+          "value": 4000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151009,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150210,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 22,
+          "value": 0.0025
+        },
+        {
+          "type": 24,
+          "value": 0.0025
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151010,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150211,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 16,
+          "value": 600
+        },
+        {
+          "type": 24,
+          "value": 0.0025
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151011,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150212,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 30,
+          "value": 0.0025
+        },
+        {
+          "type": 24,
+          "value": 0.0025
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151012,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150213,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 20,
+          "value": 600
+        },
+        {
+          "type": 24,
+          "value": 0.0025
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151013,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150214,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 11,
+          "value": 300
+        },
+        {
+          "type": 22,
+          "value": 0.0025
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151014,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150215,
+      "need_level": 40,
+      "property_items": [
+        {
+          "type": 30,
+          "value": 0.0025
+        },
+        {
+          "type": 20,
+          "value": 600
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151015,
+          "amount": 5
+        }
+      ],
+      "cost_price": 80000,
+      "source_items": []
+    },
+    {
+      "id": 14150216,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 11,
+          "value": 500
+        },
+        {
+          "type": 24,
+          "value": 0.002
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150209,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150105,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150005,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150217,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 28,
+          "value": 0.0075
+        },
+        {
+          "type": 22,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150206,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150107,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150013,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150218,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 11,
+          "value": 500
+        },
+        {
+          "type": 30,
+          "value": 0.002
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150214,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150114,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150009,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150219,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 25,
+          "value": 0.0075
+        },
+        {
+          "type": 23,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150208,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150208,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150220,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 17,
+          "value": 800
+        },
+        {
+          "type": 29,
+          "value": 0.0015
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150204,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150108,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150221,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 101,
+          "value": 3000
+        },
+        {
+          "type": 17,
+          "value": 400
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150204,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150106,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150222,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 21,
+          "value": 800
+        },
+        {
+          "type": 23,
+          "value": 0.0015
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150204,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150109,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150223,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 11,
+          "value": 500
+        },
+        {
+          "type": 25,
+          "value": 0.0015
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150201,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150113,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150224,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 26,
+          "value": 0.0075
+        },
+        {
+          "type": 24,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150212,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150116,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150225,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 31,
+          "value": 0.0075
+        },
+        {
+          "type": 23,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150203,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150203,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150226,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 30,
+          "value": 0.0075
+        },
+        {
+          "type": 27,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150212,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150117,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150227,
+      "need_level": 45,
+      "property_items": [
+        {
+          "type": 101,
+          "value": 4000
+        },
+        {
+          "type": 29,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150205,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150205,
+          "amount": 1
+        }
+      ],
+      "cost_price": 90000,
+      "source_items": []
+    },
+    {
+      "id": 14150301,
+      "need_level": 50,
+      "property_items": [
+        {
+          "type": 25,
+          "value": 0.0075
+        },
+        {
+          "type": 23,
+          "value": 0.0075
+        },
+        {
+          "type": 101,
+          "value": 8000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151101,
+          "amount": 10
+        }
+      ],
+      "cost_price": 100000,
+      "source_items": []
+    },
+    {
+      "id": 14150302,
+      "need_level": 50,
+      "property_items": [
+        {
+          "type": 31,
+          "value": 0.0075
+        },
+        {
+          "type": 22,
+          "value": 0.0075
+        },
+        {
+          "type": 23,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151102,
+          "amount": 10
+        }
+      ],
+      "cost_price": 100000,
+      "source_items": []
+    },
+    {
+      "id": 14150303,
+      "need_level": 50,
+      "property_items": [
+        {
+          "type": 17,
+          "value": 600
+        },
+        {
+          "type": 21,
+          "value": 600
+        },
+        {
+          "type": 101,
+          "value": 4000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151103,
+          "amount": 10
+        }
+      ],
+      "cost_price": 100000,
+      "source_items": []
+    },
+    {
+      "id": 14150304,
+      "need_level": 50,
+      "property_items": [
+        {
+          "type": 22,
+          "value": 0.0075
+        },
+        {
+          "type": 24,
+          "value": 0.0075
+        },
+        {
+          "type": 30,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151104,
+          "amount": 10
+        }
+      ],
+      "cost_price": 100000,
+      "source_items": []
+    },
+    {
+      "id": 14150305,
+      "need_level": 50,
+      "property_items": [
+        {
+          "type": 28,
+          "value": 0.0075
+        },
+        {
+          "type": 29,
+          "value": 0.0075
+        },
+        {
+          "type": 34,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151105,
+          "amount": 10
+        }
+      ],
+      "cost_price": 100000,
+      "source_items": []
+    },
+    {
+      "id": 14150306,
+      "need_level": 50,
+      "property_items": [
+        {
+          "type": 26,
+          "value": 0.0075
+        },
+        {
+          "type": 11,
+          "value": 1000
+        },
+        {
+          "type": 27,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151106,
+          "amount": 10
+        }
+      ],
+      "cost_price": 100000,
+      "source_items": []
+    },
+    {
+      "id": 14150307,
+      "need_level": 50,
+      "property_items": [
+        {
+          "type": 16,
+          "value": 2000
+        },
+        {
+          "type": 30,
+          "value": 0.0075
+        },
+        {
+          "type": 24,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151107,
+          "amount": 10
+        }
+      ],
+      "cost_price": 100000,
+      "source_items": []
+    },
+    {
+      "id": 14150308,
+      "need_level": 50,
+      "property_items": [
+        {
+          "type": 20,
+          "value": 1000
+        },
+        {
+          "type": 11,
+          "value": 500
+        },
+        {
+          "type": 22,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151108,
+          "amount": 10
+        }
+      ],
+      "cost_price": 100000,
+      "source_items": []
+    },
+    {
+      "id": 14150309,
+      "need_level": 60,
+      "property_items": [
+        {
+          "type": 28,
+          "value": 0.0075
+        },
+        {
+          "type": 101,
+          "value": 3000
+        },
+        {
+          "type": 11,
+          "value": 1500
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150306,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150207,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150105,
+          "amount": 1
+        }
+      ],
+      "cost_price": 120000,
+      "source_items": []
+    },
+    {
+      "id": 14150310,
+      "need_level": 60,
+      "property_items": [
+        {
+          "type": 17,
+          "value": 1200
+        },
+        {
+          "type": 21,
+          "value": 1200
+        },
+        {
+          "type": 34,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150303,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150115,
+          "amount": 1
+        }
+      ],
+      "cost_price": 120000,
+      "source_items": []
+    },
+    {
+      "id": 14150311,
+      "need_level": 60,
+      "property_items": [
+        {
+          "type": 31,
+          "value": 0.0075
+        },
+        {
+          "type": 29,
+          "value": 0.0075
+        },
+        {
+          "type": 25,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150302,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150203,
+          "amount": 1
+        }
+      ],
+      "cost_price": 120000,
+      "source_items": []
+    },
+    {
+      "id": 14150312,
+      "need_level": 60,
+      "property_items": [
+        {
+          "type": 11,
+          "value": 600
+        },
+        {
+          "type": 23,
+          "value": 0.0075
+        },
+        {
+          "type": 26,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150223,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150214,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150116,
+          "amount": 1
+        }
+      ],
+      "cost_price": 120000,
+      "source_items": []
+    },
+    {
+      "id": 14150313,
+      "need_level": 60,
+      "property_items": [
+        {
+          "type": 20,
+          "value": 1000
+        },
+        {
+          "type": 11,
+          "value": 500
+        },
+        {
+          "type": 28,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150215,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150213,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150003,
+          "amount": 1
+        }
+      ],
+      "cost_price": 120000,
+      "source_items": []
+    },
+    {
+      "id": 14150314,
+      "need_level": 60,
+      "property_items": [
+        {
+          "type": 16,
+          "value": 1000
+        },
+        {
+          "type": 24,
+          "value": 0.0075
+        },
+        {
+          "type": 28,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150211,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150210,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150001,
+          "amount": 1
+        }
+      ],
+      "cost_price": 120000,
+      "source_items": []
+    },
+    {
+      "id": 14150315,
+      "need_level": 60,
+      "property_items": [
+        {
+          "type": 11,
+          "value": 500
+        },
+        {
+          "type": 24,
+          "value": 0.0075
+        },
+        {
+          "type": 101,
+          "value": 4000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150209,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150216,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150106,
+          "amount": 1
+        }
+      ],
+      "cost_price": 120000,
+      "source_items": []
+    },
+    {
+      "id": 14150316,
+      "need_level": 70,
+      "property_items": [
+        {
+          "type": 24,
+          "value": 0.01
+        },
+        {
+          "type": 28,
+          "value": 0.01
+        },
+        {
+          "type": 11,
+          "value": 1000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150216,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150216,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150107,
+          "amount": 1
+        }
+      ],
+      "cost_price": 140000,
+      "source_items": []
+    },
+    {
+      "id": 14150317,
+      "need_level": 70,
+      "property_items": [
+        {
+          "type": 31,
+          "value": 0.01
+        },
+        {
+          "type": 101,
+          "value": 6000
+        },
+        {
+          "type": 29,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150227,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150202,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150005,
+          "amount": 1
+        }
+      ],
+      "cost_price": 140000,
+      "source_items": []
+    },
+    {
+      "id": 14150318,
+      "need_level": 70,
+      "property_items": [
+        {
+          "type": 30,
+          "value": 0.01
+        },
+        {
+          "type": 11,
+          "value": 1000
+        },
+        {
+          "type": 26,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150306,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150226,
+          "amount": 1
+        }
+      ],
+      "cost_price": 140000,
+      "source_items": []
+    },
+    {
+      "id": 14150319,
+      "need_level": 70,
+      "property_items": [
+        {
+          "type": 27,
+          "value": 0.01
+        },
+        {
+          "type": 26,
+          "value": 0.01
+        },
+        {
+          "type": 101,
+          "value": 6000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150306,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150207,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150005,
+          "amount": 1
+        }
+      ],
+      "cost_price": 140000,
+      "source_items": []
+    },
+    {
+      "id": 14150320,
+      "need_level": 70,
+      "property_items": [
+        {
+          "type": 17,
+          "value": 1000
+        },
+        {
+          "type": 21,
+          "value": 1000
+        },
+        {
+          "type": 25,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150303,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150301,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150113,
+          "amount": 1
+        }
+      ],
+      "cost_price": 140000,
+      "source_items": []
+    },
+    {
+      "id": 14150321,
+      "need_level": 70,
+      "property_items": [
+        {
+          "type": 28,
+          "value": 0.01
+        },
+        {
+          "type": 22,
+          "value": 0.01
+        },
+        {
+          "type": 11,
+          "value": 1000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150217,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150214,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150011,
+          "amount": 1
+        }
+      ],
+      "cost_price": 140000,
+      "source_items": []
+    },
+    {
+      "id": 14150322,
+      "need_level": 70,
+      "property_items": [
+        {
+          "type": 25,
+          "value": 0.01
+        },
+        {
+          "type": 31,
+          "value": 0.01
+        },
+        {
+          "type": 27,
+          "value": 0.02
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150226,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150219,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150117,
+          "amount": 1
+        }
+      ],
+      "cost_price": 140000,
+      "source_items": []
+    },
+    {
+      "id": 14150401,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 17,
+          "value": 1000
+        },
+        {
+          "type": 21,
+          "value": 1000
+        },
+        {
+          "type": 25,
+          "value": 0.005
+        },
+        {
+          "type": 101,
+          "value": 3000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151201,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150402,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 31,
+          "value": 0.0075
+        },
+        {
+          "type": 101,
+          "value": 10000
+        },
+        {
+          "type": 29,
+          "value": 0.005
+        },
+        {
+          "type": 27,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151202,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150403,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 25,
+          "value": 0.01
+        },
+        {
+          "type": 34,
+          "value": 0.015
+        },
+        {
+          "type": 22,
+          "value": 0.01
+        },
+        {
+          "type": 30,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151203,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150404,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 16,
+          "value": 1200
+        },
+        {
+          "type": 24,
+          "value": 0.005
+        },
+        {
+          "type": 28,
+          "value": 0.005
+        },
+        {
+          "type": 101,
+          "value": 6000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151204,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150405,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 30,
+          "value": 0.01
+        },
+        {
+          "type": 24,
+          "value": 0.01
+        },
+        {
+          "type": 26,
+          "value": 0.01
+        },
+        {
+          "type": 27,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151205,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150406,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 28,
+          "value": 0.005
+        },
+        {
+          "type": 30,
+          "value": 0.005
+        },
+        {
+          "type": 11,
+          "value": 1200
+        },
+        {
+          "type": 29,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151206,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150407,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 34,
+          "value": 0.015
+        },
+        {
+          "type": 23,
+          "value": 0.01
+        },
+        {
+          "type": 25,
+          "value": 0.01
+        },
+        {
+          "type": 31,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151207,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150408,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 101,
+          "value": 6000
+        },
+        {
+          "type": 11,
+          "value": 800
+        },
+        {
+          "type": 29,
+          "value": 0.005
+        },
+        {
+          "type": 30,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151208,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150409,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 20,
+          "value": 1200
+        },
+        {
+          "type": 11,
+          "value": 600
+        },
+        {
+          "type": 28,
+          "value": 0.0025
+        },
+        {
+          "type": 27,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151209,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150410,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 39,
+          "value": 0.01
+        },
+        {
+          "type": 41,
+          "value": 0.01
+        },
+        {
+          "type": 101,
+          "value": 1000
+        },
+        {
+          "type": 11,
+          "value": 100
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151210,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150411,
+      "need_level": 80,
+      "property_items": [
+        {
+          "type": 20,
+          "value": 2000
+        },
+        {
+          "type": 40,
+          "value": 0.0025
+        },
+        {
+          "type": 42,
+          "value": 0.0025
+        },
+        {
+          "type": 30,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14151211,
+          "amount": 20
+        }
+      ],
+      "cost_price": 160000,
+      "source_items": []
+    },
+    {
+      "id": 14150412,
+      "need_level": 90,
+      "property_items": [
+        {
+          "type": 101,
+          "value": 8000
+        },
+        {
+          "type": 27,
+          "value": 0.01
+        },
+        {
+          "type": 40,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150405,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150226,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150106,
+          "amount": 1
+        }
+      ],
+      "cost_price": 180000,
+      "source_items": []
+    },
+    {
+      "id": 14150413,
+      "need_level": 90,
+      "property_items": [
+        {
+          "type": 17,
+          "value": 1000
+        },
+        {
+          "type": 101,
+          "value": 8000
+        },
+        {
+          "type": 25,
+          "value": 0.005
+        },
+        {
+          "type": 23,
+          "value": 0.005
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150301,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150220,
+          "amount": 1
+        }
+      ],
+      "cost_price": 180000,
+      "source_items": []
+    },
+    {
+      "id": 14150414,
+      "need_level": 90,
+      "property_items": [
+        {
+          "type": 42,
+          "value": 0.05
+        },
+        {
+          "type": 16,
+          "value": 1000
+        },
+        {
+          "type": 17,
+          "value": 1200
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150401,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150301,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150101,
+          "amount": 1
+        }
+      ],
+      "cost_price": 180000,
+      "source_items": []
+    },
+    {
+      "id": 14150415,
+      "need_level": 90,
+      "property_items": [
+        {
+          "type": 40,
+          "value": 0.05
+        },
+        {
+          "type": 25,
+          "value": 0.01
+        },
+        {
+          "type": 29,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150301,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150308,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150227,
+          "amount": 1
+        }
+      ],
+      "cost_price": 180000,
+      "source_items": []
+    },
+    {
+      "id": 14150416,
+      "need_level": 90,
+      "property_items": [
+        {
+          "type": 16,
+          "value": 3500
+        },
+        {
+          "type": 28,
+          "value": 0.0055
+        },
+        {
+          "type": 25,
+          "value": 0.0055
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150404,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150301,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150201,
+          "amount": 1
+        }
+      ],
+      "cost_price": 180000,
+      "source_items": []
+    },
+    {
+      "id": 14150417,
+      "need_level": 90,
+      "property_items": [
+        {
+          "type": 28,
+          "value": 0.01
+        },
+        {
+          "type": 29,
+          "value": 0.01
+        },
+        {
+          "type": 41,
+          "value": 0.02
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150305,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150305,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150013,
+          "amount": 1
+        }
+      ],
+      "cost_price": 180000,
+      "source_items": []
+    },
+    {
+      "id": 14150418,
+      "need_level": 90,
+      "property_items": [
+        {
+          "type": 24,
+          "value": 0.01
+        },
+        {
+          "type": 26,
+          "value": 0.02
+        },
+        {
+          "type": 39,
+          "value": 0.02
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150304,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150224,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150209,
+          "amount": 1
+        }
+      ],
+      "cost_price": 180000,
+      "source_items": []
+    },
+    {
+      "id": 14150419,
+      "need_level": 90,
+      "property_items": [
+        {
+          "type": 16,
+          "value": 3000
+        },
+        {
+          "type": 24,
+          "value": 0.005
+        },
+        {
+          "type": 30,
+          "value": 0.01
+        },
+        {
+          "type": 101,
+          "value": 3000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150404,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150304,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150227,
+          "amount": 1
+        }
+      ],
+      "cost_price": 180000,
+      "source_items": []
+    },
+    {
+      "id": 14150420,
+      "need_level": 90,
+      "property_items": [
+        {
+          "type": 101,
+          "value": 12000
+        },
+        {
+          "type": 22,
+          "value": 0.0075
+        },
+        {
+          "type": 26,
+          "value": 0.01
+        },
+        {
+          "type": 30,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150408,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150405,
+          "amount": 1
+        }
+      ],
+      "cost_price": 180000,
+      "source_items": []
+    },
+    {
+      "id": 14150421,
+      "need_level": 100,
+      "property_items": [
+        {
+          "type": 29,
+          "value": 0.0025
+        },
+        {
+          "type": 17,
+          "value": 1200
+        },
+        {
+          "type": 21,
+          "value": 1200
+        },
+        {
+          "type": 101,
+          "value": 6000
+        },
+        {
+          "type": 25,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150401,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150402,
+          "amount": 1
+        }
+      ],
+      "cost_price": 200000,
+      "source_items": []
+    },
+    {
+      "id": 14150422,
+      "need_level": 100,
+      "property_items": [
+        {
+          "type": 39,
+          "value": 0.05
+        },
+        {
+          "type": 101,
+          "value": 6000
+        },
+        {
+          "type": 25,
+          "value": 0.0035
+        },
+        {
+          "type": 31,
+          "value": 0.0075
+        },
+        {
+          "type": 22,
+          "value": 0.0075
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150410,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150302,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150301,
+          "amount": 1
+        }
+      ],
+      "cost_price": 200000,
+      "source_items": []
+    },
+    {
+      "id": 14150423,
+      "need_level": 100,
+      "property_items": [
+        {
+          "type": 101,
+          "value": 12000
+        },
+        {
+          "type": 17,
+          "value": 1000
+        },
+        {
+          "type": 22,
+          "value": 0.0075
+        },
+        {
+          "type": 29,
+          "value": 0.0075
+        },
+        {
+          "type": 31,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150401,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150402,
+          "amount": 1
+        }
+      ],
+      "cost_price": 200000,
+      "source_items": []
+    },
+    {
+      "id": 14150424,
+      "need_level": 100,
+      "property_items": [
+        {
+          "type": 17,
+          "value": 2000
+        },
+        {
+          "type": 27,
+          "value": 0.006
+        },
+        {
+          "type": 34,
+          "value": 0.01
+        },
+        {
+          "type": 22,
+          "value": 0.005
+        },
+        {
+          "type": 11,
+          "value": 1200
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150401,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150306,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150214,
+          "amount": 1
+        }
+      ],
+      "cost_price": 200000,
+      "source_items": []
+    },
+    {
+      "id": 14150425,
+      "need_level": 100,
+      "property_items": [
+        {
+          "type": 24,
+          "value": 0.0075
+        },
+        {
+          "type": 28,
+          "value": 0.007
+        },
+        {
+          "type": 22,
+          "value": 0.015
+        },
+        {
+          "type": 41,
+          "value": 0.05
+        },
+        {
+          "type": 42,
+          "value": 0.05
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150411,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150404,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150304,
+          "amount": 1
+        }
+      ],
+      "cost_price": 200000,
+      "source_items": []
+    },
+    {
+      "id": 14150426,
+      "need_level": 100,
+      "property_items": [
+        {
+          "type": 20,
+          "value": 1200
+        },
+        {
+          "type": 16,
+          "value": 1200
+        },
+        {
+          "type": 104,
+          "value": 5
+        },
+        {
+          "type": 24,
+          "value": 0.005
+        },
+        {
+          "type": 101,
+          "value": 8000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150404,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150409,
+          "amount": 1
+        }
+      ],
+      "cost_price": 200000,
+      "source_items": []
+    },
+    {
+      "id": 14150427,
+      "need_level": 100,
+      "property_items": [
+        {
+          "type": 101,
+          "value": 12000
+        },
+        {
+          "type": 25,
+          "value": 0.01
+        },
+        {
+          "type": 28,
+          "value": 0.0075
+        },
+        {
+          "type": 104,
+          "value": 5
+        },
+        {
+          "type": 11,
+          "value": 500
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150406,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150406,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150113,
+          "amount": 1
+        }
+      ],
+      "cost_price": 200000,
+      "source_items": []
+    },
+    {
+      "id": 14150428,
+      "need_level": 110,
+      "property_items": [
+        {
+          "type": 104,
+          "value": 5
+        },
+        {
+          "type": 17,
+          "value": 2000
+        },
+        {
+          "type": 21,
+          "value": 2000
+        },
+        {
+          "type": 25,
+          "value": 0.01
+        },
+        {
+          "type": 31,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150401,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150402,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150403,
+          "amount": 1
+        }
+      ],
+      "cost_price": 220000,
+      "source_items": []
+    },
+    {
+      "id": 14150429,
+      "need_level": 110,
+      "property_items": [
+        {
+          "type": 16,
+          "value": 1500
+        },
+        {
+          "type": 24,
+          "value": 0.0055
+        },
+        {
+          "type": 28,
+          "value": 0.0075
+        },
+        {
+          "type": 101,
+          "value": 15000
+        },
+        {
+          "type": 30,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150404,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150406,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150307,
+          "amount": 1
+        }
+      ],
+      "cost_price": 220000,
+      "source_items": []
+    },
+    {
+      "id": 14150430,
+      "need_level": 110,
+      "property_items": [
+        {
+          "type": 20,
+          "value": 3500
+        },
+        {
+          "type": 30,
+          "value": 0.007
+        },
+        {
+          "type": 11,
+          "value": 700
+        },
+        {
+          "type": 28,
+          "value": 0.005
+        },
+        {
+          "type": 24,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150409,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150405,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150408,
+          "amount": 1
+        }
+      ],
+      "cost_price": 220000,
+      "source_items": []
+    },
+    {
+      "id": 14150431,
+      "need_level": 110,
+      "property_items": [
+        {
+          "type": 11,
+          "value": 500
+        },
+        {
+          "type": 24,
+          "value": 0.0075
+        },
+        {
+          "type": 31,
+          "value": 0.0075
+        },
+        {
+          "type": 25,
+          "value": 0.0075
+        },
+        {
+          "type": 101,
+          "value": 15000
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150402,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150408,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150302,
+          "amount": 1
+        }
+      ],
+      "cost_price": 220000,
+      "source_items": []
+    },
+    {
+      "id": 14150432,
+      "need_level": 110,
+      "property_items": [
+        {
+          "type": 34,
+          "value": 0.02
+        },
+        {
+          "type": 25,
+          "value": 0.02
+        },
+        {
+          "type": 29,
+          "value": 0.01
+        },
+        {
+          "type": 28,
+          "value": 0.01
+        },
+        {
+          "type": 24,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150407,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150406,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150305,
+          "amount": 1
+        }
+      ],
+      "cost_price": 220000,
+      "source_items": []
+    },
+    {
+      "id": 14150433,
+      "need_level": 110,
+      "property_items": [
+        {
+          "type": 40,
+          "value": 0.05
+        },
+        {
+          "type": 42,
+          "value": 0.05
+        },
+        {
+          "type": 39,
+          "value": 0.05
+        },
+        {
+          "type": 41,
+          "value": 0.05
+        },
+        {
+          "type": 28,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150410,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150411,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150406,
+          "amount": 1
+        }
+      ],
+      "cost_price": 220000,
+      "source_items": []
+    },
+    {
+      "id": 14150501,
+      "need_level": 120,
+      "property_items": [
+        {
+          "type": 17,
+          "value": 2000
+        },
+        {
+          "type": 21,
+          "value": 2000
+        },
+        {
+          "type": 29,
+          "value": 0.01
+        },
+        {
+          "type": 31,
+          "value": 0.01
+        },
+        {
+          "type": 101,
+          "value": 15000
+        },
+        {
+          "type": 23,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150428,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150421,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14151301,
+          "amount": 50
+        }
+      ],
+      "cost_price": 240000,
+      "source_items": []
+    },
+    {
+      "id": 14150502,
+      "need_level": 120,
+      "property_items": [
+        {
+          "type": 16,
+          "value": 2000
+        },
+        {
+          "type": 24,
+          "value": 0.01
+        },
+        {
+          "type": 28,
+          "value": 0.01
+        },
+        {
+          "type": 30,
+          "value": 0.02
+        },
+        {
+          "type": 101,
+          "value": 20000
+        },
+        {
+          "type": 22,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150429,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150420,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14151301,
+          "amount": 50
+        }
+      ],
+      "cost_price": 240000,
+      "source_items": []
+    },
+    {
+      "id": 14150503,
+      "need_level": 120,
+      "property_items": [
+        {
+          "type": 20,
+          "value": 6000
+        },
+        {
+          "type": 30,
+          "value": 0.0125
+        },
+        {
+          "type": 24,
+          "value": 0.0125
+        },
+        {
+          "type": 28,
+          "value": 0.01
+        },
+        {
+          "type": 11,
+          "value": 1500
+        },
+        {
+          "type": 26,
+          "value": 0.02
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150430,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150406,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14151301,
+          "amount": 50
+        }
+      ],
+      "cost_price": 240000,
+      "source_items": []
+    },
+    {
+      "id": 14150504,
+      "need_level": 120,
+      "property_items": [
+        {
+          "type": 28,
+          "value": 0.01
+        },
+        {
+          "type": 29,
+          "value": 0.015
+        },
+        {
+          "type": 26,
+          "value": 0.05
+        },
+        {
+          "type": 27,
+          "value": 0.04
+        },
+        {
+          "type": 25,
+          "value": 0.02
+        },
+        {
+          "type": 24,
+          "value": 0.02
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150432,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150420,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14151301,
+          "amount": 50
+        }
+      ],
+      "cost_price": 240000,
+      "source_items": []
+    },
+    {
+      "id": 14150505,
+      "need_level": 120,
+      "property_items": [
+        {
+          "type": 40,
+          "value": 0.05
+        },
+        {
+          "type": 42,
+          "value": 0.05
+        },
+        {
+          "type": 39,
+          "value": 0.05
+        },
+        {
+          "type": 41,
+          "value": 0.05
+        },
+        {
+          "type": 101,
+          "value": 6000
+        },
+        {
+          "type": 34,
+          "value": 0.01
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150433,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150411,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14151301,
+          "amount": 50
+        }
+      ],
+      "cost_price": 240000,
+      "source_items": []
+    },
+    {
+      "id": 14150506,
+      "need_level": 120,
+      "property_items": [
+        {
+          "type": 31,
+          "value": 0.01
+        },
+        {
+          "type": 29,
+          "value": 0.01
+        },
+        {
+          "type": 23,
+          "value": 0.01
+        },
+        {
+          "type": 101,
+          "value": 30000
+        },
+        {
+          "type": 25,
+          "value": 0.02
+        },
+        {
+          "type": 27,
+          "value": 0.03
+        }
+      ],
+      "compose_items": [
+        {
+          "type": 1,
+          "code": 14150431,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14150407,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14151301,
+          "amount": 50
+        }
+      ],
+      "cost_price": 240000,
+      "source_items": []
+    },
+    {
+      "id": 14151001,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400004,
+          "pointID": 16000306
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000406
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000506
+        }
+      ]
+    },
+    {
+      "id": 14151002,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400004,
+          "pointID": 16000307
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000407
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000507
+        }
+      ]
+    },
+    {
+      "id": 14151003,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400004,
+          "pointID": 16000308
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000408
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000508
+        }
+      ]
+    },
+    {
+      "id": 14151004,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400004,
+          "pointID": 16000309
+        },
+        {
+          "cityID": 15400005,
+          "pointID": 16000409
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000509
+        }
+      ]
+    },
+    {
+      "id": 14151005,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400005,
+          "pointID": 16000401
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000501
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000601
+        }
+      ]
+    },
+    {
+      "id": 14151006,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400005,
+          "pointID": 16000402
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000502
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000602
+        }
+      ]
+    },
+    {
+      "id": 14151007,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400005,
+          "pointID": 16000403
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000503
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000603
+        }
+      ]
+    },
+    {
+      "id": 14151008,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400005,
+          "pointID": 16000404
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000504
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000604
+        }
+      ]
+    },
+    {
+      "id": 14151009,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400005,
+          "pointID": 16000405
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000505
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000605
+        }
+      ]
+    },
+    {
+      "id": 14151010,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400005,
+          "pointID": 16000406
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000506
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000606
+        }
+      ]
+    },
+    {
+      "id": 14151011,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400005,
+          "pointID": 16000407
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000507
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000607
+        }
+      ]
+    },
+    {
+      "id": 14151012,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400005,
+          "pointID": 16000408
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000508
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000608
+        }
+      ]
+    },
+    {
+      "id": 14151013,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400005,
+          "pointID": 16000409
+        },
+        {
+          "cityID": 15400006,
+          "pointID": 16000509
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000609
+        }
+      ]
+    },
+    {
+      "id": 14151014,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400006,
+          "pointID": 16000501
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000601
+        },
+        {
+          "cityID": 15400008,
+          "pointID": 16000701
+        }
+      ]
+    },
+    {
+      "id": 14151015,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400006,
+          "pointID": 16000502
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000602
+        },
+        {
+          "cityID": 15400008,
+          "pointID": 16000702
+        }
+      ]
+    },
+    {
+      "id": 14151101,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400006,
+          "pointID": 16000503
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000603
+        },
+        {
+          "cityID": 15400008,
+          "pointID": 16000703
+        }
+      ]
+    },
+    {
+      "id": 14151102,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400006,
+          "pointID": 16000504
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000604
+        },
+        {
+          "cityID": 15400008,
+          "pointID": 16000704
+        }
+      ]
+    },
+    {
+      "id": 14151103,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400006,
+          "pointID": 16000505
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000605
+        },
+        {
+          "cityID": 15400008,
+          "pointID": 16000705
+        }
+      ]
+    },
+    {
+      "id": 14151104,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400006,
+          "pointID": 16000506
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000606
+        },
+        {
+          "cityID": 15400008,
+          "pointID": 16000706
+        }
+      ]
+    },
+    {
+      "id": 14151105,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400006,
+          "pointID": 16000507
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000607
+        },
+        {
+          "cityID": 15400008,
+          "pointID": 16000707
+        }
+      ]
+    },
+    {
+      "id": 14151106,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400006,
+          "pointID": 16000508
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000608
+        },
+        {
+          "cityID": 15400008,
+          "pointID": 16000708
+        }
+      ]
+    },
+    {
+      "id": 14151107,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400006,
+          "pointID": 16000509
+        },
+        {
+          "cityID": 15400007,
+          "pointID": 16000609
+        },
+        {
+          "cityID": 15400008,
+          "pointID": 16000709
+        }
+      ]
+    },
+    {
+      "id": 14151108,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400007,
+          "pointID": 16000601
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000801
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000901
+        }
+      ]
+    },
+    {
+      "id": 14151201,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400007,
+          "pointID": 16000602
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000802
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000902
+        }
+      ]
+    },
+    {
+      "id": 14151202,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400007,
+          "pointID": 16000603
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000803
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000903
+        }
+      ]
+    },
+    {
+      "id": 14151203,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400007,
+          "pointID": 16000604
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000804
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000904
+        }
+      ]
+    },
+    {
+      "id": 14151204,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400007,
+          "pointID": 16000605
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000805
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000905
+        }
+      ]
+    },
+    {
+      "id": 14151205,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400007,
+          "pointID": 16000606
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000806
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000906
+        }
+      ]
+    },
+    {
+      "id": 14151206,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400007,
+          "pointID": 16000607
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000807
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000907
+        }
+      ]
+    },
+    {
+      "id": 14151207,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400007,
+          "pointID": 16000608
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000808
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000908
+        }
+      ]
+    },
+    {
+      "id": 14151208,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400007,
+          "pointID": 16000609
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000809
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000909
+        }
+      ]
+    },
+    {
+      "id": 14151209,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400008,
+          "pointID": 16000701
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000801
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000901
+        }
+      ]
+    },
+    {
+      "id": 14151210,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400008,
+          "pointID": 16000702
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000802
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000902
+        }
+      ]
+    },
+    {
+      "id": 14151211,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400008,
+          "pointID": 16000703
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000803
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000903
+        }
+      ]
+    },
+    {
+      "id": 14151301,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400008,
+          "pointID": 16000704
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000804
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000904
+        }
+      ]
+    },
+    {
+      "id": 14151302,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400008,
+          "pointID": 16000705
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000805
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000905
+        }
+      ]
+    },
+    {
+      "id": 14151303,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400008,
+          "pointID": 16000706
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000806
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000906
+        }
+      ]
+    },
+    {
+      "id": 14151304,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400008,
+          "pointID": 16000707
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000807
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000907
+        }
+      ]
+    },
+    {
+      "id": 14151305,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400008,
+          "pointID": 16000708
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000808
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000908
+        }
+      ]
+    },
+    {
+      "id": 14151306,
+      "need_level": 30,
+      "property_items": [],
+      "compose_items": [],
+      "cost_price": 600000,
+      "source_items": [
+        {
+          "cityID": 15400008,
+          "pointID": 16000709
+        },
+        {
+          "cityID": 15400009,
+          "pointID": 16000809
+        },
+        {
+          "cityID": 15400010,
+          "pointID": 16000909
+        }
+      ]
+    }
+  ]
+}

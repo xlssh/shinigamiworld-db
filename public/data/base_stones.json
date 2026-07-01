@@ -1,0 +1,798 @@
+{
+  "table": "base_stones",
+  "rowCount": 132,
+  "rows": [
+    {
+      "id": 14500001,
+      "add_type": 1,
+      "add_value": 0.015,
+      "next_id": 14500002
+    },
+    {
+      "id": 14500002,
+      "add_type": 1,
+      "add_value": 0.03,
+      "next_id": 14500003
+    },
+    {
+      "id": 14500003,
+      "add_type": 1,
+      "add_value": 0.045,
+      "next_id": 14500004
+    },
+    {
+      "id": 14500004,
+      "add_type": 1,
+      "add_value": 0.06,
+      "next_id": 14500005
+    },
+    {
+      "id": 14500005,
+      "add_type": 1,
+      "add_value": 0.075,
+      "next_id": 14500006
+    },
+    {
+      "id": 14500006,
+      "add_type": 1,
+      "add_value": 0.105,
+      "next_id": 14500007
+    },
+    {
+      "id": 14500007,
+      "add_type": 1,
+      "add_value": 0.135,
+      "next_id": 14500008
+    },
+    {
+      "id": 14500008,
+      "add_type": 1,
+      "add_value": 0.18,
+      "next_id": 14500009
+    },
+    {
+      "id": 14500009,
+      "add_type": 1,
+      "add_value": 0.24,
+      "next_id": 14500010
+    },
+    {
+      "id": 14500010,
+      "add_type": 1,
+      "add_value": 0.3,
+      "next_id": 14500011
+    },
+    {
+      "id": 14500011,
+      "add_type": 1,
+      "add_value": 0.375,
+      "next_id": 14500012
+    },
+    {
+      "id": 14500012,
+      "add_type": 1,
+      "add_value": 0.45,
+      "next_id": 0
+    },
+    {
+      "id": 14500101,
+      "add_type": 2,
+      "add_value": 0.015,
+      "next_id": 14500102
+    },
+    {
+      "id": 14500102,
+      "add_type": 2,
+      "add_value": 0.03,
+      "next_id": 14500103
+    },
+    {
+      "id": 14500103,
+      "add_type": 2,
+      "add_value": 0.045,
+      "next_id": 14500104
+    },
+    {
+      "id": 14500104,
+      "add_type": 2,
+      "add_value": 0.06,
+      "next_id": 14500105
+    },
+    {
+      "id": 14500105,
+      "add_type": 2,
+      "add_value": 0.075,
+      "next_id": 14500106
+    },
+    {
+      "id": 14500106,
+      "add_type": 2,
+      "add_value": 0.105,
+      "next_id": 14500107
+    },
+    {
+      "id": 14500107,
+      "add_type": 2,
+      "add_value": 0.135,
+      "next_id": 14500108
+    },
+    {
+      "id": 14500108,
+      "add_type": 2,
+      "add_value": 0.18,
+      "next_id": 14500109
+    },
+    {
+      "id": 14500109,
+      "add_type": 2,
+      "add_value": 0.24,
+      "next_id": 14500110
+    },
+    {
+      "id": 14500110,
+      "add_type": 2,
+      "add_value": 0.3,
+      "next_id": 14500111
+    },
+    {
+      "id": 14500111,
+      "add_type": 2,
+      "add_value": 0.375,
+      "next_id": 14500112
+    },
+    {
+      "id": 14500112,
+      "add_type": 2,
+      "add_value": 0.45,
+      "next_id": 0
+    },
+    {
+      "id": 14500201,
+      "add_type": 3,
+      "add_value": 0.015,
+      "next_id": 14500202
+    },
+    {
+      "id": 14500202,
+      "add_type": 3,
+      "add_value": 0.03,
+      "next_id": 14500203
+    },
+    {
+      "id": 14500203,
+      "add_type": 3,
+      "add_value": 0.045,
+      "next_id": 14500204
+    },
+    {
+      "id": 14500204,
+      "add_type": 3,
+      "add_value": 0.06,
+      "next_id": 14500205
+    },
+    {
+      "id": 14500205,
+      "add_type": 3,
+      "add_value": 0.075,
+      "next_id": 14500206
+    },
+    {
+      "id": 14500206,
+      "add_type": 3,
+      "add_value": 0.105,
+      "next_id": 14500207
+    },
+    {
+      "id": 14500207,
+      "add_type": 3,
+      "add_value": 0.135,
+      "next_id": 14500208
+    },
+    {
+      "id": 14500208,
+      "add_type": 3,
+      "add_value": 0.18,
+      "next_id": 14500209
+    },
+    {
+      "id": 14500209,
+      "add_type": 3,
+      "add_value": 0.24,
+      "next_id": 14500210
+    },
+    {
+      "id": 14500210,
+      "add_type": 3,
+      "add_value": 0.3,
+      "next_id": 14500211
+    },
+    {
+      "id": 14500211,
+      "add_type": 3,
+      "add_value": 0.375,
+      "next_id": 14500212
+    },
+    {
+      "id": 14500212,
+      "add_type": 3,
+      "add_value": 0.45,
+      "next_id": 0
+    },
+    {
+      "id": 14500301,
+      "add_type": 4,
+      "add_value": 0.01,
+      "next_id": 14500302
+    },
+    {
+      "id": 14500302,
+      "add_type": 4,
+      "add_value": 0.02,
+      "next_id": 14500303
+    },
+    {
+      "id": 14500303,
+      "add_type": 4,
+      "add_value": 0.03,
+      "next_id": 14500304
+    },
+    {
+      "id": 14500304,
+      "add_type": 4,
+      "add_value": 0.04,
+      "next_id": 14500305
+    },
+    {
+      "id": 14500305,
+      "add_type": 4,
+      "add_value": 0.05,
+      "next_id": 14500306
+    },
+    {
+      "id": 14500306,
+      "add_type": 4,
+      "add_value": 0.07,
+      "next_id": 14500307
+    },
+    {
+      "id": 14500307,
+      "add_type": 4,
+      "add_value": 0.09,
+      "next_id": 14500308
+    },
+    {
+      "id": 14500308,
+      "add_type": 4,
+      "add_value": 0.12,
+      "next_id": 14500309
+    },
+    {
+      "id": 14500309,
+      "add_type": 4,
+      "add_value": 0.16,
+      "next_id": 14500310
+    },
+    {
+      "id": 14500310,
+      "add_type": 4,
+      "add_value": 0.2,
+      "next_id": 14500311
+    },
+    {
+      "id": 14500311,
+      "add_type": 4,
+      "add_value": 0.25,
+      "next_id": 14500312
+    },
+    {
+      "id": 14500312,
+      "add_type": 4,
+      "add_value": 0.3,
+      "next_id": 0
+    },
+    {
+      "id": 14500401,
+      "add_type": 22,
+      "add_value": 0.015,
+      "next_id": 14500402
+    },
+    {
+      "id": 14500402,
+      "add_type": 22,
+      "add_value": 0.03,
+      "next_id": 14500403
+    },
+    {
+      "id": 14500403,
+      "add_type": 22,
+      "add_value": 0.045,
+      "next_id": 14500404
+    },
+    {
+      "id": 14500404,
+      "add_type": 22,
+      "add_value": 0.06,
+      "next_id": 14500405
+    },
+    {
+      "id": 14500405,
+      "add_type": 22,
+      "add_value": 0.075,
+      "next_id": 14500406
+    },
+    {
+      "id": 14500406,
+      "add_type": 22,
+      "add_value": 0.105,
+      "next_id": 14500407
+    },
+    {
+      "id": 14500407,
+      "add_type": 22,
+      "add_value": 0.135,
+      "next_id": 14500408
+    },
+    {
+      "id": 14500408,
+      "add_type": 22,
+      "add_value": 0.18,
+      "next_id": 14500409
+    },
+    {
+      "id": 14500409,
+      "add_type": 22,
+      "add_value": 0.24,
+      "next_id": 14500410
+    },
+    {
+      "id": 14500410,
+      "add_type": 22,
+      "add_value": 0.3,
+      "next_id": 14500411
+    },
+    {
+      "id": 14500411,
+      "add_type": 22,
+      "add_value": 0.375,
+      "next_id": 14500412
+    },
+    {
+      "id": 14500412,
+      "add_type": 22,
+      "add_value": 0.45,
+      "next_id": 0
+    },
+    {
+      "id": 14500501,
+      "add_type": 23,
+      "add_value": 0.01,
+      "next_id": 14500502
+    },
+    {
+      "id": 14500502,
+      "add_type": 23,
+      "add_value": 0.02,
+      "next_id": 14500503
+    },
+    {
+      "id": 14500503,
+      "add_type": 23,
+      "add_value": 0.03,
+      "next_id": 14500504
+    },
+    {
+      "id": 14500504,
+      "add_type": 23,
+      "add_value": 0.04,
+      "next_id": 14500505
+    },
+    {
+      "id": 14500505,
+      "add_type": 23,
+      "add_value": 0.05,
+      "next_id": 14500506
+    },
+    {
+      "id": 14500506,
+      "add_type": 23,
+      "add_value": 0.07,
+      "next_id": 14500507
+    },
+    {
+      "id": 14500507,
+      "add_type": 23,
+      "add_value": 0.09,
+      "next_id": 14500508
+    },
+    {
+      "id": 14500508,
+      "add_type": 23,
+      "add_value": 0.12,
+      "next_id": 14500509
+    },
+    {
+      "id": 14500509,
+      "add_type": 23,
+      "add_value": 0.16,
+      "next_id": 14500510
+    },
+    {
+      "id": 14500510,
+      "add_type": 23,
+      "add_value": 0.2,
+      "next_id": 14500511
+    },
+    {
+      "id": 14500511,
+      "add_type": 23,
+      "add_value": 0.25,
+      "next_id": 14500512
+    },
+    {
+      "id": 14500512,
+      "add_type": 23,
+      "add_value": 0.3,
+      "next_id": 0
+    },
+    {
+      "id": 14500601,
+      "add_type": 24,
+      "add_value": 0.01,
+      "next_id": 14500602
+    },
+    {
+      "id": 14500602,
+      "add_type": 24,
+      "add_value": 0.02,
+      "next_id": 14500603
+    },
+    {
+      "id": 14500603,
+      "add_type": 24,
+      "add_value": 0.03,
+      "next_id": 14500604
+    },
+    {
+      "id": 14500604,
+      "add_type": 24,
+      "add_value": 0.04,
+      "next_id": 14500605
+    },
+    {
+      "id": 14500605,
+      "add_type": 24,
+      "add_value": 0.05,
+      "next_id": 14500606
+    },
+    {
+      "id": 14500606,
+      "add_type": 24,
+      "add_value": 0.07,
+      "next_id": 14500607
+    },
+    {
+      "id": 14500607,
+      "add_type": 24,
+      "add_value": 0.09,
+      "next_id": 14500608
+    },
+    {
+      "id": 14500608,
+      "add_type": 24,
+      "add_value": 0.12,
+      "next_id": 14500609
+    },
+    {
+      "id": 14500609,
+      "add_type": 24,
+      "add_value": 0.16,
+      "next_id": 14500610
+    },
+    {
+      "id": 14500610,
+      "add_type": 24,
+      "add_value": 0.2,
+      "next_id": 14500611
+    },
+    {
+      "id": 14500611,
+      "add_type": 24,
+      "add_value": 0.25,
+      "next_id": 14500612
+    },
+    {
+      "id": 14500612,
+      "add_type": 24,
+      "add_value": 0.3,
+      "next_id": 0
+    },
+    {
+      "id": 14500701,
+      "add_type": 25,
+      "add_value": 0.01,
+      "next_id": 14500702
+    },
+    {
+      "id": 14500702,
+      "add_type": 25,
+      "add_value": 0.02,
+      "next_id": 14500703
+    },
+    {
+      "id": 14500703,
+      "add_type": 25,
+      "add_value": 0.03,
+      "next_id": 14500704
+    },
+    {
+      "id": 14500704,
+      "add_type": 25,
+      "add_value": 0.04,
+      "next_id": 14500705
+    },
+    {
+      "id": 14500705,
+      "add_type": 25,
+      "add_value": 0.05,
+      "next_id": 14500706
+    },
+    {
+      "id": 14500706,
+      "add_type": 25,
+      "add_value": 0.07,
+      "next_id": 14500707
+    },
+    {
+      "id": 14500707,
+      "add_type": 25,
+      "add_value": 0.09,
+      "next_id": 14500708
+    },
+    {
+      "id": 14500708,
+      "add_type": 25,
+      "add_value": 0.12,
+      "next_id": 14500709
+    },
+    {
+      "id": 14500709,
+      "add_type": 25,
+      "add_value": 0.16,
+      "next_id": 14500710
+    },
+    {
+      "id": 14500710,
+      "add_type": 25,
+      "add_value": 0.2,
+      "next_id": 14500711
+    },
+    {
+      "id": 14500711,
+      "add_type": 25,
+      "add_value": 0.25,
+      "next_id": 14500712
+    },
+    {
+      "id": 14500712,
+      "add_type": 25,
+      "add_value": 0.3,
+      "next_id": 0
+    },
+    {
+      "id": 14500801,
+      "add_type": 30,
+      "add_value": 0.015,
+      "next_id": 14500802
+    },
+    {
+      "id": 14500802,
+      "add_type": 30,
+      "add_value": 0.03,
+      "next_id": 14500803
+    },
+    {
+      "id": 14500803,
+      "add_type": 30,
+      "add_value": 0.045,
+      "next_id": 14500804
+    },
+    {
+      "id": 14500804,
+      "add_type": 30,
+      "add_value": 0.06,
+      "next_id": 14500805
+    },
+    {
+      "id": 14500805,
+      "add_type": 30,
+      "add_value": 0.075,
+      "next_id": 14500806
+    },
+    {
+      "id": 14500806,
+      "add_type": 30,
+      "add_value": 0.105,
+      "next_id": 14500807
+    },
+    {
+      "id": 14500807,
+      "add_type": 30,
+      "add_value": 0.135,
+      "next_id": 14500808
+    },
+    {
+      "id": 14500808,
+      "add_type": 30,
+      "add_value": 0.18,
+      "next_id": 14500809
+    },
+    {
+      "id": 14500809,
+      "add_type": 30,
+      "add_value": 0.24,
+      "next_id": 14500810
+    },
+    {
+      "id": 14500810,
+      "add_type": 30,
+      "add_value": 0.3,
+      "next_id": 14500811
+    },
+    {
+      "id": 14500811,
+      "add_type": 30,
+      "add_value": 0.375,
+      "next_id": 14500812
+    },
+    {
+      "id": 14500812,
+      "add_type": 30,
+      "add_value": 0.45,
+      "next_id": 0
+    },
+    {
+      "id": 14500901,
+      "add_type": 31,
+      "add_value": 0.015,
+      "next_id": 14500902
+    },
+    {
+      "id": 14500902,
+      "add_type": 31,
+      "add_value": 0.03,
+      "next_id": 14500903
+    },
+    {
+      "id": 14500903,
+      "add_type": 31,
+      "add_value": 0.045,
+      "next_id": 14500904
+    },
+    {
+      "id": 14500904,
+      "add_type": 31,
+      "add_value": 0.06,
+      "next_id": 14500905
+    },
+    {
+      "id": 14500905,
+      "add_type": 31,
+      "add_value": 0.075,
+      "next_id": 14500906
+    },
+    {
+      "id": 14500906,
+      "add_type": 31,
+      "add_value": 0.105,
+      "next_id": 14500907
+    },
+    {
+      "id": 14500907,
+      "add_type": 31,
+      "add_value": 0.135,
+      "next_id": 14500908
+    },
+    {
+      "id": 14500908,
+      "add_type": 31,
+      "add_value": 0.18,
+      "next_id": 14500909
+    },
+    {
+      "id": 14500909,
+      "add_type": 31,
+      "add_value": 0.24,
+      "next_id": 14500910
+    },
+    {
+      "id": 14500910,
+      "add_type": 31,
+      "add_value": 0.3,
+      "next_id": 14500911
+    },
+    {
+      "id": 14500911,
+      "add_type": 31,
+      "add_value": 0.375,
+      "next_id": 14500912
+    },
+    {
+      "id": 14500912,
+      "add_type": 31,
+      "add_value": 0.45,
+      "next_id": 0
+    },
+    {
+      "id": 14501001,
+      "add_type": 104,
+      "add_value": 1.0,
+      "next_id": 14501002
+    },
+    {
+      "id": 14501002,
+      "add_type": 104,
+      "add_value": 2.0,
+      "next_id": 14501003
+    },
+    {
+      "id": 14501003,
+      "add_type": 104,
+      "add_value": 3.0,
+      "next_id": 14501004
+    },
+    {
+      "id": 14501004,
+      "add_type": 104,
+      "add_value": 4.0,
+      "next_id": 14501005
+    },
+    {
+      "id": 14501005,
+      "add_type": 104,
+      "add_value": 5.0,
+      "next_id": 14501006
+    },
+    {
+      "id": 14501006,
+      "add_type": 104,
+      "add_value": 6.0,
+      "next_id": 14501007
+    },
+    {
+      "id": 14501007,
+      "add_type": 104,
+      "add_value": 7.0,
+      "next_id": 14501008
+    },
+    {
+      "id": 14501008,
+      "add_type": 104,
+      "add_value": 8.0,
+      "next_id": 14501009
+    },
+    {
+      "id": 14501009,
+      "add_type": 104,
+      "add_value": 9.0,
+      "next_id": 14501010
+    },
+    {
+      "id": 14501010,
+      "add_type": 104,
+      "add_value": 10.0,
+      "next_id": 14501011
+    },
+    {
+      "id": 14501011,
+      "add_type": 104,
+      "add_value": 11.0,
+      "next_id": 14501012
+    },
+    {
+      "id": 14501012,
+      "add_type": 104,
+      "add_value": 12.0,
+      "next_id": 0
+    }
+  ]
+}

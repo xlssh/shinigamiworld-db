@@ -1,0 +1,846 @@
+{
+  "table": "knives",
+  "rowCount": 24,
+  "rows": [
+    {
+      "id": 1000001,
+      "name": "Wabisuke",
+      "bind_skill_id": 13110029,
+      "type_id": 1,
+      "handbook_id": 14100084,
+      "appraise": "C",
+      "get_road": "Obtain this after completing Level 8 Main Task - \"Legendary Quincy\"",
+      "attack": 2,
+      "defense": 7,
+      "recovery": 2,
+      "resistance": 2,
+      "speed": 2,
+      "direction": 0,
+      "attribute_type": [
+        16,
+        17,
+        21
+      ],
+      "base_value": [
+        90,
+        63,
+        63
+      ],
+      "growth_value": [
+        130,
+        91,
+        91
+      ],
+      "active_effects": [
+        13500001,
+        13500002,
+        13500003
+      ]
+    },
+    {
+      "id": 1000002,
+      "name": "Tobiume",
+      "bind_skill_id": 13110029,
+      "type_id": 1,
+      "handbook_id": 14100087,
+      "appraise": "B",
+      "get_road": "First Top-up accumulative top-up",
+      "attack": 5,
+      "defense": 5,
+      "recovery": 5,
+      "resistance": 5,
+      "speed": 1,
+      "direction": 1,
+      "attribute_type": [
+        16,
+        20,
+        101
+      ],
+      "base_value": [
+        90,
+        90,
+        230
+      ],
+      "growth_value": [
+        130,
+        130,
+        330
+      ],
+      "active_effects": [
+        13500011,
+        13500012,
+        13500013
+      ]
+    },
+    {
+      "id": 1000003,
+      "name": "Ruri'iro Kujaku",
+      "bind_skill_id": 13110029,
+      "type_id": 1,
+      "handbook_id": 14100091,
+      "appraise": "C",
+      "get_road": "Obtain this after completing Level 30 Main Task - \"Execution Moved Earlier\"",
+      "attack": 6,
+      "defense": 1,
+      "recovery": 1,
+      "resistance": 1,
+      "speed": 6,
+      "direction": 3,
+      "attribute_type": [
+        20,
+        11,
+        101
+      ],
+      "base_value": [
+        120,
+        120,
+        300
+      ],
+      "growth_value": [
+        150,
+        150,
+        375
+      ],
+      "active_effects": [
+        13500041,
+        13500042,
+        13500043
+      ]
+    },
+    {
+      "id": 1000004,
+      "name": "Haineko",
+      "bind_skill_id": 13110029,
+      "type_id": 1,
+      "handbook_id": 14100092,
+      "appraise": "C",
+      "get_road": "Obtain this after completing Level 50 Main Task - \"Hueco Mondo moves again\"",
+      "attack": 7,
+      "defense": 1,
+      "recovery": 1,
+      "resistance": 1,
+      "speed": 5,
+      "direction": 0,
+      "attribute_type": [
+        16,
+        17,
+        21
+      ],
+      "base_value": [
+        90,
+        63,
+        63
+      ],
+      "growth_value": [
+        130,
+        91,
+        91
+      ],
+      "active_effects": [
+        13500021,
+        13500022,
+        13500023
+      ]
+    },
+    {
+      "id": 1000005,
+      "name": "Suzumebachi",
+      "bind_skill_id": 13110029,
+      "type_id": 2,
+      "handbook_id": 14100083,
+      "appraise": "A",
+      "get_road": "Purchase in Alliance War Honor Shop",
+      "attack": 8,
+      "defense": 2,
+      "recovery": 2,
+      "resistance": 2,
+      "speed": 8,
+      "direction": 1,
+      "attribute_type": [
+        16,
+        20,
+        101
+      ],
+      "base_value": [
+        120,
+        120,
+        300
+      ],
+      "growth_value": [
+        150,
+        150,
+        375
+      ],
+      "active_effects": [
+        13500051,
+        13500052,
+        13500053
+      ]
+    },
+    {
+      "id": 1000006,
+      "name": "Kokujō Tengen Myō'ō",
+      "bind_skill_id": 13110029,
+      "type_id": 2,
+      "handbook_id": 14100086,
+      "appraise": "A",
+      "get_road": "Finish Special Achievements",
+      "attack": 8,
+      "defense": 5,
+      "recovery": 5,
+      "resistance": 5,
+      "speed": 1,
+      "direction": 4,
+      "attribute_type": [
+        16,
+        17,
+        101
+      ],
+      "base_value": [
+        120,
+        84,
+        300
+      ],
+      "growth_value": [
+        150,
+        105,
+        375
+      ],
+      "active_effects": [
+        13500061,
+        13500062,
+        13500063
+      ]
+    },
+    {
+      "id": 1000007,
+      "name": "Kazeshini",
+      "bind_skill_id": 13110029,
+      "type_id": 2,
+      "handbook_id": 14100088,
+      "appraise": "A",
+      "get_road": "Obtain this after completing Level 65 Main Task - \"Blockage\"",
+      "attack": 8,
+      "defense": 2,
+      "recovery": 2,
+      "resistance": 2,
+      "speed": 8,
+      "direction": 5,
+      "attribute_type": [
+        16,
+        20,
+        11
+      ],
+      "base_value": [
+        120,
+        120,
+        120
+      ],
+      "growth_value": [
+        150,
+        150,
+        150
+      ],
+      "active_effects": [
+        13500071,
+        13500072,
+        13500073
+      ]
+    },
+    {
+      "id": 1000008,
+      "name": "Hōzukimaru",
+      "bind_skill_id": 13110029,
+      "type_id": 2,
+      "handbook_id": 14100090,
+      "appraise": "A",
+      "get_road": "Purchase in Alliance War Honor Shop",
+      "attack": 7,
+      "defense": 5,
+      "recovery": 4,
+      "resistance": 4,
+      "speed": 2,
+      "direction": 3,
+      "attribute_type": [
+        16,
+        11,
+        101
+      ],
+      "base_value": [
+        120,
+        120,
+        300
+      ],
+      "growth_value": [
+        150,
+        150,
+        375
+      ],
+      "active_effects": [
+        13500081,
+        13500082,
+        13500083
+      ]
+    },
+    {
+      "id": 1000009,
+      "name": "Ashisogi Jizō",
+      "bind_skill_id": 13110029,
+      "type_id": 2,
+      "handbook_id": 14100094,
+      "appraise": "A",
+      "get_road": "Obtain this after completing Level 75 Main Task - \"Behind\"",
+      "attack": 7,
+      "defense": 4,
+      "recovery": 3,
+      "resistance": 3,
+      "speed": 5,
+      "direction": 3,
+      "attribute_type": [
+        20,
+        11,
+        101
+      ],
+      "base_value": [
+        120,
+        120,
+        300
+      ],
+      "growth_value": [
+        150,
+        150,
+        375
+      ],
+      "active_effects": [
+        13500091,
+        13500092,
+        13500093
+      ]
+    },
+    {
+      "id": 1000010,
+      "name": "Zabimaru",
+      "bind_skill_id": 13110029,
+      "type_id": 2,
+      "handbook_id": 14100093,
+      "appraise": "A+",
+      "get_road": "Finish Special Achievements",
+      "attack": 9,
+      "defense": 4,
+      "recovery": 4,
+      "resistance": 3,
+      "speed": 4,
+      "direction": 1,
+      "attribute_type": [
+        16,
+        20,
+        101
+      ],
+      "base_value": [
+        150,
+        150,
+        375
+      ],
+      "growth_value": [
+        170,
+        170,
+        425
+      ],
+      "active_effects": [
+        13500101,
+        13500102,
+        13500103
+      ]
+    },
+    {
+      "id": 1000011,
+      "name": "Zangetsu",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100080,
+      "appraise": "SS",
+      "get_road": "Not Yet Activated",
+      "attack": 10,
+      "defense": 5,
+      "recovery": 1,
+      "resistance": 1,
+      "speed": 9,
+      "direction": 5,
+      "attribute_type": [
+        16,
+        20,
+        11
+      ],
+      "base_value": [
+        150,
+        150,
+        150
+      ],
+      "growth_value": [
+        170,
+        170,
+        170
+      ],
+      "active_effects": [
+        13500111,
+        13500112,
+        13500113
+      ]
+    },
+    {
+      "id": 1000012,
+      "name": "Muramasa",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100081,
+      "appraise": "SS",
+      "get_road": "Not Yet Activated",
+      "attack": 9,
+      "defense": 5,
+      "recovery": 1,
+      "resistance": 1,
+      "speed": 10,
+      "direction": 5,
+      "attribute_type": [
+        20,
+        16,
+        11
+      ],
+      "base_value": [
+        180,
+        180,
+        180
+      ],
+      "growth_value": [
+        180,
+        180,
+        180
+      ],
+      "active_effects": [
+        13500151,
+        13500152,
+        13500153
+      ]
+    },
+    {
+      "id": 1000013,
+      "name": "Sode no Shirayuki",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100082,
+      "appraise": "S",
+      "get_road": "Purchase in Alliance War Honor Shop",
+      "attack": 3,
+      "defense": 5,
+      "recovery": 4,
+      "resistance": 4,
+      "speed": 10,
+      "direction": 5,
+      "attribute_type": [
+        16,
+        20,
+        11
+      ],
+      "base_value": [
+        150,
+        150,
+        150
+      ],
+      "growth_value": [
+        170,
+        170,
+        170
+      ],
+      "active_effects": [
+        13500131,
+        13500132,
+        13500133
+      ]
+    },
+    {
+      "id": 1000014,
+      "name": "Senbonzakura",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100085,
+      "appraise": "SSS",
+      "get_road": "Not Yet Activated",
+      "attack": 10,
+      "defense": 6,
+      "recovery": 6,
+      "resistance": 3,
+      "speed": 4,
+      "direction": 3,
+      "attribute_type": [
+        16,
+        11,
+        101
+      ],
+      "base_value": [
+        150,
+        150,
+        375
+      ],
+      "growth_value": [
+        170,
+        170,
+        425
+      ],
+      "active_effects": [
+        13500141,
+        13500142,
+        13500143
+      ]
+    },
+    {
+      "id": 1000015,
+      "name": "Hyōrinmaru",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100089,
+      "appraise": "SSS",
+      "get_road": "Not Yet Activated",
+      "attack": 10,
+      "defense": 8,
+      "recovery": 7,
+      "resistance": 8,
+      "speed": 5,
+      "direction": 2,
+      "attribute_type": [
+        17,
+        21,
+        101
+      ],
+      "base_value": [
+        180,
+        180,
+        640
+      ],
+      "growth_value": [
+        180,
+        180,
+        640
+      ],
+      "active_effects": [
+        13500161,
+        13500162,
+        13500163
+      ]
+    },
+    {
+      "id": 1000016,
+      "name": "Tensa Zangetsu",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100095,
+      "appraise": "SSS",
+      "get_road": "Not Yet Activated",
+      "attack": 10,
+      "defense": 9,
+      "recovery": 9,
+      "resistance": 9,
+      "speed": 8,
+      "direction": 5,
+      "attribute_type": [
+        16,
+        20,
+        11
+      ],
+      "base_value": [
+        180,
+        180,
+        180
+      ],
+      "growth_value": [
+        180,
+        180,
+        180
+      ],
+      "active_effects": [
+        13500171,
+        13500172,
+        13500173
+      ]
+    },
+    {
+      "id": 1000017,
+      "name": "Sōgyo no Kotowari",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100261,
+      "appraise": "SSS",
+      "get_road": "New Year Event Reward",
+      "attack": 10,
+      "defense": 4,
+      "recovery": 1,
+      "resistance": 1,
+      "speed": 8,
+      "direction": 1,
+      "attribute_type": [
+        16,
+        20,
+        101
+      ],
+      "base_value": [
+        150,
+        150,
+        375
+      ],
+      "growth_value": [
+        170,
+        170,
+        425
+      ],
+      "active_effects": [
+        13500121,
+        13500122,
+        13500123
+      ]
+    },
+    {
+      "id": 1000018,
+      "name": "Gegetsuburi",
+      "bind_skill_id": 13110029,
+      "type_id": 1,
+      "handbook_id": 14100284,
+      "appraise": "A+",
+      "get_road": "Seven Day Sign-in Reward",
+      "attack": 4,
+      "defense": 7,
+      "recovery": 2,
+      "resistance": 2,
+      "speed": 2,
+      "direction": 2,
+      "attribute_type": [
+        17,
+        21,
+        101
+      ],
+      "base_value": [
+        90,
+        90,
+        320
+      ],
+      "growth_value": [
+        130,
+        130,
+        460
+      ],
+      "active_effects": [
+        13500031,
+        13500032,
+        13500033
+      ]
+    },
+    {
+      "id": 1000019,
+      "name": "Katen Kyōkotsu",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100702,
+      "appraise": "SSS",
+      "get_road": "Not Yet Activated",
+      "attack": 10,
+      "defense": 8,
+      "recovery": 8,
+      "resistance": 7,
+      "speed": 10,
+      "direction": 5,
+      "attribute_type": [
+        16,
+        20,
+        11
+      ],
+      "base_value": [
+        210,
+        210,
+        210
+      ],
+      "growth_value": [
+        240,
+        240,
+        240
+      ],
+      "active_effects": [
+        13500181,
+        13500182,
+        13500183
+      ]
+    },
+    {
+      "id": 1000020,
+      "name": "Ryūjin Jakka",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100722,
+      "appraise": "SSS",
+      "get_road": "Can be obtained in events!",
+      "attack": 10,
+      "defense": 10,
+      "recovery": 10,
+      "resistance": 10,
+      "speed": 10,
+      "direction": 5,
+      "attribute_type": [
+        16,
+        20,
+        11
+      ],
+      "base_value": [
+        500,
+        500,
+        500
+      ],
+      "growth_value": [
+        280,
+        280,
+        280
+      ],
+      "active_effects": [
+        13500191,
+        13500192,
+        13500193
+      ]
+    },
+    {
+      "id": 1000021,
+      "name": "Minazuki",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100738,
+      "appraise": "SSS",
+      "get_road": "Can be obtained in events!",
+      "attack": 10,
+      "defense": 8,
+      "recovery": 10,
+      "resistance": 8,
+      "speed": 10,
+      "direction": 3,
+      "attribute_type": [
+        20,
+        11,
+        101
+      ],
+      "base_value": [
+        400,
+        400,
+        700
+      ],
+      "growth_value": [
+        270,
+        270,
+        700
+      ],
+      "active_effects": [
+        13500201,
+        13500202,
+        13500203
+      ]
+    },
+    {
+      "id": 1000022,
+      "name": "Kyōka Suigetsu",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100750,
+      "appraise": "SSS",
+      "get_road": "Use Inferno Stone to exchange in the Challenge Stone Shop of Cross Server Battle.",
+      "attack": 10,
+      "defense": 10,
+      "recovery": 10,
+      "resistance": 10,
+      "speed": 10,
+      "direction": 5,
+      "attribute_type": [
+        16,
+        20,
+        11
+      ],
+      "base_value": [
+        500,
+        500,
+        500
+      ],
+      "growth_value": [
+        280,
+        280,
+        280
+      ],
+      "active_effects": [
+        13500211,
+        13500212,
+        13500213
+      ]
+    },
+    {
+      "id": 1000023,
+      "name": "Ichimonji",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100766,
+      "appraise": "SSS",
+      "get_road": "Can be obtained in events!",
+      "attack": 10,
+      "defense": 10,
+      "recovery": 10,
+      "resistance": 10,
+      "speed": 10,
+      "direction": 3,
+      "attribute_type": [
+        16,
+        11,
+        101
+      ],
+      "base_value": [
+        700,
+        700,
+        1000
+      ],
+      "growth_value": [
+        350,
+        350,
+        750
+      ],
+      "active_effects": [
+        13500221,
+        13500222,
+        13500223
+      ]
+    },
+    {
+      "id": 1000024,
+      "name": "Benihime",
+      "bind_skill_id": 13110029,
+      "type_id": 3,
+      "handbook_id": 14100777,
+      "appraise": "SSS",
+      "get_road": "Can be obtained in events!",
+      "attack": 10,
+      "defense": 10,
+      "recovery": 10,
+      "resistance": 10,
+      "speed": 10,
+      "direction": 3,
+      "attribute_type": [
+        20,
+        11,
+        101
+      ],
+      "base_value": [
+        750,
+        750,
+        1250
+      ],
+      "growth_value": [
+        400,
+        400,
+        800
+      ],
+      "active_effects": [
+        13500231,
+        13500232,
+        13500233
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4991 @@
+{
+  "table": "achievements",
+  "rowCount": 164,
+  "rows": [
+    {
+      "id": 6000181,
+      "name": "Nanao",
+      "follow_pic": 6000181,
+      "conditions_array_1": [
+        {
+          "type": 33,
+          "value1": 2,
+          "value2": 0
+        },
+        {
+          "type": 34,
+          "value1": 11110004,
+          "value2": 1
+        },
+        {
+          "type": 12,
+          "value1": 32,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Owns 2 sets of Ultimate Equipment # Owns Yasutora Sado # Main Character level reaches Level 32",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100196,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        2,
+        1,
+        32
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000182,
+      "name": "Nanao",
+      "follow_pic": 6000182,
+      "conditions_array_1": [
+        {
+          "type": 33,
+          "value1": 2,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Owns 2 sets of Ultimate Equipment",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>When you own </font><font color='#ff00' SIZE='12'>2 sets of Ultimate Equipment</font><font color='#ffffffff' SIZE='12'>, you'll receive a Purple Stamina H\u014dgu!<br><br>You still need </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> sets <br><br>to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14840008,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        2
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000191,
+      "name": "Nanao",
+      "follow_pic": 6000191,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 2,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 2 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous sign-in </font><font color='#ff00' SIZE='12'>2 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days <br><br>to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 888888
+        }
+      ],
+      "conditions_array_2": [
+        2
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000192,
+      "name": "Nanao",
+      "follow_pic": 6000192,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 7,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 7 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>7 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14500106,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        7
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000193,
+      "name": "Nanao",
+      "follow_pic": 6000193,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 15,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 15 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>15 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 7,
+          "code": 5,
+          "amount": 200
+        },
+        {
+          "type": 1,
+          "code": 14100005,
+          "amount": 20
+        }
+      ],
+      "conditions_array_2": [
+        15
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000194,
+      "name": "Nanao",
+      "follow_pic": 6000194,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 30,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 30 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>30 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 0,
+          "code": 2,
+          "amount": 666
+        }
+      ],
+      "conditions_array_2": [
+        30
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000195,
+      "name": "Nanao",
+      "follow_pic": 6000195,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 60,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 60 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>60 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 100
+        }
+      ],
+      "conditions_array_2": [
+        60
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000196,
+      "name": "Nanao",
+      "follow_pic": 6000196,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 90,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 90 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>90 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 0,
+          "code": 2,
+          "amount": 888
+        }
+      ],
+      "conditions_array_2": [
+        90
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000197,
+      "name": "Nanao",
+      "follow_pic": 6000197,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 180,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 180 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>180 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100015,
+          "amount": 1000
+        }
+      ],
+      "conditions_array_2": [
+        180
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000198,
+      "name": "Nanao",
+      "follow_pic": 6000198,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 365,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 365 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>365 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 0,
+          "code": 2,
+          "amount": 18888
+        }
+      ],
+      "conditions_array_2": [
+        365
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000199,
+      "name": "Nanao",
+      "follow_pic": 6000199,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 420,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 420 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>420 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100698,
+          "amount": 1000
+        }
+      ],
+      "conditions_array_2": [
+        420
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000200,
+      "name": "Nanao",
+      "follow_pic": 6000200,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 480,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 480 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>480 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100589,
+          "amount": 8888
+        }
+      ],
+      "conditions_array_2": [
+        480
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000201,
+      "name": "Nanao",
+      "follow_pic": 6000201,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 510,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 510 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>510 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100690,
+          "amount": 10000
+        }
+      ],
+      "conditions_array_2": [
+        510
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000202,
+      "name": "Nanao",
+      "follow_pic": 6000202,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 600,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 600 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>600 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100604,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        600
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000203,
+      "name": "Nanao",
+      "follow_pic": 6000203,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 690,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 690 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>690 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100595,
+          "amount": 2100
+        }
+      ],
+      "conditions_array_2": [
+        690
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000204,
+      "name": "Nanao",
+      "follow_pic": 6000204,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 720,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 720 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>720 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100600,
+          "amount": 720
+        }
+      ],
+      "conditions_array_2": [
+        720
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000205,
+      "name": "Nanao",
+      "follow_pic": 6000205,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 900,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 900 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>900 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14800010,
+          "amount": 4
+        }
+      ],
+      "conditions_array_2": [
+        900
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000206,
+      "name": "Nanao",
+      "follow_pic": 6000206,
+      "conditions_array_1": [
+        {
+          "type": 1,
+          "value1": 1095,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Continuous Sign-in 1095 days",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>Continuous Sign-in </font><font color='#ff00' SIZE='12'>1095 days</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to Sign-in </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> days<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 0,
+          "code": 2,
+          "amount": 38888
+        }
+      ],
+      "conditions_array_2": [
+        1095
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000301,
+      "name": "Nanao",
+      "follow_pic": 6000301,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 500,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 500 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>500 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14820036,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        500
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000302,
+      "name": "Nanao",
+      "follow_pic": 6000302,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 1000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 1000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>1000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'>will give you a Agi Treasure<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14840007,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        1000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000303,
+      "name": "Nanao",
+      "follow_pic": 6000303,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 3000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 3000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>3000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100019,
+          "amount": 4
+        }
+      ],
+      "conditions_array_2": [
+        3000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000304,
+      "name": "Nanao",
+      "follow_pic": 6000304,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 5000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 5000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>5000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14820037,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        5000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000305,
+      "name": "Nanao",
+      "follow_pic": 6000305,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 10000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 10000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>10000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 100
+        }
+      ],
+      "conditions_array_2": [
+        10000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000306,
+      "name": "Nanao",
+      "follow_pic": 6000306,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 20000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 20000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>20000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14820038,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        20000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000307,
+      "name": "Nanao",
+      "follow_pic": 6000307,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 30000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 30000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>30000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 0,
+          "code": 2,
+          "amount": 1666
+        }
+      ],
+      "conditions_array_2": [
+        30000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000308,
+      "name": "Nanao",
+      "follow_pic": 6000308,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 50000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 50000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>50000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 0,
+          "code": 2,
+          "amount": 1888
+        }
+      ],
+      "conditions_array_2": [
+        50000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000309,
+      "name": "Nanao",
+      "follow_pic": 6000309,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 100000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 100000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>100000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14840017,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        100000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000310,
+      "name": "Nanao",
+      "follow_pic": 6000310,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 200000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 200000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>200000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 0,
+          "code": 2,
+          "amount": 8888
+        }
+      ],
+      "conditions_array_2": [
+        200000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000311,
+      "name": "Nanao",
+      "follow_pic": 6000311,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 500000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 500000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>500000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100197,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        500000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000312,
+      "name": "Nanao",
+      "follow_pic": 6000312,
+      "conditions_array_1": [
+        {
+          "type": 45,
+          "value1": 1000000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spending 1000000 Gold or Coupons",
+      "reward_str": "<font color='#ffffffff' SIZE='12'>In the Shop, accumulate spending of </font><font color='#ff00' SIZE='12'>1000000 Gold or Coupons</font><font color='#ffffffff' SIZE='12'> to get this gift!<br><br>You still need to spend </font><font color='#ff00' SIZE='12'>%0</font><font color='#ffffffff' SIZE='12'> Gold<br><br> to get the gift: </font><br>%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100198,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        1000000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000002,
+      "name": "Challenge Pass",
+      "follow_pic": 6000002,
+      "conditions_array_1": [
+        {
+          "type": 2,
+          "value1": 0,
+          "value2": 5
+        }
+      ],
+      "condition_str": "Challenge succesfully 5 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100006,
+          "amount": 6
+        }
+      ],
+      "conditions_array_2": [
+        5
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000003,
+      "name": "Equipment Fortifying",
+      "follow_pic": 6000003,
+      "conditions_array_1": [
+        {
+          "type": 3,
+          "value1": 10,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Owns one equipment fortify to Level 10",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100006,
+          "amount": 7
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000006,
+      "name": "Guild",
+      "follow_pic": 6000006,
+      "conditions_array_1": [
+        {
+          "type": 6,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Create or join one Guild (Activate at Level 32)",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100006,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000013,
+      "name": "Girlfriend Exchange",
+      "follow_pic": 6000013,
+      "conditions_array_1": [
+        {
+          "type": 7,
+          "value1": 30,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Exchange with Friend's Girlfriend more than 30 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100006,
+          "amount": 13
+        }
+      ],
+      "conditions_array_2": [
+        30
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000015,
+      "name": "Instances",
+      "follow_pic": 6000015,
+      "conditions_array_1": [
+        {
+          "type": 2,
+          "value1": 15201025,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Defeat Level 30 Hard Instances - Ury\u016b Ishida ",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100006,
+          "amount": 14
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 2
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003001
+    },
+    {
+      "id": 6000016,
+      "name": "Upgrade Ranks",
+      "follow_pic": 6000016,
+      "conditions_array_1": [
+        {
+          "type": 8,
+          "value1": 40100007,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Rank level reaches Twelveth Division Deputy Captain",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100006,
+          "amount": 14
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 5
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003002
+    },
+    {
+      "id": 6000021,
+      "name": "Equipment Quality",
+      "follow_pic": 6000021,
+      "conditions_array_1": [
+        {
+          "type": 4,
+          "value1": 5,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Any partner's wears complete set of purple equipment",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100007,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000022,
+      "name": "Equipment Fortifying",
+      "follow_pic": 6000022,
+      "conditions_array_1": [
+        {
+          "type": 31,
+          "value1": 40,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Any partner's equipment fortify to Level 40",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100007,
+          "amount": 11
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000023,
+      "name": "Tavern Janken",
+      "follow_pic": 6000023,
+      "conditions_array_1": [
+        {
+          "type": 9,
+          "value1": 50,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate Janken 50 times(One-click Janken equals to 10 times)",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100007,
+          "amount": 12
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 3
+        }
+      ],
+      "conditions_array_2": [
+        50
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000024,
+      "name": "Finish Tasks",
+      "follow_pic": 6000024,
+      "conditions_array_1": [
+        {
+          "type": 10,
+          "value1": 80,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Finishes 80 Main and Sub Tasks ",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100007,
+          "amount": 12
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 5
+        }
+      ],
+      "conditions_array_2": [
+        80
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000025,
+      "name": "Zanpakut\u014d",
+      "follow_pic": 6000025,
+      "conditions_array_1": [
+        {
+          "type": 11,
+          "value1": 3,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Owns any one Shikai quality or above Zanpakut\u014d",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100007,
+          "amount": 12
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 8
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003003
+    },
+    {
+      "id": 6000026,
+      "name": "Upgrade Ranks",
+      "follow_pic": 6000026,
+      "conditions_array_1": [
+        {
+          "type": 8,
+          "value1": 40100012,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Rank level reaches Level Tenth Division Captain",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100007,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003004
+    },
+    {
+      "id": 6000031,
+      "name": "Upgrade Level",
+      "follow_pic": 6000031,
+      "conditions_array_1": [
+        {
+          "type": 12,
+          "value1": 35,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Main Character level reaches Level 35",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100007,
+          "amount": 18
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 12
+        }
+      ],
+      "conditions_array_2": [
+        35
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000032,
+      "name": "Upgrade Level",
+      "follow_pic": 6000032,
+      "conditions_array_1": [
+        {
+          "type": 12,
+          "value1": 45,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Main Character level reaches Level 45",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100007,
+          "amount": 18
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 12
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 5
+        }
+      ],
+      "conditions_array_2": [
+        45
+      ],
+      "if_have_title": 1,
+      "title_id": 6003005
+    },
+    {
+      "id": 6000033,
+      "name": "Upgrade Level",
+      "follow_pic": 6000033,
+      "conditions_array_1": [
+        {
+          "type": 12,
+          "value1": 55,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Main Character level reaches Level 55",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100007,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        55
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000034,
+      "name": "Upgrade Level",
+      "follow_pic": 6000034,
+      "conditions_array_1": [
+        {
+          "type": 12,
+          "value1": 65,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Main Character level reaches Level 65",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        65
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000035,
+      "name": "Upgrade Level",
+      "follow_pic": 6000035,
+      "conditions_array_1": [
+        {
+          "type": 12,
+          "value1": 75,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Main Character level reaches Level 75",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        75
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000036,
+      "name": "Upgrade Level",
+      "follow_pic": 6000036,
+      "conditions_array_1": [
+        {
+          "type": 12,
+          "value1": 85,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Main Character level reaches Level 85",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 7
+        }
+      ],
+      "conditions_array_2": [
+        85
+      ],
+      "if_have_title": 1,
+      "title_id": 6003006
+    },
+    {
+      "id": 6000041,
+      "name": "Lucky Cat",
+      "follow_pic": 6000041,
+      "conditions_array_1": [
+        {
+          "type": 13,
+          "value1": 50,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate clicks Lucky Cat more than 50 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100007,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        50
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000042,
+      "name": "Kons\u014d",
+      "follow_pic": 6000042,
+      "conditions_array_1": [
+        {
+          "type": 14,
+          "value1": 60,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate Kons\u014d more than 60 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 20
+        }
+      ],
+      "conditions_array_2": [
+        60
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000043,
+      "name": "Soul Interaction",
+      "follow_pic": 6000043,
+      "conditions_array_1": [
+        {
+          "type": 15,
+          "value1": 15,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate Soul Interaction more than 15 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100001,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        15
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000044,
+      "name": "Girlfriend Partying",
+      "follow_pic": 6000044,
+      "conditions_array_1": [
+        {
+          "type": 16,
+          "value1": 15,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumuate Partying with Girlfriend over 15 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 5
+        }
+      ],
+      "conditions_array_2": [
+        15
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000045,
+      "name": "Master Catches",
+      "follow_pic": 6000045,
+      "conditions_array_1": [
+        {
+          "type": 17,
+          "value1": 10,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate successfully catches other players more than10 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 6
+        }
+      ],
+      "conditions_array_2": [
+        10
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000046,
+      "name": "Master Rescue",
+      "follow_pic": 6000046,
+      "conditions_array_1": [
+        {
+          "type": 18,
+          "value1": 10,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate successfully rescues other players more than 10 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 6
+        }
+      ],
+      "conditions_array_2": [
+        10
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000051,
+      "name": "Pass Instances",
+      "follow_pic": 6000051,
+      "conditions_array_1": [
+        {
+          "type": 46,
+          "value1": 15200002,
+          "value2": 15
+        }
+      ],
+      "condition_str": "Accumulate successfully challenge pass Level 30 Hard Mode Instances 15 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 6
+        }
+      ],
+      "conditions_array_2": [
+        15
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000052,
+      "name": "Pass Instances",
+      "follow_pic": 6000052,
+      "conditions_array_1": [
+        {
+          "type": 46,
+          "value1": 15200004,
+          "value2": 20
+        }
+      ],
+      "condition_str": "Accumulate successfully challenge pass Level 50 Hard Mode Instances 20 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 6
+        },
+        {
+          "type": 1,
+          "code": 14800020,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        20
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000053,
+      "name": "Pass Instances",
+      "follow_pic": 6000053,
+      "conditions_array_1": [
+        {
+          "type": 46,
+          "value1": 15200006,
+          "value2": 25
+        }
+      ],
+      "condition_str": "Accumulate successfully challenge pass Level 70 Hard Mode Instances 25 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 7
+        },
+        {
+          "type": 1,
+          "code": 14800020,
+          "amount": 2
+        }
+      ],
+      "conditions_array_2": [
+        25
+      ],
+      "if_have_title": 1,
+      "title_id": 6003007
+    },
+    {
+      "id": 6000054,
+      "name": "Pass Instances",
+      "follow_pic": 6000054,
+      "conditions_array_1": [
+        {
+          "type": 46,
+          "value1": 15200008,
+          "value2": 30
+        }
+      ],
+      "condition_str": "Accumulate successfully challenge pass Level 80 Hard Mode Instances 30 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 7
+        },
+        {
+          "type": 1,
+          "code": 14800020,
+          "amount": 2
+        }
+      ],
+      "conditions_array_2": [
+        30
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000055,
+      "name": "Pass Instances",
+      "follow_pic": 6000055,
+      "conditions_array_1": [
+        {
+          "type": 46,
+          "value1": 15200010,
+          "value2": 35
+        }
+      ],
+      "condition_str": "Accumulate successfully challenge pass Level 90 Hard Mode Instances 35 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 7
+        },
+        {
+          "type": 1,
+          "code": 14800020,
+          "amount": 2
+        }
+      ],
+      "conditions_array_2": [
+        35
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000056,
+      "name": "Pass Instances",
+      "follow_pic": 6000056,
+      "conditions_array_1": [
+        {
+          "type": 46,
+          "value1": 15200012,
+          "value2": 40
+        }
+      ],
+      "condition_str": "Accumulate successfully challenge pass Level 100 Hard Mode Instances 40 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100008,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 8
+        },
+        {
+          "type": 1,
+          "code": 14800020,
+          "amount": 3
+        }
+      ],
+      "conditions_array_2": [
+        40
+      ],
+      "if_have_title": 1,
+      "title_id": 6003008
+    },
+    {
+      "id": 6000061,
+      "name": "Ryoka Attacks ",
+      "follow_pic": 6000061,
+      "conditions_array_1": [
+        {
+          "type": 19,
+          "value1": 500,
+          "value2": 0
+        }
+      ],
+      "condition_str": "In Ryoka Attacks event, accumulate battle 500 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 8
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        500
+      ],
+      "if_have_title": 1,
+      "title_id": 6003009
+    },
+    {
+      "id": 6000062,
+      "name": "Guild War",
+      "follow_pic": 6000062,
+      "conditions_array_1": [
+        {
+          "type": 20,
+          "value1": 10,
+          "value2": 1
+        }
+      ],
+      "condition_str": "In a single event, 10 continuous winning streak in Guild War",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 8
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003010
+    },
+    {
+      "id": 6000063,
+      "name": "Evil Spirit Attacks",
+      "follow_pic": 6000063,
+      "conditions_array_1": [
+        {
+          "type": 21,
+          "value1": 30,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate successfully kills Evil Spirits 30 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 8
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 2
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 5
+        }
+      ],
+      "conditions_array_2": [
+        30
+      ],
+      "if_have_title": 1,
+      "title_id": 6003011
+    },
+    {
+      "id": 6000064,
+      "name": "Evil Spirit Attacks",
+      "follow_pic": 6000064,
+      "conditions_array_1": [
+        {
+          "type": 47,
+          "value1": 3,
+          "value2": 1
+        }
+      ],
+      "condition_str": "In a single event, kills Evil Spirits 3 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 8
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 2
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 5
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003012
+    },
+    {
+      "id": 6000065,
+      "name": "Protect Seireitei ",
+      "follow_pic": 6000065,
+      "conditions_array_1": [
+        {
+          "type": 22,
+          "value1": 10,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Protect Seireitei Event accumuate defense 10 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 8
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        10
+      ],
+      "if_have_title": 1,
+      "title_id": 6003013
+    },
+    {
+      "id": 6000066,
+      "name": "Evil Spirit Attacks",
+      "follow_pic": 6000066,
+      "conditions_array_1": [
+        {
+          "type": 48,
+          "value1": 50,
+          "value2": 1
+        }
+      ],
+      "condition_str": "In a single event,, deals over 50% in total damage to own Clan's Evil Spirits",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003014
+    },
+    {
+      "id": 6000071,
+      "name": "Hunts for Arrancar ",
+      "follow_pic": 6000071,
+      "conditions_array_1": [
+        {
+          "type": 23,
+          "value1": 50000003,
+          "value2": 30
+        }
+      ],
+      "condition_str": "Accumulate hunt for Arrancar 30 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        30
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000072,
+      "name": "Hunts for Espada ",
+      "follow_pic": 6000072,
+      "conditions_array_1": [
+        {
+          "type": 23,
+          "value1": 50000004,
+          "value2": 30
+        }
+      ],
+      "condition_str": "Accumulate hunt for Espada 30 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        30
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000073,
+      "name": "Hunts for Hollow King ",
+      "follow_pic": 6000073,
+      "conditions_array_1": [
+        {
+          "type": 23,
+          "value1": 50000005,
+          "value2": 30
+        }
+      ],
+      "condition_str": "Accumulate hunt for Hollow King 30 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 20
+        }
+      ],
+      "conditions_array_2": [
+        30
+      ],
+      "if_have_title": 1,
+      "title_id": 6003015
+    },
+    {
+      "id": 6000074,
+      "name": "Hunts for Arrancar ",
+      "follow_pic": 6000074,
+      "conditions_array_1": [
+        {
+          "type": 24,
+          "value1": 50000003,
+          "value2": 50
+        }
+      ],
+      "condition_str": "Successfully rob Arrancar 50 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        50
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000075,
+      "name": "Hunts for Espada ",
+      "follow_pic": 6000075,
+      "conditions_array_1": [
+        {
+          "type": 24,
+          "value1": 50000004,
+          "value2": 30
+        }
+      ],
+      "condition_str": "Successfully rob Espada 30 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        30
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000076,
+      "name": "Hunts for Hollow King ",
+      "follow_pic": 6000076,
+      "conditions_array_1": [
+        {
+          "type": 24,
+          "value1": 50000005,
+          "value2": 20
+        }
+      ],
+      "condition_str": "Successfully rob Hollow King 20 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 20
+        }
+      ],
+      "conditions_array_2": [
+        20
+      ],
+      "if_have_title": 1,
+      "title_id": 6003016
+    },
+    {
+      "id": 6000081,
+      "name": "Arena",
+      "follow_pic": 6000081,
+      "conditions_array_1": [
+        {
+          "type": 25,
+          "value1": 50,
+          "value2": 0
+        }
+      ],
+      "condition_str": "50 continuous winning streak in the Arena (Active or Passive)",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 20
+        }
+      ],
+      "conditions_array_2": [
+        50
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000082,
+      "name": "Arena",
+      "follow_pic": 6000082,
+      "conditions_array_1": [
+        {
+          "type": 50,
+          "value1": 100,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Arena attacks other players 100 times (Wins or Lose)",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 20
+        }
+      ],
+      "conditions_array_2": [
+        100
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000083,
+      "name": "Arena",
+      "follow_pic": 6000083,
+      "conditions_array_1": [
+        {
+          "type": 25,
+          "value1": 400,
+          "value2": 0
+        }
+      ],
+      "condition_str": "400 continuous winning streak in the Arena",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 30
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 30
+        }
+      ],
+      "conditions_array_2": [
+        400
+      ],
+      "if_have_title": 1,
+      "title_id": 6003017
+    },
+    {
+      "id": 6000084,
+      "name": "Master Fights",
+      "follow_pic": 6000084,
+      "conditions_array_1": [
+        {
+          "type": 51,
+          "value1": 200,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Successfully take slaves from other players 200 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 20
+        }
+      ],
+      "conditions_array_2": [
+        200
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000085,
+      "name": "Arena",
+      "follow_pic": 6000085,
+      "conditions_array_1": [
+        {
+          "type": 52,
+          "value1": 1,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Reaches First Place in the Arena",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 20
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000086,
+      "name": "Arena",
+      "follow_pic": 6000086,
+      "conditions_array_1": [
+        {
+          "type": 53,
+          "value1": 1000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "1000 continuous winning streak in the Arena",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100002,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 5
+        }
+      ],
+      "conditions_array_2": [
+        1000
+      ],
+      "if_have_title": 1,
+      "title_id": 6003018
+    },
+    {
+      "id": 6000091,
+      "name": "Home Level",
+      "follow_pic": 6000091,
+      "conditions_array_1": [
+        {
+          "type": 26,
+          "value1": 5,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Home level upgrade to Gose",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003019
+    },
+    {
+      "id": 6000092,
+      "name": "Home Girlfriend",
+      "follow_pic": 6000092,
+      "conditions_array_1": [
+        {
+          "type": 27,
+          "value1": 8,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Girlfriend level upgrade to Level 8",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        8
+      ],
+      "if_have_title": 1,
+      "title_id": 6003020
+    },
+    {
+      "id": 6000093,
+      "name": "Throw Dice",
+      "follow_pic": 6000093,
+      "conditions_array_1": [
+        {
+          "type": 28,
+          "value1": 1,
+          "value2": 2
+        }
+      ],
+      "condition_str": "Throw Dice Gold wins 2 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        2
+      ],
+      "if_have_title": 1,
+      "title_id": 6003021
+    },
+    {
+      "id": 6000094,
+      "name": "Jigokuch\u014d ",
+      "follow_pic": 6000094,
+      "conditions_array_1": [
+        {
+          "type": 29,
+          "value1": 100,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate summons Jigokuch\u014d 100 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        100
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000095,
+      "name": "Jigokuch\u014d ",
+      "follow_pic": 6000095,
+      "conditions_array_1": [
+        {
+          "type": 29,
+          "value1": 1000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate summons Jigokuch\u014d 1000 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1000
+      ],
+      "if_have_title": 1,
+      "title_id": 6003022
+    },
+    {
+      "id": 6000096,
+      "name": "Jigokuch\u014d ",
+      "follow_pic": 6000096,
+      "conditions_array_1": [
+        {
+          "type": 29,
+          "value1": 10000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate summons Jigokuch\u014d 10000 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        10000
+      ],
+      "if_have_title": 1,
+      "title_id": 6003023
+    },
+    {
+      "id": 6000101,
+      "name": "Equipment Refine",
+      "follow_pic": 6000101,
+      "conditions_array_1": [
+        {
+          "type": 30,
+          "value1": 0,
+          "value2": 3000
+        }
+      ],
+      "condition_str": "Refine 3000 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        3000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000102,
+      "name": "Equipment Refine",
+      "follow_pic": 6000102,
+      "conditions_array_1": [
+        {
+          "type": 30,
+          "value1": 1,
+          "value2": 1000
+        }
+      ],
+      "condition_str": "Designate Refine 1000 times",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000103,
+      "name": "Upgrade Spirit Stone",
+      "follow_pic": 6000103,
+      "conditions_array_1": [
+        {
+          "type": 32,
+          "value1": 11,
+          "value2": 30
+        }
+      ],
+      "condition_str": "Synthesize 30 Level 11 Spirit Stone",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100009,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        30
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000104,
+      "name": "Battle Power",
+      "follow_pic": 6000104,
+      "conditions_array_1": [
+        {
+          "type": 43,
+          "value1": 500000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Total Battle Power passes 500000",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100012,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 5
+        }
+      ],
+      "conditions_array_2": [
+        500000
+      ],
+      "if_have_title": 1,
+      "title_id": 6003024
+    },
+    {
+      "id": 6000105,
+      "name": "Upgrade Spirit Stone",
+      "follow_pic": 6000105,
+      "conditions_array_1": [
+        {
+          "type": 32,
+          "value1": 10,
+          "value2": 12
+        }
+      ],
+      "condition_str": "Synthesize 12 Level 10 Spirit Stone",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        12
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000106,
+      "name": "Battle Power",
+      "follow_pic": 6000106,
+      "conditions_array_1": [
+        {
+          "type": 43,
+          "value1": 1000000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Total Battle Power passes 1000000",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100012,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 5
+        }
+      ],
+      "conditions_array_2": [
+        1000000
+      ],
+      "if_have_title": 1,
+      "title_id": 6003025
+    },
+    {
+      "id": 6000111,
+      "name": "Large Amount of Gold",
+      "follow_pic": 6000111,
+      "conditions_array_1": [
+        {
+          "type": 44,
+          "value1": 88888888,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Owns more than 88888888 Silver",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        88888888
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000112,
+      "name": "Large Amount of Gold",
+      "follow_pic": 6000112,
+      "conditions_array_1": [
+        {
+          "type": 44,
+          "value1": 888888888,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Owns more than 888888888 Silver",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        888888888
+      ],
+      "if_have_title": 1,
+      "title_id": 6003026
+    },
+    {
+      "id": 6000113,
+      "name": "Large Amount of Gold",
+      "follow_pic": 6000113,
+      "conditions_array_1": [
+        {
+          "type": 36,
+          "value1": 1500,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate spends 1500 Gold",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1500
+      ],
+      "if_have_title": 1,
+      "title_id": 6003027
+    },
+    {
+      "id": 6000114,
+      "name": "VIP Level",
+      "follow_pic": 6000114,
+      "conditions_array_1": [
+        {
+          "type": 37,
+          "value1": 6,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Becomes VIP 6",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003028
+    },
+    {
+      "id": 6000115,
+      "name": "Large Amount of Gold",
+      "follow_pic": 6000115,
+      "conditions_array_1": [
+        {
+          "type": 35,
+          "value1": 88888,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Accumulate owns more than 88888 Gold",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        88888
+      ],
+      "if_have_title": 1,
+      "title_id": 6003029
+    },
+    {
+      "id": 6000116,
+      "name": "VIP Level",
+      "follow_pic": 6000116,
+      "conditions_array_1": [
+        {
+          "type": 37,
+          "value1": 10,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Becomes VIP 10",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003030
+    },
+    {
+      "id": 6000117,
+      "name": "Shinigami Agent",
+      "follow_pic": 6000419,
+      "conditions_array_1": [
+        {
+          "type": 76,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Can be obtained from Medals",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003074
+    },
+    {
+      "id": 6000121,
+      "name": "Cultivate Reiatsu",
+      "follow_pic": 6000121,
+      "conditions_array_1": [
+        {
+          "type": 38,
+          "value1": 50,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Cultivate Reiatsu to Level 50",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        50
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000122,
+      "name": "Cultivate Reiatsu",
+      "follow_pic": 6000122,
+      "conditions_array_1": [
+        {
+          "type": 38,
+          "value1": 60,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Cultivate Reiatsu to Level 60",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        60
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000123,
+      "name": "Cultivate Reiatsu",
+      "follow_pic": 6000123,
+      "conditions_array_1": [
+        {
+          "type": 38,
+          "value1": 70,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Cultivate Reiatsu to Level 70",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100012,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 2
+        }
+      ],
+      "conditions_array_2": [
+        70
+      ],
+      "if_have_title": 1,
+      "title_id": 6003031
+    },
+    {
+      "id": 6000124,
+      "name": "Cultivate Reiatsu",
+      "follow_pic": 6000124,
+      "conditions_array_1": [
+        {
+          "type": 38,
+          "value1": 80,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Cultivate Reiatsu to Level 80",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        80
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000125,
+      "name": "Cultivate Reiatsu",
+      "follow_pic": 6000125,
+      "conditions_array_1": [
+        {
+          "type": 38,
+          "value1": 90,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Cultivate Reiatsu to Level 90",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        90
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000126,
+      "name": "Cultivate Reiatsu",
+      "follow_pic": 6000126,
+      "conditions_array_1": [
+        {
+          "type": 38,
+          "value1": 100,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Cultivate Reiatsu to Level 100",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 2
+        }
+      ],
+      "conditions_array_2": [
+        100
+      ],
+      "if_have_title": 1,
+      "title_id": 6003032
+    },
+    {
+      "id": 6000131,
+      "name": "Trial Tower",
+      "follow_pic": 6000131,
+      "conditions_array_1": [
+        {
+          "type": 2,
+          "value1": 15301005,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Passes Sumeru Realm (Activate at Level 30)",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000132,
+      "name": "Trial Tower",
+      "follow_pic": 6000132,
+      "conditions_array_1": [
+        {
+          "type": 2,
+          "value1": 15302005,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Passes Void Realm (Activates at Level 50)",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000133,
+      "name": "Trial Tower",
+      "follow_pic": 6000133,
+      "conditions_array_1": [
+        {
+          "type": 2,
+          "value1": 15303005,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Passes Despair Realm (Activates at Level 70)",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100012,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100027,
+          "amount": 100
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003033
+    },
+    {
+      "id": 6000134,
+      "name": "Trial Tower",
+      "follow_pic": 6000134,
+      "conditions_array_1": [
+        {
+          "type": 2,
+          "value1": 15304005,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Passes Greed Realm (Activates at Level 80) ",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000135,
+      "name": "Trial Tower",
+      "follow_pic": 6000135,
+      "conditions_array_1": [
+        {
+          "type": 2,
+          "value1": 15305005,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Passes Broken Realm (Activates at Level 90)",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000136,
+      "name": "Trial Tower",
+      "follow_pic": 6000136,
+      "conditions_array_1": [
+        {
+          "type": 2,
+          "value1": 15306005,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Passes Sigh Realm (Activates at Level 100)",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100027,
+          "amount": 100
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003034
+    },
+    {
+      "id": 6000141,
+      "name": "Guild War",
+      "follow_pic": 6000141,
+      "conditions_array_1": [
+        {
+          "type": 20,
+          "value1": 100,
+          "value2": 1
+        }
+      ],
+      "condition_str": "In Guild War, reaches 100 cotinuous winning streak",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003035
+    },
+    {
+      "id": 6000142,
+      "name": "Protect Seireitei ",
+      "follow_pic": 6000142,
+      "conditions_array_1": [
+        {
+          "type": 54,
+          "value1": 500000,
+          "value2": 1
+        }
+      ],
+      "condition_str": "In a single event, in Protect Seireitei attacking sides personal points reaches 500000 points",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000143,
+      "name": "Evil Spirit Attacks",
+      "follow_pic": 6000143,
+      "conditions_array_1": [
+        {
+          "type": 48,
+          "value1": 50,
+          "value2": 1
+        }
+      ],
+      "condition_str": "In a single event,, deals over 50% in total damage to own Clan's Evil Spirits",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100012,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003036
+    },
+    {
+      "id": 6000144,
+      "name": "Ryoka Attacks ",
+      "follow_pic": 6000144,
+      "conditions_array_1": [
+        {
+          "type": 55,
+          "value1": 500,
+          "value2": 0
+        }
+      ],
+      "condition_str": "In Ryoka Attacks event, accumulate kills 500 Ryoka",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100012,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        500
+      ],
+      "if_have_title": 1,
+      "title_id": 6003037
+    },
+    {
+      "id": 6000145,
+      "name": "Ryoka Attacks ",
+      "follow_pic": 6000145,
+      "conditions_array_1": [
+        {
+          "type": 56,
+          "value1": 50000000,
+          "value2": 1
+        }
+      ],
+      "condition_str": "In a single event, Ryoka Attacks Event deals more than 50000000 in total damage",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100012,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003038
+    },
+    {
+      "id": 6000146,
+      "name": "Evil Spirit Attacks",
+      "follow_pic": 6000146,
+      "conditions_array_1": [
+        {
+          "type": 57,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "In Evil Spirits Attacks event, First Place in damage dealt to all 3 Clan's Evil Spirits",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100012,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003039
+    },
+    {
+      "id": 6000151,
+      "name": "Upgrade Soul Map",
+      "follow_pic": 6000151,
+      "conditions_array_1": [
+        {
+          "type": 39,
+          "value1": 4,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Upgrade Main Character Quality to Purple",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000152,
+      "name": "Upgrade Soul Map",
+      "follow_pic": 6000152,
+      "conditions_array_1": [
+        {
+          "type": 39,
+          "value1": 5,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Upgrade Main Character Quality to Gold",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000153,
+      "name": "Upgrade Soul Map",
+      "follow_pic": 6000153,
+      "conditions_array_1": [
+        {
+          "type": 39,
+          "value1": 6,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Upgrade Main Character Quality to Red",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100012,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003040
+    },
+    {
+      "id": 6000154,
+      "name": "Upgrade Soul Skills",
+      "follow_pic": 6000154,
+      "conditions_array_1": [
+        {
+          "type": 40,
+          "value1": 10,
+          "value2": 2
+        }
+      ],
+      "condition_str": "Owns two Level 10 Soul Skills",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        2
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000155,
+      "name": "Upgrade Soul Skills",
+      "follow_pic": 6000155,
+      "conditions_array_1": [
+        {
+          "type": 40,
+          "value1": 30,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Owns one Soul Skills reaching Max Level",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000156,
+      "name": "Upgrade Soul Skills",
+      "follow_pic": 6000156,
+      "conditions_array_1": [
+        {
+          "type": 40,
+          "value1": 0,
+          "value2": 10
+        }
+      ],
+      "condition_str": "Owns all Soul Skills",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100011,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ],
+      "conditions_array_2": [
+        10
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000161,
+      "name": "Upgrade Soul Map",
+      "follow_pic": 6000161,
+      "conditions_array_1": [
+        {
+          "type": 39,
+          "value1": 7,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Upgrade Main Character Quality to Orange",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003041
+    },
+    {
+      "id": 6000162,
+      "name": "Evil Spirit Attacks",
+      "follow_pic": 6000162,
+      "conditions_array_1": [
+        {
+          "type": 48,
+          "value1": 85,
+          "value2": 1
+        }
+      ],
+      "condition_str": "In a single event,, deals over 85% in total damage to own Clan's Evil Spirits",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003042
+    },
+    {
+      "id": 6000163,
+      "name": "Evil Spirit Attacks",
+      "follow_pic": 6000163,
+      "conditions_array_1": [
+        {
+          "type": 58,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "In Evil Spirits Attacks event, deals over 50% in damage to all 3 Clan's Evil Spirits",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003043
+    },
+    {
+      "id": 6000164,
+      "name": "Upgrade Soul Skills",
+      "follow_pic": 6000164,
+      "conditions_array_1": [
+        {
+          "type": 40,
+          "value1": 30,
+          "value2": 10
+        }
+      ],
+      "condition_str": "Owns all Soul Skills reaches Max Level",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100026,
+          "amount": 200
+        }
+      ],
+      "conditions_array_2": [
+        10
+      ],
+      "if_have_title": 1,
+      "title_id": 6003044
+    },
+    {
+      "id": 6000165,
+      "name": "Battle Power",
+      "follow_pic": 6000165,
+      "conditions_array_1": [
+        {
+          "type": 43,
+          "value1": 2000000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Total PVE Battle Power passes 2000000",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        2000000
+      ],
+      "if_have_title": 1,
+      "title_id": 6003045
+    },
+    {
+      "id": 6000166,
+      "name": "Upgrade Spirit Stone",
+      "follow_pic": 6000166,
+      "conditions_array_1": [
+        {
+          "type": 32,
+          "value1": 12,
+          "value2": 180
+        }
+      ],
+      "condition_str": "Synthesize 180 Level 12 Spirit Stone",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        180
+      ],
+      "if_have_title": 1,
+      "title_id": 6003046
+    },
+    {
+      "id": 6000171,
+      "name": "Upgrade Ranks",
+      "follow_pic": 6000171,
+      "conditions_array_1": [
+        {
+          "type": 8,
+          "value1": 40100036,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Rank upgrade to Mugetsu",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100026,
+          "amount": 200
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003047
+    },
+    {
+      "id": 6000172,
+      "name": "King of Hallow Souls",
+      "follow_pic": 6000172,
+      "conditions_array_1": [
+        {
+          "type": 2,
+          "value1": 20500706,
+          "value2": 1
+        }
+      ],
+      "condition_str": "King of Hallow Souls group battle Aizen and wins",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003048
+    },
+    {
+      "id": 6000173,
+      "name": "Zanpakut\u014d cultivation",
+      "follow_pic": 6000173,
+      "conditions_array_1": [
+        {
+          "type": 11,
+          "value1": 4,
+          "value2": 15
+        }
+      ],
+      "condition_str": "Owns 15 Bankai Zanpakut\u014d",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        15
+      ],
+      "if_have_title": 1,
+      "title_id": 6003049
+    },
+    {
+      "id": 6000174,
+      "name": "Hollow Soul Map",
+      "follow_pic": 6000174,
+      "conditions_array_1": [
+        {
+          "type": 41,
+          "value1": 5,
+          "value2": 1
+        }
+      ],
+      "condition_str": "All 5 characters completely light up Hollow Soul Map",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003050
+    },
+    {
+      "id": 6000175,
+      "name": "Alliance War",
+      "follow_pic": 6000175,
+      "conditions_array_1": [
+        {
+          "type": 70,
+          "value1": 16100502,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Two person successfully pass Alliance War Level 120 Hard Campaign",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003051
+    },
+    {
+      "id": 6000176,
+      "name": "Cross-Server Battle",
+      "follow_pic": 6000176,
+      "conditions_array_1": [
+        {
+          "type": 42,
+          "value1": 1,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Cross-Server Battle First Place",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003052
+    },
+    {
+      "id": 6000401,
+      "name": "Gold Carp Ranking",
+      "follow_pic": 6000401,
+      "conditions_array_1": [
+        {
+          "type": 59,
+          "value1": 1,
+          "value2": 3
+        }
+      ],
+      "condition_str": "New Year Event - Gold Carp Ranking reaches top 3",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003053
+    },
+    {
+      "id": 6000402,
+      "name": "Gold Carp Ranking",
+      "follow_pic": 6000402,
+      "conditions_array_1": [
+        {
+          "type": 59,
+          "value1": 4,
+          "value2": 10
+        }
+      ],
+      "condition_str": "New Year Event - Gold Carp Ranking reaches 4 - 10 place",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003054
+    },
+    {
+      "id": 6000403,
+      "name": "Gold Carp Ranking",
+      "follow_pic": 6000403,
+      "conditions_array_1": [
+        {
+          "type": 59,
+          "value1": 11,
+          "value2": 20
+        }
+      ],
+      "condition_str": "New Year Event - Gold Carp Ranking reaches 11 - 20 place",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003055
+    },
+    {
+      "id": 6000404,
+      "name": "Extreme Power Ranking",
+      "follow_pic": 6000404,
+      "conditions_array_1": [
+        {
+          "type": 60,
+          "value1": 1,
+          "value2": 3
+        }
+      ],
+      "condition_str": "Extreme Power\u2014 In Extreme Power Ranking reaches top 3",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003056
+    },
+    {
+      "id": 6000405,
+      "name": "Extreme Power Ranking",
+      "follow_pic": 6000405,
+      "conditions_array_1": [
+        {
+          "type": 60,
+          "value1": 4,
+          "value2": 10
+        }
+      ],
+      "condition_str": "Extreme Power\u2014 In Extreme Power Ranking reaches 4 - 10 place",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003057
+    },
+    {
+      "id": 6000406,
+      "name": "Extreme Power Ranking",
+      "follow_pic": 6000406,
+      "conditions_array_1": [
+        {
+          "type": 60,
+          "value1": 11,
+          "value2": 20
+        }
+      ],
+      "condition_str": "Extreme Power\u2014 In Extreme Power Ranking reaches 11 - 20 place",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003058
+    },
+    {
+      "id": 6000407,
+      "name": "Cross-Server Battle",
+      "follow_pic": 6000407,
+      "conditions_array_1": [
+        {
+          "type": 61,
+          "value1": 50,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Cross-Server Battle wins 50 battles ",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        50
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000408,
+      "name": "Cross-Server Battle",
+      "follow_pic": 6000408,
+      "conditions_array_1": [
+        {
+          "type": 62,
+          "value1": 100,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Cross-Server Battle wins 100 battles",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        100
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000409,
+      "name": "Cross-Server Battle",
+      "follow_pic": 6000409,
+      "conditions_array_1": [
+        {
+          "type": 62,
+          "value1": 400,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Cross-Server Battle wins 400 battles",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        400
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000410,
+      "name": "Cross-Server Battle",
+      "follow_pic": 6000410,
+      "conditions_array_1": [
+        {
+          "type": 63,
+          "value1": 100,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Single Season Cross-Server Battle reaches 100 continuous winning streak",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100024,
+          "amount": 15
+        }
+      ],
+      "conditions_array_2": [
+        100
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000411,
+      "name": "Division Elite",
+      "follow_pic": 6000411,
+      "conditions_array_1": [
+        {
+          "type": 64,
+          "value1": 1,
+          "value2": 3
+        }
+      ],
+      "condition_str": "Place within Cross-Server Battle A Team and defeat all enemies of Stage 3",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003059
+    },
+    {
+      "id": 6000412,
+      "name": "Guarding Shield",
+      "follow_pic": 6000412,
+      "conditions_array_1": [
+        {
+          "type": 65,
+          "value1": 1,
+          "value2": 3
+        }
+      ],
+      "condition_str": "Place within Cross-Server Battle S Team and defeat all enemies of Stage 3",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003060
+    },
+    {
+      "id": 6000413,
+      "name": "Zero Division Leader",
+      "follow_pic": 6000413,
+      "conditions_array_1": [
+        {
+          "type": 66,
+          "value1": 1,
+          "value2": 3
+        }
+      ],
+      "condition_str": "Place within Cross-Server Battle SS Team and defeat all enemies of Stage 3",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003061
+    },
+    {
+      "id": 6000414,
+      "name": "Peak Shinigami",
+      "follow_pic": 6000414,
+      "conditions_array_1": [
+        {
+          "type": 67,
+          "value1": 1,
+          "value2": 3
+        }
+      ],
+      "condition_str": "Place within Cross-Server Battle SSS Team and defeat all enemies of Stage 3",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003062
+    },
+    {
+      "id": 6000415,
+      "name": "Kenpachi",
+      "follow_pic": 6000415,
+      "conditions_array_1": [
+        {
+          "type": 68,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Collect all 9 pieces of puzzle within the Puzzle Event",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003063
+    },
+    {
+      "id": 6000416,
+      "name": "Best Combination",
+      "follow_pic": 6000416,
+      "conditions_array_1": [
+        {
+          "type": 69,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Recruit 2 partners in the \"Perfect Couple\" Event",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003064
+    },
+    {
+      "id": 6000417,
+      "name": "Halloween Ranking",
+      "follow_pic": 6000417,
+      "conditions_array_1": [
+        {
+          "type": 71,
+          "value1": 3,
+          "value2": 3
+        }
+      ],
+      "condition_str": "Third Place Reward in Halloween Ranking",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003065
+    },
+    {
+      "id": 6000418,
+      "name": "Halloween Ranking",
+      "follow_pic": 6000418,
+      "conditions_array_1": [
+        {
+          "type": 71,
+          "value1": 2,
+          "value2": 2
+        }
+      ],
+      "condition_str": "Second Place Reward in Halloween Ranking",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003066
+    },
+    {
+      "id": 6000419,
+      "name": "Halloween Ranking",
+      "follow_pic": 6000419,
+      "conditions_array_1": [
+        {
+          "type": 71,
+          "value1": 1,
+          "value2": 1
+        }
+      ],
+      "condition_str": "First Place Reward in Halloween Ranking",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003067
+    },
+    {
+      "id": 6000420,
+      "name": "Lighting Emissary",
+      "follow_pic": 6000420,
+      "conditions_array_1": [
+        {
+          "type": 71,
+          "value1": 3,
+          "value2": 3
+        }
+      ],
+      "condition_str": "3st Place Reward in Thanksgiving Ranking",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003068
+    },
+    {
+      "id": 6000421,
+      "name": "Light of Fireflies",
+      "follow_pic": 6000421,
+      "conditions_array_1": [
+        {
+          "type": 71,
+          "value1": 2,
+          "value2": 2
+        }
+      ],
+      "condition_str": "2st Place Reward in Thanksgiving Ranking",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003069
+    },
+    {
+      "id": 6000422,
+      "name": "Lantern\u00a0God",
+      "follow_pic": 6000422,
+      "conditions_array_1": [
+        {
+          "type": 71,
+          "value1": 1,
+          "value2": 1
+        }
+      ],
+      "condition_str": "1st Place Reward in Thanksgiving Ranking",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003070
+    },
+    {
+      "id": 6000423,
+      "name": "Yoruichi",
+      "follow_pic": 6000419,
+      "conditions_array_1": [
+        {
+          "type": 72,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Can\u00a0be\u00a0exchanged\u00a0in\u00a0events!",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003071
+    },
+    {
+      "id": 6000425,
+      "name": "Shinigami",
+      "follow_pic": 6000419,
+      "conditions_array_1": [
+        {
+          "type": 74,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Can\u00a0be\u00a0exchanged\u00a0in\u00a0events!",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003073
+    },
+    {
+      "id": 6000426,
+      "name": "Angel's Bell",
+      "follow_pic": 6000419,
+      "conditions_array_1": [
+        {
+          "type": 75,
+          "value1": 4,
+          "value2": 20
+        }
+      ],
+      "condition_str": "Can be obtained in Events",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003075
+    },
+    {
+      "id": 6000427,
+      "name": "God Settlement",
+      "follow_pic": 6000419,
+      "conditions_array_1": [
+        {
+          "type": 75,
+          "value1": 1,
+          "value2": 3
+        }
+      ],
+      "condition_str": "Can be obtained in Events",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003076
+    },
+    {
+      "id": 6000501,
+      "name": "Special Achievements",
+      "follow_pic": 6000500,
+      "conditions_array_1": [
+        {
+          "type": 2,
+          "value1": 15302005,
+          "value2": 1
+        },
+        {
+          "type": 43,
+          "value1": 200000,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Passes Void Realm # Battle Power reaches 200000",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100086,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        1,
+        200000
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000502,
+      "name": "Special Achievements",
+      "follow_pic": 6000500,
+      "conditions_array_1": [
+        {
+          "type": 38,
+          "value1": 35,
+          "value2": 0
+        },
+        {
+          "type": 8,
+          "value1": 40100014,
+          "value2": 1
+        }
+      ],
+      "condition_str": "Reiatsu Cultivation reaches Level # Rank reaches Ninth Division Captain",
+      "reward_str": "%0%1",
+      "rewards": [
+        {
+          "type": 1,
+          "code": 14100093,
+          "amount": 1
+        }
+      ],
+      "conditions_array_2": [
+        35,
+        1
+      ],
+      "if_have_title": 0,
+      "title_id": 0
+    },
+    {
+      "id": 6000428,
+      "name": "Golden Pig  Arrival",
+      "follow_pic": 6000419,
+      "conditions_array_1": [
+        {
+          "type": 77,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Can be obtained in New Year Event",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003077
+    },
+    {
+      "id": 6000429,
+      "name": "Family Reunion",
+      "follow_pic": 6000419,
+      "conditions_array_1": [
+        {
+          "type": 77,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Can be obtained in New Year Event",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003078
+    },
+    {
+      "id": 6000430,
+      "name": "bleach Carnival",
+      "follow_pic": 6000420,
+      "conditions_array_1": [
+        {
+          "type": 77,
+          "value1": 1,
+          "value2": 0
+        }
+      ],
+      "condition_str": "Can be obtained in Events",
+      "reward_str": "%0%1",
+      "rewards": [],
+      "conditions_array_2": [
+        1
+      ],
+      "if_have_title": 1,
+      "title_id": 6003079
+    }
+  ]
+}

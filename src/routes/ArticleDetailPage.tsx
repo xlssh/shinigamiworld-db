@@ -1,0 +1,301 @@
+import React, { useEffect, useState, useCallback } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { loadArticles, loadMallItems, loadDailyQuests, loadStoryQuests, loadStages } from '../data/loaders';
+import { Article, MallItem, DailyQuest, StoryQuest, Stage } from '../types/db';
+import { getMallItemsSellingArticle, getQuestsAwardingArticle, getStagesAwardingArticle, getMajorTypeLabel, getMinorTypeLabel } from '../data/relationships';
+import { LoadingState } from '../components/LoadingState';
+import { ErrorState } from '../components/ErrorState';
+import { JsonViewer } from '../components/JsonViewer';
+import { getQualityColorClass, getQualityLabel } from './HeroesPage';
+import { ArrowLeft, ShoppingCart, Award, AlertCircle, Swords } from 'lucide-react';
+
+export const ArticleDetailPage: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  const [article, setArticle] = useState<Article | null>(null);
+  const [sellers, setSellers] = useState<MallItem[]>([]);
+  const [awardingQuests, setQuests] = useState<{ story: StoryQuest[]; daily: DailyQuest[] }>({ story: [], daily: [] });
+  const [awardingStages, setStages] = useState<Stage[]>([]);
+
+  const fetchArticleDetails = useCallback(async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const articleId = parseInt(id || '');
+
+      const [articlesRes, mallRes, dailyRes, storyRes, stagesRes] = await Promise.all([
+        loadArticles(),
+        loadMallItems(),
+        loadDailyQuests(),
+        loadStoryQuests(),
+        loadStages()
+      ]);
+
+      const match = articlesRes.rows.find(a => a.id === articleId);
+      if (match) {
+        setArticle(match);
+        setSellers(getMallItemsSellingArticle(mallRes.rows, articleId));
+        setQuests(getQuestsAwardingArticle(storyRes.rows, dailyRes.rows, articleId));
+        setStages(getStagesAwardingArticle(stagesRes.rows, articleId));
+      } else {
+        setError(`Article/Item with ID ${id} not found in the catalog.`);
+      }
+    } catch (err: any) {
+      console.error(err);
+      setError(err.message || "Failed to load item specification sheets.");
+    } finally {
+      setLoading(false);
+    }
+  }, [id]);
+
+  useEffect(() => {
+    fetchArticleDetails();
+  }, [fetchArticleDetails]);
+
+  if (loading) return <LoadingState message="Downloading item specification and cross-referencing relationships..." />;
+  if (error) return <ErrorState message={error} onRetry={fetchArticleDetails} />;
+  if (!article) return <ErrorState message="Article/Item not found." onRetry={fetchArticleDetails} />;
+
+  return (
+    <div className="space-y-6 animate-fade-in">
+      {/* Back button */}
+      <div>
+        <Link
+          to="/articles"
+          className="flex items-center gap-1 text-sm font-semibold text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+        >
+          <ArrowLeft size={16} />
+          <span>Back to Articles</span>
+        </Link>
+      </div>
+
+      {/* Main specification panel */}
+      <div className="p-6 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm flex flex-col md:flex-row gap-6 items-start">
+        <div className="flex-1 space-y-4">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="font-mono text-xs text-zinc-400 font-bold bg-zinc-100 dark:bg-zinc-950 px-2 py-0.5 rounded">
+              ID: {article.id}
+            </span>
+            <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold ${getQualityColorClass(article.quality)}`}>
+              {getQualityLabel(article.quality)}
+            </span>
+          </div>
+
+          <h1 className="text-2xl md:text-3xl font-black text-zinc-900 dark:text-zinc-50">
+            {article.name || `Article #${article.id}`}
+          </h1>
+
+          {article.function_desc && (
+            <div className="p-4 rounded-xl bg-violet-500/5 dark:bg-violet-950/20 border border-violet-100/50 dark:border-violet-950/50">
+              <span className="block text-[10px] font-bold uppercase tracking-wider text-violet-600 dark:text-violet-400">Effects & Functionality</span>
+              <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed italic">
+                "{article.function_desc}"
+              </p>
+            </div>
+          )}
+
+          {/* Expand attributes */}
+          {article.expands && (
+            <div className="space-y-1.5 p-4 rounded-xl bg-zinc-50/50 dark:bg-zinc-950/40 border border-zinc-200/50 dark:border-zinc-800">
+              <span className="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">Expanded Metadata Parameters</span>
+              <div className="text-xs font-mono text-zinc-600 dark:text-zinc-300 bg-zinc-100/50 dark:bg-zinc-950 p-2.5 rounded border border-zinc-100 dark:border-zinc-800">
+                {typeof article.expands === 'object' ? (
+                  <pre className="overflow-x-auto">{JSON.stringify(article.expands, null, 2)}</pre>
+                ) : (
+                  <span>{article.expands}</span>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Specs Identity Card */}
+        <div className="w-full md:w-64 border border-zinc-100 dark:border-zinc-800 rounded-xl p-4 bg-zinc-50/50 dark:bg-zinc-950/20 space-y-3 shrink-0">
+          <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 border-b border-zinc-200 dark:border-zinc-800 pb-1.5">Item Properties</h4>
+          <div className="grid grid-cols-2 gap-y-3 gap-x-2 text-xs">
+            <div>
+              <span className="text-zinc-400 block mb-0.5">Major Category</span>
+              <span className="font-semibold text-zinc-700 dark:text-zinc-350">{getMajorTypeLabel(article.major_type)}</span>
+            </div>
+            <div>
+              <span className="text-zinc-400 block mb-0.5">Minor Category</span>
+              <span className="font-semibold text-zinc-700 dark:text-zinc-350">{getMinorTypeLabel(article.major_type, article.minor_type)}</span>
+            </div>
+            <div>
+              <span className="text-zinc-400 block mb-0.5">Required Level</span>
+              <span className="font-semibold text-zinc-700 dark:text-zinc-350">Level {article.level ?? 0}</span>
+            </div>
+            <div>
+              <span className="text-zinc-400 block mb-0.5">Sort Priority</span>
+              <span className="font-semibold text-zinc-700 dark:text-zinc-350">{article.sort ?? 0}</span>
+            </div>
+            <div>
+              <span className="text-zinc-400 block mb-0.5">Max Overlay</span>
+              <span className="font-semibold text-zinc-700 dark:text-zinc-350">{article.overlay_number ?? 1}</span>
+            </div>
+            <div>
+              <span className="text-zinc-400 block mb-0.5">Bind Mode</span>
+              <span className="font-semibold text-zinc-700 dark:text-zinc-350">{article.bind_mode === 1 ? 'Yes' : 'No'}</span>
+            </div>
+            <div>
+              <span className="text-zinc-400 block mb-0.5">Buy Price</span>
+              <span className="font-semibold text-amber-600 font-mono">{(article.cost_price ?? 0).toLocaleString()}</span>
+            </div>
+            <div>
+              <span className="text-zinc-400 block mb-0.5">Sell Price</span>
+              <span className="font-semibold text-zinc-500 font-mono">{(article.sell_price ?? 0).toLocaleString()}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mechanics specs */}
+      <div className="p-4 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-xl text-xs space-y-3">
+        <h4 className="font-semibold text-zinc-800 dark:text-zinc-200">System Functional Offsets</h4>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div>
+            <span className="text-zinc-400 block mb-0.5">Item Functional Action</span>
+            <span className="font-mono font-semibold text-zinc-700 dark:text-zinc-300">Action #{article.item_function ?? 0}</span>
+          </div>
+          <div>
+            <span className="text-zinc-400 block mb-0.5">Action Trigger Value</span>
+            <span className="font-mono font-semibold text-zinc-700 dark:text-zinc-300">Val: {article.function_value ?? 0}</span>
+          </div>
+          <div>
+            <span className="text-zinc-400 block mb-0.5">Card Type ID</span>
+            <span className="font-mono font-semibold text-zinc-700 dark:text-zinc-300">Card: {article.card_type ?? 0}</span>
+          </div>
+          <div>
+            <span className="text-zinc-400 block mb-0.5">Obtain Code</span>
+            <span className="font-mono font-semibold text-zinc-700 dark:text-zinc-300">Code: {article.obtain ?? 0}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Sourcing & Relationships */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Mall Sourcing */}
+        <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-xl shadow-sm space-y-4">
+          <h3 className="font-bold text-zinc-800 dark:text-zinc-200 flex items-center gap-2 border-b border-zinc-100 dark:border-zinc-800 pb-2">
+            <ShoppingCart size={18} className="text-violet-500" />
+            <span>Available in Cash Shop</span>
+          </h3>
+
+          {sellers.length > 0 ? (
+            <div className="space-y-3 max-h-60 overflow-y-auto pr-1">
+              {sellers.map((mallItem) => (
+                <div
+                  key={mallItem.id}
+                  className="p-3 border border-zinc-100 dark:border-zinc-800 rounded-lg flex items-center justify-between text-sm hover:bg-zinc-50 dark:hover:bg-zinc-950/30 transition-colors"
+                >
+                  <div>
+                    <span className="font-bold text-zinc-800 dark:text-zinc-200">{mallItem.name}</span>
+                    <span className="block text-[11px] text-zinc-400">Mall ID: {mallItem.id} | VIP Required: {mallItem.vip}</span>
+                  </div>
+                  <div className="text-right">
+                    <span className="block text-[10px] text-zinc-400 font-medium">Hot Price</span>
+                    <span className="font-mono font-bold text-amber-600">{(mallItem.hotprice || mallItem.gold || 0).toLocaleString()} Gold</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-sm text-zinc-400 italic py-2 flex items-center gap-1.5">
+              <AlertCircle size={14} />
+              <span>This item is not directly sold in any Mall Shop rows.</span>
+            </div>
+          )}
+        </div>
+
+        {/* Quest/Drop Sourcing */}
+        <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-xl shadow-sm space-y-4">
+          <h3 className="font-bold text-zinc-800 dark:text-zinc-200 flex items-center gap-2 border-b border-zinc-100 dark:border-zinc-800 pb-2">
+            <Award size={18} className="text-indigo-500" />
+            <span>Awarded by Quests</span>
+          </h3>
+
+          {(awardingQuests.story.length > 0 || awardingQuests.daily.length > 0) ? (
+            <div className="space-y-3 max-h-60 overflow-y-auto pr-1">
+              {/* Story quests */}
+              {awardingQuests.story.map((quest) => (
+                <Link
+                  key={`story-${quest.id}`}
+                  to={`/story-quests/${quest.id}`}
+                  className="p-3 border border-zinc-100 dark:border-zinc-800 rounded-lg flex items-center justify-between hover:border-indigo-500 hover:shadow-sm transition-all text-sm block"
+                >
+                  <div>
+                    <span className="font-bold text-zinc-800 dark:text-zinc-200 hover:text-indigo-600 transition-colors">{quest.name}</span>
+                    <p className="text-[11px] text-zinc-400 truncate max-w-xs">{quest.description || 'No story quest description.'}</p>
+                  </div>
+                  <span className="px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/40 text-[10px] text-indigo-600 dark:text-indigo-400 font-semibold uppercase">
+                    Story
+                  </span>
+                </Link>
+              ))}
+
+              {/* Daily quests */}
+              {awardingQuests.daily.map((quest) => (
+                <Link
+                  key={`daily-${quest.id}`}
+                  to={`/daily-quests/${quest.id}`}
+                  className="p-3 border border-zinc-100 dark:border-zinc-800 rounded-lg flex items-center justify-between hover:border-orange-500 hover:shadow-sm transition-all text-sm block"
+                >
+                  <div>
+                    <span className="font-bold text-zinc-800 dark:text-zinc-200 hover:text-orange-600 transition-colors">{quest.task_name}</span>
+                    <p className="text-[11px] text-zinc-400 truncate max-w-xs">{quest.description}</p>
+                  </div>
+                  <span className="px-2 py-0.5 rounded bg-orange-50 dark:bg-orange-950/40 text-[10px] text-orange-600 dark:text-orange-400 font-semibold uppercase">
+                    Daily
+                  </span>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="text-sm text-zinc-400 italic py-2 flex items-center gap-1.5">
+              <AlertCircle size={14} />
+              <span>This item is not a direct quest reward in any rows.</span>
+            </div>
+          )}
+        </div>
+
+        {/* Stage Sourcing */}
+        <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-xl shadow-sm space-y-4">
+          <h3 className="font-bold text-zinc-800 dark:text-zinc-200 flex items-center gap-2 border-b border-zinc-100 dark:border-zinc-800 pb-2">
+            <Swords size={18} className="text-rose-500" />
+            <span>Dropped from Stages</span>
+          </h3>
+
+          {awardingStages.length > 0 ? (
+            <div className="space-y-3 max-h-60 overflow-y-auto pr-1">
+              {awardingStages.map((stage) => (
+                <Link
+                  key={stage.id}
+                  to={`/stages/${stage.id}`}
+                  className="p-3 border border-zinc-100 dark:border-zinc-800 rounded-lg flex items-center justify-between hover:border-rose-500 hover:shadow-sm transition-all text-sm block"
+                >
+                  <div>
+                    <span className="font-bold text-zinc-800 dark:text-zinc-200 hover:text-rose-600 transition-colors">{stage.name}</span>
+                    <span className="block text-[11px] text-zinc-400">Req Level: Lv. {stage.level} | Hardness: {stage.hard}</span>
+                  </div>
+                  <span className="px-2 py-0.5 rounded bg-rose-50 dark:bg-rose-950/40 text-[10px] text-rose-600 dark:text-rose-450 font-semibold uppercase">
+                    Stage
+                  </span>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="text-sm text-zinc-400 italic py-2 flex items-center gap-1.5">
+              <AlertCircle size={14} />
+              <span>This item is not listed as loot from any stages.</span>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Raw entry */}
+      <JsonViewer data={article} title={`Raw JSON Database Entry: Item/Article #${article.id}`} />
+    </div>
+  );
+};

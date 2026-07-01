@@ -1,0 +1,96 @@
+{
+  "table": "home_girl_moods",
+  "rowCount": 5,
+  "rows": [
+    {
+      "id": 1,
+      "mood": 1,
+      "normal_communicate_reward": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 79
+        }
+      ],
+      "gold_communicate_reward": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 87
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "mood": 2,
+      "normal_communicate_reward": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 82
+        }
+      ],
+      "gold_communicate_reward": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 91
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "mood": 3,
+      "normal_communicate_reward": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 84
+        }
+      ],
+      "gold_communicate_reward": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 93
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "mood": 4,
+      "normal_communicate_reward": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 86
+        }
+      ],
+      "gold_communicate_reward": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 95
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "mood": 5,
+      "normal_communicate_reward": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 89
+        }
+      ],
+      "gold_communicate_reward": [
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 98
+        }
+      ]
+    }
+  ]
+}

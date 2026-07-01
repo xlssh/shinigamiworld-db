@@ -1,0 +1,40 @@
+{
+  "name": "game-database-tool",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://xlssh.github.io/shinigamiworld-db",
+  "scripts": {
+    "dev": "bun x --bun vite",
+    "export:data": "python3 scripts/export-sqlite-to-json.py",
+    "build": "python3 scripts/export-sqlite-to-json.py && tsc -b && bun x --bun vite build",
+    "lint": "oxlint",
+    "preview": "bun x --bun vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@tanstack/react-table": "^8.21.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.22.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "autoprefixer": "^10.5.2",
+    "gh-pages": "^6.3.0",
+    "oxlint": "^1.71.0",
+    "postcss": "^8.5.16",
+    "tailwindcss": "^4.3.2",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  }
+}

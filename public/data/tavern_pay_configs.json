@@ -1,0 +1,211 @@
+{
+  "table": "tavern_pay_configs",
+  "rowCount": 18,
+  "rows": [
+    {
+      "id": 30140001,
+      "key": "TAVERN_GRADE_1_PAY_NORMAL",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 100000,
+      "desc": "Phase 1: Normal Janken Deduction"
+    },
+    {
+      "id": 30140002,
+      "key": "TAVERN_GRADE_1_PAY_ADVANCED",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 150000,
+      "desc": "Phase 1: Advanced Janken Deduction"
+    },
+    {
+      "id": 30140003,
+      "key": "TAVERN_GRADE_2_PAY_NORMAL",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 150000,
+      "desc": "Phase 2: Normal Janken Deduction"
+    },
+    {
+      "id": 30140004,
+      "key": "TAVERN_GRADE_2_PAY_ADVANCED",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 150000,
+      "desc": "Phase 2: Advanced Janken Deduction"
+    },
+    {
+      "id": 30140005,
+      "key": "TAVERN_GRADE_3_PAY_NORMAL",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 300000,
+      "desc": "Phase 3: Normal Janken Deduction"
+    },
+    {
+      "id": 30140006,
+      "key": "TAVERN_GRADE_3_PAY_ADVANCED",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 300000,
+      "desc": "Phase 3: Advanced Janken Deduction"
+    },
+    {
+      "id": 30140007,
+      "key": "TAVERN_GRADE_4_PAY_NORMAL",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 300000,
+      "desc": "Phase 4: Advanced Janken Deduction"
+    },
+    {
+      "id": 30140008,
+      "key": "TAVERN_GRADE_4_PAY_ADVANCED",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 300000,
+      "desc": "Phase 4: Advanced Janken Deduction"
+    },
+    {
+      "id": 30140009,
+      "key": "TAVERN_GRADE_5_PAY_NORMAL",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 300000,
+      "desc": "Phase 5: Advanced Janken Deduction"
+    },
+    {
+      "id": 30140010,
+      "key": "TAVERN_GRADE_5_PAY_ADVANCED",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 300000,
+      "desc": "Phase 5: Advanced Janken Deduction"
+    },
+    {
+      "id": 30140011,
+      "key": "TAVERN:MATCH_CHEAT",
+      "types": {
+        "types": [
+          2,
+          1
+        ]
+      },
+      "value": 50,
+      "desc": "Cheating deduction setting"
+    },
+    {
+      "id": 30140051,
+      "key": "SEE_CHEST_CHARGE",
+      "types": {
+        "types": [
+          2,
+          1
+        ]
+      },
+      "value": 50,
+      "desc": "\u67e5\u770b\u5b9d\u7bb1\u6536\u8d39"
+    },
+    {
+      "id": 30140052,
+      "key": "SINGLE_CHARGE",
+      "types": {
+        "types": [
+          2,
+          1
+        ]
+      },
+      "value": 1,
+      "desc": "(\u526f\u672c)\u6bcf\u53ea\u602a\u7684\u52a0\u901f\u6302\u673a\u7684\u6536\u8d39"
+    },
+    {
+      "id": 30140053,
+      "key": "BLOCK_CHARGE",
+      "types": {
+        "types": [
+          2,
+          1
+        ]
+      },
+      "value": 3,
+      "desc": "(\u5173\u5361)\u6bcf\u6b21\u52a0\u901f\u6302\u673a\u7684\u6536\u8d39"
+    },
+    {
+      "id": 30140054,
+      "key": "EQUIP_GLOD_WASH_CHARGE",
+      "types": {
+        "types": [
+          2,
+          1
+        ]
+      },
+      "value": 5,
+      "desc": "(\u88c5\u5907)\u91d1\u5e01\u6d17\u7ec3\u8d39\u7528"
+    },
+    {
+      "id": 30140055,
+      "key": "EQUIP_NORMAL_WASH_CHARGE",
+      "types": {
+        "types": [
+          0
+        ]
+      },
+      "value": 1,
+      "desc": "(\u88c5\u5907)\u666e\u901a\u6d17\u7ec3\u8d39\u7528"
+    },
+    {
+      "id": 30140056,
+      "key": "MILITARY_ORDER_CHARGE",
+      "types": {
+        "types": [
+          2,
+          1
+        ]
+      },
+      "value": 5,
+      "desc": "(\u519b\u4ee4)\u5175\u7cae\u4e38\u8d2d\u4e70,\u6ce8\u610f\u8fd9\u4e2a\u662f\u8d2d\u4e70\u7684\u6b21\u6570\uff0c\u901a\u8fc7\u8ba1\u7b97\u51fa\u6765\u7684\u503c\uff0c\u8fd9\u4e2a\u503c\u662f5\u7684\u500d\u6570"
+    },
+    {
+      "id": 30140057,
+      "key": "CHAT_SHOW_CHARGE",
+      "types": {
+        "types": [
+          2,
+          1
+        ]
+      },
+      "value": 5,
+      "desc": "(\u804a\u5929)\u5c55\u793a\u5fcd\u5177\u3001\u9053\u5177\u7b49\u8d39\u7528"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "table": "related_partner_points",
+  "rowCount": 9,
+  "generatedAt": "2026-07-01",
+  "rows": [
+    {
+      "id": 15950001,
+      "name": "Bond Training Stage 1",
+      "is_boss": true,
+      "army": {
+        "army": [
+          20900001
+        ]
+      },
+      "battle_scene": 30002,
+      "stars": [
+        [
+          10000001
+        ],
+        [
+          10000010,
+          10000015
+        ],
+        [
+          10000047,
+          10000048,
+          10000049
+        ]
+      ]
+    },
+    {
+      "id": 15950002,
+      "name": "Bond Training Stage 2",
+      "is_boss": true,
+      "army": {
+        "army": [
+          20900002
+        ]
+      },
+      "battle_scene": 30003,
+      "stars": [
+        [
+          10000002
+        ],
+        [
+          10000013,
+          10000017
+        ],
+        [
+          10000033
+        ]
+      ]
+    },
+    {
+      "id": 15950003,
+      "name": "Bond Training Stage 3",
+      "is_boss": true,
+      "army": {
+        "army": [
+          20900003
+        ]
+      },
+      "battle_scene": 30005,
+      "stars": [
+        [
+          10000003
+        ],
+        [
+          10000016
+        ],
+        [
+          10000035,
+          10000050
+        ]
+      ]
+    },
+    {
+      "id": 15950004,
+      "name": "Bond Training Stage 4",
+      "is_boss": true,
+      "army": {
+        "army": [
+          20900004
+        ]
+      },
+      "battle_scene": 30008,
+      "stars": [
+        [
+          10000004
+        ],
+        [
+          10000011,
+          10000017
+        ],
+        [
+          10000044,
+          10000041
+        ]
+      ]
+    },
+    {
+      "id": 15950005,
+      "name": "Bond Training Stage 5",
+      "is_boss": true,
+      "army": {
+        "army": [
+          20900005
+        ]
+      },
+      "battle_scene": 30011,
+      "stars": [
+        [
+          10000005
+        ],
+        [
+          10000020,
+          10000021
+        ],
+        [
+          10000039,
+          10000035
+        ]
+      ]
+    },
+    {
+      "id": 15950006,
+      "name": "Bond Training Stage 6",
+      "is_boss": true,
+      "army": {
+        "army": [
+          20900006
+        ]
+      },
+      "battle_scene": 30013,
+      "stars": [
+        [
+          10000008
+        ],
+        [
+          10000011,
+          10000013
+        ],
+        [
+          10000046,
+          10000038
+        ]
+      ]
+    },
+    {
+      "id": 15950007,
+      "name": "Bond Training Stage 7",
+      "is_boss": true,
+      "army": {
+        "army": [
+          20900007
+        ]
+      },
+      "battle_scene": 30004,
+      "stars": [
+        [
+          10000009
+        ],
+        [
+          10000012,
+          10000020
+        ],
+        [
+          10000044,
+          10000045,
+          10000050
+        ]
+      ]
+    },
+    {
+      "id": 15950008,
+      "name": "Bond Training Stage 8",
+      "is_boss": true,
+      "army": {
+        "army": [
+          20900008
+        ]
+      },
+      "battle_scene": 30022,
+      "stars": [
+        [
+          10000010
+        ],
+        [
+          10000014,
+          10000029
+        ],
+        [
+          10000038,
+          10000049
+        ]
+      ]
+    },
+    {
+      "id": 15950009,
+      "name": "Bond Training Stage 9",
+      "is_boss": true,
+      "army": {
+        "army": [
+          20900009
+        ]
+      },
+      "battle_scene": 30018,
+      "stars": [
+        [
+          10000011
+        ],
+        [
+          10000029
+        ],
+        [
+          10000035,
+          10000050
+        ]
+      ]
+    }
+  ]
+}

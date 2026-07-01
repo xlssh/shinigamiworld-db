@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+ --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+ --font-display: 'Space Grotesk', sans-serif;
+ --font-mono: 'JetBrains Mono', monospace;
+
+ --color-bg: var(--app-bg);
+ --color-surface: var(--app-surface);
+ --color-surface-raised: var(--app-surface-raised);
+
+ --color-text: var(--app-text);
+ --color-muted: var(--app-muted);
+ --color-subtle: var(--app-subtle);
+
+ --color-border: var(--app-border);
+ --color-border-strong: var(--app-border-strong);
+
+ --color-brand: var(--app-brand);
+ --color-brand-hover: var(--app-brand-hover);
+ --color-brand-soft: var(--app-brand-soft);
+
+ --color-danger: var(--app-danger);
+ --color-success: var(--app-success);
+ --color-warning: var(--app-warning);
+
+  --color-hover: var(--app-hover);
+  --color-active: var(--app-active);
+}
+
+:root {
+  color-scheme: light;
+
+  --app-bg: #fafafa;
+  --app-surface: #ffffff;
+  --app-surface-raised: #ffffff;
+
+  --app-text: #18181b;
+  --app-muted: #52525b;
+  --app-subtle: #71717a;
+
+  --app-border: #e4e4e7;
+  --app-border-strong: #d4d4d8;
+
+  --app-brand: #4f46e5;
+  --app-brand-hover: #4338ca;
+  --app-brand-soft: #eef2ff;
+
+  --app-danger: #be123c;
+  --app-success: #047857;
+  --app-warning: #b45309;
+
+  --app-hover: #f4f4f5;
+  --app-active: #e4e4e7;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --app-bg: #09090b;
+  --app-surface: #18181b;
+  --app-surface-raised: #27272a;
+
+  --app-text: #f4f4f5;
+  --app-muted: #a1a1aa;
+  --app-subtle: #d4d4d8;
+
+  --app-border: #3f3f46;
+  --app-border-strong: #52525b;
+
+  --app-brand: #a5b4fc;
+  --app-brand-hover: #c7d2fe;
+  --app-brand-soft: #312e81;
+
+  --app-danger: #fb7185;
+  --app-success: #34d399;
+  --app-warning: #fbbf24;
+
+  --app-hover: #27272a;
+  --app-active: #3f3f46;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--app-brand);
+  outline-offset: 3px;
+}
+
+.font-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.4; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,703 @@
+{
+  "table": "daily_quests",
+  "rowCount": 29,
+  "generatedAt": "2026-07-01T19:44:59.787146Z",
+  "rows": [
+    {
+      "id": 16300001,
+      "type": 3,
+      "event_type": 11,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 10000
+        }
+      ],
+      "small_picture": 16300001,
+      "point": 2,
+      "cancel": 1,
+      "task_name": "Clear Stage",
+      "rate": 1,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 1,
+      "description": "Clear any stage for once!"
+    },
+    {
+      "id": 16300002,
+      "type": 3,
+      "event_type": 11,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "small_picture": 16300002,
+      "point": 3,
+      "cancel": 1,
+      "task_name": "Clear Stage",
+      "rate": 2,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 2,
+      "description": "Clear any stage for twice!"
+    },
+    {
+      "id": 16300003,
+      "type": 3,
+      "event_type": 11,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 30000
+        }
+      ],
+      "small_picture": 16300003,
+      "point": 4,
+      "cancel": 1,
+      "task_name": "Clear Stage",
+      "rate": 3,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 3,
+      "description": "Clear any stage for 3 times!"
+    },
+    {
+      "id": 16300004,
+      "type": 3,
+      "event_type": 11,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 40000
+        }
+      ],
+      "small_picture": 16300004,
+      "point": 6,
+      "cancel": 1,
+      "task_name": "Clear Stage",
+      "rate": 4,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 4,
+      "description": "Clear any stage for 4 times!"
+    },
+    {
+      "id": 16300005,
+      "type": 3,
+      "event_type": 12,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 10000
+        }
+      ],
+      "small_picture": 16300005,
+      "point": 2,
+      "cancel": 1,
+      "task_name": "Arena",
+      "rate": 1,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 1,
+      "description": "Challenge another player once in arena, and prove your strength to get prestige reward!"
+    },
+    {
+      "id": 16300006,
+      "type": 3,
+      "event_type": 12,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "small_picture": 16300006,
+      "point": 3,
+      "cancel": 1,
+      "task_name": "Arena",
+      "rate": 2,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 2,
+      "description": "Challenge another player twice in arena, and prove your strength to get prestige reward!"
+    },
+    {
+      "id": 16300007,
+      "type": 3,
+      "event_type": 12,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 30000
+        }
+      ],
+      "small_picture": 16300007,
+      "point": 4,
+      "cancel": 1,
+      "task_name": "Arena",
+      "rate": 3,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 3,
+      "description": "Challenge another player 3 times in arena, and prove your strength to get prestige reward!"
+    },
+    {
+      "id": 16300008,
+      "type": 3,
+      "event_type": 12,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 40000
+        }
+      ],
+      "small_picture": 16300008,
+      "point": 6,
+      "cancel": 1,
+      "task_name": "Arena",
+      "rate": 4,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 4,
+      "description": "Challenge another player 4 times in arena, and prove your strength to get prestige reward!"
+    },
+    {
+      "id": 16300009,
+      "type": 3,
+      "event_type": 13,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 10000
+        }
+      ],
+      "small_picture": 16300009,
+      "point": 2,
+      "cancel": 1,
+      "task_name": "Janken",
+      "rate": 1,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 1,
+      "description": "Janken once in bar"
+    },
+    {
+      "id": 16300010,
+      "type": 3,
+      "event_type": 13,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "small_picture": 16300010,
+      "point": 3,
+      "cancel": 1,
+      "task_name": "Janken",
+      "rate": 2,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 2,
+      "description": "Janken twice in bar"
+    },
+    {
+      "id": 16300011,
+      "type": 3,
+      "event_type": 13,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 30000
+        }
+      ],
+      "small_picture": 16300011,
+      "point": 4,
+      "cancel": 1,
+      "task_name": "Janken",
+      "rate": 3,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 3,
+      "description": "Janken 3 times in bar"
+    },
+    {
+      "id": 16300012,
+      "type": 3,
+      "event_type": 13,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 40000
+        }
+      ],
+      "small_picture": 16300012,
+      "point": 6,
+      "cancel": 1,
+      "task_name": "Janken",
+      "rate": 4,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 4,
+      "description": "Janken 4 times in bar"
+    },
+    {
+      "id": 16300013,
+      "type": 3,
+      "event_type": 14,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 10000
+        }
+      ],
+      "small_picture": 16300013,
+      "point": 2,
+      "cancel": 1,
+      "task_name": "Fortify Equipment",
+      "rate": 1,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 1,
+      "description": "Fortify equipment once!"
+    },
+    {
+      "id": 16300014,
+      "type": 3,
+      "event_type": 14,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "small_picture": 16300014,
+      "point": 3,
+      "cancel": 1,
+      "task_name": "Fortify Equipment",
+      "rate": 2,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 2,
+      "description": "Fortify equipment twice!"
+    },
+    {
+      "id": 16300015,
+      "type": 3,
+      "event_type": 14,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 30000
+        }
+      ],
+      "small_picture": 16300015,
+      "point": 4,
+      "cancel": 1,
+      "task_name": "Fortify Equipment",
+      "rate": 3,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 3,
+      "description": "Fortify equipment 3 times!"
+    },
+    {
+      "id": 16300016,
+      "type": 3,
+      "event_type": 14,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 40000
+        }
+      ],
+      "small_picture": 16300016,
+      "point": 6,
+      "cancel": 1,
+      "task_name": "Fortify Equipment",
+      "rate": 4,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 4,
+      "description": "Fortify equipment 4 times!"
+    },
+    {
+      "id": 16300017,
+      "type": 3,
+      "event_type": 15,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 10000
+        }
+      ],
+      "small_picture": 16300017,
+      "point": 2,
+      "cancel": 1,
+      "task_name": "Refine Equipment",
+      "rate": 1,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 1,
+      "description": "Refine equipment once!"
+    },
+    {
+      "id": 16300018,
+      "type": 3,
+      "event_type": 15,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "small_picture": 16300018,
+      "point": 3,
+      "cancel": 1,
+      "task_name": "Refine Equipment",
+      "rate": 2,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 2,
+      "description": "Refine equipment twice!"
+    },
+    {
+      "id": 16300019,
+      "type": 3,
+      "event_type": 15,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 30000
+        }
+      ],
+      "small_picture": 16300019,
+      "point": 4,
+      "cancel": 1,
+      "task_name": "Refine Equipment",
+      "rate": 3,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 3,
+      "description": "Refine equipment 3 times!"
+    },
+    {
+      "id": 16300020,
+      "type": 3,
+      "event_type": 15,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 40000
+        }
+      ],
+      "small_picture": 16300020,
+      "point": 6,
+      "cancel": 1,
+      "task_name": "Refine Equipment",
+      "rate": 4,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 4,
+      "description": "Refine equipment 4 times!"
+    },
+    {
+      "id": 16300021,
+      "type": 3,
+      "event_type": 16,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 10000
+        }
+      ],
+      "small_picture": 16300021,
+      "point": 2,
+      "cancel": 1,
+      "task_name": "Trial Tower",
+      "rate": 1,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 1,
+      "description": "Challenge Trial Tower once to get a chance for powerful Hōgu!"
+    },
+    {
+      "id": 16300022,
+      "type": 3,
+      "event_type": 16,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "small_picture": 16300022,
+      "point": 3,
+      "cancel": 1,
+      "task_name": "Trial Tower",
+      "rate": 2,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 2,
+      "description": "Challenge Trial Tower twice to get a chance for powerful Hōgu!"
+    },
+    {
+      "id": 16300023,
+      "type": 3,
+      "event_type": 16,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 30000
+        }
+      ],
+      "small_picture": 16300023,
+      "point": 4,
+      "cancel": 1,
+      "task_name": "Trial Tower",
+      "rate": 3,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 3,
+      "description": "Challenge Trial Tower 3 times to get a chance for powerful Hōgu!"
+    },
+    {
+      "id": 16300024,
+      "type": 3,
+      "event_type": 16,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 40000
+        }
+      ],
+      "small_picture": 16300024,
+      "point": 6,
+      "cancel": 1,
+      "task_name": "Trial Tower",
+      "rate": 4,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 4,
+      "description": "Challenge Trial Tower 4 times to get a chance for powerful Hōgu!"
+    },
+    {
+      "id": 16300025,
+      "type": 3,
+      "event_type": 17,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 10000
+        }
+      ],
+      "small_picture": 16300025,
+      "point": 2,
+      "cancel": 1,
+      "task_name": "Reiatsu Cultivation",
+      "rate": 1,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 1,
+      "description": "Reiatsu cultivation once. The high-level Reiatsu can increase your battle power substantially!"
+    },
+    {
+      "id": 16300026,
+      "type": 3,
+      "event_type": 17,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 20000
+        }
+      ],
+      "small_picture": 16300026,
+      "point": 3,
+      "cancel": 1,
+      "task_name": "Reiatsu Cultivation",
+      "rate": 2,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 2,
+      "description": "Reiatsu cultivation twice. The high-level Reiatsu can increase your battle power substantially!"
+    },
+    {
+      "id": 16300027,
+      "type": 3,
+      "event_type": 17,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 30000
+        }
+      ],
+      "small_picture": 16300027,
+      "point": 4,
+      "cancel": 1,
+      "task_name": "Reiatsu Cultivation",
+      "rate": 3,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 3,
+      "description": "Reiatsu cultivation 3 times. The high-level Reiatsu can increase your battle power substantially!"
+    },
+    {
+      "id": 16300028,
+      "type": 3,
+      "event_type": 17,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 40000
+        }
+      ],
+      "small_picture": 16300028,
+      "point": 6,
+      "cancel": 1,
+      "task_name": "Reiatsu Cultivation",
+      "rate": 4,
+      "isgoto": 1,
+      "instant_json": [
+        2,
+        10
+      ],
+      "complete": 4,
+      "description": "Reiatsu cultivation 4 times. The high-level Reiatsu can increase your battle power substantially!"
+    },
+    {
+      "id": 16300029,
+      "type": 3,
+      "event_type": 18,
+      "rewards_json": [
+        {
+          "type": 0,
+          "code": 0,
+          "amount": 50000
+        }
+      ],
+      "small_picture": 16300029,
+      "point": 6,
+      "cancel": 1,
+      "task_name": "Double Reward",
+      "rate": 5,
+      "isgoto": 0,
+      "instant_json": [
+        2,
+        50
+      ],
+      "complete": 2,
+      "description": "Spend Gold or Coupon 2 times"
+    }
+  ]
+}

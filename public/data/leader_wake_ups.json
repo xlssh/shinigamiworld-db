@@ -1,0 +1,4739 @@
+{
+  "table": "leader_wake_ups",
+  "rowCount": 104,
+  "rows": [
+    {
+      "id": 14152000,
+      "up_id": 0,
+      "next_id": 14152001,
+      "pos_equip": 0,
+      "wake_stage": 0,
+      "quality": 0,
+      "max_str": 0,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 30
+        }
+      ],
+      "equip_attr": [],
+      "value_str": 0
+    },
+    {
+      "id": 14152001,
+      "up_id": 14152000,
+      "next_id": 14152002,
+      "pos_equip": 0,
+      "wake_stage": 1,
+      "quality": 1,
+      "max_str": 5,
+      "up_level": 45,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 40
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 80
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 90
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 970,
+          "oper": 1
+        }
+      ],
+      "value_str": 10
+    },
+    {
+      "id": 14152002,
+      "up_id": 14152001,
+      "next_id": 14152003,
+      "pos_equip": 0,
+      "wake_stage": 2,
+      "quality": 2,
+      "max_str": 10,
+      "up_level": 55,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 50
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 90
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 140
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 1020,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.002,
+          "oper": 1
+        }
+      ],
+      "value_str": 10
+    },
+    {
+      "id": 14152003,
+      "up_id": 14152002,
+      "next_id": 14152004,
+      "pos_equip": 0,
+      "wake_stage": 3,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 65,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 60
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 110
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 220
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 1100,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.004,
+          "oper": 1
+        },
+        {
+          "type": 30,
+          "value": 0.004,
+          "oper": 1
+        }
+      ],
+      "value_str": 20
+    },
+    {
+      "id": 14152004,
+      "up_id": 14152003,
+      "next_id": 14152005,
+      "pos_equip": 0,
+      "wake_stage": 4,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 75,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 70
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 120
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 460
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 1230,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.006,
+          "oper": 1
+        },
+        {
+          "type": 30,
+          "value": 0.006,
+          "oper": 1
+        }
+      ],
+      "value_str": 30
+    },
+    {
+      "id": 14152005,
+      "up_id": 14152004,
+      "next_id": 14152006,
+      "pos_equip": 0,
+      "wake_stage": 5,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 85,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 80
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 130
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 640
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 1550,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.01,
+          "oper": 1
+        },
+        {
+          "type": 30,
+          "value": 0.01,
+          "oper": 1
+        },
+        {
+          "type": 24,
+          "value": 0.01,
+          "oper": 1
+        }
+      ],
+      "value_str": 30
+    },
+    {
+      "id": 14152006,
+      "up_id": 14152005,
+      "next_id": 14152007,
+      "pos_equip": 0,
+      "wake_stage": 6,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 95,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 90
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 150
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 880
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 2150,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.014,
+          "oper": 1
+        },
+        {
+          "type": 30,
+          "value": 0.014,
+          "oper": 1
+        },
+        {
+          "type": 24,
+          "value": 0.014,
+          "oper": 1
+        }
+      ],
+      "value_str": 30
+    },
+    {
+      "id": 14152007,
+      "up_id": 14152006,
+      "next_id": 14152008,
+      "pos_equip": 0,
+      "wake_stage": 7,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 105,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 170
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1360
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 3150,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 30,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 24,
+          "value": 0.018,
+          "oper": 1
+        }
+      ],
+      "value_str": 40
+    },
+    {
+      "id": 14152008,
+      "up_id": 14152007,
+      "next_id": 14152009,
+      "pos_equip": 0,
+      "wake_stage": 8,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 115,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 110
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 190
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1770
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 5700,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.024,
+          "oper": 1
+        },
+        {
+          "type": 30,
+          "value": 0.024,
+          "oper": 1
+        },
+        {
+          "type": 24,
+          "value": 0.024,
+          "oper": 1
+        },
+        {
+          "type": 28,
+          "value": 0.024,
+          "oper": 1
+        }
+      ],
+      "value_str": 40
+    },
+    {
+      "id": 14152009,
+      "up_id": 14152008,
+      "next_id": 14152010,
+      "pos_equip": 0,
+      "wake_stage": 9,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 125,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 120
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 200
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 2270
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 9600,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 30,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 24,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 28,
+          "value": 0.03,
+          "oper": 1
+        }
+      ],
+      "value_str": 40
+    },
+    {
+      "id": 14152010,
+      "up_id": 14152009,
+      "next_id": 14152011,
+      "pos_equip": 0,
+      "wake_stage": 10,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 135,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 130
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 220
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 2880
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 14100,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.036,
+          "oper": 1
+        },
+        {
+          "type": 30,
+          "value": 0.036,
+          "oper": 1
+        },
+        {
+          "type": 24,
+          "value": 0.036,
+          "oper": 1
+        },
+        {
+          "type": 28,
+          "value": 0.036,
+          "oper": 1
+        }
+      ],
+      "value_str": 50
+    },
+    {
+      "id": 14152011,
+      "up_id": 14152010,
+      "next_id": 14152012,
+      "pos_equip": 0,
+      "wake_stage": 11,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 145,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 140
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 240
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 4090
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 19500,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.042,
+          "oper": 1
+        },
+        {
+          "type": 30,
+          "value": 0.042,
+          "oper": 1
+        },
+        {
+          "type": 24,
+          "value": 0.042,
+          "oper": 1
+        },
+        {
+          "type": 28,
+          "value": 0.042,
+          "oper": 1
+        }
+      ],
+      "value_str": 60
+    },
+    {
+      "id": 14152012,
+      "up_id": 14152011,
+      "next_id": 0,
+      "pos_equip": 0,
+      "wake_stage": 12,
+      "quality": 6,
+      "max_str": 50,
+      "up_level": 200,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151404,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 260
+        }
+      ],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 30000,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 30,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 24,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 28,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 43,
+          "value": 0.5,
+          "oper": 1
+        }
+      ],
+      "value_str": 60
+    },
+    {
+      "id": 14152100,
+      "up_id": 0,
+      "next_id": 14152101,
+      "pos_equip": 1,
+      "wake_stage": 0,
+      "quality": 0,
+      "max_str": 0,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 20
+        }
+      ],
+      "equip_attr": [],
+      "value_str": 0
+    },
+    {
+      "id": 14152101,
+      "up_id": 14152100,
+      "next_id": 14152102,
+      "pos_equip": 1,
+      "wake_stage": 1,
+      "quality": 1,
+      "max_str": 5,
+      "up_level": 45,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 40
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 50
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 40,
+          "oper": 1
+        }
+      ],
+      "value_str": 3
+    },
+    {
+      "id": 14152102,
+      "up_id": 14152101,
+      "next_id": 14152103,
+      "pos_equip": 1,
+      "wake_stage": 2,
+      "quality": 2,
+      "max_str": 10,
+      "up_level": 55,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 30
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 50
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 70
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 50,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.005,
+          "oper": 1
+        }
+      ],
+      "value_str": 5
+    },
+    {
+      "id": 14152103,
+      "up_id": 14152102,
+      "next_id": 14152104,
+      "pos_equip": 1,
+      "wake_stage": 3,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 65,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 35
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 60
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 110
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 80,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.006,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.006,
+          "oper": 1
+        }
+      ],
+      "value_str": 7
+    },
+    {
+      "id": 14152104,
+      "up_id": 14152103,
+      "next_id": 14152105,
+      "pos_equip": 1,
+      "wake_stage": 4,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 75,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 40
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 60
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 230
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 110,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.007,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.007,
+          "oper": 1
+        }
+      ],
+      "value_str": 9
+    },
+    {
+      "id": 14152105,
+      "up_id": 14152104,
+      "next_id": 14152106,
+      "pos_equip": 1,
+      "wake_stage": 5,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 85,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 45
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 70
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 320
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 170,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.012,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.012,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.012,
+          "oper": 1
+        }
+      ],
+      "value_str": 11
+    },
+    {
+      "id": 14152106,
+      "up_id": 14152105,
+      "next_id": 14152107,
+      "pos_equip": 1,
+      "wake_stage": 6,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 95,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 50
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 80
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 440
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 270,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.013,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.013,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.013,
+          "oper": 1
+        }
+      ],
+      "value_str": 13
+    },
+    {
+      "id": 14152107,
+      "up_id": 14152106,
+      "next_id": 14152108,
+      "pos_equip": 1,
+      "wake_stage": 7,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 105,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 50
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 90
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 680
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 620,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.013,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.013,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.013,
+          "oper": 1
+        }
+      ],
+      "value_str": 16
+    },
+    {
+      "id": 14152108,
+      "up_id": 14152107,
+      "next_id": 14152109,
+      "pos_equip": 1,
+      "wake_stage": 8,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 115,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 55
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 90
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 890
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 1450,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.018,
+          "oper": 1
+        }
+      ],
+      "value_str": 24
+    },
+    {
+      "id": 14152109,
+      "up_id": 14152108,
+      "next_id": 14152110,
+      "pos_equip": 1,
+      "wake_stage": 9,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 125,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 60
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 100
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1140
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 2650,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.02,
+          "oper": 1
+        }
+      ],
+      "value_str": 44
+    },
+    {
+      "id": 14152110,
+      "up_id": 14152109,
+      "next_id": 14152111,
+      "pos_equip": 1,
+      "wake_stage": 10,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 135,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 65
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 110
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1440
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 4000,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.02,
+          "oper": 1
+        }
+      ],
+      "value_str": 67
+    },
+    {
+      "id": 14152111,
+      "up_id": 14152110,
+      "next_id": 14152112,
+      "pos_equip": 1,
+      "wake_stage": 11,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 145,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 70
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 120
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 2040
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 5500,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.02,
+          "oper": 1
+        }
+      ],
+      "value_str": 92
+    },
+    {
+      "id": 14152112,
+      "up_id": 14152111,
+      "next_id": 0,
+      "pos_equip": 1,
+      "wake_stage": 12,
+      "quality": 6,
+      "max_str": 50,
+      "up_level": 200,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151401,
+          "amount": 75
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 130
+        }
+      ],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 8500,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 101,
+          "value": 0.05,
+          "oper": 2
+        }
+      ],
+      "value_str": 85
+    },
+    {
+      "id": 14152200,
+      "up_id": 0,
+      "next_id": 14152201,
+      "pos_equip": 2,
+      "wake_stage": 0,
+      "quality": 0,
+      "max_str": 0,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 20
+        }
+      ],
+      "equip_attr": [],
+      "value_str": 0
+    },
+    {
+      "id": 14152201,
+      "up_id": 14152200,
+      "next_id": 14152202,
+      "pos_equip": 2,
+      "wake_stage": 1,
+      "quality": 1,
+      "max_str": 5,
+      "up_level": 45,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 40
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 50
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 40,
+          "oper": 1
+        }
+      ],
+      "value_str": 3
+    },
+    {
+      "id": 14152202,
+      "up_id": 14152201,
+      "next_id": 14152203,
+      "pos_equip": 2,
+      "wake_stage": 2,
+      "quality": 2,
+      "max_str": 10,
+      "up_level": 55,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 30
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 50
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 70
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 50,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.005,
+          "oper": 1
+        }
+      ],
+      "value_str": 5
+    },
+    {
+      "id": 14152203,
+      "up_id": 14152202,
+      "next_id": 14152204,
+      "pos_equip": 2,
+      "wake_stage": 3,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 65,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 35
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 60
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 110
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 80,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.006,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.006,
+          "oper": 1
+        }
+      ],
+      "value_str": 7
+    },
+    {
+      "id": 14152204,
+      "up_id": 14152203,
+      "next_id": 14152205,
+      "pos_equip": 2,
+      "wake_stage": 4,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 75,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 40
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 60
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 230
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 110,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.007,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.007,
+          "oper": 1
+        }
+      ],
+      "value_str": 9
+    },
+    {
+      "id": 14152205,
+      "up_id": 14152204,
+      "next_id": 14152206,
+      "pos_equip": 2,
+      "wake_stage": 5,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 85,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 45
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 70
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 320
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 170,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.012,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.012,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.012,
+          "oper": 1
+        }
+      ],
+      "value_str": 11
+    },
+    {
+      "id": 14152206,
+      "up_id": 14152205,
+      "next_id": 14152207,
+      "pos_equip": 2,
+      "wake_stage": 6,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 95,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 50
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 80
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 440
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 270,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.013,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.013,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.013,
+          "oper": 1
+        }
+      ],
+      "value_str": 13
+    },
+    {
+      "id": 14152207,
+      "up_id": 14152206,
+      "next_id": 14152208,
+      "pos_equip": 2,
+      "wake_stage": 7,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 105,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 50
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 90
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 680
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 620,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.013,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.013,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.013,
+          "oper": 1
+        }
+      ],
+      "value_str": 16
+    },
+    {
+      "id": 14152208,
+      "up_id": 14152207,
+      "next_id": 14152209,
+      "pos_equip": 2,
+      "wake_stage": 8,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 115,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 55
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 90
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 890
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 1450,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.018,
+          "oper": 1
+        }
+      ],
+      "value_str": 24
+    },
+    {
+      "id": 14152209,
+      "up_id": 14152208,
+      "next_id": 14152210,
+      "pos_equip": 2,
+      "wake_stage": 9,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 125,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 60
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 100
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1140
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 2650,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.02,
+          "oper": 1
+        }
+      ],
+      "value_str": 44
+    },
+    {
+      "id": 14152210,
+      "up_id": 14152209,
+      "next_id": 14152211,
+      "pos_equip": 2,
+      "wake_stage": 10,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 135,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 65
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 110
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1440
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 4000,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.02,
+          "oper": 1
+        }
+      ],
+      "value_str": 67
+    },
+    {
+      "id": 14152211,
+      "up_id": 14152210,
+      "next_id": 14152212,
+      "pos_equip": 2,
+      "wake_stage": 11,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 145,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 70
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 120
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 2040
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 5500,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.02,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.02,
+          "oper": 1
+        }
+      ],
+      "value_str": 92
+    },
+    {
+      "id": 14152212,
+      "up_id": 14152211,
+      "next_id": 0,
+      "pos_equip": 2,
+      "wake_stage": 12,
+      "quality": 6,
+      "max_str": 50,
+      "up_level": 200,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151402,
+          "amount": 75
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 130
+        }
+      ],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 17,
+          "value": 8500,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 101,
+          "value": 0.05,
+          "oper": 2
+        }
+      ],
+      "value_str": 85
+    },
+    {
+      "id": 14152300,
+      "up_id": 0,
+      "next_id": 14152301,
+      "pos_equip": 3,
+      "wake_stage": 0,
+      "quality": 0,
+      "max_str": 0,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 30
+        }
+      ],
+      "equip_attr": [],
+      "value_str": 0
+    },
+    {
+      "id": 14152301,
+      "up_id": 14152300,
+      "next_id": 14152302,
+      "pos_equip": 3,
+      "wake_stage": 1,
+      "quality": 1,
+      "max_str": 5,
+      "up_level": 45,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 40
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 80
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 90
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 80,
+          "oper": 1
+        }
+      ],
+      "value_str": 6
+    },
+    {
+      "id": 14152302,
+      "up_id": 14152301,
+      "next_id": 14152303,
+      "pos_equip": 3,
+      "wake_stage": 2,
+      "quality": 2,
+      "max_str": 10,
+      "up_level": 55,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 50
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 90
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 140
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 110,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.01,
+          "oper": 1
+        }
+      ],
+      "value_str": 10
+    },
+    {
+      "id": 14152303,
+      "up_id": 14152302,
+      "next_id": 14152304,
+      "pos_equip": 3,
+      "wake_stage": 3,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 65,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 60
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 110
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 220
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 170,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.015,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.015,
+          "oper": 1
+        }
+      ],
+      "value_str": 14
+    },
+    {
+      "id": 14152304,
+      "up_id": 14152303,
+      "next_id": 14152305,
+      "pos_equip": 3,
+      "wake_stage": 4,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 75,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 70
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 120
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 460
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 230,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.018,
+          "oper": 1
+        }
+      ],
+      "value_str": 18
+    },
+    {
+      "id": 14152305,
+      "up_id": 14152304,
+      "next_id": 14152306,
+      "pos_equip": 3,
+      "wake_stage": 5,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 85,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 80
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 130
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 640
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 350,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.029,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.029,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.029,
+          "oper": 1
+        }
+      ],
+      "value_str": 22
+    },
+    {
+      "id": 14152306,
+      "up_id": 14152305,
+      "next_id": 14152307,
+      "pos_equip": 3,
+      "wake_stage": 6,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 95,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 90
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 150
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 880
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 550,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.034,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.034,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.034,
+          "oper": 1
+        }
+      ],
+      "value_str": 26
+    },
+    {
+      "id": 14152307,
+      "up_id": 14152306,
+      "next_id": 14152308,
+      "pos_equip": 3,
+      "wake_stage": 7,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 105,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 170
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1360
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 1250,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.037,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.037,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.037,
+          "oper": 1
+        }
+      ],
+      "value_str": 32
+    },
+    {
+      "id": 14152308,
+      "up_id": 14152307,
+      "next_id": 14152309,
+      "pos_equip": 3,
+      "wake_stage": 8,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 115,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 110
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 190
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1770
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 2900,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.049,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.049,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.049,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.049,
+          "oper": 1
+        }
+      ],
+      "value_str": 48
+    },
+    {
+      "id": 14152309,
+      "up_id": 14152308,
+      "next_id": 14152310,
+      "pos_equip": 3,
+      "wake_stage": 9,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 125,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 120
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 200
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 2270
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 5300,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.054,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.054,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.054,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.054,
+          "oper": 1
+        }
+      ],
+      "value_str": 88
+    },
+    {
+      "id": 14152310,
+      "up_id": 14152309,
+      "next_id": 14152311,
+      "pos_equip": 3,
+      "wake_stage": 10,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 135,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 130
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 220
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 2880
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 8000,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.057,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.057,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.057,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.057,
+          "oper": 1
+        }
+      ],
+      "value_str": 134
+    },
+    {
+      "id": 14152311,
+      "up_id": 14152310,
+      "next_id": 14152312,
+      "pos_equip": 3,
+      "wake_stage": 11,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 145,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 140
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 240
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 4090
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 11000,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.059,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.059,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.059,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.059,
+          "oper": 1
+        }
+      ],
+      "value_str": 184
+    },
+    {
+      "id": 14152312,
+      "up_id": 14152311,
+      "next_id": 0,
+      "pos_equip": 3,
+      "wake_stage": 12,
+      "quality": 6,
+      "max_str": 50,
+      "up_level": 200,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151403,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 260
+        }
+      ],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 21,
+          "value": 17000,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.079,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.079,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.079,
+          "oper": 1
+        },
+        {
+          "type": 29,
+          "value": 0.079,
+          "oper": 1
+        },
+        {
+          "type": 11,
+          "value": 0.05,
+          "oper": 2
+        }
+      ],
+      "value_str": 170
+    },
+    {
+      "id": 14152400,
+      "up_id": 0,
+      "next_id": 14152401,
+      "pos_equip": 4,
+      "wake_stage": 0,
+      "quality": 0,
+      "max_str": 0,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 30
+        }
+      ],
+      "equip_attr": [],
+      "value_str": 0
+    },
+    {
+      "id": 14152401,
+      "up_id": 14152400,
+      "next_id": 14152402,
+      "pos_equip": 4,
+      "wake_stage": 1,
+      "quality": 1,
+      "max_str": 5,
+      "up_level": 45,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 40
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 80
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 90
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 180,
+          "oper": 1
+        }
+      ],
+      "value_str": 18
+    },
+    {
+      "id": 14152402,
+      "up_id": 14152401,
+      "next_id": 14152403,
+      "pos_equip": 4,
+      "wake_stage": 2,
+      "quality": 2,
+      "max_str": 10,
+      "up_level": 55,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 50
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 90
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 140
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 250,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.002,
+          "oper": 1
+        }
+      ],
+      "value_str": 13
+    },
+    {
+      "id": 14152403,
+      "up_id": 14152402,
+      "next_id": 14152404,
+      "pos_equip": 4,
+      "wake_stage": 3,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 65,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 60
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 110
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 220
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 350,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.004,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.004,
+          "oper": 1
+        }
+      ],
+      "value_str": 18
+    },
+    {
+      "id": 14152404,
+      "up_id": 14152403,
+      "next_id": 14152405,
+      "pos_equip": 4,
+      "wake_stage": 4,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 75,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 70
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 120
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 460
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 500,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.006,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.006,
+          "oper": 1
+        }
+      ],
+      "value_str": 25
+    },
+    {
+      "id": 14152405,
+      "up_id": 14152404,
+      "next_id": 14152406,
+      "pos_equip": 4,
+      "wake_stage": 5,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 85,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 80
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 130
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 640
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 900,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.01,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.01,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.01,
+          "oper": 1
+        }
+      ],
+      "value_str": 23
+    },
+    {
+      "id": 14152406,
+      "up_id": 14152405,
+      "next_id": 14152407,
+      "pos_equip": 4,
+      "wake_stage": 6,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 95,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 90
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 150
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 880
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 1400,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.014,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.014,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.014,
+          "oper": 1
+        }
+      ],
+      "value_str": 35
+    },
+    {
+      "id": 14152407,
+      "up_id": 14152406,
+      "next_id": 14152408,
+      "pos_equip": 4,
+      "wake_stage": 7,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 105,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 170
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1360
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 2100,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.018,
+          "oper": 1
+        }
+      ],
+      "value_str": 53
+    },
+    {
+      "id": 14152408,
+      "up_id": 14152407,
+      "next_id": 14152409,
+      "pos_equip": 4,
+      "wake_stage": 8,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 115,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 110
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 190
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1770
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 3750,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.024,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.024,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.024,
+          "oper": 1
+        },
+        {
+          "type": 26,
+          "value": 0.024,
+          "oper": 1
+        }
+      ],
+      "value_str": 63
+    },
+    {
+      "id": 14152409,
+      "up_id": 14152408,
+      "next_id": 14152410,
+      "pos_equip": 4,
+      "wake_stage": 9,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 125,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 120
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 200
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 2270
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 6300,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 26,
+          "value": 0.03,
+          "oper": 1
+        }
+      ],
+      "value_str": 105
+    },
+    {
+      "id": 14152410,
+      "up_id": 14152409,
+      "next_id": 14152411,
+      "pos_equip": 4,
+      "wake_stage": 10,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 135,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 130
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 220
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 2880
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 9000,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.036,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.036,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.036,
+          "oper": 1
+        },
+        {
+          "type": 26,
+          "value": 0.036,
+          "oper": 1
+        }
+      ],
+      "value_str": 150
+    },
+    {
+      "id": 14152411,
+      "up_id": 14152410,
+      "next_id": 14152412,
+      "pos_equip": 4,
+      "wake_stage": 11,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 145,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 140
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 240
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 4090
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 12000,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.042,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.042,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.042,
+          "oper": 1
+        },
+        {
+          "type": 26,
+          "value": 0.042,
+          "oper": 1
+        }
+      ],
+      "value_str": 200
+    },
+    {
+      "id": 14152412,
+      "up_id": 14152411,
+      "next_id": 0,
+      "pos_equip": 4,
+      "wake_stage": 12,
+      "quality": 6,
+      "max_str": 50,
+      "up_level": 200,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151405,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 260
+        }
+      ],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 11,
+          "value": 18000,
+          "oper": 1
+        },
+        {
+          "type": 23,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 22,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 26,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 48,
+          "value": 0.05,
+          "oper": 2
+        }
+      ],
+      "value_str": 180
+    },
+    {
+      "id": 14152500,
+      "up_id": 0,
+      "next_id": 14152501,
+      "pos_equip": 5,
+      "wake_stage": 0,
+      "quality": 0,
+      "max_str": 0,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 30
+        }
+      ],
+      "equip_attr": [],
+      "value_str": 0
+    },
+    {
+      "id": 14152501,
+      "up_id": 14152500,
+      "next_id": 14152502,
+      "pos_equip": 5,
+      "wake_stage": 1,
+      "quality": 1,
+      "max_str": 5,
+      "up_level": 45,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 40
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 80
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 90
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 3400,
+          "oper": 1
+        }
+      ],
+      "value_str": 340
+    },
+    {
+      "id": 14152502,
+      "up_id": 14152501,
+      "next_id": 14152503,
+      "pos_equip": 5,
+      "wake_stage": 2,
+      "quality": 2,
+      "max_str": 10,
+      "up_level": 55,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 50
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 90
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 140
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 3600,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.002,
+          "oper": 1
+        }
+      ],
+      "value_str": 180
+    },
+    {
+      "id": 14152503,
+      "up_id": 14152502,
+      "next_id": 14152504,
+      "pos_equip": 5,
+      "wake_stage": 3,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 65,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 60
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 110
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 220
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 3800,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.004,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.004,
+          "oper": 1
+        }
+      ],
+      "value_str": 190
+    },
+    {
+      "id": 14152504,
+      "up_id": 14152503,
+      "next_id": 14152505,
+      "pos_equip": 5,
+      "wake_stage": 4,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 75,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 70
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 120
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 460
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 4100,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.006,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.006,
+          "oper": 1
+        }
+      ],
+      "value_str": 205
+    },
+    {
+      "id": 14152505,
+      "up_id": 14152504,
+      "next_id": 14152506,
+      "pos_equip": 5,
+      "wake_stage": 5,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 85,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 80
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 130
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 640
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 5300,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.01,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.01,
+          "oper": 1
+        },
+        {
+          "type": 27,
+          "value": 0.01,
+          "oper": 1
+        }
+      ],
+      "value_str": 133
+    },
+    {
+      "id": 14152506,
+      "up_id": 14152505,
+      "next_id": 14152507,
+      "pos_equip": 5,
+      "wake_stage": 6,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 95,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 90
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 150
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 880
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 6600,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.014,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.014,
+          "oper": 1
+        },
+        {
+          "type": 27,
+          "value": 0.014,
+          "oper": 1
+        }
+      ],
+      "value_str": 165
+    },
+    {
+      "id": 14152507,
+      "up_id": 14152506,
+      "next_id": 14152508,
+      "pos_equip": 5,
+      "wake_stage": 7,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 105,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 170
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1360
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 10000,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.018,
+          "oper": 1
+        },
+        {
+          "type": 27,
+          "value": 0.018,
+          "oper": 1
+        }
+      ],
+      "value_str": 250
+    },
+    {
+      "id": 14152508,
+      "up_id": 14152507,
+      "next_id": 14152509,
+      "pos_equip": 5,
+      "wake_stage": 8,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 115,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 110
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 190
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 1770
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 23300,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.024,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.024,
+          "oper": 1
+        },
+        {
+          "type": 27,
+          "value": 0.024,
+          "oper": 1
+        },
+        {
+          "type": 17,
+          "value": 0.022,
+          "oper": 2
+        }
+      ],
+      "value_str": 388
+    },
+    {
+      "id": 14152509,
+      "up_id": 14152508,
+      "next_id": 14152510,
+      "pos_equip": 5,
+      "wake_stage": 9,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 125,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 120
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 200
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 2270
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 31300,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 27,
+          "value": 0.03,
+          "oper": 1
+        },
+        {
+          "type": 17,
+          "value": 0.028,
+          "oper": 2
+        }
+      ],
+      "value_str": 522
+    },
+    {
+      "id": 14152510,
+      "up_id": 14152509,
+      "next_id": 14152511,
+      "pos_equip": 5,
+      "wake_stage": 10,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 135,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 130
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 220
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 2880
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 35300,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.036,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.036,
+          "oper": 1
+        },
+        {
+          "type": 27,
+          "value": 0.036,
+          "oper": 1
+        },
+        {
+          "type": 17,
+          "value": 0.034,
+          "oper": 2
+        }
+      ],
+      "value_str": 588
+    },
+    {
+      "id": 14152511,
+      "up_id": 14152510,
+      "next_id": 14152512,
+      "pos_equip": 5,
+      "wake_stage": 11,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 145,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 140
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 240
+        }
+      ],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 4090
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 38300,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.042,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.042,
+          "oper": 1
+        },
+        {
+          "type": 27,
+          "value": 0.042,
+          "oper": 1
+        },
+        {
+          "type": 17,
+          "value": 0.04,
+          "oper": 2
+        }
+      ],
+      "value_str": 638
+    },
+    {
+      "id": 14152512,
+      "up_id": 14152511,
+      "next_id": 0,
+      "pos_equip": 5,
+      "wake_stage": 12,
+      "quality": 6,
+      "max_str": 50,
+      "up_level": 200,
+      "strengthen_price": [
+        {
+          "type": 1,
+          "code": 14151406,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "code": 14151407,
+          "amount": 260
+        }
+      ],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 101,
+          "value": 70000,
+          "oper": 1
+        },
+        {
+          "type": 25,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 31,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 27,
+          "value": 0.052,
+          "oper": 1
+        },
+        {
+          "type": 17,
+          "value": 0.05,
+          "oper": 2
+        },
+        {
+          "type": 21,
+          "value": 0.05,
+          "oper": 2
+        }
+      ],
+      "value_str": 700
+    },
+    {
+      "id": 14152600,
+      "up_id": 0,
+      "next_id": 14152601,
+      "pos_equip": 6,
+      "wake_stage": 0,
+      "quality": 0,
+      "max_str": 0,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [],
+      "value_str": 0
+    },
+    {
+      "id": 14152601,
+      "up_id": 14152600,
+      "next_id": 14152602,
+      "pos_equip": 6,
+      "wake_stage": 1,
+      "quality": 1,
+      "max_str": 5,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 50,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152602,
+      "up_id": 14152601,
+      "next_id": 14152603,
+      "pos_equip": 6,
+      "wake_stage": 2,
+      "quality": 2,
+      "max_str": 10,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 200,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 100,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152603,
+      "up_id": 14152602,
+      "next_id": 14152604,
+      "pos_equip": 6,
+      "wake_stage": 3,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 600,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 400,
+          "oper": 1
+        },
+        {
+          "type": 1,
+          "value": 1200,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152604,
+      "up_id": 14152603,
+      "next_id": 14152605,
+      "pos_equip": 6,
+      "wake_stage": 4,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 600,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 400,
+          "oper": 1
+        },
+        {
+          "type": 1,
+          "value": 1200,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152605,
+      "up_id": 14152604,
+      "next_id": 14152606,
+      "pos_equip": 6,
+      "wake_stage": 5,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 1800,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 1300,
+          "oper": 1
+        },
+        {
+          "type": 1,
+          "value": 2400,
+          "oper": 1
+        },
+        {
+          "type": 3,
+          "value": 2400,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152606,
+      "up_id": 14152605,
+      "next_id": 14152607,
+      "pos_equip": 6,
+      "wake_stage": 6,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 1800,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 1300,
+          "oper": 1
+        },
+        {
+          "type": 1,
+          "value": 2400,
+          "oper": 1
+        },
+        {
+          "type": 3,
+          "value": 2400,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152607,
+      "up_id": 14152606,
+      "next_id": 14152608,
+      "pos_equip": 6,
+      "wake_stage": 7,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 1800,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 1300,
+          "oper": 1
+        },
+        {
+          "type": 1,
+          "value": 2400,
+          "oper": 1
+        },
+        {
+          "type": 3,
+          "value": 2400,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152608,
+      "up_id": 14152607,
+      "next_id": 14152609,
+      "pos_equip": 6,
+      "wake_stage": 8,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 5400,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 3800,
+          "oper": 1
+        },
+        {
+          "type": 1,
+          "value": 4800,
+          "oper": 1
+        },
+        {
+          "type": 3,
+          "value": 4800,
+          "oper": 1
+        },
+        {
+          "type": 4,
+          "value": 12000,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152609,
+      "up_id": 14152608,
+      "next_id": 14152610,
+      "pos_equip": 6,
+      "wake_stage": 9,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 5400,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 3800,
+          "oper": 1
+        },
+        {
+          "type": 1,
+          "value": 4800,
+          "oper": 1
+        },
+        {
+          "type": 3,
+          "value": 4800,
+          "oper": 1
+        },
+        {
+          "type": 4,
+          "value": 12000,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152610,
+      "up_id": 14152609,
+      "next_id": 14152611,
+      "pos_equip": 6,
+      "wake_stage": 10,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 5400,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 3800,
+          "oper": 1
+        },
+        {
+          "type": 1,
+          "value": 4800,
+          "oper": 1
+        },
+        {
+          "type": 3,
+          "value": 4800,
+          "oper": 1
+        },
+        {
+          "type": 4,
+          "value": 12000,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152611,
+      "up_id": 14152610,
+      "next_id": 14152612,
+      "pos_equip": 6,
+      "wake_stage": 11,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 5400,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 3800,
+          "oper": 1
+        },
+        {
+          "type": 1,
+          "value": 4800,
+          "oper": 1
+        },
+        {
+          "type": 3,
+          "value": 4800,
+          "oper": 1
+        },
+        {
+          "type": 4,
+          "value": 12000,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152612,
+      "up_id": 14152611,
+      "next_id": 0,
+      "pos_equip": 6,
+      "wake_stage": 12,
+      "quality": 6,
+      "max_str": 50,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 48,
+          "value": 16200,
+          "oper": 1
+        },
+        {
+          "type": 49,
+          "value": 11300,
+          "oper": 1
+        },
+        {
+          "type": 1,
+          "value": 9600,
+          "oper": 1
+        },
+        {
+          "type": 3,
+          "value": 9600,
+          "oper": 1
+        },
+        {
+          "type": 4,
+          "value": 24000,
+          "oper": 1
+        },
+        {
+          "type": 2,
+          "value": 9600,
+          "oper": 1
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152700,
+      "up_id": 0,
+      "next_id": 14152701,
+      "pos_equip": 7,
+      "wake_stage": 0,
+      "quality": 0,
+      "max_str": 0,
+      "up_level": 35,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 30
+        }
+      ],
+      "equip_attr": [],
+      "value_str": 0
+    },
+    {
+      "id": 14152701,
+      "up_id": 14152700,
+      "next_id": 14152702,
+      "pos_equip": 7,
+      "wake_stage": 1,
+      "quality": 1,
+      "max_str": 5,
+      "up_level": 45,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 90
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.0025,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.0025,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.0025,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.0025,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152702,
+      "up_id": 14152701,
+      "next_id": 14152703,
+      "pos_equip": 7,
+      "wake_stage": 2,
+      "quality": 2,
+      "max_str": 10,
+      "up_level": 55,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 140
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.005,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.005,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.005,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.005,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152703,
+      "up_id": 14152702,
+      "next_id": 14152704,
+      "pos_equip": 7,
+      "wake_stage": 3,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 65,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 220
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.01,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.01,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.01,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.01,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152704,
+      "up_id": 14152703,
+      "next_id": 14152705,
+      "pos_equip": 7,
+      "wake_stage": 4,
+      "quality": 3,
+      "max_str": 10,
+      "up_level": 75,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 460
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.015,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.015,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.015,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.015,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152705,
+      "up_id": 14152704,
+      "next_id": 14152706,
+      "pos_equip": 7,
+      "wake_stage": 5,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 85,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 640
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.025,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.025,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.025,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.025,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152706,
+      "up_id": 14152705,
+      "next_id": 14152707,
+      "pos_equip": 7,
+      "wake_stage": 6,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 95,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 880
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.035,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.035,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.035,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.035,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152707,
+      "up_id": 14152706,
+      "next_id": 14152708,
+      "pos_equip": 7,
+      "wake_stage": 7,
+      "quality": 4,
+      "max_str": 20,
+      "up_level": 105,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 1360
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.045,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.045,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.045,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.045,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152708,
+      "up_id": 14152707,
+      "next_id": 14152709,
+      "pos_equip": 7,
+      "wake_stage": 8,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 115,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 1770
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.065,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.065,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.065,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.065,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152709,
+      "up_id": 14152708,
+      "next_id": 14152710,
+      "pos_equip": 7,
+      "wake_stage": 9,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 125,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 2270
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.08,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.08,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.08,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.08,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152710,
+      "up_id": 14152709,
+      "next_id": 14152711,
+      "pos_equip": 7,
+      "wake_stage": 10,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 135,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 2880
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.095,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.095,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.095,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.095,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152711,
+      "up_id": 14152710,
+      "next_id": 14152712,
+      "pos_equip": 7,
+      "wake_stage": 11,
+      "quality": 5,
+      "max_str": 30,
+      "up_level": 145,
+      "strengthen_price": [],
+      "uplevel_price": [
+        {
+          "type": 1,
+          "code": 14151408,
+          "amount": 4090
+        }
+      ],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.11,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.11,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.11,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.11,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    },
+    {
+      "id": 14152712,
+      "up_id": 14152711,
+      "next_id": 0,
+      "pos_equip": 7,
+      "wake_stage": 12,
+      "quality": 6,
+      "max_str": 50,
+      "up_level": 200,
+      "strengthen_price": [],
+      "uplevel_price": [],
+      "equip_attr": [
+        {
+          "type": 50,
+          "value": 0.15,
+          "oper": 2
+        },
+        {
+          "type": 51,
+          "value": 0.15,
+          "oper": 2
+        },
+        {
+          "type": 52,
+          "value": 0.15,
+          "oper": 2
+        },
+        {
+          "type": 53,
+          "value": 0.15,
+          "oper": 2
+        }
+      ],
+      "value_str": 0
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "table": "stages",
+  "rowCount": 22,
+  "generatedAt": "2026-07-01T19:44:59.787146Z",
+  "rows": [
+    {
+      "id": 15200001,
+      "name": "Instance: Sneak Attack Human World",
+      "hard": "Easy",
+      "desc": "After you wake up, you went to the Human World and experience some interesting turn of events! Pass this to get Level 30 Blue and Purple materials!",
+      "level": 30,
+      "start_id": 15201001,
+      "end_id": 15201013,
+      "big_image": 15200001,
+      "award_json": {
+        "award": [
+          14100161,
+          14100162,
+          14100430
+        ]
+      }
+    },
+    {
+      "id": 15200002,
+      "name": "Instance: Sneak Attack Human World",
+      "hard": "Hard",
+      "desc": "After you wake up, you went to the Human World and experience some interesting turn of events! Pass this to get Level 30 Purple and Level 50 Gold materials!",
+      "level": 30,
+      "start_id": 15201014,
+      "end_id": 15201026,
+      "big_image": 15200001,
+      "award_json": {
+        "award": [
+          14100161,
+          14100162,
+          14100430
+        ]
+      }
+    },
+    {
+      "id": 15200003,
+      "name": "Instance: Shinigami's Power",
+      "hard": "Easy",
+      "desc": "Ichigo's transformation from Human to Shinigami! Pass to get Level 50 Purple and Gold materials!",
+      "level": 50,
+      "start_id": 15202001,
+      "end_id": 15202022,
+      "big_image": 15200003,
+      "award_json": {
+        "award": [
+          14100163,
+          14100164,
+          14100430
+        ]
+      }
+    },
+    {
+      "id": 15200004,
+      "name": "Instance: Shinigami's Power",
+      "hard": "Hard",
+      "desc": "Ichigo's transformation from Human to Shinigami! Pass to get Level 50 Gold and Level 70 Gold materials!",
+      "level": 50,
+      "start_id": 15202023,
+      "end_id": 15202044,
+      "big_image": 15200003,
+      "award_json": {
+        "award": [
+          14100163,
+          14100164,
+          14100430
+        ]
+      }
+    },
+    {
+      "id": 15200005,
+      "name": "Instance: Nightmare Execution",
+      "hard": "Easy",
+      "desc": "You follow the group to rescue Rukia! Pass to get Level 70 Purple and Gold materials!",
+      "level": 70,
+      "start_id": 15203001,
+      "end_id": 15203022,
+      "big_image": 15200005,
+      "award_json": {
+        "award": [
+          14100165,
+          14100166,
+          14100431
+        ]
+      }
+    },
+    {
+      "id": 15200006,
+      "name": "Instance: Nightmare Execution",
+      "hard": "Hard",
+      "desc": "You follow the group to rescue Rukia! Pass to get Level 70 Gold and Level 80 Gold materials!",
+      "level": 70,
+      "start_id": 15203023,
+      "end_id": 15203044,
+      "big_image": 15200005,
+      "award_json": {
+        "award": [
+          14100165,
+          14100166,
+          14100431
+        ]
+      }
+    },
+    {
+      "id": 15200007,
+      "name": "Instance: Hollowfication",
+      "hard": "Easy",
+      "desc": "Aizen conducts Hollowfication experiments on residents within the Rukongai prompting an investigation from the Gotei 13. The arrival of Urahara saves them from slaughter, but Aizen escapes. When he fails to save them, Urahara is arrested and charged with the crimes. With the help of Yoruichi Shihōin he and the Visored escape to the Human World. Pass to get Level 80 Purple and Gold materials!",
+      "level": 80,
+      "start_id": 15204001,
+      "end_id": 15204022,
+      "big_image": 15200007,
+      "award_json": {
+        "award": [
+          14100167,
+          14100168,
+          14100431
+        ]
+      }
+    },
+    {
+      "id": 15200008,
+      "name": "Instance: Hollowfication",
+      "hard": "Hard",
+      "desc": "Aizen conducts Hollowfication experiments on residents within the Rukongai prompting an investigation from the Gotei 13. The arrival of Urahara saves them from slaughter, but Aizen escapes. When he fails to save them, Urahara is arrested and charged with the crimes. With the help of Yoruichi Shihōin he and the Visored escape to the Human World. Pass to get Level 80 Gold amd Level 90 Gold materials!",
+      "level": 80,
+      "start_id": 15204023,
+      "end_id": 15204044,
+      "big_image": 15200007,
+      "award_json": {
+        "award": [
+          14100167,
+          14100168,
+          14100431
+        ]
+      }
+    },
+    {
+      "id": 15200009,
+      "name": "Instance: Zanpakutō Spirit Manifestation",
+      "hard": "Easy",
+      "desc": "The Zanpakutō Rebellion is an event in which Muramasa, a Zanpakutō spirit, frees many other Zanpakutō spirits from their masters and starts a rebellion under the guise of wanting to free all Zanpakutō spirits from the control of Shinigami. In truth, he seeks nothing more than to free his master, Kōga Kuchiki, who was sealed away long ago. Pass to get Level 90 Gold and Purple materials!",
+      "level": 90,
+      "start_id": 15205001,
+      "end_id": 15205022,
+      "big_image": 15200009,
+      "award_json": {
+        "award": [
+          14100169,
+          14100170,
+          14100437
+        ]
+      }
+    },
+    {
+      "id": 15200010,
+      "name": "Instance: Zanpakutō Spirit Manifestation",
+      "hard": "Hard",
+      "desc": "The Zanpakutō Rebellion is an event in which Muramasa, a Zanpakutō spirit, frees many other Zanpakutō spirits from their masters and starts a rebellion under the guise of wanting to free all Zanpakutō spirits from the control of Shinigami. In truth, he seeks nothing more than to free his master, Kōga Kuchiki, who was sealed away long ago. Pass to get Level 90 Gold and Level 100 Gold materials!",
+      "level": 90,
+      "start_id": 15205023,
+      "end_id": 15205044,
+      "big_image": 15200009,
+      "award_json": {
+        "award": [
+          14100169,
+          14100170,
+          14100437
+        ]
+      }
+    },
+    {
+      "id": 15200011,
+      "name": "Instance: Murciélago",
+      "hard": "Easy",
+      "desc": "Who is the real king of Hueco Mondo? Pass to get Level 100 Purple and Gold materials!",
+      "level": 100,
+      "start_id": 15206001,
+      "end_id": 15206022,
+      "big_image": 15200011,
+      "award_json": {
+        "award": [
+          14100171,
+          14100172,
+          14100437
+        ]
+      }
+    },
+    {
+      "id": 15200012,
+      "name": "Instance: Murciélago",
+      "hard": "Hard",
+      "desc": "Who is the real king of Hueco Mondo? Pass to get Level 100 Gold and Level 110 Gold materials!",
+      "level": 100,
+      "start_id": 15206023,
+      "end_id": 15206044,
+      "big_image": 15200011,
+      "award_json": {
+        "award": [
+          14100171,
+          14100172,
+          14100437
+        ]
+      }
+    },
+    {
+      "id": 15200013,
+      "name": "Instance: Memories of Nobody",
+      "hard": "Easy",
+      "desc": "This battke of memory, who owns the battle? Then I realized... I am not a human... Can obtain level 110 Purple equipment material and level 110 Golden equipment material!",
+      "level": 110,
+      "start_id": 15207001,
+      "end_id": 15207022,
+      "big_image": 15200013,
+      "award_json": {
+        "award": [
+          14100173,
+          14100174,
+          14100439
+        ]
+      }
+    },
+    {
+      "id": 15200014,
+      "name": "Instance: Memories of Nobody",
+      "hard": "Hard",
+      "desc": "This battke of memory, who owns the battle? Then I realized... I am not a human... Can obtain level 110 Golden equipment material and level 120 Golden equipment material!",
+      "level": 110,
+      "start_id": 15207023,
+      "end_id": 15207044,
+      "big_image": 15200013,
+      "award_json": {
+        "award": [
+          14100173,
+          14100174,
+          14100439
+        ]
+      }
+    },
+    {
+      "id": 15200015,
+      "name": "Instance: The DiamondDust Rebellion",
+      "hard": "Easy",
+      "desc": "Ichigo received Toshiro's betrayal notice, Sereitei issued Toshiro's execution order... Can obtain level 120 Purple equipment material and level 120 Golden equipment material!",
+      "level": 120,
+      "start_id": 15208001,
+      "end_id": 15208022,
+      "big_image": 15200015,
+      "award_json": {
+        "award": [
+          14100175,
+          14100176,
+          14100439
+        ]
+      }
+    },
+    {
+      "id": 15200016,
+      "name": "Instance: The DiamondDust Rebellion",
+      "hard": "Hard",
+      "desc": "Ichigo received Toshiro's betrayal notice, Sereitei issued Toshiro's execution order... Can obtain level 120 Golden equipment material and level 130 Golden equipment material!",
+      "level": 120,
+      "start_id": 15208023,
+      "end_id": 15208044,
+      "big_image": 15200015,
+      "award_json": {
+        "award": [
+          14100175,
+          14100176,
+          14100439
+        ]
+      }
+    },
+    {
+      "id": 15200017,
+      "name": "Instance: Fade to Black",
+      "hard": "Easy",
+      "desc": "Slowly understand Rukia's past, the truth that sealed within the darkness of memory. Can obtain lvl 130 Purple equipment material and level 130 Golden equipment material!",
+      "level": 130,
+      "start_id": 15209001,
+      "end_id": 15209022,
+      "big_image": 15200017,
+      "award_json": {
+        "award": [
+          14100177,
+          14100178,
+          14100439
+        ]
+      }
+    },
+    {
+      "id": 15200018,
+      "name": "Instance: Fade to Black",
+      "hard": "Hard",
+      "desc": "Slowly understand Rukia's past, the truth that sealed within the darkness of memory. Can obtain lvl 130 Golden equipment material and level 140 Golden equipment material!",
+      "level": 130,
+      "start_id": 15209023,
+      "end_id": 15209044,
+      "big_image": 15200017,
+      "award_json": {
+        "award": [
+          14100177,
+          14100178,
+          14100439
+        ]
+      }
+    },
+    {
+      "id": 15200019,
+      "name": "Instance: The Hell Verse",
+      "hard": "Easy",
+      "desc": "Ichigo's sisters have been captured! Breakthrough Hell and rescue his sisters! Can obtain level 140 Purple equipment material and level 140 Golden equipment material!",
+      "level": 140,
+      "start_id": 15210001,
+      "end_id": 15210022,
+      "big_image": 15200019,
+      "award_json": {
+        "award": [
+          14100179,
+          14100180,
+          14100439
+        ]
+      }
+    },
+    {
+      "id": 15200020,
+      "name": "Instance: The Hell Verse",
+      "hard": "Hard",
+      "desc": "Ichigo's sisters have been captured! Breakthrough Hell and rescue his sisters! Can obtain level 140 Golden equipment material and level 150 Golden equipment material!",
+      "level": 140,
+      "start_id": 15210023,
+      "end_id": 15210044,
+      "big_image": 15200019,
+      "award_json": {
+        "award": [
+          14100179,
+          14100180,
+          14100439
+        ]
+      }
+    },
+    {
+      "id": 15200021,
+      "name": "Instance: The Sacred Scar",
+      "hard": "Easy",
+      "desc": "The scar that you left on me... I will forever remember. Mysterious rival appears! Can obtain level 150 Purple equipment material and lvl 150 Golden equipment material!",
+      "level": 150,
+      "start_id": 15211001,
+      "end_id": 15211022,
+      "big_image": 15200021,
+      "award_json": {
+        "award": [
+          14100181,
+          14100182,
+          14100439
+        ]
+      }
+    },
+    {
+      "id": 15200022,
+      "name": "Instance: The Sacred Scar",
+      "hard": "Hard",
+      "desc": "The scar that you left on me... I will forever remember. Mysterious rival appears! Can obtain level 150 Golden equipment material and lvl 150 Golden equipment material!",
+      "level": 150,
+      "start_id": 15211023,
+      "end_id": 15211044,
+      "big_image": 15200021,
+      "award_json": {
+        "award": [
+          14100181,
+          14100182,
+          14100439
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1056 @@
+{
+  "table": "vice_pet_rank_ups",
+  "rowCount": 105,
+  "rows": [
+    {
+      "id": 1201,
+      "next_pet_id": 1301,
+      "condition": [
+        14100411,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1301,
+      "next_pet_id": 1401,
+      "condition": [
+        14100411,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1401,
+      "next_pet_id": 1501,
+      "condition": [
+        14100411,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1501,
+      "next_pet_id": 1601,
+      "condition": [
+        14100411,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1601,
+      "next_pet_id": 1701,
+      "condition": [
+        14100411,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1202,
+      "next_pet_id": 1302,
+      "condition": [
+        14100412,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1302,
+      "next_pet_id": 1402,
+      "condition": [
+        14100412,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1402,
+      "next_pet_id": 1502,
+      "condition": [
+        14100412,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1502,
+      "next_pet_id": 1602,
+      "condition": [
+        14100412,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1602,
+      "next_pet_id": 1702,
+      "condition": [
+        14100412,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1203,
+      "next_pet_id": 1303,
+      "condition": [
+        14100413,
+        60
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1303,
+      "next_pet_id": 1403,
+      "condition": [
+        14100413,
+        140
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1403,
+      "next_pet_id": 1503,
+      "condition": [
+        14100413,
+        300
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1503,
+      "next_pet_id": 1603,
+      "condition": [
+        14100413,
+        500
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1603,
+      "next_pet_id": 1703,
+      "condition": [
+        14100413,
+        800
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1204,
+      "next_pet_id": 1304,
+      "condition": [
+        14100414,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1304,
+      "next_pet_id": 1404,
+      "condition": [
+        14100414,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1404,
+      "next_pet_id": 1504,
+      "condition": [
+        14100414,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1504,
+      "next_pet_id": 1604,
+      "condition": [
+        14100414,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1604,
+      "next_pet_id": 1704,
+      "condition": [
+        14100414,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1205,
+      "next_pet_id": 1305,
+      "condition": [
+        14100415,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1305,
+      "next_pet_id": 1405,
+      "condition": [
+        14100415,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1405,
+      "next_pet_id": 1505,
+      "condition": [
+        14100415,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1505,
+      "next_pet_id": 1605,
+      "condition": [
+        14100415,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1605,
+      "next_pet_id": 1705,
+      "condition": [
+        14100415,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1207,
+      "next_pet_id": 1307,
+      "condition": [
+        14100429,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1307,
+      "next_pet_id": 1407,
+      "condition": [
+        14100429,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1407,
+      "next_pet_id": 1507,
+      "condition": [
+        14100429,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1507,
+      "next_pet_id": 1607,
+      "condition": [
+        14100429,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1607,
+      "next_pet_id": 1707,
+      "condition": [
+        14100429,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1208,
+      "next_pet_id": 1308,
+      "condition": [
+        14100430,
+        20
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1308,
+      "next_pet_id": 1408,
+      "condition": [
+        14100430,
+        40
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1408,
+      "next_pet_id": 1508,
+      "condition": [
+        14100430,
+        100
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1508,
+      "next_pet_id": 1608,
+      "condition": [
+        14100430,
+        160
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1608,
+      "next_pet_id": 1708,
+      "condition": [
+        14100430,
+        200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1209,
+      "next_pet_id": 1309,
+      "condition": [
+        14100431,
+        20
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1309,
+      "next_pet_id": 1409,
+      "condition": [
+        14100431,
+        40
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1409,
+      "next_pet_id": 1509,
+      "condition": [
+        14100431,
+        100
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1509,
+      "next_pet_id": 1609,
+      "condition": [
+        14100431,
+        160
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1609,
+      "next_pet_id": 1709,
+      "condition": [
+        14100431,
+        200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1210,
+      "next_pet_id": 1310,
+      "condition": [
+        14100432,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1310,
+      "next_pet_id": 1410,
+      "condition": [
+        14100432,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1410,
+      "next_pet_id": 1510,
+      "condition": [
+        14100432,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1510,
+      "next_pet_id": 1610,
+      "condition": [
+        14100432,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1610,
+      "next_pet_id": 1710,
+      "condition": [
+        14100432,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1211,
+      "next_pet_id": 1311,
+      "condition": [
+        14100433,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1311,
+      "next_pet_id": 1411,
+      "condition": [
+        14100433,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1411,
+      "next_pet_id": 1511,
+      "condition": [
+        14100433,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1511,
+      "next_pet_id": 1611,
+      "condition": [
+        14100433,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1611,
+      "next_pet_id": 1711,
+      "condition": [
+        14100433,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1212,
+      "next_pet_id": 1312,
+      "condition": [
+        14100434,
+        20
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1312,
+      "next_pet_id": 1412,
+      "condition": [
+        14100434,
+        40
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1412,
+      "next_pet_id": 1512,
+      "condition": [
+        14100434,
+        100
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1512,
+      "next_pet_id": 1612,
+      "condition": [
+        14100434,
+        160
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1612,
+      "next_pet_id": 1712,
+      "condition": [
+        14100434,
+        200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1213,
+      "next_pet_id": 1313,
+      "condition": [
+        14120009,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1313,
+      "next_pet_id": 1413,
+      "condition": [
+        14120009,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1413,
+      "next_pet_id": 1513,
+      "condition": [
+        14120009,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1513,
+      "next_pet_id": 1613,
+      "condition": [
+        14120009,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1613,
+      "next_pet_id": 1713,
+      "condition": [
+        14120009,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1214,
+      "next_pet_id": 1314,
+      "condition": [
+        14100436,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1314,
+      "next_pet_id": 1414,
+      "condition": [
+        14100436,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1414,
+      "next_pet_id": 1514,
+      "condition": [
+        14100436,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1514,
+      "next_pet_id": 1614,
+      "condition": [
+        14100436,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1614,
+      "next_pet_id": 1714,
+      "condition": [
+        14100436,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1215,
+      "next_pet_id": 1315,
+      "condition": [
+        14100437,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1315,
+      "next_pet_id": 1415,
+      "condition": [
+        14100437,
+        100
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1415,
+      "next_pet_id": 1515,
+      "condition": [
+        14100437,
+        200
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1515,
+      "next_pet_id": 1615,
+      "condition": [
+        14100437,
+        400
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1615,
+      "next_pet_id": 1715,
+      "condition": [
+        14100437,
+        600
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1216,
+      "next_pet_id": 1316,
+      "condition": [
+        14100438,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1316,
+      "next_pet_id": 1416,
+      "condition": [
+        14100438,
+        100
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1416,
+      "next_pet_id": 1516,
+      "condition": [
+        14100438,
+        200
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1516,
+      "next_pet_id": 1616,
+      "condition": [
+        14100438,
+        400
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1616,
+      "next_pet_id": 1716,
+      "condition": [
+        14100438,
+        600
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1217,
+      "next_pet_id": 1317,
+      "condition": [
+        14100439,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1317,
+      "next_pet_id": 1417,
+      "condition": [
+        14100439,
+        100
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1417,
+      "next_pet_id": 1517,
+      "condition": [
+        14100439,
+        200
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1517,
+      "next_pet_id": 1617,
+      "condition": [
+        14100439,
+        400
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1617,
+      "next_pet_id": 1717,
+      "condition": [
+        14100439,
+        600
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1218,
+      "next_pet_id": 1318,
+      "condition": [
+        14120002,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1318,
+      "next_pet_id": 1418,
+      "condition": [
+        14120002,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1418,
+      "next_pet_id": 1518,
+      "condition": [
+        14120002,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1518,
+      "next_pet_id": 1618,
+      "condition": [
+        14120002,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1618,
+      "next_pet_id": 1718,
+      "condition": [
+        14120002,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1219,
+      "next_pet_id": 1319,
+      "condition": [
+        14120004,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1319,
+      "next_pet_id": 1419,
+      "condition": [
+        14120004,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1419,
+      "next_pet_id": 1519,
+      "condition": [
+        14120004,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1519,
+      "next_pet_id": 1619,
+      "condition": [
+        14120004,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1619,
+      "next_pet_id": 1719,
+      "condition": [
+        14120004,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1220,
+      "next_pet_id": 1320,
+      "condition": [
+        14120006,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1320,
+      "next_pet_id": 1420,
+      "condition": [
+        14120006,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1420,
+      "next_pet_id": 1520,
+      "condition": [
+        14120006,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1520,
+      "next_pet_id": 1620,
+      "condition": [
+        14120006,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1620,
+      "next_pet_id": 1720,
+      "condition": [
+        14120006,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1221,
+      "next_pet_id": 1321,
+      "condition": [
+        14120007,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1321,
+      "next_pet_id": 1421,
+      "condition": [
+        14120007,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1421,
+      "next_pet_id": 1521,
+      "condition": [
+        14120007,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1521,
+      "next_pet_id": 1621,
+      "condition": [
+        14120007,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1621,
+      "next_pet_id": 1721,
+      "condition": [
+        14120007,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    },
+    {
+      "id": 1222,
+      "next_pet_id": 1322,
+      "condition": [
+        14120010,
+        40
+      ],
+      "pet_level": 30,
+      "need_silver": 100000
+    },
+    {
+      "id": 1322,
+      "next_pet_id": 1422,
+      "condition": [
+        14120010,
+        200
+      ],
+      "pet_level": 50,
+      "need_silver": 200000
+    },
+    {
+      "id": 1422,
+      "next_pet_id": 1522,
+      "condition": [
+        14120010,
+        400
+      ],
+      "pet_level": 80,
+      "need_silver": 300000
+    },
+    {
+      "id": 1522,
+      "next_pet_id": 1622,
+      "condition": [
+        14120010,
+        800
+      ],
+      "pet_level": 100,
+      "need_silver": 400000
+    },
+    {
+      "id": 1622,
+      "next_pet_id": 1722,
+      "condition": [
+        14120010,
+        1200
+      ],
+      "pet_level": 120,
+      "need_silver": 500000
+    }
+  ]
+}

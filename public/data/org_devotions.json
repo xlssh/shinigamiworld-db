@@ -1,0 +1,801 @@
+{
+  "table": "org_devotions",
+  "rowCount": 159,
+  "rows": [
+    {
+      "id": 91200001,
+      "player_level": 1,
+      "devotion_siv_max": 26000
+    },
+    {
+      "id": 91200002,
+      "player_level": 2,
+      "devotion_siv_max": 26000
+    },
+    {
+      "id": 91200003,
+      "player_level": 3,
+      "devotion_siv_max": 27000
+    },
+    {
+      "id": 91200004,
+      "player_level": 4,
+      "devotion_siv_max": 27000
+    },
+    {
+      "id": 91200005,
+      "player_level": 5,
+      "devotion_siv_max": 28000
+    },
+    {
+      "id": 91200006,
+      "player_level": 6,
+      "devotion_siv_max": 29000
+    },
+    {
+      "id": 91200007,
+      "player_level": 7,
+      "devotion_siv_max": 29000
+    },
+    {
+      "id": 91200008,
+      "player_level": 8,
+      "devotion_siv_max": 30000
+    },
+    {
+      "id": 91200009,
+      "player_level": 9,
+      "devotion_siv_max": 31000
+    },
+    {
+      "id": 91200010,
+      "player_level": 10,
+      "devotion_siv_max": 31000
+    },
+    {
+      "id": 91200011,
+      "player_level": 11,
+      "devotion_siv_max": 32000
+    },
+    {
+      "id": 91200012,
+      "player_level": 12,
+      "devotion_siv_max": 33000
+    },
+    {
+      "id": 91200013,
+      "player_level": 13,
+      "devotion_siv_max": 34000
+    },
+    {
+      "id": 91200014,
+      "player_level": 14,
+      "devotion_siv_max": 35000
+    },
+    {
+      "id": 91200015,
+      "player_level": 15,
+      "devotion_siv_max": 35000
+    },
+    {
+      "id": 91200016,
+      "player_level": 16,
+      "devotion_siv_max": 36000
+    },
+    {
+      "id": 91200017,
+      "player_level": 17,
+      "devotion_siv_max": 37000
+    },
+    {
+      "id": 91200018,
+      "player_level": 18,
+      "devotion_siv_max": 38000
+    },
+    {
+      "id": 91200019,
+      "player_level": 19,
+      "devotion_siv_max": 39000
+    },
+    {
+      "id": 91200020,
+      "player_level": 20,
+      "devotion_siv_max": 40000
+    },
+    {
+      "id": 91200021,
+      "player_level": 21,
+      "devotion_siv_max": 41000
+    },
+    {
+      "id": 91200022,
+      "player_level": 22,
+      "devotion_siv_max": 42000
+    },
+    {
+      "id": 91200023,
+      "player_level": 23,
+      "devotion_siv_max": 43000
+    },
+    {
+      "id": 91200024,
+      "player_level": 24,
+      "devotion_siv_max": 44000
+    },
+    {
+      "id": 91200025,
+      "player_level": 25,
+      "devotion_siv_max": 45000
+    },
+    {
+      "id": 91200026,
+      "player_level": 26,
+      "devotion_siv_max": 46000
+    },
+    {
+      "id": 91200027,
+      "player_level": 27,
+      "devotion_siv_max": 47000
+    },
+    {
+      "id": 91200028,
+      "player_level": 28,
+      "devotion_siv_max": 48000
+    },
+    {
+      "id": 91200029,
+      "player_level": 29,
+      "devotion_siv_max": 49000
+    },
+    {
+      "id": 91200030,
+      "player_level": 30,
+      "devotion_siv_max": 50000
+    },
+    {
+      "id": 91200031,
+      "player_level": 31,
+      "devotion_siv_max": 51000
+    },
+    {
+      "id": 91200032,
+      "player_level": 32,
+      "devotion_siv_max": 52000
+    },
+    {
+      "id": 91200033,
+      "player_level": 33,
+      "devotion_siv_max": 54000
+    },
+    {
+      "id": 91200034,
+      "player_level": 34,
+      "devotion_siv_max": 55000
+    },
+    {
+      "id": 91200035,
+      "player_level": 35,
+      "devotion_siv_max": 56000
+    },
+    {
+      "id": 91200036,
+      "player_level": 36,
+      "devotion_siv_max": 57000
+    },
+    {
+      "id": 91200037,
+      "player_level": 37,
+      "devotion_siv_max": 59000
+    },
+    {
+      "id": 91200038,
+      "player_level": 38,
+      "devotion_siv_max": 60000
+    },
+    {
+      "id": 91200039,
+      "player_level": 39,
+      "devotion_siv_max": 62000
+    },
+    {
+      "id": 91200040,
+      "player_level": 40,
+      "devotion_siv_max": 63000
+    },
+    {
+      "id": 91200041,
+      "player_level": 41,
+      "devotion_siv_max": 64000
+    },
+    {
+      "id": 91200042,
+      "player_level": 42,
+      "devotion_siv_max": 66000
+    },
+    {
+      "id": 91200043,
+      "player_level": 43,
+      "devotion_siv_max": 68000
+    },
+    {
+      "id": 91200044,
+      "player_level": 44,
+      "devotion_siv_max": 69000
+    },
+    {
+      "id": 91200045,
+      "player_level": 45,
+      "devotion_siv_max": 71000
+    },
+    {
+      "id": 91200046,
+      "player_level": 46,
+      "devotion_siv_max": 72000
+    },
+    {
+      "id": 91200047,
+      "player_level": 47,
+      "devotion_siv_max": 74000
+    },
+    {
+      "id": 91200048,
+      "player_level": 48,
+      "devotion_siv_max": 76000
+    },
+    {
+      "id": 91200049,
+      "player_level": 49,
+      "devotion_siv_max": 78000
+    },
+    {
+      "id": 91200050,
+      "player_level": 50,
+      "devotion_siv_max": 79000
+    },
+    {
+      "id": 91200051,
+      "player_level": 51,
+      "devotion_siv_max": 81000
+    },
+    {
+      "id": 91200052,
+      "player_level": 52,
+      "devotion_siv_max": 83000
+    },
+    {
+      "id": 91200053,
+      "player_level": 53,
+      "devotion_siv_max": 85000
+    },
+    {
+      "id": 91200054,
+      "player_level": 54,
+      "devotion_siv_max": 87000
+    },
+    {
+      "id": 91200055,
+      "player_level": 55,
+      "devotion_siv_max": 89000
+    },
+    {
+      "id": 91200056,
+      "player_level": 56,
+      "devotion_siv_max": 91000
+    },
+    {
+      "id": 91200057,
+      "player_level": 57,
+      "devotion_siv_max": 93000
+    },
+    {
+      "id": 91200058,
+      "player_level": 58,
+      "devotion_siv_max": 95000
+    },
+    {
+      "id": 91200059,
+      "player_level": 59,
+      "devotion_siv_max": 98000
+    },
+    {
+      "id": 91200060,
+      "player_level": 60,
+      "devotion_siv_max": 100000
+    },
+    {
+      "id": 91200061,
+      "player_level": 61,
+      "devotion_siv_max": 102000
+    },
+    {
+      "id": 91200062,
+      "player_level": 62,
+      "devotion_siv_max": 105000
+    },
+    {
+      "id": 91200063,
+      "player_level": 63,
+      "devotion_siv_max": 107000
+    },
+    {
+      "id": 91200064,
+      "player_level": 64,
+      "devotion_siv_max": 110000
+    },
+    {
+      "id": 91200065,
+      "player_level": 65,
+      "devotion_siv_max": 112000
+    },
+    {
+      "id": 91200066,
+      "player_level": 66,
+      "devotion_siv_max": 115000
+    },
+    {
+      "id": 91200067,
+      "player_level": 67,
+      "devotion_siv_max": 118000
+    },
+    {
+      "id": 91200068,
+      "player_level": 68,
+      "devotion_siv_max": 120000
+    },
+    {
+      "id": 91200069,
+      "player_level": 69,
+      "devotion_siv_max": 123000
+    },
+    {
+      "id": 91200070,
+      "player_level": 70,
+      "devotion_siv_max": 126000
+    },
+    {
+      "id": 91200071,
+      "player_level": 71,
+      "devotion_siv_max": 129000
+    },
+    {
+      "id": 91200072,
+      "player_level": 72,
+      "devotion_siv_max": 132000
+    },
+    {
+      "id": 91200073,
+      "player_level": 73,
+      "devotion_siv_max": 135000
+    },
+    {
+      "id": 91200074,
+      "player_level": 74,
+      "devotion_siv_max": 138000
+    },
+    {
+      "id": 91200075,
+      "player_level": 75,
+      "devotion_siv_max": 141000
+    },
+    {
+      "id": 91200076,
+      "player_level": 76,
+      "devotion_siv_max": 145000
+    },
+    {
+      "id": 91200077,
+      "player_level": 77,
+      "devotion_siv_max": 148000
+    },
+    {
+      "id": 91200078,
+      "player_level": 78,
+      "devotion_siv_max": 152000
+    },
+    {
+      "id": 91200079,
+      "player_level": 79,
+      "devotion_siv_max": 155000
+    },
+    {
+      "id": 91200080,
+      "player_level": 80,
+      "devotion_siv_max": 159000
+    },
+    {
+      "id": 91200081,
+      "player_level": 81,
+      "devotion_siv_max": 162000
+    },
+    {
+      "id": 91200082,
+      "player_level": 82,
+      "devotion_siv_max": 166000
+    },
+    {
+      "id": 91200083,
+      "player_level": 83,
+      "devotion_siv_max": 170000
+    },
+    {
+      "id": 91200084,
+      "player_level": 84,
+      "devotion_siv_max": 174000
+    },
+    {
+      "id": 91200085,
+      "player_level": 85,
+      "devotion_siv_max": 178000
+    },
+    {
+      "id": 91200086,
+      "player_level": 86,
+      "devotion_siv_max": 182000
+    },
+    {
+      "id": 91200087,
+      "player_level": 87,
+      "devotion_siv_max": 187000
+    },
+    {
+      "id": 91200088,
+      "player_level": 88,
+      "devotion_siv_max": 191000
+    },
+    {
+      "id": 91200089,
+      "player_level": 89,
+      "devotion_siv_max": 195000
+    },
+    {
+      "id": 91200090,
+      "player_level": 90,
+      "devotion_siv_max": 200000
+    },
+    {
+      "id": 91200091,
+      "player_level": 91,
+      "devotion_siv_max": 205000
+    },
+    {
+      "id": 91200092,
+      "player_level": 92,
+      "devotion_siv_max": 209000
+    },
+    {
+      "id": 91200093,
+      "player_level": 93,
+      "devotion_siv_max": 214000
+    },
+    {
+      "id": 91200094,
+      "player_level": 94,
+      "devotion_siv_max": 219000
+    },
+    {
+      "id": 91200095,
+      "player_level": 95,
+      "devotion_siv_max": 224000
+    },
+    {
+      "id": 91200096,
+      "player_level": 96,
+      "devotion_siv_max": 230000
+    },
+    {
+      "id": 91200097,
+      "player_level": 97,
+      "devotion_siv_max": 235000
+    },
+    {
+      "id": 91200098,
+      "player_level": 98,
+      "devotion_siv_max": 241000
+    },
+    {
+      "id": 91200099,
+      "player_level": 99,
+      "devotion_siv_max": 246000
+    },
+    {
+      "id": 91200100,
+      "player_level": 100,
+      "devotion_siv_max": 252000
+    },
+    {
+      "id": 91200101,
+      "player_level": 101,
+      "devotion_siv_max": 258000
+    },
+    {
+      "id": 91200102,
+      "player_level": 102,
+      "devotion_siv_max": 264000
+    },
+    {
+      "id": 91200103,
+      "player_level": 103,
+      "devotion_siv_max": 270000
+    },
+    {
+      "id": 91200104,
+      "player_level": 104,
+      "devotion_siv_max": 276000
+    },
+    {
+      "id": 91200105,
+      "player_level": 105,
+      "devotion_siv_max": 283000
+    },
+    {
+      "id": 91200106,
+      "player_level": 106,
+      "devotion_siv_max": 289000
+    },
+    {
+      "id": 91200107,
+      "player_level": 107,
+      "devotion_siv_max": 296000
+    },
+    {
+      "id": 91200108,
+      "player_level": 108,
+      "devotion_siv_max": 303000
+    },
+    {
+      "id": 91200109,
+      "player_level": 109,
+      "devotion_siv_max": 310000
+    },
+    {
+      "id": 91200110,
+      "player_level": 110,
+      "devotion_siv_max": 310000
+    },
+    {
+      "id": 91200111,
+      "player_level": 111,
+      "devotion_siv_max": 311000
+    },
+    {
+      "id": 91200112,
+      "player_level": 112,
+      "devotion_siv_max": 312000
+    },
+    {
+      "id": 91200113,
+      "player_level": 113,
+      "devotion_siv_max": 313000
+    },
+    {
+      "id": 91200114,
+      "player_level": 114,
+      "devotion_siv_max": 314000
+    },
+    {
+      "id": 91200115,
+      "player_level": 115,
+      "devotion_siv_max": 315000
+    },
+    {
+      "id": 91200116,
+      "player_level": 116,
+      "devotion_siv_max": 316000
+    },
+    {
+      "id": 91200117,
+      "player_level": 117,
+      "devotion_siv_max": 317000
+    },
+    {
+      "id": 91200118,
+      "player_level": 118,
+      "devotion_siv_max": 318000
+    },
+    {
+      "id": 91200119,
+      "player_level": 119,
+      "devotion_siv_max": 319000
+    },
+    {
+      "id": 91200120,
+      "player_level": 120,
+      "devotion_siv_max": 320000
+    },
+    {
+      "id": 91200121,
+      "player_level": 121,
+      "devotion_siv_max": 321000
+    },
+    {
+      "id": 91200122,
+      "player_level": 122,
+      "devotion_siv_max": 322000
+    },
+    {
+      "id": 91200123,
+      "player_level": 123,
+      "devotion_siv_max": 323000
+    },
+    {
+      "id": 91200124,
+      "player_level": 124,
+      "devotion_siv_max": 324000
+    },
+    {
+      "id": 91200125,
+      "player_level": 125,
+      "devotion_siv_max": 325000
+    },
+    {
+      "id": 91200126,
+      "player_level": 126,
+      "devotion_siv_max": 326000
+    },
+    {
+      "id": 91200127,
+      "player_level": 127,
+      "devotion_siv_max": 327000
+    },
+    {
+      "id": 91200128,
+      "player_level": 128,
+      "devotion_siv_max": 328000
+    },
+    {
+      "id": 91200129,
+      "player_level": 129,
+      "devotion_siv_max": 329000
+    },
+    {
+      "id": 91200130,
+      "player_level": 130,
+      "devotion_siv_max": 330000
+    },
+    {
+      "id": 91200131,
+      "player_level": 131,
+      "devotion_siv_max": 331000
+    },
+    {
+      "id": 91200132,
+      "player_level": 132,
+      "devotion_siv_max": 332000
+    },
+    {
+      "id": 91200133,
+      "player_level": 133,
+      "devotion_siv_max": 333000
+    },
+    {
+      "id": 91200134,
+      "player_level": 134,
+      "devotion_siv_max": 334000
+    },
+    {
+      "id": 91200135,
+      "player_level": 135,
+      "devotion_siv_max": 335000
+    },
+    {
+      "id": 91200136,
+      "player_level": 136,
+      "devotion_siv_max": 336000
+    },
+    {
+      "id": 91200137,
+      "player_level": 137,
+      "devotion_siv_max": 337000
+    },
+    {
+      "id": 91200138,
+      "player_level": 138,
+      "devotion_siv_max": 338000
+    },
+    {
+      "id": 91200139,
+      "player_level": 139,
+      "devotion_siv_max": 339000
+    },
+    {
+      "id": 91200140,
+      "player_level": 140,
+      "devotion_siv_max": 340000
+    },
+    {
+      "id": 91200141,
+      "player_level": 141,
+      "devotion_siv_max": 341000
+    },
+    {
+      "id": 91200142,
+      "player_level": 142,
+      "devotion_siv_max": 342000
+    },
+    {
+      "id": 91200143,
+      "player_level": 143,
+      "devotion_siv_max": 343000
+    },
+    {
+      "id": 91200144,
+      "player_level": 144,
+      "devotion_siv_max": 344000
+    },
+    {
+      "id": 91200145,
+      "player_level": 145,
+      "devotion_siv_max": 345000
+    },
+    {
+      "id": 91200146,
+      "player_level": 146,
+      "devotion_siv_max": 346000
+    },
+    {
+      "id": 91200147,
+      "player_level": 147,
+      "devotion_siv_max": 347000
+    },
+    {
+      "id": 91200148,
+      "player_level": 148,
+      "devotion_siv_max": 348000
+    },
+    {
+      "id": 91200149,
+      "player_level": 149,
+      "devotion_siv_max": 349000
+    },
+    {
+      "id": 91200150,
+      "player_level": 150,
+      "devotion_siv_max": 350000
+    },
+    {
+      "id": 91200151,
+      "player_level": 151,
+      "devotion_siv_max": 351000
+    },
+    {
+      "id": 91200152,
+      "player_level": 152,
+      "devotion_siv_max": 352000
+    },
+    {
+      "id": 91200153,
+      "player_level": 153,
+      "devotion_siv_max": 353000
+    },
+    {
+      "id": 91200154,
+      "player_level": 154,
+      "devotion_siv_max": 354000
+    },
+    {
+      "id": 91200155,
+      "player_level": 155,
+      "devotion_siv_max": 355000
+    },
+    {
+      "id": 91200156,
+      "player_level": 156,
+      "devotion_siv_max": 356000
+    },
+    {
+      "id": 91200157,
+      "player_level": 157,
+      "devotion_siv_max": 357000
+    },
+    {
+      "id": 91200158,
+      "player_level": 158,
+      "devotion_siv_max": 358000
+    },
+    {
+      "id": 91200159,
+      "player_level": 159,
+      "devotion_siv_max": 359000
+    }
+  ]
+}

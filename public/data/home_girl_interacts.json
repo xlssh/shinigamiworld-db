@@ -1,0 +1,62 @@
+{
+  "table": "home_girl_interacts",
+  "rowCount": 8,
+  "rows": [
+    {
+      "id": 0,
+      "score_blank": 0,
+      "name_title": "Debut",
+      "title_color": 1,
+      "added": 0.0
+    },
+    {
+      "id": 1,
+      "score_blank": 100,
+      "name_title": "Surpasses 10 People",
+      "title_color": 1,
+      "added": 0.11999999731779099
+    },
+    {
+      "id": 2,
+      "score_blank": 800,
+      "name_title": "Surpasses 100 People",
+      "title_color": 2,
+      "added": 0.12999999523162842
+    },
+    {
+      "id": 3,
+      "score_blank": 3000,
+      "name_title": "Surpasses 1000 People",
+      "title_color": 3,
+      "added": 0.14000000059604645
+    },
+    {
+      "id": 4,
+      "score_blank": 7000,
+      "name_title": "Surpasses 10,000 People",
+      "title_color": 4,
+      "added": 0.15000000596046448
+    },
+    {
+      "id": 5,
+      "score_blank": 14000,
+      "name_title": "One-man Army",
+      "title_color": 5,
+      "added": 0.18000000715255737
+    },
+    {
+      "id": 6,
+      "score_blank": 25000,
+      "name_title": "Invincible",
+      "title_color": 6,
+      "added": 0.2199999988079071
+    },
+    {
+      "id": 7,
+      "score_blank": 40000,
+      "name_title": "Heroic Couple",
+      "title_color": 7,
+      "added": 0.30000001192092896
+    }
+  ]
+}

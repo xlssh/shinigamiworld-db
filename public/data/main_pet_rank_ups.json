@@ -1,0 +1,195 @@
+{
+  "table": "main_pet_rank_ups",
+  "rowCount": 15,
+  "rows": [
+    {
+      "id": 1101,
+      "condition": [
+        {
+          "petId": 1101,
+          "level": 1
+        }
+      ],
+      "add_exp": 10,
+      "stage": 1
+    },
+    {
+      "id": 1102,
+      "condition": [
+        {
+          "petId": 1101,
+          "level": 10
+        }
+      ],
+      "add_exp": 10,
+      "stage": 2
+    },
+    {
+      "id": 1103,
+      "condition": [
+        {
+          "petId": 1101,
+          "level": 10
+        }
+      ],
+      "add_exp": 10,
+      "stage": 2
+    },
+    {
+      "id": 1104,
+      "condition": [
+        {
+          "petId": 1102,
+          "level": 20
+        }
+      ],
+      "add_exp": 10,
+      "stage": 3
+    },
+    {
+      "id": 1105,
+      "condition": [
+        {
+          "petId": 1102,
+          "level": 20
+        },
+        {
+          "petId": 1103,
+          "level": 20
+        }
+      ],
+      "add_exp": 10,
+      "stage": 3
+    },
+    {
+      "id": 1106,
+      "condition": [
+        {
+          "petId": 1103,
+          "level": 20
+        }
+      ],
+      "add_exp": 10,
+      "stage": 3
+    },
+    {
+      "id": 1107,
+      "condition": [
+        {
+          "petId": 1104,
+          "level": 30
+        }
+      ],
+      "add_exp": 10,
+      "stage": 4
+    },
+    {
+      "id": 1108,
+      "condition": [
+        {
+          "petId": 1104,
+          "level": 10
+        },
+        {
+          "petId": 1105,
+          "level": 40
+        }
+      ],
+      "add_exp": 10,
+      "stage": 4
+    },
+    {
+      "id": 1109,
+      "condition": [
+        {
+          "petId": 1105,
+          "level": 30
+        },
+        {
+          "petId": 1106,
+          "level": 40
+        }
+      ],
+      "add_exp": 10,
+      "stage": 4
+    },
+    {
+      "id": 1110,
+      "condition": [
+        {
+          "petId": 1106,
+          "level": 30
+        }
+      ],
+      "add_exp": 10,
+      "stage": 4
+    },
+    {
+      "id": 1111,
+      "condition": [
+        {
+          "petId": 1107,
+          "level": 50
+        }
+      ],
+      "add_exp": 10,
+      "stage": 5
+    },
+    {
+      "id": 1112,
+      "condition": [
+        {
+          "petId": 1107,
+          "level": 60
+        },
+        {
+          "petId": 1108,
+          "level": 80
+        }
+      ],
+      "add_exp": 10,
+      "stage": 5
+    },
+    {
+      "id": 1113,
+      "condition": [
+        {
+          "petId": 1108,
+          "level": 90
+        },
+        {
+          "petId": 1109,
+          "level": 90
+        }
+      ],
+      "add_exp": 10,
+      "stage": 5
+    },
+    {
+      "id": 1114,
+      "condition": [
+        {
+          "petId": 1110,
+          "level": 60
+        },
+        {
+          "petId": 1109,
+          "level": 80
+        }
+      ],
+      "add_exp": 10,
+      "stage": 5
+    },
+    {
+      "id": 1115,
+      "condition": [
+        {
+          "petId": 1110,
+          "level": 50
+        }
+      ],
+      "add_exp": 10,
+      "stage": 5
+    }
+  ]
+}
