@@ -53,6 +53,7 @@ const AcademyRelicsPage = React.lazy(() => import('./routes/AcademyRelicsPage').
 const LootTableOraclePage = React.lazy(() => import('./routes/LootTableOraclePage').then(m => ({ default: m.LootTableOraclePage })));
 const PveEncounterPage = React.lazy(() => import('./routes/PveEncounterPage').then(m => ({ default: m.PveEncounterPage })));
 const GuildVipPlannerPage = React.lazy(() => import('./routes/GuildVipPlannerPage').then(m => ({ default: m.GuildVipPlannerPage })));
+const OrnamentsPlannerPage = React.lazy(() => import('./routes/OrnamentsPlannerPage').then(m => ({ default: m.OrnamentsPlannerPage })));
 
 
 function App() {
@@ -110,6 +111,7 @@ function App() {
             <Route path="/tools/loot-oracle" element={<LootTableOraclePage />} />
             <Route path="/tools/pve-campaign" element={<PveEncounterPage />} />
             <Route path="/tools/guild-vip" element={<GuildVipPlannerPage />} />
+            <Route path="/tools/ornaments" element={<OrnamentsPlannerPage />} />
           </Routes>
         </React.Suspense>
       </Layout>

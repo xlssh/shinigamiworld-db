@@ -6,7 +6,8 @@ import {
   PetLevelUp, VicePetMake, VicePetRankUp, VicePetTrain, MainPetRankUp, Achievement, AchievementTitle,
   AchievementGroup, AchievementClass, TavernGrade, TavernPayConfig, TavernWarrior, TreasureLevelup,
   TreasureUpgrade, SpiritSchool, SpiritSchoolExp, Butterfly, ButterflyFeeding, BlackMarketItem,
-  Award, Enemy, EnemyArmy, ConfigValue, OrganizationBase, OrganizationAddition, OrganizationDevotion, VipConfig
+  Award, Enemy, EnemyArmy, ConfigValue, OrganizationBase, OrganizationAddition, OrganizationDevotion, VipConfig,
+  OrnamentValue, OrnamentUpgrade
 } from '../types/db';
 
 const cache: { [key: string]: any } = {};
@@ -271,6 +272,14 @@ export async function loadOrgDevotions(): Promise<TableJson<OrganizationDevotion
 
 export async function loadVipConfigs(): Promise<TableJson<VipConfig>> {
   return fetchWithCache<TableJson<VipConfig>>('data/vip_configs.json');
+}
+
+export async function loadOrnamentValues(): Promise<TableJson<OrnamentValue>> {
+  return fetchWithCache<TableJson<OrnamentValue>>('data/ornament_values.json');
+}
+
+export async function loadOrnamentUpgrades(): Promise<TableJson<OrnamentUpgrade>> {
+  return fetchWithCache<TableJson<OrnamentUpgrade>>('data/ornament_upgrades.json');
 }
 
 

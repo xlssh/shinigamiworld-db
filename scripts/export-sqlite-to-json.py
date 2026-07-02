@@ -287,6 +287,14 @@ def main():
         "path": "/data/vip_configs.json",
         "rowCount": 11
     }
+    manifest_tables["ornament_values"] = {
+        "path": "/data/ornament_values.json",
+        "rowCount": 15200
+    }
+    manifest_tables["ornament_upgrades"] = {
+        "path": "/data/ornament_upgrades.json",
+        "rowCount": 48
+    }
     manifest_data = {
         "generatedAt": generated_at,
         "tables": manifest_tables

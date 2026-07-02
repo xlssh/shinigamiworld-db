@@ -762,5 +762,21 @@ export interface VipConfig {
   lottery_recruit_num: number;
 }
 
+export interface OrnamentValue {
+  id: number;
+  item_id: number;
+  sub_id: number;
+  level: number;
+  cost_items: Array<{ type: number; code: number; amount: number }>;
+  add_value: number;
+}
+
+export interface OrnamentUpgrade {
+  id: number;
+  old_item_id: number;
+  cost_items: Array<{ type: number; code: number; amount: number }>;
+  new_item_id: number;
+}
+
 
 

@@ -1,0 +1,582 @@
+{
+  "table": "ornament_upgrades",
+  "rowCount": 48,
+  "rows": [
+    {
+      "id": 15850001,
+      "old_item_id": 15850001,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 50
+        }
+      ],
+      "new_item_id": 15850011
+    },
+    {
+      "id": 15850002,
+      "old_item_id": 15850002,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 50
+        }
+      ],
+      "new_item_id": 15850012
+    },
+    {
+      "id": 15850003,
+      "old_item_id": 15850003,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 50
+        }
+      ],
+      "new_item_id": 15850013
+    },
+    {
+      "id": 15850004,
+      "old_item_id": 15850004,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 50
+        }
+      ],
+      "new_item_id": 15850014
+    },
+    {
+      "id": 15850005,
+      "old_item_id": 15850005,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 50
+        }
+      ],
+      "new_item_id": 15850015
+    },
+    {
+      "id": 15850006,
+      "old_item_id": 15850006,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 50
+        }
+      ],
+      "new_item_id": 15850016
+    },
+    {
+      "id": 15850007,
+      "old_item_id": 15850007,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 50
+        }
+      ],
+      "new_item_id": 15850017
+    },
+    {
+      "id": 15850008,
+      "old_item_id": 15850008,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 50
+        }
+      ],
+      "new_item_id": 15850018
+    },
+    {
+      "id": 15850009,
+      "old_item_id": 15850021,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 125
+        }
+      ],
+      "new_item_id": 15850031
+    },
+    {
+      "id": 15850010,
+      "old_item_id": 15850022,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 125
+        }
+      ],
+      "new_item_id": 15850032
+    },
+    {
+      "id": 15850011,
+      "old_item_id": 15850023,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 125
+        }
+      ],
+      "new_item_id": 15850033
+    },
+    {
+      "id": 15850012,
+      "old_item_id": 15850024,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 125
+        }
+      ],
+      "new_item_id": 15850034
+    },
+    {
+      "id": 15850013,
+      "old_item_id": 15850025,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 125
+        }
+      ],
+      "new_item_id": 15850035
+    },
+    {
+      "id": 15850014,
+      "old_item_id": 15850026,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 125
+        }
+      ],
+      "new_item_id": 15850036
+    },
+    {
+      "id": 15850015,
+      "old_item_id": 15850027,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 125
+        }
+      ],
+      "new_item_id": 15850037
+    },
+    {
+      "id": 15850016,
+      "old_item_id": 15850028,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 125
+        }
+      ],
+      "new_item_id": 15850038
+    },
+    {
+      "id": 15850017,
+      "old_item_id": 15850041,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 325
+        }
+      ],
+      "new_item_id": 15850051
+    },
+    {
+      "id": 15850018,
+      "old_item_id": 15850042,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 325
+        }
+      ],
+      "new_item_id": 15850052
+    },
+    {
+      "id": 15850019,
+      "old_item_id": 15850043,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 325
+        }
+      ],
+      "new_item_id": 15850053
+    },
+    {
+      "id": 15850020,
+      "old_item_id": 15850044,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 325
+        }
+      ],
+      "new_item_id": 15850054
+    },
+    {
+      "id": 15850021,
+      "old_item_id": 15850045,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 325
+        }
+      ],
+      "new_item_id": 15850055
+    },
+    {
+      "id": 15850022,
+      "old_item_id": 15850046,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 325
+        }
+      ],
+      "new_item_id": 15850056
+    },
+    {
+      "id": 15850023,
+      "old_item_id": 15850047,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 325
+        }
+      ],
+      "new_item_id": 15850057
+    },
+    {
+      "id": 15850024,
+      "old_item_id": 15850048,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 325
+        }
+      ],
+      "new_item_id": 15850058
+    },
+    {
+      "id": 15850025,
+      "old_item_id": 15850061,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 910
+        }
+      ],
+      "new_item_id": 15850071
+    },
+    {
+      "id": 15850026,
+      "old_item_id": 15850062,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 910
+        }
+      ],
+      "new_item_id": 15850072
+    },
+    {
+      "id": 15850027,
+      "old_item_id": 15850063,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 910
+        }
+      ],
+      "new_item_id": 15850073
+    },
+    {
+      "id": 15850028,
+      "old_item_id": 15850064,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 910
+        }
+      ],
+      "new_item_id": 15850074
+    },
+    {
+      "id": 15850029,
+      "old_item_id": 15850065,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 910
+        }
+      ],
+      "new_item_id": 15850075
+    },
+    {
+      "id": 15850030,
+      "old_item_id": 15850066,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 910
+        }
+      ],
+      "new_item_id": 15850076
+    },
+    {
+      "id": 15850031,
+      "old_item_id": 15850067,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 910
+        }
+      ],
+      "new_item_id": 15850077
+    },
+    {
+      "id": 15850032,
+      "old_item_id": 15850068,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 910
+        }
+      ],
+      "new_item_id": 15850078
+    },
+    {
+      "id": 15850033,
+      "old_item_id": 15850081,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 2275
+        }
+      ],
+      "new_item_id": 15850091
+    },
+    {
+      "id": 15850034,
+      "old_item_id": 15850082,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 2275
+        }
+      ],
+      "new_item_id": 15850092
+    },
+    {
+      "id": 15850035,
+      "old_item_id": 15850083,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 2275
+        }
+      ],
+      "new_item_id": 15850093
+    },
+    {
+      "id": 15850036,
+      "old_item_id": 15850084,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 2275
+        }
+      ],
+      "new_item_id": 15850094
+    },
+    {
+      "id": 15850037,
+      "old_item_id": 15850085,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 2275
+        }
+      ],
+      "new_item_id": 15850095
+    },
+    {
+      "id": 15850038,
+      "old_item_id": 15850086,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 2275
+        }
+      ],
+      "new_item_id": 15850096
+    },
+    {
+      "id": 15850039,
+      "old_item_id": 15850087,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 2275
+        }
+      ],
+      "new_item_id": 15850097
+    },
+    {
+      "id": 15850040,
+      "old_item_id": 15850088,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 2275
+        }
+      ],
+      "new_item_id": 15850098
+    },
+    {
+      "id": 15850041,
+      "old_item_id": 15850101,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 4300
+        }
+      ],
+      "new_item_id": 15850111
+    },
+    {
+      "id": 15850042,
+      "old_item_id": 15850102,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 4300
+        }
+      ],
+      "new_item_id": 15850112
+    },
+    {
+      "id": 15850043,
+      "old_item_id": 15850103,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 4300
+        }
+      ],
+      "new_item_id": 15850113
+    },
+    {
+      "id": 15850044,
+      "old_item_id": 15850104,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 4300
+        }
+      ],
+      "new_item_id": 15850114
+    },
+    {
+      "id": 15850045,
+      "old_item_id": 15850105,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 4300
+        }
+      ],
+      "new_item_id": 15850115
+    },
+    {
+      "id": 15850046,
+      "old_item_id": 15850106,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 4300
+        }
+      ],
+      "new_item_id": 15850116
+    },
+    {
+      "id": 15850047,
+      "old_item_id": 15850107,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 4300
+        }
+      ],
+      "new_item_id": 15850117
+    },
+    {
+      "id": 15850048,
+      "old_item_id": 15850108,
+      "cost_items": [
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 4300
+        }
+      ],
+      "new_item_id": 15850118
+    }
+  ]
+}

@@ -133,22 +133,59 @@ export const HeroDetailPage: React.FC = () => {
     }
   };
 
-  const getJadeAttributeType = (jadeName: string): number => {
+  const getJadeStoneAndAttrType = useCallback((jadeName: string) => {
     const lower = jadeName.toLowerCase();
-    if (lower.includes('crit rate')) return 24;
-    if (lower.includes('speed') || lower.includes('speed')) return 11;
-    if (lower.includes('armor pen') || lower.includes('break defense')) return 30;
-    if (lower.includes('block rate')) return 25;
-    if (lower.includes('max hp') || lower.includes('life')) return 101;
-    if (lower.includes('damage avoidance') || lower.includes('immune')) return 29;
-    if (lower.includes('strategy atk') || lower.includes('kido') || lower.includes('wisdom')) return 20;
-    if (lower.includes('energy') || lower.includes('recovery')) return 34;
-    if (lower.includes('debuff') || lower.includes('hit rate')) return 22;
-    if (lower.includes('physical atk') || lower.includes('attack') || lower.includes('strength')) return 16;
-    if (lower.includes('crit damage')) return 43;
-    if (lower.includes('resistances') || lower.includes('defense')) return 17;
-    return 101;
-  };
+    
+    // Default values
+    let stoneType = 101;
+    let attrType = 101;
+    
+    if (lower.includes('swift')) {
+      stoneType = 24; // Crit Stone
+      attrType = 24;  // Crit Rate
+    } else if (lower.includes('zephyr')) {
+      stoneType = 2;  // Agility Stone
+      attrType = 11;  // Speed
+    } else if (lower.includes('pierce')) {
+      stoneType = 30; // Break Def Stone
+      attrType = 30;  // Break Defense Rate
+    } else if (lower.includes('bastion')) {
+      stoneType = 25; // Block Stone
+      attrType = 25;  // Block Rate
+    } else if (lower.includes('vigor')) {
+      stoneType = 4;  // Stamina Stone
+      attrType = 101; // Max HP
+    } else if (lower.includes('aegis')) {
+      stoneType = 104; // Fury Stone
+      attrType = 29;  // Damage Avoidance (Immunity)
+    } else if (lower.includes('focus')) {
+      stoneType = 3;  // Wisdom Stone
+      attrType = 20;  // Kido/Strategy Attack
+    } else if (lower.includes('spirit')) {
+      stoneType = 104; // Fury Stone
+      attrType = 34;  // Energy Recovery Rate
+    } else if (lower.includes('curse')) {
+      stoneType = 22; // Hit Stone
+      attrType = 22;  // Hit Rate / Debuff Chance
+    } else if (lower.includes('fierce')) {
+      stoneType = 1;  // Strength Stone
+      attrType = 16;  // Physical Attack
+    } else if (lower.includes('rage')) {
+      stoneType = 24; // Crit Stone
+      attrType = 24;  // Crit Rate
+    } else if (lower.includes('precision')) {
+      stoneType = 22; // Hit Stone
+      attrType = 22;  // Hit Rate
+    } else if (lower.includes('heroic')) {
+      stoneType = 1;  // Strength Stone
+      attrType = 16;  // Physical Attack
+    } else if (lower.includes('iron soul')) {
+      stoneType = 4;  // Stamina Stone
+      attrType = 17;  // Physical Defense
+    }
+    
+    return { stoneType, attrType };
+  }, []);
 
   const getJadeAtLevel = useCallback((addType: number, lvl: number) => {
     const candidates = baseStones.filter(s => s.add_type === addType);
@@ -171,24 +208,8 @@ export const HeroDetailPage: React.FC = () => {
     if (!recommendedJades) return totals;
     
     recommendedJades.jades.forEach((jadeName, idx) => {
-      const type = getJadeAttributeType(jadeName);
+      const { stoneType } = getJadeStoneAndAttrType(jadeName);
       const lvl = simulatedJadeLevels[idx] || 10;
-      
-      let stoneType = type;
-      if (jadeName.includes('Swift')) stoneType = 24; // Crit Rate
-      else if (jadeName.includes('Zephyr')) stoneType = 11; // Speed
-      else if (jadeName.includes('Pierce')) stoneType = 30; // Break Defense
-      else if (jadeName.includes('Bastion')) stoneType = 25; // Block Rate
-      else if (jadeName.includes('Vigor')) stoneType = 101; // Max HP
-      else if (jadeName.includes('Aegis')) stoneType = 29; // Damage avoidance
-      else if (jadeName.includes('Focus')) stoneType = 3; // Wisdom / Intellect
-      else if (jadeName.includes('Spirit')) stoneType = 11; // Speed
-      else if (jadeName.includes('Curse')) stoneType = 22; // Hit Rate
-      else if (jadeName.includes('Fierce')) stoneType = 1; // Strength
-      else if (jadeName.includes('Rage')) stoneType = 24; // Crit
-      else if (jadeName.includes('Precision')) stoneType = 22; // Hit
-      else if (jadeName.includes('Heroic')) stoneType = 1; // Strength
-      else if (jadeName.includes('Iron Soul')) stoneType = 101; // Max HP
       
       const stone = getJadeAtLevel(stoneType, lvl);
       if (stone) {
@@ -196,23 +217,29 @@ export const HeroDetailPage: React.FC = () => {
       }
     });
     return totals;
-  }, [recommendedJades, getJadeAtLevel, simulatedJadeLevels]);
+  }, [recommendedJades, getJadeAtLevel, simulatedJadeLevels, getJadeStoneAndAttrType]);
 
   const calculatedStats = useMemo(() => {
     if (!hero) return [];
     
-    const strBonus = Math.round(simulatedJadeStatsTotal[1] || 0);
-    const agiBonus = Math.round(simulatedJadeStatsTotal[2] || 0);
-    const intBonus = Math.round(simulatedJadeStatsTotal[3] || 0);
-    const hpBonus = Math.round(simulatedJadeStatsTotal[101] || simulatedJadeStatsTotal[4] || 0);
-    const spdBonus = Math.round(simulatedJadeStatsTotal[11] || 0);
+    const strPct = simulatedJadeStatsTotal[1] || 0;
+    const agiPct = simulatedJadeStatsTotal[2] || 0;
+    const intPct = simulatedJadeStatsTotal[3] || 0;
+    const hpPct = simulatedJadeStatsTotal[4] || 0;
+    const spdPct = 0; // Speed not boosted by percentage stones
+
+    const basePower = (hero.power ?? 0) + Math.round((hero.power_grow ?? 0) * (targetLevel - 1));
+    const baseAgile = (hero.agile ?? 0) + Math.round((hero.agile_grow ?? 0) * (targetLevel - 1));
+    const baseIntel = (hero.intelligence ?? 0) + Math.round((hero.intelligence_grow ?? 0) * (targetLevel - 1));
+    const baseLife = (hero.life ?? 0) + Math.round((hero.life_grow ?? 0) * (targetLevel - 1));
+    const baseSpeed = (hero.speed ?? 0) + Math.round((hero.speed_grow ?? 0) * (targetLevel - 1));
 
     return [
-      { label: 'Power (STR)', base: hero.power ?? 0, growth: hero.power_grow ?? 0, val: (hero.power ?? 0) + Math.round((hero.power_grow ?? 0) * (targetLevel - 1)) + strBonus },
-      { label: 'Agile (AGI)', base: hero.agile ?? 0, growth: hero.agile_grow ?? 0, val: (hero.agile ?? 0) + Math.round((hero.agile_grow ?? 0) * (targetLevel - 1)) + agiBonus },
-      { label: 'Intelligence (INT)', base: hero.intelligence ?? 0, growth: hero.intelligence_grow ?? 0, val: (hero.intelligence ?? 0) + Math.round((hero.intelligence_grow ?? 0) * (targetLevel - 1)) + intBonus },
-      { label: 'Life (HP)', base: hero.life ?? 0, growth: hero.life_grow ?? 0, val: (hero.life ?? 0) + Math.round((hero.life_grow ?? 0) * (targetLevel - 1)) + hpBonus },
-      { label: 'Speed (SPD)', base: hero.speed ?? 0, growth: hero.speed_grow ?? 0, val: (hero.speed ?? 0) + Math.round((hero.speed_grow ?? 0) * (targetLevel - 1)) + spdBonus },
+      { label: 'Power (STR)', base: hero.power ?? 0, growth: hero.power_grow ?? 0, val: basePower + Math.round(basePower * strPct) },
+      { label: 'Agile (AGI)', base: hero.agile ?? 0, growth: hero.agile_grow ?? 0, val: baseAgile + Math.round(baseAgile * agiPct) },
+      { label: 'Intelligence (INT)', base: hero.intelligence ?? 0, growth: hero.intelligence_grow ?? 0, val: baseIntel + Math.round(baseIntel * intPct) },
+      { label: 'Life (HP)', base: hero.life ?? 0, growth: hero.life_grow ?? 0, val: baseLife + Math.round(baseLife * hpPct) },
+      { label: 'Speed (SPD)', base: hero.speed ?? 0, growth: hero.speed_grow ?? 0, val: baseSpeed + Math.round(baseSpeed * spdPct) },
     ];
   }, [hero, targetLevel, simulatedJadeStatsTotal]);
 
@@ -606,26 +633,10 @@ export const HeroDetailPage: React.FC = () => {
                 <div className="space-y-3">
                   {recommendedJades?.jades.map((jade, idx) => {
                     const lvl = simulatedJadeLevels[idx] || 10;
-                    
-                    let stoneType = 101;
-                    if (jade.includes('Swift')) stoneType = 24;
-                    else if (jade.includes('Zephyr')) stoneType = 11;
-                    else if (jade.includes('Pierce')) stoneType = 30;
-                    else if (jade.includes('Bastion')) stoneType = 25;
-                    else if (jade.includes('Vigor')) stoneType = 101;
-                    else if (jade.includes('Aegis')) stoneType = 29;
-                    else if (jade.includes('Focus')) stoneType = 3;
-                    else if (jade.includes('Spirit')) stoneType = 11;
-                    else if (jade.includes('Curse')) stoneType = 22;
-                    else if (jade.includes('Fierce')) stoneType = 1;
-                    else if (jade.includes('Rage')) stoneType = 24;
-                    else if (jade.includes('Precision')) stoneType = 22;
-                    else if (jade.includes('Heroic')) stoneType = 1;
-                    else if (jade.includes('Iron Soul')) stoneType = 101;
-
+                    const { stoneType, attrType } = getJadeStoneAndAttrType(jade);
                     const stoneData = getJadeAtLevel(stoneType, lvl);
-                    const name = getAttributeName(stoneType);
-                    const isPercent = name.toLowerCase().includes('rate') || name.toLowerCase().includes('immunity') || (stoneData && stoneData.add_value < 1);
+                    const name = getAttributeName(attrType);
+                    const isPercent = name.toLowerCase().includes('rate') || name.toLowerCase().includes('immunity') || name.toLowerCase().includes('avoidance') || (stoneData && stoneData.add_value < 1);
                     const formattedValue = stoneData 
                       ? (isPercent ? `+${(stoneData.add_value * 100).toFixed(1)}%` : `+${stoneData.add_value}`)
                       : 'N/A';

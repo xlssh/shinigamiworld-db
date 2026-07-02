@@ -132,6 +132,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Loot Table Oracle', to: '/tools/loot-oracle', icon: Sparkles },
     { name: 'Campaign Encounters', to: '/tools/pve-campaign', icon: Swords },
     { name: 'Guild Devotion & VIP', to: '/tools/guild-vip', icon: Trophy },
+    { name: 'Spiritual Ornaments', to: '/tools/ornaments', icon: Sparkles },
   ];
 
   return (
