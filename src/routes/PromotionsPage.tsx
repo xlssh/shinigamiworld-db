@@ -10,12 +10,12 @@ import { Flame } from 'lucide-react';
 
 function getTimeTypeLabel(type: number): string {
   switch (type) {
-    case 1: return 'Daily Cycle';
-    case 2: return 'Weekly Cycle';
-    case 3: return 'Fixed Calendar Dates';
+    case 1: return 'Server Open relative';
+    case 2: return 'Weekly Recurring';
+    case 3: return 'Fixed Calendar';
     case 4: return 'Minute Cooldown';
-    case 5: return 'Server Open Day Cycle';
-    default: return `Time Type #${type}`;
+    case 5: return 'Cyclic Repeat';
+    default: return `Type #${type}`;
   }
 }
 
@@ -44,6 +44,99 @@ function getActivityTypeLabel(type: number): string {
     case 21: return 'Shop Discount';
     case 22: return 'Black Market Sale';
     default: return `Activity Type #${type}`;
+  }
+}
+
+export function formatSchedule(timeType: number | null, startTime: any, endTime: any): string {
+  const startArr = Array.isArray(startTime) ? startTime : [];
+  const endArr = Array.isArray(endTime) ? endTime : [];
+
+  if (timeType === null || timeType === undefined) return '-';
+
+  switch (timeType) {
+    case 1: {
+      const dayStart = startArr[0] ?? 1;
+      const dayEnd = endArr[0] ?? 7;
+      return `Server Day ${dayStart} to Day ${dayEnd}`;
+    }
+    case 2: {
+      const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+      const wkStart = startArr[0] ?? 1;
+      const wkEnd = endArr[0] ?? 7;
+      const startDay = weekdays[wkStart - 1] ?? `Day ${wkStart}`;
+      const endDay = weekdays[wkEnd - 1] ?? `Day ${wkEnd}`;
+      return `Weekly: ${startDay} - ${endDay}`;
+    }
+    case 3: {
+      if (startArr.length === 0 && endArr.length === 0) return 'Immediate / Permanent';
+
+      const formatFixedDate = (arr: number[]) => {
+        if (!arr || arr.length < 3) return '-';
+        const y = arr[0];
+        const m = String(arr[1]).padStart(2, '0');
+        const d = String(arr[2]).padStart(2, '0');
+        const h = arr[3] !== undefined ? ` ${String(arr[3]).padStart(2, '0')}:00` : '';
+        return `${y}-${m}-${d}${h}`;
+      };
+
+      return `${formatFixedDate(startArr)} to ${formatFixedDate(endArr)}`;
+    }
+    case 4: {
+      const minStart = startArr[0] ?? 0;
+      const minEnd = endArr[0] ?? 0;
+      return `Cooldown: ${minStart}m - ${minEnd}m`;
+    }
+    case 5: {
+      const duration = endArr[0] ?? 1;
+      const cooldown = endArr[1] ?? 0;
+      const startY = startArr[0] || 2026;
+      const startM = startArr[1] || 1;
+      const startD = startArr[2] || 1;
+      return `Cyclic: ${duration}d Active / ${cooldown}d Off (From ${startY}-${String(startM).padStart(2, '0')}-${String(startD).padStart(2, '0')})`;
+    }
+    default:
+      return `Custom (Type ${timeType})`;
+  }
+}
+
+function getActivityTypeBadgeClass(type: number): string {
+  switch (type) {
+    case 1:
+      return 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 border border-blue-200/50 dark:border-blue-900/30';
+    case 2:
+    case 5:
+    case 6:
+      return 'bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300 border border-amber-200/50 dark:border-amber-900/30';
+    case 3:
+      return 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border border-emerald-200/50 dark:border-emerald-900/30';
+    case 7:
+    case 8:
+      return 'bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 border border-rose-200/50 dark:border-rose-900/30';
+    case 10:
+    case 11:
+    case 20:
+      return 'bg-violet-50 text-violet-700 dark:bg-violet-950/40 dark:text-violet-300 border border-violet-200/50 dark:border-violet-900/30';
+    case 4:
+    case 9:
+    case 21:
+    case 22:
+      return 'bg-cyan-50 text-cyan-700 dark:bg-cyan-950/40 dark:text-cyan-300 border border-cyan-200/50 dark:border-cyan-900/30';
+    default:
+      return 'bg-zinc-50 text-zinc-600 dark:bg-zinc-900/40 dark:text-zinc-400 border border-zinc-200/50 dark:border-zinc-800/30';
+  }
+}
+
+function getTimeTypeBadgeClass(type: number): string {
+  switch (type) {
+    case 1:
+    case 5:
+      return 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300 border border-indigo-200/50 dark:border-indigo-900/30';
+    case 2:
+      return 'bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-300 border border-purple-200/50 dark:border-purple-900/30';
+    case 3:
+      return 'bg-teal-50 text-teal-700 dark:bg-teal-950/40 dark:text-teal-300 border border-teal-200/50 dark:border-teal-900/30';
+    default:
+      return 'bg-zinc-50 text-zinc-650 dark:bg-zinc-900/40 dark:text-zinc-400 border border-zinc-200/50 dark:border-zinc-800/30';
   }
 }
 
@@ -94,48 +187,77 @@ export const PromotionsPage: React.FC = () => {
       cell: (info) => <span className="font-mono text-zinc-500 font-semibold">{info.getValue() as number}</span>,
     },
     {
-      accessorKey: 'act_id',
-      header: 'Activity ID',
-      cell: (info) => <span className="font-mono text-xs text-zinc-400">#{info.getValue() as number}</span>,
-    },
-    {
       accessorKey: 'name',
       header: 'Activity Name',
-      cell: (info) => (
-        <span className="font-bold text-zinc-800 dark:text-zinc-200 hover:text-violet-600 transition-colors">
-          {info.getValue() as string || `Activity #${info.row.original.id}`}
-        </span>
-      ),
+      cell: (info) => {
+        const p = info.row.original;
+        return (
+          <div className="flex flex-col">
+            <span className="font-bold text-zinc-800 dark:text-zinc-200 hover:text-violet-600 transition-colors cursor-pointer">
+              {p.name || `Activity #${p.id}`}
+            </span>
+            <span className="font-mono text-[10px] text-zinc-400">Act ID: #{p.act_id}</span>
+          </div>
+        );
+      },
     },
     {
       accessorKey: 'act_type',
       header: 'Activity Type',
-      cell: (info) => <span className="text-xs font-semibold text-zinc-500">{getActivityTypeLabel(info.getValue() as number)}</span>,
+      cell: (info) => {
+        const val = info.getValue() as number;
+        return (
+          <span className={`px-2.5 py-0.5 rounded text-[11px] font-semibold inline-block ${getActivityTypeBadgeClass(val)}`}>
+            {getActivityTypeLabel(val)}
+          </span>
+        );
+      },
     },
     {
       accessorKey: 'time_type',
       header: 'Time Category',
-      cell: (info) => <span className="text-xs font-semibold text-zinc-400">{getTimeTypeLabel(info.getValue() as number)}</span>,
+      cell: (info) => {
+        const val = info.getValue() as number;
+        return (
+          <span className={`px-2 py-0.5 rounded text-[11px] font-semibold inline-block ${getTimeTypeBadgeClass(val)}`}>
+            {getTimeTypeLabel(val)}
+          </span>
+        );
+      },
     },
     {
-      accessorKey: 'start_time',
-      header: 'Start Date/Time',
-      cell: (info) => <span className="font-mono text-xs text-zinc-500">{info.getValue() as string || '-'}</span>,
+      id: 'schedule',
+      header: 'Schedule / Duration',
+      accessorFn: (row) => formatSchedule(row.time_type, row.start_time, row.end_time),
+      cell: (info) => (
+        <span className="font-semibold text-zinc-850 dark:text-zinc-150">
+          {info.getValue() as string}
+        </span>
+      ),
     },
     {
-      accessorKey: 'end_time',
-      header: 'End Date/Time',
-      cell: (info) => <span className="font-mono text-xs text-zinc-500">{info.getValue() as string || '-'}</span>,
-    },
-    {
-      accessorKey: 'player_lv',
-      header: 'Req. Level',
-      cell: (info) => <span className="font-mono text-xs font-bold text-indigo-700 dark:text-indigo-400">Lv. {info.getValue() as number || 1}</span>,
-    },
-    {
-      accessorKey: 'vip_lv',
-      header: 'Req. VIP',
-      cell: (info) => <span className="font-mono text-xs text-zinc-400">VIP {info.getValue() as number || 0}</span>,
+      id: 'requirements',
+      header: 'Gate Restrictions',
+      cell: (info) => {
+        const p = info.row.original;
+        const hasLevel = (p.player_lv ?? 0) > 0;
+        const hasVip = (p.vip_lv ?? 0) > 0;
+        if (!hasLevel && !hasVip) return <span className="text-zinc-400 dark:text-zinc-650 text-xs font-semibold">-</span>;
+        return (
+          <div className="flex flex-wrap gap-1.5">
+            {hasLevel && (
+              <span className="px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300 border border-indigo-200/30 font-mono text-[10px] font-bold">
+                Lv. {p.player_lv}
+              </span>
+            )}
+            {hasVip && (
+              <span className="px-1.5 py-0.5 rounded bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300 border border-amber-200/30 font-mono text-[10px] font-bold">
+                VIP {p.vip_lv}
+              </span>
+            )}
+          </div>
+        );
+      },
     },
   ], []);
 
@@ -170,7 +292,7 @@ export const PromotionsPage: React.FC = () => {
             className="block w-full py-1.5 px-2 border border-zinc-200 dark:border-zinc-800 rounded-lg text-sm bg-zinc-50 dark:bg-zinc-950 focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All Activity Types</option>
-            {uniqueActTypes.sort((a,b)=>a-b).map(t => (
+            {uniqueActTypes.sort((a, b) => a - b).map(t => (
               <option key={t} value={String(t)}>{getActivityTypeLabel(t)}</option>
             ))}
           </select>
@@ -184,7 +306,7 @@ export const PromotionsPage: React.FC = () => {
             className="block w-full py-1.5 px-2 border border-zinc-200 dark:border-zinc-800 rounded-lg text-sm bg-zinc-50 dark:bg-zinc-950 focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All Time Types</option>
-            {uniqueTimeTypes.sort((a,b)=>a-b).map(t => (
+            {uniqueTimeTypes.sort((a, b) => a - b).map(t => (
               <option key={t} value={String(t)}>{getTimeTypeLabel(t)}</option>
             ))}
           </select>

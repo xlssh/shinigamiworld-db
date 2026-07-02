@@ -1,0 +1,430 @@
+{
+  "table": "bleach_jigsaws",
+  "rowCount": 1,
+  "rows": [
+    {
+      "id": 530001,
+      "name": "Urahara Shop",
+      "tname": "Urahara Shop Value Deals (choose one type)",
+      "desc": "1. You get 1 free normal draw every 12 hours.\n2. Spend Gold on a normal draw to get a random picture. Duplicate pictures can appear, and each picture gives its own reward.\n3. A lucky draw always gives a picture you do not own yet, but you cannot use it after you collect every picture.\n4. Finish set picture groups to exchange them for chest rewards.\n5. Use Complete and Exchange to spend Gold, fill missing pictures, and claim rewards, but you will not get achievement points.\n6. The first time you open a picture, you get 1 achievement point. Reach 25 points to claim the grand achievement reward without spending pictures.\n\n",
+      "tip": "1. You cannot purchase other funds after purchasing the growth fund 2. Every day 00: 30 points will be returned to the fund reward %0 gift certificate 3 through the system email. The number of returns is 30 times 4. The event offline will not affect the reward distribution until the rewards are distributed.",
+      "price": 0,
+      "image_id": 530001,
+      "items": [
+        {
+          "index": 0,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401557
+          ]
+        },
+        {
+          "index": 1,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401558
+          ]
+        },
+        {
+          "index": 2,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401559
+          ]
+        },
+        {
+          "index": 3,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401560
+          ]
+        },
+        {
+          "index": 4,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401561
+          ]
+        },
+        {
+          "index": 5,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401562
+          ]
+        },
+        {
+          "index": 6,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401563
+          ]
+        },
+        {
+          "index": 7,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401564
+          ]
+        },
+        {
+          "index": 8,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401565
+          ]
+        },
+        {
+          "index": 9,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401566
+          ]
+        },
+        {
+          "index": 10,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401567
+          ]
+        },
+        {
+          "index": 11,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401568
+          ]
+        },
+        {
+          "index": 12,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401569
+          ]
+        },
+        {
+          "index": 13,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401570
+          ]
+        },
+        {
+          "index": 14,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401571
+          ]
+        },
+        {
+          "index": 15,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401572
+          ]
+        },
+        {
+          "index": 16,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401573
+          ]
+        },
+        {
+          "index": 17,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401574
+          ]
+        },
+        {
+          "index": 18,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401575
+          ]
+        },
+        {
+          "index": 19,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401576
+          ]
+        },
+        {
+          "index": 20,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401577
+          ]
+        },
+        {
+          "index": 21,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401578
+          ]
+        },
+        {
+          "index": 22,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401579
+          ]
+        },
+        {
+          "index": 23,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401580
+          ]
+        },
+        {
+          "index": 24,
+          "indexType": 3,
+          "getType": 4,
+          "cost": 120,
+          "award": [
+            21401581
+          ]
+        }
+      ],
+      "needs": [
+        {
+          "index": 100,
+          "getType": 2,
+          "costChip": [
+            {
+              "chipIndex": 0,
+              "amount": 1
+            },
+            {
+              "chipIndex": 1,
+              "amount": 1
+            },
+            {
+              "chipIndex": 2,
+              "amount": 1
+            },
+            {
+              "chipIndex": 3,
+              "amount": 1
+            },
+            {
+              "chipIndex": 4,
+              "amount": 1
+            }
+          ],
+          "award": [
+            21401582
+          ],
+          "prompt": "Need to consume Gold %0",
+          "prompt2": "Exchange",
+          "prompt3": "Complete and Exchange"
+        },
+        {
+          "index": 101,
+          "getType": 2,
+          "costChip": [
+            {
+              "chipIndex": 5,
+              "amount": 2
+            },
+            {
+              "chipIndex": 6,
+              "amount": 2
+            },
+            {
+              "chipIndex": 7,
+              "amount": 2
+            },
+            {
+              "chipIndex": 8,
+              "amount": 2
+            },
+            {
+              "chipIndex": 9,
+              "amount": 2
+            }
+          ],
+          "award": [
+            21401583
+          ],
+          "prompt": "Need to consume Gold %0",
+          "prompt2": "Exchange",
+          "prompt3": "Complete and Exchange"
+        },
+        {
+          "index": 102,
+          "getType": 2,
+          "costChip": [
+            {
+              "chipIndex": 10,
+              "amount": 3
+            },
+            {
+              "chipIndex": 11,
+              "amount": 3
+            },
+            {
+              "chipIndex": 12,
+              "amount": 3
+            },
+            {
+              "chipIndex": 13,
+              "amount": 3
+            },
+            {
+              "chipIndex": 14,
+              "amount": 3
+            }
+          ],
+          "award": [
+            21401584
+          ],
+          "prompt": "Need to consume Gold %0",
+          "prompt2": "Exchange",
+          "prompt3": "Complete and Exchange"
+        },
+        {
+          "index": 103,
+          "getType": 2,
+          "costChip": [
+            {
+              "chipIndex": 15,
+              "amount": 4
+            },
+            {
+              "chipIndex": 16,
+              "amount": 4
+            },
+            {
+              "chipIndex": 17,
+              "amount": 4
+            },
+            {
+              "chipIndex": 18,
+              "amount": 4
+            },
+            {
+              "chipIndex": 19,
+              "amount": 4
+            }
+          ],
+          "award": [
+            21401585
+          ],
+          "prompt": "Need to consume Gold %0",
+          "prompt2": "Exchange",
+          "prompt3": "Complete and Exchange"
+        },
+        {
+          "index": 104,
+          "getType": 2,
+          "costChip": [
+            {
+              "chipIndex": 20,
+              "amount": 5
+            },
+            {
+              "chipIndex": 21,
+              "amount": 5
+            },
+            {
+              "chipIndex": 22,
+              "amount": 5
+            },
+            {
+              "chipIndex": 23,
+              "amount": 5
+            },
+            {
+              "chipIndex": 24,
+              "amount": 5
+            }
+          ],
+          "award": [
+            21401586
+          ],
+          "prompt": "Need to consume Gold %0",
+          "prompt2": "Exchange",
+          "prompt3": "Complete and Exchange"
+        }
+      ],
+      "btn1": {
+        "index": 200,
+        "cost": 80,
+        "prompt": "Consume %0 Gold",
+        "prompt2": "Free"
+      },
+      "btn2": {
+        "index": 201,
+        "cost": 100,
+        "prompt": "Consume %0 Gold"
+      },
+      "btn3": {
+        "index": 202,
+        "cost": 2500,
+        "prompt": "Consume %0 Gold"
+      },
+      "final_award": {
+        "index": 25,
+        "indexType": 3,
+        "getType": 2,
+        "limit": 1,
+        "award": [
+          21401587
+        ]
+      },
+      "unk": 43200
+    }
+  ]
+}

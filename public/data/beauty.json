@@ -1,0 +1,130 @@
+{
+  "table": "beauty",
+  "rowCount": 5,
+  "rows": [
+    {
+      "id": 90800100,
+      "name": "Kanpanyura",
+      "rewards": [
+        {
+          "type": 0,
+          "code": 0
+        }
+      ],
+      "clothes_id": [
+        90800100,
+        90800101,
+        90800102,
+        90800103,
+        90800104
+      ],
+      "success_text": [
+        "oh",
+        "yes",
+        "god"
+      ],
+      "fail_text": "thank you",
+      "day": 1
+    },
+    {
+      "id": 90800200,
+      "name": "Maria",
+      "rewards": [
+        {
+          "type": 3,
+          "code": 0
+        }
+      ],
+      "clothes_id": [
+        90800200,
+        90800201,
+        90800202,
+        90800203,
+        90800204
+      ],
+      "success_text": [
+        "oh",
+        "yes",
+        "god"
+      ],
+      "fail_text": "thank you",
+      "day": 2
+    },
+    {
+      "id": 90800300,
+      "name": "Izumo",
+      "rewards": [
+        {
+          "type": 5,
+          "code": 0
+        }
+      ],
+      "clothes_id": [
+        90800300,
+        90800301,
+        90800302,
+        90800303,
+        90800304
+      ],
+      "success_text": [
+        "oh",
+        "yes",
+        "god"
+      ],
+      "fail_text": "thank you",
+      "day": 3
+    },
+    {
+      "id": 90800400,
+      "name": "Linluo",
+      "rewards": [
+        {
+          "type": 6,
+          "code": 0
+        }
+      ],
+      "clothes_id": [
+        90800400,
+        90800401,
+        90800402,
+        90800403,
+        90800404
+      ],
+      "success_text": [
+        "oh",
+        "yes",
+        "god"
+      ],
+      "fail_text": "thank you",
+      "day": 4
+    },
+    {
+      "id": 90800500,
+      "name": "Kusano",
+      "rewards": [
+        {
+          "type": 0,
+          "code": 0
+        },
+        {
+          "type": 3,
+          "code": 0
+        }
+      ],
+      "clothes_id": [
+        90800500,
+        90800501,
+        90800502,
+        90800503,
+        90800504
+      ],
+      "success_text": [
+        "oh",
+        "yes",
+        "god"
+      ],
+      "fail_text": "thank you",
+      "day": 5
+    }
+  ]
+}

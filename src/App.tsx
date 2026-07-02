@@ -64,6 +64,9 @@ const ForgePlannerPage = React.lazy(() => import('./routes/ForgePlannerPage').th
 const NightmareRealmsPage = React.lazy(() => import('./routes/NightmareRealmsPage').then(m => ({ default: m.NightmareRealmsPage })));
 const SevenSoulsPage = React.lazy(() => import('./routes/SevenSoulsPage').then(m => ({ default: m.SevenSoulsPage })));
 const SoulHunterPage = React.lazy(() => import('./routes/SoulHunterPage').then(m => ({ default: m.SoulHunterPage })));
+const WardrobePage = React.lazy(() => import('./routes/WardrobePage').then(m => ({ default: m.WardrobePage })));
+const TalentsPage = React.lazy(() => import('./routes/TalentsPage').then(m => ({ default: m.TalentsPage })));
+const LuckyWheelPage = React.lazy(() => import('./routes/LuckyWheelPage').then(m => ({ default: m.LuckyWheelPage })));
 
 
 function App() {
@@ -132,6 +135,9 @@ function App() {
             <Route path="/tools/nightmare-realms" element={<NightmareRealmsPage />} />
             <Route path="/tools/seven-souls" element={<SevenSoulsPage />} />
             <Route path="/tools/soul-hunter" element={<SoulHunterPage />} />
+            <Route path="/tools/wardrobe" element={<WardrobePage />} />
+            <Route path="/tools/talents" element={<TalentsPage />} />
+            <Route path="/tools/lucky-wheel" element={<LuckyWheelPage />} />
           </Routes>
         </React.Suspense>
       </Layout>

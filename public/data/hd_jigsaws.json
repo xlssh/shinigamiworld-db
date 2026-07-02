@@ -1,0 +1,379 @@
+{
+  "table": "hd_jigsaws",
+  "rowCount": 1,
+  "rows": [
+    {
+      "id": 470001,
+      "name": "Mysterious Puzzle",
+      "tname": "Mysterious Puzzle",
+      "desc": "During event, top-up can get points. Points can activate puzzles and redeem gift\nActivate all puzzles can get Yoruichi Title, title will last for 10 days\nPuzzles will be activated in sequence\nActivate puzzle or redeem rewards will cost points",
+      "tip": "",
+      "price": 0,
+      "image_id": 470001,
+      "score": {
+        "index": 0,
+        "indexType": 3,
+        "getType": 4
+      },
+      "buys": [
+        {
+          "index": 18,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 2000
+            }
+          ],
+          "award": [
+            21405716
+          ]
+        },
+        {
+          "index": 19,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 2000
+            }
+          ],
+          "award": [
+            21405717
+          ]
+        },
+        {
+          "index": 20,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 100
+            }
+          ],
+          "award": [
+            21405718
+          ]
+        },
+        {
+          "index": 21,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 100
+            }
+          ],
+          "award": [
+            21405719
+          ]
+        },
+        {
+          "index": 22,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 100
+            }
+          ],
+          "award": [
+            21405720
+          ]
+        },
+        {
+          "index": 23,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 100
+            }
+          ],
+          "award": [
+            21405721
+          ]
+        },
+        {
+          "index": 24,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 4
+            }
+          ],
+          "award": [
+            21405722
+          ]
+        },
+        {
+          "index": 25,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 4
+            }
+          ],
+          "award": [
+            21405723
+          ]
+        },
+        {
+          "index": 26,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 10
+            }
+          ],
+          "award": [
+            21405724
+          ]
+        },
+        {
+          "index": 27,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 200
+            }
+          ],
+          "award": [
+            21409900
+          ]
+        },
+        {
+          "index": 28,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 50
+            }
+          ],
+          "award": [
+            21409901
+          ]
+        },
+        {
+          "index": 29,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 200
+            }
+          ],
+          "award": [
+            21409902
+          ]
+        },
+        {
+          "index": 30,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 200
+            }
+          ],
+          "award": [
+            21409903
+          ]
+        },
+        {
+          "index": 31,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 10
+            }
+          ],
+          "award": [
+            21409904
+          ]
+        },
+        {
+          "index": 32,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 4
+            }
+          ],
+          "award": [
+            21409905
+          ]
+        }
+      ],
+      "awards": [
+        {
+          "index": 9,
+          "indexType": 3,
+          "getType": 1,
+          "limit": 1,
+          "lastOrderIndex": 99,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 100
+            }
+          ],
+          "award": [
+            21405740
+          ]
+        },
+        {
+          "index": 10,
+          "indexType": 3,
+          "getType": 1,
+          "limit": 1,
+          "lastOrderIndex": 9,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 200
+            }
+          ],
+          "award": [
+            21405741
+          ]
+        },
+        {
+          "index": 11,
+          "indexType": 3,
+          "getType": 1,
+          "limit": 1,
+          "lastOrderIndex": 10,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 300
+            }
+          ],
+          "award": [
+            21405742
+          ]
+        },
+        {
+          "index": 12,
+          "indexType": 3,
+          "getType": 1,
+          "limit": 1,
+          "lastOrderIndex": 11,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 400
+            }
+          ],
+          "award": [
+            21405743
+          ]
+        },
+        {
+          "index": 13,
+          "indexType": 3,
+          "getType": 1,
+          "limit": 1,
+          "lastOrderIndex": 12,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 500
+            }
+          ],
+          "award": [
+            21405744
+          ]
+        },
+        {
+          "index": 14,
+          "indexType": 3,
+          "getType": 1,
+          "limit": 1,
+          "lastOrderIndex": 13,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 700
+            }
+          ],
+          "award": [
+            21405745
+          ]
+        },
+        {
+          "index": 15,
+          "indexType": 3,
+          "getType": 1,
+          "limit": 1,
+          "lastOrderIndex": 14,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 900
+            }
+          ],
+          "award": [
+            21405746
+          ]
+        },
+        {
+          "index": 16,
+          "indexType": 3,
+          "getType": 1,
+          "limit": 1,
+          "lastOrderIndex": 15,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 1100
+            }
+          ],
+          "award": [
+            21405747
+          ]
+        },
+        {
+          "index": 17,
+          "indexType": 3,
+          "getType": 1,
+          "limit": 1,
+          "lastOrderIndex": 16,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 1300
+            }
+          ],
+          "award": [
+            21405748
+          ]
+        }
+      ],
+      "title_id": 6003073
+    }
+  ]
+}

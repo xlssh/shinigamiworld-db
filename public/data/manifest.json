@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T11:54:03.461781Z",
+  "generatedAt": "2026-07-02T15:28:17.085018Z",
   "tables": {
     "articles": {
       "path": "/data/articles.json",
@@ -328,6 +328,30 @@
     "soul_collection_bases": {
       "path": "/data/soul_collection_bases.json",
       "rowCount": 3
+    },
+    "beautiful_clothes": {
+      "path": "/data/beautiful_clothes.json",
+      "rowCount": 25
+    },
+    "beauty": {
+      "path": "/data/beauty.json",
+      "rowCount": 5
+    },
+    "hero_talents": {
+      "path": "/data/hero_talents.json",
+      "rowCount": 206
+    },
+    "hd_big_turntables": {
+      "path": "/data/hd_big_turntables.json",
+      "rowCount": 2
+    },
+    "hd_jigsaws": {
+      "path": "/data/hd_jigsaws.json",
+      "rowCount": 1
+    },
+    "bleach_jigsaws": {
+      "path": "/data/bleach_jigsaws.json",
+      "rowCount": 1
     }
   }
 }

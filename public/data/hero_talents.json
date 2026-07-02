@@ -1,0 +1,1036 @@
+{
+  "table": "hero_talents",
+  "rowCount": 206,
+  "rows": [
+    {
+      "id": 13200001,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200002,
+      "talent_name": "AGI Talent",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200003,
+      "talent_name": "Wisdom Talent",
+      "talent_desc": "Increase Wisdom by certain percent."
+    },
+    {
+      "id": 13200004,
+      "talent_name": "HP Talent",
+      "talent_desc": "Increase HP by a certain percent."
+    },
+    {
+      "id": 13200005,
+      "talent_name": "Speed Talent",
+      "talent_desc": "Increase Speed by a certain percent."
+    },
+    {
+      "id": 13200006,
+      "talent_name": "Dodge Talent",
+      "talent_desc": "Increase Dodge Rate by a certain percent."
+    },
+    {
+      "id": 13200007,
+      "talent_name": "Hit Talent",
+      "talent_desc": "Increase Hit Rate by a certain percent."
+    },
+    {
+      "id": 13200008,
+      "talent_name": "Crit. Talent",
+      "talent_desc": "Increase Crit Rate by a certain percent."
+    },
+    {
+      "id": 13200009,
+      "talent_name": "Block Talent",
+      "talent_desc": "Increase Block Rate by a certain percent"
+    },
+    {
+      "id": 13200010,
+      "talent_name": "Aid Talent",
+      "talent_desc": "Increase Aid Rate by a certain percent"
+    },
+    {
+      "id": 13200011,
+      "talent_name": "Combo Talent",
+      "talent_desc": "Increase Combo Rate by a certain percent"
+    },
+    {
+      "id": 13200012,
+      "talent_name": "Strength-Immune",
+      "talent_desc": "Immune to Physical ATK"
+    },
+    {
+      "id": 13200013,
+      "talent_name": "AGI-Immune",
+      "talent_desc": "Immune to Agility attack"
+    },
+    {
+      "id": 13200014,
+      "talent_name": "Wisdom-Immune",
+      "talent_desc": "Immune to Strategy attack"
+    },
+    {
+      "id": 13200015,
+      "talent_name": "Shift-Immune",
+      "talent_desc": "Ninja position will not be changed."
+    },
+    {
+      "id": 13200016,
+      "talent_name": "Break Defense Talent",
+      "talent_desc": "Increase Break Defense rate by a certain percent"
+    },
+    {
+      "id": 13200017,
+      "talent_name": "Counter Talent",
+      "talent_desc": "Increase Counter rate by a certain percent"
+    },
+    {
+      "id": 13200018,
+      "talent_name": "Attack Talent",
+      "talent_desc": "Increase Attack by a certain percent"
+    },
+    {
+      "id": 13200019,
+      "talent_name": "Defense Talent",
+      "talent_desc": "Increase Defense by a certain percent."
+    },
+    {
+      "id": 13200020,
+      "talent_name": "Recovery Talent",
+      "talent_desc": "Increase HP recovery rate by a certain percent."
+    },
+    {
+      "id": 13200021,
+      "talent_name": "Powerful Slash",
+      "talent_desc": "Naturally has 50% damage rate."
+    },
+    {
+      "id": 13200022,
+      "talent_name": "Defense Talent",
+      "talent_desc": "Increase Defense by a certain percent."
+    },
+    {
+      "id": 13200023,
+      "talent_name": "Blood-sucking Talent",
+      "talent_desc": "Absorb and deals damage to equal HP value"
+    },
+    {
+      "id": 13200024,
+      "talent_name": "Control-Immune Talent",
+      "talent_desc": "Immune to control skills"
+    },
+    {
+      "id": 13200025,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 5% Avoid Injry Rate."
+    },
+    {
+      "id": 13200026,
+      "talent_name": "AGI talent",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 5% Avoid Injry Rate."
+    },
+    {
+      "id": 13200027,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 5% damage rate."
+    },
+    {
+      "id": 13200028,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200029,
+      "talent_name": "Wisdom Talent",
+      "talent_desc": "Increase Wisdom by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200030,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200031,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 7% damage rate."
+    },
+    {
+      "id": 13200032,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 7% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200033,
+      "talent_name": "AGI talent",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 7% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200034,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 7% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200035,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200036,
+      "talent_name": "Wisdom Talent",
+      "talent_desc": "Increase Wisdom by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200037,
+      "talent_name": "Wisdom Talent",
+      "talent_desc": "Increase Wisdom by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200038,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and 18% Combo rate."
+    },
+    {
+      "id": 13200039,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200040,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200041,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200042,
+      "talent_name": "Crit Talent",
+      "talent_desc": "Increase Crit Rate by a certain percent."
+    },
+    {
+      "id": 13200043,
+      "talent_name": "Crit Talent",
+      "talent_desc": "Increase Crit Rate by a certain percent."
+    },
+    {
+      "id": 13200044,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200045,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200046,
+      "talent_name": "Crit Talent",
+      "talent_desc": "Increase Crit Rate by a certain percent."
+    },
+    {
+      "id": 13200047,
+      "talent_name": "AGI talent",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200048,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200049,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200050,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 5% Avoid Injry Rate."
+    },
+    {
+      "id": 13200051,
+      "talent_name": "AGI talent",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 5% Avoid Injry Rate."
+    },
+    {
+      "id": 13200052,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 5% damage rate."
+    },
+    {
+      "id": 13200053,
+      "talent_name": "AGI talent",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200054,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 5% damage rate."
+    },
+    {
+      "id": 13200055,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 5% damage rate."
+    },
+    {
+      "id": 13200056,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 5% damage rate."
+    },
+    {
+      "id": 13200057,
+      "talent_name": "Crit Talent",
+      "talent_desc": "Increase Crit Rate by a certain percent."
+    },
+    {
+      "id": 13200058,
+      "talent_name": "AGI talent",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 5% Avoid Injry Rate."
+    },
+    {
+      "id": 13200059,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200060,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 7% damage rate."
+    },
+    {
+      "id": 13200061,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200062,
+      "talent_name": "AGI talent",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 7% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200063,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 7% damage rate."
+    },
+    {
+      "id": 13200064,
+      "talent_name": "AGI talent",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 7% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200065,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and 18% Combo rate."
+    },
+    {
+      "id": 13200066,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 10% damage rate."
+    },
+    {
+      "id": 13200067,
+      "talent_name": "Super Speed Talent",
+      "talent_desc": "Increase agility by a certain percent and dodge."
+    },
+    {
+      "id": 13200068,
+      "talent_name": "AGI talent",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200069,
+      "talent_name": "AGI talent",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 10% Avoid Injry Rate and 20% damage rate."
+    },
+    {
+      "id": 13200070,
+      "talent_name": "Wealthy",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200071,
+      "talent_name": "Ruri'iro Kujaku",
+      "talent_desc": "Increase Crit Rate by a certain percent."
+    },
+    {
+      "id": 13200072,
+      "talent_name": "El Directo",
+      "talent_desc": "Increase Block Rate by a certain percent"
+    },
+    {
+      "id": 13200073,
+      "talent_name": "King of the Sea",
+      "talent_desc": "Naturally has 50% damage rate."
+    },
+    {
+      "id": 13200074,
+      "talent_name": "Kenpachi Inheritor",
+      "talent_desc": "Increase Dodge Rate by a certain percent."
+    },
+    {
+      "id": 13200075,
+      "talent_name": "Lusty",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200076,
+      "talent_name": "Sode no Shirayuki",
+      "talent_desc": "Increase Crit Rate by a certain percent."
+    },
+    {
+      "id": 13200077,
+      "talent_name": "Peaceful",
+      "talent_desc": "Increase Wisdom by certain percent."
+    },
+    {
+      "id": 13200078,
+      "talent_name": "Leader",
+      "talent_desc": "Increase Crit Rate by a certain percent."
+    },
+    {
+      "id": 13200079,
+      "talent_name": "Resolute",
+      "talent_desc": "Increase Defense by a certain percent."
+    },
+    {
+      "id": 13200080,
+      "talent_name": "Strong Build",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200081,
+      "talent_name": "Flood Dragon",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200082,
+      "talent_name": "Flash Goddess",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200083,
+      "talent_name": "Benihime",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200084,
+      "talent_name": "Ryūmon Hōzukimaru",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200085,
+      "talent_name": "Suzumushi Nishiki",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200086,
+      "talent_name": "Katen",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200087,
+      "talent_name": "Pisces",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200088,
+      "talent_name": "Senbonzakura",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200089,
+      "talent_name": "Kenpachi",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200090,
+      "talent_name": "Hierro",
+      "talent_desc": "Increase HP by a certain percent."
+    },
+    {
+      "id": 13200091,
+      "talent_name": "Wisdom Talent",
+      "talent_desc": "Increase Wisdom by certain percent."
+    },
+    {
+      "id": 13200092,
+      "talent_name": "Arrogante",
+      "talent_desc": "Increase Wisdom by certain percent."
+    },
+    {
+      "id": 13200093,
+      "talent_name": "Kamishini no Yari",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 5% Avoid Injry Rate."
+    },
+    {
+      "id": 13200094,
+      "talent_name": "Reverse Demon Kill",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 5% Avoid Injry Rate."
+    },
+    {
+      "id": 13200095,
+      "talent_name": "Split Spirit",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 5% damage rate."
+    },
+    {
+      "id": 13200096,
+      "talent_name": "Hollowfication",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 7% damage rate."
+    },
+    {
+      "id": 13200097,
+      "talent_name": "True Blood",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 7% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200098,
+      "talent_name": "Hōgyoku",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 7% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200099,
+      "talent_name": "Wave Pisces",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200100,
+      "talent_name": "Kyōkotsu",
+      "talent_desc": "Increase Wisdom by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200101,
+      "talent_name": "Afinar",
+      "talent_desc": "Increase Wisdom by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200102,
+      "talent_name": "Haineko",
+      "talent_desc": "Increase Crit Rate by a certain percent."
+    },
+    {
+      "id": 13200103,
+      "talent_name": "Desgarrón",
+      "talent_desc": "Increase Wisdom by certain percent."
+    },
+    {
+      "id": 13200104,
+      "talent_name": "Chariti",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200105,
+      "talent_name": "Ryūmon",
+      "talent_desc": "Increase Agility by a higher percent, and naturally has 20% damage rate."
+    },
+    {
+      "id": 13200106,
+      "talent_name": "Pantera",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200107,
+      "talent_name": "Gamuza",
+      "talent_desc": "Increase Wisdom by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200108,
+      "talent_name": "Daiguren",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200109,
+      "talent_name": "Hakuteiken",
+      "talent_desc": "Increase Agility by a higher percent, and naturally has 10% damage rate."
+    },
+    {
+      "id": 13200110,
+      "talent_name": "Shura",
+      "talent_desc": "Increase Strength by a higher percent, and naturally has 10% damage rate."
+    },
+    {
+      "id": 13200111,
+      "talent_name": "Kyōka",
+      "talent_desc": "Increase Agility by a higher percent, and naturally has 10% Avoid Injry Rate and 7% Combo rate."
+    },
+    {
+      "id": 13200112,
+      "talent_name": "Murciélago",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200113,
+      "talent_name": "Gran Rey Cero",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 10% Avoid Injry Rate and 20% damage rate."
+    },
+    {
+      "id": 13200114,
+      "talent_name": "Ice Beauty",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200115,
+      "talent_name": "Christmas",
+      "talent_desc": "Increase own Agility and Strength by certain percentage."
+    },
+    {
+      "id": 13200116,
+      "talent_name": "Dark Forces",
+      "talent_desc": "Increase Wisdom by certain percent, and naturally has 5% damage rate."
+    },
+    {
+      "id": 13200117,
+      "talent_name": "Extreme Ice",
+      "talent_desc": "Increase Agility by a higher percent, and naturally has 10% damage rate和10% Avoid Injry Rate."
+    },
+    {
+      "id": 13200118,
+      "talent_name": "Sakanade",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 7% Avoid Injry Rate."
+    },
+    {
+      "id": 13200119,
+      "talent_name": "Zabimaru",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 7% damage rate."
+    },
+    {
+      "id": 13200120,
+      "talent_name": "Getsuga",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200121,
+      "talent_name": "Getsuga",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200122,
+      "talent_name": "Hollow's Force",
+      "talent_desc": "Increase Agility by a higher percent and Strength by a certain percent, and naturally has 15% Combo rate."
+    },
+    {
+      "id": 13200123,
+      "talent_name": "Shinsō",
+      "talent_desc": "Increase Agility by a higher percent, and naturally has 7% Combo rate and Avoid Injury rate."
+    },
+    {
+      "id": 13200124,
+      "talent_name": "Power of Hollow King",
+      "talent_desc": "Increase Agility by a higher percent and Strength by a certain percent and naturally has 7% Damage and Avoid Injury."
+    },
+    {
+      "id": 13200125,
+      "talent_name": "Rinbu",
+      "talent_desc": "Increase AGI and DEF by a certain percent, and naturally has 10% Avoid Injry Rate."
+    },
+    {
+      "id": 13200126,
+      "talent_name": "Thunderstorm",
+      "talent_desc": "Increase Strength and AGI by certain percent, and naturally has 10% Combo rate."
+    },
+    {
+      "id": 13200127,
+      "talent_name": "Barrier",
+      "talent_desc": "Increase Wisdom and AGI by a certain percent, and naturally has 7% Avoid Injry Rate."
+    },
+    {
+      "id": 13200128,
+      "talent_name": "Hyapporankan",
+      "talent_desc": "Increase Wisdom and AGI by a certain percent, and naturally has 7% Combo rate."
+    },
+    {
+      "id": 13200129,
+      "talent_name": "Power of Love",
+      "talent_desc": "Increase agility by a certain percent, and naturally has 10% Combo and damage rate."
+    },
+    {
+      "id": 13200130,
+      "talent_name": "Power of Love",
+      "talent_desc": "Increase Agility by a higher percent, and naturally has 7% Combo and Avoid Injury Rate."
+    },
+    {
+      "id": 13200131,
+      "talent_name": "Flame",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 12% damage rate."
+    },
+    {
+      "id": 13200132,
+      "talent_name": "Zabi",
+      "talent_desc": "Increase Strength by certain percent."
+    },
+    {
+      "id": 13200133,
+      "talent_name": "Sōō",
+      "talent_desc": "Increase Strength by a higher percent."
+    },
+    {
+      "id": 13200134,
+      "talent_name": "Damage",
+      "talent_desc": "Naturally has 15% damage rate."
+    },
+    {
+      "id": 13200135,
+      "talent_name": "Pantera",
+      "talent_desc": "Naturally has 20% damage rate and 5% Combo rate."
+    },
+    {
+      "id": 13200136,
+      "talent_name": "Frozen",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200137,
+      "talent_name": "Daiguren",
+      "talent_desc": "Increase Agility by a higher percent, and naturally has 7% Avoid Injry Rate."
+    },
+    {
+      "id": 13200138,
+      "talent_name": "Naive",
+      "talent_desc": "Increase agility by a certain percent."
+    },
+    {
+      "id": 13200139,
+      "talent_name": "Gamuza",
+      "talent_desc": "Increase Agility by a higher percent, and naturally has 10% Aid Rate"
+    },
+    {
+      "id": 13200140,
+      "talent_name": "Nothingness",
+      "talent_desc": "Increase Strength by a higher percent, and naturally has 8% damage rate."
+    },
+    {
+      "id": 13200141,
+      "talent_name": "Relámpago ",
+      "talent_desc": "Increase Strength by a higher percent, and naturally has 10% damage rate."
+    },
+    {
+      "id": 13200142,
+      "talent_name": "Shura",
+      "talent_desc": "Increase Strength by a higher percent, and naturally has 7% damage rate and Avoid Injury Rate."
+    },
+    {
+      "id": 13200143,
+      "talent_name": "Kenpachi",
+      "talent_desc": "Increase Strength by a higher percent, and naturally has 10% damage rate and Avoid Injury Rate."
+    },
+    {
+      "id": 13200144,
+      "talent_name": "Suigetsu",
+      "talent_desc": "Increase Agility by a higher percent, and naturally has 7% Combo rate and Aid Rate"
+    },
+    {
+      "id": 13200145,
+      "talent_name": "Última",
+      "talent_desc": "Increase certain agility by certain percents, naturally has 10% combo rate and aid rate."
+    },
+    {
+      "id": 13200146,
+      "talent_name": "Engetsu",
+      "talent_desc": "Increase certain agility by certain percents, naturally has 12% damage rate."
+    },
+    {
+      "id": 13200147,
+      "talent_name": "Getsuga",
+      "talent_desc": "Increase certain agility and strength by certain percents, naturally has 12% combo rate."
+    },
+    {
+      "id": 13200148,
+      "talent_name": "Engetsu",
+      "talent_desc": "Increase certain agility by certain percents, naturally has 12% damage rate."
+    },
+    {
+      "id": 13200149,
+      "talent_name": "Minazuki",
+      "talent_desc": "Increase certain agility by certain percents, naturally has 12% combo rate."
+    },
+    {
+      "id": 13200150,
+      "talent_name": "Twin Blade",
+      "talent_desc": "Increase Strength and Agility by a certain percentage, naturally has 12% damage rate and avoid injury rate."
+    },
+    {
+      "id": 13200151,
+      "talent_name": "Hakka",
+      "talent_desc": "Increase AGI and INT by a certain percent, and naturally has 15% damage rate"
+    },
+    {
+      "id": 13200152,
+      "talent_name": "Spiritual Art",
+      "talent_desc": "Increase Strength and Agility by certain percentage, naturally has 30% Dodge and Break DEF Rate."
+    },
+    {
+      "id": 13200153,
+      "talent_name": "Puto",
+      "talent_desc": "Increase Strength and Agility by certain percentage, and naturally has 15% crit rate."
+    },
+    {
+      "id": 13200154,
+      "talent_name": "Bending Blade",
+      "talent_desc": "Increase Strength and Agility by a certain percent"
+    },
+    {
+      "id": 13200155,
+      "talent_name": "Tenshō Issen",
+      "talent_desc": "Increase certain Intelligence and Agility, and naturally has 10% Speed bonus."
+    },
+    {
+      "id": 13200156,
+      "talent_name": "Self-Blessing",
+      "talent_desc": "Incease own strength and agility according to the percentage, and have 15% damage rate。"
+    },
+    {
+      "id": 13200157,
+      "talent_name": "Kokuō",
+      "talent_desc": "Increase Agility and Intelligence by a certain percentage."
+    },
+    {
+      "id": 13200158,
+      "talent_name": "Protector of Soul King",
+      "talent_desc": "Increase Strength and Intelligence by a certain percentage and have massive extra Stamina."
+    },
+    {
+      "id": 13200159,
+      "talent_name": "Sayafushi",
+      "talent_desc": "Increase certain percent of Intelligence and naturally has 10% damage rate."
+    },
+    {
+      "id": 13200160,
+      "talent_name": "Shura",
+      "talent_desc": "Increase Agility and Intelligence by certain percent."
+    },
+    {
+      "id": 13200161,
+      "talent_name": "Kazeshini",
+      "talent_desc": "Increase Strength by certain percent, naturally has 20% Damage Rate and 10% Avoid Injury Rate."
+    },
+    {
+      "id": 13200162,
+      "talent_name": "Semi Kohakū",
+      "talent_desc": "Naturally has 15% defense, 15% HP and 35% Block rate."
+    },
+    {
+      "id": 13200163,
+      "talent_name": "Itegumo",
+      "talent_desc": "Increase Intelligence and Stamina by certain percent, naturally has 15% Avoid Injury Rate."
+    },
+    {
+      "id": 13200164,
+      "talent_name": "Illusory Word",
+      "talent_desc": "Add 18% Strength, 15% Agility and 20% Damage Rate"
+    },
+    {
+      "id": 13200165,
+      "talent_name": "Kakaku Hō",
+      "talent_desc": "Naturally has 20% defense and 30% stamina."
+    },
+    {
+      "id": 13200166,
+      "talent_name": "Dormancy",
+      "talent_desc": "Increase Agility and Intelligence by certain percentage. "
+    },
+    {
+      "id": 13200167,
+      "talent_name": "Space",
+      "talent_desc": "Increase Strength by certain percentage and naturally has 10% damage rate."
+    },
+    {
+      "id": 13200168,
+      "talent_name": "Kindness",
+      "talent_desc": "Increase Agility and Wisdom by certain percentage, and naturally has 10% avoid injury rate. "
+    },
+    {
+      "id": 13200169,
+      "talent_name": "Hyosetsu",
+      "talent_desc": "Increase Strength and Agility by a certain percent,and naturally has 10% avoid injury rate."
+    },
+    {
+      "id": 13200170,
+      "talent_name": "Estoque",
+      "talent_desc": "Incrase Strength and Agility by certain percentage, and naturally has 10% avoid injury rate."
+    },
+    {
+      "id": 13200171,
+      "talent_name": "Senkei",
+      "talent_desc": "Increase Agility and Stamina by certain percentage, and naturally has 12% speed."
+    },
+    {
+      "id": 13200172,
+      "talent_name": "Snowflake",
+      "talent_desc": "Increase DEF and Stamina by certain percentage, and naturally has 25% agility."
+    },
+    {
+      "id": 13200173,
+      "talent_name": "Vollständig",
+      "talent_desc": "Increase aglity and wisdom by a large percentage and naturally has 15% damage rate."
+    },
+    {
+      "id": 13200174,
+      "talent_name": "Raijin Senkei",
+      "talent_desc": "Increases massive Agility and Wisdom by a large portion, naturally has 15% avoid injury rate."
+    },
+    {
+      "id": 13200175,
+      "talent_name": "Balance",
+      "talent_desc": "Increase Agility and Wisdom by a large portion and naturally has 25% Stamina."
+    },
+    {
+      "id": 13200176,
+      "talent_name": "Incomplete Hogyouku",
+      "talent_desc": "Massively increase strength and damage rate, naturally has 20% stamina."
+    },
+    {
+      "id": 13200177,
+      "talent_name": "Surreal Wisdom",
+      "talent_desc": "Massively increase avoid injury rate and wisdom, naturally has 30% agility."
+    },
+    {
+      "id": 13200178,
+      "talent_name": "Humanization Technique",
+      "talent_desc": "Born with 20% defense, stamina and avoid-injury rate."
+    },
+    {
+      "id": 13200179,
+      "talent_name": "God of Battle",
+      "talent_desc": "Increase Damage rate (20%) and Strength (20%) by certain percentage. Born with 20% Stamina"
+    },
+    {
+      "id": 13200180,
+      "talent_name": "Wind Soul",
+      "talent_desc": "Increase strength and agility by certain percentage and the partner was born with 10% damage rate."
+    },
+    {
+      "id": 13200181,
+      "talent_name": "Zanka no Tachi",
+      "talent_desc": "Increase strength and agility by certain percentage and the partner was born with 20% damage rate."
+    },
+    {
+      "id": 13200182,
+      "talent_name": "Perfect Physique",
+      "talent_desc": "Increase wisdom and agility by certain percentage and the partner was born with 20% avoid injury rate."
+    },
+    {
+      "id": 13200183,
+      "talent_name": "The Heat",
+      "talent_desc": "Increase wisdom and agility by certain percentage and the partner was born with 15% Avoid Injury rate."
+    },
+    {
+      "id": 13200185,
+      "talent_name": "The Miracle",
+      "talent_desc": "Add 20% Stamina, Defense and Avoid Injury Rate"
+    },
+    {
+      "id": 13200186,
+      "talent_name": "Withering Pine Lovers' Suicide",
+      "talent_desc": "Increase 25% AGI and wisdom, naturally have 15% avoid injury rate."
+    },
+    {
+      "id": 13200187,
+      "talent_name": "Hell Power",
+      "talent_desc": "Increase strength by 30%, agility by 20% and damage rate by 20%. Ichigo's normal attack will release normal skill."
+    },
+    {
+      "id": 13200188,
+      "talent_name": "Togabito",
+      "talent_desc": "Increase wisdom and agility by certain percentage and naturally has 20% Avoid Injury rate."
+    },
+    {
+      "id": 13200189,
+      "talent_name": "Senkei",
+      "talent_desc": "Increase wisdom and agility by certain percentage and naturally has 20% Avoid Injury rate."
+    },
+    {
+      "id": 13200190,
+      "talent_name": "Silver of Stillness",
+      "talent_desc": "Born with massive strength, Avoid Injury Rate and damage rate. Normal Attack will deal damage to 2 enemies with the highest attack (100% hit)."
+    },
+    {
+      "id": 13200191,
+      "talent_name": "Deathdealing",
+      "talent_desc": "Born with massive Wisdom, Agility and Avoid Injury Rate."
+    },
+    {
+      "id": 13200192,
+      "talent_name": "Fullbring",
+      "talent_desc": "Born with massive Stamina, Strength and Avoid Injury Rate."
+    },
+    {
+      "id": 13200193,
+      "talent_name": "Fullbring",
+      "talent_desc": "Born with massive Wisdom, Agility and Avoid Injury Rate."
+    },
+    {
+      "id": 13200194,
+      "talent_name": "Fullbring",
+      "talent_desc": "Increase Wisdom and Agility by 30%. Born with 20% Avoid Injury Rate."
+    },
+    {
+      "id": 13200195,
+      "talent_name": "Fullbring",
+      "talent_desc": "Increase Wisdom and Agility by 30%. Born with 20% Avoid Injury Rate."
+    },
+    {
+      "id": 13200196,
+      "talent_name": "Fullbring",
+      "talent_desc": "Increase Strength 30%, Agility 20%. Born with Damage Rate 20%. Normal Attack cause 200% damage."
+    },
+    {
+      "id": 13200197,
+      "talent_name": "Fullbring",
+      "talent_desc": "Increase 30% Wisdom and 30% Agility, born with 20% Avoid Injury Rate."
+    },
+    {
+      "id": 13200198,
+      "talent_name": "Mad Science",
+      "talent_desc": "Increase 35% Wisdom and 30% Agility. Born with 50% Avoid Injury Rate. Initial Starting Level at 159."
+    },
+    {
+      "id": 13200199,
+      "talent_name": "Crazy Experiment",
+      "talent_desc": "Increase 35% Wisdom and 30% Agility, born with 30% Avoid Injury Rate"
+    },
+    {
+      "id": 13200200,
+      "talent_name": "Angry Beast",
+      "talent_desc": "Increase Strength by 20% and Stamina by 40%"
+    },
+    {
+      "id": 13200201,
+      "talent_name": "Destroy",
+      "talent_desc": "Born with 30% Strength, Increase 30% Damage Rate. Normal Attack target Assaulters first."
+    },
+    {
+      "id": 13200202,
+      "talent_name": "Void",
+      "talent_desc": "Increase Strength by 35% and Attack by 40%, Normal Attack will release skill"
+    },
+    {
+      "id": 13200203,
+      "talent_name": "Gamuza",
+      "talent_desc": "Increase Wisdom by 40% and Agility by 40%, Born with 50% Avoid Injury Rate."
+    },
+    {
+      "id": 13200204,
+      "talent_name": "Tiburón",
+      "talent_desc": "Increase Wisdom by 40% and Agility by 40%, Born with 20% Stamina."
+    },
+    {
+      "id": 13200205,
+      "talent_name": "Revólver De Los Lobos",
+      "talent_desc": "Increase Strength and Stamina by 40%. Born with 15% Damage Rate and 15% Avoid Injury Rate."
+    },
+    {
+      "id": 13200206,
+      "talent_name": "Strength Talent",
+      "talent_desc": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo."
+    },
+    {
+      "id": 13200207,
+      "talent_name": "Piskiel",
+      "talent_desc": "Increase Agility by 35% and Strength by 25%. Born with 20% Avoid Injury Rate. Restore 30 Fury at the start of each turn."
+    }
+  ]
+}

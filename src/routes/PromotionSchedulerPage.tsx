@@ -83,6 +83,7 @@ export const PromotionSchedulerPage: React.FC = () => {
         const dayEnd = endArr[0] ?? 7;
         
         const baseDate = new Date(launchDate);
+        if (isNaN(baseDate.getTime())) return null;
         
         const actualStart = new Date(baseDate);
         actualStart.setDate(baseDate.getDate() + (dayStart - 1));
@@ -104,7 +105,7 @@ export const PromotionSchedulerPage: React.FC = () => {
         return {
           typeName: "Weekly Recurring Schedule",
           description: `Runs weekly starting every ${weekdays[wkStart - 1] ?? 'Monday'} and ending every ${weekdays[wkEnd - 1] ?? 'Sunday'}.`,
-          simulatedDates: "Active every single week on designated days."
+          simulatedDates: `Active weekly starting on ${weekdays[wkStart - 1] ?? 'Monday'} through ${weekdays[wkEnd - 1] ?? 'Sunday'}.`
         };
       }
       case 3: {
@@ -117,25 +118,29 @@ export const PromotionSchedulerPage: React.FC = () => {
         const dEnd = endArr[2] ?? 31;
         return {
           typeName: "Fixed Calendar Date Range",
-          description: `Absolute static dates set in database config: from ${yStart}-${mStart}-${dStart} to ${yEnd}-${mEnd}-${dEnd}.`,
+          description: `Absolute static dates set in database config: from ${yStart}-${String(mStart).padStart(2, '0')}-${String(dStart).padStart(2, '0')} to ${yEnd}-${String(mEnd).padStart(2, '0')}-${String(dEnd).padStart(2, '0')}.`,
           simulatedDates: `Static range: Active from ${mStart}/${dStart}/${yStart} to ${mEnd}/${dEnd}/${yEnd}.`
         };
       }
       case 5: {
         // Cyclic modulo repeats
-        const duration = startArr[0] ?? 3;
-        const cooldown = endArr[0] ?? 7;
+        const yStart = startArr[0] ?? 2026;
+        const mStart = startArr[1] ?? 1;
+        const dStart = startArr[2] ?? 1;
+        const duration = endArr[0] ?? 1;
+        const cooldown = endArr[1] ?? 0;
+        const cycleDays = duration + cooldown;
         return {
           typeName: "Cyclic Repeating modulo (Modulo Time)",
           description: `Repeats periodically. Duration of activity: ${duration} Days, followed by a cooldown of ${cooldown} Days before repeating.`,
-          simulatedDates: "Calculated dynamically: Status is active for durations of 3 days, looping repeatedly."
+          simulatedDates: `Modulo cycle starts ${yStart}-${String(mStart).padStart(2, '0')}-${String(dStart).padStart(2, '0')}: Active for ${duration} days, off for ${cooldown} days (repeats every ${cycleDays} days).`
         };
       }
       default:
         return {
           typeName: `Custom Time Scheme Type #${time_type}`,
-          description: `Unknown scheduler strategy type ${time_type}.`,
-          simulatedDates: "Not simulate-able."
+          description: `Custom or unmapped scheduler strategy type ${time_type}.`,
+          simulatedDates: "Not simulated."
         };
     }
   }, [selectedPromo, launchDate]);

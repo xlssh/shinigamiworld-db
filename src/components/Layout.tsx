@@ -99,6 +99,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Global Search', to: '/search', icon: Search },
     { name: 'Event Calendar', to: '/calendar', icon: Calendar },
     { name: 'Promotion Schedules', to: '/calendar/schedules', icon: Clock },
+    { name: 'Promotions List', to: '/promotions', icon: Flame },
     { name: 'Heroes', to: '/heroes', icon: Users },
     { name: 'Hero Comparison', to: '/heroes/compare', icon: Scale },
     //{ name: 'Hero SFX Board', to: '/heroes/sounds', icon: Volume2 },
@@ -115,7 +116,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Stages', to: '/stages', icon: Swords },
     { name: 'Mall Items', to: '/mall-items', icon: ShoppingBag },
     { name: 'Shop Analytics', to: '/mall/analytics', icon: Coins },
-    { name: 'Promotions', to: '/promotions', icon: Flame },
     { name: 'Formation Builder', to: '/tools/formation', icon: Wand2 },
     { name: 'Counter Triangle', to: '/tools/counters', icon: Shield },
     //{ name: 'Synergy Graph', to: '/tools/synergy', icon: Network },
@@ -145,6 +145,9 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     //{ name: 'Equip Forge Planner', to: '/tools/forge-planner', icon: Sparkles }, // TODO: unclear
     //{ name: 'Nightmare Campaign', to: '/tools/nightmare-realms', icon: Globe }, // TODO: fix
     { name: 'Seven Souls Altar', to: '/tools/seven-souls', icon: Star },
+    //{ name: 'Fashion Wardrobe', to: '/tools/wardrobe', icon: Sparkles }, // TODO: unclear
+    { name: 'Hero Talents Planner', to: '/tools/talents', icon: Wand2 },
+    //{ name: 'Lucky Wheel Simulator', to: '/tools/lucky-wheel', icon: Coins }, // TODO: unclear
   ];
 
   return (

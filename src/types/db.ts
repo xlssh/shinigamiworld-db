@@ -177,8 +177,8 @@ export interface PromotionalActivity {
   name: string | null;
   act_type: number | null;
   time_type: number | null;
-  start_time: string | null;
-  end_time: string | null;
+  start_time: any;
+  end_time: any;
   act_icon: number | null;
   position: number | null;
   act_position: number | null;
@@ -982,6 +982,85 @@ export interface SoulCollectionShop {
 export interface SoulCollectionBase {
   id: number;
   lottery_consume: any;
+}
+
+export interface BeautifulClothes {
+  id: number;
+  factor: number;
+  scores: number[][];
+  question: string;
+  answers: string[];
+}
+
+export interface Beauty {
+  id: number;
+  name: string;
+  rewards: Array<{ type: number; code: number }>;
+  clothes_id: number[];
+  success_text: string[];
+  fail_text: string;
+  day: number;
+}
+
+export interface HeroTalent {
+  id: number;
+  talent_name: string;
+  talent_desc: string;
+}
+
+export interface HdBigTurntable {
+  id: number;
+  name: string;
+  tname: string;
+  desc: string;
+  tip: string;
+  price: number;
+  image_id: number;
+  record_quality_limit: number;
+  lucky_point: any;
+  lucky_lottery_outter: any;
+  lucky_lottery_inner: any;
+  gold_point: any;
+  gold_lottery_outter: any;
+  gold_lottery_inner: any;
+  mall: any;
+  score_point: any;
+  lucky_lottery_outter_award: any;
+  lucky_lottery_inner_award: any;
+  gold_lottery_outter_award: any;
+  gold_lottery_inner_award: any;
+  buy_hero: any;
+}
+
+export interface HdJigsaw {
+  id: number;
+  name: string;
+  tname: string;
+  desc: string;
+  tip: string;
+  price: number;
+  image_id: number;
+  score: any;
+  buys: any;
+  awards: any;
+  title_id: number;
+}
+
+export interface BleachJigsaw {
+  id: number;
+  name: string;
+  tname: string;
+  desc: string;
+  tip: string;
+  price: number;
+  image_id: number;
+  items: any;
+  needs: any;
+  btn1: any;
+  btn2: any;
+  btn3: any;
+  final_award: any;
+  unk: number;
 }
 
 

@@ -1,0 +1,1258 @@
+{
+  "table": "hd_big_turntables",
+  "rowCount": 2,
+  "rows": [
+    {
+      "id": 480001,
+      "name": "Big Turntable",
+      "tname": "Big Turntable",
+      "desc": "Activity time: 2014/5/20-2014/5/24\nDuring the event, players who have accumulated online time of 1 hours can participate in a lucky draw.\nYou can also get 10 lucky points and 2 points by participating in a lucky draw to obtain items.\nConsume 100 lucky points to participate in a lucky mystery draw (lucky points and points will not be obtained)\nDuring the event, players can consume Gold to draw Gold.\nYou can also get 5 Gold Value and 10 points by participating in the Gold lottery to obtain items.\nConsume 150 Gold Value to participate in a Gold mystery lottery (no Gold Value and points will be obtained)\nPoints can be clicked on the redemption button on the event interface to enter the points store to redeem partners, Zanpakutō and items\nNote: You can only have one of the same partner and Zanpakutō, please be careful when exchanging them.",
+      "tip": "",
+      "price": 0,
+      "image_id": 480001,
+      "record_quality_limit": 1,
+      "lucky_point": {
+        "index": 0,
+        "indexType": 3,
+        "getType": 4,
+        "value": 100,
+        "des": "Lucky Value"
+      },
+      "lucky_lottery_outter": [
+        {
+          "index": 1,
+          "indexType": 3,
+          "getType": 1,
+          "condition": [
+            {
+              "type": 2,
+              "value": 3600
+            }
+          ],
+          "getChip": [
+            {
+              "index": 0,
+              "value": 10
+            },
+            {
+              "index": 98,
+              "value": 2
+            }
+          ],
+          "award": [
+            21401486
+          ],
+          "des": "Lucky points %0 and points %1 can be obtained through the lottery.",
+          "flag": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "lucky_lottery_inner": [
+        {
+          "index": 100,
+          "getType": 1,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 100
+            }
+          ],
+          "award": [
+            21401487
+          ],
+          "des": "Consume %0 lucky points to draw once",
+          "flag": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "gold_point": {
+        "index": 2,
+        "indexType": 3,
+        "getType": 4,
+        "value": 150,
+        "des": "Gold Value"
+      },
+      "gold_lottery_outter": [
+        {
+          "index": 102,
+          "getType": 2,
+          "cost": 15,
+          "count": 1,
+          "condition": [
+            {
+              "type": 3,
+              "value": 3
+            }
+          ],
+          "getChip": [
+            {
+              "index": 2,
+              "value": 5
+            },
+            {
+              "index": 98,
+              "value": 10
+            }
+          ],
+          "award": [
+            21401497
+          ],
+          "des": "Spend %0 Gold in lottery to get %1 Gold Value and %2 points",
+          "flag": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 103,
+          "getType": 2,
+          "cost": 150,
+          "count": 10,
+          "condition": [
+            {
+              "type": 3,
+              "value": 3
+            }
+          ],
+          "getChip": [
+            {
+              "index": 2,
+              "value": 50
+            },
+            {
+              "index": 98,
+              "value": 100
+            }
+          ],
+          "award": [
+            21401497
+          ],
+          "des": "Spend %0 Gold in lottery to get %1 Gold Value and %2 points",
+          "flag": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 104,
+          "getType": 2,
+          "cost": 735,
+          "count": 50,
+          "condition": [
+            {
+              "type": 3,
+              "value": 3
+            }
+          ],
+          "getChip": [
+            {
+              "index": 2,
+              "value": 255
+            },
+            {
+              "index": 98,
+              "value": 510
+            }
+          ],
+          "award": [
+            21401497
+          ],
+          "des": "Spend %0 Gold in lottery to get %1 Gold Value and %2 points",
+          "flag": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "gold_lottery_inner": [
+        {
+          "index": 105,
+          "getType": 1,
+          "costChip": [
+            {
+              "index": 2,
+              "value": 150
+            }
+          ],
+          "award": [
+            21401498
+          ],
+          "des": "Consume %0 Gold Value and draw once",
+          "flag": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        }
+      ],
+      "mall": [
+        {
+          "index": 3,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 6000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21401488
+          ]
+        },
+        {
+          "index": 4,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 6000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21401489
+          ]
+        },
+        {
+          "index": 5,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 4000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21401490
+          ]
+        },
+        {
+          "index": 6,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 20
+            }
+          ],
+          "limit": 999,
+          "award": [
+            21401491
+          ]
+        },
+        {
+          "index": 7,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 6000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21401436
+          ]
+        },
+        {
+          "index": 8,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 6000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21401393
+          ]
+        },
+        {
+          "index": 9,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 4000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21401439
+          ]
+        }
+      ],
+      "score_point": {
+        "index": 98,
+        "indexType": 3,
+        "getType": 4,
+        "des": "Points",
+        "special": [
+          2000124,
+          11120009
+        ]
+      },
+      "lucky_lottery_outter_award": [
+        {
+          "type": 1,
+          "code": 14100015,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14860001,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100101,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100012,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100005,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800021,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800002,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800022,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100018,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100019,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800001,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 1
+        }
+      ],
+      "lucky_lottery_inner_award": [
+        {
+          "type": 1,
+          "code": 14100019,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100015,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100005,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 1
+        },
+        {
+          "type": 7,
+          "code": 5,
+          "amount": 1
+        }
+      ],
+      "gold_lottery_outter_award": [
+        {
+          "type": 1,
+          "code": 14100015,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100005,
+          "amount": 1
+        },
+        {
+          "type": 0,
+          "code": 2,
+          "amount": 10
+        },
+        {
+          "type": 0,
+          "code": 2,
+          "amount": 188
+        },
+        {
+          "type": 0,
+          "code": 2,
+          "amount": 288
+        },
+        {
+          "type": 1,
+          "code": 14100019,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100019,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800010,
+          "amount": 1
+        },
+        {
+          "type": 7,
+          "code": 5,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14860001,
+          "amount": 10
+        },
+        {
+          "type": 7,
+          "code": 5,
+          "amount": 200
+        },
+        {
+          "type": 1,
+          "code": 14800002,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100197,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800005,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 50
+        }
+      ],
+      "gold_lottery_inner_award": [
+        {
+          "type": 1,
+          "code": 14501004,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100019,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 10
+        },
+        {
+          "type": 7,
+          "code": 5,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "code": 14100197,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100015,
+          "amount": 50
+        }
+      ],
+      "buy_hero": [
+        {
+          "index": 10,
+          "indexType": 3,
+          "getType": 2,
+          "cost": 12000,
+          "limit": 1,
+          "award": [
+            21401618
+          ]
+        },
+        {
+          "index": 11,
+          "indexType": 3,
+          "getType": 2,
+          "cost": 50000,
+          "limit": 1,
+          "award": [
+            21401619
+          ]
+        }
+      ]
+    },
+    {
+      "id": 480002,
+      "name": "Big Turntable",
+      "tname": "Big Turntable",
+      "desc": "During the event, you receive 1 points for each hour of continuous connection.\nOnce 100 points have been reached, players can unlock a mysterious draw!\nYou can use Gold for the lucky draw which will add you golden points\nOnce 100 points reached players can unlock a golden draw!\nYou can use the points to recruit Allies, Zanpakutõ and items.",
+      "tip": "",
+      "price": 0,
+      "image_id": 480001,
+      "record_quality_limit": 1,
+      "lucky_point": {
+        "index": 0,
+        "indexType": 3,
+        "getType": 4,
+        "value": 100,
+        "des": "Lucky Value"
+      },
+      "lucky_lottery_outter": [
+        {
+          "index": 1,
+          "indexType": 3,
+          "getType": 1,
+          "condition": [
+            {
+              "type": 2,
+              "value": 3600
+            }
+          ],
+          "getChip": [
+            {
+              "index": 0,
+              "value": 10
+            },
+            {
+              "index": 98,
+              "value": 2
+            }
+          ],
+          "award": [
+            21401486
+          ],
+          "des": "Get %0 Lucky Value and %1 Points from the draw",
+          "flag": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "lucky_lottery_inner": [
+        {
+          "index": 100,
+          "getType": 1,
+          "costChip": [
+            {
+              "index": 0,
+              "value": 100
+            }
+          ],
+          "award": [
+            21401487
+          ],
+          "des": "Spend %0 Lucky Value to draw once",
+          "flag": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "gold_point": {
+        "index": 2,
+        "indexType": 3,
+        "getType": 4,
+        "value": 150,
+        "des": "Gold Value"
+      },
+      "gold_lottery_outter": [
+        {
+          "index": 102,
+          "getType": 2,
+          "cost": 15,
+          "count": 1,
+          "condition": [
+            {
+              "type": 3,
+              "value": 3
+            }
+          ],
+          "getChip": [
+            {
+              "index": 2,
+              "value": 5
+            },
+            {
+              "index": 98,
+              "value": 10
+            }
+          ],
+          "award": [
+            21401497
+          ],
+          "des": "Spend %0 Gold in the draw to get %1 Gold Value and %2 Points",
+          "flag": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 103,
+          "getType": 2,
+          "cost": 150,
+          "count": 10,
+          "condition": [
+            {
+              "type": 3,
+              "value": 3
+            }
+          ],
+          "getChip": [
+            {
+              "index": 2,
+              "value": 50
+            },
+            {
+              "index": 98,
+              "value": 100
+            }
+          ],
+          "award": [
+            21401497
+          ],
+          "des": "Spend %0 Gold in the draw to get %1 Gold Value and %2 Points",
+          "flag": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 104,
+          "getType": 2,
+          "cost": 735,
+          "count": 50,
+          "condition": [
+            {
+              "type": 3,
+              "value": 3
+            }
+          ],
+          "getChip": [
+            {
+              "index": 2,
+              "value": 255
+            },
+            {
+              "index": 98,
+              "value": 510
+            }
+          ],
+          "award": [
+            21401497
+          ],
+          "des": "Spend %0 Gold in the draw to get %1 Gold Value and %2 Points",
+          "flag": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "gold_lottery_inner": [
+        {
+          "index": 105,
+          "getType": 1,
+          "costChip": [
+            {
+              "index": 2,
+              "value": 150
+            }
+          ],
+          "award": [
+            21401498
+          ],
+          "des": "Spend %0 Gold Value to draw once",
+          "flag": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        }
+      ],
+      "mall": [
+        {
+          "index": 3,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 12000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21402183
+          ]
+        },
+        {
+          "index": 4,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 14000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21402752
+          ]
+        },
+        {
+          "index": 5,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 14000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21402753
+          ]
+        },
+        {
+          "index": 6,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 14000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21402581
+          ]
+        },
+        {
+          "index": 7,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 24000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21401531
+          ]
+        },
+        {
+          "index": 8,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 70
+            }
+          ],
+          "limit": 999,
+          "award": [
+            21402756
+          ]
+        },
+        {
+          "index": 9,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 15
+            }
+          ],
+          "limit": 999,
+          "award": [
+            21402757
+          ]
+        },
+        {
+          "index": 10,
+          "indexType": 3,
+          "getType": 2,
+          "costChip": [
+            {
+              "index": 98,
+              "value": 10000
+            }
+          ],
+          "limit": 1,
+          "award": [
+            21403630
+          ]
+        }
+      ],
+      "score_point": {
+        "index": 98,
+        "indexType": 3,
+        "getType": 4,
+        "des": "Points",
+        "special": [
+          11150023
+        ]
+      },
+      "lucky_lottery_outter_award": [
+        {
+          "type": 5,
+          "code": 0,
+          "amount": 200
+        },
+        {
+          "type": 1,
+          "code": 14100074,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14800020,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14800022,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100004,
+          "amount": 2
+        },
+        {
+          "type": 1,
+          "code": 14100005,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14320092,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14860001,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100010,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100013,
+          "amount": 1
+        },
+        {
+          "type": 7,
+          "code": 4,
+          "amount": 1
+        },
+        {
+          "type": 7,
+          "code": 5,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800001,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100018,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100100,
+          "amount": 1
+        }
+      ],
+      "lucky_lottery_inner_award": [
+        {
+          "type": 7,
+          "code": 4,
+          "amount": 1
+        },
+        {
+          "type": 7,
+          "code": 5,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800001,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100018,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100100,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 1
+        }
+      ],
+      "gold_lottery_outter_award": [
+        {
+          "type": 7,
+          "code": 4,
+          "amount": 20
+        },
+        {
+          "type": 7,
+          "code": 5,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14800001,
+          "amount": 2
+        },
+        {
+          "type": 1,
+          "code": 14100246,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800002,
+          "amount": 2
+        },
+        {
+          "type": 1,
+          "code": 14100005,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "code": 14100015,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14860001,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14320092,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100103,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100019,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100337,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100338,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800007,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14800008,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100409,
+          "amount": 1
+        }
+      ],
+      "gold_lottery_inner_award": [
+        {
+          "type": 1,
+          "code": 14100018,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100017,
+          "amount": 5
+        },
+        {
+          "type": 1,
+          "code": 14100019,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14860010,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100103,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100198,
+          "amount": 1
+        }
+      ],
+      "buy_hero": [
+        {
+          "index": 13,
+          "indexType": 3,
+          "getType": 2,
+          "cost": 12000,
+          "limit": 1,
+          "award": [
+            21401615
+          ],
+          "fightReportAddr": "www.123.com"
+        },
+        {
+          "index": 14,
+          "indexType": 3,
+          "getType": 2,
+          "cost": 40000,
+          "limit": 1,
+          "award": [
+            21401619
+          ],
+          "fightReportAddr": "www.123.com"
+        }
+      ]
+    }
+  ]
+}

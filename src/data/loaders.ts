@@ -10,7 +10,8 @@ import {
   OrnamentValue, OrnamentUpgrade, StarMap, StarPoint, TemplePoint, TempleValue, TemplePVP, TemplePliesNumber,
   Military, CullingMagic, CullingStage, EquipForging, EquipAdvancement, NightmarePoint, NightmareCity,
   SevenHeroStar, SevenHeroLittleStar, SevenHeroSoul, SevenHeroArmy, SevenHeroDailyAward,
-  SoulCollectionRnd, SoulCollectionShop, SoulCollectionBase
+  SoulCollectionRnd, SoulCollectionShop, SoulCollectionBase,
+  BeautifulClothes, Beauty, HeroTalent, HdBigTurntable, HdJigsaw, BleachJigsaw
 } from '../types/db';
 
 const cache: { [key: string]: any } = {};
@@ -367,6 +368,30 @@ export async function loadSoulCollectionShops(): Promise<TableJson<SoulCollectio
 
 export async function loadSoulCollectionBases(): Promise<TableJson<SoulCollectionBase>> {
   return fetchWithCache<TableJson<SoulCollectionBase>>('data/soul_collection_bases.json');
+}
+
+export async function loadBeautifulClothes(): Promise<TableJson<BeautifulClothes>> {
+  return fetchWithCache<TableJson<BeautifulClothes>>('data/beautiful_clothes.json');
+}
+
+export async function loadBeauty(): Promise<TableJson<Beauty>> {
+  return fetchWithCache<TableJson<Beauty>>('data/beauty.json');
+}
+
+export async function loadHeroTalents(): Promise<TableJson<HeroTalent>> {
+  return fetchWithCache<TableJson<HeroTalent>>('data/hero_talents.json');
+}
+
+export async function loadHdBigTurntables(): Promise<TableJson<HdBigTurntable>> {
+  return fetchWithCache<TableJson<HdBigTurntable>>('data/hd_big_turntables.json');
+}
+
+export async function loadHdJigsaws(): Promise<TableJson<HdJigsaw>> {
+  return fetchWithCache<TableJson<HdJigsaw>>('data/hd_jigsaws.json');
+}
+
+export async function loadBleachJigsaws(): Promise<TableJson<BleachJigsaw>> {
+  return fetchWithCache<TableJson<BleachJigsaw>>('data/bleach_jigsaws.json');
 }
 
 

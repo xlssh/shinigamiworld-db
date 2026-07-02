@@ -379,6 +379,30 @@ def main():
         "path": "/data/soul_collection_bases.json",
         "rowCount": 3
     }
+    manifest_tables["beautiful_clothes"] = {
+        "path": "/data/beautiful_clothes.json",
+        "rowCount": 25
+    }
+    manifest_tables["beauty"] = {
+        "path": "/data/beauty.json",
+        "rowCount": 5
+    }
+    manifest_tables["hero_talents"] = {
+        "path": "/data/hero_talents.json",
+        "rowCount": 206
+    }
+    manifest_tables["hd_big_turntables"] = {
+        "path": "/data/hd_big_turntables.json",
+        "rowCount": 2
+    }
+    manifest_tables["hd_jigsaws"] = {
+        "path": "/data/hd_jigsaws.json",
+        "rowCount": 1
+    }
+    manifest_tables["bleach_jigsaws"] = {
+        "path": "/data/bleach_jigsaws.json",
+        "rowCount": 1
+    }
     manifest_data = {
         "generatedAt": generated_at,
         "tables": manifest_tables
