@@ -832,5 +832,83 @@ export interface TemplePliesNumber {
   award_id: number;
 }
 
+export interface Military {
+  id: number;
+  name: string;
+  prefix_before: string;
+  prefix_end: string;
+  need_credit: number;
+  salary: { award: Array<{ type: number; code: number; amount: number }> };
+  max_hero_num: number;
+  fight_hero_num: number;
+  add_other: { addOther: Array<{ type: number; value: number }> };
+}
+
+export interface CullingMagic {
+  id: number;
+  name: string;
+  level: number;
+  type: number;
+  need_block: number;
+  need_exp: number;
+  exp_all: number;
+  need_silver: number;
+  silver_exp: number;
+  need_gold: number;
+  gold_exp: number;
+  need_item: number;
+  item_exp: number;
+  power: number;
+  agile: number;
+  intelligence: number;
+  life: number;
+  need_trans_lv: number;
+  next_id: number;
+}
+
+export interface CullingStage {
+  id: number;
+  name: string;
+  location: number;
+  type: number;
+  army_id: number;
+  image: number;
+  award: any;
+  award_ex: any;
+  stage_clear: number;
+  need_level: number;
+}
+
+export interface EquipForging {
+  id: number;
+  target_item_id: number;
+  material_amount: number;
+}
+
+export interface EquipAdvancement {
+  id: number;
+  target_item_id: number;
+  material_amount: number;
+}
+
+export interface NightmarePoint {
+  id: number;
+  name: string;
+  army_ids: number[];
+  battle_scene: number;
+  role_model: number;
+  condition: number[];
+  help_hero_id: number;
+  help_hero_pos: number;
+  coordinate: any;
+  to_target: any[];
+}
+
+export interface NightmareCity {
+  id: number;
+  award_ids: number[];
+  pass_awards: Array<{ type: number; code: number; amount: number }>;
+}
+
 
 

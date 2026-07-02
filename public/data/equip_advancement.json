@@ -1,0 +1,566 @@
+{
+  "table": "equip_advancement",
+  "rowCount": 112,
+  "rows": [
+    {
+      "id": 14210201,
+      "target_item_id": 14210211,
+      "material_amount": 150
+    },
+    {
+      "id": 14210202,
+      "target_item_id": 14210212,
+      "material_amount": 150
+    },
+    {
+      "id": 14210203,
+      "target_item_id": 14210213,
+      "material_amount": 150
+    },
+    {
+      "id": 14210204,
+      "target_item_id": 14210214,
+      "material_amount": 150
+    },
+    {
+      "id": 14210205,
+      "target_item_id": 14210215,
+      "material_amount": 150
+    },
+    {
+      "id": 14210206,
+      "target_item_id": 14210216,
+      "material_amount": 150
+    },
+    {
+      "id": 14210207,
+      "target_item_id": 14210217,
+      "material_amount": 150
+    },
+    {
+      "id": 14210208,
+      "target_item_id": 14210218,
+      "material_amount": 150
+    },
+    {
+      "id": 14210211,
+      "target_item_id": 14210221,
+      "material_amount": 300
+    },
+    {
+      "id": 14210212,
+      "target_item_id": 14210222,
+      "material_amount": 300
+    },
+    {
+      "id": 14210213,
+      "target_item_id": 14210223,
+      "material_amount": 300
+    },
+    {
+      "id": 14210214,
+      "target_item_id": 14210224,
+      "material_amount": 300
+    },
+    {
+      "id": 14210215,
+      "target_item_id": 14210225,
+      "material_amount": 300
+    },
+    {
+      "id": 14210216,
+      "target_item_id": 14210226,
+      "material_amount": 300
+    },
+    {
+      "id": 14210217,
+      "target_item_id": 14210227,
+      "material_amount": 300
+    },
+    {
+      "id": 14210218,
+      "target_item_id": 14210228,
+      "material_amount": 300
+    },
+    {
+      "id": 14210221,
+      "target_item_id": 14210231,
+      "material_amount": 600
+    },
+    {
+      "id": 14210222,
+      "target_item_id": 14210232,
+      "material_amount": 600
+    },
+    {
+      "id": 14210223,
+      "target_item_id": 14210233,
+      "material_amount": 600
+    },
+    {
+      "id": 14210224,
+      "target_item_id": 14210234,
+      "material_amount": 600
+    },
+    {
+      "id": 14210225,
+      "target_item_id": 14210235,
+      "material_amount": 600
+    },
+    {
+      "id": 14210226,
+      "target_item_id": 14210236,
+      "material_amount": 600
+    },
+    {
+      "id": 14210227,
+      "target_item_id": 14210237,
+      "material_amount": 600
+    },
+    {
+      "id": 14210228,
+      "target_item_id": 14210238,
+      "material_amount": 600
+    },
+    {
+      "id": 14210231,
+      "target_item_id": 14210241,
+      "material_amount": 900
+    },
+    {
+      "id": 14210232,
+      "target_item_id": 14210242,
+      "material_amount": 900
+    },
+    {
+      "id": 14210233,
+      "target_item_id": 14210243,
+      "material_amount": 900
+    },
+    {
+      "id": 14210234,
+      "target_item_id": 14210244,
+      "material_amount": 900
+    },
+    {
+      "id": 14210235,
+      "target_item_id": 14210245,
+      "material_amount": 900
+    },
+    {
+      "id": 14210236,
+      "target_item_id": 14210246,
+      "material_amount": 900
+    },
+    {
+      "id": 14210237,
+      "target_item_id": 14210247,
+      "material_amount": 900
+    },
+    {
+      "id": 14210238,
+      "target_item_id": 14210248,
+      "material_amount": 900
+    },
+    {
+      "id": 14210241,
+      "target_item_id": 14210251,
+      "material_amount": 1350
+    },
+    {
+      "id": 14210242,
+      "target_item_id": 14210252,
+      "material_amount": 1350
+    },
+    {
+      "id": 14210243,
+      "target_item_id": 14210253,
+      "material_amount": 1350
+    },
+    {
+      "id": 14210244,
+      "target_item_id": 14210254,
+      "material_amount": 1350
+    },
+    {
+      "id": 14210245,
+      "target_item_id": 14210255,
+      "material_amount": 1350
+    },
+    {
+      "id": 14210246,
+      "target_item_id": 14210256,
+      "material_amount": 1350
+    },
+    {
+      "id": 14210247,
+      "target_item_id": 14210257,
+      "material_amount": 1350
+    },
+    {
+      "id": 14210248,
+      "target_item_id": 14210258,
+      "material_amount": 1350
+    },
+    {
+      "id": 14210251,
+      "target_item_id": 14210261,
+      "material_amount": 1755
+    },
+    {
+      "id": 14210252,
+      "target_item_id": 14210262,
+      "material_amount": 1755
+    },
+    {
+      "id": 14210253,
+      "target_item_id": 14210263,
+      "material_amount": 1755
+    },
+    {
+      "id": 14210254,
+      "target_item_id": 14210264,
+      "material_amount": 1755
+    },
+    {
+      "id": 14210255,
+      "target_item_id": 14210265,
+      "material_amount": 1755
+    },
+    {
+      "id": 14210256,
+      "target_item_id": 14210266,
+      "material_amount": 1755
+    },
+    {
+      "id": 14210257,
+      "target_item_id": 14210267,
+      "material_amount": 1755
+    },
+    {
+      "id": 14210258,
+      "target_item_id": 14210268,
+      "material_amount": 1755
+    },
+    {
+      "id": 14210261,
+      "target_item_id": 14210271,
+      "material_amount": 2282
+    },
+    {
+      "id": 14210262,
+      "target_item_id": 14210272,
+      "material_amount": 2282
+    },
+    {
+      "id": 14210263,
+      "target_item_id": 14210273,
+      "material_amount": 2282
+    },
+    {
+      "id": 14210264,
+      "target_item_id": 14210274,
+      "material_amount": 2282
+    },
+    {
+      "id": 14210265,
+      "target_item_id": 14210275,
+      "material_amount": 2282
+    },
+    {
+      "id": 14210266,
+      "target_item_id": 14210276,
+      "material_amount": 2282
+    },
+    {
+      "id": 14210267,
+      "target_item_id": 14210277,
+      "material_amount": 2282
+    },
+    {
+      "id": 14210268,
+      "target_item_id": 14210278,
+      "material_amount": 2282
+    },
+    {
+      "id": 14210271,
+      "target_item_id": 14210281,
+      "material_amount": 2738
+    },
+    {
+      "id": 14210272,
+      "target_item_id": 14210282,
+      "material_amount": 2738
+    },
+    {
+      "id": 14210273,
+      "target_item_id": 14210283,
+      "material_amount": 2738
+    },
+    {
+      "id": 14210274,
+      "target_item_id": 14210284,
+      "material_amount": 2738
+    },
+    {
+      "id": 14210275,
+      "target_item_id": 14210285,
+      "material_amount": 2738
+    },
+    {
+      "id": 14210276,
+      "target_item_id": 14210286,
+      "material_amount": 2738
+    },
+    {
+      "id": 14210277,
+      "target_item_id": 14210287,
+      "material_amount": 2738
+    },
+    {
+      "id": 14210278,
+      "target_item_id": 14210288,
+      "material_amount": 2738
+    },
+    {
+      "id": 14210281,
+      "target_item_id": 14210291,
+      "material_amount": 3285
+    },
+    {
+      "id": 14210282,
+      "target_item_id": 14210292,
+      "material_amount": 3285
+    },
+    {
+      "id": 14210283,
+      "target_item_id": 14210293,
+      "material_amount": 3285
+    },
+    {
+      "id": 14210284,
+      "target_item_id": 14210294,
+      "material_amount": 3285
+    },
+    {
+      "id": 14210285,
+      "target_item_id": 14210295,
+      "material_amount": 3285
+    },
+    {
+      "id": 14210286,
+      "target_item_id": 14210296,
+      "material_amount": 3285
+    },
+    {
+      "id": 14210287,
+      "target_item_id": 14210297,
+      "material_amount": 3285
+    },
+    {
+      "id": 14210288,
+      "target_item_id": 14210298,
+      "material_amount": 3285
+    },
+    {
+      "id": 14210291,
+      "target_item_id": 14210301,
+      "material_amount": 3614
+    },
+    {
+      "id": 14210292,
+      "target_item_id": 14210302,
+      "material_amount": 3614
+    },
+    {
+      "id": 14210293,
+      "target_item_id": 14210303,
+      "material_amount": 3614
+    },
+    {
+      "id": 14210294,
+      "target_item_id": 14210304,
+      "material_amount": 3614
+    },
+    {
+      "id": 14210295,
+      "target_item_id": 14210305,
+      "material_amount": 3614
+    },
+    {
+      "id": 14210296,
+      "target_item_id": 14210306,
+      "material_amount": 3614
+    },
+    {
+      "id": 14210297,
+      "target_item_id": 14210307,
+      "material_amount": 3614
+    },
+    {
+      "id": 14210298,
+      "target_item_id": 14210308,
+      "material_amount": 3614
+    },
+    {
+      "id": 14210301,
+      "target_item_id": 14210311,
+      "material_amount": 3975
+    },
+    {
+      "id": 14210302,
+      "target_item_id": 14210312,
+      "material_amount": 3975
+    },
+    {
+      "id": 14210303,
+      "target_item_id": 14210313,
+      "material_amount": 3975
+    },
+    {
+      "id": 14210304,
+      "target_item_id": 14210314,
+      "material_amount": 3975
+    },
+    {
+      "id": 14210305,
+      "target_item_id": 14210315,
+      "material_amount": 3975
+    },
+    {
+      "id": 14210306,
+      "target_item_id": 14210316,
+      "material_amount": 3975
+    },
+    {
+      "id": 14210307,
+      "target_item_id": 14210317,
+      "material_amount": 3975
+    },
+    {
+      "id": 14210308,
+      "target_item_id": 14210318,
+      "material_amount": 3975
+    },
+    {
+      "id": 14210311,
+      "target_item_id": 14210321,
+      "material_amount": 4373
+    },
+    {
+      "id": 14210312,
+      "target_item_id": 14210322,
+      "material_amount": 4373
+    },
+    {
+      "id": 14210313,
+      "target_item_id": 14210323,
+      "material_amount": 4373
+    },
+    {
+      "id": 14210314,
+      "target_item_id": 14210324,
+      "material_amount": 4373
+    },
+    {
+      "id": 14210315,
+      "target_item_id": 14210325,
+      "material_amount": 4373
+    },
+    {
+      "id": 14210316,
+      "target_item_id": 14210326,
+      "material_amount": 4373
+    },
+    {
+      "id": 14210317,
+      "target_item_id": 14210327,
+      "material_amount": 4373
+    },
+    {
+      "id": 14210318,
+      "target_item_id": 14210328,
+      "material_amount": 4373
+    },
+    {
+      "id": 14210321,
+      "target_item_id": 14210331,
+      "material_amount": 4591
+    },
+    {
+      "id": 14210322,
+      "target_item_id": 14210332,
+      "material_amount": 4591
+    },
+    {
+      "id": 14210323,
+      "target_item_id": 14210333,
+      "material_amount": 4591
+    },
+    {
+      "id": 14210324,
+      "target_item_id": 14210334,
+      "material_amount": 4591
+    },
+    {
+      "id": 14210325,
+      "target_item_id": 14210335,
+      "material_amount": 4591
+    },
+    {
+      "id": 14210326,
+      "target_item_id": 14210336,
+      "material_amount": 4591
+    },
+    {
+      "id": 14210327,
+      "target_item_id": 14210337,
+      "material_amount": 4591
+    },
+    {
+      "id": 14210328,
+      "target_item_id": 14210338,
+      "material_amount": 4591
+    },
+    {
+      "id": 14210331,
+      "target_item_id": 14210341,
+      "material_amount": 4821
+    },
+    {
+      "id": 14210332,
+      "target_item_id": 14210342,
+      "material_amount": 4821
+    },
+    {
+      "id": 14210333,
+      "target_item_id": 14210343,
+      "material_amount": 4821
+    },
+    {
+      "id": 14210334,
+      "target_item_id": 14210344,
+      "material_amount": 4821
+    },
+    {
+      "id": 14210335,
+      "target_item_id": 14210345,
+      "material_amount": 4821
+    },
+    {
+      "id": 14210336,
+      "target_item_id": 14210346,
+      "material_amount": 4821
+    },
+    {
+      "id": 14210337,
+      "target_item_id": 14210347,
+      "material_amount": 4821
+    },
+    {
+      "id": 14210338,
+      "target_item_id": 14210348,
+      "material_amount": 4821
+    }
+  ]
+}

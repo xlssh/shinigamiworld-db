@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T11:24:13.079952Z",
+  "generatedAt": "2026-07-02T11:29:06.110883Z",
   "tables": {
     "articles": {
       "path": "/data/articles.json",
@@ -267,6 +267,34 @@
     },
     "temple_plies": {
       "path": "/data/temple_plies.json",
+      "rowCount": 12
+    },
+    "military": {
+      "path": "/data/military.json",
+      "rowCount": 36
+    },
+    "culling_magics": {
+      "path": "/data/culling_magics.json",
+      "rowCount": 1204
+    },
+    "culling_stages": {
+      "path": "/data/culling_stages.json",
+      "rowCount": 42
+    },
+    "equip_forging": {
+      "path": "/data/equip_forging.json",
+      "rowCount": 40
+    },
+    "equip_advancement": {
+      "path": "/data/equip_advancement.json",
+      "rowCount": 112
+    },
+    "nightmare_points": {
+      "path": "/data/nightmare_points.json",
+      "rowCount": 180
+    },
+    "nightmare_cities": {
+      "path": "/data/nightmare_cities.json",
       "rowCount": 12
     }
   }

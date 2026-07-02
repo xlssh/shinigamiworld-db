@@ -1,0 +1,846 @@
+{
+  "table": "culling_stages",
+  "rowCount": 42,
+  "rows": [
+    {
+      "id": 100001,
+      "name": "Gold Stone",
+      "location": 0,
+      "type": 1,
+      "army_id": 29850001,
+      "image": 11150014,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100002,
+      "name": "Gold Stone",
+      "location": 0,
+      "type": 2,
+      "army_id": 29850002,
+      "image": 11150015,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100003,
+      "name": "Gold Stone",
+      "location": 0,
+      "type": 3,
+      "army_id": 29850003,
+      "image": 11150016,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100004,
+      "name": "Wood Stone",
+      "location": 1,
+      "type": 1,
+      "army_id": 29850004,
+      "image": 11150017,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100005,
+      "name": "Wood Stone",
+      "location": 1,
+      "type": 2,
+      "army_id": 29850005,
+      "image": 11150018,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100006,
+      "name": "Wood Stone",
+      "location": 1,
+      "type": 3,
+      "army_id": 29850006,
+      "image": 11150019,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100007,
+      "name": "Water Stone",
+      "location": 2,
+      "type": 1,
+      "army_id": 29850007,
+      "image": 11150021,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100008,
+      "name": "Water Stone",
+      "location": 2,
+      "type": 2,
+      "army_id": 29850008,
+      "image": 11150022,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100009,
+      "name": "Water Stone",
+      "location": 2,
+      "type": 3,
+      "army_id": 29850009,
+      "image": 11150023,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100010,
+      "name": "Fire Stone",
+      "location": 3,
+      "type": 1,
+      "army_id": 29850010,
+      "image": 11150024,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100011,
+      "name": "Fire Stone",
+      "location": 3,
+      "type": 2,
+      "army_id": 29850011,
+      "image": 11150025,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100012,
+      "name": "Fire Stone",
+      "location": 3,
+      "type": 3,
+      "army_id": 29850012,
+      "image": 11150026,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100013,
+      "name": "Earth Stone",
+      "location": 4,
+      "type": 1,
+      "army_id": 29850013,
+      "image": 11150027,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100014,
+      "name": "Earth Stone",
+      "location": 4,
+      "type": 2,
+      "army_id": 29850014,
+      "image": 11150028,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100015,
+      "name": "Earth Stone",
+      "location": 4,
+      "type": 3,
+      "army_id": 29850015,
+      "image": 11150029,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100016,
+      "name": "Thunder Stone",
+      "location": 5,
+      "type": 1,
+      "army_id": 29850016,
+      "image": 11150030,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100017,
+      "name": "Thunder Stone",
+      "location": 5,
+      "type": 2,
+      "army_id": 29850017,
+      "image": 11150032,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100018,
+      "name": "Thunder Stone",
+      "location": 5,
+      "type": 3,
+      "army_id": 29850018,
+      "image": 11150033,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100019,
+      "name": "Wind Stone",
+      "location": 6,
+      "type": 1,
+      "army_id": 29850019,
+      "image": 11150034,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100020,
+      "name": "Wind Stone",
+      "location": 6,
+      "type": 2,
+      "army_id": 29850020,
+      "image": 11150035,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100021,
+      "name": "Wind Stone",
+      "location": 6,
+      "type": 3,
+      "army_id": 29850021,
+      "image": 11150036,
+      "award": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14107003,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100022,
+      "name": "Ice Stone",
+      "location": 7,
+      "type": 1,
+      "army_id": 29850022,
+      "image": 11150037,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100023,
+      "name": "Ice Stone",
+      "location": 7,
+      "type": 2,
+      "army_id": 29850023,
+      "image": 11150038,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100024,
+      "name": "Ice Stone",
+      "location": 7,
+      "type": 3,
+      "army_id": 29850024,
+      "image": 11150039,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100025,
+      "name": "Light Stone",
+      "location": 8,
+      "type": 1,
+      "army_id": 29850025,
+      "image": 11150040,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100026,
+      "name": "Light Stone",
+      "location": 8,
+      "type": 2,
+      "army_id": 29850026,
+      "image": 11150041,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100027,
+      "name": "Light Stone",
+      "location": 8,
+      "type": 3,
+      "army_id": 29850027,
+      "image": 11150043,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100028,
+      "name": "Shadow Stone",
+      "location": 9,
+      "type": 1,
+      "army_id": 29850028,
+      "image": 11150044,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100029,
+      "name": "Shadow Stone",
+      "location": 9,
+      "type": 2,
+      "army_id": 29850029,
+      "image": 11150045,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100030,
+      "name": "Shadow Stone",
+      "location": 9,
+      "type": 3,
+      "army_id": 29850030,
+      "image": 11150046,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100031,
+      "name": "Universe Stone",
+      "location": 10,
+      "type": 1,
+      "army_id": 29850031,
+      "image": 11150047,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100032,
+      "name": "Universe Stone",
+      "location": 10,
+      "type": 2,
+      "army_id": 29850032,
+      "image": 11150048,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100033,
+      "name": "Universe Stone",
+      "location": 10,
+      "type": 3,
+      "army_id": 29850033,
+      "image": 11150049,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100034,
+      "name": "Moon Stone",
+      "location": 11,
+      "type": 1,
+      "army_id": 29850034,
+      "image": 11150050,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100035,
+      "name": "Moon Stone",
+      "location": 11,
+      "type": 2,
+      "army_id": 29850035,
+      "image": 11150051,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100036,
+      "name": "Moon Stone",
+      "location": 11,
+      "type": 3,
+      "army_id": 29850036,
+      "image": 11150052,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100037,
+      "name": "Sun Stone",
+      "location": 12,
+      "type": 1,
+      "army_id": 29850037,
+      "image": 11150054,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100038,
+      "name": "Sun Stone",
+      "location": 12,
+      "type": 2,
+      "army_id": 29850038,
+      "image": 11150055,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100039,
+      "name": "Sun Stone",
+      "location": 12,
+      "type": 3,
+      "army_id": 29850039,
+      "image": 11150056,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    },
+    {
+      "id": 100040,
+      "name": "Colossus Stone",
+      "location": 13,
+      "type": 1,
+      "army_id": 29850040,
+      "image": 11150057,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100041,
+      "name": "Colossus Stone",
+      "location": 13,
+      "type": 2,
+      "army_id": 29850041,
+      "image": 11150058,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [],
+      "stage_clear": 0,
+      "need_level": 1
+    },
+    {
+      "id": 100042,
+      "name": "Colossus Stone",
+      "location": 13,
+      "type": 3,
+      "army_id": 29850042,
+      "image": 11150059,
+      "award": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 30
+        }
+      ],
+      "award_ex": [
+        {
+          "type": 1,
+          "code": 14111270,
+          "amount": 100
+        }
+      ],
+      "stage_clear": 1,
+      "need_level": 1
+    }
+  ]
+}

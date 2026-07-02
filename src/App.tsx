@@ -58,6 +58,10 @@ const SoulMapsPlannerPage = React.lazy(() => import('./routes/SoulMapsPlannerPag
 const BlackMarketPage = React.lazy(() => import('./routes/BlackMarketPage').then(m => ({ default: m.BlackMarketPage })));
 const BeastSoulsPlannerPage = React.lazy(() => import('./routes/BeastSoulsPlannerPage').then(m => ({ default: m.BeastSoulsPlannerPage })));
 const ShrineSimulatorPage = React.lazy(() => import('./routes/ShrineSimulatorPage').then(m => ({ default: m.ShrineSimulatorPage })));
+const MilitaryPage = React.lazy(() => import('./routes/MilitaryPage').then(m => ({ default: m.MilitaryPage })));
+const CullingPage = React.lazy(() => import('./routes/CullingPage').then(m => ({ default: m.CullingPage })));
+const ForgePlannerPage = React.lazy(() => import('./routes/ForgePlannerPage').then(m => ({ default: m.ForgePlannerPage })));
+const NightmareRealmsPage = React.lazy(() => import('./routes/NightmareRealmsPage').then(m => ({ default: m.NightmareRealmsPage })));
 
 
 function App() {
@@ -120,6 +124,10 @@ function App() {
             <Route path="/tools/black-market" element={<BlackMarketPage />} />
             <Route path="/tools/beast-souls" element={<BeastSoulsPlannerPage />} />
             <Route path="/tools/shrine-simulator" element={<ShrineSimulatorPage />} />
+            <Route path="/tools/military" element={<MilitaryPage />} />
+            <Route path="/tools/culling-tower" element={<CullingPage />} />
+            <Route path="/tools/forge-planner" element={<ForgePlannerPage />} />
+            <Route path="/tools/nightmare-realms" element={<NightmareRealmsPage />} />
           </Routes>
         </React.Suspense>
       </Layout>

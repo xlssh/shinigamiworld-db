@@ -1,0 +1,8080 @@
+{
+  "table": "nightmare_points",
+  "rowCount": 180,
+  "rows": [
+    {
+      "id": 15000001,
+      "name": "Normal Zanpakuto - Wabisuke",
+      "army_ids": [
+        21000001
+      ],
+      "battle_scene": 30014,
+      "role_model": 40016,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          348,
+          184
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15000002,
+      "name": "Normal Zanpakuto - Tobiume",
+      "army_ids": [
+        21000002
+      ],
+      "battle_scene": 30016,
+      "role_model": 40018,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          478,
+          212
+        ]
+      },
+      "to_target": [
+        [
+          368,
+          187
+        ],
+        [
+          380,
+          199
+        ],
+        [
+          396,
+          207
+        ],
+        [
+          415,
+          213
+        ],
+        [
+          433,
+          214
+        ],
+        [
+          452,
+          213
+        ]
+      ]
+    },
+    {
+      "id": 15000003,
+      "name": "Normal Zanpakuto - Haineko",
+      "army_ids": [
+        21000003
+      ],
+      "battle_scene": 30018,
+      "role_model": 40030,
+      "condition": [
+        10000003
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          608,
+          172
+        ]
+      },
+      "to_target": [
+        [
+          499,
+          200
+        ],
+        [
+          517,
+          190
+        ],
+        [
+          523,
+          174
+        ],
+        [
+          540,
+          163
+        ],
+        [
+          563,
+          161
+        ],
+        [
+          580,
+          163
+        ]
+      ]
+    },
+    {
+      "id": 15000004,
+      "name": "Normal Zanpakuto - Gegetsubiri",
+      "army_ids": [
+        21000004
+      ],
+      "battle_scene": 30022,
+      "role_model": 40088,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          673,
+          242
+        ]
+      },
+      "to_target": [
+        [
+          607,
+          191
+        ],
+        [
+          612,
+          208
+        ],
+        [
+          620,
+          224
+        ],
+        [
+          637,
+          234
+        ],
+        [
+          652,
+          239
+        ]
+      ]
+    },
+    {
+      "id": 15000005,
+      "name": "Normal Zanpakuto - Fujikujaku",
+      "army_ids": [
+        21000005
+      ],
+      "battle_scene": 30024,
+      "role_model": 40049,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          798,
+          226
+        ]
+      },
+      "to_target": [
+        [
+          688,
+          249
+        ],
+        [
+          713,
+          251
+        ],
+        [
+          731,
+          250
+        ],
+        [
+          753,
+          247
+        ],
+        [
+          772,
+          238
+        ]
+      ]
+    },
+    {
+      "id": 15000006,
+      "name": "Normal Zanpakuto - Suzumebachi",
+      "army_ids": [
+        21000006
+      ],
+      "battle_scene": 30026,
+      "role_model": 40069,
+      "condition": [
+        10000003
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          900,
+          240
+        ]
+      },
+      "to_target": [
+        [
+          819,
+          221
+        ],
+        [
+          839,
+          217
+        ],
+        [
+          857,
+          218
+        ],
+        [
+          875,
+          225
+        ]
+      ]
+    },
+    {
+      "id": 15000007,
+      "name": "Normal Zanpakuto - Tengen Myo'o",
+      "army_ids": [
+        21000007
+      ],
+      "battle_scene": 30406,
+      "role_model": 40048,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          881,
+          365
+        ]
+      },
+      "to_target": [
+        [
+          907,
+          255
+        ],
+        [
+          914,
+          273
+        ],
+        [
+          915,
+          292
+        ],
+        [
+          913,
+          313
+        ],
+        [
+          906,
+          331
+        ],
+        [
+          898,
+          348
+        ]
+      ]
+    },
+    {
+      "id": 15000008,
+      "name": "Normal Zanpakuto - Hoozukimaru",
+      "army_ids": [
+        21000008
+      ],
+      "battle_scene": 30026,
+      "role_model": 40068,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          798,
+          451
+        ]
+      },
+      "to_target": [
+        [
+          875,
+          377
+        ],
+        [
+          856,
+          390
+        ],
+        [
+          837,
+          401
+        ],
+        [
+          822,
+          416
+        ],
+        [
+          813,
+          432
+        ]
+      ]
+    },
+    {
+      "id": 15000009,
+      "name": "Normal Zanpakuto - Zabimaru",
+      "army_ids": [
+        21000009
+      ],
+      "battle_scene": 30023,
+      "role_model": 40074,
+      "condition": [
+        10000001
+      ],
+      "help_hero_id": 12480109,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          702,
+          517
+        ]
+      },
+      "to_target": [
+        [
+          791,
+          468
+        ],
+        [
+          781,
+          483
+        ],
+        [
+          766,
+          496
+        ],
+        [
+          748,
+          508
+        ],
+        [
+          726,
+          515
+        ]
+      ]
+    },
+    {
+      "id": 15000010,
+      "name": "Normal Zanpakuto - Zangetsu",
+      "army_ids": [
+        21000010
+      ],
+      "battle_scene": 30027,
+      "role_model": 40083,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          577,
+          471
+        ]
+      },
+      "to_target": [
+        [
+          675,
+          513
+        ],
+        [
+          653,
+          500
+        ],
+        [
+          637,
+          484
+        ],
+        [
+          618,
+          476
+        ],
+        [
+          598,
+          474
+        ]
+      ]
+    },
+    {
+      "id": 15000011,
+      "name": "Normal Zanpakuto - Sogyo no Kotowari",
+      "army_ids": [
+        21000011
+      ],
+      "battle_scene": 30021,
+      "role_model": 40019,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          418,
+          493
+        ]
+      },
+      "to_target": [
+        [
+          548,
+          474
+        ],
+        [
+          525,
+          485
+        ],
+        [
+          509,
+          499
+        ],
+        [
+          485,
+          503
+        ],
+        [
+          460,
+          502
+        ],
+        [
+          439,
+          498
+        ]
+      ]
+    },
+    {
+      "id": 15000012,
+      "name": "Normal Zanpakuto - Sode no Shirayuki",
+      "army_ids": [
+        21000012
+      ],
+      "battle_scene": 30017,
+      "role_model": 40086,
+      "condition": [
+        10000001
+      ],
+      "help_hero_id": 12480112,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          349,
+          386
+        ]
+      },
+      "to_target": [
+        [
+          395,
+          477
+        ],
+        [
+          380,
+          462
+        ],
+        [
+          367,
+          444
+        ],
+        [
+          360,
+          426
+        ],
+        [
+          355,
+          403
+        ]
+      ]
+    },
+    {
+      "id": 15000013,
+      "name": "Normal Zanpakuto - Senbonzakura",
+      "army_ids": [
+        21000013
+      ],
+      "battle_scene": 30013,
+      "role_model": 40079,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          462,
+          331
+        ]
+      },
+      "to_target": [
+        [
+          361,
+          356
+        ],
+        [
+          369,
+          334
+        ],
+        [
+          384,
+          323
+        ],
+        [
+          405,
+          316
+        ],
+        [
+          423,
+          315
+        ],
+        [
+          440,
+          319
+        ]
+      ]
+    },
+    {
+      "id": 15000014,
+      "name": "Normal Zanpakuto - Hyorinmaru",
+      "army_ids": [
+        21000014
+      ],
+      "battle_scene": 30011,
+      "role_model": 40058,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          584,
+          338
+        ]
+      },
+      "to_target": [
+        [
+          473,
+          341
+        ],
+        [
+          488,
+          348
+        ],
+        [
+          508,
+          351
+        ],
+        [
+          527,
+          351
+        ],
+        [
+          547,
+          346
+        ],
+        [
+          563,
+          341
+        ]
+      ]
+    },
+    {
+      "id": 15000015,
+      "name": "Normal Zanpakuto - Tensa Zangetsu",
+      "army_ids": [
+        21000015
+      ],
+      "battle_scene": 30004,
+      "role_model": 40085,
+      "condition": [
+        10000003
+      ],
+      "help_hero_id": 12480115,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          694,
+          369
+        ]
+      },
+      "to_target": [
+        [
+          604,
+          327
+        ],
+        [
+          625,
+          323
+        ],
+        [
+          646,
+          325
+        ],
+        [
+          663,
+          333
+        ],
+        [
+          677,
+          344
+        ]
+      ]
+    },
+    {
+      "id": 15000101,
+      "name": "Hard Zanpakuto - Wabisuke",
+      "army_ids": [
+        21000101
+      ],
+      "battle_scene": 30014,
+      "role_model": 40016,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          335,
+          330
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15000102,
+      "name": "Hard Zanpakuto - Tobiume",
+      "army_ids": [
+        21000102
+      ],
+      "battle_scene": 30016,
+      "role_model": 40018,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          442,
+          279
+        ]
+      },
+      "to_target": [
+        [
+          356,
+          306
+        ],
+        [
+          370,
+          291
+        ],
+        [
+          391,
+          282
+        ],
+        [
+          414,
+          280
+        ]
+      ]
+    },
+    {
+      "id": 15000103,
+      "name": "Hard Zanpakuto - Haineko",
+      "army_ids": [
+        21000103
+      ],
+      "battle_scene": 30018,
+      "role_model": 40030,
+      "condition": [
+        10000004,
+        10000010
+      ],
+      "help_hero_id": 12480203,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          567,
+          265
+        ]
+      },
+      "to_target": [
+        [
+          464,
+          281
+        ],
+        [
+          488,
+          282
+        ],
+        [
+          507,
+          280
+        ],
+        [
+          524,
+          277
+        ],
+        [
+          541,
+          270
+        ]
+      ]
+    },
+    {
+      "id": 15000104,
+      "name": "Hard Zanpakuto - Gegetsubiri",
+      "army_ids": [
+        21000104
+      ],
+      "battle_scene": 30022,
+      "role_model": 40088,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          653,
+          199
+        ]
+      },
+      "to_target": [
+        [
+          584,
+          252
+        ],
+        [
+          594,
+          238
+        ],
+        [
+          598,
+          221
+        ],
+        [
+          603,
+          204
+        ],
+        [
+          618,
+          193
+        ]
+      ]
+    },
+    {
+      "id": 15000105,
+      "name": "Hard Zanpakuto - Fujikujaku",
+      "army_ids": [
+        21000105
+      ],
+      "battle_scene": 30024,
+      "role_model": 40049,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          775,
+          219
+        ]
+      },
+      "to_target": [
+        [
+          677,
+          202
+        ],
+        [
+          693,
+          213
+        ],
+        [
+          715,
+          220
+        ],
+        [
+          737,
+          224
+        ],
+        [
+          754,
+          223
+        ]
+      ]
+    },
+    {
+      "id": 15000106,
+      "name": "Hard Zanpakuto - Suzumebachi",
+      "army_ids": [
+        21000106
+      ],
+      "battle_scene": 30026,
+      "role_model": 40069,
+      "condition": [
+        10000001,
+        10000013
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          884,
+          227
+        ]
+      },
+      "to_target": [
+        [
+          794,
+          213
+        ],
+        [
+          810,
+          202
+        ],
+        [
+          832,
+          198
+        ],
+        [
+          849,
+          202
+        ],
+        [
+          864,
+          208
+        ]
+      ]
+    },
+    {
+      "id": 15000107,
+      "name": "Hard Zanpakuto - Tengen Myo'o",
+      "army_ids": [
+        21000107
+      ],
+      "battle_scene": 30406,
+      "role_model": 40048,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          979,
+          281
+        ]
+      },
+      "to_target": [
+        [
+          864,
+          208
+        ],
+        [
+          896,
+          239
+        ],
+        [
+          907,
+          250
+        ],
+        [
+          921,
+          260
+        ],
+        [
+          936,
+          270
+        ],
+        [
+          954,
+          275
+        ]
+      ]
+    },
+    {
+      "id": 15000108,
+      "name": "Hard Zanpakuto - Hoozukimaru",
+      "army_ids": [
+        21000108
+      ],
+      "battle_scene": 30026,
+      "role_model": 40068,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          958,
+          410
+        ]
+      },
+      "to_target": [
+        [
+          1000,
+          284
+        ],
+        [
+          1018,
+          299
+        ],
+        [
+          1024,
+          321
+        ],
+        [
+          1020,
+          341
+        ],
+        [
+          1012,
+          361
+        ],
+        [
+          1002,
+          378
+        ],
+        [
+          991,
+          392
+        ],
+        [
+          977,
+          402
+        ]
+      ]
+    },
+    {
+      "id": 15000109,
+      "name": "Hard Zanpakuto - Zabimaru",
+      "army_ids": [
+        21000109
+      ],
+      "battle_scene": 30023,
+      "role_model": 40074,
+      "condition": [
+        10000002,
+        10000029
+      ],
+      "help_hero_id": 12480209,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          822,
+          413
+        ]
+      },
+      "to_target": [
+        [
+          935,
+          416
+        ],
+        [
+          912,
+          423
+        ],
+        [
+          887,
+          425
+        ],
+        [
+          863,
+          425
+        ],
+        [
+          842,
+          422
+        ]
+      ]
+    },
+    {
+      "id": 15000110,
+      "name": "Hard Zanpakuto - Zangetsu",
+      "army_ids": [
+        21000110
+      ],
+      "battle_scene": 30027,
+      "role_model": 40083,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          737,
+          340
+        ]
+      },
+      "to_target": [
+        [
+          800,
+          402
+        ],
+        [
+          785,
+          386
+        ],
+        [
+          777,
+          366
+        ],
+        [
+          758,
+          352
+        ]
+      ]
+    },
+    {
+      "id": 15000111,
+      "name": "Hard Zanpakuto - Sogyo no Kotowari",
+      "army_ids": [
+        21000111
+      ],
+      "battle_scene": 30021,
+      "role_model": 40019,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          635,
+          400
+        ]
+      },
+      "to_target": [
+        [
+          710,
+          339
+        ],
+        [
+          688,
+          341
+        ],
+        [
+          668,
+          350
+        ],
+        [
+          656,
+          362
+        ],
+        [
+          649,
+          375
+        ]
+      ]
+    },
+    {
+      "id": 15000112,
+      "name": "Hard Zanpakuto - Sode no Shirayuki",
+      "army_ids": [
+        21000112
+      ],
+      "battle_scene": 30017,
+      "role_model": 40086,
+      "condition": [
+        10000001,
+        10000008
+      ],
+      "help_hero_id": 12480212,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          562,
+          502
+        ]
+      },
+      "to_target": [
+        [
+          630,
+          414
+        ],
+        [
+          626,
+          432
+        ],
+        [
+          620,
+          447
+        ],
+        [
+          606,
+          455
+        ],
+        [
+          591,
+          464
+        ],
+        [
+          578,
+          479
+        ]
+      ]
+    },
+    {
+      "id": 15000113,
+      "name": "Hard Zanpakuto - Senbonzakura",
+      "army_ids": [
+        21000113
+      ],
+      "battle_scene": 30013,
+      "role_model": 40079,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          681,
+          533
+        ]
+      },
+      "to_target": [
+        [
+          565,
+          517
+        ],
+        [
+          569,
+          537
+        ],
+        [
+          584,
+          551
+        ],
+        [
+          609,
+          555
+        ],
+        [
+          633,
+          552
+        ],
+        [
+          652,
+          544
+        ]
+      ]
+    },
+    {
+      "id": 15000114,
+      "name": "Hard Zanpakuto - Hyorinmaru",
+      "army_ids": [
+        21000114
+      ],
+      "battle_scene": 30011,
+      "role_model": 40058,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          799,
+          551
+        ]
+      },
+      "to_target": [
+        [
+          702,
+          526
+        ],
+        [
+          719,
+          515
+        ],
+        [
+          737,
+          513
+        ],
+        [
+          754,
+          519
+        ],
+        [
+          767,
+          526
+        ],
+        [
+          777,
+          538
+        ]
+      ]
+    },
+    {
+      "id": 15000115,
+      "name": "Hard Zanpakuto - Tensa Zangetsu",
+      "army_ids": [
+        21000115
+      ],
+      "battle_scene": 30004,
+      "role_model": 40085,
+      "condition": [
+        10000002,
+        10000016
+      ],
+      "help_hero_id": 12480215,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          922,
+          536
+        ]
+      },
+      "to_target": [
+        [
+          811,
+          560
+        ],
+        [
+          827,
+          564
+        ],
+        [
+          842,
+          559
+        ],
+        [
+          852,
+          547
+        ],
+        [
+          865,
+          537
+        ],
+        [
+          882,
+          534
+        ],
+        [
+          899,
+          535
+        ]
+      ]
+    },
+    {
+      "id": 15000201,
+      "name": "Nightmare Zanpakuto - Wabisuke",
+      "army_ids": [
+        21000201
+      ],
+      "battle_scene": 30014,
+      "role_model": 40016,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          583,
+          493
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15000202,
+      "name": "Nightmare Zanpakuto - Tobiume",
+      "army_ids": [
+        21000202
+      ],
+      "battle_scene": 30016,
+      "role_model": 40018,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          470,
+          489
+        ]
+      },
+      "to_target": [
+        [
+          557,
+          483
+        ],
+        [
+          537,
+          481
+        ],
+        [
+          515,
+          481
+        ],
+        [
+          493,
+          487
+        ]
+      ]
+    },
+    {
+      "id": 15000203,
+      "name": "Nightmare Zanpakuto - Haineko",
+      "army_ids": [
+        21000203
+      ],
+      "battle_scene": 30018,
+      "role_model": 40030,
+      "condition": [
+        10000001,
+        10000017,
+        10000035
+      ],
+      "help_hero_id": 12480303,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          348,
+          467
+        ]
+      },
+      "to_target": [
+        [
+          435,
+          509
+        ],
+        [
+          423,
+          527
+        ],
+        [
+          405,
+          540
+        ],
+        [
+          382,
+          542
+        ],
+        [
+          359,
+          526
+        ],
+        [
+          342,
+          504
+        ]
+      ]
+    },
+    {
+      "id": 15000204,
+      "name": "Nightmare Zanpakuto - Gegetsubiri",
+      "army_ids": [
+        21000204
+      ],
+      "battle_scene": 30022,
+      "role_model": 40088,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          337,
+          231
+        ]
+      },
+      "to_target": [
+        [
+          342,
+          395
+        ],
+        [
+          358,
+          371
+        ],
+        [
+          365,
+          348
+        ],
+        [
+          364,
+          316
+        ],
+        [
+          358,
+          288
+        ],
+        [
+          345,
+          260
+        ]
+      ]
+    },
+    {
+      "id": 15000205,
+      "name": "Nightmare Zanpakuto - Fujikujaku",
+      "army_ids": [
+        21000205
+      ],
+      "battle_scene": 30024,
+      "role_model": 40049,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          462,
+          224
+        ]
+      },
+      "to_target": [
+        [
+          359,
+          161
+        ],
+        [
+          385,
+          148
+        ],
+        [
+          413,
+          156
+        ],
+        [
+          429,
+          178
+        ],
+        [
+          444,
+          210
+        ]
+      ]
+    },
+    {
+      "id": 15000206,
+      "name": "Nightmare Zanpakuto - Suzumebachi",
+      "army_ids": [
+        21000206
+      ],
+      "battle_scene": 30026,
+      "role_model": 40069,
+      "condition": [
+        10000001,
+        10000020,
+        10000035
+      ],
+      "help_hero_id": 12480306,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          614,
+          224
+        ]
+      },
+      "to_target": [
+        [
+          468,
+          239
+        ],
+        [
+          484,
+          259
+        ],
+        [
+          503,
+          268
+        ],
+        [
+          527,
+          269
+        ],
+        [
+          546,
+          255
+        ],
+        [
+          559,
+          240
+        ],
+        [
+          578,
+          234
+        ],
+        [
+          596,
+          232
+        ]
+      ]
+    },
+    {
+      "id": 15000207,
+      "name": "Nightmare Zanpakuto - Tengen Myo'o",
+      "army_ids": [
+        21000207
+      ],
+      "battle_scene": 30406,
+      "role_model": 40048,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          732,
+          188
+        ]
+      },
+      "to_target": [
+        [
+          634,
+          207
+        ],
+        [
+          654,
+          198
+        ],
+        [
+          682,
+          195
+        ],
+        [
+          712,
+          200
+        ]
+      ]
+    },
+    {
+      "id": 15000208,
+      "name": "Nightmare Zanpakuto - Hoozukimaru",
+      "army_ids": [
+        21000208
+      ],
+      "battle_scene": 30026,
+      "role_model": 40068,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          869,
+          206
+        ]
+      },
+      "to_target": [
+        [
+          754,
+          187
+        ],
+        [
+          775,
+          178
+        ],
+        [
+          794,
+          168
+        ],
+        [
+          824,
+          168
+        ],
+        [
+          845,
+          177
+        ],
+        [
+          861,
+          188
+        ]
+      ]
+    },
+    {
+      "id": 15000209,
+      "name": "Nightmare Zanpakuto - Zabimaru",
+      "army_ids": [
+        21000209
+      ],
+      "battle_scene": 30023,
+      "role_model": 40074,
+      "condition": [
+        10000005,
+        10000013
+      ],
+      "help_hero_id": 12480309,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          929,
+          294
+        ]
+      },
+      "to_target": [
+        [
+          870,
+          214
+        ],
+        [
+          866,
+          234
+        ],
+        [
+          854,
+          249
+        ],
+        [
+          847,
+          265
+        ],
+        [
+          850,
+          281
+        ],
+        [
+          863,
+          291
+        ],
+        [
+          877,
+          291
+        ],
+        [
+          897,
+          287
+        ]
+      ]
+    },
+    {
+      "id": 15000210,
+      "name": "Nightmare Zanpakuto - Zangetsu",
+      "army_ids": [
+        21000210
+      ],
+      "battle_scene": 30027,
+      "role_model": 40083,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          1002,
+          402
+        ]
+      },
+      "to_target": [
+        [
+          944,
+          300
+        ],
+        [
+          971,
+          314
+        ],
+        [
+          985,
+          334
+        ],
+        [
+          981,
+          357
+        ],
+        [
+          977,
+          376
+        ],
+        [
+          983,
+          395
+        ]
+      ]
+    },
+    {
+      "id": 15000211,
+      "name": "Nightmare Zanpakuto - Sogyo no Kotowari",
+      "army_ids": [
+        21000211
+      ],
+      "battle_scene": 30021,
+      "role_model": 40019,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          950,
+          517
+        ]
+      },
+      "to_target": [
+        [
+          1008,
+          413
+        ],
+        [
+          1022,
+          436
+        ],
+        [
+          1021,
+          454
+        ],
+        [
+          1010,
+          478
+        ],
+        [
+          989,
+          487
+        ],
+        [
+          977,
+          501
+        ]
+      ]
+    },
+    {
+      "id": 15000212,
+      "name": "Nightmare Zanpakuto - Sode no Shirayuki",
+      "army_ids": [
+        21000212
+      ],
+      "battle_scene": 30017,
+      "role_model": 40086,
+      "condition": [
+        10000003,
+        10000016
+      ],
+      "help_hero_id": 12480312,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          809,
+          481
+        ]
+      },
+      "to_target": [
+        [
+          918,
+          515
+        ],
+        [
+          891,
+          506
+        ],
+        [
+          877,
+          481
+        ],
+        [
+          854,
+          470
+        ],
+        [
+          834,
+          478
+        ]
+      ]
+    },
+    {
+      "id": 15000213,
+      "name": "Nightmare Zanpakuto - Senbonzakura",
+      "army_ids": [
+        21000213
+      ],
+      "battle_scene": 30013,
+      "role_model": 40079,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          767,
+          336
+        ]
+      },
+      "to_target": [
+        [
+          777,
+          463
+        ],
+        [
+          765,
+          439
+        ],
+        [
+          766,
+          413
+        ],
+        [
+          773,
+          394
+        ],
+        [
+          782,
+          376
+        ],
+        [
+          771,
+          353
+        ]
+      ]
+    },
+    {
+      "id": 15000214,
+      "name": "Nightmare Zanpakuto - Hyorinmaru",
+      "army_ids": [
+        21000214
+      ],
+      "battle_scene": 30011,
+      "role_model": 40058,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          674,
+          340
+        ]
+      },
+      "to_target": [
+        [
+          747,
+          322
+        ],
+        [
+          728,
+          310
+        ],
+        [
+          707,
+          310
+        ],
+        [
+          688,
+          319
+        ],
+        [
+          679,
+          333
+        ]
+      ]
+    },
+    {
+      "id": 15000215,
+      "name": "Nightmare Zanpakuto - Tensa Zangetsu",
+      "army_ids": [
+        21000215
+      ],
+      "battle_scene": 30004,
+      "role_model": 40085,
+      "condition": [
+        10000001,
+        10000020,
+        10000033
+      ],
+      "help_hero_id": 12480315,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          538,
+          354
+        ]
+      },
+      "to_target": [
+        [
+          673,
+          350
+        ],
+        [
+          662,
+          364
+        ],
+        [
+          640,
+          361
+        ],
+        [
+          609,
+          354
+        ],
+        [
+          582,
+          354
+        ],
+        [
+          563,
+          355
+        ]
+      ]
+    },
+    {
+      "id": 15000301,
+      "name": "Inferno Zanpakuto - Wabisuke",
+      "army_ids": [
+        21000301
+      ],
+      "battle_scene": 30014,
+      "role_model": 40016,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          310,
+          227
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15000302,
+      "name": "Inferno Zanpakuto - Tobiume",
+      "army_ids": [
+        21000302
+      ],
+      "battle_scene": 30016,
+      "role_model": 40018,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          214,
+          286
+        ]
+      },
+      "to_target": [
+        [
+          286,
+          232
+        ],
+        [
+          263,
+          233
+        ],
+        [
+          247,
+          234
+        ],
+        [
+          233,
+          247
+        ],
+        [
+          230,
+          261
+        ],
+        [
+          227,
+          277
+        ]
+      ]
+    },
+    {
+      "id": 15000303,
+      "name": "Inferno Zanpakuto - Haineko",
+      "army_ids": [
+        21000303
+      ],
+      "battle_scene": 30018,
+      "role_model": 40030,
+      "condition": [
+        10000002,
+        10000008,
+        10000049
+      ],
+      "help_hero_id": 12480403,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          290,
+          389
+        ]
+      },
+      "to_target": [
+        [
+          209,
+          303
+        ],
+        [
+          197,
+          316
+        ],
+        [
+          180,
+          323
+        ],
+        [
+          168,
+          336
+        ],
+        [
+          168,
+          348
+        ],
+        [
+          175,
+          367
+        ],
+        [
+          193,
+          376
+        ],
+        [
+          212,
+          376
+        ],
+        [
+          233,
+          370
+        ],
+        [
+          246,
+          366
+        ],
+        [
+          263,
+          371
+        ],
+        [
+          270,
+          381
+        ]
+      ]
+    },
+    {
+      "id": 15000304,
+      "name": "Inferno Zanpakuto - Gegetsubiri",
+      "army_ids": [
+        21000304
+      ],
+      "battle_scene": 30022,
+      "role_model": 40088,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          371,
+          460
+        ]
+      },
+      "to_target": [
+        [
+          291,
+          397
+        ],
+        [
+          294,
+          420
+        ],
+        [
+          286,
+          440
+        ],
+        [
+          286,
+          460
+        ],
+        [
+          295,
+          474
+        ],
+        [
+          309,
+          483
+        ],
+        [
+          326,
+          481
+        ],
+        [
+          338,
+          471
+        ],
+        [
+          353,
+          465
+        ]
+      ]
+    },
+    {
+      "id": 15000305,
+      "name": "Inferno Zanpakuto - Fujikujaku",
+      "army_ids": [
+        21000305
+      ],
+      "battle_scene": 30024,
+      "role_model": 40049,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          526,
+          474
+        ]
+      },
+      "to_target": [
+        [
+          398,
+          453
+        ],
+        [
+          416,
+          462
+        ],
+        [
+          431,
+          473
+        ],
+        [
+          439,
+          488
+        ],
+        [
+          458,
+          491
+        ],
+        [
+          470,
+          486
+        ],
+        [
+          484,
+          475
+        ],
+        [
+          506,
+          472
+        ]
+      ]
+    },
+    {
+      "id": 15000306,
+      "name": "Inferno Zanpakuto - Suzumebachi",
+      "army_ids": [
+        21000306
+      ],
+      "battle_scene": 30026,
+      "role_model": 40069,
+      "condition": [
+        10000005,
+        10000010,
+        10000014
+      ],
+      "help_hero_id": 12480406,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          675,
+          456
+        ]
+      },
+      "to_target": [
+        [
+          551,
+          475
+        ],
+        [
+          570,
+          469
+        ],
+        [
+          584,
+          455
+        ],
+        [
+          594,
+          441
+        ],
+        [
+          605,
+          431
+        ],
+        [
+          619,
+          428
+        ],
+        [
+          635,
+          429
+        ],
+        [
+          643,
+          438
+        ],
+        [
+          660,
+          449
+        ]
+      ]
+    },
+    {
+      "id": 15000307,
+      "name": "Inferno Zanpakuto - Tengen Myo'o",
+      "army_ids": [
+        21000307
+      ],
+      "battle_scene": 30406,
+      "role_model": 40048,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          771,
+          511
+        ]
+      },
+      "to_target": [
+        [
+          682,
+          463
+        ],
+        [
+          696,
+          486
+        ],
+        [
+          713,
+          495
+        ],
+        [
+          735,
+          487
+        ],
+        [
+          752,
+          496
+        ]
+      ]
+    },
+    {
+      "id": 15000308,
+      "name": "Inferno Zanpakuto - Hoozukimaru",
+      "army_ids": [
+        21000308
+      ],
+      "battle_scene": 30026,
+      "role_model": 40068,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          915,
+          455
+        ]
+      },
+      "to_target": [
+        [
+          786,
+          524
+        ],
+        [
+          798,
+          535
+        ],
+        [
+          813,
+          541
+        ],
+        [
+          828,
+          542
+        ],
+        [
+          850,
+          541
+        ],
+        [
+          863,
+          530
+        ],
+        [
+          877,
+          511
+        ],
+        [
+          886,
+          490
+        ],
+        [
+          896,
+          468
+        ]
+      ]
+    },
+    {
+      "id": 15000309,
+      "name": "Inferno Zanpakuto - Zabimaru",
+      "army_ids": [
+        21000309
+      ],
+      "battle_scene": 30023,
+      "role_model": 40074,
+      "condition": [
+        10000004,
+        10000009,
+        10000050,
+        10000033
+      ],
+      "help_hero_id": 12480409,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          1007,
+          258
+        ]
+      },
+      "to_target": [
+        [
+          935,
+          439
+        ],
+        [
+          953,
+          435
+        ],
+        [
+          972,
+          436
+        ],
+        [
+          991,
+          431
+        ],
+        [
+          1004,
+          418
+        ],
+        [
+          1005,
+          394
+        ],
+        [
+          993,
+          376
+        ],
+        [
+          981,
+          361
+        ],
+        [
+          976,
+          335
+        ],
+        [
+          984,
+          317
+        ],
+        [
+          1001,
+          301
+        ],
+        [
+          1004,
+          279
+        ]
+      ]
+    },
+    {
+      "id": 15000310,
+      "name": "Inferno Zanpakuto - Zangetsu",
+      "army_ids": [
+        21000310
+      ],
+      "battle_scene": 30027,
+      "role_model": 40083,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          874,
+          160
+        ]
+      },
+      "to_target": [
+        [
+          989,
+          183
+        ],
+        [
+          972,
+          164
+        ],
+        [
+          945,
+          153
+        ],
+        [
+          916,
+          149
+        ],
+        [
+          898,
+          151
+        ]
+      ]
+    },
+    {
+      "id": 15000311,
+      "name": "Inferno Zanpakuto - Sogyo no Kotowari",
+      "army_ids": [
+        21000311
+      ],
+      "battle_scene": 30021,
+      "role_model": 40019,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          785,
+          253
+        ]
+      },
+      "to_target": [
+        [
+          867,
+          176
+        ],
+        [
+          865,
+          194
+        ],
+        [
+          869,
+          210
+        ],
+        [
+          862,
+          228
+        ],
+        [
+          839,
+          233
+        ],
+        [
+          822,
+          238
+        ],
+        [
+          807,
+          253
+        ]
+      ]
+    },
+    {
+      "id": 15000312,
+      "name": "Inferno Zanpakuto - Sode no Shirayuki",
+      "army_ids": [
+        21000312
+      ],
+      "battle_scene": 30017,
+      "role_model": 40086,
+      "condition": [
+        10000001,
+        10000035,
+        10000039,
+        10000046
+      ],
+      "help_hero_id": 12480412,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          659,
+          185
+        ]
+      },
+      "to_target": [
+        [
+          767,
+          262
+        ],
+        [
+          760,
+          279
+        ],
+        [
+          746,
+          289
+        ],
+        [
+          725,
+          289
+        ],
+        [
+          704,
+          279
+        ],
+        [
+          689,
+          266
+        ],
+        [
+          681,
+          252
+        ],
+        [
+          683,
+          226
+        ],
+        [
+          676,
+          203
+        ]
+      ]
+    },
+    {
+      "id": 15000313,
+      "name": "Inferno Zanpakuto - Senbonzakura",
+      "army_ids": [
+        21000313
+      ],
+      "battle_scene": 30013,
+      "role_model": 40079,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          572,
+          284
+        ]
+      },
+      "to_target": [
+        [
+          639,
+          169
+        ],
+        [
+          620,
+          170
+        ],
+        [
+          608,
+          184
+        ],
+        [
+          606,
+          198
+        ],
+        [
+          610,
+          218
+        ],
+        [
+          613,
+          236
+        ],
+        [
+          618,
+          254
+        ],
+        [
+          619,
+          271
+        ],
+        [
+          614,
+          285
+        ],
+        [
+          600,
+          297
+        ],
+        [
+          584,
+          294
+        ]
+      ]
+    },
+    {
+      "id": 15000314,
+      "name": "Inferno Zanpakuto - Hyorinmaru",
+      "army_ids": [
+        21000314
+      ],
+      "battle_scene": 30011,
+      "role_model": 40058,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          459,
+          206
+        ]
+      },
+      "to_target": [
+        [
+          551,
+          270
+        ],
+        [
+          539,
+          247
+        ],
+        [
+          534,
+          221
+        ],
+        [
+          538,
+          202
+        ],
+        [
+          533,
+          180
+        ],
+        [
+          515,
+          175
+        ],
+        [
+          493,
+          181
+        ],
+        [
+          483,
+          191
+        ],
+        [
+          477,
+          201
+        ]
+      ]
+    },
+    {
+      "id": 15000315,
+      "name": "Inferno Zanpakuto - Tensa Zangetsu",
+      "army_ids": [
+        21000315
+      ],
+      "battle_scene": 30004,
+      "role_model": 40085,
+      "condition": [
+        10000008,
+        10000050
+      ],
+      "help_hero_id": 12480415,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          387,
+          335
+        ]
+      },
+      "to_target": [
+        [
+          446,
+          215
+        ],
+        [
+          440,
+          233
+        ],
+        [
+          442,
+          246
+        ],
+        [
+          450,
+          259
+        ],
+        [
+          466,
+          267
+        ],
+        [
+          479,
+          272
+        ],
+        [
+          484,
+          287
+        ],
+        [
+          482,
+          298
+        ],
+        [
+          471,
+          306
+        ],
+        [
+          459,
+          310
+        ],
+        [
+          437,
+          311
+        ],
+        [
+          419,
+          309
+        ],
+        [
+          401,
+          314
+        ],
+        [
+          396,
+          328
+        ]
+      ]
+    },
+    {
+      "id": 15000401,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000401
+      ],
+      "battle_scene": 30014,
+      "role_model": 40001,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          348,
+          184
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15000402,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000402
+      ],
+      "battle_scene": 30016,
+      "role_model": 40002,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          478,
+          212
+        ]
+      },
+      "to_target": [
+        [
+          368,
+          187
+        ],
+        [
+          380,
+          199
+        ],
+        [
+          396,
+          207
+        ],
+        [
+          415,
+          213
+        ],
+        [
+          433,
+          214
+        ],
+        [
+          452,
+          213
+        ]
+      ]
+    },
+    {
+      "id": 15000403,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000403
+      ],
+      "battle_scene": 30018,
+      "role_model": 40003,
+      "condition": [
+        10000011
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          608,
+          172
+        ]
+      },
+      "to_target": [
+        [
+          499,
+          200
+        ],
+        [
+          517,
+          190
+        ],
+        [
+          523,
+          174
+        ],
+        [
+          540,
+          163
+        ],
+        [
+          563,
+          161
+        ],
+        [
+          580,
+          163
+        ]
+      ]
+    },
+    {
+      "id": 15000404,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000404
+      ],
+      "battle_scene": 30022,
+      "role_model": 40004,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          673,
+          242
+        ]
+      },
+      "to_target": [
+        [
+          607,
+          191
+        ],
+        [
+          612,
+          208
+        ],
+        [
+          620,
+          224
+        ],
+        [
+          637,
+          234
+        ],
+        [
+          652,
+          239
+        ]
+      ]
+    },
+    {
+      "id": 15000405,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000405
+      ],
+      "battle_scene": 30024,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          798,
+          226
+        ]
+      },
+      "to_target": [
+        [
+          688,
+          249
+        ],
+        [
+          713,
+          251
+        ],
+        [
+          731,
+          250
+        ],
+        [
+          753,
+          247
+        ],
+        [
+          772,
+          238
+        ]
+      ]
+    },
+    {
+      "id": 15000406,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000406
+      ],
+      "battle_scene": 30026,
+      "role_model": 40001,
+      "condition": [
+        10000011
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          900,
+          240
+        ]
+      },
+      "to_target": [
+        [
+          819,
+          221
+        ],
+        [
+          839,
+          217
+        ],
+        [
+          857,
+          218
+        ],
+        [
+          875,
+          225
+        ]
+      ]
+    },
+    {
+      "id": 15000407,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000407
+      ],
+      "battle_scene": 30406,
+      "role_model": 40002,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          881,
+          365
+        ]
+      },
+      "to_target": [
+        [
+          907,
+          255
+        ],
+        [
+          914,
+          273
+        ],
+        [
+          915,
+          292
+        ],
+        [
+          913,
+          313
+        ],
+        [
+          906,
+          331
+        ],
+        [
+          898,
+          348
+        ]
+      ]
+    },
+    {
+      "id": 15000408,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000408
+      ],
+      "battle_scene": 30026,
+      "role_model": 40003,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          798,
+          451
+        ]
+      },
+      "to_target": [
+        [
+          875,
+          377
+        ],
+        [
+          856,
+          390
+        ],
+        [
+          837,
+          401
+        ],
+        [
+          822,
+          416
+        ],
+        [
+          813,
+          432
+        ]
+      ]
+    },
+    {
+      "id": 15000409,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000409
+      ],
+      "battle_scene": 30023,
+      "role_model": 40004,
+      "condition": [
+        10000011
+      ],
+      "help_hero_id": 12480509,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          702,
+          517
+        ]
+      },
+      "to_target": [
+        [
+          791,
+          468
+        ],
+        [
+          781,
+          483
+        ],
+        [
+          766,
+          496
+        ],
+        [
+          748,
+          508
+        ],
+        [
+          726,
+          515
+        ]
+      ]
+    },
+    {
+      "id": 15000410,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000410
+      ],
+      "battle_scene": 30027,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          577,
+          471
+        ]
+      },
+      "to_target": [
+        [
+          675,
+          513
+        ],
+        [
+          653,
+          500
+        ],
+        [
+          637,
+          484
+        ],
+        [
+          618,
+          476
+        ],
+        [
+          598,
+          474
+        ]
+      ]
+    },
+    {
+      "id": 15000411,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000411
+      ],
+      "battle_scene": 30021,
+      "role_model": 40003,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          418,
+          493
+        ]
+      },
+      "to_target": [
+        [
+          548,
+          474
+        ],
+        [
+          525,
+          485
+        ],
+        [
+          509,
+          499
+        ],
+        [
+          485,
+          503
+        ],
+        [
+          460,
+          502
+        ],
+        [
+          439,
+          498
+        ]
+      ]
+    },
+    {
+      "id": 15000412,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000412
+      ],
+      "battle_scene": 30017,
+      "role_model": 40004,
+      "condition": [
+        10000003
+      ],
+      "help_hero_id": 12480512,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          349,
+          386
+        ]
+      },
+      "to_target": [
+        [
+          395,
+          477
+        ],
+        [
+          380,
+          462
+        ],
+        [
+          367,
+          444
+        ],
+        [
+          360,
+          426
+        ],
+        [
+          355,
+          403
+        ]
+      ]
+    },
+    {
+      "id": 15000413,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000413
+      ],
+      "battle_scene": 30013,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          462,
+          331
+        ]
+      },
+      "to_target": [
+        [
+          361,
+          356
+        ],
+        [
+          369,
+          334
+        ],
+        [
+          384,
+          323
+        ],
+        [
+          405,
+          316
+        ],
+        [
+          423,
+          315
+        ],
+        [
+          440,
+          319
+        ]
+      ]
+    },
+    {
+      "id": 15000414,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000414
+      ],
+      "battle_scene": 30011,
+      "role_model": 40073,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          584,
+          338
+        ]
+      },
+      "to_target": [
+        [
+          473,
+          341
+        ],
+        [
+          488,
+          348
+        ],
+        [
+          508,
+          351
+        ],
+        [
+          527,
+          351
+        ],
+        [
+          547,
+          346
+        ],
+        [
+          563,
+          341
+        ]
+      ]
+    },
+    {
+      "id": 15000415,
+      "name": "Normal Shinigami Agent",
+      "army_ids": [
+        21000415
+      ],
+      "battle_scene": 30004,
+      "role_model": 40078,
+      "condition": [
+        10000002
+      ],
+      "help_hero_id": 12480515,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          694,
+          369
+        ]
+      },
+      "to_target": [
+        [
+          604,
+          327
+        ],
+        [
+          625,
+          323
+        ],
+        [
+          646,
+          325
+        ],
+        [
+          663,
+          333
+        ],
+        [
+          677,
+          344
+        ]
+      ]
+    },
+    {
+      "id": 15000501,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000501
+      ],
+      "battle_scene": 30014,
+      "role_model": 40001,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          335,
+          330
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15000502,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000502
+      ],
+      "battle_scene": 30016,
+      "role_model": 40002,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          442,
+          279
+        ]
+      },
+      "to_target": [
+        [
+          356,
+          306
+        ],
+        [
+          370,
+          291
+        ],
+        [
+          391,
+          282
+        ],
+        [
+          414,
+          280
+        ]
+      ]
+    },
+    {
+      "id": 15000503,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000503
+      ],
+      "battle_scene": 30018,
+      "role_model": 40003,
+      "condition": [
+        10000011,
+        10000002
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          567,
+          265
+        ]
+      },
+      "to_target": [
+        [
+          464,
+          281
+        ],
+        [
+          488,
+          282
+        ],
+        [
+          507,
+          280
+        ],
+        [
+          524,
+          277
+        ],
+        [
+          541,
+          270
+        ]
+      ]
+    },
+    {
+      "id": 15000504,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000504
+      ],
+      "battle_scene": 30022,
+      "role_model": 40004,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          653,
+          199
+        ]
+      },
+      "to_target": [
+        [
+          584,
+          252
+        ],
+        [
+          594,
+          238
+        ],
+        [
+          598,
+          221
+        ],
+        [
+          603,
+          204
+        ],
+        [
+          618,
+          193
+        ]
+      ]
+    },
+    {
+      "id": 15000505,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000505
+      ],
+      "battle_scene": 30024,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          775,
+          219
+        ]
+      },
+      "to_target": [
+        [
+          677,
+          202
+        ],
+        [
+          693,
+          213
+        ],
+        [
+          715,
+          220
+        ],
+        [
+          737,
+          224
+        ],
+        [
+          754,
+          223
+        ]
+      ]
+    },
+    {
+      "id": 15000506,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000506
+      ],
+      "battle_scene": 30026,
+      "role_model": 40001,
+      "condition": [
+        10000011,
+        10000003
+      ],
+      "help_hero_id": 12480606,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          884,
+          227
+        ]
+      },
+      "to_target": [
+        [
+          794,
+          213
+        ],
+        [
+          810,
+          202
+        ],
+        [
+          832,
+          198
+        ],
+        [
+          849,
+          202
+        ],
+        [
+          864,
+          208
+        ]
+      ]
+    },
+    {
+      "id": 15000507,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000507
+      ],
+      "battle_scene": 30406,
+      "role_model": 40002,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          979,
+          281
+        ]
+      },
+      "to_target": [
+        [
+          864,
+          208
+        ],
+        [
+          896,
+          239
+        ],
+        [
+          907,
+          250
+        ],
+        [
+          921,
+          260
+        ],
+        [
+          936,
+          270
+        ],
+        [
+          954,
+          275
+        ]
+      ]
+    },
+    {
+      "id": 15000508,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000508
+      ],
+      "battle_scene": 30026,
+      "role_model": 40003,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          958,
+          410
+        ]
+      },
+      "to_target": [
+        [
+          1000,
+          284
+        ],
+        [
+          1018,
+          299
+        ],
+        [
+          1024,
+          321
+        ],
+        [
+          1020,
+          341
+        ],
+        [
+          1012,
+          361
+        ],
+        [
+          1002,
+          378
+        ],
+        [
+          991,
+          392
+        ],
+        [
+          977,
+          402
+        ]
+      ]
+    },
+    {
+      "id": 15000509,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000509
+      ],
+      "battle_scene": 30023,
+      "role_model": 40004,
+      "condition": [
+        10000011,
+        10000002
+      ],
+      "help_hero_id": 12480609,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          822,
+          413
+        ]
+      },
+      "to_target": [
+        [
+          935,
+          416
+        ],
+        [
+          912,
+          423
+        ],
+        [
+          887,
+          425
+        ],
+        [
+          863,
+          425
+        ],
+        [
+          842,
+          422
+        ]
+      ]
+    },
+    {
+      "id": 15000510,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000510
+      ],
+      "battle_scene": 30027,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          737,
+          340
+        ]
+      },
+      "to_target": [
+        [
+          800,
+          402
+        ],
+        [
+          785,
+          386
+        ],
+        [
+          777,
+          366
+        ],
+        [
+          758,
+          352
+        ]
+      ]
+    },
+    {
+      "id": 15000511,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000511
+      ],
+      "battle_scene": 30021,
+      "role_model": 40003,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          635,
+          400
+        ]
+      },
+      "to_target": [
+        [
+          710,
+          339
+        ],
+        [
+          688,
+          341
+        ],
+        [
+          668,
+          350
+        ],
+        [
+          656,
+          362
+        ],
+        [
+          649,
+          375
+        ]
+      ]
+    },
+    {
+      "id": 15000512,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000512
+      ],
+      "battle_scene": 30017,
+      "role_model": 40004,
+      "condition": [
+        10000003,
+        10000004
+      ],
+      "help_hero_id": 12480612,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          562,
+          502
+        ]
+      },
+      "to_target": [
+        [
+          630,
+          414
+        ],
+        [
+          626,
+          432
+        ],
+        [
+          620,
+          447
+        ],
+        [
+          606,
+          455
+        ],
+        [
+          591,
+          464
+        ],
+        [
+          578,
+          479
+        ]
+      ]
+    },
+    {
+      "id": 15000513,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000513
+      ],
+      "battle_scene": 30013,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          681,
+          533
+        ]
+      },
+      "to_target": [
+        [
+          565,
+          517
+        ],
+        [
+          569,
+          537
+        ],
+        [
+          584,
+          551
+        ],
+        [
+          609,
+          555
+        ],
+        [
+          633,
+          552
+        ],
+        [
+          652,
+          544
+        ]
+      ]
+    },
+    {
+      "id": 15000514,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000514
+      ],
+      "battle_scene": 30011,
+      "role_model": 40073,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          799,
+          551
+        ]
+      },
+      "to_target": [
+        [
+          702,
+          526
+        ],
+        [
+          719,
+          515
+        ],
+        [
+          737,
+          513
+        ],
+        [
+          754,
+          519
+        ],
+        [
+          767,
+          526
+        ],
+        [
+          777,
+          538
+        ]
+      ]
+    },
+    {
+      "id": 15000515,
+      "name": "Hard Shinigami Agent",
+      "army_ids": [
+        21000515
+      ],
+      "battle_scene": 30004,
+      "role_model": 40078,
+      "condition": [
+        10000002,
+        10000005
+      ],
+      "help_hero_id": 12480615,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          922,
+          536
+        ]
+      },
+      "to_target": [
+        [
+          811,
+          560
+        ],
+        [
+          827,
+          564
+        ],
+        [
+          842,
+          559
+        ],
+        [
+          852,
+          547
+        ],
+        [
+          865,
+          537
+        ],
+        [
+          882,
+          534
+        ],
+        [
+          899,
+          535
+        ]
+      ]
+    },
+    {
+      "id": 15000601,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000601
+      ],
+      "battle_scene": 30014,
+      "role_model": 40001,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          583,
+          493
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15000602,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000602
+      ],
+      "battle_scene": 30016,
+      "role_model": 40002,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          470,
+          489
+        ]
+      },
+      "to_target": [
+        [
+          557,
+          483
+        ],
+        [
+          537,
+          481
+        ],
+        [
+          515,
+          481
+        ],
+        [
+          493,
+          487
+        ]
+      ]
+    },
+    {
+      "id": 15000603,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000603
+      ],
+      "battle_scene": 30018,
+      "role_model": 40003,
+      "condition": [
+        10000002
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          348,
+          467
+        ]
+      },
+      "to_target": [
+        [
+          435,
+          509
+        ],
+        [
+          423,
+          527
+        ],
+        [
+          405,
+          540
+        ],
+        [
+          382,
+          542
+        ],
+        [
+          359,
+          526
+        ],
+        [
+          342,
+          504
+        ]
+      ]
+    },
+    {
+      "id": 15000604,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000604
+      ],
+      "battle_scene": 30022,
+      "role_model": 40004,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          337,
+          231
+        ]
+      },
+      "to_target": [
+        [
+          342,
+          395
+        ],
+        [
+          358,
+          371
+        ],
+        [
+          365,
+          348
+        ],
+        [
+          364,
+          316
+        ],
+        [
+          358,
+          288
+        ],
+        [
+          345,
+          260
+        ]
+      ]
+    },
+    {
+      "id": 15000605,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000605
+      ],
+      "battle_scene": 30024,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          462,
+          224
+        ]
+      },
+      "to_target": [
+        [
+          359,
+          161
+        ],
+        [
+          385,
+          148
+        ],
+        [
+          413,
+          156
+        ],
+        [
+          429,
+          178
+        ],
+        [
+          444,
+          210
+        ]
+      ]
+    },
+    {
+      "id": 15000606,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000606
+      ],
+      "battle_scene": 30026,
+      "role_model": 40001,
+      "condition": [
+        10000001,
+        10000004
+      ],
+      "help_hero_id": 12480706,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          614,
+          224
+        ]
+      },
+      "to_target": [
+        [
+          468,
+          239
+        ],
+        [
+          484,
+          259
+        ],
+        [
+          503,
+          268
+        ],
+        [
+          527,
+          269
+        ],
+        [
+          546,
+          255
+        ],
+        [
+          559,
+          240
+        ],
+        [
+          578,
+          234
+        ],
+        [
+          596,
+          232
+        ]
+      ]
+    },
+    {
+      "id": 15000607,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000607
+      ],
+      "battle_scene": 30406,
+      "role_model": 40002,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          732,
+          188
+        ]
+      },
+      "to_target": [
+        [
+          634,
+          207
+        ],
+        [
+          654,
+          198
+        ],
+        [
+          682,
+          195
+        ],
+        [
+          712,
+          200
+        ]
+      ]
+    },
+    {
+      "id": 15000608,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000608
+      ],
+      "battle_scene": 30026,
+      "role_model": 40003,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          869,
+          206
+        ]
+      },
+      "to_target": [
+        [
+          754,
+          187
+        ],
+        [
+          775,
+          178
+        ],
+        [
+          794,
+          168
+        ],
+        [
+          824,
+          168
+        ],
+        [
+          845,
+          177
+        ],
+        [
+          861,
+          188
+        ]
+      ]
+    },
+    {
+      "id": 15000609,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000609
+      ],
+      "battle_scene": 30023,
+      "role_model": 40004,
+      "condition": [
+        10000002,
+        10000021
+      ],
+      "help_hero_id": 12480709,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          929,
+          294
+        ]
+      },
+      "to_target": [
+        [
+          870,
+          214
+        ],
+        [
+          866,
+          234
+        ],
+        [
+          854,
+          249
+        ],
+        [
+          847,
+          265
+        ],
+        [
+          850,
+          281
+        ],
+        [
+          863,
+          291
+        ],
+        [
+          877,
+          291
+        ],
+        [
+          897,
+          287
+        ]
+      ]
+    },
+    {
+      "id": 15000610,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000610
+      ],
+      "battle_scene": 30027,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          1002,
+          402
+        ]
+      },
+      "to_target": [
+        [
+          944,
+          300
+        ],
+        [
+          971,
+          314
+        ],
+        [
+          985,
+          334
+        ],
+        [
+          981,
+          357
+        ],
+        [
+          977,
+          376
+        ],
+        [
+          983,
+          395
+        ]
+      ]
+    },
+    {
+      "id": 15000611,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000611
+      ],
+      "battle_scene": 30021,
+      "role_model": 40003,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          950,
+          517
+        ]
+      },
+      "to_target": [
+        [
+          1008,
+          413
+        ],
+        [
+          1022,
+          436
+        ],
+        [
+          1021,
+          454
+        ],
+        [
+          1010,
+          478
+        ],
+        [
+          989,
+          487
+        ],
+        [
+          977,
+          501
+        ]
+      ]
+    },
+    {
+      "id": 15000612,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000612
+      ],
+      "battle_scene": 30017,
+      "role_model": 40004,
+      "condition": [
+        10000004,
+        10000015,
+        10000010
+      ],
+      "help_hero_id": 12480712,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          809,
+          481
+        ]
+      },
+      "to_target": [
+        [
+          918,
+          515
+        ],
+        [
+          891,
+          506
+        ],
+        [
+          877,
+          481
+        ],
+        [
+          854,
+          470
+        ],
+        [
+          834,
+          478
+        ]
+      ]
+    },
+    {
+      "id": 15000613,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000613
+      ],
+      "battle_scene": 30013,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          767,
+          336
+        ]
+      },
+      "to_target": [
+        [
+          777,
+          463
+        ],
+        [
+          765,
+          439
+        ],
+        [
+          766,
+          413
+        ],
+        [
+          773,
+          394
+        ],
+        [
+          782,
+          376
+        ],
+        [
+          771,
+          353
+        ]
+      ]
+    },
+    {
+      "id": 15000614,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000614
+      ],
+      "battle_scene": 30011,
+      "role_model": 40073,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          674,
+          340
+        ]
+      },
+      "to_target": [
+        [
+          747,
+          322
+        ],
+        [
+          728,
+          310
+        ],
+        [
+          707,
+          310
+        ],
+        [
+          688,
+          319
+        ],
+        [
+          679,
+          333
+        ]
+      ]
+    },
+    {
+      "id": 15000615,
+      "name": "Nightmare Shinigami Agent",
+      "army_ids": [
+        21000615
+      ],
+      "battle_scene": 30004,
+      "role_model": 40078,
+      "condition": [
+        10000001,
+        10000020
+      ],
+      "help_hero_id": 12480715,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          538,
+          354
+        ]
+      },
+      "to_target": [
+        [
+          673,
+          350
+        ],
+        [
+          662,
+          364
+        ],
+        [
+          640,
+          361
+        ],
+        [
+          609,
+          354
+        ],
+        [
+          582,
+          354
+        ],
+        [
+          563,
+          355
+        ]
+      ]
+    },
+    {
+      "id": 15000701,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000701
+      ],
+      "battle_scene": 30014,
+      "role_model": 40001,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          310,
+          227
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15000702,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000702
+      ],
+      "battle_scene": 30016,
+      "role_model": 40002,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          214,
+          286
+        ]
+      },
+      "to_target": [
+        [
+          286,
+          232
+        ],
+        [
+          263,
+          233
+        ],
+        [
+          247,
+          234
+        ],
+        [
+          233,
+          247
+        ],
+        [
+          230,
+          261
+        ],
+        [
+          227,
+          277
+        ]
+      ]
+    },
+    {
+      "id": 15000703,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000703
+      ],
+      "battle_scene": 30018,
+      "role_model": 40003,
+      "condition": [
+        10000001,
+        10000021,
+        10000013,
+        10000048
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          290,
+          389
+        ]
+      },
+      "to_target": [
+        [
+          209,
+          303
+        ],
+        [
+          197,
+          316
+        ],
+        [
+          180,
+          323
+        ],
+        [
+          168,
+          336
+        ],
+        [
+          168,
+          348
+        ],
+        [
+          175,
+          367
+        ],
+        [
+          193,
+          376
+        ],
+        [
+          212,
+          376
+        ],
+        [
+          233,
+          370
+        ],
+        [
+          246,
+          366
+        ],
+        [
+          263,
+          371
+        ],
+        [
+          270,
+          381
+        ]
+      ]
+    },
+    {
+      "id": 15000704,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000704
+      ],
+      "battle_scene": 30022,
+      "role_model": 40004,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          371,
+          460
+        ]
+      },
+      "to_target": [
+        [
+          291,
+          397
+        ],
+        [
+          294,
+          420
+        ],
+        [
+          286,
+          440
+        ],
+        [
+          286,
+          460
+        ],
+        [
+          295,
+          474
+        ],
+        [
+          309,
+          483
+        ],
+        [
+          326,
+          481
+        ],
+        [
+          338,
+          471
+        ],
+        [
+          353,
+          465
+        ]
+      ]
+    },
+    {
+      "id": 15000705,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000705
+      ],
+      "battle_scene": 30024,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          526,
+          474
+        ]
+      },
+      "to_target": [
+        [
+          398,
+          453
+        ],
+        [
+          416,
+          462
+        ],
+        [
+          431,
+          473
+        ],
+        [
+          439,
+          488
+        ],
+        [
+          458,
+          491
+        ],
+        [
+          470,
+          486
+        ],
+        [
+          484,
+          475
+        ],
+        [
+          506,
+          472
+        ]
+      ]
+    },
+    {
+      "id": 15000706,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000706
+      ],
+      "battle_scene": 30026,
+      "role_model": 40001,
+      "condition": [
+        10000020,
+        10000035,
+        10000050,
+        10000039
+      ],
+      "help_hero_id": 12480806,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          675,
+          456
+        ]
+      },
+      "to_target": [
+        [
+          551,
+          475
+        ],
+        [
+          570,
+          469
+        ],
+        [
+          584,
+          455
+        ],
+        [
+          594,
+          441
+        ],
+        [
+          605,
+          431
+        ],
+        [
+          619,
+          428
+        ],
+        [
+          635,
+          429
+        ],
+        [
+          643,
+          438
+        ],
+        [
+          660,
+          449
+        ]
+      ]
+    },
+    {
+      "id": 15000707,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000707
+      ],
+      "battle_scene": 30406,
+      "role_model": 40002,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          771,
+          511
+        ]
+      },
+      "to_target": [
+        [
+          682,
+          463
+        ],
+        [
+          696,
+          486
+        ],
+        [
+          713,
+          495
+        ],
+        [
+          735,
+          487
+        ],
+        [
+          752,
+          496
+        ]
+      ]
+    },
+    {
+      "id": 15000708,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000708
+      ],
+      "battle_scene": 30026,
+      "role_model": 40003,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          915,
+          455
+        ]
+      },
+      "to_target": [
+        [
+          786,
+          524
+        ],
+        [
+          798,
+          535
+        ],
+        [
+          813,
+          541
+        ],
+        [
+          828,
+          542
+        ],
+        [
+          850,
+          541
+        ],
+        [
+          863,
+          530
+        ],
+        [
+          877,
+          511
+        ],
+        [
+          886,
+          490
+        ],
+        [
+          896,
+          468
+        ]
+      ]
+    },
+    {
+      "id": 15000709,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000709
+      ],
+      "battle_scene": 30023,
+      "role_model": 40004,
+      "condition": [
+        10000005,
+        10000009,
+        10000020,
+        10000035
+      ],
+      "help_hero_id": 12480809,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          1007,
+          258
+        ]
+      },
+      "to_target": [
+        [
+          935,
+          439
+        ],
+        [
+          953,
+          435
+        ],
+        [
+          972,
+          436
+        ],
+        [
+          991,
+          431
+        ],
+        [
+          1004,
+          418
+        ],
+        [
+          1005,
+          394
+        ],
+        [
+          993,
+          376
+        ],
+        [
+          981,
+          361
+        ],
+        [
+          976,
+          335
+        ],
+        [
+          984,
+          317
+        ],
+        [
+          1001,
+          301
+        ],
+        [
+          1004,
+          279
+        ]
+      ]
+    },
+    {
+      "id": 15000710,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000710
+      ],
+      "battle_scene": 30027,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          874,
+          160
+        ]
+      },
+      "to_target": [
+        [
+          989,
+          183
+        ],
+        [
+          972,
+          164
+        ],
+        [
+          945,
+          153
+        ],
+        [
+          916,
+          149
+        ],
+        [
+          898,
+          151
+        ]
+      ]
+    },
+    {
+      "id": 15000711,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000711
+      ],
+      "battle_scene": 30021,
+      "role_model": 40003,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          785,
+          253
+        ]
+      },
+      "to_target": [
+        [
+          867,
+          176
+        ],
+        [
+          865,
+          194
+        ],
+        [
+          869,
+          210
+        ],
+        [
+          862,
+          228
+        ],
+        [
+          839,
+          233
+        ],
+        [
+          822,
+          238
+        ],
+        [
+          807,
+          253
+        ]
+      ]
+    },
+    {
+      "id": 15000712,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000712
+      ],
+      "battle_scene": 30017,
+      "role_model": 40004,
+      "condition": [
+        10000003,
+        10000050,
+        10000048
+      ],
+      "help_hero_id": 12480812,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          659,
+          185
+        ]
+      },
+      "to_target": [
+        [
+          767,
+          262
+        ],
+        [
+          760,
+          279
+        ],
+        [
+          746,
+          289
+        ],
+        [
+          725,
+          289
+        ],
+        [
+          704,
+          279
+        ],
+        [
+          689,
+          266
+        ],
+        [
+          681,
+          252
+        ],
+        [
+          683,
+          226
+        ],
+        [
+          676,
+          203
+        ]
+      ]
+    },
+    {
+      "id": 15000713,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000713
+      ],
+      "battle_scene": 30013,
+      "role_model": 40005,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          572,
+          284
+        ]
+      },
+      "to_target": [
+        [
+          639,
+          169
+        ],
+        [
+          620,
+          170
+        ],
+        [
+          608,
+          184
+        ],
+        [
+          606,
+          198
+        ],
+        [
+          610,
+          218
+        ],
+        [
+          613,
+          236
+        ],
+        [
+          618,
+          254
+        ],
+        [
+          619,
+          271
+        ],
+        [
+          614,
+          285
+        ],
+        [
+          600,
+          297
+        ],
+        [
+          584,
+          294
+        ]
+      ]
+    },
+    {
+      "id": 15000714,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000714
+      ],
+      "battle_scene": 30011,
+      "role_model": 40073,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          459,
+          206
+        ]
+      },
+      "to_target": [
+        [
+          551,
+          270
+        ],
+        [
+          539,
+          247
+        ],
+        [
+          534,
+          221
+        ],
+        [
+          538,
+          202
+        ],
+        [
+          533,
+          180
+        ],
+        [
+          515,
+          175
+        ],
+        [
+          493,
+          181
+        ],
+        [
+          483,
+          191
+        ],
+        [
+          477,
+          201
+        ]
+      ]
+    },
+    {
+      "id": 15000715,
+      "name": "Inferno Shinigami Agent",
+      "army_ids": [
+        21000715
+      ],
+      "battle_scene": 30004,
+      "role_model": 40078,
+      "condition": [
+        10000004,
+        10000021,
+        10000033,
+        10000050
+      ],
+      "help_hero_id": 12480815,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          387,
+          335
+        ]
+      },
+      "to_target": [
+        [
+          446,
+          215
+        ],
+        [
+          440,
+          233
+        ],
+        [
+          442,
+          246
+        ],
+        [
+          450,
+          259
+        ],
+        [
+          466,
+          267
+        ],
+        [
+          479,
+          272
+        ],
+        [
+          484,
+          287
+        ],
+        [
+          482,
+          298
+        ],
+        [
+          471,
+          306
+        ],
+        [
+          459,
+          310
+        ],
+        [
+          437,
+          311
+        ],
+        [
+          419,
+          309
+        ],
+        [
+          401,
+          314
+        ],
+        [
+          396,
+          328
+        ]
+      ]
+    },
+    {
+      "id": 15000801,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000801
+      ],
+      "battle_scene": 30014,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          348,
+          184
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15000802,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000802
+      ],
+      "battle_scene": 30016,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          478,
+          212
+        ]
+      },
+      "to_target": [
+        [
+          368,
+          187
+        ],
+        [
+          380,
+          199
+        ],
+        [
+          396,
+          207
+        ],
+        [
+          415,
+          213
+        ],
+        [
+          433,
+          214
+        ],
+        [
+          452,
+          213
+        ]
+      ]
+    },
+    {
+      "id": 15000803,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000803
+      ],
+      "battle_scene": 30018,
+      "role_model": 40017,
+      "condition": [
+        10000011
+      ],
+      "help_hero_id": 12480903,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          608,
+          172
+        ]
+      },
+      "to_target": [
+        [
+          499,
+          200
+        ],
+        [
+          517,
+          190
+        ],
+        [
+          523,
+          174
+        ],
+        [
+          540,
+          163
+        ],
+        [
+          563,
+          161
+        ],
+        [
+          580,
+          163
+        ]
+      ]
+    },
+    {
+      "id": 15000804,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000804
+      ],
+      "battle_scene": 30022,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          673,
+          242
+        ]
+      },
+      "to_target": [
+        [
+          607,
+          191
+        ],
+        [
+          612,
+          208
+        ],
+        [
+          620,
+          224
+        ],
+        [
+          637,
+          234
+        ],
+        [
+          652,
+          239
+        ]
+      ]
+    },
+    {
+      "id": 15000805,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000805
+      ],
+      "battle_scene": 30024,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          798,
+          226
+        ]
+      },
+      "to_target": [
+        [
+          688,
+          249
+        ],
+        [
+          713,
+          251
+        ],
+        [
+          731,
+          250
+        ],
+        [
+          753,
+          247
+        ],
+        [
+          772,
+          238
+        ]
+      ]
+    },
+    {
+      "id": 15000806,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000806
+      ],
+      "battle_scene": 30026,
+      "role_model": 40054,
+      "condition": [
+        10000011
+      ],
+      "help_hero_id": 12480906,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          900,
+          240
+        ]
+      },
+      "to_target": [
+        [
+          819,
+          221
+        ],
+        [
+          839,
+          217
+        ],
+        [
+          857,
+          218
+        ],
+        [
+          875,
+          225
+        ]
+      ]
+    },
+    {
+      "id": 15000807,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000807
+      ],
+      "battle_scene": 30406,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          881,
+          365
+        ]
+      },
+      "to_target": [
+        [
+          907,
+          255
+        ],
+        [
+          914,
+          273
+        ],
+        [
+          915,
+          292
+        ],
+        [
+          913,
+          313
+        ],
+        [
+          906,
+          331
+        ],
+        [
+          898,
+          348
+        ]
+      ]
+    },
+    {
+      "id": 15000808,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000808
+      ],
+      "battle_scene": 30026,
+      "role_model": 40071,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          798,
+          451
+        ]
+      },
+      "to_target": [
+        [
+          875,
+          377
+        ],
+        [
+          856,
+          390
+        ],
+        [
+          837,
+          401
+        ],
+        [
+          822,
+          416
+        ],
+        [
+          813,
+          432
+        ]
+      ]
+    },
+    {
+      "id": 15000809,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000809
+      ],
+      "battle_scene": 30023,
+      "role_model": 40071,
+      "condition": [
+        10000011
+      ],
+      "help_hero_id": 12480909,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          702,
+          517
+        ]
+      },
+      "to_target": [
+        [
+          791,
+          468
+        ],
+        [
+          781,
+          483
+        ],
+        [
+          766,
+          496
+        ],
+        [
+          748,
+          508
+        ],
+        [
+          726,
+          515
+        ]
+      ]
+    },
+    {
+      "id": 15000810,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000810
+      ],
+      "battle_scene": 30027,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          577,
+          471
+        ]
+      },
+      "to_target": [
+        [
+          675,
+          513
+        ],
+        [
+          653,
+          500
+        ],
+        [
+          637,
+          484
+        ],
+        [
+          618,
+          476
+        ],
+        [
+          598,
+          474
+        ]
+      ]
+    },
+    {
+      "id": 15000811,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000811
+      ],
+      "battle_scene": 30021,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          418,
+          493
+        ]
+      },
+      "to_target": [
+        [
+          548,
+          474
+        ],
+        [
+          525,
+          485
+        ],
+        [
+          509,
+          499
+        ],
+        [
+          485,
+          503
+        ],
+        [
+          460,
+          502
+        ],
+        [
+          439,
+          498
+        ]
+      ]
+    },
+    {
+      "id": 15000812,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000812
+      ],
+      "battle_scene": 30017,
+      "role_model": 40078,
+      "condition": [
+        10000003
+      ],
+      "help_hero_id": 12480912,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          349,
+          386
+        ]
+      },
+      "to_target": [
+        [
+          395,
+          477
+        ],
+        [
+          380,
+          462
+        ],
+        [
+          367,
+          444
+        ],
+        [
+          360,
+          426
+        ],
+        [
+          355,
+          403
+        ]
+      ]
+    },
+    {
+      "id": 15000813,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000813
+      ],
+      "battle_scene": 30013,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          462,
+          331
+        ]
+      },
+      "to_target": [
+        [
+          361,
+          356
+        ],
+        [
+          369,
+          334
+        ],
+        [
+          384,
+          323
+        ],
+        [
+          405,
+          316
+        ],
+        [
+          423,
+          315
+        ],
+        [
+          440,
+          319
+        ]
+      ]
+    },
+    {
+      "id": 15000814,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000814
+      ],
+      "battle_scene": 30011,
+      "role_model": 40064,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          584,
+          338
+        ]
+      },
+      "to_target": [
+        [
+          473,
+          341
+        ],
+        [
+          488,
+          348
+        ],
+        [
+          508,
+          351
+        ],
+        [
+          527,
+          351
+        ],
+        [
+          547,
+          346
+        ],
+        [
+          563,
+          341
+        ]
+      ]
+    },
+    {
+      "id": 15000815,
+      "name": "Normal Soul Society",
+      "army_ids": [
+        21000815
+      ],
+      "battle_scene": 30004,
+      "role_model": 40064,
+      "condition": [
+        10000002
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          694,
+          369
+        ]
+      },
+      "to_target": [
+        [
+          604,
+          327
+        ],
+        [
+          625,
+          323
+        ],
+        [
+          646,
+          325
+        ],
+        [
+          663,
+          333
+        ],
+        [
+          677,
+          344
+        ]
+      ]
+    },
+    {
+      "id": 15000901,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000901
+      ],
+      "battle_scene": 30014,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          335,
+          330
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15000902,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000902
+      ],
+      "battle_scene": 30016,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          442,
+          279
+        ]
+      },
+      "to_target": [
+        [
+          356,
+          306
+        ],
+        [
+          370,
+          291
+        ],
+        [
+          391,
+          282
+        ],
+        [
+          414,
+          280
+        ]
+      ]
+    },
+    {
+      "id": 15000903,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000903
+      ],
+      "battle_scene": 30018,
+      "role_model": 40017,
+      "condition": [
+        10000011,
+        10000002
+      ],
+      "help_hero_id": 12481003,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          567,
+          265
+        ]
+      },
+      "to_target": [
+        [
+          464,
+          281
+        ],
+        [
+          488,
+          282
+        ],
+        [
+          507,
+          280
+        ],
+        [
+          524,
+          277
+        ],
+        [
+          541,
+          270
+        ]
+      ]
+    },
+    {
+      "id": 15000904,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000904
+      ],
+      "battle_scene": 30022,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          653,
+          199
+        ]
+      },
+      "to_target": [
+        [
+          584,
+          252
+        ],
+        [
+          594,
+          238
+        ],
+        [
+          598,
+          221
+        ],
+        [
+          603,
+          204
+        ],
+        [
+          618,
+          193
+        ]
+      ]
+    },
+    {
+      "id": 15000905,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000905
+      ],
+      "battle_scene": 30024,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          775,
+          219
+        ]
+      },
+      "to_target": [
+        [
+          677,
+          202
+        ],
+        [
+          693,
+          213
+        ],
+        [
+          715,
+          220
+        ],
+        [
+          737,
+          224
+        ],
+        [
+          754,
+          223
+        ]
+      ]
+    },
+    {
+      "id": 15000906,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000906
+      ],
+      "battle_scene": 30026,
+      "role_model": 40054,
+      "condition": [
+        10000011,
+        10000003
+      ],
+      "help_hero_id": 12481006,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          884,
+          227
+        ]
+      },
+      "to_target": [
+        [
+          794,
+          213
+        ],
+        [
+          810,
+          202
+        ],
+        [
+          832,
+          198
+        ],
+        [
+          849,
+          202
+        ],
+        [
+          864,
+          208
+        ]
+      ]
+    },
+    {
+      "id": 15000907,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000907
+      ],
+      "battle_scene": 30406,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          979,
+          281
+        ]
+      },
+      "to_target": [
+        [
+          864,
+          208
+        ],
+        [
+          896,
+          239
+        ],
+        [
+          907,
+          250
+        ],
+        [
+          921,
+          260
+        ],
+        [
+          936,
+          270
+        ],
+        [
+          954,
+          275
+        ]
+      ]
+    },
+    {
+      "id": 15000908,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000908
+      ],
+      "battle_scene": 30026,
+      "role_model": 40071,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          958,
+          410
+        ]
+      },
+      "to_target": [
+        [
+          1000,
+          284
+        ],
+        [
+          1018,
+          299
+        ],
+        [
+          1024,
+          321
+        ],
+        [
+          1020,
+          341
+        ],
+        [
+          1012,
+          361
+        ],
+        [
+          1002,
+          378
+        ],
+        [
+          991,
+          392
+        ],
+        [
+          977,
+          402
+        ]
+      ]
+    },
+    {
+      "id": 15000909,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000909
+      ],
+      "battle_scene": 30023,
+      "role_model": 40071,
+      "condition": [
+        10000011,
+        10000002
+      ],
+      "help_hero_id": 12481009,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          822,
+          413
+        ]
+      },
+      "to_target": [
+        [
+          935,
+          416
+        ],
+        [
+          912,
+          423
+        ],
+        [
+          887,
+          425
+        ],
+        [
+          863,
+          425
+        ],
+        [
+          842,
+          422
+        ]
+      ]
+    },
+    {
+      "id": 15000910,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000910
+      ],
+      "battle_scene": 30027,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          737,
+          340
+        ]
+      },
+      "to_target": [
+        [
+          800,
+          402
+        ],
+        [
+          785,
+          386
+        ],
+        [
+          777,
+          366
+        ],
+        [
+          758,
+          352
+        ]
+      ]
+    },
+    {
+      "id": 15000911,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000911
+      ],
+      "battle_scene": 30021,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          635,
+          400
+        ]
+      },
+      "to_target": [
+        [
+          710,
+          339
+        ],
+        [
+          688,
+          341
+        ],
+        [
+          668,
+          350
+        ],
+        [
+          656,
+          362
+        ],
+        [
+          649,
+          375
+        ]
+      ]
+    },
+    {
+      "id": 15000912,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000912
+      ],
+      "battle_scene": 30017,
+      "role_model": 40078,
+      "condition": [
+        10000003,
+        10000004
+      ],
+      "help_hero_id": 12481012,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          562,
+          502
+        ]
+      },
+      "to_target": [
+        [
+          630,
+          414
+        ],
+        [
+          626,
+          432
+        ],
+        [
+          620,
+          447
+        ],
+        [
+          606,
+          455
+        ],
+        [
+          591,
+          464
+        ],
+        [
+          578,
+          479
+        ]
+      ]
+    },
+    {
+      "id": 15000913,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000913
+      ],
+      "battle_scene": 30013,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          681,
+          533
+        ]
+      },
+      "to_target": [
+        [
+          565,
+          517
+        ],
+        [
+          569,
+          537
+        ],
+        [
+          584,
+          551
+        ],
+        [
+          609,
+          555
+        ],
+        [
+          633,
+          552
+        ],
+        [
+          652,
+          544
+        ]
+      ]
+    },
+    {
+      "id": 15000914,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000914
+      ],
+      "battle_scene": 30011,
+      "role_model": 40064,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          799,
+          551
+        ]
+      },
+      "to_target": [
+        [
+          702,
+          526
+        ],
+        [
+          719,
+          515
+        ],
+        [
+          737,
+          513
+        ],
+        [
+          754,
+          519
+        ],
+        [
+          767,
+          526
+        ],
+        [
+          777,
+          538
+        ]
+      ]
+    },
+    {
+      "id": 15000915,
+      "name": "Hard Soul Society",
+      "army_ids": [
+        21000915
+      ],
+      "battle_scene": 30004,
+      "role_model": 40064,
+      "condition": [
+        10000002,
+        10000005
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          922,
+          536
+        ]
+      },
+      "to_target": [
+        [
+          811,
+          560
+        ],
+        [
+          827,
+          564
+        ],
+        [
+          842,
+          559
+        ],
+        [
+          852,
+          547
+        ],
+        [
+          865,
+          537
+        ],
+        [
+          882,
+          534
+        ],
+        [
+          899,
+          535
+        ]
+      ]
+    },
+    {
+      "id": 15001001,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001001
+      ],
+      "battle_scene": 30014,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          583,
+          493
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15001002,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001002
+      ],
+      "battle_scene": 30016,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          470,
+          489
+        ]
+      },
+      "to_target": [
+        [
+          557,
+          483
+        ],
+        [
+          537,
+          481
+        ],
+        [
+          515,
+          481
+        ],
+        [
+          493,
+          487
+        ]
+      ]
+    },
+    {
+      "id": 15001003,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001003
+      ],
+      "battle_scene": 30018,
+      "role_model": 40017,
+      "condition": [
+        10000002
+      ],
+      "help_hero_id": 12481103,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          348,
+          467
+        ]
+      },
+      "to_target": [
+        [
+          435,
+          509
+        ],
+        [
+          423,
+          527
+        ],
+        [
+          405,
+          540
+        ],
+        [
+          382,
+          542
+        ],
+        [
+          359,
+          526
+        ],
+        [
+          342,
+          504
+        ]
+      ]
+    },
+    {
+      "id": 15001004,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001004
+      ],
+      "battle_scene": 30022,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          337,
+          231
+        ]
+      },
+      "to_target": [
+        [
+          342,
+          395
+        ],
+        [
+          358,
+          371
+        ],
+        [
+          365,
+          348
+        ],
+        [
+          364,
+          316
+        ],
+        [
+          358,
+          288
+        ],
+        [
+          345,
+          260
+        ]
+      ]
+    },
+    {
+      "id": 15001005,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001005
+      ],
+      "battle_scene": 30024,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          462,
+          224
+        ]
+      },
+      "to_target": [
+        [
+          359,
+          161
+        ],
+        [
+          385,
+          148
+        ],
+        [
+          413,
+          156
+        ],
+        [
+          429,
+          178
+        ],
+        [
+          444,
+          210
+        ]
+      ]
+    },
+    {
+      "id": 15001006,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001006
+      ],
+      "battle_scene": 30026,
+      "role_model": 40054,
+      "condition": [
+        10000001,
+        10000004
+      ],
+      "help_hero_id": 12481106,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          614,
+          224
+        ]
+      },
+      "to_target": [
+        [
+          468,
+          239
+        ],
+        [
+          484,
+          259
+        ],
+        [
+          503,
+          268
+        ],
+        [
+          527,
+          269
+        ],
+        [
+          546,
+          255
+        ],
+        [
+          559,
+          240
+        ],
+        [
+          578,
+          234
+        ],
+        [
+          596,
+          232
+        ]
+      ]
+    },
+    {
+      "id": 15001007,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001007
+      ],
+      "battle_scene": 30406,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          732,
+          188
+        ]
+      },
+      "to_target": [
+        [
+          634,
+          207
+        ],
+        [
+          654,
+          198
+        ],
+        [
+          682,
+          195
+        ],
+        [
+          712,
+          200
+        ]
+      ]
+    },
+    {
+      "id": 15001008,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001008
+      ],
+      "battle_scene": 30026,
+      "role_model": 40071,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          869,
+          206
+        ]
+      },
+      "to_target": [
+        [
+          754,
+          187
+        ],
+        [
+          775,
+          178
+        ],
+        [
+          794,
+          168
+        ],
+        [
+          824,
+          168
+        ],
+        [
+          845,
+          177
+        ],
+        [
+          861,
+          188
+        ]
+      ]
+    },
+    {
+      "id": 15001009,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001009
+      ],
+      "battle_scene": 30023,
+      "role_model": 40071,
+      "condition": [
+        10000002,
+        10000021
+      ],
+      "help_hero_id": 12481109,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          929,
+          294
+        ]
+      },
+      "to_target": [
+        [
+          870,
+          214
+        ],
+        [
+          866,
+          234
+        ],
+        [
+          854,
+          249
+        ],
+        [
+          847,
+          265
+        ],
+        [
+          850,
+          281
+        ],
+        [
+          863,
+          291
+        ],
+        [
+          877,
+          291
+        ],
+        [
+          897,
+          287
+        ]
+      ]
+    },
+    {
+      "id": 15001010,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001010
+      ],
+      "battle_scene": 30027,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          1002,
+          402
+        ]
+      },
+      "to_target": [
+        [
+          944,
+          300
+        ],
+        [
+          971,
+          314
+        ],
+        [
+          985,
+          334
+        ],
+        [
+          981,
+          357
+        ],
+        [
+          977,
+          376
+        ],
+        [
+          983,
+          395
+        ]
+      ]
+    },
+    {
+      "id": 15001011,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001011
+      ],
+      "battle_scene": 30021,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          950,
+          517
+        ]
+      },
+      "to_target": [
+        [
+          1008,
+          413
+        ],
+        [
+          1022,
+          436
+        ],
+        [
+          1021,
+          454
+        ],
+        [
+          1010,
+          478
+        ],
+        [
+          989,
+          487
+        ],
+        [
+          977,
+          501
+        ]
+      ]
+    },
+    {
+      "id": 15001012,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001012
+      ],
+      "battle_scene": 30017,
+      "role_model": 40078,
+      "condition": [
+        10000004,
+        10000015,
+        10000010
+      ],
+      "help_hero_id": 12481112,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          809,
+          481
+        ]
+      },
+      "to_target": [
+        [
+          918,
+          515
+        ],
+        [
+          891,
+          506
+        ],
+        [
+          877,
+          481
+        ],
+        [
+          854,
+          470
+        ],
+        [
+          834,
+          478
+        ]
+      ]
+    },
+    {
+      "id": 15001013,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001013
+      ],
+      "battle_scene": 30013,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          767,
+          336
+        ]
+      },
+      "to_target": [
+        [
+          777,
+          463
+        ],
+        [
+          765,
+          439
+        ],
+        [
+          766,
+          413
+        ],
+        [
+          773,
+          394
+        ],
+        [
+          782,
+          376
+        ],
+        [
+          771,
+          353
+        ]
+      ]
+    },
+    {
+      "id": 15001014,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001014
+      ],
+      "battle_scene": 30011,
+      "role_model": 40064,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          674,
+          340
+        ]
+      },
+      "to_target": [
+        [
+          747,
+          322
+        ],
+        [
+          728,
+          310
+        ],
+        [
+          707,
+          310
+        ],
+        [
+          688,
+          319
+        ],
+        [
+          679,
+          333
+        ]
+      ]
+    },
+    {
+      "id": 15001015,
+      "name": "Nightmare Soul Society",
+      "army_ids": [
+        21001015
+      ],
+      "battle_scene": 30004,
+      "role_model": 40064,
+      "condition": [
+        10000001,
+        10000020
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          538,
+          354
+        ]
+      },
+      "to_target": [
+        [
+          673,
+          350
+        ],
+        [
+          662,
+          364
+        ],
+        [
+          640,
+          361
+        ],
+        [
+          609,
+          354
+        ],
+        [
+          582,
+          354
+        ],
+        [
+          563,
+          355
+        ]
+      ]
+    },
+    {
+      "id": 15001101,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001101
+      ],
+      "battle_scene": 30014,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          310,
+          227
+        ]
+      },
+      "to_target": []
+    },
+    {
+      "id": 15001102,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001102
+      ],
+      "battle_scene": 30016,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          214,
+          286
+        ]
+      },
+      "to_target": [
+        [
+          286,
+          232
+        ],
+        [
+          263,
+          233
+        ],
+        [
+          247,
+          234
+        ],
+        [
+          233,
+          247
+        ],
+        [
+          230,
+          261
+        ],
+        [
+          227,
+          277
+        ]
+      ]
+    },
+    {
+      "id": 15001103,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001103
+      ],
+      "battle_scene": 30018,
+      "role_model": 40017,
+      "condition": [
+        10000001,
+        10000021,
+        10000013,
+        10000048
+      ],
+      "help_hero_id": 12481203,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          290,
+          389
+        ]
+      },
+      "to_target": [
+        [
+          209,
+          303
+        ],
+        [
+          197,
+          316
+        ],
+        [
+          180,
+          323
+        ],
+        [
+          168,
+          336
+        ],
+        [
+          168,
+          348
+        ],
+        [
+          175,
+          367
+        ],
+        [
+          193,
+          376
+        ],
+        [
+          212,
+          376
+        ],
+        [
+          233,
+          370
+        ],
+        [
+          246,
+          366
+        ],
+        [
+          263,
+          371
+        ],
+        [
+          270,
+          381
+        ]
+      ]
+    },
+    {
+      "id": 15001104,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001104
+      ],
+      "battle_scene": 30022,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          371,
+          460
+        ]
+      },
+      "to_target": [
+        [
+          291,
+          397
+        ],
+        [
+          294,
+          420
+        ],
+        [
+          286,
+          440
+        ],
+        [
+          286,
+          460
+        ],
+        [
+          295,
+          474
+        ],
+        [
+          309,
+          483
+        ],
+        [
+          326,
+          481
+        ],
+        [
+          338,
+          471
+        ],
+        [
+          353,
+          465
+        ]
+      ]
+    },
+    {
+      "id": 15001105,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001105
+      ],
+      "battle_scene": 30024,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          526,
+          474
+        ]
+      },
+      "to_target": [
+        [
+          398,
+          453
+        ],
+        [
+          416,
+          462
+        ],
+        [
+          431,
+          473
+        ],
+        [
+          439,
+          488
+        ],
+        [
+          458,
+          491
+        ],
+        [
+          470,
+          486
+        ],
+        [
+          484,
+          475
+        ],
+        [
+          506,
+          472
+        ]
+      ]
+    },
+    {
+      "id": 15001106,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001106
+      ],
+      "battle_scene": 30026,
+      "role_model": 40054,
+      "condition": [
+        10000004,
+        10000050,
+        10000041
+      ],
+      "help_hero_id": 12481206,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          675,
+          456
+        ]
+      },
+      "to_target": [
+        [
+          551,
+          475
+        ],
+        [
+          570,
+          469
+        ],
+        [
+          584,
+          455
+        ],
+        [
+          594,
+          441
+        ],
+        [
+          605,
+          431
+        ],
+        [
+          619,
+          428
+        ],
+        [
+          635,
+          429
+        ],
+        [
+          643,
+          438
+        ],
+        [
+          660,
+          449
+        ]
+      ]
+    },
+    {
+      "id": 15001107,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001107
+      ],
+      "battle_scene": 30406,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          771,
+          511
+        ]
+      },
+      "to_target": [
+        [
+          682,
+          463
+        ],
+        [
+          696,
+          486
+        ],
+        [
+          713,
+          495
+        ],
+        [
+          735,
+          487
+        ],
+        [
+          752,
+          496
+        ]
+      ]
+    },
+    {
+      "id": 15001108,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001108
+      ],
+      "battle_scene": 30026,
+      "role_model": 40071,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          915,
+          455
+        ]
+      },
+      "to_target": [
+        [
+          786,
+          524
+        ],
+        [
+          798,
+          535
+        ],
+        [
+          813,
+          541
+        ],
+        [
+          828,
+          542
+        ],
+        [
+          850,
+          541
+        ],
+        [
+          863,
+          530
+        ],
+        [
+          877,
+          511
+        ],
+        [
+          886,
+          490
+        ],
+        [
+          896,
+          468
+        ]
+      ]
+    },
+    {
+      "id": 15001109,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001109
+      ],
+      "battle_scene": 30023,
+      "role_model": 40071,
+      "condition": [
+        10000005,
+        10000009,
+        10000020
+      ],
+      "help_hero_id": 12481209,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          1007,
+          258
+        ]
+      },
+      "to_target": [
+        [
+          935,
+          439
+        ],
+        [
+          953,
+          435
+        ],
+        [
+          972,
+          436
+        ],
+        [
+          991,
+          431
+        ],
+        [
+          1004,
+          418
+        ],
+        [
+          1005,
+          394
+        ],
+        [
+          993,
+          376
+        ],
+        [
+          981,
+          361
+        ],
+        [
+          976,
+          335
+        ],
+        [
+          984,
+          317
+        ],
+        [
+          1001,
+          301
+        ],
+        [
+          1004,
+          279
+        ]
+      ]
+    },
+    {
+      "id": 15001110,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001110
+      ],
+      "battle_scene": 30027,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          874,
+          160
+        ]
+      },
+      "to_target": [
+        [
+          989,
+          183
+        ],
+        [
+          972,
+          164
+        ],
+        [
+          945,
+          153
+        ],
+        [
+          916,
+          149
+        ],
+        [
+          898,
+          151
+        ]
+      ]
+    },
+    {
+      "id": 15001111,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001111
+      ],
+      "battle_scene": 30021,
+      "role_model": 40017,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          785,
+          253
+        ]
+      },
+      "to_target": [
+        [
+          867,
+          176
+        ],
+        [
+          865,
+          194
+        ],
+        [
+          869,
+          210
+        ],
+        [
+          862,
+          228
+        ],
+        [
+          839,
+          233
+        ],
+        [
+          822,
+          238
+        ],
+        [
+          807,
+          253
+        ]
+      ]
+    },
+    {
+      "id": 15001112,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001112
+      ],
+      "battle_scene": 30017,
+      "role_model": 40078,
+      "condition": [
+        10000003,
+        10000050,
+        10000048
+      ],
+      "help_hero_id": 12481212,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          659,
+          185
+        ]
+      },
+      "to_target": [
+        [
+          767,
+          262
+        ],
+        [
+          760,
+          279
+        ],
+        [
+          746,
+          289
+        ],
+        [
+          725,
+          289
+        ],
+        [
+          704,
+          279
+        ],
+        [
+          689,
+          266
+        ],
+        [
+          681,
+          252
+        ],
+        [
+          683,
+          226
+        ],
+        [
+          676,
+          203
+        ]
+      ]
+    },
+    {
+      "id": 15001113,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001113
+      ],
+      "battle_scene": 30013,
+      "role_model": 40078,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          572,
+          284
+        ]
+      },
+      "to_target": [
+        [
+          639,
+          169
+        ],
+        [
+          620,
+          170
+        ],
+        [
+          608,
+          184
+        ],
+        [
+          606,
+          198
+        ],
+        [
+          610,
+          218
+        ],
+        [
+          613,
+          236
+        ],
+        [
+          618,
+          254
+        ],
+        [
+          619,
+          271
+        ],
+        [
+          614,
+          285
+        ],
+        [
+          600,
+          297
+        ],
+        [
+          584,
+          294
+        ]
+      ]
+    },
+    {
+      "id": 15001114,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001114
+      ],
+      "battle_scene": 30011,
+      "role_model": 40064,
+      "condition": [],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          459,
+          206
+        ]
+      },
+      "to_target": [
+        [
+          551,
+          270
+        ],
+        [
+          539,
+          247
+        ],
+        [
+          534,
+          221
+        ],
+        [
+          538,
+          202
+        ],
+        [
+          533,
+          180
+        ],
+        [
+          515,
+          175
+        ],
+        [
+          493,
+          181
+        ],
+        [
+          483,
+          191
+        ],
+        [
+          477,
+          201
+        ]
+      ]
+    },
+    {
+      "id": 15001115,
+      "name": "Inferno Soul Society",
+      "army_ids": [
+        21001115
+      ],
+      "battle_scene": 30004,
+      "role_model": 40064,
+      "condition": [
+        10000004,
+        10000033,
+        10000013,
+        10000041
+      ],
+      "help_hero_id": 0,
+      "help_hero_pos": 0,
+      "coordinate": {
+        "coordinate": [
+          387,
+          335
+        ]
+      },
+      "to_target": [
+        [
+          446,
+          215
+        ],
+        [
+          440,
+          233
+        ],
+        [
+          442,
+          246
+        ],
+        [
+          450,
+          259
+        ],
+        [
+          466,
+          267
+        ],
+        [
+          479,
+          272
+        ],
+        [
+          484,
+          287
+        ],
+        [
+          482,
+          298
+        ],
+        [
+          471,
+          306
+        ],
+        [
+          459,
+          310
+        ],
+        [
+          437,
+          311
+        ],
+        [
+          419,
+          309
+        ],
+        [
+          401,
+          314
+        ],
+        [
+          396,
+          328
+        ]
+      ]
+    }
+  ]
+}

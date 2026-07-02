@@ -319,6 +319,34 @@ def main():
         "path": "/data/temple_plies.json",
         "rowCount": 12
     }
+    manifest_tables["military"] = {
+        "path": "/data/military.json",
+        "rowCount": 36
+    }
+    manifest_tables["culling_magics"] = {
+        "path": "/data/culling_magics.json",
+        "rowCount": 1204
+    }
+    manifest_tables["culling_stages"] = {
+        "path": "/data/culling_stages.json",
+        "rowCount": 42
+    }
+    manifest_tables["equip_forging"] = {
+        "path": "/data/equip_forging.json",
+        "rowCount": 40
+    }
+    manifest_tables["equip_advancement"] = {
+        "path": "/data/equip_advancement.json",
+        "rowCount": 112
+    }
+    manifest_tables["nightmare_points"] = {
+        "path": "/data/nightmare_points.json",
+        "rowCount": 180
+    }
+    manifest_tables["nightmare_cities"] = {
+        "path": "/data/nightmare_cities.json",
+        "rowCount": 12
+    }
     manifest_data = {
         "generatedAt": generated_at,
         "tables": manifest_tables

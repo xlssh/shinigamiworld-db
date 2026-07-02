@@ -7,7 +7,8 @@ import {
   AchievementGroup, AchievementClass, TavernGrade, TavernPayConfig, TavernWarrior, TreasureLevelup,
   TreasureUpgrade, SpiritSchool, SpiritSchoolExp, Butterfly, ButterflyFeeding, BlackMarketItem,
   Award, Enemy, EnemyArmy, ConfigValue, OrganizationBase, OrganizationAddition, OrganizationDevotion, VipConfig,
-  OrnamentValue, OrnamentUpgrade, StarMap, StarPoint, TemplePoint, TempleValue, TemplePVP, TemplePliesNumber
+  OrnamentValue, OrnamentUpgrade, StarMap, StarPoint, TemplePoint, TempleValue, TemplePVP, TemplePliesNumber,
+  Military, CullingMagic, CullingStage, EquipForging, EquipAdvancement, NightmarePoint, NightmareCity
 } from '../types/db';
 
 const cache: { [key: string]: any } = {};
@@ -304,6 +305,34 @@ export async function loadTemplePVPs(): Promise<TableJson<TemplePVP>> {
 
 export async function loadTemplePlies(): Promise<TableJson<TemplePliesNumber>> {
   return fetchWithCache<TableJson<TemplePliesNumber>>('data/temple_plies.json');
+}
+
+export async function loadMilitary(): Promise<TableJson<Military>> {
+  return fetchWithCache<TableJson<Military>>('data/military.json');
+}
+
+export async function loadCullingMagics(): Promise<TableJson<CullingMagic>> {
+  return fetchWithCache<TableJson<CullingMagic>>('data/culling_magics.json');
+}
+
+export async function loadCullingStages(): Promise<TableJson<CullingStage>> {
+  return fetchWithCache<TableJson<CullingStage>>('data/culling_stages.json');
+}
+
+export async function loadEquipForging(): Promise<TableJson<EquipForging>> {
+  return fetchWithCache<TableJson<EquipForging>>('data/equip_forging.json');
+}
+
+export async function loadEquipAdvancement(): Promise<TableJson<EquipAdvancement>> {
+  return fetchWithCache<TableJson<EquipAdvancement>>('data/equip_advancement.json');
+}
+
+export async function loadNightmarePoints(): Promise<TableJson<NightmarePoint>> {
+  return fetchWithCache<TableJson<NightmarePoint>>('data/nightmare_points.json');
+}
+
+export async function loadNightmareCities(): Promise<TableJson<NightmareCity>> {
+  return fetchWithCache<TableJson<NightmareCity>>('data/nightmare_cities.json');
 }
 
 

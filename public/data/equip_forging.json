@@ -1,0 +1,206 @@
+{
+  "table": "equip_forging",
+  "rowCount": 40,
+  "rows": [
+    {
+      "id": 14210057,
+      "target_item_id": 14210201,
+      "material_amount": 5
+    },
+    {
+      "id": 14210058,
+      "target_item_id": 14210202,
+      "material_amount": 5
+    },
+    {
+      "id": 14210059,
+      "target_item_id": 14210203,
+      "material_amount": 5
+    },
+    {
+      "id": 14210060,
+      "target_item_id": 14210204,
+      "material_amount": 5
+    },
+    {
+      "id": 14210061,
+      "target_item_id": 14210205,
+      "material_amount": 5
+    },
+    {
+      "id": 14210062,
+      "target_item_id": 14210206,
+      "material_amount": 5
+    },
+    {
+      "id": 14210063,
+      "target_item_id": 14210207,
+      "material_amount": 5
+    },
+    {
+      "id": 14210064,
+      "target_item_id": 14210208,
+      "material_amount": 5
+    },
+    {
+      "id": 14210081,
+      "target_item_id": 14210201,
+      "material_amount": 40
+    },
+    {
+      "id": 14210082,
+      "target_item_id": 14210202,
+      "material_amount": 40
+    },
+    {
+      "id": 14210083,
+      "target_item_id": 14210203,
+      "material_amount": 40
+    },
+    {
+      "id": 14210084,
+      "target_item_id": 14210204,
+      "material_amount": 40
+    },
+    {
+      "id": 14210085,
+      "target_item_id": 14210205,
+      "material_amount": 40
+    },
+    {
+      "id": 14210086,
+      "target_item_id": 14210206,
+      "material_amount": 40
+    },
+    {
+      "id": 14210087,
+      "target_item_id": 14210207,
+      "material_amount": 40
+    },
+    {
+      "id": 14210088,
+      "target_item_id": 14210208,
+      "material_amount": 40
+    },
+    {
+      "id": 14210091,
+      "target_item_id": 14210201,
+      "material_amount": 125
+    },
+    {
+      "id": 14210092,
+      "target_item_id": 14210202,
+      "material_amount": 125
+    },
+    {
+      "id": 14210093,
+      "target_item_id": 14210203,
+      "material_amount": 125
+    },
+    {
+      "id": 14210094,
+      "target_item_id": 14210204,
+      "material_amount": 125
+    },
+    {
+      "id": 14210095,
+      "target_item_id": 14210205,
+      "material_amount": 125
+    },
+    {
+      "id": 14210096,
+      "target_item_id": 14210206,
+      "material_amount": 125
+    },
+    {
+      "id": 14210097,
+      "target_item_id": 14210207,
+      "material_amount": 125
+    },
+    {
+      "id": 14210098,
+      "target_item_id": 14210208,
+      "material_amount": 125
+    },
+    {
+      "id": 14210101,
+      "target_item_id": 14210201,
+      "material_amount": 250
+    },
+    {
+      "id": 14210102,
+      "target_item_id": 14210202,
+      "material_amount": 250
+    },
+    {
+      "id": 14210103,
+      "target_item_id": 14210203,
+      "material_amount": 250
+    },
+    {
+      "id": 14210104,
+      "target_item_id": 14210204,
+      "material_amount": 250
+    },
+    {
+      "id": 14210105,
+      "target_item_id": 14210205,
+      "material_amount": 250
+    },
+    {
+      "id": 14210106,
+      "target_item_id": 14210206,
+      "material_amount": 250
+    },
+    {
+      "id": 14210107,
+      "target_item_id": 14210207,
+      "material_amount": 250
+    },
+    {
+      "id": 14210108,
+      "target_item_id": 14210208,
+      "material_amount": 250
+    },
+    {
+      "id": 14210191,
+      "target_item_id": 14210201,
+      "material_amount": 420
+    },
+    {
+      "id": 14210192,
+      "target_item_id": 14210202,
+      "material_amount": 420
+    },
+    {
+      "id": 14210193,
+      "target_item_id": 14210203,
+      "material_amount": 420
+    },
+    {
+      "id": 14210194,
+      "target_item_id": 14210204,
+      "material_amount": 420
+    },
+    {
+      "id": 14210195,
+      "target_item_id": 14210205,
+      "material_amount": 420
+    },
+    {
+      "id": 14210196,
+      "target_item_id": 14210206,
+      "material_amount": 420
+    },
+    {
+      "id": 14210197,
+      "target_item_id": 14210207,
+      "material_amount": 420
+    },
+    {
+      "id": 14210198,
+      "target_item_id": 14210208,
+      "material_amount": 420
+    }
+  ]
+}

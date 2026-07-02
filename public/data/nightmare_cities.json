@@ -1,0 +1,170 @@
+{
+  "table": "nightmare_cities",
+  "rowCount": 12,
+  "rows": [
+    {
+      "id": 15600001,
+      "award_ids": [
+        14100592
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14100592,
+          "amount": 45
+        }
+      ]
+    },
+    {
+      "id": 15600002,
+      "award_ids": [
+        14100592
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14100592,
+          "amount": 75
+        }
+      ]
+    },
+    {
+      "id": 15600003,
+      "award_ids": [
+        14100592
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14100592,
+          "amount": 120
+        }
+      ]
+    },
+    {
+      "id": 15600004,
+      "award_ids": [
+        14100592
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14100592,
+          "amount": 180
+        }
+      ]
+    },
+    {
+      "id": 15600005,
+      "award_ids": [
+        14151501,
+        14151407,
+        14151408
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "id": 15600006,
+      "award_ids": [
+        14151502,
+        14151407,
+        14151408
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 60
+        }
+      ]
+    },
+    {
+      "id": 15600007,
+      "award_ids": [
+        14151503,
+        14151407,
+        14151408
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 120
+        }
+      ]
+    },
+    {
+      "id": 15600008,
+      "award_ids": [
+        14151504,
+        14151407,
+        14151408
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14151409,
+          "amount": 240
+        }
+      ]
+    },
+    {
+      "id": 15600009,
+      "award_ids": [
+        14100698
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14100699,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 15600010,
+      "award_ids": [
+        14100698
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14100699,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 15600011,
+      "award_ids": [
+        14100698
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14100699,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 15600012,
+      "award_ids": [
+        14100698
+      ],
+      "pass_awards": [
+        {
+          "type": 1,
+          "code": 14100699,
+          "amount": 5
+        }
+      ]
+    }
+  ]
+}
