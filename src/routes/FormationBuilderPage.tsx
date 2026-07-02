@@ -24,8 +24,8 @@ const MAX_PARTNERS = 5;
 // Column definition: id, label, slots count, role, colors
 const COLUMNS = [
   { id: 'vanguard', label: 'Vanguard', count: 1, role: 1, headerColor: 'text-emerald-400', slotBorder: 'border-emerald-700/50 bg-emerald-950/10', selBorder: 'border-emerald-400', professions: [2], profLabel: 'Defending' },
-  { id: 'assault',  label: 'Assault',  count: 3, role: 2, headerColor: 'text-rose-400',    slotBorder: 'border-rose-700/50 bg-rose-950/10',       selBorder: 'border-rose-400',    professions: [1, 4], profLabel: 'Strength / Agility' },
-  { id: 'support',  label: 'Support',  count: 3, role: 3, headerColor: 'text-violet-400',  slotBorder: 'border-violet-700/50 bg-violet-950/10',    selBorder: 'border-violet-400',  professions: [3, 5], profLabel: 'Intellect / Warlock' },
+  { id: 'assault', label: 'Assault', count: 3, role: 2, headerColor: 'text-rose-400', slotBorder: 'border-rose-700/50 bg-rose-950/10', selBorder: 'border-rose-400', professions: [1, 4], profLabel: 'Strength / Agility' },
+  { id: 'support', label: 'Support', count: 3, role: 3, headerColor: 'text-violet-400', slotBorder: 'border-violet-700/50 bg-violet-950/10', selBorder: 'border-violet-400', professions: [3, 5], profLabel: 'Intellect / Warlock' },
 ];
 
 // Flatten all slot positions: [colIdx, slotInCol]
@@ -55,10 +55,10 @@ function isF2P(source: number | null): boolean { return source === 1 || source =
 function calcPower(h: Hero, lv: number) {
   const l = Math.max(1, lv);
   return (
-    (h.power ?? 0) + Math.round((h.power_grow ?? 0) * (l-1)) +
-    (h.agile ?? 0) + Math.round((h.agile_grow ?? 0) * (l-1)) +
-    (h.intelligence ?? 0) + Math.round((h.intelligence_grow ?? 0) * (l-1)) +
-    Math.round(((h.life ?? 0) + Math.round((h.life_grow ?? 0) * (l-1))) / 10)
+    (h.power ?? 0) + Math.round((h.power_grow ?? 0) * (l - 1)) +
+    (h.agile ?? 0) + Math.round((h.agile_grow ?? 0) * (l - 1)) +
+    (h.intelligence ?? 0) + Math.round((h.intelligence_grow ?? 0) * (l - 1)) +
+    Math.round(((h.life ?? 0) + Math.round((h.life_grow ?? 0) * (l - 1))) / 10)
   );
 }
 
@@ -66,7 +66,7 @@ const PRESET_KEY = 'bf_formation_v3';
 function loadPresets(): (number[] | null)[] {
   try { const r = localStorage.getItem(PRESET_KEY); return r ? JSON.parse(r) : [null, null, null]; } catch { return [null, null, null]; }
 }
-function savePresets(p: (number[] | null)[]) { try { localStorage.setItem(PRESET_KEY, JSON.stringify(p)); } catch {} }
+function savePresets(p: (number[] | null)[]) { try { localStorage.setItem(PRESET_KEY, JSON.stringify(p)); } catch { } }
 
 // ---- Archetype templates ----
 interface Archetype {
@@ -90,9 +90,8 @@ const SlotCard: React.FC<SlotCardProps> = ({ slot, col, hero, isSelected, isActi
   if (!hero) {
     return (
       <button onClick={onClick}
-        className={`w-full ${col === 0 ? 'h-28' : 'h-20'} rounded-xl border-2 border-dashed flex flex-col items-center justify-center gap-0.5 transition-all group ${
-          isSelected ? `${colMeta.selBorder} bg-zinc-800/60` : `${colMeta.slotBorder} text-zinc-600 hover:text-zinc-400`
-        }`}>
+        className={`w-full ${col === 0 ? 'h-28' : 'h-20'} rounded-xl border-2 border-dashed flex flex-col items-center justify-center gap-0.5 transition-all group ${isSelected ? `${colMeta.selBorder} bg-zinc-800/60` : `${colMeta.slotBorder} text-zinc-600 hover:text-zinc-400`
+          }`}>
         <span className="text-[9px] font-bold text-zinc-700">#{slot}</span>
         <span className="text-[9px] text-zinc-700 group-hover:text-zinc-500 transition-colors">+ Place</span>
       </button>
@@ -100,9 +99,8 @@ const SlotCard: React.FC<SlotCardProps> = ({ slot, col, hero, isSelected, isActi
   }
   return (
     <div onClick={onClick}
-      className={`relative w-full rounded-xl border-2 p-2 cursor-pointer transition-all space-y-1 ${
-        isSelected ? 'border-fuchsia-500 bg-fuchsia-950/20' : isActive ? 'border-zinc-600 bg-zinc-900 hover:border-zinc-500' : 'border-zinc-800 bg-zinc-950/60 opacity-50'
-      }`}>
+      className={`relative w-full rounded-xl border-2 p-2 cursor-pointer transition-all space-y-1 ${isSelected ? 'border-fuchsia-500 bg-fuchsia-950/20' : isActive ? 'border-zinc-600 bg-zinc-900 hover:border-zinc-500' : 'border-zinc-800 bg-zinc-950/60 opacity-50'
+        }`}>
       {!isMc && (
         <button onClick={onRemove} className="absolute top-1 right-1 p-0.5 rounded-full bg-zinc-800 hover:bg-rose-900/60 text-zinc-600 hover:text-rose-400 transition-colors z-10">
           <X size={9} />
@@ -148,7 +146,7 @@ export const FormationBuilderPage: React.FC = () => {
   const [presetIds, setPresetIds] = useState<(number[] | null)[]>([null, null, null]);
   const [copied, setCopied] = useState(false);
   const [activeArchetype, setActiveArchetype] = useState<string | null>(null);
-  const [tab, setTab] = useState<'build' | 'meta' | 'archetypes' | 'export'>('build');
+  const [tab, setTab] = useState<'build' | 'export'>('build');
 
   const mcList = useMemo(() => heroes.filter(h => h.is_main === 1 || h.is_main === true), [heroes]);
   const selectedMc = useMemo(() => heroes.find(h => h.id === selectedMcId) || null, [heroes, selectedMcId]);
@@ -178,14 +176,14 @@ export const FormationBuilderPage: React.FC = () => {
       if (hash && hash.includes(',')) {
         const ids = hash.split(',').map(Number);
         const loadedSlots = ids.slice(0, TOTAL_SLOTS).map(id => id ? hr.rows.find(h => h.id === id) ?? null : null);
-        
+
         // Find if there is an MC in the loaded slots
         const mcIdx = loadedSlots.findIndex(h => h && (h.is_main === 1 || h.is_main === true));
         if (mcIdx >= 0 && loadedSlots[mcIdx]) {
           setSelectedMcId(loadedSlots[mcIdx]!.id);
           setMcSlotNum(mcIdx + 1);
         }
-        
+
         setSlots(loadedSlots.map((h, i) => i === mcIdx ? null : h));
         const activeIds = new Set(ids.slice(0, TOTAL_SLOTS).map((id, i) => id ? i + 1 : 0).filter(Boolean));
         setActiveSet(activeIds);
@@ -464,11 +462,10 @@ export const FormationBuilderPage: React.FC = () => {
                       return n;
                     });
                   }}
-                  className={`w-6 h-6 rounded flex items-center justify-center font-mono text-[10px] font-bold transition-all cursor-pointer ${
-                    mcSlotNum === slot
-                      ? 'bg-fuchsia-600 text-white shadow-sm'
-                      : 'bg-zinc-900 border border-zinc-800 text-zinc-500 hover:text-zinc-300'
-                  }`}
+                  className={`w-6 h-6 rounded flex items-center justify-center font-mono text-[10px] font-bold transition-all cursor-pointer ${mcSlotNum === slot
+                    ? 'bg-fuchsia-600 text-white shadow-sm'
+                    : 'bg-zinc-900 border border-zinc-800 text-zinc-500 hover:text-zinc-300'
+                    }`}
                 >
                   #{slot}
                 </button>
@@ -480,7 +477,7 @@ export const FormationBuilderPage: React.FC = () => {
 
       {/* Tabs */}
       <div className="flex gap-1 border-b border-zinc-800 pb-0.5">
-        {([['build','🗺 Build'],['archetypes','🎴 Archetypes'],['meta','📊 Meta'],['export','📤 Export']] as const).map(([id,label]) => (
+        {([['build', '🗺 Build'], ['export', '📤 Export']] as const).map(([id, label]) => (
           <button key={id} onClick={() => setTab(id as any)}
             className={`px-3 py-1.5 text-xs font-bold rounded-t-lg border border-b-0 transition-colors ${tab === id ? 'border-zinc-700 bg-zinc-900 text-zinc-200' : 'border-transparent text-zinc-500 hover:text-zinc-300'}`}>
             {label}
@@ -536,12 +533,11 @@ export const FormationBuilderPage: React.FC = () => {
                             onClick={e => toggleActive(sd.slot, e)}
                             disabled={isMc}
                             title={isMc ? 'Main Character Locked' : isAct ? 'Bench this hero' : finalActiveSet.size >= MAX_PARTNERS ? 'Max partners reached' : 'Activate this hero'}
-                            className={`absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded text-[8px] font-black transition-colors ${
-                              isMc ? 'bg-fuchsia-600/50 text-fuchsia-100 border border-fuchsia-600 cursor-default' :
+                            className={`absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded text-[8px] font-black transition-colors ${isMc ? 'bg-fuchsia-600/50 text-fuchsia-100 border border-fuchsia-600 cursor-default' :
                               isAct ? 'bg-fuchsia-600/50 text-fuchsia-200 border border-fuchsia-600/40 hover:bg-rose-900/50 hover:text-rose-300 hover:border-rose-600/40' :
-                              finalActiveSet.size >= MAX_PARTNERS ? 'bg-zinc-800 text-zinc-600 border border-zinc-700 cursor-not-allowed' :
-                              'bg-zinc-800 text-zinc-500 border border-zinc-700 hover:bg-fuchsia-900/40 hover:text-fuchsia-300 hover:border-fuchsia-700/40'
-                            }`}>
+                                finalActiveSet.size >= MAX_PARTNERS ? 'bg-zinc-800 text-zinc-600 border border-zinc-700 cursor-not-allowed' :
+                                  'bg-zinc-800 text-zinc-500 border border-zinc-700 hover:bg-fuchsia-900/40 hover:text-fuchsia-300 hover:border-fuchsia-700/40'
+                              }`}>
                             {isAct ? '● Active' : '○ Bench'}
                           </button>
                         )}
@@ -562,15 +558,17 @@ export const FormationBuilderPage: React.FC = () => {
                 <div className="text-2xl font-black text-fuchsia-300 font-mono">{totalPower.toLocaleString()}</div>
                 <div className="text-[10px] text-zinc-500">{finalActiveSet.size}/{MAX_PARTNERS} active · Lv.{targetLevel}</div>
                 <div className="space-y-1.5 border-t border-zinc-800 pt-2">
-                  {[1,2,3,4,5].map(p => { const c = profBreakdown[p] ?? 0; if (!c) return null; return (
-                    <div key={p} className="flex items-center gap-2">
-                      <span className={`text-[9px] font-bold w-16 ${PROF_COLOR[p]}`}>{getProfessionLabel(p)}</span>
-                      <div className="flex-1 h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-                        <div className="h-full bg-fuchsia-500 rounded-full" style={{ width: `${(c / finalActiveSet.size) * 100}%` }} />
+                  {[1, 2, 3, 4, 5].map(p => {
+                    const c = profBreakdown[p] ?? 0; if (!c) return null; return (
+                      <div key={p} className="flex items-center gap-2">
+                        <span className={`text-[9px] font-bold w-16 ${PROF_COLOR[p]}`}>{getProfessionLabel(p)}</span>
+                        <div className="flex-1 h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                          <div className="h-full bg-fuchsia-500 rounded-full" style={{ width: `${(c / finalActiveSet.size) * 100}%` }} />
+                        </div>
+                        <span className="text-[9px] font-mono text-zinc-500 w-3">{c}</span>
                       </div>
-                      <span className="text-[9px] font-mono text-zinc-500 w-3">{c}</span>
-                    </div>
-                  ); })}
+                    );
+                  })}
                 </div>
               </div>
               <div className="p-4 bg-zinc-900 border border-zinc-800 rounded-2xl space-y-3">
@@ -594,7 +592,7 @@ export const FormationBuilderPage: React.FC = () => {
                   </div>
                 ))}
                 {[rangeCoverage.near, rangeCoverage.far, rangeCoverage.strat].map((v, i) => v === 0 && (
-                  <p key={i} className="text-[9px] text-amber-400">⚠ No {['near','far','strategy'][i]}-range</p>
+                  <p key={i} className="text-[9px] text-amber-400">⚠ No {['near', 'far', 'strategy'][i]}-range</p>
                 ))}
               </div>
             </div>
@@ -606,10 +604,10 @@ export const FormationBuilderPage: React.FC = () => {
                 <span className="text-xs font-black uppercase tracking-wider text-zinc-400">Saved Presets</span>
               </div>
               <div className="grid grid-cols-3 gap-3">
-                {[0,1,2].map(i => (
+                {[0, 1, 2].map(i => (
                   <div key={i} className="space-y-1.5">
                     <span className="block text-[9px] text-zinc-500 font-bold uppercase">
-                      Preset {i+1} {presetIds[i] ? <span className="text-emerald-500">●</span> : <span className="text-zinc-700">○</span>}
+                      Preset {i + 1} {presetIds[i] ? <span className="text-emerald-500">●</span> : <span className="text-zinc-700">○</span>}
                     </span>
                     <div className="flex gap-1">
                       <button onClick={() => savePreset(i)} className="flex-1 py-1.5 text-[9px] font-bold bg-zinc-800 hover:bg-fuchsia-900/30 text-zinc-400 hover:text-fuchsia-300 rounded-lg border border-zinc-700 transition-colors">Save</button>
@@ -650,7 +648,7 @@ export const FormationBuilderPage: React.FC = () => {
 
             {/* Filters */}
             <div className="grid grid-cols-4 gap-1">
-              {[['All',0,'text-zinc-400'],['Vanguard',1,'text-emerald-400'],['Assault',2,'text-rose-400'],['Support',3,'text-violet-400']].map(([label, val, tc]) => (
+              {[['All', 0, 'text-zinc-400'], ['Vanguard', 1, 'text-emerald-400'], ['Assault', 2, 'text-rose-400'], ['Support', 3, 'text-violet-400']].map(([label, val, tc]) => (
                 <button key={val} onClick={() => setRoleFilter(+val)}
                   className={`py-1.5 text-[9px] font-bold rounded-lg border transition-colors ${roleFilter === +val ? `border-fuchsia-600/60 bg-fuchsia-900/20 ${tc}` : 'border-zinc-800 bg-zinc-900 text-zinc-500 hover:text-zinc-300'}`}>
                   {label}
@@ -658,7 +656,7 @@ export const FormationBuilderPage: React.FC = () => {
               ))}
             </div>
             <div className="flex gap-1 flex-wrap">
-              {[0,1,2,3,4,5].map(p => (
+              {[0, 1, 2, 3, 4, 5].map(p => (
                 <button key={p} onClick={() => setProfFilter(p)}
                   className={`px-2 py-1 rounded-lg text-[9px] font-bold border transition-colors ${profFilter === p ? 'border-fuchsia-600 bg-fuchsia-900/30 text-fuchsia-300' : 'border-zinc-800 bg-zinc-900 text-zinc-500 hover:text-zinc-300'}`}>
                   {p === 0 ? 'All' : getProfessionLabel(p)}
@@ -695,129 +693,6 @@ export const FormationBuilderPage: React.FC = () => {
                 );
               })}
             </div>
-          </div>
-        </div>
-      )}
-
-      {/* === TAB: ARCHETYPES === */}
-      {tab === 'archetypes' && (
-        <div className="space-y-4">
-          <p className="text-sm text-zinc-400">Pre-built formation archetypes. Applying one will auto-fill the grid based on profession priority and tier.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {ARCHETYPES.map(arch => (
-              <div key={arch.name} className={`p-5 rounded-2xl border bg-zinc-900 space-y-3 transition-all ${activeArchetype === arch.name ? 'border-fuchsia-500/50' : 'border-zinc-800 hover:border-zinc-700'}`}>
-                <div className="flex items-center gap-3">
-                  <span className="text-3xl">{arch.emoji}</span>
-                  <div>
-                    <div className="text-sm font-black text-zinc-100">{arch.name}</div>
-                    <div className="text-xs text-zinc-400 mt-0.5">{arch.desc}</div>
-                  </div>
-                </div>
-                <div className="text-[10px] text-zinc-500 space-y-0.5">
-                  <span className="block font-bold text-zinc-600 uppercase">Column Priority</span>
-                  {COLUMNS.map((col, ci) => (
-                    <div key={col.id} className="flex items-center gap-2">
-                      <span className={`w-16 font-bold ${col.headerColor}`}>{col.label}:</span>
-                      <span className="text-zinc-400">
-                        {(arch.profPrefs[ci] ?? []).map(p => getProfessionLabel(p)).join(' → ')}
-                      </span>
-                    </div>
-                  ))}
-                  <div className="flex items-center gap-1 pt-1">
-                    <span className="text-zinc-600">Min Tier:</span>
-                    <span className="font-bold text-zinc-300">{arch.tierMin}+</span>
-                  </div>
-                </div>
-                <button onClick={() => applyArchetype(arch)}
-                  className="w-full py-2 text-xs font-bold bg-fuchsia-900/40 hover:bg-fuchsia-800/50 text-fuchsia-300 rounded-xl border border-fuchsia-700/40 transition-colors">
-                  Apply Template
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* === TAB: META === */}
-      {tab === 'meta' && (
-        <div className="space-y-6">
-          <p className="text-sm text-zinc-400">Best achievable formation using only F2P (source=1,5) or all heroes sorted by tier.</p>
-          {(['f2p','premium'] as const).map(kind => {
-            const fm = metaAnalysis[kind];
-            const activeHs = fm.filter(Boolean) as Hero[];
-            const pw = activeHs.slice(0, MAX_PARTNERS).reduce((s, h) => s + calcPower(h, targetLevel), 0);
-            return (
-              <div key={kind} className={`p-5 rounded-2xl border bg-zinc-900 space-y-4 ${kind === 'f2p' ? 'border-emerald-800/50' : 'border-violet-800/50'}`}>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xl">{kind === 'f2p' ? '🌿' : '💎'}</span>
-                    <div>
-                      <div className={`text-sm font-black ${kind === 'f2p' ? 'text-emerald-400' : 'text-violet-400'}`}>
-                        {kind === 'f2p' ? 'F2P Best Formation' : 'All Heroes Best Formation'}
-                      </div>
-                      <div className="text-[10px] text-zinc-500">{kind === 'f2p' ? 'Source: Tavern (1) only' : 'All available heroes'}</div>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-lg font-black text-fuchsia-300 font-mono">{pw.toLocaleString()}</div>
-                    <div className="text-[9px] text-zinc-500">est. power @ Lv.{targetLevel}</div>
-                  </div>
-                </div>
-                <div className="flex gap-3">
-                  {COLUMNS.map((col, ci) => (
-                    <div key={col.id} className="flex-1 space-y-2">
-                      <div className={`text-[9px] font-black uppercase tracking-wider text-center ${col.headerColor}`}>{col.label}</div>
-                      {Array.from({ length: col.count }, (_, ri) => {
-                        const sd = ALL_SLOTS.find(s => s.col === ci && s.row === ri)!;
-                        const hero = fm[sd.slot - 1];
-                        if (!hero) return (
-                          <div key={ri} className="p-2 rounded-lg border border-dashed border-zinc-800 text-center text-[9px] text-zinc-700">Empty</div>
-                        );
-                        return (
-                          <Link key={ri} to={`/heroes/${hero.id}`} className="block p-2 rounded-lg border border-zinc-800 bg-zinc-950/60 hover:border-zinc-700 transition-colors">
-                            <div className="text-[10px] font-bold text-zinc-200 truncate">{hero.name}</div>
-                            <div className="flex items-center gap-1 mt-0.5">
-                              <span className={`text-[8px] font-bold ${PROF_COLOR[hero.profession ?? 0]}`}>{getProfessionLabel(hero.profession)}</span>
-                              <span className={`text-[8px] font-black ${getQualityColorClass(hero.quality)}`}>{hero.role}</span>
-                            </div>
-                          </Link>
-                        );
-                      })}
-                    </div>
-                  ))}
-                </div>
-                <button onClick={() => {
-                  setSlots(fm);
-                  setActiveSet(new Set(fm.map((h, i) => h ? i + 1 : 0).filter(Boolean).slice(0, MAX_PARTNERS)));
-                  setTab('build');
-                }} className="text-xs font-bold text-fuchsia-400 hover:text-fuchsia-300 transition-colors">
-                  Load this formation into builder →
-                </button>
-              </div>
-            );
-          })}
-
-          {/* Source breakdown */}
-          <div className="p-4 bg-zinc-900 border border-zinc-800 rounded-2xl space-y-3">
-            <div className="text-xs font-bold text-zinc-400">Hero Source Distribution</div>
-            {[
-              { src: [1,5], label: '🌿 F2P / Tavern', color: 'bg-emerald-500' },
-              { src: [6], label: '🎰 Limited Gacha', color: 'bg-violet-500' },
-              { src: [8,9,10,11], label: '💎 Premium Events', color: 'bg-fuchsia-500' },
-              { src: [4], label: '⚙️ Custom / Special', color: 'bg-amber-500' },
-            ].map(({ src, label, color }) => {
-              const count = heroes.filter(h => src.includes(h.source ?? -1)).length;
-              if (!count) return null;
-              return (
-                <div key={label} className="flex items-center gap-2">
-                  <span className="text-xs text-zinc-400 w-36">{label}</span>
-                  <div className="flex-1 h-2 bg-zinc-800 rounded-full overflow-hidden">
-                    <div className={`h-full rounded-full ${color} opacity-70`} style={{ width: `${(count / heroes.length) * 100}%` }} />
-                  </div>
-                  <span className="text-[10px] font-mono text-zinc-500 w-6">{count}</span>
-                </div>
-              );
-            })}
           </div>
         </div>
       )}

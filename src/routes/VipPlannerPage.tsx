@@ -13,16 +13,16 @@ interface VipPerk {
 
 const VIP_DATA: VipPerk[] = [
   { level: 0, costGold: 0, perks: ["Base daily energy", "Standard tavern recruiting limits", "Standard daily quest limits"] },
-  { level: 1, costGold: 60, perks: ["Unlock auto-battle speed x2", "+1 daily stamina buy", "+1 arena challenge buy", "Exclusive VIP 1 Shop entry"] },
-  { level: 2, costGold: 300, perks: ["+2 daily stamina buy", "Unlock 1-click mail claim", "Unlock automatic gear refinement", "VIP 2 rebate chest"] },
+  { level: 1, costGold: 100, perks: ["Unlock auto-battle speed x2", "+1 daily stamina buy", "+1 arena challenge buy", "Exclusive VIP 1 Shop entry"] },
+  { level: 2, costGold: 500, perks: ["+2 daily stamina buy", "Unlock 1-click mail claim", "Unlock automatic gear refinement", "VIP 2 rebate chest"] },
   { level: 3, costGold: 1000, perks: ["+3 daily stamina buy", "+5 benched partner slot slots", "Unlock 1-click sweep of completed stages", "Exclusive VIP 3 recruit card"] },
   { level: 4, costGold: 2000, perks: ["+4 daily stamina buy", "+1 daily dungeon bonus attempt", "Unlock fast-forward boss intros", "VIP 4 premium avatar border"] },
   { level: 5, costGold: 5000, perks: ["+5 daily stamina buy", "+2 arena challenge buys", "Unlock 1-click partner level up to cap", "Exclusive VIP 5 exclusive Zanpakutō skin"] },
   { level: 6, costGold: 10000, perks: ["+6 daily stamina buy", "Unlock instant gacha 10x skip", "VIP 6 Daily gold income bonus (+15%)", "Exclusive VIP 6 custom title"] },
-  { level: 7, costGold: 20000, perks: ["+7 daily stamina buy", "+2 daily dungeon bonus attempts", "Unlock 1-click world map claim", "VIP 7 exclusive Legendary recruit pack"] },
-  { level: 8, costGold: 30000, perks: ["+8 daily stamina buy", "Unlock custom profile colors", "Unlock 1-click sweep for Elite stages", "VIP 8 permanent EXP bonus (+10%)"] },
-  { level: 9, costGold: 50000, perks: ["+9 daily stamina buy", "Unlock custom combat speed x3", "Exclusive VIP 9 badge in global chat", "VIP 9 exclusive partner choice chest"] },
-  { level: 10, costGold: 80000, perks: ["+10 daily stamina buy", "+3 daily dungeon bonus attempts", "Unlock automatic Zanpakutō phase releases", "VIP 10 ultimate mythic selection card"] },
+  { level: 7, costGold: 30000, perks: ["+7 daily stamina buy", "+2 daily dungeon bonus attempts", "Unlock 1-click world map claim", "VIP 7 exclusive Legendary recruit pack"] },
+  { level: 8, costGold: 50000, perks: ["+8 daily stamina buy", "Unlock custom profile colors", "Unlock 1-click sweep for Elite stages", "VIP 8 permanent EXP bonus (+10%)"] },
+  { level: 9, costGold: 100000, perks: ["+9 daily stamina buy", "Unlock custom combat speed x3", "Exclusive VIP 9 badge in global chat", "VIP 9 exclusive partner choice chest"] },
+  { level: 10, costGold: 200000, perks: ["+10 daily stamina buy", "+3 daily dungeon bonus attempts", "Unlock automatic Zanpakutō phase releases", "VIP 10 ultimate mythic selection card"] },
   //{ level: 11, costGold: 120000, perks: ["+11 daily stamina buy", "Unlock custom guild flag icons", "VIP 11 permanent stamina cap extension (+30)", "VIP 11 custom mount skin"] },
   //{ level: 12, costGold: 150000, perks: ["+12 daily stamina buy", "+4 daily dungeon bonus attempts", "Unlock custom battle backgrounds", "VIP 12 exclusive Zanpakutō Refinement Stone multiplier"] },
   //{ level: 13, costGold: 200000, perks: ["+13 daily stamina buy", "Unlock 1-click sweep for organization raids", "VIP 13 ultimate Soul Jade cashback rebate (+20%)", "VIP 13 elite commander title"] },
@@ -94,7 +94,7 @@ export const VipPlannerPage: React.FC = () => {
         const lowerName = name.toLowerCase();
         if (lowerName.includes('fund') || lowerName.includes('growth')) {
           rating = 5;
-          roiDesc = "Maximum return: Up to 1200% ROI in delayed Soul Jades upon reaching level milestones.";
+          roiDesc = "Maximum return: Up to 1200% ROI in delayed Gold upon reaching level milestones.";
         } else if (lowerName.includes('cashback') || lowerName.includes('cash back') || lowerName.includes('return')) {
           rating = 5;
           roiDesc = "Ultra high return: 500% ROI instant cashback during VIP rebate weeks.";

@@ -22,8 +22,8 @@ export const getRewardTypeName = (type: number): string => {
 export const getRewardCodeName = (type: number, code: number): string => {
   if (type === 0) {
     switch (code) {
-      case 0: return "Silver / Coins";
-      case 1: return "Gold / Jades";
+      case 0: return "Silver";
+      case 1: return "Gold";
       case 2: return "Vigor / Stamina";
       default: return `Currency (Code ${code})`;
     }
@@ -45,7 +45,7 @@ export const RewardList: React.FC<RewardListProps> = ({ rewardsJson, articles = 
       {rewards.map((reward, idx) => {
         const isItem = isArticleReference(reward);
         let articleName = "";
-        
+
         if (isItem && articles.length > 0) {
           const art = articles.find(a => a.id === reward.code);
           if (art && art.name) {

@@ -156,8 +156,8 @@ export const GuildVipPlannerPage: React.FC = () => {
           <button
             onClick={() => setActiveTab('guild')}
             className={`px-4 py-2 text-sm font-semibold rounded-lg flex items-center gap-2 transition-all ${activeTab === 'guild'
-                ? 'bg-white dark:bg-zinc-800 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
+              ? 'bg-white dark:bg-zinc-800 text-indigo-600 dark:text-indigo-400 shadow-sm'
+              : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
               }`}
           >
             <Users className="w-4 h-4" /> Guild Skill Planner
@@ -165,8 +165,8 @@ export const GuildVipPlannerPage: React.FC = () => {
           <button
             onClick={() => setActiveTab('vip')}
             className={`px-4 py-2 text-sm font-semibold rounded-lg flex items-center gap-2 transition-all ${activeTab === 'vip'
-                ? 'bg-white dark:bg-zinc-800 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
+              ? 'bg-white dark:bg-zinc-800 text-indigo-600 dark:text-indigo-400 shadow-sm'
+              : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
               }`}
           >
             <Star className="w-4 h-4" /> VIP Privilege Matrix
@@ -309,8 +309,8 @@ export const GuildVipPlannerPage: React.FC = () => {
                   key={vip.id}
                   onClick={() => setSelectedVipLevel(vip.id)}
                   className={`py-2 rounded-xl border font-bold text-xs transition-all ${selectedVipLevel === vip.id
-                      ? 'border-indigo-500 bg-indigo-500/5 text-indigo-600 dark:text-indigo-400'
-                      : 'border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-950 text-zinc-600 dark:text-zinc-400'
+                    ? 'border-indigo-500 bg-indigo-500/5 text-indigo-600 dark:text-indigo-400'
+                    : 'border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-950 text-zinc-600 dark:text-zinc-400'
                     }`}
                 >
                   VIP {idx}
@@ -329,7 +329,7 @@ export const GuildVipPlannerPage: React.FC = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-zinc-550">Gold Threshold:</span>
-                    <span className="font-bold text-zinc-800 dark:text-zinc-200">{vipConfigs[selectedVipLevel - 1].charge_count} Jades</span>
+                    <span className="font-bold text-zinc-800 dark:text-zinc-200">{vipConfigs[selectedVipLevel - 1].charge_count} Gold</span>
                   </div>
 
                   <div className="flex justify-between">
