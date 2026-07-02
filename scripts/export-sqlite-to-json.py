@@ -30,6 +30,7 @@ def main():
 
     tables = [
         "articles",
+        "tbuildvalue",
         "cities",
         "daily_quests",
         "heroes",

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { loadBaseEquips, loadSuits, loadEquipUpgrades, loadEquipAdditionals, loadArticles, loadEquipGenerates } from '../data/loaders';
-import { BaseEquip, Suit, EquipUpgrade, EquipAdditional, Article, EquipGenerate } from '../types/db';
+import { loadBaseEquips, loadSuits, loadEquipUpgrades, loadEquipAdditionals, loadArticles, loadEquipGenerates, loadBuildValues, loadBuildConsumes } from '../data/loaders';
+import { BaseEquip, Suit, EquipUpgrade, EquipAdditional, Article, EquipGenerate, BuildValue, BuildConsume } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
 
 function formatProfessionLock(lockStr: string): string {
@@ -27,6 +27,8 @@ export function EquipmentSuitePage() {
   const [additionals, setAdditionals] = useState<EquipAdditional[]>([]);
   const [articlesMap, setArticlesMap] = useState<Record<number, Article>>({});
   const [generates, setGenerates] = useState<EquipGenerate[]>([]);
+  const [buildValues, setBuildValues] = useState<BuildValue[]>([]);
+  const [buildConsumes, setBuildConsumes] = useState<BuildConsume[]>([]);
 
   const [activeTab, setActiveTab] = useState<'catalog' | 'suits' | 'upgrades' | 'forge'>('catalog');
 
@@ -41,6 +43,8 @@ export function EquipmentSuitePage() {
   // Upgrade planner states
   const [currentUpgradeLvl, setCurrentUpgradeLvl] = useState<number>(1);
   const [targetUpgradeLvl, setTargetUpgradeLvl] = useState<number>(20);
+  const [plannerSelectedQuality, setPlannerSelectedQuality] = useState<string>('4');
+  const [plannerSelectedEquipType, setPlannerSelectedEquipType] = useState<string>('1');
 
   useEffect(() => {
     Promise.all([
@@ -49,13 +53,17 @@ export function EquipmentSuitePage() {
       loadEquipUpgrades(),
       loadEquipAdditionals(),
       loadArticles(),
-      loadEquipGenerates()
-    ]).then(([equipsRes, suitsRes, upgradesRes, additionalsRes, articlesRes, generatesRes]) => {
+      loadEquipGenerates(),
+      loadBuildValues(),
+      loadBuildConsumes()
+    ]).then(([equipsRes, suitsRes, upgradesRes, additionalsRes, articlesRes, generatesRes, buildValuesRes, buildConsumesRes]) => {
       setBaseEquips(equipsRes.rows);
       setSuits(suitsRes.rows);
       setUpgrades(upgradesRes.rows);
       setAdditionals(additionalsRes.rows);
       setGenerates(generatesRes.rows);
+      setBuildValues(buildValuesRes.rows);
+      setBuildConsumes(buildConsumesRes.rows);
 
       const aMap: Record<number, Article> = {};
       articlesRes.rows.forEach(art => {
@@ -168,12 +176,21 @@ export function EquipmentSuitePage() {
   // Calculate Upgrade Costs
   const calculateUpgradeCosts = () => {
     let goldCost = 0;
-    let stoneCost = 0;
+    let stoneCost = 0; // This is still simulated as I don't have the data for it.
 
-    // Simulating leveling progression
+    const findBuildConsume = (level: number, quality: number) => {
+      const id = quality * 1000 + level;
+      return buildConsumes.find(bc => bc.id === id);
+    };
+
     for (let l = currentUpgradeLvl; l < targetUpgradeLvl; l++) {
-      // Scale costs based on level
-      goldCost += Math.floor(Math.pow(l, 1.8) * 120 + 200);
+      const consume = findBuildConsume(l, parseInt(plannerSelectedQuality));
+      if (consume) {
+        goldCost += consume.consume;
+      } else {
+        // Fallback to simulation if not found
+        goldCost += Math.floor(Math.pow(l, 1.8) * 120 + 200);
+      }
       stoneCost += Math.floor(l * 1.5 + 1);
     }
     return { goldCost, stoneCost };
@@ -463,6 +480,42 @@ export function EquipmentSuitePage() {
             <div className="space-y-4">
               <div>
                 <label className="text-xs text-subtle uppercase tracking-wider block mb-2">
+                  Equipment Quality
+                </label>
+                <select
+                  value={plannerSelectedQuality}
+                  onChange={e => setPlannerSelectedQuality(e.target.value)}
+                  className="w-full bg-bg border border-border rounded px-3 py-1.5 text-text focus:outline-none focus:border-brand"
+                >
+                  <option value="1">Common (White)</option>
+                  <option value="2">Uncommon (Green)</option>
+                  <option value="3">Rare (Blue)</option>
+                  <option value="4">Epic (Purple)</option>
+                  <option value="5">Legendary (Orange)</option>
+                  <option value="6">Mythic (Red)</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="text-xs text-subtle uppercase tracking-wider block mb-2">
+                  Equipment Type
+                </label>
+                <select
+                  value={plannerSelectedEquipType}
+                  onChange={e => setPlannerSelectedEquipType(e.target.value)}
+                  className="w-full bg-bg border border-border rounded px-3 py-1.5 text-text focus:outline-none focus:border-brand"
+                >
+                  <option value="1">Weapon</option>
+                  <option value="2">Helmet</option>
+                  <option value="3">Armor</option>
+                  <option value="4">Ornament</option>
+                  <option value="5">Talisman</option>
+                  <option value="6">Book</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="text-xs text-subtle uppercase tracking-wider block mb-2">
                   Current Forge level: {currentUpgradeLvl}
                 </label>
                 <input
@@ -518,24 +571,40 @@ export function EquipmentSuitePage() {
                 <thead>
                   <tr className="border-b border-border text-subtle uppercase font-mono tracking-wider">
                     <th className="py-2.5">Level Node</th>
-                    <th className="py-2.5">Silver cost (Approx)</th>
+                    <th className="py-2.5">Silver cost</th>
                     <th className="py-2.5">Crystals needed</th>
-                    <th className="py-2.5">Incremental Stats (Att/Def)</th>
+                    <th className="py-2.5">Incremental Stats</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border text-text font-mono">
                   {Array.from({ length: 10 }).map((_, idx) => {
                     const lvl = currentUpgradeLvl + idx;
                     if (lvl >= targetUpgradeLvl) return null;
-                    const nextGold = Math.floor(Math.pow(lvl, 1.8) * 120 + 200);
+                    
+                    const findBuildValue = (level: number, quality: number, equipType: number) => 
+                      buildValues.find(bv => bv.build_level === level && bv.quality === quality && bv.equip_type === equipType);
+
+                    const findBuildConsume = (level: number, quality: number) => {
+                      const id = quality * 1000 + level;
+                      return buildConsumes.find(bc => bc.id === id);
+                    };
+
+                    const currentBv = findBuildValue(lvl, parseInt(plannerSelectedQuality), parseInt(plannerSelectedEquipType));
+                    const nextBv = findBuildValue(lvl + 1, parseInt(plannerSelectedQuality), parseInt(plannerSelectedEquipType));
+                    
+                    const incrementalStat = nextBv && currentBv ? nextBv.value - currentBv.value : (nextBv ? nextBv.value : 'N/A');
+
+                    const consume = findBuildConsume(lvl, parseInt(plannerSelectedQuality));
+                    const nextGold = consume ? consume.consume.toLocaleString() : 'N/A';
+
                     const nextStone = Math.floor(lvl * 1.5 + 1);
 
                     return (
                       <tr key={idx} className="hover:bg-hover">
                         <td className="py-3 text-brand font-bold">Lv. {lvl} ➔ {lvl + 1}</td>
-                        <td className="py-3">{nextGold.toLocaleString()}</td>
+                        <td className="py-3">{nextGold}</td>
                         <td className="py-3 text-orange-300">{nextStone}</td>
-                        <td className="py-3 text-success">+{Math.floor(lvl * 4.5 + 10)} Att / +{Math.floor(lvl * 1.8 + 4)} Def</td>
+                        <td className="py-3 text-success">+{incrementalStat}</td>
                       </tr>
                     );
                   })}

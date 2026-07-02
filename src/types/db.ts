@@ -1075,6 +1075,20 @@ export interface BuffEffect {
   icon_url: number;
 }
 
+export interface BuildValue {
+  id: number;
+  build_level: number;
+  quality: number;
+  equip_type: number;
+  value: number;
+  add_value: number;
+}
+
+export interface BuildConsume {
+  id: number;
+  consume: number;
+}
+
 export interface OrgPointInfo {
   id: number;
   name: string;

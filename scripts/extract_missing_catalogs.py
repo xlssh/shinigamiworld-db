@@ -73,11 +73,11 @@ def scan_package(file_path):
     return decompressed_bins
 
 def main():
-    pkg0 = scan_package("0F000000.binPackage")
-    pkg1 = scan_package("0F000001.binPackage")
+    pkg0 = scan_package("../0F000000.binPackage")
+    pkg1 = scan_package("../0F000001.binPackage")
     all_bins = {**pkg0, **pkg1}
 
-    out_dir = "game-database-tool/public/data"
+    out_dir = "public/data"
     os.makedirs(out_dir, exist_ok=True)
 
     # 1. BaseEquip (16777220)
@@ -802,7 +802,49 @@ def main():
             json.dump({"table": "black_market_items", "rowCount": len(rows), "rows": rows}, f, indent=2)
         print(f"Extracted black_market_items.json: {len(rows)} rows.")
 
-    print("\nExtraction of all 27 missing database tables is successfully complete!")
+    # 28. BuildValue (16777227)
+    if 16777227 in all_bins:
+        reader = BinReader(all_bins[16777227])
+        reader.read_uint() # resource_id
+        row_count = reader.read_uint()
+        rows = []
+        for _ in range(row_count):
+            row_id = reader.read_uint()
+            build_level = reader.read_uint()
+            quality = reader.read_uint()
+            equip_type = reader.read_uint()
+            value = reader.read_uint()
+            add_value = reader.read_uint()
+            rows.append({
+                "id": row_id,
+                "build_level": build_level,
+                "quality": quality,
+                "equip_type": equip_type,
+                "value": value,
+                "add_value": add_value
+            })
+        with open(os.path.join(out_dir, "build_values.json"), "w", encoding="utf-8") as f:
+            json.dump({"table": "build_values", "rowCount": len(rows), "rows": rows}, f, indent=2)
+        print(f"Extracted build_values.json: {len(rows)} rows.")
+
+    # 29. BuildConsume (16777226)
+    if 16777226 in all_bins:
+        reader = BinReader(all_bins[16777226])
+        reader.read_uint() # resource_id
+        row_count = reader.read_uint()
+        rows = []
+        for _ in range(row_count):
+            row_id = reader.read_uint()
+            consume = reader.read_uint()
+            rows.append({
+                "id": row_id,
+                "consume": consume,
+            })
+        with open(os.path.join(out_dir, "build_consumes.json"), "w", encoding="utf-8") as f:
+            json.dump({"table": "build_consumes", "rowCount": len(rows), "rows": rows}, f, indent=2)
+        print(f"Extracted build_consumes.json: {len(rows)} rows.")
+
+    print("\nExtraction of all 29 missing database tables is successfully complete!")
 
 if __name__ == "__main__":
     main()
