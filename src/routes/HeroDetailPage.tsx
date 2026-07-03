@@ -407,7 +407,7 @@ export const HeroDetailPage: React.FC = () => {
           <div className="grid grid-cols-2 gap-y-3 gap-x-2 text-xs">
             <div>
               <span className="text-subtle block mb-0.5">Gender</span>
-              <span className="font-semibold text-muted">{hero.sex === 1 ? 'Male' : hero.sex === 2 ? 'Female' : `Sex ${hero.sex}`}</span>
+              <span className="font-semibold text-muted">{hero.sex === 0 ? 'Female' : hero.sex === 1 ? 'Male' : `Sex ${hero.sex}`}</span>
             </div>
             <div>
               <span className="text-subtle block mb-0.5">Faction</span>
