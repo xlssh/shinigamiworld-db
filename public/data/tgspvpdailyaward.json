@@ -1,0 +1,68 @@
+{
+  "table": "tgspvpdailyaward",
+  "rowCount": 3,
+  "rows": [
+    {
+      "id": 10001,
+      "quality": 1,
+      "type": 1,
+      "cost_type": 1,
+      "cost": 10000,
+      "_loc2_": [
+        {
+          "type": 5,
+          "code": 0,
+          "amount": 500
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 10002,
+      "quality": 3,
+      "type": 2,
+      "cost_type": 2,
+      "cost": 100,
+      "_loc2_": [
+        {
+          "type": 5,
+          "code": 0,
+          "amount": 1500
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 10003,
+      "quality": 5,
+      "type": 3,
+      "cost_type": 2,
+      "cost": 500,
+      "_loc2_": [
+        {
+          "type": 5,
+          "code": 0,
+          "amount": 3000
+        },
+        {
+          "type": 1,
+          "code": 14100283,
+          "amount": 30
+        },
+        {
+          "type": 1,
+          "code": 14100003,
+          "amount": 10
+        }
+      ]
+    }
+  ]
+}

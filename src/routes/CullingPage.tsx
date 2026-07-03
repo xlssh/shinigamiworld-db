@@ -6,7 +6,7 @@ import { LoadingState } from '../components/LoadingState';
 import { ErrorState } from '../components/ErrorState';
 import { 
   Swords, Shield, Compass, ChevronRight, Zap, Target,
-  Info, Award, ShieldAlert, BookOpen, AlertCircle
+  Info, Award, ShieldAlert, BookOpen, AlertCircle, Sparkles, Coins, Gem
 } from 'lucide-react';
 
 export const CullingPage: React.FC = () => {
@@ -17,8 +17,16 @@ export const CullingPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Selections
+  // Tabs: 'stages' | 'calculator'
+  const [activeTab, setActiveTab] = useState<'stages' | 'calculator'>('stages');
+
+  // Stages Selections
   const [selectedStageId, setSelectedStageId] = useState<number>(0);
+
+  // Calculator Selections
+  const [selectedMagicType, setSelectedMagicType] = useState<number>(1); // Type 1: Vanguard, 2: Attacker, 3: Support, 4: Wind Force
+  const [currentStep, setCurrentStep] = useState<number>(0);
+  const [targetStep, setTargetStep] = useState<number>(10);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -66,8 +74,6 @@ export const CullingPage: React.FC = () => {
     if (!activeStage) return null;
     
     // Stage references boss detail ID in culling_magics
-    // Typically matches army_id or stage location indices
-    // Let's search magics where id equals stage.id or links
     const boss = magics.find(m => m.id === activeStage.id);
     return boss || null;
   }, [magics, activeStage]);
@@ -76,8 +82,6 @@ export const CullingPage: React.FC = () => {
   const decodeAwardsList = (awardData: any) => {
     if (!awardData) return [];
     
-    // Handles format: [{"type": 1, "code": code, "amount": amount}]
-    // or direct list if it's already an array
     let list: any[] = [];
     if (Array.isArray(awardData)) {
       list = awardData;
@@ -111,13 +115,102 @@ export const CullingPage: React.FC = () => {
     return activeStage ? decodeAwardsList(activeStage.award_ex) : [];
   }, [activeStage, articlesMap]);
 
-  if (loading) return <LoadingState message="Decoding Culling Game boss configurations..." />;
+  // Sequential Chain Builder for Culling Magic Upgrades
+  const selectedChain = useMemo(() => {
+    if (magics.length === 0) return [];
+    const filtered = magics.filter(m => m.type === selectedMagicType);
+    const magicsMap: Record<number, CullingMagic> = {};
+    filtered.forEach(m => {
+      magicsMap[m.id] = m;
+    });
+
+    const startId = selectedMagicType * 1000000;
+    const chain: CullingMagic[] = [];
+    let currId = startId;
+    const visited = new Set<number>();
+    
+    // Phase 0 Tracing
+    while (currId in magicsMap && !visited.has(currId)) {
+      visited.add(currId);
+      const r = magicsMap[currId];
+      chain.push(r);
+      currId = r.next_id;
+    }
+
+    // Phase 1-4 Transcend Tracing (starts at startId + 101)
+    const transcendStartId = startId + 101;
+    let currTransId = transcendStartId;
+    while (currTransId in magicsMap && !visited.has(currTransId)) {
+      visited.add(currTransId);
+      const r = magicsMap[currTransId];
+      chain.push(r);
+      currTransId = r.next_id;
+    }
+
+    return chain;
+  }, [magics, selectedMagicType]);
+
+  // Adjust selections on chain change
+  useEffect(() => {
+    if (selectedChain.length > 0) {
+      setCurrentStep(0);
+      setTargetStep(Math.min(selectedChain.length - 1, 10));
+    }
+  }, [selectedChain]);
+
+  // Experience and Practice Estimations
+  const trainingCalculations = useMemo(() => {
+    if (selectedChain.length === 0 || currentStep >= targetStep) {
+      return { totalExp: 0, silver: 0, gold: 0, items: 0, silverSteps: 0, goldSteps: 0, itemSteps: 0 };
+    }
+
+    let totalExp = 0;
+    for (let i = currentStep; i < targetStep; i++) {
+      totalExp += selectedChain[i]?.need_exp || 0;
+    }
+
+    const current = selectedChain[currentStep];
+    const silverExp = current?.silver_exp || 10;
+    const silverCost = current?.need_silver || 100;
+    const goldExp = current?.gold_exp || 30;
+    const goldCost = current?.need_gold || 10;
+    const itemExp = current?.item_exp || 100;
+    const itemCost = current?.need_item || 1;
+
+    const silverSteps = Math.ceil(totalExp / silverExp);
+    const goldSteps = Math.ceil(totalExp / goldExp);
+    const itemSteps = Math.ceil(totalExp / itemExp);
+
+    return {
+      totalExp,
+      silverSteps,
+      silver: silverSteps * silverCost,
+      goldSteps,
+      gold: goldSteps * goldCost,
+      itemSteps,
+      items: itemSteps * itemCost
+    };
+  }, [selectedChain, currentStep, targetStep]);
+
+  const statGains = useMemo(() => {
+    const current = selectedChain[currentStep];
+    const target = selectedChain[targetStep];
+    if (!current || !target) return { power: 0, agile: 0, intelligence: 0, life: 0 };
+    return {
+      power: (target.power || 0) - (current.power || 0),
+      agile: (target.agile || 0) - (current.agile || 0),
+      intelligence: (target.intelligence || 0) - (current.intelligence || 0),
+      life: (target.life || 0) - (current.life || 0)
+    };
+  }, [selectedChain, currentStep, targetStep]);
+
+  if (loading) return <LoadingState message="Decoding Culling Game and Magic database tables..." />;
   if (error) return <ErrorState message={error} onRetry={() => window.location.reload()} />;
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-zinc-200 dark:border-zinc-800 pb-5">
         <div>
           <div className="flex items-center gap-2 text-zinc-400 dark:text-zinc-500 text-xs font-semibold mb-1">
             <Link to="/" className="hover:text-zinc-300 transition-colors">Dashboard</Link>
@@ -125,161 +218,362 @@ export const CullingPage: React.FC = () => {
             <span className="text-zinc-500 dark:text-zinc-400">Tools</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 dark:text-white flex items-center gap-2.5">
-            <Swords className="text-red-500" size={28} />
-            Culling Game & Endless Abyss Trial Auditor
+            <Swords className="text-red-500 animate-pulse" size={28} />
+            Culling Game & Magic training Auditor
           </h1>
           <p className="text-xs text-zinc-500 mt-1">
-            Inspect floor layouts, culling boss combat stats, and audit culling first-clear drop packages.
+            Analyze endless abyss trial drops, culling stage layouts, and optimize culling magic training requirements.
           </p>
+        </div>
+
+        {/* Tab Selector */}
+        <div className="flex bg-zinc-100 dark:bg-zinc-950 p-1.5 rounded-xl border border-zinc-200 dark:border-zinc-850 self-end">
+          <button
+            onClick={() => setActiveTab('stages')}
+            className={`px-4 py-2 rounded-lg text-xs font-bold transition-all ${
+              activeTab === 'stages'
+                ? 'bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white shadow-sm'
+                : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
+            }`}
+          >
+            Endless Abyss stages
+          </button>
+          <button
+            onClick={() => setActiveTab('calculator')}
+            className={`px-4 py-2 rounded-lg text-xs font-bold transition-all ${
+              activeTab === 'calculator'
+                ? 'bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white shadow-sm'
+                : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
+            }`}
+          >
+            Magic Upgrades Optimizer
+          </button>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        
-        {/* Left Column: Culling Floors selection */}
-        <div className="lg:col-span-1 space-y-6">
-          <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-4">
-            <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Culling game Floors</span>
-            
-            <div className="space-y-1.5 max-h-[380px] overflow-y-auto pr-1">
-              {stages.map((stage) => {
-                const isSelected = selectedStageId === stage.id;
-                return (
-                  <button
-                    key={stage.id}
-                    onClick={() => setSelectedStageId(stage.id)}
-                    className={`w-full flex items-center justify-between p-3 rounded-xl border text-xs font-bold transition-all ${
-                      isSelected
-                        ? 'border-red-500 bg-red-500/10 text-red-700 dark:text-red-400 shadow-sm animate-pulse'
-                        : 'border-zinc-50 dark:border-zinc-955 bg-zinc-50/50 dark:bg-zinc-950/20 hover:border-zinc-200 text-zinc-655 dark:text-zinc-305'
-                    }`}
-                  >
-                    <span>{stage.name || `Floor #${stage.id}`}</span>
-                    <span className="font-mono text-[9px] text-zinc-400">Lv. {stage.need_level}</span>
-                  </button>
-                );
-              })}
+      {activeTab === 'stages' ? (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 animate-fade-in">
+          
+          {/* Left Column: Culling Floors selection */}
+          <div className="lg:col-span-1 space-y-6">
+            <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-4">
+              <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Abyss Floors</span>
+              
+              <div className="space-y-1.5 max-h-[460px] overflow-y-auto pr-1">
+                {stages.map((stage) => {
+                  const isSelected = selectedStageId === stage.id;
+                  return (
+                    <button
+                      key={stage.id}
+                      onClick={() => setSelectedStageId(stage.id)}
+                      className={`w-full flex items-center justify-between p-3 rounded-xl border text-xs font-bold transition-all ${
+                        isSelected
+                          ? 'border-red-500 bg-red-500/10 text-red-700 dark:text-red-400 shadow-sm'
+                          : 'border-zinc-50 dark:border-zinc-955 bg-zinc-50/50 dark:bg-zinc-950/20 hover:border-zinc-200 text-zinc-655 dark:text-zinc-305'
+                      }`}
+                    >
+                      <span>{stage.name || `Floor #${stage.id}`}</span>
+                      <span className="font-mono text-[9px] text-zinc-400 bg-zinc-100 dark:bg-zinc-950 px-2 py-0.5 rounded">
+                        Lv. {stage.need_level}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Right Column: Stage Details & Drops list */}
-        <div className="lg:col-span-2 space-y-6">
-          
-          {/* Boss Encounter card */}
-          <div className="p-6 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-5">
-            <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Floor Encounter Boss Profile</span>
+          {/* Right Column: Stage Details & Drops list */}
+          <div className="lg:col-span-2 space-y-6">
             
-            {activeStage ? (
-              <div className="space-y-5">
-                <div className="flex justify-between items-start pb-3 border-b border-zinc-100 dark:border-zinc-800/60">
-                  <div>
-                    <h3 className="font-black text-base text-zinc-850 dark:text-zinc-100">
-                      {activeStage.name || `Floor #${activeStage.id}`}
-                    </h3>
-                    <p className="text-[10px] text-zinc-450 mt-1 font-mono">
-                      Location Index: {activeStage.location} | Entry level limit: {activeStage.need_level}
-                    </p>
+            {/* Boss Encounter card */}
+            <div className="p-6 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-5">
+              <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Floor Encounter Boss Profile</span>
+              
+              {activeStage ? (
+                <div className="space-y-5">
+                  <div className="flex justify-between items-start pb-3 border-b border-zinc-100 dark:border-zinc-800/60">
+                    <div>
+                      <h3 className="font-black text-base text-zinc-850 dark:text-zinc-100">
+                        {activeStage.name || `Floor #${activeStage.id}`}
+                      </h3>
+                      <p className="text-[10px] text-zinc-450 mt-1 font-mono">
+                        Location Index: {activeStage.location} | Entry level limit: {activeStage.need_level}
+                      </p>
+                    </div>
+                    <span className="px-2.5 py-1 rounded-xl text-xs font-bold bg-red-500/10 text-red-700 dark:text-red-400 uppercase">
+                      Tactical Altar
+                    </span>
                   </div>
-                  <span className="px-2.5 py-1 rounded-xl text-xs font-bold bg-red-500/10 text-red-700 dark:text-red-400 font-semibold uppercase">
-                    Tactical Altar
+
+                  {/* Boss Attributes block */}
+                  {activeBoss ? (
+                    <div className="space-y-4">
+                      <span className="text-[9.5px] font-semibold text-zinc-400 uppercase block">Boss Combat Properties</span>
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                        
+                        <div className="p-3 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800/50 rounded-xl">
+                          <span className="text-zinc-455 text-[9px] uppercase block mb-0.5 font-bold">Health (HP)</span>
+                          <span className="font-mono font-black text-zinc-800 dark:text-white text-sm">
+                            {activeBoss.life.toLocaleString()}
+                          </span>
+                        </div>
+
+                        <div className="p-3 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800/50 rounded-xl">
+                          <span className="text-zinc-455 text-[9px] uppercase block mb-0.5 font-bold">Strength</span>
+                          <span className="font-mono font-black text-zinc-800 dark:text-white text-sm">
+                            {activeBoss.power.toLocaleString()}
+                          </span>
+                        </div>
+
+                        <div className="p-3 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800/50 rounded-xl">
+                          <span className="text-zinc-455 text-[9px] uppercase block mb-0.5 font-bold">Agility</span>
+                          <span className="font-mono font-black text-zinc-800 dark:text-white text-sm">
+                            {activeBoss.agile.toLocaleString()}
+                          </span>
+                        </div>
+
+                        <div className="p-3 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800/50 rounded-xl">
+                          <span className="text-zinc-455 text-[9px] uppercase block mb-0.5 font-bold">Wisdom</span>
+                          <span className="font-mono font-black text-zinc-800 dark:text-white text-sm">
+                            {activeBoss.intelligence.toLocaleString()}
+                          </span>
+                        </div>
+
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="p-3 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800/60 rounded-xl text-center text-xs text-zinc-400 italic">
+                      Boss stats parameters not defined for this stage level.
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div className="py-8 text-center text-xs text-zinc-400 italic">
+                  Select a floor to view details.
+                </div>
+              )}
+            </div>
+
+            {/* Floor Loot Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              {/* First Clear rewards */}
+              <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-4">
+                <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">First-Clear Drop Package</span>
+                <div className="space-y-2 max-h-[220px] overflow-y-auto pr-1">
+                  {firstClearAwards.length > 0 ? (
+                    firstClearAwards.map((item, idx) => (
+                      <div key={idx} className="p-2.5 border border-zinc-100 dark:border-zinc-800/80 bg-zinc-50/20 dark:bg-zinc-950/15 rounded-xl flex items-center justify-between text-xs font-bold">
+                        <span className="text-zinc-700 dark:text-zinc-300">{item.name}</span>
+                        <span className="font-mono text-red-600 dark:text-red-400 font-bold">{item.amount.toLocaleString()}x</span>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="text-center py-6 text-xs text-zinc-400 italic">
+                      No first-clear drop package registered.
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Daily sweeps drops */}
+              <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-4">
+                <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Daily Extra Sweep Drops</span>
+                <div className="space-y-2 max-h-[220px] overflow-y-auto pr-1">
+                  {extraAwards.length > 0 ? (
+                    extraAwards.map((item, idx) => (
+                      <div key={idx} className="p-2.5 border border-zinc-100 dark:border-zinc-800/80 bg-zinc-50/20 dark:bg-zinc-950/15 rounded-xl flex items-center justify-between text-xs font-bold">
+                        <span className="text-zinc-700 dark:text-zinc-300">{item.name}</span>
+                        <span className="font-mono text-zinc-800 dark:text-white font-bold">{item.amount.toLocaleString()}x</span>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="text-center py-6 text-xs text-zinc-400 italic">
+                      No extra sweep drops registered.
+                    </div>
+                  )}
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      ) : (
+        /* Culling Magic Optimizer Tab */
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 animate-fade-in">
+          {/* Settings panel */}
+          <div className="lg:col-span-1 space-y-6">
+            <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-4">
+              <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Configure Magic Node</span>
+              
+              {/* Magic Category Selector */}
+              <div className="space-y-1.5">
+                <label className="text-[10px] font-bold text-zinc-400 uppercase block mb-1">Select Magic Force</label>
+                <div className="grid grid-cols-1 gap-2">
+                  {[
+                    { type: 1, label: 'Vanguard Force', desc: 'HP & Defense boost' },
+                    { type: 2, label: 'Attacker Force', desc: 'Attack & Crit boost' },
+                    { type: 3, label: 'Support Force', desc: 'Speed & Heal boost' },
+                    { type: 4, label: 'Wind Force', desc: 'Awakened stats boost' }
+                  ].map((m) => (
+                    <button
+                      key={m.type}
+                      onClick={() => setSelectedMagicType(m.type)}
+                      className={`text-left p-3 rounded-xl border text-xs font-bold transition-all ${
+                        selectedMagicType === m.type
+                          ? 'border-violet-500 bg-violet-500/10 text-violet-700 dark:text-violet-400'
+                          : 'border-zinc-50 dark:border-zinc-955 bg-zinc-50/50 dark:bg-zinc-950/20 hover:border-zinc-200 text-zinc-600 dark:text-zinc-400'
+                      }`}
+                    >
+                      <div className="font-extrabold text-sm">{m.label}</div>
+                      <span className="text-[10px] text-zinc-400 block font-normal mt-0.5">{m.desc}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Levels range Selector */}
+              {selectedChain.length > 0 && (
+                <div className="grid grid-cols-2 gap-3 pt-2">
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-bold text-zinc-400 uppercase block">Current Step</label>
+                    <select
+                      value={currentStep}
+                      onChange={(e) => {
+                        const val = parseInt(e.target.value);
+                        setCurrentStep(val);
+                        if (val >= targetStep) {
+                          setTargetStep(Math.min(selectedChain.length - 1, val + 1));
+                        }
+                      }}
+                      className="w-full px-3 py-2 border border-zinc-200 dark:border-zinc-800 rounded-xl bg-zinc-50 dark:bg-zinc-950 text-xs font-bold text-zinc-800 dark:text-zinc-200 focus:outline-none"
+                    >
+                      {selectedChain.map((step, idx) => (
+                        <option key={idx} value={idx}>
+                          Step {idx} ({step.name})
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-bold text-zinc-400 uppercase block">Target Step</label>
+                    <select
+                      value={targetStep}
+                      onChange={(e) => setTargetStep(Math.max(currentStep + 1, parseInt(e.target.value)))}
+                      className="w-full px-3 py-2 border border-zinc-200 dark:border-zinc-800 rounded-xl bg-zinc-50 dark:bg-zinc-950 text-xs font-bold text-zinc-800 dark:text-zinc-200 focus:outline-none"
+                    >
+                      {selectedChain.map((step, idx) => (
+                        <option key={idx} value={idx} disabled={idx <= currentStep}>
+                          Step {idx} ({step.name})
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Calculator Output and Optimization panel */}
+          <div className="lg:col-span-2 space-y-6">
+            
+            {/* Required Resources Card */}
+            <div className="p-6 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-5">
+              <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Required Training Resources</span>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {/* Silver Practice */}
+                <div className="p-4 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800 rounded-xl flex flex-col gap-1 text-xs">
+                  <span className="font-bold text-zinc-400 flex items-center gap-1 uppercase text-[10px]">
+                    <Coins size={14} className="text-zinc-400" />
+                    Silver Practice Cost
+                  </span>
+                  <div className="mt-2 font-mono font-black text-zinc-800 dark:text-white text-base">
+                    {trainingCalculations.silver.toLocaleString()} Silver
+                  </div>
+                  <span className="text-[10px] text-zinc-400 mt-1 font-normal block">
+                    Requires {trainingCalculations.silverSteps.toLocaleString()} practice attempts.
                   </span>
                 </div>
 
-                {/* Boss Attributes block */}
-                {activeBoss ? (
-                  <div className="space-y-4">
-                    <span className="text-[9.5px] font-semibold text-zinc-400 uppercase block">Boss Combat Properties</span>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
-                      
-                      <div className="p-3 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800/50 rounded-xl">
-                        <span className="text-zinc-450 text-[9px] uppercase block">Health (HP)</span>
-                        <span className="font-mono font-black text-zinc-800 dark:text-white">
-                          {activeBoss.life.toLocaleString()}
-                        </span>
-                      </div>
-
-                      <div className="p-3 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800/50 rounded-xl">
-                        <span className="text-zinc-450 text-[9px] uppercase block">Strength</span>
-                        <span className="font-mono font-black text-zinc-800 dark:text-white">
-                          {activeBoss.power.toLocaleString()}
-                        </span>
-                      </div>
-
-                      <div className="p-3 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800/50 rounded-xl">
-                        <span className="text-zinc-450 text-[9px] uppercase block">Agility</span>
-                        <span className="font-mono font-black text-zinc-800 dark:text-white">
-                          {activeBoss.agile.toLocaleString()}
-                        </span>
-                      </div>
-
-                      <div className="p-3 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800/50 rounded-xl">
-                        <span className="text-zinc-450 text-[9px] uppercase block">Wisdom</span>
-                        <span className="font-mono font-black text-zinc-800 dark:text-white">
-                          {activeBoss.intelligence.toLocaleString()}
-                        </span>
-                      </div>
-
-                    </div>
+                {/* Gold Practice */}
+                <div className="p-4 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800 rounded-xl flex flex-col gap-1 text-xs">
+                  <span className="font-bold text-zinc-400 flex items-center gap-1 uppercase text-[10px]">
+                    <Sparkles size={14} className="text-violet-500" />
+                    Gold Practice Cost
+                  </span>
+                  <div className="mt-2 font-mono font-black text-violet-600 dark:text-violet-400 text-base">
+                    {trainingCalculations.gold.toLocaleString()} Gold
                   </div>
-                ) : (
-                  <div className="p-3 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800/60 rounded-xl text-center text-xs text-zinc-400 italic">
-                    Boss stats parameters not defined for this stage level.
+                  <span className="text-[10px] text-zinc-400 mt-1 font-normal block">
+                    Requires {trainingCalculations.goldSteps.toLocaleString()} practice attempts.
+                  </span>
+                </div>
+
+                {/* Fragment Practice */}
+                <div className="p-4 bg-zinc-50 dark:bg-zinc-950/20 border border-zinc-100 dark:border-zinc-800 rounded-xl flex flex-col gap-1 text-xs">
+                  <span className="font-bold text-zinc-400 flex items-center gap-1 uppercase text-[10px]">
+                    <Gem size={14} className="text-emerald-500" />
+                    Fragments Required
+                  </span>
+                  <div className="mt-2 font-mono font-black text-emerald-600 dark:text-emerald-400 text-base">
+                    {trainingCalculations.items.toLocaleString()} Fragments
                   </div>
-                )}
+                  <span className="text-[10px] text-zinc-400 mt-1 font-normal block font-sans">
+                    Requires {trainingCalculations.itemSteps.toLocaleString()} practice attempts ({selectedMagicType === 4 ? 'Awakened' : 'Normal'}).
+                  </span>
+                </div>
               </div>
-            ) : (
-              <div className="py-8 text-center text-xs text-zinc-400 italic">
-                Select a floor to view details.
-              </div>
-            )}
-          </div>
 
-          {/* Floor Loot Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            {/* First Clear rewards */}
-            <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-4">
-              <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">First-Clear Drop Package</span>
-              <div className="space-y-2 max-h-[160px] overflow-y-auto pr-1">
-                {firstClearAwards.length > 0 ? (
-                  firstClearAwards.map((item, idx) => (
-                    <div key={idx} className="p-2.5 border border-zinc-100 dark:border-zinc-800/80 bg-zinc-50/20 dark:bg-zinc-950/15 rounded-xl flex items-center justify-between text-xs">
-                      <span className="font-bold text-zinc-700 dark:text-zinc-300">{item.name}</span>
-                      <span className="font-mono font-bold text-red-600 dark:text-red-400">{item.amount.toLocaleString()}x</span>
-                    </div>
-                  ))
-                ) : (
-                  <div className="text-center py-6 text-xs text-zinc-400 italic">
-                    No first-clear drop package registered.
-                  </div>
-                )}
+              {/* Training Progression parameters info */}
+              <div className="p-4 bg-zinc-50 dark:bg-zinc-950/30 rounded-xl border border-zinc-150 dark:border-zinc-850 flex items-center gap-3 text-xs leading-normal text-zinc-500 italic">
+                <Info size={24} className="text-violet-500 shrink-0" />
+                <p>
+                  Optimized for total experience of <span className="font-bold font-mono text-zinc-700 dark:text-zinc-300">+{trainingCalculations.totalExp.toLocaleString()} Exp</span> to advance from Step {currentStep} to Step {targetStep}. Values correspond to the training coefficients at your current tier.
+                </p>
               </div>
             </div>
 
-            {/* Daily sweeps drops */}
-            <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-4">
-              <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Daily Extra Sweep Drops</span>
-              <div className="space-y-2 max-h-[160px] overflow-y-auto pr-1">
-                {extraAwards.length > 0 ? (
-                  extraAwards.map((item, idx) => (
-                    <div key={idx} className="p-2.5 border border-zinc-100 dark:border-zinc-800/80 bg-zinc-50/20 dark:bg-zinc-950/15 rounded-xl flex items-center justify-between text-xs">
-                      <span className="font-bold text-zinc-700 dark:text-zinc-300">{item.name}</span>
-                      <span className="font-mono font-bold text-zinc-800 dark:text-white">{item.amount.toLocaleString()}x</span>
-                    </div>
-                  ))
-                ) : (
-                  <div className="text-center py-6 text-xs text-zinc-400 italic">
-                    No extra sweep drops registered.
-                  </div>
-                )}
+            {/* Total Stats Gain Card */}
+            <div className="p-6 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-4">
+              <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Cumulative Attribute Increases</span>
+              
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-mono">
+                <div className="p-3 bg-zinc-50 dark:bg-zinc-950/50 rounded-xl border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+                  <span className="text-[9px] text-zinc-400 font-sans font-bold uppercase">Power Boost</span>
+                  <span className="font-bold text-emerald-600 dark:text-emerald-400 text-sm">
+                    +{statGains.power.toLocaleString()}
+                  </span>
+                </div>
+
+                <div className="p-3 bg-zinc-50 dark:bg-zinc-950/50 rounded-xl border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+                  <span className="text-[9px] text-zinc-400 font-sans font-bold uppercase">Agility Boost</span>
+                  <span className="font-bold text-emerald-600 dark:text-emerald-400 text-sm">
+                    +{statGains.agile.toLocaleString()}
+                  </span>
+                </div>
+
+                <div className="p-3 bg-zinc-50 dark:bg-zinc-950/50 rounded-xl border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+                  <span className="text-[9px] text-zinc-400 font-sans font-bold uppercase">Wisdom Boost</span>
+                  <span className="font-bold text-emerald-600 dark:text-emerald-400 text-sm">
+                    +{statGains.intelligence.toLocaleString()}
+                  </span>
+                </div>
+
+                <div className="p-3 bg-zinc-50 dark:bg-zinc-950/50 rounded-xl border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+                  <span className="text-[9px] text-zinc-400 font-sans font-bold uppercase">HP Life Boost</span>
+                  <span className="font-bold text-emerald-600 dark:text-emerald-400 text-sm">
+                    +{statGains.life.toLocaleString()}
+                  </span>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
-
-      </div>
+      )}
     </div>
   );
 };

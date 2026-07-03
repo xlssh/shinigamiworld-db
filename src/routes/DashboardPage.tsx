@@ -105,6 +105,62 @@ export const DashboardPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Endless PVP/PVE Battle Systems section */}
+      <section className="space-y-4">
+        <div className="flex items-center justify-between border-b border-border pb-2">
+          <h2 className="text-lg font-bold text-text">Endless Battle Planners & Auditors</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-semibold">
+          <Link
+            to="/tools/yammy-rampage"
+            className="p-4 border border-border bg-surface rounded-xl flex items-center justify-between hover:shadow-md hover:border-brand-soft group transition-all"
+          >
+            <div className="flex items-center gap-2.5">
+              <div className="p-2 rounded bg-red-500/10 text-red-500">
+                <Swords size={16} />
+              </div>
+              <div>
+                <div className="text-text font-bold">Yammy's Rampage</div>
+                <div className="text-[10px] text-muted font-normal mt-0.5">Evil Shards & silver drops planner</div>
+              </div>
+            </div>
+            <ArrowRight size={14} className="text-brand group-hover:translate-x-1 transition-transform" />
+          </Link>
+
+          <Link
+            to="/tools/cross-server-battle"
+            className="p-4 border border-border bg-surface rounded-xl flex items-center justify-between hover:shadow-md hover:border-brand-soft group transition-all"
+          >
+            <div className="flex items-center gap-2.5">
+              <div className="p-2 rounded bg-red-500/10 text-red-500 animate-pulse">
+                <ShieldCheck size={16} />
+              </div>
+              <div>
+                <div className="text-text font-bold">Cross Server Battle</div>
+                <div className="text-[10px] text-muted font-normal mt-0.5">Pyramid rewards & shop planner</div>
+              </div>
+            </div>
+            <ArrowRight size={14} className="text-brand group-hover:translate-x-1 transition-transform" />
+          </Link>
+
+          <Link
+            to="/tools/culling-tower"
+            className="p-4 border border-border bg-surface rounded-xl flex items-center justify-between hover:shadow-md hover:border-brand-soft group transition-all"
+          >
+            <div className="flex items-center gap-2.5">
+              <div className="p-2 rounded bg-violet-500/10 text-violet-500">
+                <Database size={16} />
+              </div>
+              <div>
+                <div className="text-text font-bold">Culling Magic Tower</div>
+                <div className="text-[10px] text-muted font-normal mt-0.5">Training optimization and exp cost</div>
+              </div>
+            </div>
+            <ArrowRight size={14} className="text-brand group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+      </section>
+
       {/* Main Database Table Grid */}
       <section className="space-y-4">
         <div className="flex items-center justify-between border-b border-border pb-2">

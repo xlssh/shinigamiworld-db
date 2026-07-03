@@ -1,0 +1,2306 @@
+{
+  "table": "tgspvp_reward",
+  "rowCount": 110,
+  "rows": [
+    {
+      "id": 1001,
+      "from": 1,
+      "to": 1,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "from": 2,
+      "to": 2,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 14
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "from": 3,
+      "to": 3,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 22
+        }
+      ]
+    },
+    {
+      "id": 1004,
+      "from": 4,
+      "to": 4,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "id": 1005,
+      "from": 5,
+      "to": 5,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 44
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "from": 6,
+      "to": 6,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": 1007,
+      "from": 7,
+      "to": 7,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 60
+        }
+      ]
+    },
+    {
+      "id": 2001,
+      "from": 1,
+      "to": 1,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 35
+        }
+      ]
+    },
+    {
+      "id": 2002,
+      "from": 2,
+      "to": 2,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 45
+        }
+      ]
+    },
+    {
+      "id": 2003,
+      "from": 3,
+      "to": 3,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 55
+        }
+      ]
+    },
+    {
+      "id": 2004,
+      "from": 4,
+      "to": 4,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 65
+        }
+      ]
+    },
+    {
+      "id": 2005,
+      "from": 5,
+      "to": 5,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 72
+        }
+      ]
+    },
+    {
+      "id": 2006,
+      "from": 6,
+      "to": 6,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 80
+        }
+      ]
+    },
+    {
+      "id": 2007,
+      "from": 7,
+      "to": 7,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 88
+        }
+      ]
+    },
+    {
+      "id": 3001,
+      "from": 1,
+      "to": 1,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 28
+        },
+        {
+          "type": 1,
+          "code": 14100283,
+          "amount": 65
+        }
+      ]
+    },
+    {
+      "id": 3002,
+      "from": 2,
+      "to": 20,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 22
+        },
+        {
+          "type": 1,
+          "code": 14100283,
+          "amount": 60
+        }
+      ]
+    },
+    {
+      "id": 3003,
+      "from": 21,
+      "to": 50,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 18
+        },
+        {
+          "type": 1,
+          "code": 14100283,
+          "amount": 55
+        }
+      ]
+    },
+    {
+      "id": 3004,
+      "from": 51,
+      "to": 100,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 15
+        },
+        {
+          "type": 1,
+          "code": 14100283,
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": 3005,
+      "from": 101,
+      "to": 500,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 11
+        },
+        {
+          "type": 1,
+          "code": 14100283,
+          "amount": 45
+        }
+      ]
+    },
+    {
+      "id": 3006,
+      "from": 501,
+      "to": 1000,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 9
+        },
+        {
+          "type": 1,
+          "code": 14100283,
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "id": 3007,
+      "from": 1001,
+      "to": 9999999,
+      "_loc2_": [
+        {
+          "type": 15,
+          "code": 12,
+          "amount": 7
+        },
+        {
+          "type": 1,
+          "code": 14100283,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 5001,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 46
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "id": 5002,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 36
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 5003,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 27
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": 5004,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 18
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5005,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 9
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5006,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 65
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "id": 5007,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 52
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 5008,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 39
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": 5009,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 26
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5010,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 13
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5011,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 85
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "id": 5012,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 68
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 5013,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 51
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": 5014,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 34
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5015,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 17
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5016,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 104
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "id": 5017,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 83
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 5018,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 62
+        },
+        {
+          "type": 12,
+          "code": 6003059,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": 5019,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 42
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5020,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 21
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5021,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 124
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "id": 5022,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 99
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 5023,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 74
+        },
+        {
+          "type": 12,
+          "code": 6003060,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": 5024,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 49
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5025,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5026,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 143
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "id": 5027,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 114
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 5028,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 86
+        },
+        {
+          "type": 12,
+          "code": 6003061,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": 5029,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 57
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5030,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 29
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5031,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 163
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "id": 5032,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 130
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 5033,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 98
+        },
+        {
+          "type": 12,
+          "code": 6003062,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": 5034,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 65
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 5035,
+      "from": 0,
+      "to": 0,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14100282,
+          "amount": 33
+        },
+        {
+          "type": 1,
+          "code": 14100733,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": 4001,
+      "from": 1,
+      "to": 1,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107023,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 20
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 120
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "id": 4002,
+      "from": 2,
+      "to": 2,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107024,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 17
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 100
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "id": 4003,
+      "from": 3,
+      "to": 3,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107024,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 16
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 95
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "id": 4004,
+      "from": 4,
+      "to": 4,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107024,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 15
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 90
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "id": 4005,
+      "from": 5,
+      "to": 5,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107024,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 14
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 85
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "id": 4006,
+      "from": 6,
+      "to": 6,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 13
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 80
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4007,
+      "from": 7,
+      "to": 7,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 13
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 75
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4008,
+      "from": 8,
+      "to": 8,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 13
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 75
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4009,
+      "from": 9,
+      "to": 9,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 12
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 75
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4010,
+      "from": 10,
+      "to": 10,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 12
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 75
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4011,
+      "from": 11,
+      "to": 11,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 12
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 70
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4012,
+      "from": 12,
+      "to": 12,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 11
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 70
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4013,
+      "from": 13,
+      "to": 13,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 11
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 70
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4014,
+      "from": 14,
+      "to": 14,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 11
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 70
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4015,
+      "from": 15,
+      "to": 15,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 11
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 70
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4016,
+      "from": 16,
+      "to": 16,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 10
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 65
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4017,
+      "from": 17,
+      "to": 17,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 10
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 65
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4018,
+      "from": 18,
+      "to": 18,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 10
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 65
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4019,
+      "from": 19,
+      "to": 19,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 10
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 65
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4020,
+      "from": 20,
+      "to": 20,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 10
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 65
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "id": 4021,
+      "from": 21,
+      "to": 21,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107025,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 9
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 60
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4022,
+      "from": 22,
+      "to": 22,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 9
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 60
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4023,
+      "from": 23,
+      "to": 23,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 9
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 60
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4024,
+      "from": 24,
+      "to": 24,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 9
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 60
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4025,
+      "from": 25,
+      "to": 25,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 9
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 60
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4026,
+      "from": 26,
+      "to": 26,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 8
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 55
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4027,
+      "from": 27,
+      "to": 27,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 8
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 55
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4028,
+      "from": 28,
+      "to": 28,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 8
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 55
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4029,
+      "from": 29,
+      "to": 29,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 8
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 55
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4030,
+      "from": 30,
+      "to": 30,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 8
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 55
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4031,
+      "from": 31,
+      "to": 31,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 7
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 50
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4032,
+      "from": 32,
+      "to": 32,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 7
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 50
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4033,
+      "from": 33,
+      "to": 33,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 7
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 50
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4034,
+      "from": 34,
+      "to": 34,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 7
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 50
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4035,
+      "from": 35,
+      "to": 35,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 7
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 50
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4036,
+      "from": 36,
+      "to": 36,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 7
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 45
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4037,
+      "from": 37,
+      "to": 37,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 7
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 45
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4038,
+      "from": 38,
+      "to": 38,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 7
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 45
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4039,
+      "from": 39,
+      "to": 39,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 7
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 45
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4040,
+      "from": 40,
+      "to": 40,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 7
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 45
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4041,
+      "from": 41,
+      "to": 41,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 6
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 40
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4042,
+      "from": 42,
+      "to": 42,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 6
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 40
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4043,
+      "from": 43,
+      "to": 43,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 6
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 40
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4044,
+      "from": 44,
+      "to": 44,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 6
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 40
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4045,
+      "from": 45,
+      "to": 45,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 6
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 40
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4046,
+      "from": 46,
+      "to": 46,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 6
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 35
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4047,
+      "from": 47,
+      "to": 47,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 6
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 35
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4048,
+      "from": 48,
+      "to": 48,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 6
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 35
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4049,
+      "from": 49,
+      "to": 49,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 6
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 35
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 4050,
+      "from": 50,
+      "to": 50,
+      "_loc2_": [
+        {
+          "type": 1,
+          "code": 14107026,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "code": 14107019,
+          "amount": 6
+        },
+        {
+          "type": 14,
+          "code": 29,
+          "amount": 35
+        },
+        {
+          "type": 13,
+          "code": 21,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "id": 6001,
+      "from": 1,
+      "to": 1,
+      "_loc2_": [
+        {
+          "type": 12,
+          "code": 10031,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 6002,
+      "from": 2,
+      "to": 5,
+      "_loc2_": [
+        {
+          "type": 12,
+          "code": 10032,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 6003,
+      "from": 6,
+      "to": 20,
+      "_loc2_": [
+        {
+          "type": 12,
+          "code": 10033,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": 6004,
+      "from": 21,
+      "to": 50,
+      "_loc2_": [
+        {
+          "type": 12,
+          "code": 10034,
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

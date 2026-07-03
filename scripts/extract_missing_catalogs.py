@@ -844,7 +844,130 @@ def main():
             json.dump({"table": "build_consumes", "rowCount": len(rows), "rows": rows}, f, indent=2)
         print(f"Extracted build_consumes.json: {len(rows)} rows.")
 
-    print("\nExtraction of all 29 missing database tables is successfully complete!")
+    # 30. TimeHero (16777435)
+    if 16777435 in all_bins:
+        reader = BinReader(all_bins[16777435])
+        reader.read_uint()
+        row_count = reader.read_uint()
+        rows = []
+        for _ in range(row_count):
+            row_id = reader.read_uint()
+            one_day_cost = reader.read_uint()
+            three_day_cost = reader.read_uint()
+            seven_day_cost = reader.read_uint()
+            forever_cost = reader.read_uint()
+            time_list = try_json_load(reader.read_utf())
+            need_candy = reader.read_uint()
+            rows.append({
+                "id": row_id,
+                "one_day_cost": one_day_cost,
+                "three_day_cost": three_day_cost,
+                "seven_day_cost": seven_day_cost,
+                "forever_cost": forever_cost,
+                "time_list": time_list,
+                "need_candy": need_candy
+            })
+        with open(os.path.join(out_dir, "ttimehero.json"), "w", encoding="utf-8") as f:
+            json.dump({"table": "ttimehero", "rowCount": len(rows), "rows": rows}, f, indent=2, ensure_ascii=False)
+        print(f"Extracted ttimehero.json: {len(rows)} rows.")
+
+    # 31. GSPVP_Reward (16777395)
+    if 16777395 in all_bins:
+        reader = BinReader(all_bins[16777395])
+        reader.read_uint()
+        row_count = reader.read_uint()
+        rows = []
+        for _ in range(row_count):
+            row_id = reader.read_uint()
+            from_rank = reader.read_int()
+            to_rank = reader.read_int()
+            awards = try_json_load(reader.read_utf())
+            rows.append({
+                "id": row_id,
+                "from": from_rank,
+                "to": to_rank,
+                "_loc2_": awards
+            })
+        with open(os.path.join(out_dir, "tgspvp_reward.json"), "w", encoding="utf-8") as f:
+            json.dump({"table": "tgspvp_reward", "rowCount": len(rows), "rows": rows}, f, indent=2, ensure_ascii=False)
+        print(f"Extracted tgspvp_reward.json: {len(rows)} rows.")
+
+    # 32. GSPVP_DailyAward (16777394)
+    if 16777394 in all_bins:
+        reader = BinReader(all_bins[16777394])
+        reader.read_uint()
+        row_count = reader.read_uint()
+        rows = []
+        for _ in range(row_count):
+            row_id = reader.read_uint()
+            quality = reader.read_int()
+            type_val = reader.read_int()
+            cost_type = reader.read_int()
+            cost = reader.read_int()
+            awards = try_json_load(reader.read_utf())
+            rows.append({
+                "id": row_id,
+                "quality": quality,
+                "type": type_val,
+                "cost_type": cost_type,
+                "cost": cost,
+                "_loc2_": awards
+            })
+        with open(os.path.join(out_dir, "tgspvpdailyaward.json"), "w", encoding="utf-8") as f:
+            json.dump({"table": "tgspvpdailyaward", "rowCount": len(rows), "rows": rows}, f, indent=2, ensure_ascii=False)
+        print(f"Extracted tgspvpdailyaward.json: {len(rows)} rows.")
+
+    # 33. FighterDetail (16777431)
+    if 16777431 in all_bins:
+        reader = BinReader(all_bins[16777431])
+        reader.read_uint()
+        row_count = reader.read_uint()
+        rows = []
+        for _ in range(row_count):
+            row_id = reader.read_uint()
+            desc = reader.read_utf()
+            name = reader.read_utf()
+            ask_need = try_json_load(reader.read_utf())
+            enlist_paper = try_json_load(reader.read_utf())
+            up_hero_id = reader.read_int()
+            stype = reader.read_int()
+            vip_limit = reader.read_int()
+            main_hero_level = reader.read_int()
+            fight_report_addr = reader.read_utf()
+            rows.append({
+                "id": row_id,
+                "desc": desc,
+                "name": name,
+                "ask_need": ask_need,
+                "enlist_paper": enlist_paper,
+                "up_hero_id": up_hero_id,
+                "stype": stype,
+                "vip_limit": vip_limit,
+                "main_hero_level": main_hero_level,
+                "fight_report_addr": fight_report_addr
+            })
+        with open(os.path.join(out_dir, "tfighterdetail.json"), "w", encoding="utf-8") as f:
+            json.dump({"table": "tfighterdetail", "rowCount": len(rows), "rows": rows}, f, indent=2, ensure_ascii=False)
+        print(f"Extracted tfighterdetail.json: {len(rows)} rows.")
+
+    # 34. SystemLanguage (16777284)
+    if 16777284 in all_bins:
+        reader = BinReader(all_bins[16777284])
+        reader.read_uint()
+        row_count = reader.read_uint()
+        rows = []
+        for _ in range(row_count):
+            row_id = reader.read_uint()
+            desc = reader.read_utf()
+            rows.append({
+                "id": row_id,
+                "desc": desc
+            })
+        with open(os.path.join(out_dir, "tsystemlanguage.json"), "w", encoding="utf-8") as f:
+            json.dump({"table": "tsystemlanguage", "rowCount": len(rows), "rows": rows}, f, indent=2, ensure_ascii=False)
+        print(f"Extracted tsystemlanguage.json: {len(rows)} rows.")
+
+    print("\nExtraction of all 34 missing database tables is successfully complete!")
 
 if __name__ == "__main__":
     main()

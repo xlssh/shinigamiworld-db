@@ -1123,5 +1123,25 @@ export interface WeaponSkill {
   skill_quality: number;
 }
 
+export interface ActivityDetail {
+  act_id: number;
+  class: string;
+  res_name: string;
+  name: string;
+  tname: string;
+  description: string;
+  tip: string;
+  price: number;
+  image_id: number;
+  awards: Array<{ key: number; value: number[]; prompt: string }> | null;
+  targets: Array<{ key: number; value: number[]; prompt: string }> | null;
+  extra: Record<string, any>;
+}
+
+export interface ActivityDetailsJson {
+  [key: string]: ActivityDetail;
+}
+
+
 
 

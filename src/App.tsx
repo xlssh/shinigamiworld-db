@@ -71,6 +71,8 @@ const LuckyWheelPage = React.lazy(() => import('./routes/LuckyWheelPage').then(m
 const FightReportPage = React.lazy(() => import('./routes/FightReportPage').then(m => ({ default: m.FightReportPage })));
 const ActivityCodexPage = React.lazy(() => import('./routes/ActivityCodexPage').then(m => ({ default: m.ActivityCodexPage })));
 const GuildTacticsPlannerPage = React.lazy(() => import('./routes/GuildTacticsPlannerPage').then(m => ({ default: m.GuildTacticsPlannerPage })));
+const YammyRampagePage = React.lazy(() => import('./routes/YammyRampagePage').then(m => ({ default: m.YammyRampagePage })));
+const CrossServerBattlePage = React.lazy(() => import('./routes/CrossServerBattlePage').then(m => ({ default: m.CrossServerBattlePage })));
 
 
 function App() {
@@ -127,7 +129,7 @@ function App() {
             <Route path="/tools/shops" element={<GachaShopsPage />} />
             <Route path="/tools/academy" element={<AcademyRelicsPage />} />
             <Route path="/tools/loot-oracle" element={<LootTableOraclePage />} />
-            <Route path="/tools/pve-campaign" element={<PveEncounterPage />} />
+            {/*<Route path="/tools/pve-campaign" element={<PveEncounterPage />} />*/}
             <Route path="/tools/guild-vip" element={<GuildVipPlannerPage />} />
             <Route path="/tools/ornaments" element={<OrnamentsPlannerPage />} />
             <Route path="/tools/soul-maps" element={<SoulMapsPlannerPage />} />
@@ -145,7 +147,9 @@ function App() {
             <Route path="/tools/lucky-wheel" element={<LuckyWheelPage />} />
             <Route path="/tools/fight-report" element={<FightReportPage />} />
             <Route path="/tools/activity-codex" element={<ActivityCodexPage />} />
-            <Route path="/tools/guild-tactics" element={<GuildTacticsPlannerPage />} />
+            <Route path="/tools/yammy-rampage" element={<YammyRampagePage />} />
+            <Route path="/tools/cross-server-battle" element={<CrossServerBattlePage />} />
+            {/*<Route path="/tools/guild-tactics" element={<GuildTacticsPlannerPage />} />*/}
           </Routes>
         </React.Suspense>
       </Layout>

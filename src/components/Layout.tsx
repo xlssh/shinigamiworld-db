@@ -134,7 +134,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     //{ name: 'Gacha & Shop Rates', to: '/tools/shops', icon: Coins },
     { name: 'Academy & Relics', to: '/tools/academy', icon: BookOpen },
     { name: 'Loot Table Oracle', to: '/tools/loot-oracle', icon: Sparkles },
-    { name: 'Campaign Encounters', to: '/tools/pve-campaign', icon: Swords },
+    //{ name: 'Campaign Encounters', to: '/tools/pve-campaign', icon: Swords },
     { name: 'Guild Devotion & VIP', to: '/tools/guild-vip', icon: Trophy },
     { name: 'Spiritual Ornaments', to: '/tools/ornaments', icon: Sparkles },
     { name: 'MC Soul Maps', to: '/tools/soul-maps', icon: Compass },
@@ -142,7 +142,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Beast Souls Planner', to: '/tools/beast-souls', icon: BarChart3 },
     //{ name: 'Temple Shrine', to: '/tools/shrine-simulator', icon: Trophy }, // TODO: unclear
     { name: 'Military Ranks', to: '/tools/military', icon: Trophy },
-    //{ name: 'Culling Abyss Tower', to: '/tools/culling-tower', icon: Swords }, // TODO: unclear
+    { name: 'Culling Abyss Tower', to: '/tools/culling-tower', icon: Swords }, // TODO: unclear
     //{ name: 'Equip Forge Planner', to: '/tools/forge-planner', icon: Sparkles }, // TODO: unclear
     //{ name: 'Nightmare Campaign', to: '/tools/nightmare-realms', icon: Globe }, // TODO: fix
     { name: 'Seven Souls Altar', to: '/tools/seven-souls', icon: Star },

@@ -12,7 +12,7 @@ import {
   SevenHeroStar, SevenHeroLittleStar, SevenHeroSoul, SevenHeroArmy, SevenHeroDailyAward,
   SoulCollectionRnd, SoulCollectionShop, SoulCollectionBase,
   BeautifulClothes, Beauty, HeroTalent, HdBigTurntable, HdJigsaw, BleachJigsaw, BuffEffect, BuildValue, BuildConsume,
-  OrgPointInfo, OrgPointAward, WeaponSkill
+  OrgPointInfo, OrgPointAward, WeaponSkill, ActivityDetail, ActivityDetailsJson
 } from '../types/db';
 
 const cache: { [key: string]: any } = {};
@@ -418,6 +418,31 @@ export async function loadOrgPointAwards(): Promise<TableJson<OrgPointAward>> {
 export async function loadWeaponSkills(): Promise<TableJson<WeaponSkill>> {
   return fetchWithCache<TableJson<WeaponSkill>>('data/weapon_skills.json');
 }
+
+export async function loadActivityDetails(): Promise<ActivityDetailsJson> {
+  return fetchWithCache<ActivityDetailsJson>('data/activity_details.json');
+}
+
+export async function loadGspvpRewards(): Promise<any> {
+  return fetchWithCache<any>('data/tgspvp_reward.json');
+}
+
+export async function loadGspvpDailyAwards(): Promise<any> {
+  return fetchWithCache<any>('data/tgspvpdailyaward.json');
+}
+
+export async function loadTtimeHeros(): Promise<any> {
+  return fetchWithCache<any>('data/ttimehero.json');
+}
+
+export async function loadSystemLanguage(): Promise<any> {
+  return fetchWithCache<any>('data/tsystemlanguage.json');
+}
+
+export async function loadFighterDetails(): Promise<any> {
+  return fetchWithCache<any>('data/tfighterdetail.json');
+}
+
 
 
 

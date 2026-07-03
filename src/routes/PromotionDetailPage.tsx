@@ -1,11 +1,12 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { loadPromotionalActivities } from '../data/loaders';
-import { PromotionalActivity } from '../types/db';
+import { loadPromotionalActivities, loadActivityDetails, loadAwards, loadArticles } from '../data/loaders';
+import { PromotionalActivity, ActivityDetail, Award, Article } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
 import { ErrorState } from '../components/ErrorState';
 import { JsonViewer } from '../components/JsonViewer';
-import { ArrowLeft, Flame, Calendar, ShieldAlert } from 'lucide-react';
+import { RewardList } from '../components/RewardList';
+import { ArrowLeft, Flame, Calendar, ShieldAlert, Gift, Trophy, Star, Target, Info, Coins, Sparkles, Compass, Shield, BookOpen } from 'lucide-react';
 
 function getTimeTypeLabel(type: number): string {
   switch (type) {
@@ -139,11 +140,1095 @@ function getTimeTypeBadgeClass(type: number): string {
   }
 }
 
+// 1. Pyramid Calculator Component
+const PyramidCalculator: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [smashCount, setSmashCount] = useState(10);
+  const [targetChips, setTargetChips] = useState(100);
+
+  const smashOne = details.extra.smash_one || 100;
+  const smashTen = details.extra.smash_ten || 950;
+  const smashFifty = details.extra.smash_fifty || 4500;
+  const proportion = details.extra.proportion || 1; // chips per smash
+
+  const getOptimalCost = (count: number) => {
+    let cost = 0;
+    let temp = count;
+    const fifties = Math.floor(temp / 50);
+    cost += fifties * smashFifty;
+    temp %= 50;
+    const tens = Math.floor(temp / 10);
+    cost += tens * smashTen;
+    temp %= 10;
+    cost += temp * smashOne;
+    return cost;
+  };
+
+  const cost = getOptimalCost(smashCount);
+  const estChips = smashCount * proportion;
+
+  const reqSmashes = Math.ceil(targetChips / (proportion || 1));
+  const reqGold = getOptimalCost(reqSmashes);
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Target size={16} className="text-amber-500" />
+        <span>Pyramid Smash Simulator & Cost Estimator</span>
+      </h4>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        {/* Left Column: Smashes to Cost & Points */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Simulate Smashes
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Number of Smashes:</label>
+            <input
+              type="number"
+              min={1}
+              max={1000}
+              value={smashCount}
+              onChange={(e) => setSmashCount(Math.max(1, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-2 pt-2">
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Estimated Cost</span>
+              <span className="font-mono font-extrabold text-violet-600 dark:text-violet-400 text-sm">
+                {cost.toLocaleString()} Gold
+              </span>
+            </div>
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Event Chips Earned</span>
+              <span className="font-mono font-extrabold text-emerald-600 dark:text-emerald-400 text-sm">
+                {estChips.toLocaleString()} Chips
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column: Target Points to Cost */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Calculate Goal Cost
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Target Event Chips:</label>
+            <input
+              type="number"
+              min={1}
+              max={10000}
+              value={targetChips}
+              onChange={(e) => setTargetChips(Math.max(1, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-2 pt-2">
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Smashes Required</span>
+              <span className="font-mono font-extrabold text-zinc-800 dark:text-zinc-200 text-sm">
+                {reqSmashes.toLocaleString()} Smashes
+              </span>
+            </div>
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Estimated Gold Cost</span>
+              <span className="font-mono font-extrabold text-violet-600 dark:text-violet-400 text-sm">
+                {reqGold.toLocaleString()} Gold
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 2. Rush in Seireitei Calculator Component
+const RushInSeireiteiCalculator: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [plannedNormalAttacks, setPlannedNormalAttacks] = useState(10);
+  const [plannedSpecialAttacks, setPlannedSpecialAttacks] = useState(5);
+  const [targetScore, setTargetScore] = useState(500);
+
+  const normalMilitary = details.extra.nomal_attack?.military || 1;
+  const normalHurt = details.extra.nomal_attack?.hurt || 10;
+  const specialMilitary = details.extra.special_attack?.military || 5;
+  const specialHurt = details.extra.special_attack?.hurt || 50;
+
+  const normalCost = 50;
+  const specialCost = 150;
+
+  const totalMilitary = plannedNormalAttacks * normalMilitary + plannedSpecialAttacks * specialMilitary;
+  const totalHurt = plannedNormalAttacks * normalHurt + plannedSpecialAttacks * specialHurt;
+  const estimatedGold = plannedNormalAttacks * normalCost + plannedSpecialAttacks * specialCost;
+
+  const reqSpecials = Math.ceil(targetScore / (specialMilitary || 1));
+  const reqGoldSpecials = reqSpecials * specialCost;
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Flame size={16} className="text-red-500" />
+        <span>Rush in Seireitei Attack & Store Planner</span>
+      </h4>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        {/* Attack Simulator */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Simulate Attack Runs
+          </span>
+          <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-1">
+              <label className="text-zinc-400 font-medium block">Normal Attacks:</label>
+              <input
+                type="number"
+                min={0}
+                value={plannedNormalAttacks}
+                onChange={(e) => setPlannedNormalAttacks(Math.max(0, parseInt(e.target.value) || 0))}
+                className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+              />
+            </div>
+            <div className="space-y-1">
+              <label className="text-zinc-400 font-medium block">Special Attacks:</label>
+              <input
+                type="number"
+                min={0}
+                value={plannedSpecialAttacks}
+                onChange={(e) => setPlannedSpecialAttacks(Math.max(0, parseInt(e.target.value) || 0))}
+                className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-2 pt-1">
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Estimated Gold</span>
+              <span className="font-mono font-extrabold text-violet-600 dark:text-violet-400 text-xs">
+                {estimatedGold.toLocaleString()} Gold
+              </span>
+            </div>
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Military Credits</span>
+              <span className="font-mono font-extrabold text-emerald-600 dark:text-emerald-400 text-xs">
+                +{totalMilitary.toLocaleString()}
+              </span>
+            </div>
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Total Boss Damage</span>
+              <span className="font-mono font-extrabold text-rose-600 dark:text-rose-400 text-xs">
+                {totalHurt.toLocaleString()} HP
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Store Purchase Planner */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Store Score Goal Estimator
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Target Store Score:</label>
+            <input
+              type="number"
+              min={1}
+              max={50000}
+              value={targetScore}
+              onChange={(e) => setTargetScore(Math.max(1, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-2 pt-2">
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Special Attacks Needed</span>
+              <span className="font-mono font-extrabold text-zinc-800 dark:text-zinc-200 text-xs">
+                {reqSpecials.toLocaleString()} Attacks
+              </span>
+            </div>
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Estimated Gold Cost</span>
+              <span className="font-mono font-extrabold text-violet-600 dark:text-violet-400 text-xs">
+                {reqGoldSpecials.toLocaleString()} Gold
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 3. King's Guard Calculator Component
+const KingsGuardCalculator: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [targetGuardIdx, setTargetGuardIdx] = useState(0);
+  const [includeFlipCost, setPlannedFlipCount] = useState(4);
+
+  const guards = details.extra.guards || [];
+  const gameCost = details.extra.game?.cost || 100;
+  const winCost = details.extra.game_win?.cost || 300;
+
+  const totalFlippedCost = includeFlipCost * gameCost;
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Star size={16} className="text-yellow-500" />
+        <span>King's Guard Flip & Recruit Estimator</span>
+      </h4>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        {/* Guard selector & flips */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Flipping Cost Estimator
+          </span>
+          {guards.length > 0 && (
+            <div className="space-y-3">
+              <div className="space-y-1">
+                <label className="text-zinc-400 font-medium block">Select Target Guard Card:</label>
+                <select
+                  value={targetGuardIdx}
+                  onChange={(e) => setTargetGuardIdx(parseInt(e.target.value))}
+                  className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none"
+                >
+                  {guards.map((g: any, i: number) => (
+                    <option key={i} value={i}>
+                      Guard #{g.index} (Type {g.cardType}) - Free flips: {g.getCard}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="space-y-1">
+                <label className="text-zinc-400 font-medium block">Planned Paid Flips (Beyond free):</label>
+                <input
+                  type="number"
+                  min={0}
+                  max={10}
+                  value={includeFlipCost}
+                  onChange={(e) => setPlannedFlipCount(Math.max(0, parseInt(e.target.value) || 0))}
+                  className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none font-mono font-bold"
+                />
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Calculated flips details */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Cost & Recruitment Analysis
+          </span>
+          <div className="grid grid-cols-2 gap-2">
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Estimated Paid Flips Cost</span>
+              <span className="font-mono font-extrabold text-violet-600 dark:text-violet-400 text-xs">
+                {totalFlippedCost.toLocaleString()} Gold
+              </span>
+            </div>
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Instant Win Cost</span>
+              <span className="font-mono font-extrabold text-amber-600 dark:text-amber-400 text-xs">
+                {winCost.toLocaleString()} Gold
+              </span>
+            </div>
+          </div>
+          <p className="text-[10px] text-zinc-500 leading-normal italic pt-1">
+            Tip: Standard play costs {gameCost} Gold per flip card. The instant win option flips all remaining cards automatically for {winCost} Gold, securing 100% of rewards immediately.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 4. King's Legend Calculator Component
+const KingsLegendCalculator: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [spentGold, setSpentGold] = useState(5000);
+
+  const costGoldVal = details.extra.cost_gold?.cost || 1000;
+  const rechargeGold = details.extra.recharge?.gold || 2000;
+  const turntableGold = details.extra.turntable?.gold || 200;
+
+  const progressPercent = Math.min(100, (spentGold / (costGoldVal || 1)) * 100);
+  const estSpins = Math.floor(spentGold / (turntableGold || 1));
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Trophy size={16} className="text-violet-500" />
+        <span>King's Legend Gold Spend & Spin Progress Estimator</span>
+      </h4>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        {/* Left column: Spent Gold Slider */}
+        <div className="space-y-4 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Simulate Spend Milestones
+          </span>
+          <div className="space-y-2">
+            <div className="flex justify-between items-center text-xs text-zinc-500">
+              <span>Your Gold Spend:</span>
+              <span className="font-bold font-mono text-violet-600 dark:text-violet-400 text-sm">
+                {spentGold.toLocaleString()} Gold
+              </span>
+            </div>
+            <input
+              type="range"
+              min={0}
+              max={costGoldVal * 2}
+              step={100}
+              value={spentGold}
+              onChange={(e) => setSpentGold(parseInt(e.target.value))}
+              className="w-full accent-violet-600 cursor-pointer"
+            />
+          </div>
+          <div className="space-y-1">
+            <div className="flex justify-between text-[9px] font-bold text-zinc-400 uppercase">
+              <span>Spend Milestone Progress:</span>
+              <span>{Math.round(progressPercent)}%</span>
+            </div>
+            <div className="w-full bg-zinc-100 dark:bg-zinc-950 h-2.5 rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-850">
+              <div
+                className="bg-violet-600 h-full rounded-full transition-all duration-300"
+                style={{ width: `${progressPercent}%` }}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Right column: Progress stats */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Estimated Activity Outputs
+          </span>
+          <div className="grid grid-cols-2 gap-2">
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Estimated Spins earned</span>
+              <span className="font-mono font-extrabold text-violet-600 dark:text-violet-400 text-xs">
+                {estSpins.toLocaleString()} Spins
+              </span>
+            </div>
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Recharge Gold Rebate</span>
+              <span className="font-mono font-extrabold text-emerald-600 dark:text-emerald-400 text-xs">
+                +{rechargeGold.toLocaleString()} Gold
+              </span>
+            </div>
+          </div>
+          <p className="text-[10px] text-zinc-500 leading-normal italic pt-1">
+            Tip: Spending gold earns turntable spins at {turntableGold} gold per spin, and unlocks spend rebate tiers (target: {costGoldVal.toLocaleString()} gold).
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 5. Power Rank Target Planner Component
+const PowerRankPlanner: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [currentPower, setCurrentPower] = useState(50000);
+
+  const targets = details.targets || [];
+
+  const achievedCount = targets.filter(t => currentPower >= t.key).length;
+  const nextTarget = targets.find(t => currentPower < t.key);
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Target size={16} className="text-rose-500" />
+        <span>Target Battle Power Milestone Planner</span>
+      </h4>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        {/* Power Input */}
+        <div className="space-y-4 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Your Battle Power Profile
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Current Battle Power:</label>
+            <input
+              type="number"
+              min={0}
+              value={currentPower}
+              onChange={(e) => setCurrentPower(Math.max(0, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold text-sm"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-2 pt-1">
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Achieved Milestones</span>
+              <span className="font-mono font-extrabold text-emerald-600 dark:text-emerald-400 text-xs">
+                {achievedCount} / {targets.length}
+              </span>
+            </div>
+            {nextTarget && (
+              <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+                <span className="text-[9px] text-zinc-400 font-bold uppercase">Next Power Goal</span>
+                <span className="font-mono font-extrabold text-rose-600 dark:text-rose-400 text-xs">
+                  {nextTarget.key.toLocaleString()} BP
+                </span>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Milestone milestones results */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 max-h-48 overflow-y-auto">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Milestones Breakdown
+          </span>
+          <div className="space-y-2">
+            {targets.map((t, i) => {
+              const achieved = currentPower >= t.key;
+              return (
+                <div key={i} className="flex justify-between items-center text-xs">
+                  <span className={`${achieved ? 'text-zinc-800 dark:text-zinc-200 font-bold' : 'text-zinc-400 dark:text-zinc-500 line-through'} transition-colors`}>
+                    {t.prompt || `Goal ${t.key.toLocaleString()}`}
+                  </span>
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${achieved ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'bg-zinc-100 text-zinc-400 dark:bg-zinc-950'}`}>
+                    {achieved ? 'ACHIEVED' : 'LOCKED'}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 6. Ice Heroes Calculator Component
+const IceHerosCalculator: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [targetScore, setTargetScore] = useState(1000);
+
+  const awards = details.extra.awards || [];
+  const chipBoxes = details.extra.chip_boxes || [];
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Trophy size={16} className="text-cyan-500" />
+        <span>Ice Heroes Score & Milestone Planner</span>
+      </h4>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        {/* Left Column: Milestones Progress */}
+        <div className="space-y-4 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 max-h-56 overflow-y-auto">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Recharge / Score Milestones
+          </span>
+          <div className="space-y-2">
+            {awards.map((aw: any, idx: number) => {
+              const condition = aw.condition || 0;
+              const achieved = targetScore >= condition;
+              return (
+                <div key={idx} className="flex justify-between items-center text-xs">
+                  <span className={`${achieved ? 'text-zinc-850 dark:text-zinc-200 font-bold' : 'text-zinc-400 dark:text-zinc-500 line-through'}`}>
+                    Score {condition.toLocaleString()}: Limit {aw.limit}
+                  </span>
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${achieved ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'bg-zinc-100 text-zinc-400 dark:bg-zinc-950'}`}>
+                    {achieved ? 'ACHIEVED' : 'LOCKED'}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Right Column: Goal setup & Box calculation */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Simulate Your Target Score
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Current / Target Score:</label>
+            <input
+              type="number"
+              min={0}
+              value={targetScore}
+              onChange={(e) => setTargetScore(Math.max(0, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+            />
+          </div>
+          {chipBoxes.length > 0 && (
+            <div className="p-3 bg-zinc-50 dark:bg-zinc-950/30 rounded border border-zinc-100 dark:border-zinc-850 text-[11px] leading-relaxed">
+              <span className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">Available Event Chests:</span>
+              <div className="space-y-1">
+                {chipBoxes.map((box: any, i: number) => (
+                  <div key={i} className="flex justify-between font-mono">
+                    <span>{box.name || `Box #${box.index}`}</span>
+                    <span className="text-violet-600 dark:text-violet-400 font-bold">Cost: {box.cost} Gold</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 7. Recharge Planner Component
+const RechargePlanner: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [plannedRecharge, setPlannedRecharge] = useState(1000);
+  const milestones = details.awards || [];
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Coins size={16} className="text-amber-500" />
+        <span>Unified Recharge & Rebate Planner</span>
+      </h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        <div className="space-y-4 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Recharge Target
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Planned Recharge (Gold):</label>
+            <input
+              type="number"
+              min={0}
+              value={plannedRecharge}
+              onChange={(e) => setPlannedRecharge(Math.max(0, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold text-sm"
+            />
+          </div>
+        </div>
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 max-h-48 overflow-y-auto">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Milestones Progress
+          </span>
+          <div className="space-y-2">
+            {milestones.map((t, i) => {
+              const achieved = plannedRecharge >= t.key;
+              return (
+                <div key={i} className="flex justify-between items-center text-xs">
+                  <span className={`${achieved ? 'text-zinc-800 dark:text-zinc-200 font-bold' : 'text-zinc-400 dark:text-zinc-500 line-through'} transition-colors`}>
+                    {t.prompt || `${t.key.toLocaleString()} Gold`}
+                  </span>
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${achieved ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'bg-zinc-100 text-zinc-400 dark:bg-zinc-950'}`}>
+                    {achieved ? 'ACHIEVED' : 'LOCKED'}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 8. Spend Planner Component
+const SpendPlanner: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [plannedSpend, setPlannedSpend] = useState(1000);
+  const milestones = details.awards || [];
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Sparkles size={16} className="text-violet-500" />
+        <span>Unified Spend Planner & Rebate Optimizer</span>
+      </h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        <div className="space-y-4 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Spending Target
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Planned Gold Spend:</label>
+            <input
+              type="number"
+              min={0}
+              value={plannedSpend}
+              onChange={(e) => setPlannedSpend(Math.max(0, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold text-sm"
+            />
+          </div>
+        </div>
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 max-h-48 overflow-y-auto">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Milestones Progress
+          </span>
+          <div className="space-y-2">
+            {milestones.map((t, i) => {
+              const achieved = plannedSpend >= t.key;
+              return (
+                <div key={i} className="flex justify-between items-center text-xs">
+                  <span className={`${achieved ? 'text-zinc-800 dark:text-zinc-200 font-bold' : 'text-zinc-400 dark:text-zinc-500 line-through'} transition-colors`}>
+                    {t.prompt || `Spend ${t.key.toLocaleString()} Gold`}
+                  </span>
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${achieved ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'bg-zinc-100 text-zinc-400 dark:bg-zinc-950'}`}>
+                    {achieved ? 'ACHIEVED' : 'LOCKED'}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 9. Fund Planner Component
+const FundPlanner: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [currentLv, setCurrentLv] = useState(50);
+  const [premiumActive, setPremiumActive] = useState(true);
+
+  const bagsNormal = details.extra.bags_normal || [];
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Compass size={16} className="text-emerald-500" />
+        <span>Growth Fund Yield & Investment Return Planner</span>
+      </h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        <div className="space-y-4 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Investment Option
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Current Level:</label>
+            <input
+              type="number"
+              min={1}
+              max={100}
+              value={currentLv}
+              onChange={(e) => setCurrentLv(Math.max(1, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold text-sm"
+            />
+          </div>
+          <div className="flex items-center gap-2 pt-1">
+            <input
+              type="checkbox"
+              id="premium_fund"
+              checked={premiumActive}
+              onChange={(e) => setPremiumActive(e.target.checked)}
+              className="accent-emerald-500 cursor-pointer"
+            />
+            <label htmlFor="premium_fund" className="text-zinc-600 dark:text-zinc-300 font-semibold cursor-pointer select-none">
+              Include Premium Fund Tier
+            </label>
+          </div>
+        </div>
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 max-h-48 overflow-y-auto">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Yield Breakdown
+          </span>
+          <div className="space-y-2">
+            {bagsNormal.map((item: any, idx: number) => {
+              const reqLv = item.levelLimit || 0;
+              const achieved = currentLv >= reqLv;
+              return (
+                <div key={idx} className="flex justify-between items-center text-xs">
+                  <span className={`${achieved ? 'text-zinc-800 dark:text-zinc-200 font-bold' : 'text-zinc-400 dark:text-zinc-500 line-through'}`}>
+                    Lv. {reqLv}: Normal reward achieved
+                  </span>
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${achieved ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'bg-zinc-100 text-zinc-400 dark:bg-zinc-950'}`}>
+                    {achieved ? 'CLAIMABLE' : 'LOCKED'}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 10. Super Treasure Planner Component
+const SuperTreasurePlanner: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [plannedRolls, setPlannedRolls] = useState(10);
+  const costPerRoll = 150; 
+  const totalCost = plannedRolls * costPerRoll;
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Shield size={16} className="text-violet-500" />
+        <span>Super Treasure Board Game Roll Planner</span>
+      </h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        <div className="space-y-4 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Configure Rolls
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Planned Roll Count:</label>
+            <input
+              type="number"
+              min={1}
+              value={plannedRolls}
+              onChange={(e) => setPlannedRolls(Math.max(1, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+            />
+          </div>
+        </div>
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 flex flex-col justify-center">
+          <div className="p-3 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-1">
+            <span className="text-[9px] text-zinc-400 font-bold uppercase">Estimated Gold Cost</span>
+            <span className="font-mono font-extrabold text-violet-600 dark:text-violet-400 text-base">
+              {totalCost.toLocaleString()} Gold
+            </span>
+          </div>
+          <p className="text-[9.5px] text-zinc-500 leading-normal italic pt-2">
+            Tip: Super Treasure board game consists of Page A, B, and C with variable milestones. Averaging 3.5 steps per roll is expected on standard dice options.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 11. Dice Gambling Simulator & Calculator
+const GamblingCalculator: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [rollsCount, setRollsCount] = useState(10);
+  const startCost = details.extra.btn_start_cost || 100;
+  const smallCost = details.extra.btn_small_cost || 50;
+  const totalCost = rollsCount * (startCost + smallCost);
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Target size={16} className="text-yellow-500" />
+        <span>Dice Gambling Cost Simulator</span>
+      </h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        <div className="space-y-4 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Simulate Play Runs
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Planned Play Count:</label>
+            <input
+              type="number"
+              min={1}
+              value={rollsCount}
+              onChange={(e) => setRollsCount(Math.max(1, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+            />
+          </div>
+        </div>
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 flex flex-col justify-center">
+          <div className="p-3 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-1">
+            <span className="text-[9px] text-zinc-400 font-bold uppercase">Estimated Gold Cost</span>
+            <span className="font-mono font-extrabold text-violet-600 dark:text-violet-400 text-base">
+              {totalCost.toLocaleString()} Gold
+            </span>
+          </div>
+          <p className="text-[9.5px] text-zinc-500 leading-normal italic pt-2">
+            Tip: Standard play starts at {startCost} Gold per roll. Guessing big/small cost adds {smallCost} Gold.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 12. Equipment Shop Selector & Calculator
+const ExchangeChipCalculator: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [selectedBoxIdx, setSelectedBoxIdx] = useState(0);
+  const buyBoxes = details.extra.buy_boxes || [];
+  const selectedBox = buyBoxes[selectedBoxIdx] || null;
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Gift size={16} className="text-violet-500" />
+        <span>Equipment Shop Box Pricing Analyzer</span>
+      </h4>
+      {buyBoxes.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+          <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+            <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+              Select Shop Box
+            </span>
+            <select
+              value={selectedBoxIdx}
+              onChange={(e) => setSelectedBoxIdx(parseInt(e.target.value))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none"
+            >
+              {buyBoxes.map((b: any, i: number) => (
+                <option key={i} value={i}>
+                  Box #{b.index} - Price: {b.need} Gold
+                </option>
+              ))}
+            </select>
+          </div>
+          {selectedBox && (
+            <div className="p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 flex flex-col justify-center">
+              <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-850 pb-1 mb-2">Box Pricing Detail</span>
+              <div className="font-mono text-xs">
+                <div>Price: <span className="font-bold text-violet-600 dark:text-violet-400">{selectedBox.need} Gold</span></div>
+                <div className="mt-1">Rewards Award ID: <span className="font-bold">#{selectedBox.awards?.[0]}</span></div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
+// 13. Group Buy Discount Estimator
+const TeamBuyCalculator: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [serverSignups, setServerSignups] = useState(50);
+  const offRates = details.extra.off_rates || [];
+
+  const matchedRateObj = offRates.find((rate: any) => serverSignups >= rate.count) || null;
+  const currentDiscount = matchedRateObj ? matchedRateObj.off : 100; 
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Trophy size={16} className="text-amber-500" />
+        <span>Group Buy Server Discount Estimator</span>
+      </h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        <div className="space-y-4 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Simulate Server Signups
+          </span>
+          <div className="space-y-1">
+            <label className="text-zinc-400 font-medium block">Server Signups Count:</label>
+            <input
+              type="number"
+              min={0}
+              max={1000}
+              value={serverSignups}
+              onChange={(e) => setServerSignups(Math.max(0, parseInt(e.target.value) || 0))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+            />
+          </div>
+        </div>
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 flex flex-col justify-center">
+          <div className="p-3 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-1">
+            <span className="text-[9px] text-zinc-400 font-bold uppercase">Estimated Discount Price</span>
+            <span className="font-mono font-extrabold text-violet-600 dark:text-violet-400 text-base">
+              {currentDiscount}% of Original Price
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 14. Limit Buy Store Planner
+const LimitBuyCalculator: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [selectedItemIdx, setSelectedItemIdx] = useState(0);
+  const items = details.extra.items || [];
+  const selectedItem = items[selectedItemIdx] || null;
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <ShieldAlert size={16} className="text-rose-500" />
+        <span>Limit Buy Store Item Analyzer</span>
+      </h4>
+      {items.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+          <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+            <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 block mb-1 font-sans">
+              Select Store Item
+            </span>
+            <select
+              value={selectedItemIdx}
+              onChange={(e) => setSelectedItemIdx(parseInt(e.target.value))}
+              className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none font-bold"
+            >
+              {items.map((it: any, i: number) => (
+                <option key={i} value={i}>
+                  Item Box #{it.boxIndex} - Price: {it.cost} Gold
+                </option>
+              ))}
+            </select>
+          </div>
+          {selectedItem && (
+            <div className="p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 flex flex-col justify-center font-mono">
+              <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-850 pb-1 mb-2 font-sans">Item Details</span>
+              <div>Price: <span className="font-bold text-violet-600 dark:text-violet-400">{selectedItem.cost} Gold</span></div>
+              <div className="mt-1">Player Purchase Limit: <span className="font-bold">{selectedItem.limit}x</span></div>
+              <div className="mt-1">Server Purchase Limit: <span className="font-bold">{selectedItem.serverLimit}x</span></div>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
+// 15. Hueco Mundo Candy Planner Component
+const HuecoMundoCandyPlanner: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const [loginDays, setLoginDays] = useState(10);
+  const [accumRecharge, setAccumRecharge] = useState(400);
+
+  const loginAward = details.extra.login_award || [];
+  const payAward = details.extra.pay_award || [];
+  const scoreMall = details.extra.score_mall || [];
+
+  // Calculate candies earned
+  const freeCandies = loginDays * (loginAward[0]?.addScore || 1);
+  let rechargeCandies = 0;
+  payAward.forEach((item: any) => {
+    if (accumRecharge >= (item.cond || 0)) {
+      rechargeCandies += item.addScore || 0;
+    }
+  });
+  const totalCandies = freeCandies + rechargeCandies;
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <Sparkles size={16} className="text-yellow-500" />
+        <span>Hueco Mundo Candy & Shop Yield Planner</span>
+      </h4>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        {/* Left Column: Candy Earnings Simulator */}
+        <div className="space-y-4 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1">
+            Candy Accumulator Simulator
+          </span>
+          <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-1">
+              <label className="text-zinc-400 font-medium block">Days Logged In (max 10):</label>
+              <input
+                type="number"
+                min={0}
+                max={10}
+                value={loginDays}
+                onChange={(e) => setLoginDays(Math.min(10, Math.max(0, parseInt(e.target.value) || 0)))}
+                className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+              />
+            </div>
+            <div className="space-y-1">
+              <label className="text-zinc-400 font-medium block">Accumulative Top-up (Gold):</label>
+              <input
+                type="number"
+                min={0}
+                value={accumRecharge}
+                onChange={(e) => setAccumRecharge(Math.max(0, parseInt(e.target.value) || 0))}
+                className="w-full px-3 py-1.5 border border-zinc-200 dark:border-zinc-800 rounded bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:ring-1 focus:ring-violet-500 font-mono font-bold"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-2 pt-1">
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Free Candies</span>
+              <span className="font-mono font-extrabold text-emerald-600 dark:text-emerald-400 text-xs">
+                +{freeCandies} Candies
+              </span>
+            </div>
+            <div className="p-2 bg-zinc-50 dark:bg-zinc-950/50 rounded border border-zinc-100 dark:border-zinc-800 flex flex-col gap-0.5">
+              <span className="text-[9px] text-zinc-400 font-bold uppercase">Total Candies Yield</span>
+              <span className="font-mono font-extrabold text-amber-600 dark:text-amber-400 text-xs">
+                {totalCandies} Candies
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column: Gikongan Candy Shop list */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 max-h-56 overflow-y-auto">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1 mb-2">
+            Gikongan Candy Shop (Can afford)
+          </span>
+          <div className="space-y-1">
+            {scoreMall.map((box: any, i: number) => {
+              const canAfford = totalCandies >= box.cost;
+              return (
+                <div key={i} className="flex justify-between items-center text-xs pb-1 border-b border-zinc-50 dark:border-zinc-950">
+                  <span className={`${canAfford ? 'text-zinc-800 dark:text-zinc-200 font-bold' : 'text-zinc-400 dark:text-zinc-500'}`}>
+                    Award ID #{box.awardid}
+                  </span>
+                  <span className={`font-mono text-[10px] font-bold ${canAfford ? 'text-emerald-600 dark:text-emerald-400' : 'text-zinc-400'}`}>
+                    Cost: {box.cost} Candies
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 16. Seireitei Farewell Planner Component
+const SeireiteiFarewellPlanner: React.FC<{ details: ActivityDetail; articlesList: Article[]; awardsList: Award[] }> = ({ details, articlesList, awardsList }) => {
+  const chapters = details.extra.items || [];
+
+  return (
+    <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/20 rounded-xl space-y-4">
+      <h4 className="font-bold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
+        <BookOpen size={16} className="text-violet-500" />
+        <span>Seireitei Farewell Story Chapters Auditor</span>
+      </h4>
+      
+      <div className="grid grid-cols-1 gap-6 text-xs">
+        {/* Chapters requirements list */}
+        <div className="space-y-3 bg-white dark:bg-zinc-900 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 max-h-64 overflow-y-auto">
+          <span className="font-bold uppercase tracking-wider text-[10px] text-zinc-400 block border-b border-zinc-100 dark:border-zinc-800 pb-1 mb-2">
+            Chapter Required Partners List
+          </span>
+          <div className="space-y-3">
+            {chapters.map((ch: any, i: number) => (
+              <div key={i} className="p-3 bg-zinc-50 dark:bg-zinc-950/50 border border-zinc-150 dark:border-zinc-850 rounded-xl space-y-2">
+                <div className="flex justify-between items-center text-xs font-bold border-b border-zinc-100 dark:border-zinc-800 pb-1">
+                  <span className="text-violet-600 dark:text-violet-400 font-extrabold">{ch.Title}</span>
+                  <span className="text-[10px] font-mono font-bold text-zinc-400">Award: #{ch.awardid}</span>
+                </div>
+                {ch.hero && ch.hero.length > 0 && (
+                  <div>
+                    <span className="text-[9px] font-bold text-zinc-400 uppercase block mb-1">Required Partner IDs:</span>
+                    <div className="flex flex-wrap gap-1">
+                      {ch.hero.map((heroId: number) => (
+                        <span key={heroId} className="px-1.5 py-0.5 rounded font-mono text-[9px] font-bold bg-zinc-100 dark:bg-zinc-950 text-zinc-500">
+                          Hero #{heroId}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {ch.knife && ch.knife.length > 0 && (
+                  <div className="pt-1">
+                    <span className="text-[9px] font-bold text-zinc-400 uppercase block mb-1">Required Zanpakuto IDs:</span>
+                    <div className="flex flex-wrap gap-1">
+                      {ch.knife.map((knifeId: number) => (
+                        <span key={knifeId} className="px-1.5 py-0.5 rounded font-mono text-[9px] font-bold bg-zinc-100 dark:bg-zinc-950 text-zinc-500">
+                          Zanpakuto #{knifeId}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export const PromotionDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [promo, setPromo] = useState<PromotionalActivity | null>(null);
+  const [details, setDetails] = useState<ActivityDetail | null>(null);
+  const [awardsList, setAwardsList] = useState<Award[]>([]);
+  const [articlesList, setArticlesList] = useState<Article[]>([]);
 
   // Calendar launch simulation date state
   const [launchDate, setLaunchDate] = useState<string>(() => {
@@ -161,6 +1246,33 @@ export const PromotionDetailPage: React.FC = () => {
       const match = promosRes.rows.find(p => p.id === promoId);
       if (match) {
         setPromo(match);
+
+        // Load extra details
+        try {
+          const detailsRes = await loadActivityDetails();
+          const detailMatch = detailsRes[match.act_id?.toString() || ''];
+          if (detailMatch) {
+            setDetails(detailMatch);
+          }
+        } catch (err) {
+          console.error("Failed to load extra activity details:", err);
+        }
+
+        // Load awards table for lookups
+        try {
+          const awardsRes = await loadAwards();
+          setAwardsList(awardsRes.rows);
+        } catch (err) {
+          console.error("Failed to load awards.json:", err);
+        }
+
+        // Load articles table for reward names
+        try {
+          const articlesRes = await loadArticles();
+          setArticlesList(articlesRes.rows);
+        } catch (err) {
+          console.error("Failed to load articles.json:", err);
+        }
       } else {
         setError(`Promotion with ID ${id} not found in database.`);
       }
@@ -334,6 +1446,178 @@ export const PromotionDetailPage: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Datamined Activity Details & Rewards */}
+      {details && (
+        <div className="space-y-6 animate-fade-in">
+          <div className="p-6 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-2xl shadow-sm space-y-5">
+            <div className="flex items-center gap-2 border-b border-zinc-100 dark:border-zinc-800 pb-3">
+              <Gift size={22} className="text-emerald-500" />
+              <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
+                Datamined Campaign Rules & Rewards
+              </h2>
+              <span className="ml-auto px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-zinc-100 dark:bg-zinc-950 text-zinc-450 border border-zinc-200/50 dark:border-zinc-800/50">
+                Class: {details.class}
+              </span>
+            </div>
+
+            {/* Campaign sub-headings and descriptions */}
+            <div className="space-y-3">
+              {details.tname && (
+                <div className="text-sm font-extrabold text-violet-600 dark:text-violet-400">
+                  {details.tname}
+                </div>
+              )}
+              {details.description && (
+                <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-350 leading-relaxed bg-zinc-50 dark:bg-zinc-950/20 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800/50">
+                  {details.description}
+                </p>
+              )}
+            </div>
+
+            {/* Targets / Thresholds & Milestone lists */}
+            {details.targets && details.targets.length > 0 && (
+              <div className="space-y-3 pt-2">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 flex items-center gap-1">
+                  <Target size={14} className="text-rose-500" />
+                  <span>Target Milestones</span>
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {details.targets.map((target, idx) => (
+                    <div key={idx} className="p-4 rounded-xl border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50/20 dark:bg-zinc-950/5 space-y-3">
+                      <div className="flex justify-between items-center border-b border-zinc-100 dark:border-zinc-800 pb-2">
+                        <span className="text-xs font-extrabold text-rose-600 dark:text-rose-400 flex items-center gap-1">
+                          <Target size={12} />
+                          {target.prompt || `Goal ${target.key}`}
+                        </span>
+                        <span className="font-mono text-[10px] font-bold text-zinc-400 bg-zinc-100 dark:bg-zinc-950 px-2 py-0.5 rounded">
+                          Value: {target.key.toLocaleString()}
+                        </span>
+                      </div>
+                      {target.value && target.value.map((awardId) => {
+                        const award = awardsList.find(a => a.id === awardId);
+                        const mergedRewards = award ? [
+                          ...(award.fixed || []),
+                          ...(award.rewards || [])
+                        ] : [];
+                        return (
+                          <div key={awardId} className="space-y-1">
+                            <span className="text-[10px] font-bold text-zinc-400 block">Milestone Rewards (ID #{awardId}):</span>
+                            <RewardList rewardsJson={mergedRewards} articles={articlesList} />
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Tiers / Placement Reward Lists */}
+            {details.awards && details.awards.length > 0 && (
+              <div className="space-y-3 pt-2">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 flex items-center gap-1">
+                  <Trophy size={14} className="text-amber-500" />
+                  <span>Tier Placement / Recharge Brackets</span>
+                </h3>
+                <div className="space-y-4">
+                  {details.awards.map((awardTier, idx) => (
+                    <div key={idx} className="p-4 rounded-xl border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50/20 dark:bg-zinc-950/5 space-y-3">
+                      <div className="flex justify-between items-center border-b border-zinc-100 dark:border-zinc-800 pb-2">
+                        <span className="text-xs font-extrabold text-zinc-800 dark:text-zinc-200 flex items-center gap-1">
+                          <Trophy size={13} className="text-amber-500" />
+                          {awardTier.prompt || `Tier ${awardTier.key}`}
+                        </span>
+                        <span className="font-mono text-[10px] font-bold text-zinc-400 bg-zinc-100 dark:bg-zinc-950 px-2 py-0.5 rounded">
+                          Requirement: {awardTier.key.toLocaleString()}
+                        </span>
+                      </div>
+                      {awardTier.value && awardTier.value.map((awardId) => {
+                        const award = awardsList.find(a => a.id === awardId);
+                        const mergedRewards = award ? [
+                          ...(award.fixed || []),
+                          ...(award.rewards || [])
+                        ] : [];
+                        return (
+                          <div key={awardId} className="space-y-1">
+                            <span className="text-[10px] font-bold text-zinc-400 block">Tier Rewards (ID #{awardId}):</span>
+                            <RewardList rewardsJson={mergedRewards} articles={articlesList} />
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Custom Interactive Calculators & Simulators */}
+            {(details.class === "THDPyramid" || details.class === "THDRushInSeireitei" || details.class === "THDKingGuard" || details.class === "THDKingLegend" || details.class === "THDPowerRank" || details.class === "THDIceHeros" ||
+              details.class === "THDGambling" || details.class === "THDExchangeChip" || details.class === "THDTeamBuy" || details.class === "THDActivityLimitBuy" ||
+              details.class === "THDChildrenDayShop" || details.class === "THDChildrenDayCollect" ||
+              ["THDSinglePay", "THDTotalPay", "THDDailyPay", "THDDailyTotalPay", "THDFirstPay", "THDPayReturn"].includes(details.class) ||
+              ["THDTotalCost", "THDDailyCost", "THDDailyTotalCost"].includes(details.class) ||
+              ["THDGrowFundLv", "THDFundLv", "THDFundShop", "THDFundInvestment"].includes(details.class) ||
+              details.class === "THDSuperTreasure"
+            ) && (
+              <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800 space-y-4">
+                <span className="text-[10px] font-bold text-zinc-400 block uppercase tracking-wider">
+                  Interactive System Tools & Calculators
+                </span>
+                {details.class === "THDPyramid" && (
+                  <PyramidCalculator details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDRushInSeireitei" && (
+                  <RushInSeireiteiCalculator details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDKingGuard" && (
+                  <KingsGuardCalculator details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDKingLegend" && (
+                  <KingsLegendCalculator details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDPowerRank" && (
+                  <PowerRankPlanner details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDIceHeros" && (
+                  <IceHerosCalculator details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDGambling" && (
+                  <GamblingCalculator details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDExchangeChip" && (
+                  <ExchangeChipCalculator details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDTeamBuy" && (
+                  <TeamBuyCalculator details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDActivityLimitBuy" && (
+                  <LimitBuyCalculator details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {["THDSinglePay", "THDTotalPay", "THDDailyPay", "THDDailyTotalPay", "THDFirstPay", "THDPayReturn"].includes(details.class) && (
+                  <RechargePlanner details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {["THDTotalCost", "THDDailyCost", "THDDailyTotalCost"].includes(details.class) && (
+                  <SpendPlanner details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDChildrenDayShop" && (
+                  <HuecoMundoCandyPlanner details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDChildrenDayCollect" && (
+                  <SeireiteiFarewellPlanner details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {["THDGrowFundLv", "THDFundLv", "THDFundShop", "THDFundInvestment"].includes(details.class) && (
+                  <FundPlanner details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+                {details.class === "THDSuperTreasure" && (
+                  <SuperTreasurePlanner details={details} articlesList={articlesList} awardsList={awardsList} />
+                )}
+              </div>
+            )}
+
+          </div>
+        </div>
+      )}
 
       {/* Constraints and requirements */}
       <div className="p-5 border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 rounded-xl shadow-sm space-y-4">

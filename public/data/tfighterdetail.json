@@ -1,0 +1,286 @@
+{
+  "table": "tfighterdetail",
+  "rowCount": 14,
+  "rows": [
+    {
+      "id": 11160001,
+      "desc": "",
+      "name": "真·蛇尾恋次",
+      "ask_need": {
+        "type": 7,
+        "code": 4,
+        "amount": 50
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140500,
+        "amount": 35
+      },
+      "up_hero_id": 11160002,
+      "stype": 1,
+      "vip_limit": 0,
+      "main_hero_level": 55,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424935926866236&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160003,
+      "desc": "",
+      "name": "真·葛力姆乔",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 300
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140501,
+        "amount": 55
+      },
+      "up_hero_id": 11160004,
+      "stype": 1,
+      "vip_limit": 0,
+      "main_hero_level": 65,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424944516800850&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160005,
+      "desc": "",
+      "name": "真·日番谷冬狮郎",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 500
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140502,
+        "amount": 80
+      },
+      "up_hero_id": 11160006,
+      "stype": 1,
+      "vip_limit": 0,
+      "main_hero_level": 70,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424948811768177&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160007,
+      "desc": "",
+      "name": "真·妮莉艾露",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 1000
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140503,
+        "amount": 150
+      },
+      "up_hero_id": 11160008,
+      "stype": 1,
+      "vip_limit": 0,
+      "main_hero_level": 75,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424953106735482&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160009,
+      "desc": "",
+      "name": "真·乌尔奇奥拉",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 1200
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140504,
+        "amount": 210
+      },
+      "up_hero_id": 11160010,
+      "stype": 1,
+      "vip_limit": 1,
+      "main_hero_level": 80,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424957401702801&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160011,
+      "desc": "",
+      "name": "真·修罗剑八",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 1400
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140505,
+        "amount": 450
+      },
+      "up_hero_id": 11160012,
+      "stype": 1,
+      "vip_limit": 1,
+      "main_hero_level": 85,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424961696670105&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160013,
+      "desc": "",
+      "name": "真·镜花蓝染",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 1800
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140506,
+        "amount": 700
+      },
+      "up_hero_id": 11160014,
+      "stype": 1,
+      "vip_limit": 1,
+      "main_hero_level": 90,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424965991637410&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160002,
+      "desc": "",
+      "name": "双王恋次",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 200
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140500,
+        "amount": 50
+      },
+      "up_hero_id": 11160001,
+      "stype": 2,
+      "vip_limit": 0,
+      "main_hero_level": 95,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424970286604714&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160004,
+      "desc": "",
+      "name": "豹王葛力姆乔",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 500
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140501,
+        "amount": 75
+      },
+      "up_hero_id": 11160003,
+      "stype": 2,
+      "vip_limit": 1,
+      "main_hero_level": 100,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424974581572017&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160006,
+      "desc": "",
+      "name": "大红莲冬狮郎",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 1200
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140502,
+        "amount": 140
+      },
+      "up_hero_id": 11160005,
+      "stype": 2,
+      "vip_limit": 1,
+      "main_hero_level": 105,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424983171506617&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160008,
+      "desc": "",
+      "name": "羚骑士妮露",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 1800
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140503,
+        "amount": 200
+      },
+      "up_hero_id": 11160007,
+      "stype": 2,
+      "vip_limit": 2,
+      "main_hero_level": 110,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424987466473920&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160010,
+      "desc": "",
+      "name": "归刃乌尔奇奥拉",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 2200
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140504,
+        "amount": 450
+      },
+      "up_hero_id": 11160009,
+      "stype": 2,
+      "vip_limit": 4,
+      "main_hero_level": 115,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424991761441223&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160012,
+      "desc": "",
+      "name": "野晒剑八",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 2700
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140505,
+        "amount": 700
+      },
+      "up_hero_id": 11160011,
+      "stype": 2,
+      "vip_limit": 5,
+      "main_hero_level": 120,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844424996056408532&aid=54&t=1&lang=en_US"
+    },
+    {
+      "id": 11160014,
+      "desc": "",
+      "name": "究极蓝染",
+      "ask_need": {
+        "type": 7,
+        "code": 5,
+        "amount": 3000
+      },
+      "enlist_paper": {
+        "type": 1,
+        "code": 14140506,
+        "amount": 900
+      },
+      "up_hero_id": 11160013,
+      "stype": 2,
+      "vip_limit": 6,
+      "main_hero_level": 125,
+      "fight_report_addr": "http://bleachjf.gametrees.com/fightreport/?rid=844425000351375834&aid=54&t=1&lang=en_US"
+    }
+  ]
+}
