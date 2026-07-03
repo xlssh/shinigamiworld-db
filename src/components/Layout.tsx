@@ -142,7 +142,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Military Ranks', to: '/tools/military', icon: Trophy },
     { name: 'Culling Abyss Tower', to: '/tools/culling-tower', icon: Swords }, // TODO: unclear
     //{ name: 'Equip Forge Planner', to: '/tools/forge-planner', icon: Sparkles }, // TODO: unclear
-    //{ name: 'Nightmare Campaign', to: '/tools/nightmare-realms', icon: Globe }, // TODO: fix
+    { name: 'Conquest of Might', to: '/tools/nightmare-realms', icon: Globe },
     { name: 'Seven Souls Altar', to: '/tools/seven-souls', icon: Star },
     //{ name: 'Fashion Wardrobe', to: '/tools/wardrobe', icon: Sparkles }, // TODO: unclear
     { name: 'Hero Talents Planner', to: '/tools/talents', icon: Wand2 },

@@ -996,7 +996,69 @@ def main():
             json.dump({"table": "profession_refines", "rowCount": len(rows), "rows": rows}, f, indent=2, ensure_ascii=False)
         print(f"Extracted profession_refines.json: {len(rows)} rows.")
 
-    print("\nExtraction of all 35 missing database tables is successfully complete!")
+    # 36. NightmarePoint (16777481)
+    if 16777481 in all_bins:
+        reader = BinReader(all_bins[16777481])
+        reader.read_uint()
+        count = reader.read_uint()
+        rows = []
+        for _ in range(count):
+            row_id = reader.read_uint()
+            name_desc = reader.read_utf()
+            army_vec_str = reader.read_utf()
+            battle_scene_id = reader.read_uint()
+            role_model = reader.read_uint()
+            condition_str = reader.read_utf()
+            help_hero_id = reader.read_uint()
+            help_hero_pos = reader.read_uint()
+            coordinate_str = reader.read_utf()
+            to_target_str = reader.read_utf()
+
+            army_vec = try_json_load(army_vec_str).get("army", []) if isinstance(try_json_load(army_vec_str), dict) else try_json_load(army_vec_str)
+            condition = try_json_load(condition_str)
+            coordinate = try_json_load(coordinate_str)
+            to_target = try_json_load(to_target_str)
+
+            rows.append({
+                "id": row_id,
+                "name": name_desc,
+                "army_ids": army_vec,
+                "battle_scene": battle_scene_id,
+                "role_model": role_model,
+                "condition": condition,
+                "help_hero_id": help_hero_id,
+                "help_hero_pos": help_hero_pos,
+                "coordinate": coordinate,
+                "to_target": to_target
+            })
+        with open(os.path.join(out_dir, "nightmare_points.json"), "w", encoding="utf-8") as f:
+            json.dump({"table": "nightmare_points", "rowCount": len(rows), "rows": rows}, f, indent=2, ensure_ascii=False)
+        print(f"Extracted nightmare_points.json: {len(rows)} rows.")
+
+    # 37. NightmareCity (16777483)
+    if 16777483 in all_bins:
+        reader = BinReader(all_bins[16777483])
+        reader.read_uint()
+        count = reader.read_uint()
+        rows = []
+        for _ in range(count):
+            row_id = reader.read_uint()
+            award_vec_str = reader.read_utf()
+            pass_award_vec_str = reader.read_utf()
+
+            award_vec = try_json_load(award_vec_str)
+            pass_award_vec = try_json_load(pass_award_vec_str)
+
+            rows.append({
+                "id": row_id,
+                "award_ids": award_vec,
+                "pass_awards": pass_award_vec
+            })
+        with open(os.path.join(out_dir, "nightmare_cities.json"), "w", encoding="utf-8") as f:
+            json.dump({"table": "nightmare_cities", "rowCount": len(rows), "rows": rows}, f, indent=2, ensure_ascii=False)
+        print(f"Extracted nightmare_cities.json: {len(rows)} rows.")
+
+    print("\nExtraction of all 37 database tables is successfully complete!")
 
 if __name__ == "__main__":
     main()
