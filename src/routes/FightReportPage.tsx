@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { loadHeroes, loadSkills, loadBuffEffects } from '../data/loaders';
-import { Hero, Skill, BuffEffect } from '../types/db';
+import { loadHeroes, loadSkills, loadBuffEffects, loadEnemies } from '../data/loaders';
+import { Hero, Skill, BuffEffect, Enemy } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
 import { ErrorState } from '../components/ErrorState';
 import {
@@ -236,6 +236,11 @@ interface FightTarget {
     buffId?: number;
     buffTurn?: number;
   };
+  hpBefore?: number;
+  hpAfter?: number;
+  shieldBefore?: number;
+  shieldAfter?: number;
+  maxHp?: number;
 }
 
 interface FightActive {
@@ -388,11 +393,18 @@ function simulateReportState(report: FightReportData): SimulationResult {
 
         if (!fighter) continue;
 
+        // Save pre-action state snapshots
+        target.hpBefore = fighter.hp;
+        target.shieldBefore = fighter.shield;
+        target.maxHp = fighter.maxHp;
+
         // Shield command: buffTurn is shield HP.
         if (target.cmd === CMD.SHIELD) {
           const shieldHp = target.result.buffTurn || 0;
           fighter.shield = shieldHp;
           fighter.shieldApplied += shieldHp;
+          target.hpAfter = fighter.hp;
+          target.shieldAfter = fighter.shield;
           continue;
         }
 
@@ -458,6 +470,10 @@ function simulateReportState(report: FightReportData): SimulationResult {
           fighter.dead = true;
           fighter.hp = 0;
         }
+
+        // Save post-action state snapshots
+        target.hpAfter = fighter.hp;
+        target.shieldAfter = fighter.shield;
       }
     }
   }
@@ -469,6 +485,7 @@ export const FightReportPage: React.FC = () => {
   const [heroes, setHeroes] = useState<Hero[]>([]);
   const [skills, setSkills] = useState<Skill[]>([]);
   const [buffs, setBuffs] = useState<BuffEffect[]>([]);
+  const [enemies, setEnemies] = useState<Enemy[]>([]);
   const [dbLoading, setDbLoading] = useState(true);
   const [dbError, setDbError] = useState<string | null>(null);
 
@@ -496,17 +513,19 @@ export const FightReportPage: React.FC = () => {
     try {
       setDbLoading(true);
       setDbError(null);
-      const [heroesRes, skillsRes, buffsRes] = await Promise.all([
+      const [heroesRes, skillsRes, buffsRes, enemiesRes] = await Promise.all([
         loadHeroes(),
         loadSkills(),
-        loadBuffEffects()
+        loadBuffEffects(),
+        loadEnemies()
       ]);
       setHeroes(heroesRes.rows);
       setSkills(skillsRes.rows);
       setBuffs(buffsRes.rows);
+      setEnemies(enemiesRes.rows);
     } catch (err: any) {
       console.error(err);
-      setDbError("Failed to load heroes, skills, or status buffs mapping templates.");
+      setDbError("Failed to load heroes, skills, status buffs, or enemies mapping templates.");
     } finally {
       setDbLoading(false);
     }
@@ -521,6 +540,12 @@ export const FightReportPage: React.FC = () => {
     heroes.forEach(h => map.set(h.id, h));
     return map;
   }, [heroes]);
+
+  const enemiesMap = useMemo(() => {
+    const map = new Map<number, Enemy>();
+    enemies.forEach(e => map.set(e.id, e));
+    return map;
+  }, [enemies]);
 
   const skillsMap = useMemo(() => {
     const map = new Map<number, string>();
@@ -750,7 +775,10 @@ export const FightReportPage: React.FC = () => {
   const resolveRoleName = (role: FightRole): string => {
     if (role.name && role.name.trim()) return role.name;
     const match = heroesMap.get(role.roleId);
-    return match?.name || `Mercenary #${role.roleId}`;
+    if (match && match.name) return match.name;
+    const enemyMatch = enemiesMap.get(role.roleId);
+    if (enemyMatch && enemyMatch.name) return enemyMatch.name;
+    return `Mercenary #${role.roleId}`;
   };
 
   // Calculated Battle Statistics
@@ -1390,6 +1418,17 @@ export const FightReportPage: React.FC = () => {
                             const tName = tRole ? resolveRoleName(tRole) : `Target Pos ${tPos}`;
                             const hurtHp = tgt.result.hurtHp || 0;
 
+                            const flags = decodeStatusFlags(tgt.status);
+                            const isCombo = flags.includes("Combo / Joint Attack");
+                            const isAid = flags.includes("Help / Rescue");
+
+                            let prefix = "";
+                            if (isCombo) {
+                              prefix = "🔗 [Combo] ";
+                            } else if (isAid) {
+                              prefix = "🛡️ [Aid] ";
+                            }
+
                             let logText = "";
                             let logClass = "text-muted";
 
@@ -1401,7 +1440,6 @@ export const FightReportPage: React.FC = () => {
 
                             if (tgt.cmd === CMD.ATTACK || tgt.cmd === CMD.ATTACKEX || tgt.cmd === CMD.HURTBUFF) {
                               if (hurtHp > 0) {
-                                const flags = decodeStatusFlags(tgt.status);
                                 const suffix = flags.length ? ` (${flags.join(", ")})` : "";
                                 logText = `Hits ${tName} (Pos ${tPos}) dealing ${hurtHp.toLocaleString()} damage${suffix}.`;
                                 logClass = "text-red-600 dark:text-red-400 font-medium";
@@ -1409,17 +1447,25 @@ export const FightReportPage: React.FC = () => {
                                 logText = `Heals ${tName} (Pos ${tPos}) for ${(-hurtHp).toLocaleString()} HP.`;
                                 logClass = "text-emerald-600 dark:text-emerald-450 font-medium";
                               } else {
-                                const flags = decodeStatusFlags(tgt.status);
                                 if (flags.includes("Super Dodge / All Miss")) {
                                   logText = `${tName} (Pos ${tPos}) dodges / all-misses the effect.`;
+                                  logClass = "text-muted";
                                 } else if (flags.includes("Invincible")) {
                                   logText = `${tName} (Pos ${tPos}) takes no damage due to Invincible.`;
+                                  logClass = "text-muted";
                                 } else if (flags.includes("Block")) {
                                   logText = `${tName} (Pos ${tPos}) blocks the hit with no HP loss.`;
+                                  logClass = "text-muted";
                                 } else {
                                   logText = `Targets ${tName} (Pos ${tPos}) with no HP change${flags.length ? ` (${flags.join(", ")})` : ""}.`;
+                                  if (isCombo) {
+                                    logClass = "text-zinc-500 dark:text-zinc-400 font-bold bg-fuchsia-500/5 dark:bg-fuchsia-500/5 border border-fuchsia-500/20 px-2 py-0.5 rounded-lg";
+                                  } else if (isAid) {
+                                    logClass = "text-zinc-500 dark:text-zinc-400 font-bold bg-sky-500/5 dark:bg-sky-500/5 border border-sky-500/20 px-2 py-0.5 rounded-lg";
+                                  } else {
+                                    logClass = "text-muted";
+                                  }
                                 }
-                                logClass = "text-muted";
                               }
                             } else if (tgt.cmd === CMD.SHIELD) {
                               const sId = tgt.result.buffId || 0;
@@ -1453,24 +1499,72 @@ export const FightReportPage: React.FC = () => {
                               logText = `Shows special combat effect [${getSpecialFloatText(effectType)}] on ${tName} (Pos ${tPos})${effectParam ? `, parameter ${effectParam}` : ""}.`;
                               logClass = "text-teal-600 dark:text-teal-400";
                             } else if (tgt.cmd === CMD.STATUS) {
-                              const flags = decodeStatusFlags(tgt.status);
                               logText = flags.length
                                 ? `Updates combat status for ${tName} (Pos ${tPos}): ${flags.join(", ")}.`
                                 : `Updates combat status for ${tName} (Pos ${tPos}).`;
-                              logClass = "text-muted";
+                              
+                              if (isCombo) {
+                                logClass = "text-zinc-500 dark:text-zinc-400 font-bold bg-fuchsia-500/5 dark:bg-fuchsia-500/5 border border-fuchsia-500/20 px-2 py-0.5 rounded-lg";
+                              } else if (isAid) {
+                                logClass = "text-zinc-500 dark:text-zinc-400 font-bold bg-sky-500/5 dark:bg-sky-500/5 border border-sky-500/20 px-2 py-0.5 rounded-lg";
+                              } else {
+                                logClass = "text-muted";
+                              }
                             } else if (tgt.cmd === CMD.NONE) {
                               logText = `Triggers script action / combat visual on ${tName} (Pos ${tPos}).`;
-                              logClass = "text-subtle dark:text-muted";
+                              if (isCombo) {
+                                logClass = "text-zinc-500 dark:text-zinc-400 font-bold bg-fuchsia-500/5 dark:bg-fuchsia-500/5 border border-fuchsia-500/20 px-2 py-0.5 rounded-lg";
+                              } else if (isAid) {
+                                logClass = "text-zinc-500 dark:text-zinc-400 font-bold bg-sky-500/5 dark:bg-sky-500/5 border border-sky-500/20 px-2 py-0.5 rounded-lg";
+                              } else {
+                                logClass = "text-subtle dark:text-muted";
+                              }
                             } else {
                               logText = `Performs CMD action #${tgt.cmd} on ${tName} (Pos ${tPos}).`;
                               logClass = "text-subtle dark:text-muted";
                             }
 
                             return (
-                              <div key={tgtIdx} className={`text-xs flex items-center justify-between ${logClass}`}>
-                                <span>↳ {logText}</span>
+                              <div key={tgtIdx} className={`text-xs flex items-center justify-between gap-4 py-1 hover:bg-hover px-2 rounded-xl transition-all ${logClass}`}>
+                                <div className="flex items-center gap-2 flex-wrap">
+                                  <span>↳ {prefix}{logText}</span>
+                                  {tgt.hpBefore !== undefined && tgt.hpAfter !== undefined && (
+                                    <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-lg text-[10px] bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700/50 text-subtle cursor-help group relative font-mono transition-colors hover:text-text hover:bg-zinc-200 dark:hover:bg-zinc-700 select-none">
+                                      <span>HP: {Math.round(tgt.hpAfter / 1000)}k</span>
+                                      {/* Tooltip on hover */}
+                                      <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 hidden group-hover:flex flex-col items-center z-50 pointer-events-none">
+                                        <span className="bg-zinc-950 text-white text-[10px] rounded-xl p-3 shadow-2xl border border-zinc-800 space-y-1.5 w-52 font-sans text-left">
+                                          <span className="font-extrabold block text-zinc-300 text-xs border-b border-zinc-800 pb-1">{tName} HP Change</span>
+                                          <span className="flex justify-between font-mono text-zinc-400 pt-0.5">
+                                            <span>Before:</span>
+                                            <span>{tgt.hpBefore.toLocaleString()}</span>
+                                          </span>
+                                          <span className="flex justify-between font-mono text-zinc-200 font-bold border-t border-zinc-900 pt-1">
+                                            <span>After:</span>
+                                            <span>{tgt.hpAfter.toLocaleString()}</span>
+                                          </span>
+                                          <span className={`flex justify-between font-mono font-bold text-[9px] ${tgt.hpAfter < tgt.hpBefore ? 'text-red-400' : tgt.hpAfter > tgt.hpBefore ? 'text-emerald-400' : 'text-zinc-400'}`}>
+                                            <span>Difference:</span>
+                                            <span>{(tgt.hpAfter - tgt.hpBefore) > 0 ? `+${(tgt.hpAfter - tgt.hpBefore).toLocaleString()}` : (tgt.hpAfter - tgt.hpBefore).toLocaleString()}</span>
+                                          </span>
+                                          {tgt.shieldAfter !== undefined && tgt.shieldAfter > 0 && (
+                                            <span className="flex justify-between font-mono text-blue-400 text-[9px] border-t border-zinc-900 pt-1">
+                                              <span>Active Shield:</span>
+                                              <span>{tgt.shieldAfter.toLocaleString()}</span>
+                                            </span>
+                                          )}
+                                          <span className="w-full bg-zinc-900 h-1.5 rounded-full overflow-hidden block mt-1.5">
+                                            <span className="h-full bg-gradient-to-r from-red-500 to-emerald-500 block transition-all" style={{ width: `${(tgt.hpAfter / (tgt.maxHp || 1)) * 100}%` }}></span>
+                                          </span>
+                                        </span>
+                                        {/* Tooltip triangle */}
+                                        <span className="w-2 h-2 bg-zinc-950 rotate-45 -mt-1 border-r border-b border-zinc-800/80"></span>
+                                      </span>
+                                    </span>
+                                  )}
+                                </div>
                                 {tgt.result.hurtAnger !== undefined && tgt.result.hurtAnger !== 0 && (
-                                  <span className="font-mono text-[10px] text-orange-500">
+                                  <span className="font-mono text-[10px] text-orange-500 shrink-0">
                                     Anger: {tgt.result.hurtAnger > 0 ? `+${tgt.result.hurtAnger}` : tgt.result.hurtAnger}
                                   </span>
                                 )}
