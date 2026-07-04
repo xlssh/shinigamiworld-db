@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { loadArticles, loadMallItems, loadDailyQuests, loadStoryQuests, loadStages, loadAwards, loadActivityDetails, loadPromotionalActivities } from '../data/loaders';
-import type { MallItem, DailyQuest, StoryQuest, Stage, Award, ActivityDetailsJson, PromotionalActivity } from '../types/db';
+import type { Article, MallItem, DailyQuest, StoryQuest, Stage, Award, ActivityDetailsJson, PromotionalActivity } from '../types/db';
 import { getMallItemsSellingArticle, getQuestsAwardingArticle, getStagesAwardingArticle, getActivitiesAwardingArticle, getMajorTypeLabel, getMinorTypeLabel } from '../data/relationships';
 import { LoadingState } from '../components/LoadingState';
 import { ErrorState } from '../components/ErrorState';
