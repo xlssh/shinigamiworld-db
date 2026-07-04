@@ -24,6 +24,9 @@ export interface FighterRuntimeState {
   kills: number;
   roleId: number;
   name: string;
+  damageDealtByRound: Record<number, number>;
+  healingDoneByRound: Record<number, number>;
+  damageTakenByRound: Record<number, number>;
 }
 
 export interface FighterTurnSnapshot {
@@ -132,6 +135,7 @@ export interface SimulationResult {
   maxDamageDoneRaw: number;
   maxDamageTakenRaw: number;
   maxHealing: number;
+  simulationWarnings: string[];
 }
 
 export interface AwardWinner {
@@ -168,6 +172,9 @@ function buildInitialRuntimeState(
       kills: 0,
       roleId: role.roleId,
       name: resolveAttackerName(camp, role.pos, role),
+      damageDealtByRound: {},
+      healingDoneByRound: {},
+      damageTakenByRound: {},
     });
   };
 
@@ -184,6 +191,7 @@ export function simulateFightReport(
   buffsMap: Map<number, string>
 ): SimulationResult {
   const state = buildInitialRuntimeState(report, resolveAttackerName);
+  const simulationWarnings: string[] = [];
 
   const teamTotals: {
     rawDamageDealt: [number, number];
@@ -253,9 +261,10 @@ export function simulateFightReport(
     let roundShieldTeam2 = 0;
 
     for (let actIdx = 0; actIdx < turn.actives.length; actIdx++) {
-      const active = turn.actives[actIdx];
-      const attKey = getKey(active.camp, active.pos);
-      const attacker = state.get(attKey);
+      try {
+        const active = turn.actives[actIdx];
+        const attKey = getKey(active.camp, active.pos);
+        const attacker = state.get(attKey);
 
       const activeGroup = active.camp === 0 ? report.team1 : report.team2;
       const activeRole = activeGroup.roles.find(r => r.pos === active.pos);
@@ -445,6 +454,7 @@ export function simulateFightReport(
             fighter.healingReceived += healVal;
             if (attacker) {
               attacker.healingDone += healVal;
+              attacker.healingDoneByRound[turn.curTurn] = (attacker.healingDoneByRound[turn.curTurn] || 0) + healVal;
             }
             if (active.camp === 0) roundHealTeam1 += healVal;
             else if (active.camp === 1) roundHealTeam2 += healVal;
@@ -485,6 +495,7 @@ export function simulateFightReport(
             fighter.damageTakenRaw += rawDamage;
             fighter.hpDamageTaken += hpDamage;
             fighter.shieldAbsorbed += absorbed;
+            fighter.damageTakenByRound[turn.curTurn] = (fighter.damageTakenByRound[turn.curTurn] || 0) + rawDamage;
 
             // Only count enemy damage in totals
             const isEnemyTarget = active.camp !== target.camp;
@@ -492,6 +503,7 @@ export function simulateFightReport(
               if (attacker) {
                 attacker.damageDealtRaw += rawDamage;
                 attacker.hpDamageDealt += hpDamage;
+                attacker.damageDealtByRound[turn.curTurn] = (attacker.damageDealtByRound[turn.curTurn] || 0) + rawDamage;
               }
               if (active.camp === 0) roundDmgTeam1 += rawDamage;
               else if (active.camp === 1) roundDmgTeam2 += rawDamage;
@@ -588,6 +600,11 @@ export function simulateFightReport(
         // Save post-action state snapshots
         target.hpAfter = fighter.hp;
         target.shieldAfter = fighter.shield;
+      }
+      } catch (err: any) {
+        simulationWarnings.push(
+          `Round ${turn.curTurn}, Action ${actIdx + 1}: ${err?.message || String(err)}`
+        );
       }
     }
 
@@ -729,6 +746,7 @@ export function simulateFightReport(
     maxDamageDoneRaw,
     maxDamageTakenRaw,
     maxHealing,
+    simulationWarnings,
   };
 }
 
@@ -846,4 +864,154 @@ function computeAwards(state: Map<string, FighterRuntimeState>) {
   if (awards.killingBlows && awards.killingBlows.value === 0) awards.killingBlows = null;
 
   return awards;
+}
+
+export interface DangerEvent {
+  key: string;
+  camp: number;
+  pos: number;
+  name: string;
+  threshold: 50 | 25 | 10 | 0;
+  round: number;
+}
+
+export function computeDangerEvents(
+  fighterTimeline: Map<string, FighterTurnSnapshot[]>,
+  fighterNames: Map<string, string>
+): DangerEvent[] {
+  const events: DangerEvent[] = [];
+
+  for (const [key, snapshots] of fighterTimeline.entries()) {
+    const seen = new Set<number>();
+
+    for (const snap of snapshots) {
+      const thresholds: Array<50 | 25 | 10 | 0> = [50, 25, 10, 0];
+
+      for (const threshold of thresholds) {
+        if (seen.has(threshold)) continue;
+
+        const crossed =
+          threshold === 0
+            ? snap.dead || snap.hp <= 0
+            : snap.hpPercent <= threshold && snap.hp > 0;
+
+        if (crossed) {
+          seen.add(threshold);
+          events.push({
+            key,
+            camp: snap.camp,
+            pos: snap.pos,
+            name: fighterNames.get(key) || `Fighter ${key}`,
+            threshold,
+            round: snap.round,
+          });
+        }
+      }
+    }
+  }
+
+  return events.sort((a, b) => a.round - b.round || b.threshold - a.threshold);
+}
+
+export interface Insight {
+  id: string;
+  icon: string;
+  label: string;
+  description: string;
+  tone: 'red' | 'emerald' | 'blue' | 'amber' | 'violet' | 'muted';
+}
+
+export function computeInsights(
+  report: FightReportData,
+  sim: SimulationResult
+): Insight[] {
+  const insights: Insight[] = [];
+
+  // 1. Alpha Strike (Opening Burst)
+  const firstThirdRounds = Math.max(1, Math.ceil(report.totalTurns / 3));
+  const earlyDmgT1 = sim.turnSummaries
+    .slice(0, firstThirdRounds)
+    .reduce((sum, r) => sum + r.teamDamageDealt[0], 0);
+  const earlyDmgT2 = sim.turnSummaries
+    .slice(0, firstThirdRounds)
+    .reduce((sum, r) => sum + r.teamDamageDealt[1], 0);
+
+  if (sim.totalDmgTeam1 > 0 && earlyDmgT1 / sim.totalDmgTeam1 >= 0.5) {
+    insights.push({
+      id: 'alpha-strike-t1',
+      icon: '🎯',
+      label: 'Alpha Strike (Attacker)',
+      description: `Team 1 dealt ${Math.round((earlyDmgT1 / sim.totalDmgTeam1) * 100)}% of its damage in the opening ${firstThirdRounds} rounds.`,
+      tone: 'red',
+    });
+  }
+  if (sim.totalDmgTeam2 > 0 && earlyDmgT2 / sim.totalDmgTeam2 >= 0.5) {
+    insights.push({
+      id: 'alpha-strike-t2',
+      icon: '🎯',
+      label: 'Alpha Strike (Defender)',
+      description: `Team 2 dealt ${Math.round((earlyDmgT2 / sim.totalDmgTeam2) * 100)}% of its damage in the opening ${firstThirdRounds} rounds.`,
+      tone: 'red',
+    });
+  }
+
+  // 2. First Blood
+  if (sim.deaths.length > 0) {
+    const firstDeath = sim.deaths[0];
+    insights.push({
+      id: 'first-blood',
+      icon: '🩸',
+      label: 'First Blood Spilled',
+      description: `${firstDeath.victimName} fell first in Round ${firstDeath.round}, defeated by ${firstDeath.attackerName}.`,
+      tone: 'red',
+    });
+  }
+
+  // 3. Shield Reliance
+  const totalShield1 = sim.teamTotals.shieldApplied[0];
+  const totalShield2 = sim.teamTotals.shieldApplied[1];
+  if (totalShield1 > 500000) {
+    insights.push({
+      id: 'shield-t1',
+      icon: '🛡️',
+      label: 'Guardian Attacker',
+      description: `Team 1 deployed ${totalShield1.toLocaleString()} shield absorption capacity to buffer early pressure.`,
+      tone: 'blue',
+    });
+  }
+  if (totalShield2 > 500000) {
+    insights.push({
+      id: 'shield-t2',
+      icon: '🛡️',
+      label: 'Guardian Defender',
+      description: `Team 2 deployed ${totalShield2.toLocaleString()} shield absorption capacity to buffer early pressure.`,
+      tone: 'blue',
+    });
+  }
+
+  // 4. Critical Hits Rate
+  const totalCrits = sim.turnSummaries.reduce((sum, r) => sum + r.crits, 0);
+  if (totalCrits >= 8) {
+    insights.push({
+      id: 'crit-heavy',
+      icon: '🎲',
+      label: 'High Variance Match',
+      description: `This fight recorded ${totalCrits} critical strikes, creating highly volatile health swings.`,
+      tone: 'amber',
+    });
+  }
+
+  // 5. Sustain Carry
+  const topHealer = sim.awards.topHealer;
+  if (topHealer && topHealer.value > 200000) {
+    insights.push({
+      id: 'sustain-carry',
+      icon: '💚',
+      label: 'Sustain Backbone',
+      description: `${topHealer.heroName} carried sustain workloads, healing a cumulative ${topHealer.value.toLocaleString()} HP.`,
+      tone: 'emerald',
+    });
+  }
+
+  return insights;
 }

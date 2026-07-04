@@ -16,6 +16,7 @@ import {
   Download,
   Copy,
   Clock,
+  Sparkles,
   Trophy,
   Filter
 } from 'lucide-react';
@@ -29,6 +30,7 @@ import {
   getSpecialFloatText,
   hasStatusFlag,
   FightRole,
+  FightGroup,
   FightReportData,
   ParseDebugInfo,
   FightTurn,
@@ -38,7 +40,9 @@ import {
 
 import {
   simulateFightReport,
-  KeyMoment
+  KeyMoment,
+  computeInsights,
+  Insight
 } from '../utils/fight-report/simulation';
 
 import {
@@ -55,12 +59,63 @@ import { TimelineTab } from '../components/fight-report/TimelineTab';
 import { SkillsTab } from '../components/fight-report/SkillsTab';
 import { BuffsTab } from '../components/fight-report/BuffsTab';
 import { DeathsTab } from '../components/fight-report/DeathsTab';
+import { FighterFocusModal } from '../components/fight-report/FighterFocusModal';
 
 interface RecentReport {
   rid: string;
   aid: string;
   lang: string;
   timestamp: number;
+}
+
+interface CachedFightReport {
+  rid: string;
+  aid: string;
+  lang: string;
+  timestamp: number;
+  report: FightReportData;
+  debug: ParseDebugInfo;
+}
+
+const CACHE_TTL_MS = 15 * 60 * 1000; // 15 Minutes Cache TTL
+
+function getCachedReport(rid: string): CachedFightReport | null {
+  try {
+    const raw = sessionStorage.getItem(`fight_report_cache:${rid}`);
+    if (!raw) return null;
+
+    const parsed = JSON.parse(raw) as CachedFightReport;
+    if (Date.now() - parsed.timestamp > CACHE_TTL_MS) {
+      sessionStorage.removeItem(`fight_report_cache:${rid}`);
+      return null;
+    }
+
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function setCachedReport(entry: CachedFightReport): void {
+  try {
+    sessionStorage.setItem(
+      `fight_report_cache:${entry.rid}`,
+      JSON.stringify(entry)
+    );
+  } catch {
+    // Ignore quota errors gracefully
+  }
+}
+
+async function computeSha256(buffer: ArrayBuffer): Promise<string> {
+  try {
+    const digest = await crypto.subtle.digest('SHA-256', buffer);
+    return Array.from(new Uint8Array(digest))
+      .map(byte => byte.toString(16).padStart(2, '0'))
+      .join('');
+  } catch {
+    return "";
+  }
 }
 
 export const FightReportPage: React.FC = () => {
@@ -86,6 +141,12 @@ export const FightReportPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'overview' | 'fighters' | 'timeline' | 'skills' | 'buffs' | 'deaths' | 'log'>('overview');
   const [selectedRoundTab, setSelectedRoundTab] = useState<number>(1);
   const [highlightedMomentId, setHighlightedMomentId] = useState<string | null>(null);
+
+  // Fighter focus drill-down modal state
+  const [focusedFighterKey, setFocusedFighterKey] = useState<string | null>(null);
+
+  // Cryptographic authenticity digest state
+  const [sha256Hash, setSha256Hash] = useState<string>('');
 
   // Clipboard copy feedback toast
   const [copiedText, setCopiedText] = useState(false);
@@ -162,14 +223,14 @@ export const FightReportPage: React.FC = () => {
   }, [knives]);
 
   // Translate role name
-  const resolveRoleName = (role: FightRole): string => {
+  const resolveRoleName = useCallback((role: FightRole): string => {
     if (role.name && role.name.trim()) return role.name;
     const match = heroesMap.get(role.roleId);
     if (match && match.name) return match.name;
     const enemyMatch = enemiesMap.get(role.roleId);
     if (enemyMatch && enemyMatch.name) return enemyMatch.name;
     return `Mercenary #${role.roleId}`;
-  };
+  }, [heroesMap, enemiesMap]);
 
   // Translate attacker name, resolving pos 100 as the team's Zanpakuto (Knife)
   const resolveAttackerName = useCallback((camp: number, pos: number, role?: FightRole): string => {
@@ -232,7 +293,7 @@ export const FightReportPage: React.FC = () => {
       return { pos, roleId, quality, level, curHealth, totleHealth, curAnger, skillId, name, rebirthNum };
     };
 
-    const parseGroup = (camp: number): any => {
+    const parseGroup = (camp: number): FightGroup => {
       const knifeOfKillSoulId = parser.readInt();
       const knifeSoulId = parser.readInt();
       const bloodAddRate = parser.readInt();
@@ -321,7 +382,7 @@ export const FightReportPage: React.FC = () => {
   };
 
   // Load and execute remote link fetch
-  const handleFetchReport = async (overrideUrl?: string) => {
+  const handleFetchReport = useCallback(async (overrideUrl?: string) => {
     const targetQuery = overrideUrl || inputUrl;
     if (!targetQuery.trim()) return;
 
@@ -349,6 +410,27 @@ export const FightReportPage: React.FC = () => {
         throw new Error("Could not parse fight Report ID (rid). Validate query string matches standard formats.");
       }
 
+      // Check session storage cache first
+      const cached = getCachedReport(rid);
+      if (cached) {
+        setParseStage('simulating');
+        setReport(cached.report);
+        setDebugInfo(cached.debug);
+        setSha256Hash(cached.debug.sha256 || '');
+        setSelectedRoundTab(1);
+
+        saveRecentReport(rid, aid, lang);
+
+        const url = new URL(window.location.href);
+        url.searchParams.set('rid', rid);
+        url.searchParams.set('aid', aid);
+        url.searchParams.set('lang', lang);
+        window.history.replaceState(null, '', url.toString());
+
+        setParseStage('done');
+        return;
+      }
+
       setParseStage('fetching');
       const targetUrl =
         `https://game.shinigamiworld.com/fightreport/data.php` +
@@ -373,14 +455,29 @@ export const FightReportPage: React.FC = () => {
         throw new Error("Combat packet binary is empty or truncated. Ensure fight ID remains unexpired.");
       }
 
+      // Compute authenticity hash
+      const hash = await computeSha256(arrayBuffer);
+      setSha256Hash(hash);
+
       setParseStage('parsing');
       const { report: decodedReport, debug: decodedDebug } = decodeReportBinary(arrayBuffer);
+      decodedDebug.sha256 = hash;
 
       setParseStage('simulating');
       // Triggers state flow simulation automatically via useMemo on battleStats
       setReport(decodedReport);
       setDebugInfo(decodedDebug);
       setSelectedRoundTab(1);
+
+      // Save to session cache
+      setCachedReport({
+        rid,
+        aid,
+        lang,
+        timestamp: Date.now(),
+        report: decodedReport,
+        debug: decodedDebug,
+      });
 
       // Save to local storage history
       saveRecentReport(rid, aid, lang);
@@ -398,7 +495,7 @@ export const FightReportPage: React.FC = () => {
       setParseError(err.message || "Decoding failure during remote link parsing. Use drag and drop upload fallback.");
       setParseStage('error');
     }
-  };
+  }, [inputUrl]);
 
   // Local Storage Save History
   const saveRecentReport = (rid: string, aid: string, lang: string) => {
@@ -422,6 +519,18 @@ export const FightReportPage: React.FC = () => {
     }
   }, [historyTrigger]);
 
+  // Sync recent reports history list dynamically across multiple tabs
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === 'recent_fight_reports:v1') {
+        setHistoryTrigger(v => v + 1);
+      }
+    };
+
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, []);
+
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -435,13 +544,19 @@ export const FightReportPage: React.FC = () => {
     setDebugInfo(null);
 
     const reader = new FileReader();
-    reader.onload = (event) => {
+    reader.onload = async (event) => {
       try {
         const buffer = event.target?.result as ArrayBuffer;
         if (!buffer || buffer.byteLength < 10) {
           throw new Error("Uploaded binary buffer is truncated or corrupted.");
         }
+
+        const hash = await computeSha256(buffer);
+        setSha256Hash(hash);
+
         const { report: decodedReport, debug: decodedDebug } = decodeReportBinary(buffer);
+        decodedDebug.sha256 = hash;
+
         setParseStage('simulating');
         setReport(decodedReport);
         setDebugInfo(decodedDebug);
@@ -456,8 +571,10 @@ export const FightReportPage: React.FC = () => {
     reader.readAsArrayBuffer(file);
   };
 
-  // Auto load rid from query parameters on mount
+  // Auto load rid from query parameters on mount after DB is ready
   useEffect(() => {
+    if (dbLoading || report) return;
+
     const params = new URLSearchParams(window.location.search);
     const rid = params.get('rid');
     const aid = params.get('aid') || '86';
@@ -468,7 +585,7 @@ export const FightReportPage: React.FC = () => {
       setInputUrl(simulatedUrl);
       handleFetchReport(simulatedUrl);
     }
-  }, []);
+  }, [dbLoading, report, handleFetchReport]);
 
   // Compute Battle Statistics and Snapshots via Simulation Engine
   const battleStats = useMemo(() => {
@@ -481,6 +598,12 @@ export const FightReportPage: React.FC = () => {
       buffsMap
     );
   }, [report, knivesMap, heroesMap, enemiesMap, skillsMap, buffsMap, resolveAttackerName]);
+
+  // Compute Meta Insights Conclusion array
+  const insights = useMemo(() => {
+    if (!report || !battleStats) return [] as Insight[];
+    return computeInsights(report, battleStats);
+  }, [report, battleStats]);
 
   // Round highlights Map for the round selector
   const roundHighlights = useMemo(() => {
@@ -514,11 +637,17 @@ export const FightReportPage: React.FC = () => {
     return map;
   }, [report, heroesMap, enemiesMap]);
 
-  // Jump to specific key moment handler
+  // Jump to specific key moment handler with smooth scrolling to DOM anchor
   const handleJumpToMoment = (moment: KeyMoment) => {
     setActiveTab('log');
     setSelectedRoundTab(moment.round);
     setHighlightedMomentId(`${moment.round}-${moment.activeIndex}`);
+
+    window.setTimeout(() => {
+      document
+        .getElementById(`action-${moment.round}-${moment.activeIndex}`)
+        ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 100);
   };
 
   // Format Anger Change Helper
@@ -548,6 +677,42 @@ export const FightReportPage: React.FC = () => {
       default: return 'Synthesizing dashboard...';
     }
   };
+
+  // Dynamic log filter counts for the currently selected round
+  const logFilterCounts = useMemo(() => {
+    const counts = {
+      all: 0,
+      damage: 0,
+      heal: 0,
+      death: 0,
+      buff: 0,
+      shield: 0,
+      crit: 0,
+    };
+
+    if (!report) return counts;
+
+    const activeRound = report.turns.find(t => t.curTurn === selectedRoundTab);
+    if (!activeRound) return counts;
+
+    activeRound.actives.forEach((active) => {
+      active.targets.forEach((tgt) => {
+        const hurtHp = tgt.result.hurtHp || 0;
+        counts.all += 1;
+
+        if (tgt.cmd === CMD.ATTACK || tgt.cmd === CMD.ATTACKEX) {
+          if (hurtHp > 0) counts.damage += 1;
+        }
+        if (hurtHp < 0) counts.heal += 1;
+        if (hasStatusFlag(tgt.status, 1073741824)) counts.death += 1;
+        if (tgt.cmd === CMD.ATTRBUFF || tgt.cmd === CMD.CONTROLBUFF) counts.buff += 1;
+        if (tgt.cmd === CMD.SHIELD) counts.shield += 1;
+        if (hasStatusFlag(tgt.status, 67108864)) counts.crit += 1;
+      });
+    });
+
+    return counts;
+  }, [report, selectedRoundTab]);
 
   // Combat Log Filtering and Searching
   const filteredActives = useMemo(() => {
@@ -630,7 +795,7 @@ export const FightReportPage: React.FC = () => {
         actionLabel,
         matchedTargets
       };
-    }).filter(act => act.matchedTargets.length > 0 || !logSearch.trim()); // Only keep active skills if they matched searches
+    }).filter(act => act.matchedTargets.length > 0); // Only keep active skills if they matched searches
   }, [report, selectedRoundTab, logSearch, logFilter, heroesMap, enemiesMap, skillsMap]);
 
   if (dbLoading) return <LoadingState message="Connecting combat dictionary loaders and packing structures..." />;
@@ -735,8 +900,8 @@ export const FightReportPage: React.FC = () => {
             if (file) processUploadedFile(file);
           }}
           className={`p-6 border-2 border-dashed rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 cursor-pointer group transition-all ${isDragging
-              ? 'border-violet-500 bg-violet-50/10 dark:bg-violet-950/10 scale-[1.01]'
-              : 'border-border hover:border-violet-500 bg-surface'
+            ? 'border-violet-500 bg-violet-50/10 dark:bg-violet-950/10 scale-[1.01]'
+            : 'border-border hover:border-violet-500 bg-surface'
             }`}
         >
           <input
@@ -829,7 +994,11 @@ export const FightReportPage: React.FC = () => {
                 <Trophy size={16} className="text-amber-500 animate-pulse" />
                 <span className="text-xs text-subtle font-bold uppercase tracking-wider">Victor:</span>
                 <span className="px-4 py-1.5 rounded-full text-xs font-black uppercase bg-emerald-100 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-400 border border-emerald-300/10 shadow-sm">
-                  {battleStats.winnerCamp === 0 ? 'Team 1 (Attacker)' : 'Team 2 (Defender)'}
+                  {battleStats.winnerCamp === null
+                    ? 'Draw / Undetermined'
+                    : battleStats.winnerCamp === 0
+                      ? 'Team 1 (Attacker)'
+                      : 'Team 2 (Defender)'}
                 </span>
               </div>
 
@@ -870,8 +1039,8 @@ export const FightReportPage: React.FC = () => {
             <button
               onClick={() => setActiveTab('overview')}
               className={`pb-3 border-b-2 px-1 transition-all cursor-pointer ${activeTab === 'overview'
-                  ? 'border-violet-500 text-violet-600 dark:text-violet-400'
-                  : 'border-transparent text-subtle hover:text-text'
+                ? 'border-violet-500 text-violet-600 dark:text-violet-400'
+                : 'border-transparent text-subtle hover:text-text'
                 }`}
             >
               Overview
@@ -879,8 +1048,8 @@ export const FightReportPage: React.FC = () => {
             <button
               onClick={() => setActiveTab('fighters')}
               className={`pb-3 border-b-2 px-1 transition-all cursor-pointer ${activeTab === 'fighters'
-                  ? 'border-violet-500 text-violet-600 dark:text-violet-400'
-                  : 'border-transparent text-subtle hover:text-text'
+                ? 'border-violet-500 text-violet-600 dark:text-violet-400'
+                : 'border-transparent text-subtle hover:text-text'
                 }`}
             >
               Fighters
@@ -888,8 +1057,8 @@ export const FightReportPage: React.FC = () => {
             <button
               onClick={() => setActiveTab('timeline')}
               className={`pb-3 border-b-2 px-1 transition-all cursor-pointer ${activeTab === 'timeline'
-                  ? 'border-violet-500 text-violet-600 dark:text-violet-400'
-                  : 'border-transparent text-subtle hover:text-text'
+                ? 'border-violet-500 text-violet-600 dark:text-violet-400'
+                : 'border-transparent text-subtle hover:text-text'
                 }`}
             >
               Timeline
@@ -897,8 +1066,8 @@ export const FightReportPage: React.FC = () => {
             <button
               onClick={() => setActiveTab('skills')}
               className={`pb-3 border-b-2 px-1 transition-all cursor-pointer ${activeTab === 'skills'
-                  ? 'border-violet-500 text-violet-600 dark:text-violet-400'
-                  : 'border-transparent text-subtle hover:text-text'
+                ? 'border-violet-500 text-violet-600 dark:text-violet-400'
+                : 'border-transparent text-subtle hover:text-text'
                 }`}
             >
               Skills
@@ -906,8 +1075,8 @@ export const FightReportPage: React.FC = () => {
             <button
               onClick={() => setActiveTab('buffs')}
               className={`pb-3 border-b-2 px-1 transition-all cursor-pointer ${activeTab === 'buffs'
-                  ? 'border-violet-500 text-violet-600 dark:text-violet-400'
-                  : 'border-transparent text-subtle hover:text-text'
+                ? 'border-violet-500 text-violet-600 dark:text-violet-400'
+                : 'border-transparent text-subtle hover:text-text'
                 }`}
             >
               Buffs
@@ -915,8 +1084,8 @@ export const FightReportPage: React.FC = () => {
             <button
               onClick={() => setActiveTab('deaths')}
               className={`pb-3 border-b-2 px-1 transition-all cursor-pointer ${activeTab === 'deaths'
-                  ? 'border-violet-500 text-violet-600 dark:text-violet-400'
-                  : 'border-transparent text-subtle hover:text-text'
+                ? 'border-violet-500 text-violet-600 dark:text-violet-400'
+                : 'border-transparent text-subtle hover:text-text'
                 }`}
             >
               Deaths
@@ -924,8 +1093,8 @@ export const FightReportPage: React.FC = () => {
             <button
               onClick={() => setActiveTab('log')}
               className={`pb-3 border-b-2 px-1 transition-all cursor-pointer ${activeTab === 'log'
-                  ? 'border-violet-500 text-violet-600 dark:text-violet-400'
-                  : 'border-transparent text-subtle hover:text-text'
+                ? 'border-violet-500 text-violet-600 dark:text-violet-400'
+                : 'border-transparent text-subtle hover:text-text'
                 }`}
             >
               Replay Log
@@ -1007,6 +1176,65 @@ export const FightReportPage: React.FC = () => {
                 </div>
               </div>
 
+              {/* Simulation Warnings Panel */}
+              {battleStats.simulationWarnings && battleStats.simulationWarnings.length > 0 && (
+                <div className="p-4 border border-amber-200 dark:border-amber-950/60 bg-amber-50/50 dark:bg-amber-950/10 rounded-2xl text-xs flex items-start gap-2.5 text-amber-600 dark:text-amber-455">
+                  <ShieldAlert size={16} className="shrink-0 mt-0.5 animate-pulse" />
+                  <div className="space-y-1.5 font-semibold">
+                    <span className="font-black block text-sm">Simulation Anomalies Detected ({battleStats.simulationWarnings.length})</span>
+                    <p className="text-[11px] leading-relaxed text-muted">
+                      Our simulation core caught some inconsistent packets during calculations. Results have been gracefully compiled:
+                    </p>
+                    <ul className="list-disc pl-4 space-y-1 text-[10px] font-mono font-bold max-h-24 overflow-y-auto mt-1">
+                      {battleStats.simulationWarnings.map((warn, idx) => (
+                        <li key={idx}>{warn}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+
+              {/* Meta Insights Panel */}
+              {insights.length > 0 && (
+                <div className="p-6 border border-border bg-surface rounded-2xl shadow-sm space-y-4">
+                  <div className="flex items-center gap-2 border-b border-border pb-2.5">
+                    <Sparkles size={16} className="text-violet-500 animate-pulse" />
+                    <span className="font-extrabold text-xs uppercase text-subtle tracking-wider">
+                      Strategic Combat Meta Insights
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {insights.map((ins) => {
+                      const toneClasses = {
+                        red: "bg-red-500/5 text-red-800 dark:text-red-400 border-red-500/10",
+                        emerald: "bg-emerald-500/5 text-emerald-800 dark:text-emerald-400 border-emerald-500/10",
+                        blue: "bg-blue-500/5 text-blue-800 dark:text-blue-400 border-blue-500/10",
+                        amber: "bg-amber-500/5 text-amber-800 dark:text-amber-400 border-amber-500/10",
+                        violet: "bg-violet-500/5 text-violet-800 dark:text-violet-400 border-violet-500/10",
+                        muted: "bg-zinc-500/5 text-zinc-800 dark:text-zinc-400 border-zinc-500/10",
+                      };
+
+                      return (
+                        <div
+                          key={ins.id}
+                          className={`p-4 border rounded-xl flex items-start gap-3.5 ${toneClasses[ins.tone] || toneClasses.muted}`}
+                        >
+                          <span className="text-xl select-none">{ins.icon}</span>
+                          <div className="space-y-1">
+                            <span className="font-extrabold text-xs block text-text select-none">
+                              {ins.label}
+                            </span>
+                            <p className="text-[11px] leading-relaxed font-semibold text-muted">
+                              {ins.description}
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
               {/* Key Moments */}
               <KeyMomentsPanel
                 moments={battleStats.keyMoments}
@@ -1027,6 +1255,7 @@ export const FightReportPage: React.FC = () => {
                 maxDamageTaken={battleStats.maxDamageTakenRaw}
                 maxHealingDone={battleStats.maxHealing}
                 maxShieldApplied={battleStats.teamTotals.shieldApplied[0] || 1}
+                onSelectFighter={setFocusedFighterKey}
               />
               <FighterTeamPanel
                 title="Team 2 (Defender)"
@@ -1037,6 +1266,7 @@ export const FightReportPage: React.FC = () => {
                 maxDamageTaken={battleStats.maxDamageTakenRaw}
                 maxHealingDone={battleStats.maxHealing}
                 maxShieldApplied={battleStats.teamTotals.shieldApplied[1] || 1}
+                onSelectFighter={setFocusedFighterKey}
               />
             </div>
           )}
@@ -1092,15 +1322,15 @@ export const FightReportPage: React.FC = () => {
                       <select
                         value={logFilter}
                         onChange={(e) => setLogFilter(e.target.value as any)}
-                        className="w-full md:w-36 pl-8 pr-2.5 py-1.5 text-xs rounded-xl border border-border bg-bg text-text font-bold focus:outline-none"
+                        className="w-full md:w-40 pl-8 pr-2.5 py-1.5 text-xs rounded-xl border border-border bg-bg text-text font-bold focus:outline-none"
                       >
-                        <option value="all">All Actions</option>
-                        <option value="damage">Damage Dealt</option>
-                        <option value="heal">Heals Received</option>
-                        <option value="death">Unit Deaths</option>
-                        <option value="shield">Shields Applied</option>
-                        <option value="buff">Buff Triggers</option>
-                        <option value="crit">Critical Hits</option>
+                        <option value="all">All Targets ({logFilterCounts.all})</option>
+                        <option value="damage">Damage Hits ({logFilterCounts.damage})</option>
+                        <option value="heal">Heals ({logFilterCounts.heal})</option>
+                        <option value="death">Deaths ({logFilterCounts.death})</option>
+                        <option value="shield">Shields ({logFilterCounts.shield})</option>
+                        <option value="buff">Buffs ({logFilterCounts.buff})</option>
+                        <option value="crit">Crits ({logFilterCounts.crit})</option>
                       </select>
                     </div>
 
@@ -1130,10 +1360,11 @@ export const FightReportPage: React.FC = () => {
 
                       return (
                         <div
+                          id={`action-${selectedRoundTab}-${actIdx}`}
                           key={actIdx}
                           className={`pt-4 ${actIdx === 0 ? 'pt-0' : ''} space-y-2.5 transition-all duration-300 ${highlighted
-                              ? 'bg-violet-500/5 dark:bg-violet-500/5 border border-violet-500/15 p-3 rounded-2xl'
-                              : ''
+                            ? 'bg-violet-500/5 dark:bg-violet-500/5 border border-violet-500/15 p-3 rounded-2xl'
+                            : ''
                             }`}
                         >
                           <div className="flex items-center justify-between">
@@ -1142,8 +1373,8 @@ export const FightReportPage: React.FC = () => {
                             </span>
                             <span
                               className={`text-[9px] px-2 py-0.5 rounded font-black uppercase ${attackerCamp === 0
-                                  ? 'bg-violet-100 dark:bg-violet-950 text-violet-800 dark:text-violet-400 border border-violet-500/10'
-                                  : 'bg-indigo-100 dark:bg-indigo-950 text-indigo-800 dark:text-indigo-400 border border-indigo-500/10'
+                                ? 'bg-violet-100 dark:bg-violet-950 text-violet-800 dark:text-violet-400 border border-violet-500/10'
+                                : 'bg-indigo-100 dark:bg-indigo-950 text-indigo-800 dark:text-indigo-400 border border-indigo-500/10'
                                 }`}
                             >
                               {attackerCamp === 0 ? 'Team 1 (Attacker)' : 'Team 2 (Defender)'}
@@ -1300,10 +1531,10 @@ export const FightReportPage: React.FC = () => {
                                             </span>
                                             <span
                                               className={`flex justify-between font-mono font-bold text-[9px] ${tgt.hpAfter < tgt.hpBefore
-                                                  ? 'text-red-400'
-                                                  : tgt.hpAfter > tgt.hpBefore
-                                                    ? 'text-emerald-400'
-                                                    : 'text-zinc-400'
+                                                ? 'text-red-400'
+                                                : tgt.hpAfter > tgt.hpBefore
+                                                  ? 'text-emerald-400'
+                                                  : 'text-zinc-400'
                                                 }`}
                                             >
                                               <span>Difference:</span>
@@ -1352,6 +1583,19 @@ export const FightReportPage: React.FC = () => {
             </div>
           )}
         </div>
+      )}
+
+      {/* Fighter Focus Drill-Down Modal */}
+      {report && focusedFighterKey && battleStats && (
+        <FighterFocusModal
+          isOpen={focusedFighterKey !== null}
+          onClose={() => setFocusedFighterKey(null)}
+          fighterKey={focusedFighterKey}
+          fighterState={battleStats.state.get(focusedFighterKey)!}
+          timeline={battleStats.fighterTimeline.get(focusedFighterKey) || []}
+          report={report}
+          skillsMap={skillsMap}
+        />
       )}
     </div>
   );

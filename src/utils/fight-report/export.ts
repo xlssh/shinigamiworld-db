@@ -16,6 +16,14 @@ export function downloadJson(data: unknown, filename: string): void {
   URL.revokeObjectURL(url);
 }
 
+function csvCell(value: unknown): string {
+  const text = String(value ?? '');
+  if (/[",\n\r]/.test(text)) {
+    return `"${text.replace(/"/g, '""')}"`;
+  }
+  return text;
+}
+
 export function downloadCsv(
   report: FightReportData,
   finalState: Map<string, FighterRuntimeState>,
@@ -81,7 +89,7 @@ export function downloadCsv(
   extractRows(0, report.team1.roles);
   extractRows(1, report.team2.roles);
 
-  const csvContent = rows.map(r => r.join(",")).join("\n");
+  const csvContent = rows.map(row => row.map(csvCell).join(",")).join("\n");
   const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');

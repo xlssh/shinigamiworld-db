@@ -255,4 +255,5 @@ export interface ParseDebugInfo {
   version: number;
   roleCounts: [number, number];
   totalTurns: number;
+  sha256?: string;
 }

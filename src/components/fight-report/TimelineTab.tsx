@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
-import { TurnSummary, FighterTurnSnapshot } from '../../utils/fight-report/simulation';
-import { Activity, Flame, Heart } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import {
+  TurnSummary,
+  FighterTurnSnapshot,
+  computeDangerEvents
+} from '../../utils/fight-report/simulation';
+import { Activity, Flame, Heart, Skull } from 'lucide-react';
 
 interface TimelineTabProps {
   turnSummaries: TurnSummary[];
@@ -15,6 +19,10 @@ export const TimelineTab: React.FC<TimelineTabProps> = ({
 }) => {
   const [metricTab, setMetricTab] = useState<'hp' | 'damage' | 'healing'>('hp');
   const [selectedFighterKey, setSelectedFighterKey] = useState<string>('all');
+
+  const dangerEvents = useMemo(() => {
+    return computeDangerEvents(fighterTimeline, fighterNames);
+  }, [fighterTimeline, fighterNames]);
 
   const totalRounds = turnSummaries.length;
 
@@ -368,6 +376,46 @@ export const TimelineTab: React.FC<TimelineTabProps> = ({
                       </div>
                     </div>
                   </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Danger Threshold Events Timeline */}
+      {dangerEvents.length > 0 && (
+        <div className="p-6 border border-border bg-surface rounded-2xl shadow-sm space-y-4 animate-fade-in">
+          <div className="flex items-center gap-2 border-b border-border pb-2.5">
+            <span className="p-1.5 bg-red-500/10 text-red-500 rounded-lg">
+              <Skull size={14} />
+            </span>
+            <span className="font-extrabold text-xs uppercase text-subtle tracking-wider">
+              Critical Damage Threshold Events
+            </span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-52 overflow-y-auto pr-1 text-xs font-semibold leading-relaxed">
+            {dangerEvents.map((evt, idx) => {
+              let text = "";
+              let toneClass = "";
+
+              if (evt.threshold === 0) {
+                text = `${evt.name} fell to 0% HP and was defeated.`;
+                toneClass = "bg-rose-500/5 text-rose-800 dark:text-rose-400 border-rose-500/10";
+              } else {
+                text = `${evt.name} dropped below ${evt.threshold}% remaining HP.`;
+                toneClass = "bg-amber-500/5 text-amber-800 dark:text-amber-400 border-amber-500/10";
+              }
+
+              return (
+                <div
+                  key={idx}
+                  className={`p-3 border rounded-xl flex items-center justify-between gap-3 ${toneClass}`}
+                >
+                  <span>{text}</span>
+                  <span className="px-2 py-0.5 rounded bg-bg border border-border text-[9px] font-mono font-bold text-muted shrink-0">
+                    Round {evt.round}
+                  </span>
                 </div>
               );
             })}

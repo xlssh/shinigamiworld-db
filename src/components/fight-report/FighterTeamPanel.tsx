@@ -12,6 +12,7 @@ interface FighterTeamPanelProps {
   maxDamageTaken: number;
   maxHealingDone: number;
   maxShieldApplied: number;
+  onSelectFighter?: (key: string) => void;
 }
 
 type SortKey =
@@ -34,6 +35,7 @@ export const FighterTeamPanel: React.FC<FighterTeamPanelProps> = ({
   maxDamageTaken,
   maxHealingDone,
   maxShieldApplied: _maxShieldApplied,
+  onSelectFighter,
 }) => {
   const [searchTerm, setSearchQuery] = useState('');
   const [sortKey, setSortKey] = useState<SortKey>('damageDealtRaw');
@@ -186,7 +188,8 @@ export const FighterTeamPanel: React.FC<FighterTeamPanelProps> = ({
             return (
               <div
                 key={role.pos}
-                className="p-4 border border-border bg-surface rounded-2xl shadow-sm hover:border-border-strong transition-all relative overflow-hidden group"
+                onClick={() => onSelectFighter?.(`${camp}_${role.pos}`)}
+                className="p-4 border border-border bg-surface rounded-2xl shadow-sm hover:border-violet-500/50 hover:bg-zinc-500/5 hover:shadow-md hover:scale-[1.01] transition-all relative overflow-hidden group cursor-pointer"
               >
                 {/* Header block */}
                 <div className="flex justify-between items-start border-b border-border pb-2">

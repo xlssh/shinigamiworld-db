@@ -157,6 +157,22 @@ export const RoundNavigator: React.FC<RoundNavigatorProps> = ({
           );
         })}
       </div>
+
+      {/* Round Highlight Legend */}
+      <div className="flex flex-wrap gap-4 text-[10px] font-bold text-subtle pt-3 border-t border-border select-none">
+        <span className="flex items-center gap-1.5">
+          <span className="w-2 h-2 rounded-full bg-rose-500" />
+          <span>Fighter Defeated</span>
+        </span>
+        <span className="flex items-center gap-1.5">
+          <span className="w-2 h-2 rounded-full bg-amber-500" />
+          <span>Critical Strike</span>
+        </span>
+        <span className="flex items-center gap-1.5">
+          <span className="w-2 h-2 rounded-full bg-blue-500" />
+          <span>Shield Activated</span>
+        </span>
+      </div>
     </div>
   );
 };
