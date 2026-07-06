@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { loadDailyQuests } from '../data/loaders';
 import { DailyQuest } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
@@ -12,6 +12,10 @@ export const DailyQuestsPage: React.FC = () => {
   const [quests, setQuests] = useState<DailyQuest[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const searchQuery = searchParams.get('q') || '';
+  const updateSearch = (val: string) => setSearchParams(prev => { const next = new URLSearchParams(prev); val ? next.set('q', val) : next.delete('q'); return next; });
 
   const navigate = useNavigate();
 
@@ -108,6 +112,8 @@ export const DailyQuestsPage: React.FC = () => {
         data={quests}
         searchPlaceholder="Filter daily quests by task name or description..."
         onRowClick={handleRowClick}
+        filterValue={searchQuery}
+        onFilterChange={updateSearch}
       />
     </div>
   );

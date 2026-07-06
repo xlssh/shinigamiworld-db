@@ -6,6 +6,7 @@ import { LoadingState } from '../components/LoadingState';
 import { ErrorState } from '../components/ErrorState';
 import { JsonViewer } from '../components/JsonViewer';
 import { ArrowLeft, MapPin, Compass, AlertCircle, RefreshCw } from 'lucide-react';
+import { RelatedTools } from '../components/RelatedTools';
 
 export const CityDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -178,6 +179,17 @@ export const CityDetailPage: React.FC = () => {
           )}
         </div>
       </div>
+
+      {/* Related Tools */}
+      <RelatedTools
+        title="Related Tools & Pages"
+        links={[
+          { label: 'World Unlock Map', to: '/cities/map', description: 'Visual city progression' },
+          { label: 'Stages', to: '/stages', description: 'Combat stages in this region' },
+          { label: 'Campaign Roadmap', to: '/tools/campaign-roadmap', description: 'Plan your campaign path' },
+          { label: 'All Cities', to: '/cities', description: 'Browse all cities' },
+        ]}
+      />
 
       {/* Raw entry fallback */}
       <JsonViewer data={city} title={`Raw JSON Database Entry: City #${city.id}`} />

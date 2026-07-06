@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { loadPromotionalActivities } from '../data/loaders';
 import { PromotionalActivity } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
@@ -145,9 +145,20 @@ export const PromotionsPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Filters
-  const [selectedActType, setSelectedEventType] = useState<string>('all');
-  const [selectedTimeType, setSelectedTimeType] = useState<string>('all');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const searchQuery = searchParams.get('q') || '';
+  const selectedActType = searchParams.get('actType') || 'all';
+
+  const updateFilter = (key: string, value: string) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      if (value === 'all' || value === '') next.delete(key);
+      else next.set(key, value);
+      return next;
+    });
+  };
+  const updateSearch = (val: string) => updateFilter('q', val);
+  const selectedTimeType = searchParams.get('timeType') || 'all';
 
   const navigate = useNavigate();
 
@@ -288,7 +299,7 @@ export const PromotionsPage: React.FC = () => {
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Activity Type</label>
           <select
             value={selectedActType}
-            onChange={(e) => setSelectedEventType(e.target.value)}
+            onChange={(e) => updateFilter('actType', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All Activity Types</option>
@@ -302,7 +313,7 @@ export const PromotionsPage: React.FC = () => {
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Time Category</label>
           <select
             value={selectedTimeType}
-            onChange={(e) => setSelectedTimeType(e.target.value)}
+            onChange={(e) => updateFilter('timeType', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All Time Types</option>
@@ -319,6 +330,8 @@ export const PromotionsPage: React.FC = () => {
         searchPlaceholder="Filter promotions by event name..."
         onRowClick={handleRowClick}
         pageSize={15}
+        filterValue={searchQuery}
+        onFilterChange={updateSearch}
       />
     </div>
   );

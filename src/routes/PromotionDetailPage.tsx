@@ -7,6 +7,7 @@ import { ErrorState } from '../components/ErrorState';
 import { JsonViewer } from '../components/JsonViewer';
 import { RewardList } from '../components/RewardList';
 import { ArrowLeft, Flame, Calendar, ShieldAlert, Gift, Trophy, Star, Target, Info, Coins, Sparkles, Compass, Shield, BookOpen } from 'lucide-react';
+import { RelatedTools } from '../components/RelatedTools';
 
 function getTimeTypeLabel(type: number): string {
   switch (type) {
@@ -2620,6 +2621,17 @@ export const PromotionDetailPage: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Related Tools */}
+      <RelatedTools
+        title="Related Tools & Pages"
+        links={[
+          { label: 'Event Calendar', to: '/calendar', description: 'View all event schedules' },
+          { label: 'Promotion Schedules', to: '/calendar/schedules', description: 'Planned promotion timeline' },
+          { label: 'Event ROI & VIP Planner', to: '/tools/vip-planner', description: 'Calculate event ROI' },
+          { label: 'All Promotions', to: '/promotions', description: 'Browse all promotions' },
+        ]}
+      />
 
       {/* Raw JSON entry fallback */}
       <JsonViewer data={promo} title={`Raw JSON Database Entry: Promotion #${promo.id}`} />

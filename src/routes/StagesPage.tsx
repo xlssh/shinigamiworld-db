@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { loadStages } from '../data/loaders';
 import { Stage } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
@@ -12,6 +12,10 @@ export const StagesPage: React.FC = () => {
   const [stages, setStages] = useState<Stage[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const searchQuery = searchParams.get('q') || '';
+  const updateSearch = (val: string) => setSearchParams(prev => { const next = new URLSearchParams(prev); val ? next.set('q', val) : next.delete('q'); return next; });
 
   // Filters
   const [selectedHard, setSelectedHard] = useState<string>('all');
@@ -166,6 +170,8 @@ export const StagesPage: React.FC = () => {
         data={filteredStages}
         searchPlaceholder="Filter stages by name or description..."
         onRowClick={handleRowClick}
+        filterValue={searchQuery}
+        onFilterChange={updateSearch}
       />
     </div>
   );

@@ -8,6 +8,7 @@ import { JsonViewer } from '../components/JsonViewer';
 import { getQualityLabel, getQualityColorClass } from './HeroesPage';
 import { getProfessionLabel, getAttributeName, getActivationArticleForHero, getActivitiesAwardingArticle } from '../data/relationships';
 import { ArrowLeft, Swords, Sparkles, TrendingUp, ShieldAlert, Share2, Check, Scale, Cpu, Lock, HeartHandshake, HelpCircle, Activity, Star, AlertCircle } from 'lucide-react';
+import { RelatedTools } from '../components/RelatedTools';
 
 export const HeroDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -1285,6 +1286,19 @@ export const HeroDetailPage: React.FC = () => {
           )}
         </div>
       )}
+
+      {/* Related Tools */}
+      <RelatedTools
+        title="Related Tools & Pages"
+        links={[
+          { label: 'Formation Builder', to: '/tools/formation', description: 'Build a team with this hero' },
+          { label: 'Hero Comparison', to: '/heroes/compare', description: 'Compare stats side-by-side' },
+          { label: 'Tier Heatmap', to: '/tools/tier-heatmap', description: 'See tier rankings' },
+          { label: 'Bond Optimizer', to: '/tools/bond-optimizer', description: 'Optimize bond synergies' },
+          { label: 'Hero Talents', to: '/tools/talents', description: 'Plan talent upgrades' },
+          { label: 'Skill Handbook', to: '/tools/skills', description: 'Browse all skills' },
+        ]}
+      />
 
       {/* Raw Record FALLBACK for Dataminers */}
       <JsonViewer data={hero} title={`Raw JSON Database Entry: Hero #${hero.id}`} />

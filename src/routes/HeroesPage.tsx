@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { loadHeroes } from '../data/loaders';
 import { Hero } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
@@ -42,12 +42,25 @@ export const HeroesPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Filters State
-  const [selectedQuality, setSelectedQuality] = useState<string>('all');
-  const [selectedProfession, setSelectedProfession] = useState<string>('all');
-  const [selectedIsMain, setSelectedIsMain] = useState<string>('all');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const selectedQuality = searchParams.get('quality') || 'all';
+  const selectedProfession = searchParams.get('profession') || 'all';
+  const selectedIsMain = searchParams.get('isMain') || 'all';
+  const searchQuery = searchParams.get('q') || '';
 
   const navigate = useNavigate();
+
+  const updateFilter = (key: string, value: string) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      if (value === 'all' || value === '') {
+        next.delete(key);
+      } else {
+        next.set(key, value);
+      }
+      return next;
+    });
+  };
 
   const fetchHeroesData = async () => {
     try {
@@ -127,7 +140,6 @@ export const HeroesPage: React.FC = () => {
         return <span className="font-medium text-xs text-muted">{getProfessionLabel(val)}</span>;
       },
     },
-
     {
       accessorKey: 'level',
       header: 'LV',
@@ -181,13 +193,13 @@ export const HeroesPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Reusable filters bar */}
+      {/* Filters bar — URL-persisted */}
       <section className="p-4 border border-border bg-surface rounded-xl shadow-sm grid grid-cols-2 md:grid-cols-4 gap-3">
         <div>
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Quality</label>
           <select
             value={selectedQuality}
-            onChange={(e) => setSelectedQuality(e.target.value)}
+            onChange={(e) => updateFilter('quality', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-brand cursor-pointer"
           >
             <option value="all">All Qualities</option>
@@ -197,13 +209,11 @@ export const HeroesPage: React.FC = () => {
           </select>
         </div>
 
-
-
         <div>
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Class / Profession</label>
           <select
             value={selectedProfession}
-            onChange={(e) => setSelectedProfession(e.target.value)}
+            onChange={(e) => updateFilter('profession', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-brand cursor-pointer"
           >
             <option value="all">All Classes</option>
@@ -217,7 +227,7 @@ export const HeroesPage: React.FC = () => {
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Character Tier</label>
           <select
             value={selectedIsMain}
-            onChange={(e) => setSelectedIsMain(e.target.value)}
+            onChange={(e) => updateFilter('isMain', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-brand cursor-pointer"
           >
             <option value="all">All Roles</option>
@@ -232,6 +242,8 @@ export const HeroesPage: React.FC = () => {
         data={filteredHeroes}
         searchPlaceholder="Filter characters by name..."
         onRowClick={handleRowClick}
+        filterValue={searchQuery}
+        onFilterChange={(val) => updateFilter('q', val)}
       />
     </div>
   );

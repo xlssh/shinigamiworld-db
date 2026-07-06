@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, useSearchParams, Link } from 'react-router-dom';
 import { loadMallItems, loadArticles } from '../data/loaders';
 import { MallItem, Article } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
@@ -14,9 +14,20 @@ export const MallItemsPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Filters
-  const [selectedVip, setSelectedVip] = useState<string>('all');
-  const [selectedHot, setSelectedHot] = useState<string>('all');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const searchQuery = searchParams.get('q') || '';
+  const selectedVip = searchParams.get('vip') || 'all';
+  const selectedHot = searchParams.get('tag') || 'all';
+
+  const updateFilter = (key: string, value: string) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      if (value === 'all' || value === '') next.delete(key);
+      else next.set(key, value);
+      return next;
+    });
+  };
+  const updateSearch = (val: string) => updateFilter('q', val);
 
   const navigate = useNavigate();
 
@@ -158,7 +169,7 @@ export const MallItemsPage: React.FC = () => {
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">VIP Tier Limit</label>
           <select
             value={selectedVip}
-            onChange={(e) => setSelectedVip(e.target.value)}
+            onChange={(e) => updateFilter('vip', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All VIP Ranks</option>
@@ -172,7 +183,7 @@ export const MallItemsPage: React.FC = () => {
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Shop Tag</label>
           <select
             value={selectedHot}
-            onChange={(e) => setSelectedHot(e.target.value)}
+            onChange={(e) => updateFilter('tag', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All Entries</option>
@@ -187,6 +198,8 @@ export const MallItemsPage: React.FC = () => {
         data={filteredMallItems}
         searchPlaceholder="Filter shop merchandise items by package name..."
         onRowClick={handleRowClick}
+        filterValue={searchQuery}
+        onFilterChange={updateSearch}
       />
     </div>
   );

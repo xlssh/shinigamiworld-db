@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { loadArticles } from '../data/loaders';
 import { Article } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
@@ -15,10 +15,21 @@ export const ArticlesPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Filter States
-  const [selectedQuality, setSelectedQuality] = useState<string>('all');
-  const [selectedMajorType, setSelectedMajorType] = useState<string>('all');
-  const [selectedLevel, setSelectedLevel] = useState<string>('all');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const searchQuery = searchParams.get('q') || '';
+  const selectedQuality = searchParams.get('quality') || 'all';
+  const selectedMajorType = searchParams.get('majorType') || 'all';
+  const selectedLevel = searchParams.get('level') || 'all';
+
+  const updateFilter = (key: string, value: string) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      if (value === 'all' || value === '') next.delete(key);
+      else next.set(key, value);
+      return next;
+    });
+  };
+  const updateSearch = (val: string) => updateFilter('q', val);
 
   const navigate = useNavigate();
 
@@ -152,7 +163,7 @@ export const ArticlesPage: React.FC = () => {
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Quality Tier</label>
           <select
             value={selectedQuality}
-            onChange={(e) => setSelectedQuality(e.target.value)}
+            onChange={(e) => updateFilter('quality', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All Qualities</option>
@@ -166,7 +177,7 @@ export const ArticlesPage: React.FC = () => {
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Major Category</label>
           <select
             value={selectedMajorType}
-            onChange={(e) => setSelectedMajorType(e.target.value)}
+            onChange={(e) => updateFilter('majorType', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All Categories</option>
@@ -180,7 +191,7 @@ export const ArticlesPage: React.FC = () => {
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Required Level</label>
           <select
             value={selectedLevel}
-            onChange={(e) => setSelectedLevel(e.target.value)}
+            onChange={(e) => updateFilter('level', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All Levels</option>
@@ -196,6 +207,8 @@ export const ArticlesPage: React.FC = () => {
         data={filteredArticles}
         searchPlaceholder="Filter items by name or effects description..."
         onRowClick={handleRowClick}
+        filterValue={searchQuery}
+        onFilterChange={updateSearch}
       />
     </div>
   );

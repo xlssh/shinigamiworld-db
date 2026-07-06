@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { loadStoryQuests } from '../data/loaders';
 import { StoryQuest } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
@@ -13,9 +13,20 @@ export const StoryQuestsPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Filters
-  const [selectedType, setSelectedType] = useState<string>('all');
-  const [selectedEventType, setSelectedEventType] = useState<string>('all');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const searchQuery = searchParams.get('q') || '';
+  const selectedType = searchParams.get('type') || 'all';
+  const selectedEventType = searchParams.get('eventType') || 'all';
+
+  const updateFilter = (key: string, value: string) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      if (value === 'all' || value === '') next.delete(key);
+      else next.set(key, value);
+      return next;
+    });
+  };
+  const updateSearch = (val: string) => updateFilter('q', val);
 
   const navigate = useNavigate();
 
@@ -124,7 +135,7 @@ export const StoryQuestsPage: React.FC = () => {
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Quest Type</label>
           <select
             value={selectedType}
-            onChange={(e) => setSelectedType(e.target.value)}
+            onChange={(e) => updateFilter('type', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All Types</option>
@@ -138,7 +149,7 @@ export const StoryQuestsPage: React.FC = () => {
           <label className="block text-xs font-semibold text-subtle uppercase tracking-wider mb-1.5">Event Action Type</label>
           <select
             value={selectedEventType}
-            onChange={(e) => setSelectedEventType(e.target.value)}
+            onChange={(e) => updateFilter('eventType', e.target.value)}
             className="block w-full py-1.5 px-2 border border-border rounded-lg text-sm bg-bg focus:outline-none focus:ring-1.5 focus:ring-violet-500 cursor-pointer"
           >
             <option value="all">All Event Types</option>
@@ -154,6 +165,8 @@ export const StoryQuestsPage: React.FC = () => {
         data={filteredQuests}
         searchPlaceholder="Filter story quests by name or description details..."
         onRowClick={handleRowClick}
+        filterValue={searchQuery}
+        onFilterChange={updateSearch}
       />
     </div>
   );

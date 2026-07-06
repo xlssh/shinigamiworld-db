@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useNavigate, useLocation } from 'react-router-dom';
+import { Breadcrumbs } from './Breadcrumbs';
 import {
   LayoutDashboard,
   Search,
@@ -20,6 +21,7 @@ import {
   Compass,
   ChevronRight,
   ChevronLeft,
+  ChevronDown,
   Scale,
   GitFork,
   Coins,
@@ -37,6 +39,131 @@ import {
 
 interface LayoutProps {
   children: React.ReactNode;
+}
+
+interface MenuItem {
+  name: string;
+  to: string;
+  icon: React.FC<{ size?: number; className?: string; 'aria-hidden'?: boolean }>;
+}
+
+interface SidebarGroup {
+  label: string;
+  items: MenuItem[];
+}
+
+const sidebarGroups: SidebarGroup[] = [
+  {
+    label: 'Overview',
+    items: [
+      { name: 'Dashboard', to: '/', icon: LayoutDashboard },
+      { name: 'Global Search', to: '/search', icon: Search },
+      { name: 'Event Calendar', to: '/calendar', icon: Calendar },
+      { name: 'Promotion Schedules', to: '/calendar/schedules', icon: Clock },
+    ],
+  },
+  {
+    label: 'Characters & Items',
+    items: [
+      { name: 'Heroes', to: '/heroes', icon: Users },
+      { name: 'Hero Comparison', to: '/heroes/compare', icon: Scale },
+      { name: 'Class Stat Curves', to: '/heroes/stats', icon: BarChart3 },
+      { name: 'Articles / Items', to: '/articles', icon: Package },
+      { name: 'Farming Planner', to: '/articles/farming', icon: Navigation },
+    ],
+  },
+  {
+    label: 'Quests & Progression',
+    items: [
+      { name: 'Story Quests', to: '/story-quests', icon: BookOpen },
+      { name: 'Quest Tree', to: '/story-quests/tree', icon: GitFork },
+      { name: 'Daily Quests', to: '/daily-quests', icon: CalendarDays },
+      { name: 'Cities', to: '/cities', icon: Map },
+      { name: 'World Unlock Map', to: '/cities/map', icon: Globe },
+      { name: 'Stages', to: '/stages', icon: Swords },
+    ],
+  },
+  {
+    label: 'Weapons & Equipment',
+    items: [
+      { name: 'Zanpakuto Evolution', to: '/weapons/evolution', icon: Swords },
+      { name: 'Zanpakuto Weapon Skills', to: '/weapons/skills', icon: Sparkles },
+      { name: 'Zanpakuto Stats', to: '/weapons/stats', icon: BarChart3 },
+      { name: 'Equipment & Suits', to: '/tools/equipment', icon: Swords },
+      { name: 'Spiritual Ornaments', to: '/tools/ornaments', icon: Sparkles },
+      { name: 'Beast Souls Planner', to: '/tools/beast-souls', icon: BarChart3 },
+      { name: 'Soul King Palace Refinery', to: '/tools/refinery', icon: Sparkles },
+    ],
+  },
+  {
+    label: 'Shop & Events',
+    items: [
+      { name: 'Mall Items', to: '/mall-items', icon: ShoppingBag },
+      { name: 'Shop Analytics', to: '/mall/analytics', icon: Coins },
+      { name: 'Promotions List', to: '/promotions', icon: Flame },
+      { name: 'Black Market Deals', to: '/tools/black-market', icon: Coins },
+    ],
+  },
+  {
+    label: 'Team Building',
+    items: [
+      { name: 'Formation Builder', to: '/tools/formation', icon: Wand2 },
+      { name: 'Counter Triangle', to: '/tools/counters', icon: Shield },
+      { name: 'Tier Heatmap', to: '/tools/tier-heatmap', icon: LayoutGrid },
+      { name: 'Skill Handbook', to: '/tools/skills', icon: BookOpen },
+      { name: 'Bond Optimizer', to: '/tools/bond-optimizer', icon: Sparkles },
+      { name: 'Hero Talents Planner', to: '/tools/talents', icon: Wand2 },
+    ],
+  },
+  {
+    label: 'Planners & Simulators',
+    items: [
+      { name: 'Event ROI & VIP Planner', to: '/tools/vip-planner', icon: Coins },
+      { name: 'Campaign Roadmap', to: '/tools/campaign-roadmap', icon: Map },
+      { name: 'Home Dating & Intimacy', to: '/tools/dating', icon: HeartHandshake },
+      { name: 'Awakening Console', to: '/tools/awakening', icon: Sparkles },
+      { name: 'Pet Sanctuary', to: '/tools/pets', icon: LayoutGrid },
+      { name: 'Guild Devotion & VIP', to: '/tools/guild-vip', icon: Trophy },
+    ],
+  },
+  {
+    label: 'Endgame',
+    items: [
+      { name: 'Military Ranks', to: '/tools/military', icon: Trophy },
+      { name: 'Culling Abyss Tower', to: '/tools/culling-tower', icon: Swords },
+      { name: 'Conquest of Might', to: '/tools/nightmare-realms', icon: Globe },
+      { name: 'Seven Souls Altar', to: '/tools/seven-souls', icon: Star },
+      { name: 'MC Soul Maps', to: '/tools/soul-maps', icon: Compass },
+      { name: 'Achievement & Titles', to: '/tools/achievements', icon: Shield },
+      { name: 'Academy & Relics', to: '/tools/academy', icon: BookOpen },
+      { name: 'Loot Table Oracle', to: '/tools/loot-oracle', icon: Sparkles },
+    ],
+  },
+  {
+    label: 'Analysis',
+    items: [
+      { name: 'Fight Report Analyzer', to: '/tools/fight-report', icon: Swords },
+      { name: "Yammy's Rampage", to: '/tools/yammy-rampage', icon: Swords },
+      { name: 'Cross Server Battle', to: '/tools/cross-server-battle', icon: Shield },
+    ],
+  },
+];
+
+const GROUP_STATE_KEY = 'sidebarGroupsCollapsed';
+
+function loadGroupState(): Record<string, boolean> {
+  try {
+    const raw = localStorage.getItem(GROUP_STATE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch {}
+  // Default: all groups expanded
+  const defaults: Record<string, boolean> = {};
+  sidebarGroups.forEach(g => { defaults[g.label] = false; });
+  return defaults;
+}
+
+function saveGroupState(state: Record<string, boolean>) {
+  try { localStorage.setItem(GROUP_STATE_KEY, JSON.stringify(state)); } catch {}
 }
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
@@ -57,6 +184,8 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     return 'dark';
   });
 
+  const [groupCollapsed, setGroupCollapsed] = useState<Record<string, boolean>>(loadGroupState);
+
   const navigate = useNavigate();
   const location = useLocation();
   const [searchVal, setSearchVal] = useState('');
@@ -75,13 +204,46 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     localStorage.setItem('sidebarCollapsed', String(sidebarCollapsed));
   }, [sidebarCollapsed]);
 
-  // Sync mobile menu close on route change
+  useEffect(() => {
+    saveGroupState(groupCollapsed);
+  }, [groupCollapsed]);
+
+  // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location.pathname]);
 
+  // Scroll to top on route change
+  useEffect(() => {
+    const mainEl = document.getElementById('main-content');
+    if (mainEl) mainEl.scrollTop = 0;
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  // Auto-expand the sidebar group containing the active route
+  useEffect(() => {
+    const path = location.pathname;
+    for (const group of sidebarGroups) {
+      const match = group.items.some(item => {
+        if (item.to === '/') return path === '/';
+        return path === item.to || path.startsWith(item.to + '/');
+      });
+      if (match) {
+        setGroupCollapsed(prev => {
+          if (prev[group.label] === false) return prev;
+          return { ...prev, [group.label]: false };
+        });
+        break;
+      }
+    }
+  }, [location.pathname]);
+
   const toggleTheme = () => {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  };
+
+  const toggleGroup = (label: string) => {
+    setGroupCollapsed(prev => ({ ...prev, [label]: !prev[label] }));
   };
 
   const handleGlobalSearchSubmit = (e: React.FormEvent) => {
@@ -91,66 +253,8 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     }
   };
 
-  const menuItems = [
-    { name: 'Dashboard', to: '/', icon: LayoutDashboard },
-    { name: 'Global Search', to: '/search', icon: Search },
-    { name: 'Event Calendar', to: '/calendar', icon: Calendar },
-    { name: 'Promotion Schedules', to: '/calendar/schedules', icon: Clock },
-    { name: 'Promotions List', to: '/promotions', icon: Flame },
-    { name: 'Heroes', to: '/heroes', icon: Users },
-    { name: 'Hero Comparison', to: '/heroes/compare', icon: Scale },
-    //{ name: 'Hero SFX Board', to: '/heroes/sounds', icon: Volume2 },
-    { name: 'Class Stat Curves', to: '/heroes/stats', icon: BarChart3 },
-    { name: 'Articles / Items', to: '/articles', icon: Package },
-    { name: 'Farming Planner', to: '/articles/farming', icon: Navigation },
-    { name: 'Zanpakuto Evolution', to: '/weapons/evolution', icon: Swords },
-    { name: 'Zanpakuto Weapon Skills', to: '/weapons/skills', icon: Sparkles },
-    { name: 'Zanpakuto Stats', to: '/weapons/stats', icon: BarChart3 },
-    { name: 'Story Quests', to: '/story-quests', icon: BookOpen },
-    { name: 'Quest Tree', to: '/story-quests/tree', icon: GitFork },
-    { name: 'Daily Quests', to: '/daily-quests', icon: CalendarDays },
-    { name: 'Cities', to: '/cities', icon: Map },
-    { name: 'World Unlock Map', to: '/cities/map', icon: Globe },
-    { name: 'Stages', to: '/stages', icon: Swords },
-    { name: 'Mall Items', to: '/mall-items', icon: ShoppingBag },
-    { name: 'Shop Analytics', to: '/mall/analytics', icon: Coins },
-    { name: 'Formation Builder', to: '/tools/formation', icon: Wand2 },
-    { name: 'Counter Triangle', to: '/tools/counters', icon: Shield },
-    //{ name: 'Synergy Graph', to: '/tools/synergy', icon: Network },
-    { name: 'Tier Heatmap', to: '/tools/tier-heatmap', icon: LayoutGrid },
-    { name: 'Skill Handbook', to: '/tools/skills', icon: BookOpen },
-    { name: 'Bond Optimizer', to: '/tools/bond-optimizer', icon: Sparkles },
-    { name: 'Event ROI & VIP Planner', to: '/tools/vip-planner', icon: Coins },
-    //{ name: 'Combat Simulator', to: '/tools/combat-simulator', icon: Swords },
-    { name: 'Campaign Roadmap', to: '/tools/campaign-roadmap', icon: Map },
-    { name: 'Home Dating & Intimacy', to: '/tools/dating', icon: HeartHandshake },
-    { name: 'Equipment & Suits', to: '/tools/equipment', icon: Swords },
-    { name: 'Awakening Console', to: '/tools/awakening', icon: Sparkles },
-    { name: 'Pet Sanctuary', to: '/tools/pets', icon: LayoutGrid },
-    { name: 'Achievement & Titles', to: '/tools/achievements', icon: Shield },
-    //{ name: 'Gacha & Shop Rates', to: '/tools/shops', icon: Coins },
-    { name: 'Academy & Relics', to: '/tools/academy', icon: BookOpen },
-    { name: 'Loot Table Oracle', to: '/tools/loot-oracle', icon: Sparkles },
-    //{ name: 'Campaign Encounters', to: '/tools/pve-campaign', icon: Swords },
-    { name: 'Guild Devotion & VIP', to: '/tools/guild-vip', icon: Trophy },
-    { name: 'Spiritual Ornaments', to: '/tools/ornaments', icon: Sparkles },
-    { name: 'MC Soul Maps', to: '/tools/soul-maps', icon: Compass },
-    { name: 'Soul King Palace Refinery', to: '/tools/refinery', icon: Sparkles },
-    { name: 'Black Market Deals', to: '/tools/black-market', icon: Coins },
-    { name: 'Beast Souls Planner', to: '/tools/beast-souls', icon: BarChart3 },
-    //{ name: 'Temple Shrine', to: '/tools/shrine-simulator', icon: Trophy }, // TODO: unclear
-    { name: 'Military Ranks', to: '/tools/military', icon: Trophy },
-    { name: 'Culling Abyss Tower', to: '/tools/culling-tower', icon: Swords }, // TODO: unclear
-    //{ name: 'Equip Forge Planner', to: '/tools/forge-planner', icon: Sparkles }, // TODO: unclear
-    { name: 'Conquest of Might', to: '/tools/nightmare-realms', icon: Globe },
-    { name: 'Seven Souls Altar', to: '/tools/seven-souls', icon: Star },
-    //{ name: 'Fashion Wardrobe', to: '/tools/wardrobe', icon: Sparkles }, // TODO: unclear
-    { name: 'Hero Talents Planner', to: '/tools/talents', icon: Wand2 },
-    //{ name: 'Lucky Wheel Simulator', to: '/tools/lucky-wheel', icon: Coins }, // TODO: unclear
-    { name: 'Fight Report Analyzer', to: '/tools/fight-report', icon: Swords },
-    //{ name: 'Activity Codex', to: '/tools/activity-codex', icon: Calendar },
-    //{ name: 'Guild Tactics Planner', to: '/tools/guild-tactics', icon: Map },
-  ];
+  // Flat list for mobile drawer (preserves original behavior)
+  const allMenuItems = sidebarGroups.flatMap(g => g.items);
 
   return (
     <div className="min-h-screen flex flex-col bg-bg text-text transition-colors duration-200">
@@ -171,7 +275,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             aria-label="Toggle Navigation Menu"
             aria-expanded={mobileMenuOpen}
           >
-            {mobileMenuOpen ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
+            {mobileMenuOpen ? <X size={20} aria-hidden={true} /> : <Menu size={20} aria-hidden={true} />}
           </button>
 
           <Link to="/" className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand rounded-lg p-1">
@@ -195,7 +299,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             className="w-full pl-9 pr-4 py-1.5 text-xs rounded-full border border-border bg-bg focus:outline-none focus:ring-2 focus:ring-brand placeholder-subtle"
             aria-label="Search everything in database"
           />
-          <Search size={14} className="absolute left-3 text-muted" aria-hidden="true" />
+          <Search size={14} className="absolute left-3 text-muted" aria-hidden={true} />
         </form>
 
         <div className="flex items-center gap-3">
@@ -207,7 +311,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             aria-label={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
             title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
           >
-            {theme === 'light' ? <Moon size={18} aria-hidden="true" /> : <Sun size={18} aria-hidden="true" />}
+            {theme === 'light' ? <Moon size={18} aria-hidden={true} /> : <Sun size={18} aria-hidden={true} />}
           </button>
         </div>
       </header>
@@ -219,51 +323,86 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           className={`hidden md:flex flex-col border-r border-border bg-surface shrink-0 p-4 justify-between transition-all duration-300 ${sidebarCollapsed ? 'w-20' : 'w-64'
             }`}
         >
-          <div className="space-y-4 overflow-y-auto max-h-[calc(100vh-140px)] pr-1">
-            <div className="pb-2 border-b border-border flex items-center justify-between">
-              {!sidebarCollapsed && (
-                <span className="text-[10px] font-extrabold text-subtle uppercase tracking-widest px-3">
-                  Database Menu
-                </span>
-              )}
-            </div>
-            <nav className="space-y-1">
-              {menuItems.map((item) => (
-                <NavLink
-                  key={item.to}
-                  to={item.to}
-                  title={sidebarCollapsed ? item.name : undefined}
-                  className={({ isActive }) =>
-                    `flex items-center px-3 py-2.5 rounded-xl text-sm font-medium transition-all group ${isActive
-                      ? 'bg-brand-soft text-brand border border-indigo-100/50 dark:border-indigo-950/40 shadow-sm'
-                      : 'text-muted hover:bg-hover hover:text-text'
-                    } ${sidebarCollapsed ? 'justify-center' : 'justify-between'}`
-                  }
-                >
-                  <div className="flex items-center gap-3">
-                    <item.icon size={18} className="shrink-0" aria-hidden="true" />
-                    {!sidebarCollapsed && <span>{item.name}</span>}
-                  </div>
-                  {!sidebarCollapsed && (
-                    <ChevronRight size={14} className="opacity-0 group-hover:opacity-100 text-subtle" aria-hidden="true" />
-                  )}
-                </NavLink>
-              ))}
-            </nav>
+          <div className="space-y-1 overflow-y-auto max-h-[calc(100vh-140px)] pr-1">
+            {sidebarCollapsed ? (
+              // Collapsed: flat icon list
+              <nav className="space-y-1">
+                {allMenuItems.map((item) => (
+                  <NavLink
+                    key={item.to}
+                    to={item.to}
+                    title={item.name}
+                    className={({ isActive }) =>
+                      `flex items-center justify-center px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${isActive
+                        ? 'bg-brand-soft text-brand border border-indigo-100/50 dark:border-indigo-950/40 shadow-sm'
+                        : 'text-muted hover:bg-hover hover:text-text'
+                      }`
+                    }
+                  >
+                    <item.icon size={18} className="shrink-0" aria-hidden={true} />
+                  </NavLink>
+                ))}
+              </nav>
+            ) : (
+              // Expanded: grouped sections
+              <nav className="space-y-2">
+                {sidebarGroups.map((group) => {
+                  const isCollapsed = groupCollapsed[group.label] ?? false;
+                  return (
+                    <div key={group.label}>
+                      <button
+                        onClick={() => toggleGroup(group.label)}
+                        className="w-full flex items-center justify-between px-3 py-1.5 text-[10px] font-extrabold text-subtle uppercase tracking-widest hover:text-muted transition-colors rounded-lg"
+                        aria-expanded={!isCollapsed}
+                      >
+                        <span>{group.label}</span>
+                        <ChevronDown
+                          size={12}
+                          className={`transition-transform duration-200 ${isCollapsed ? '-rotate-90' : ''}`}
+                          aria-hidden={true}
+                        />
+                      </button>
+                      {!isCollapsed && (
+                        <div className="space-y-0.5 mt-0.5">
+                          {group.items.map((item) => (
+                            <NavLink
+                              key={item.to}
+                              to={item.to}
+                              className={({ isActive }) =>
+                                `flex items-center px-3 py-2 rounded-xl text-sm font-medium transition-all group ${isActive
+                                  ? 'bg-brand-soft text-brand border border-indigo-100/50 dark:border-indigo-950/40 shadow-sm'
+                                  : 'text-muted hover:bg-hover hover:text-text'
+                                } justify-between`
+                              }
+                            >
+                              <div className="flex items-center gap-3">
+                                <item.icon size={16} className="shrink-0" aria-hidden={true} />
+                                <span className="truncate">{item.name}</span>
+                              </div>
+                              <ChevronRight size={14} className="opacity-0 group-hover:opacity-100 text-subtle shrink-0" aria-hidden={true} />
+                            </NavLink>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </nav>
+            )}
           </div>
 
           {/* Sidebar Collapse Toggle Button */}
-          <div className="pt-3 border-t border-border">
+          <div className="pt-3 border-t border-border mt-3">
             <button
               onClick={() => setSidebarCollapsed(prev => !prev)}
               aria-label={sidebarCollapsed ? "Expand sidebar menu" : "Collapse sidebar menu"}
               className="w-full flex items-center justify-center p-2 rounded-xl border border-border hover:bg-hover text-muted hover:text-text font-semibold transition-all text-xs"
             >
               {sidebarCollapsed ? (
-                <ChevronRight size={16} aria-hidden="true" />
+                <ChevronRight size={16} aria-hidden={true} />
               ) : (
                 <span className="flex items-center gap-1.5">
-                  <ChevronLeft size={14} aria-hidden="true" />
+                  <ChevronLeft size={14} />
                   Collapse Menu
                 </span>
               )}
@@ -289,7 +428,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   className="p-1 text-muted hover:text-text"
                   aria-label="Close menu"
                 >
-                  <X size={20} aria-hidden="true" />
+                  <X size={20} aria-hidden={true} />
                 </button>
               </div>
 
@@ -303,24 +442,34 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   className="w-full pl-9 pr-4 py-2 text-sm rounded-lg border border-border bg-bg focus:outline-none focus:ring-2 focus:ring-brand placeholder-subtle"
                   aria-label="Search mobile menu"
                 />
-                <Search size={16} className="absolute left-3 top-3 text-muted" aria-hidden="true" />
+                <Search size={16} className="absolute left-3 top-3 text-muted" aria-hidden={true} />
               </form>
 
-              <nav className="space-y-1.5 overflow-y-auto flex-1">
-                {menuItems.map((item) => (
-                  <NavLink
-                    key={item.to}
-                    to={item.to}
-                    className={({ isActive }) =>
-                      `flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium transition-all ${isActive
-                        ? 'bg-brand-soft text-brand border border-indigo-100/50 dark:border-indigo-950/40 shadow-sm'
-                        : 'text-muted hover:bg-hover hover:text-text'
-                      }`
-                    }
-                  >
-                    <item.icon size={18} className="shrink-0" aria-hidden="true" />
-                    <span>{item.name}</span>
-                  </NavLink>
+              {/* Mobile: grouped nav */}
+              <nav className="space-y-3 overflow-y-auto flex-1">
+                {sidebarGroups.map((group) => (
+                  <div key={group.label}>
+                    <div className="px-3 py-1 text-[10px] font-extrabold text-subtle uppercase tracking-widest">
+                      {group.label}
+                    </div>
+                    <div className="space-y-0.5 mt-1">
+                      {group.items.map((item) => (
+                        <NavLink
+                          key={item.to}
+                          to={item.to}
+                          className={({ isActive }) =>
+                            `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${isActive
+                              ? 'bg-brand-soft text-brand border border-indigo-100/50 dark:border-indigo-950/40 shadow-sm'
+                              : 'text-muted hover:bg-hover hover:text-text'
+                            }`
+                          }
+                        >
+                          <item.icon size={16} className="shrink-0" aria-hidden={true} />
+                          <span>{item.name}</span>
+                        </NavLink>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </nav>
             </aside>
@@ -330,6 +479,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         {/* Main Content Area */}
         <main id="main-content" className="flex-1 overflow-y-auto p-6 sm:p-8 outline-none">
           <div className="max-w-7xl mx-auto space-y-6">
+            <Breadcrumbs />
             {children}
           </div>
         </main>

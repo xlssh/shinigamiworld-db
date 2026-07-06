@@ -22,6 +22,10 @@ interface DataTableProps<TData> {
   }) => React.ReactNode;
   onRowClick?: (row: TData) => void;
   pageSize?: number;
+  /** URL-synced search value */
+  filterValue?: string;
+  /** Callback when search value changes — use with useSearchParams */
+  onFilterChange?: (value: string) => void;
 }
 
 export function DataTable<TData extends { id: any }>({
@@ -31,9 +35,13 @@ export function DataTable<TData extends { id: any }>({
   filterComponent,
   onRowClick,
   pageSize = 15,
+  filterValue,
+  onFilterChange,
 }: DataTableProps<TData>) {
   const [sorting, setSorting] = useState<SortingState>([]);
-  const [globalFilter, setGlobalFilter] = useState('');
+  const [internalFilter, setInternalFilter] = useState('');
+  const globalFilter = filterValue !== undefined ? filterValue : internalFilter;
+  const setGlobalFilter = onFilterChange || setInternalFilter;
   const [columnVisibility, setColumnVisibility] = useState({});
   const [showVisibilityMenu, setShowVisibilityMenu] = useState(false);
   const [selectedRowId, setSelectedRowId] = useState<string | number | null>(null);
@@ -47,7 +55,10 @@ export function DataTable<TData extends { id: any }>({
       columnVisibility,
     },
     onSortingChange: setSorting,
-    onGlobalFilterChange: setGlobalFilter,
+    onGlobalFilterChange: (updater) => {
+      const next = typeof updater === 'function' ? updater(globalFilter) : updater;
+      setGlobalFilter(next);
+    },
     onColumnVisibilityChange: setColumnVisibility,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
@@ -77,11 +88,11 @@ export function DataTable<TData extends { id: any }>({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="relative flex-1 max-w-md">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-muted">
-            <Search size={18} aria-hidden="true" />
+            <Search size={18} aria-hidden={true} />
           </div>
           <input
             type="text"
-            value={globalFilter ?? ''}
+            value={globalFilter}
             onChange={(e) => setGlobalFilter(e.target.value)}
             className="block w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-surface text-text placeholder-subtle focus:outline-none focus:ring-2 focus:ring-brand text-sm transition-all"
             placeholder={searchPlaceholder}
@@ -101,7 +112,7 @@ export function DataTable<TData extends { id: any }>({
               aria-expanded={showVisibilityMenu}
               className="px-4 py-2 border border-border rounded-xl text-sm bg-surface text-muted hover:bg-hover hover:text-text font-medium flex items-center gap-1.5 transition-colors"
             >
-              <Eye size={16} aria-hidden="true" />
+              <Eye size={16} aria-hidden={true} />
               <span>Columns</span>
             </button>
             {showVisibilityMenu && (
@@ -167,9 +178,9 @@ export function DataTable<TData extends { id: any }>({
                         {canSort && (
                           <span className="text-subtle">
                             {{
-                              asc: <ChevronUp size={14} aria-hidden="true" />,
-                              desc: <ChevronDown size={14} aria-hidden="true" />,
-                            }[header.column.getIsSorted() as string] ?? <ChevronsUpDown size={14} aria-hidden="true" />}
+                              asc: <ChevronUp size={14} aria-hidden={true} />,
+                              desc: <ChevronDown size={14} aria-hidden={true} />,
+                            }[header.column.getIsSorted() as string] ?? <ChevronsUpDown size={14} aria-hidden={true} />}
                           </span>
                         )}
                       </div>
@@ -248,7 +259,7 @@ export function DataTable<TData extends { id: any }>({
             aria-label="Previous page"
             className="p-1.5 border border-border rounded-lg bg-surface disabled:opacity-50 hover:bg-hover transition-colors cursor-pointer"
           >
-            <ChevronLeft size={16} aria-hidden="true" />
+            <ChevronLeft size={16} aria-hidden={true} />
           </button>
           <span className="font-medium text-text">
             Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
@@ -259,7 +270,7 @@ export function DataTable<TData extends { id: any }>({
             aria-label="Next page"
             className="p-1.5 border border-border rounded-lg bg-surface disabled:opacity-50 hover:bg-hover transition-colors cursor-pointer"
           >
-            <ChevronRight size={16} aria-hidden="true" />
+            <ChevronRight size={16} aria-hidden={true} />
           </button>
         </div>
       </div>

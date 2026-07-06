@@ -6,6 +6,7 @@ import { LoadingState } from '../components/LoadingState';
 import { ErrorState } from '../components/ErrorState';
 import { JsonViewer } from '../components/JsonViewer';
 import { ArrowLeft, Swords, Award, AlertCircle } from 'lucide-react';
+import { RelatedTools } from '../components/RelatedTools';
 
 export const StageDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -159,6 +160,17 @@ export const StageDetailPage: React.FC = () => {
           </div>
         )}
       </div>
+
+      {/* Related Tools */}
+      <RelatedTools
+        title="Related Tools & Pages"
+        links={[
+          { label: 'All Stages', to: '/stages', description: 'Browse all combat stages' },
+          { label: 'Campaign Roadmap', to: '/tools/campaign-roadmap', description: 'Campaign progression plan' },
+          { label: 'Loot Table Oracle', to: '/tools/loot-oracle', description: 'Drop rate analysis' },
+          { label: 'Farming Planner', to: '/articles/farming', description: 'Plan your farming routes' },
+        ]}
+      />
 
       {/* Raw JSON viewer */}
       <JsonViewer data={stage} title={`Raw JSON Database Entry: Stage #${stage.id}`} />

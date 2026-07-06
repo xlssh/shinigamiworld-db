@@ -8,6 +8,7 @@ import { ErrorState } from '../components/ErrorState';
 import { JsonViewer } from '../components/JsonViewer';
 import { getQualityColorClass, getQualityLabel } from './HeroesPage';
 import { ArrowLeft, ShoppingCart, AlertCircle, Swords, Activity, AwardIcon } from 'lucide-react';
+import { RelatedTools } from '../components/RelatedTools';
 
 export const ArticleDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -343,6 +344,18 @@ export const ArticleDetailPage: React.FC = () => {
           </div>
         );
       })()}
+
+      {/* Related Tools */}
+      <RelatedTools
+        title="Related Tools & Pages"
+        links={[
+          { label: 'Farming Planner', to: '/articles/farming', description: 'Where to farm this item' },
+          { label: 'Mall Shop', to: '/mall-items', description: 'Check shop availability' },
+          { label: 'Black Market', to: '/tools/black-market', description: 'Check black market deals' },
+          { label: 'Loot Table Oracle', to: '/tools/loot-oracle', description: 'Drop rate analysis' },
+          { label: 'Global Search', to: `/search?q=${encodeURIComponent(article?.name || '')}`, description: 'Search all references' },
+        ]}
+      />
 
       {/* Raw entry */}
       <JsonViewer data={article} title={`Raw JSON Database Entry: Item/Article #${article.id}`} />
