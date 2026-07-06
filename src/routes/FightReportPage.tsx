@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
-import { loadHeroes, loadSkills, loadBuffEffects, loadEnemies, loadKnives } from '../data/loaders';
-import { Hero, Skill, BuffEffect, Enemy, Knife } from '../types/db';
+import { loadHeroes, loadSkills, loadBuffEffects, loadEnemies, loadKnives, loadKnifeExpands } from '../data/loaders';
+import { Hero, Skill, BuffEffect, Enemy, Knife, KnifeExpand } from '../types/db';
 import { LoadingState } from '../components/LoadingState';
 import { ErrorState } from '../components/ErrorState';
 
@@ -125,6 +125,7 @@ export const FightReportPage: React.FC = () => {
   const [buffs, setBuffs] = useState<BuffEffect[]>([]);
   const [enemies, setEnemies] = useState<Enemy[]>([]);
   const [knives, setKnives] = useState<Knife[]>([]);
+  const [knifeExpands, setKnifeExpands] = useState<KnifeExpand[]>([]);
   const [dbLoading, setDbLoading] = useState(true);
   const [dbError, setDbError] = useState<string | null>(null);
 
@@ -167,18 +168,20 @@ export const FightReportPage: React.FC = () => {
     try {
       setDbLoading(true);
       setDbError(null);
-      const [heroesRes, skillsRes, buffsRes, enemiesRes, knivesRes] = await Promise.all([
+      const [heroesRes, skillsRes, buffsRes, enemiesRes, knivesRes, knifeExpandsRes] = await Promise.all([
         loadHeroes(),
         loadSkills(),
         loadBuffEffects(),
         loadEnemies(),
-        loadKnives()
+        loadKnives(),
+        loadKnifeExpands()
       ]);
       setHeroes(heroesRes.rows);
       setSkills(skillsRes.rows);
       setBuffs(buffsRes.rows);
       setEnemies(enemiesRes.rows);
       setKnives(knivesRes.rows);
+      setKnifeExpands(knifeExpandsRes.rows);
     } catch (err: any) {
       console.error(err);
       setDbError("Failed to map combat components: could not fetch game metadata templates.");
@@ -222,6 +225,12 @@ export const FightReportPage: React.FC = () => {
     return map;
   }, [knives]);
 
+  const knifeExpandsMap = useMemo(() => {
+    const map = new Map<number, KnifeExpand>();
+    knifeExpands.forEach(ke => map.set(ke.id, ke));
+    return map;
+  }, [knifeExpands]);
+
   // Translate role name
   const resolveRoleName = useCallback((role: FightRole): string => {
     if (role.name && role.name.trim()) return role.name;
@@ -238,14 +247,16 @@ export const FightReportPage: React.FC = () => {
       const group = camp === 0 ? report?.team1 : report?.team2;
       const knifeId = group?.knifeOfKillSoulId || 0;
       if (knifeId > 0) {
-        const match = knivesMap.get(knifeId);
+        const expandMatch = knifeExpandsMap.get(knifeId);
+        const relationId = expandMatch ? expandMatch.relation_id : knifeId;
+        const match = knivesMap.get(relationId);
         if (match && match.name) return match.name;
       }
       return "Zanpakuto (Knife)";
     }
     if (role) return resolveRoleName(role);
     return `Fighter Pos ${pos}`;
-  }, [report, knivesMap, resolveRoleName]);
+  }, [report, knivesMap, knifeExpandsMap, resolveRoleName]);
 
   // Inline URL validators
   const urlValidation = useMemo(() => {
@@ -395,13 +406,23 @@ export const FightReportPage: React.FC = () => {
       let rid = "";
       let aid = "86";
       let lang = "en_US";
+      let version = "2026021215";
+      let versiondir = "en_Eu";
+      let isCombin = "0";
+      let server = "0";
+      let agent = "86";
 
       if (targetQuery.includes('rid=')) {
         const queryStr = targetQuery.split('?')[1] || '';
         const params = new URLSearchParams(queryStr);
         rid = params.get('rid') || "";
-        aid = params.get('aid') || "86";
+        aid = params.get('aid') || params.get('agent') || "86";
+        agent = params.get('agent') || params.get('aid') || "86";
         lang = params.get('lang') || "en_US";
+        version = params.get('version') || "2026021215";
+        versiondir = params.get('versiondir') || "en_Eu";
+        isCombin = params.get('isCombin') || params.get('isCombine') || "0";
+        server = params.get('server') || "0";
       } else {
         rid = targetQuery.trim();
       }
@@ -425,6 +446,10 @@ export const FightReportPage: React.FC = () => {
         url.searchParams.set('rid', rid);
         url.searchParams.set('aid', aid);
         url.searchParams.set('lang', lang);
+        if (version !== "2026021215") url.searchParams.set('version', version);
+        if (versiondir !== "en_Eu") url.searchParams.set('versiondir', versiondir);
+        if (isCombin !== "0") url.searchParams.set('isCombin', isCombin);
+        if (server !== "0") url.searchParams.set('server', server);
         window.history.replaceState(null, '', url.toString());
 
         setParseStage('done');
@@ -436,12 +461,12 @@ export const FightReportPage: React.FC = () => {
         `https://game.shinigamiworld.com/fightreport/data.php` +
         `?rid=${encodeURIComponent(rid)}` +
         `&aid=${encodeURIComponent(aid)}` +
-        `&version=2026021215` +
-        `&versiondir=en_Eu` +
+        `&version=${encodeURIComponent(version)}` +
+        `&versiondir=${encodeURIComponent(versiondir)}` +
         `&cacheKey=frv=1779820963` +
-        `&isCombin=0` +
-        `&agent=${encodeURIComponent(aid)}` +
-        `&server=0` +
+        `&isCombin=${encodeURIComponent(isCombin)}` +
+        `&agent=${encodeURIComponent(agent)}` +
+        `&server=${encodeURIComponent(server)}` +
         `&lang=${encodeURIComponent(lang)}`;
 
       const proxyUrl = `https://cors-proxy.shinigamiworld-fightreport.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
@@ -487,6 +512,10 @@ export const FightReportPage: React.FC = () => {
       url.searchParams.set('rid', rid);
       url.searchParams.set('aid', aid);
       url.searchParams.set('lang', lang);
+      if (version !== "2026021215") url.searchParams.set('version', version);
+      if (versiondir !== "en_Eu") url.searchParams.set('versiondir', versiondir);
+      if (isCombin !== "0") url.searchParams.set('isCombin', isCombin);
+      if (server !== "0") url.searchParams.set('server', server);
       window.history.replaceState(null, '', url.toString());
 
       setParseStage('done');
@@ -627,6 +656,36 @@ export const FightReportPage: React.FC = () => {
     return map;
   }, [report]);
 
+  const team1Zanpakuto = useMemo(() => {
+    if (!report?.team1) return null;
+    const knifeId = report.team1.knifeOfKillSoulId;
+    if (knifeId <= 0) return null;
+    const expand = knifeExpandsMap.get(knifeId);
+    const relationId = expand ? expand.relation_id : knifeId;
+    const knife = knivesMap.get(relationId);
+    const skill = expand ? skillsMap.get(expand.skill_id) : undefined;
+    return {
+      name: knife?.name || "Zanpakuto",
+      level: expand?.level || 0,
+      skill: skill,
+    };
+  }, [report, knifeExpandsMap, knivesMap, skillsMap]);
+
+  const team2Zanpakuto = useMemo(() => {
+    if (!report?.team2) return null;
+    const knifeId = report.team2.knifeOfKillSoulId;
+    if (knifeId <= 0) return null;
+    const expand = knifeExpandsMap.get(knifeId);
+    const relationId = expand ? expand.relation_id : knifeId;
+    const knife = knivesMap.get(relationId);
+    const skill = expand ? skillsMap.get(expand.skill_id) : undefined;
+    return {
+      name: knife?.name || "Zanpakuto",
+      level: expand?.level || 0,
+      skill: skill,
+    };
+  }, [report, knifeExpandsMap, knivesMap, skillsMap]);
+
   // Fighter names Map for timeline select filter
   const fighterNames = useMemo(() => {
     const map = new Map<string, string>();
@@ -725,7 +784,7 @@ export const FightReportPage: React.FC = () => {
       const attackerPos = act.pos;
       const attackerGroup = attackerCamp === 0 ? report.team1 : report.team2;
       const attackerRole = attackerGroup.roles.find(r => r.pos === attackerPos);
-      const attackerName = attackerRole ? resolveRoleName(attackerRole) : `Fighter Pos ${attackerPos}`;
+      const attackerName = resolveAttackerName(attackerCamp, attackerPos, attackerRole);
 
       let actionLabel = "attacks";
       if (act.activeType === ACTIVE_TYPE.SKILL_ATTACK) {
@@ -796,7 +855,7 @@ export const FightReportPage: React.FC = () => {
         matchedTargets
       };
     }).filter(act => act.matchedTargets.length > 0); // Only keep active skills if they matched searches
-  }, [report, selectedRoundTab, logSearch, logFilter, heroesMap, enemiesMap, skillsMap]);
+  }, [report, selectedRoundTab, logSearch, logFilter, heroesMap, enemiesMap, skillsMap, resolveAttackerName]);
 
   if (dbLoading) return <LoadingState message="Connecting combat dictionary loaders and packing structures..." />;
   if (dbError) return <ErrorState message={dbError} onRetry={loadDb} />;
@@ -1256,6 +1315,10 @@ export const FightReportPage: React.FC = () => {
                 maxHealingDone={battleStats.maxHealing}
                 maxShieldApplied={battleStats.teamTotals.shieldApplied[0] || 1}
                 onSelectFighter={setFocusedFighterKey}
+                bloodAddRate={report.team1.bloodAddRate}
+                zanpakutoName={team1Zanpakuto?.name}
+                zanpakutoLevel={team1Zanpakuto?.level}
+                zanpakutoSkill={team1Zanpakuto?.skill}
               />
               <FighterTeamPanel
                 title="Team 2 (Defender)"
@@ -1267,6 +1330,10 @@ export const FightReportPage: React.FC = () => {
                 maxHealingDone={battleStats.maxHealing}
                 maxShieldApplied={battleStats.teamTotals.shieldApplied[1] || 1}
                 onSelectFighter={setFocusedFighterKey}
+                bloodAddRate={report.team2.bloodAddRate}
+                zanpakutoName={team2Zanpakuto?.name}
+                zanpakutoLevel={team2Zanpakuto?.level}
+                zanpakutoSkill={team2Zanpakuto?.skill}
               />
             </div>
           )}
@@ -1394,7 +1461,7 @@ export const FightReportPage: React.FC = () => {
                               const tPos = tgt.pos;
                               const tGroup = tCamp === 0 ? report.team1 : report.team2;
                               const tRole = tGroup.roles.find((r) => r.pos === tPos);
-                              const tName = tRole ? resolveRoleName(tRole) : `Target Pos ${tPos}`;
+                              const tName = resolveAttackerName(tCamp, tPos, tRole);
                               const hurtHp = tgt.result.hurtHp || 0;
 
                               const flags = decodeStatusFlags(tgt.status);

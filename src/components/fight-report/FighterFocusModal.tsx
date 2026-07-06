@@ -26,6 +26,11 @@ export const FighterFocusModal: React.FC<FighterFocusModalProps> = ({
   const camp = parseInt(parts[0]);
   const pos = parseInt(parts[1]);
 
+  const roleMatch = useMemo(() => {
+    const group = camp === 0 ? report.team1 : report.team2;
+    return group.roles.find(r => r.pos === pos);
+  }, [report, camp, pos]);
+
   const totalRounds = report.totalTurns;
 
   // Filter actions performed by this fighter
@@ -94,7 +99,14 @@ export const FighterFocusModal: React.FC<FighterFocusModalProps> = ({
               <Activity size={18} />
             </div>
             <div>
-              <h3 className="font-black text-base text-text">{fighterState.name}</h3>
+              <div className="flex items-center gap-2 flex-wrap">
+                <h3 className="font-black text-base text-text">{fighterState.name}</h3>
+                {roleMatch?.rebirthNum ? (
+                  <span className="px-1.5 py-0.5 bg-violet-100 dark:bg-violet-950 text-violet-800 dark:text-violet-400 rounded-lg text-[9px] font-black uppercase tracking-wider border border-violet-500/10">
+                    Rebirth +{roleMatch.rebirthNum}
+                  </span>
+                ) : null}
+              </div>
               <span className="text-[10px] text-subtle font-bold uppercase tracking-wider block">
                 Fighter Focus & round-by-round trajectory
               </span>

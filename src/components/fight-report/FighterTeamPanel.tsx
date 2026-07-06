@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, ArrowUpDown, Shield, Flame, Heart } from 'lucide-react';
+import { Search, ArrowUpDown, Shield, Flame, Heart, Swords, Target } from 'lucide-react';
 import { FightRole } from '../../utils/fight-report/parser';
 import { FighterRuntimeState } from '../../utils/fight-report/simulation';
 
@@ -13,6 +13,10 @@ interface FighterTeamPanelProps {
   maxHealingDone: number;
   maxShieldApplied: number;
   onSelectFighter?: (key: string) => void;
+  bloodAddRate?: number;
+  zanpakutoName?: string;
+  zanpakutoLevel?: number;
+  zanpakutoSkill?: string;
 }
 
 type SortKey =
@@ -36,6 +40,10 @@ export const FighterTeamPanel: React.FC<FighterTeamPanelProps> = ({
   maxHealingDone,
   maxShieldApplied: _maxShieldApplied,
   onSelectFighter,
+  bloodAddRate,
+  zanpakutoName,
+  zanpakutoLevel,
+  zanpakutoSkill,
 }) => {
   const [searchTerm, setSearchQuery] = useState('');
   const [sortKey, setSortKey] = useState<SortKey>('damageDealtRaw');
@@ -108,6 +116,32 @@ export const FighterTeamPanel: React.FC<FighterTeamPanelProps> = ({
     }
   };
 
+  const formationLayout = useMemo(() => {
+    // For camp === 0, layout columns from Left to Right: Back (col 2), Middle (col 1), Front (col 0)
+    // For camp === 1, layout columns from Left to Right: Front (col 0), Middle (col 1), Back (col 2)
+    return [
+      [4, 9, 14],   // Row 0
+      [2, 7, 12],   // Row 1
+      [1, 6, 11],   // Row 2
+      [3, 8, 13],   // Row 3
+      [5, 10, 15]   // Row 4
+    ].map(row => {
+      if (camp === 0) {
+        // [Front, Middle, Back] -> Reverse to make it [Back, Middle, Front]
+        return [row[2], row[1], row[0]];
+      }
+      return row; // Keep [Front, Middle, Back]
+    });
+  }, [camp]);
+
+  const fighterAtPos = useMemo(() => {
+    const map = new Map<number, typeof resolvedFighters[0]>();
+    resolvedFighters.forEach((f) => {
+      map.set(f.role.pos, f);
+    });
+    return map;
+  }, [resolvedFighters]);
+
   const formatCompactNumber = (value: number): string => {
     return new Intl.NumberFormat(undefined, {
       notation: 'compact',
@@ -119,7 +153,24 @@ export const FighterTeamPanel: React.FC<FighterTeamPanelProps> = ({
     <div className="space-y-4">
       {/* Search and Sort Toolbar */}
       <div className="flex flex-col sm:flex-row gap-3 items-center justify-between p-4 border border-border bg-surface rounded-2xl shadow-sm">
-        <h4 className="font-extrabold text-sm text-text shrink-0">{title}</h4>
+        <div className="flex items-center gap-2 flex-wrap">
+          <h4 className="font-extrabold text-sm text-text shrink-0">{title}</h4>
+          {bloodAddRate && bloodAddRate > 0 && (
+            <span className="px-1.5 py-0.5 bg-red-100 dark:bg-red-950/40 border border-red-300/10 text-red-800 dark:text-red-400 rounded-lg text-[9px] font-black uppercase tracking-wider flex items-center gap-1 select-none">
+              <Heart size={10} className="fill-red-500 text-red-500" />
+              <span>+{bloodAddRate}% HP Buff</span>
+            </span>
+          )}
+          {zanpakutoName && (
+            <span 
+              className="px-1.5 py-0.5 bg-violet-100 dark:bg-violet-950/40 border border-violet-300/10 text-violet-800 dark:text-violet-400 rounded-lg text-[9px] font-black uppercase tracking-wider flex items-center gap-1 select-none cursor-help"
+              title={zanpakutoSkill ? `Zanpakuto Skill: ${zanpakutoSkill}` : undefined}
+            >
+              <Swords size={10} className="text-violet-500" />
+              <span>{zanpakutoName} {zanpakutoLevel ? `(Lv. ${zanpakutoLevel})` : ""}</span>
+            </span>
+          )}
+        </div>
         <div className="flex flex-wrap items-center gap-2.5 w-full sm:w-auto">
           {/* Search Input */}
           <div className="relative flex-1 sm:flex-none">
@@ -161,6 +212,102 @@ export const FighterTeamPanel: React.FC<FighterTeamPanelProps> = ({
               <ArrowUpDown size={14} />
             </button>
           </div>
+        </div>
+      </div>
+
+      {/* Tactical Grid Formation Visualizer */}
+      <div className="p-4 border border-border bg-surface rounded-2xl shadow-sm space-y-3">
+        <div className="flex items-center justify-between border-b border-border pb-2">
+          <span className="text-xs font-black uppercase tracking-wider text-subtle flex items-center gap-1.5 select-none">
+            <Target size={14} className="text-violet-500" />
+            <span>Tactical Grid Formation ({camp === 0 ? "Left Wing" : "Right Wing"})</span>
+          </span>
+          <span className="text-[10px] text-subtle font-bold uppercase tracking-wider">
+            {camp === 0 ? "Back ↔ Middle ↔ Front" : "Front ↔ Middle ↔ Back"}
+          </span>
+        </div>
+
+        {/* 5 Rows x 3 Columns */}
+        <div className="grid grid-rows-5 gap-2 max-w-xs mx-auto p-2 bg-bg/40 border border-border/60 rounded-xl relative">
+          {formationLayout.map((row, rowIdx) => (
+            <div key={rowIdx} className="grid grid-cols-3 gap-2">
+              {row.map((posNum) => {
+                const fighter = fighterAtPos.get(posNum);
+                const isOccupied = !!fighter;
+                const isDead = fighter?.state?.dead ?? false;
+                const hpPct = fighter?.hpPercent ?? 0;
+
+                return (
+                  <div
+                    key={posNum}
+                    className={`h-11 rounded-xl flex flex-col items-center justify-center relative transition-all group ${
+                      isOccupied
+                        ? isDead
+                          ? 'bg-rose-500/10 border border-rose-500/40 text-rose-500'
+                          : 'bg-emerald-500/10 border-2 border-emerald-500/60 text-emerald-600 dark:text-emerald-450'
+                        : 'bg-bg/20 border border-dashed border-border/40 text-subtle/30'
+                    }`}
+                  >
+                    {isOccupied ? (
+                      <div
+                        onClick={() => onSelectFighter?.(`${camp}_${posNum}`)}
+                        className="w-full h-full flex flex-col items-center justify-center cursor-pointer font-bold select-none text-center p-1"
+                      >
+                        {/* Position circle inside */}
+                        <span className="text-[8px] font-mono leading-none font-black text-subtle/60 uppercase">
+                          Pos {posNum}
+                        </span>
+                        {/* Character Initials or Shortened Name */}
+                        <span className="text-[9px] font-black tracking-tight leading-tight block truncate w-full px-0.5">
+                          {fighter.name.slice(0, 6)}
+                        </span>
+                        {/* HP Mini-Spark bar */}
+                        {!isDead && (
+                          <div className="absolute bottom-1 left-1.5 right-1.5 h-0.5 bg-zinc-800 rounded-full overflow-hidden">
+                            <div
+                              className="h-full bg-emerald-500"
+                              style={{ width: `${hpPct}%` }}
+                            ></div>
+                          </div>
+                        )}
+
+                        {/* Interactive Grid Tooltip */}
+                        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:flex flex-col items-center z-50 pointer-events-none w-48 shadow-xl">
+                          <div className="bg-zinc-950 text-white text-[10px] rounded-xl p-2.5 border border-zinc-800 space-y-1.5 text-left font-sans w-full">
+                            <span className="font-extrabold text-xs block text-zinc-300 border-b border-zinc-800 pb-1">
+                              {fighter.name}
+                            </span>
+                            <div className="flex justify-between font-mono text-zinc-400">
+                              <span>Position:</span>
+                              <span>Pos {posNum}</span>
+                            </div>
+                            <div className="flex justify-between font-mono text-zinc-400">
+                              <span>Health:</span>
+                              <span className={isDead ? "text-rose-400" : "text-emerald-400"}>
+                                {isDead ? "Fallen" : `${Math.round(hpPct)}% HP`}
+                              </span>
+                            </div>
+                            {fighter.state?.damageDealtRaw !== undefined && (
+                              <div className="flex justify-between font-mono text-zinc-400">
+                                <span>Damage:</span>
+                                <span>{fighter.state.damageDealtRaw.toLocaleString()}</span>
+                              </div>
+                            )}
+                          </div>
+                          {/* Triangle */}
+                          <div className="w-1.5 h-1.5 bg-zinc-950 rotate-45 -mt-1 border-r border-b border-zinc-800/80"></div>
+                        </div>
+                      </div>
+                    ) : (
+                      <span className="text-[8px] font-mono font-bold select-none text-subtle/20">
+                        {posNum}
+                      </span>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          ))}
         </div>
       </div>
 
